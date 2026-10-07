@@ -1,0 +1,301 @@
+{
+  "row": {
+    "id": "command-019",
+    "model": "target",
+    "evidence_sha256": "e90209943ebd27e570c0c539a941a387e05b651c02cb11887bbf67842e4e41cc",
+    "elapsed_ms": 23685.07289001718,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 3924,
+      "completion_tokens_observed": 333,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": true,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册‘逻辑口报文信息统计 / 统计N4口报文信息’如何使用 tcpdump？只摘录原文并说明示例适用范围。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": null,
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [
+      {
+        "text": "登录UPF物理机，打开终端\n\n查看N4IP在哪个端口\n\n选择该端口，运行如下命令抓包\ntcpdump -i {N4口逻辑ID} port 8805 -vv -w {数据包名}.pcap",
+        "citations": [
+          {
+            "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+            "quote": "登录UPF物理机，打开终端\n"
+          },
+          {
+            "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+            "quote": "查看N4IP在哪个端口\n"
+          },
+          {
+            "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+            "quote": "选择该端口，运行如下命令抓包"
+          },
+          {
+            "chunk_id": "chunk-7fdde4d9a3c3a42036bffd3d",
+            "quote": "tcpdump -i {N4口逻辑ID} port 8805 -vv -w {数据包名}.pcap"
+          }
+        ]
+      },
+      {
+        "text": "一段时间后，键入Ctrl+C停止抓包",
+        "citations": [
+          {
+            "chunk_id": "chunk-67083f7c25d8e6bb5ac216ee",
+            "quote": "一段时间后，键入Ctrl+C停止抓包"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品监控",
+          "业务信息监控",
+          "逻辑口报文信息统计",
+          "统计N4口报文信息"
+        ],
+        "parent_id": "section-b046170188e546647016",
+        "kind": "prose",
+        "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N4口报文信息\n统计N4口报文信息\n登录UPF物理机，打开终端\n查看N4IP在哪个端口\n选择该端口，运行如下命令抓包",
+        "token_count": 58,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000887",
+          "manual-341440f7dd103f51:b000888",
+          "manual-341440f7dd103f51:b000889",
+          "manual-341440f7dd103f51:b000890"
+        ],
+        "locators": [
+          "word/document.xml/body/p[292]",
+          "word/document.xml/body/p[293]",
+          "word/document.xml/body/p[294]",
+          "word/document.xml/body/p[295]"
+        ],
+        "ordinal_start": 887,
+        "ordinal_end": 890,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N4"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-7fdde4d9a3c3a42036bffd3d",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品监控",
+          "业务信息监控",
+          "逻辑口报文信息统计",
+          "统计N4口报文信息"
+        ],
+        "parent_id": "section-b046170188e546647016",
+        "kind": "command",
+        "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N4口报文信息\ntcpdump -i {N4口逻辑ID} port 8805 -vv -w {数据包名}.pcap",
+        "token_count": 50,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000891"
+        ],
+        "locators": [
+          "word/document.xml/body/p[296]"
+        ],
+        "ordinal_start": 891,
+        "ordinal_end": 891,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "N4"
+        ],
+        "command_id": "cmd-94b517f0ad9d259f",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-67083f7c25d8e6bb5ac216ee",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品监控",
+          "业务信息监控",
+          "逻辑口报文信息统计",
+          "统计N4口报文信息"
+        ],
+        "parent_id": "section-b046170188e546647016",
+        "kind": "prose",
+        "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N4口报文信息\n一段时间后，键入Ctrl+C停止抓包",
+        "token_count": 32,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000892"
+        ],
+        "locators": [
+          "word/document.xml/body/p[297]"
+        ],
+        "ordinal_start": 892,
+        "ordinal_end": 892,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N4"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。",
+      "引用手册版本未知，需核对目标设备版本与操作前提。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S2Q1",
+        "S2Q2",
+        "S2Q3",
+        "S2Q4",
+        "S2Q5",
+        "S4Q1",
+        "S4Q2"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "统计N4口报文信息时，需登录UPF物理机打开终端，查看N4IP所在端口，选择该端口后运行命令 `tcpdump -i {N4口逻辑ID} port 8805 -vv -w {数据包名}.pcap` 进行抓包。",
+            "quote_ids": [
+              "S2Q3",
+              "S2Q4",
+              "S2Q5",
+              "S1Q2"
+            ]
+          },
+          {
+            "text": "抓包一段时间后，键入Ctrl+C停止抓包。",
+            "quote_ids": [
+              "S4Q2"
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为unknown，无法确认该操作适用于特定UPF版本。"
+        ]
+      },
+      "draft": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "统计N4口报文信息时，需登录UPF物理机打开终端，查看N4IP所在端口，选择该端口后运行命令 `tcpdump -i {N4口逻辑ID} port 8805 -vv -w {数据包名}.pcap` 进行抓包。",
+            "citations": [
+              {
+                "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+                "quote": "登录UPF物理机，打开终端\n"
+              },
+              {
+                "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+                "quote": "查看N4IP在哪个端口\n"
+              },
+              {
+                "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+                "quote": "选择该端口，运行如下命令抓包"
+              },
+              {
+                "chunk_id": "chunk-7fdde4d9a3c3a42036bffd3d",
+                "quote": "tcpdump -i {N4口逻辑ID} port 8805 -vv -w {数据包名}.pcap"
+              }
+            ]
+          },
+          {
+            "text": "抓包一段时间后，键入Ctrl+C停止抓包。",
+            "citations": [
+              {
+                "chunk_id": "chunk-67083f7c25d8e6bb5ac216ee",
+                "quote": "一段时间后，键入Ctrl+C停止抓包"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为unknown，无法确认该操作适用于特定UPF版本。"
+        ]
+      },
+      "support_decisions": [
+        true,
+        true
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "证据版本为unknown，无法确认该操作适用于特定UPF版本。"
+    ]
+  }
+}

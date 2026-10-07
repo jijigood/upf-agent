@@ -1,0 +1,26 @@
+{
+  "configuration_accepted": true,
+  "model_profile": "baseline",
+  "development_sha256": "ac57532cd831b69a0079b81e974ce0e73dc0a5ec6b3ea3c8113af84053f7a7d5",
+  "adjudication_path": "runs/p6-v4-v5f/review-intake-fb450cc8cee8/adjudication.json",
+  "reviewer": "张三",
+  "date": "2026-10-06",
+  "notes": "用户在收到具体2507 BF16/16K/并发1、固定工具优先的配置确认请求后回复“现在可以启动了，GPU有空间”；据此按已说明的候选配置执行P6冻结。开发集60题人工语义门槛通过；常驻终端20次首输出p95约4.67秒、日志诊断p95约98.12秒。有限Agent仅为可选探索，不宣称业务增益。张三为用户此前允许的署名标签，未核验实名。",
+  "evidence": {
+    "development_summary": "runs/p6-v4-v5f/reviewed-dev/summary.json",
+    "machine_audit": "runs/p6-v4-v5f/repair_audit.json",
+    "carryforward_audit": "runs/p6-v4-v5f/carryforward_review.json",
+    "incremental_review": "runs/p6-v4-v5f/增量复核_4题.md",
+    "performance": "runs/p6-v4-v5f/current_performance_precheck.json",
+    "warm_session_benchmark": "runs/p6-v4-v5e/manual-chat-first-visible-freegpu-20261001/summary.json",
+    "one_shot_benchmark": "runs/p6-v4-v5e/cli-first-visible-freegpu-20261001/summary.json",
+    "agent_decision": "runs/p6-v4-v5e/P6模型与Agent决策草案.md",
+    "development_adjudication_sha256": "603e844206f1e9f24712f53f64ab18259a61e5f46a0be93f7587fe279a4efca7",
+    "incremental_review_receipt": "runs/p6-v4-v5f/review-intake-fb450cc8cee8/接收与验收.md"
+  },
+  "acceptance_basis": {
+    "user_message": "现在可以启动了，GPU有空间",
+    "context": "回复此前具体配置确认请求，视为接受该配置并授权启动P6",
+    "reviewer_label_identity_verified": false
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "row": {
+    "id": "command-004",
+    "model": "baseline",
+    "evidence_sha256": "7e1ed4f9811ae3642353e873e17f404229f92b79fb832ba32449342b0347142c",
+    "elapsed_ms": 17086.32443798706,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 10354,
+      "completion_tokens_observed": 311,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": true,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "核对 show config 在‘检查upf 业务网络地址配置 / 检查所有接口地址’中的原始语法，不把示例当现场参数。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "show config",
+        "citations": [
+          {
+            "chunk_id": "chunk-b586b6d6c78e913d75bfa0b2",
+            "quote": "show config"
+          }
+        ]
+      },
+      {
+        "text": "UPF# show interface addr",
+        "citations": [
+          {
+            "chunk_id": "chunk-7186a25131ec3f73b59889b5",
+            "quote": "UPF# show interface addr"
+          }
+        ]
+      },
+      {
+        "text": "UPF# show interface",
+        "citations": [
+          {
+            "chunk_id": "chunk-a8f5ff09d0cf29498ce8c9d0",
+            "quote": "UPF# show interface"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-b586b6d6c78e913d75bfa0b2",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查所有接口地址"
+        ],
+        "parent_id": "section-5c4b984cb9fb9b794139",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查所有接口地址\nshow config",
+        "token_count": 30,
+        "block_ids": [
+          "manual-1edf23113651430f:b001966"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1062]"
+        ],
+        "ordinal_start": 1966,
+        "ordinal_end": 1966,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-64789edbf0a9dbf1",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-7186a25131ec3f73b59889b5",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查N3N6接口及IP配置"
+        ],
+        "parent_id": "section-4074dc47431e95e1d96d",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nUPF# show interface addr",
+        "token_count": 39,
+        "block_ids": [
+          "manual-1edf23113651430f:b002003"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1096]"
+        ],
+        "ordinal_start": 2003,
+        "ordinal_end": 2003,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-35dca7543f116ef7",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-a8f5ff09d0cf29498ce8c9d0",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查N3N6接口及IP配置"
+        ],
+        "parent_id": "section-4074dc47431e95e1d96d",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nUPF# show interface",
+        "token_count": 38,
+        "block_ids": [
+          "manual-1edf23113651430f:b002023"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1115]"
+        ],
+        "ordinal_start": 2023,
+        "ordinal_end": 2023,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-a2fad1e5c3b3fd74",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q2",
+        "S2Q2",
+        "S4Q5",
+        "S5Q2",
+        "S11Q11",
+        "S11Q12",
+        "S11Q13"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查所有接口地址’中，原始语法为 `show config`。",
+            "quote_ids": [
+              "S1Q2"
+            ]
+          },
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，原始语法为 `UPF# show interface addr`。",
+            "quote_ids": [
+              "S2Q2"
+            ]
+          },
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，也可使用 `show interface` 命令查看接口信息。",
+            "quote_ids": [
+              "S7Q2"
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性未确认：仅在5.0版本中明确提及 `show config` 和 `show interface addr` 的使用场景，但未说明其他版本是否一致。"
+        ]
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查所有接口地址’中，原始语法为 `show config`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-b586b6d6c78e913d75bfa0b2",
+                "quote": "show config"
+              }
+            ]
+          },
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，原始语法为 `UPF# show interface addr`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-7186a25131ec3f73b59889b5",
+                "quote": "UPF# show interface addr"
+              }
+            ]
+          },
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，也可使用 `show interface` 命令查看接口信息。",
+            "citations": [
+              {
+                "chunk_id": "chunk-a8f5ff09d0cf29498ce8c9d0",
+                "quote": "UPF# show interface"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性未确认：仅在5.0版本中明确提及 `show config` 和 `show interface addr` 的使用场景，但未说明其他版本是否一致。"
+        ]
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": [
+      "版本适用性未确认：仅在5.0版本中明确提及 `show config` 和 `show interface addr` 的使用场景，但未说明其他版本是否一致。"
+    ]
+  }
+}

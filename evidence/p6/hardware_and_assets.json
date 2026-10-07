@@ -1,0 +1,74 @@
+{
+  "captured_utc": "2026-09-28T15:40:26.004798+00:00",
+  "python": "3.11.15",
+  "checks": [
+    {
+      "name": "gpu_query",
+      "status": "pass",
+      "detail": "2 cards; snapshot only"
+    },
+    {
+      "name": "gpu_0_generation_headroom",
+      "status": "blocked",
+      "detail": "free 11697 MiB; initial planning threshold 69632 MiB"
+    },
+    {
+      "name": "gpu_1_generation_headroom",
+      "status": "pass",
+      "detail": "free 81050 MiB; initial planning threshold 69632 MiB"
+    },
+    {
+      "name": "weights_baseline",
+      "status": "pass",
+      "detail": "16 indexed shards present; verify hashes against model manifest"
+    },
+    {
+      "name": "endpoint_Qwen3-30B-A3B-Instruct-2507",
+      "status": "pass",
+      "detail": "metadata endpoint responds"
+    },
+    {
+      "name": "weights_target",
+      "status": "pass",
+      "detail": "18 indexed shards present; verify hashes against model manifest"
+    },
+    {
+      "name": "endpoint_Qwen3.8-27B",
+      "status": "pending",
+      "detail": "dedicated port is not serving"
+    },
+    {
+      "name": "weights_embedding",
+      "status": "pass",
+      "detail": "2 indexed shards present; verify hashes against model manifest"
+    },
+    {
+      "name": "weights_reranker",
+      "status": "pass",
+      "detail": "2 indexed shards present; verify hashes against model manifest"
+    },
+    {
+      "name": "local_http_proxy",
+      "status": "pass",
+      "detail": "proxy variables present: HTTP_PROXY,HTTPS_PROXY,ALL_PROXY; model client uses trust_env=False"
+    }
+  ],
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_mib": 81920,
+      "used_mib": 69352,
+      "free_mib": 11697,
+      "driver": "535.183.06"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81050,
+      "driver": "535.183.06"
+    }
+  ]
+}

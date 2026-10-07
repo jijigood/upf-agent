@@ -1,0 +1,23 @@
+{
+  "run_id": "a2b0aea41b2745a7b088022c5fcf578f",
+  "status": "missing_source",
+  "facts": [],
+  "hypotheses": [],
+  "supporting_evidence_ids": [],
+  "opposing_evidence_ids": [],
+  "missing_information": [
+    "未接入实时网管/设备遥测数据源，无法报告当前现场状态。"
+  ],
+  "recommendations": [
+    "按报告来源位置复核原文，并补充列出的现场资料；建议不自动执行。"
+  ],
+  "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "corpus_generation": "c61e9796eead2610cfd4",
+  "question": "当前UPF设备CPU温度是多少？",
+  "fact_records": [],
+  "candidates": [],
+  "evidence": [],
+  "warnings": [],
+  "degraded": false,
+  "publication_policy": "deterministic_tool_facts_and_verified_manual_source_extracts"
+}

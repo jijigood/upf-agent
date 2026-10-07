@@ -1,0 +1,18 @@
+{
+  "configuration_accepted": false,
+  "model_profile": "baseline",
+  "development_sha256": "87d73ec30e8882ce8af9868c722ec3e13661e3d43f2d40e35c86ccb9d8b6f410",
+  "suite_sha256": "da075d6654bd661872aef8f7dda2d5038e39c4450dc8c911b3612c743ba24a6b",
+  "adjudication_path": null,
+  "reviewer": "张三",
+  "date": "2026-10-06",
+  "notes": "既定2507 BF16/GPU0/16K/并发1配置已获用户授权；待v5j三题变化答案人工复核并形成当前开发集判定后绑定冻结。旧v5f留出失败记录保留，新留出尚未消费。",
+  "evidence": {
+    "development_summary": "runs/p6-v4-v5j/reviewed-dev/summary.json",
+    "development_delta": "runs/p6-v4-v5j/reviewed-dev/development_delta.json",
+    "truth_import_receipt": "eval/p6/business_v5_replacement/reviewed_suite.receipt.json",
+    "pre_freeze_audit": "runs/p6-v4-v5j/pre_freeze_audit.json",
+    "prior_accepted_configuration": "eval/p6/development_decision.v5f.accepted.json",
+    "v5i_human_adjudication": "runs/p6-v4-v5i/review-intake-e025ae9d9ad3/adjudication.json"
+  }
+}

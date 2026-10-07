@@ -1,0 +1,251 @@
+{
+  "row": {
+    "id": "troubleshooting-006",
+    "model": "target",
+    "evidence_sha256": "57022c5699c7626c86ad30ae75482f5e0ef0ba61d4e599c1fe581c98d04f7cbf",
+    "elapsed_ms": 28591.172497719526,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 8620,
+      "completion_tokens_observed": 375,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘K8S集群软件故障排查 / 插件维护管理 / Helm’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [
+      {
+        "text": "helm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "helm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n"
+          }
+        ]
+      },
+      {
+        "text": "执行以下命令安装helm插件\n\n$ sealos run docker.io/labring/helm:v3.11.0\n\n使用以下命令查看helm安装路径\n\n$ which helm\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "执行以下命令安装helm插件\n"
+          },
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "$ sealos run docker.io/labring/helm:v3.11.0\n"
+          },
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "使用以下命令查看helm安装路径\n"
+          },
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "$ which helm\n"
+          }
+        ]
+      },
+      {
+        "text": "如需卸载helm 插件，执行以下命令\n\n$ rm -rf /usr/bin/helm",
+        "citations": [
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "如需卸载helm 插件，执行以下命令\n"
+          },
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "$ rm -rf /usr/bin/helm"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "插件维护管理",
+          "Helm"
+        ],
+        "parent_id": "section-a6c2f639d4d11cf91408",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 插件维护管理 / Helm\nHelm\nhelm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n执行以下命令安装helm插件\n$ sealos run docker.io/labring/helm:v3.11.0\n使用以下命令查看helm安装路径\n$ which helm\n/usr/bin/helm\n如需卸载helm 插件，执行以下命令\n$ rm -rf /usr/bin/helm",
+        "token_count": 127,
+        "block_ids": [
+          "manual-1edf23113651430f:b003087",
+          "manual-1edf23113651430f:b003088",
+          "manual-1edf23113651430f:b003089",
+          "manual-1edf23113651430f:b003090",
+          "manual-1edf23113651430f:b003092",
+          "manual-1edf23113651430f:b003093",
+          "manual-1edf23113651430f:b003094",
+          "manual-1edf23113651430f:b003096",
+          "manual-1edf23113651430f:b003097"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1896]",
+          "word/document.xml/body/p[1897]",
+          "word/document.xml/body/p[1898]",
+          "word/document.xml/body/p[1899]",
+          "word/document.xml/body/p[1901]",
+          "word/document.xml/body/p[1902]",
+          "word/document.xml/body/p[1903]",
+          "word/document.xml/body/p[1905]",
+          "word/document.xml/body/p[1906]"
+        ],
+        "ordinal_start": 3087,
+        "ordinal_end": 3097,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S6Q1",
+        "S6Q2",
+        "S6Q3",
+        "S6Q4",
+        "S6Q5",
+        "S6Q6",
+        "S6Q7",
+        "S6Q8",
+        "S6Q9",
+        "S6Q10"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "Helm插件默认安装在集群所有master节点的/usr/bin目录下，大部分插件安装依赖helm命令，因此部署集群后应首先安装helm插件。",
+            "quote_ids": [
+              "S6Q3"
+            ]
+          },
+          {
+            "text": "安装Helm插件需执行命令 `sealos run docker.io/labring/helm:v3.11.0`，安装后可通过 `which helm` 查看安装路径。",
+            "quote_ids": [
+              "S6Q4",
+              "S6Q5",
+              "S6Q6",
+              "S6Q7"
+            ]
+          },
+          {
+            "text": "如需卸载Helm插件，需执行命令 `rm -rf /usr/bin/helm`。",
+            "quote_ids": [
+              "S6Q9",
+              "S6Q10"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "Helm插件默认安装在集群所有master节点的/usr/bin目录下，大部分插件安装依赖helm命令，因此部署集群后应首先安装helm插件。",
+            "citations": [
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "helm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n"
+              }
+            ]
+          },
+          {
+            "text": "安装Helm插件需执行命令 `sealos run docker.io/labring/helm:v3.11.0`，安装后可通过 `which helm` 查看安装路径。",
+            "citations": [
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "执行以下命令安装helm插件\n"
+              },
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "$ sealos run docker.io/labring/helm:v3.11.0\n"
+              },
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "使用以下命令查看helm安装路径\n"
+              },
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "$ which helm\n"
+              }
+            ]
+          },
+          {
+            "text": "如需卸载Helm插件，需执行命令 `rm -rf /usr/bin/helm`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "如需卸载helm 插件，执行以下命令\n"
+              },
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "$ rm -rf /usr/bin/helm"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

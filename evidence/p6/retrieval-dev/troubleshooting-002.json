@@ -1,0 +1,504 @@
+{
+  "query": "请依据‘K8S集群软件故障排查 / 基本故障排查 / ice网卡驱动’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 22,
+  "reranked_candidates": 22,
+  "context_tokens": 462,
+  "rankings": {
+    "exact": [],
+    "bm25": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-431e9c929de7ea7de7c14431",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-2c4cdfcf7f7c76d29a02c8d7"
+    ],
+    "dense": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-002d97a55d8b83668dc3dfa6",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d"
+    ],
+    "rrf": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-002d97a55d8b83668dc3dfa6",
+      "chunk-431e9c929de7ea7de7c14431",
+      "chunk-2c4cdfcf7f7c76d29a02c8d7",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d"
+    ],
+    "reranked": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-431e9c929de7ea7de7c14431",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-002d97a55d8b83668dc3dfa6",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-2c4cdfcf7f7c76d29a02c8d7"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "rrf_score": 0.03278688524590164,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 21.78072738647461
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.7420124181254049
+        }
+      },
+      "rerank_raw_logit_difference": 8.5,
+      "rerank_p_yes": 0.9997965730219448,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "ice网卡驱动"
+      ],
+      "parent_id": "section-d4f2e279b4d191eac6de",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / ice网卡驱动\nice网卡驱动\nWingTech 服务器需要更新ICE网卡驱动，否则可能遇到以下问题：\n检查用于UPF的物理网卡状态，确认状态是否都为UP状态，发现其中eno4 状态为down，并且执行up命令无法启动\n通过查找eno4 网卡PCI地址，执行dmesg查看日志，日志存在以下报错\n以上问题需要更新ICE网卡驱动解决，否则影响sriov对网卡的识别以及VF的生成。",
+      "block_ids": [
+        "manual-1edf23113651430f:b003035",
+        "manual-1edf23113651430f:b003036",
+        "manual-1edf23113651430f:b003037",
+        "manual-1edf23113651430f:b003040",
+        "manual-1edf23113651430f:b003043"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1846]",
+        "word/document.xml/body/p[1847]",
+        "word/document.xml/body/p[1848]",
+        "word/document.xml/body/p[1850]",
+        "word/document.xml/body/p[1852]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-2936ef5a513ec429aa132e1a",
+      "rrf_score": 0.031754032258064516,
+      "routes": {
+        "bm25": {
+          "rank": 4,
+          "raw_score": 15.415167808532715
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.7049258935559034
+        }
+      },
+      "rerank_raw_logit_difference": 6.1875,
+      "rerank_p_yes": 0.9979492564600826,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查"
+      ],
+      "parent_id": "section-56bbce0acab9aa3a814a",
+      "kind": "prose",
+      "text": "部署FAQ / K8S集群软件故障排查 / 基本故障排查\n基本故障排查",
+      "block_ids": [
+        "manual-1edf23113651430f:b002974"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1787]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-8ba926a9b133cfc159707ad8",
+      "rrf_score": 0.027809742999616416,
+      "routes": {
+        "bm25": {
+          "rank": 19,
+          "raw_score": 13.59261703491211
+        },
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.6450975688918845
+        }
+      },
+      "rerank_raw_logit_difference": 5.875,
+      "rerank_p_yes": 0.9971990730328789,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查"
+      ],
+      "parent_id": "section-fec536992e66503b2f87",
+      "kind": "prose",
+      "text": "部署FAQ / K8S集群软件故障排查\nK8S集群软件故障排查",
+      "block_ids": [
+        "manual-1edf23113651430f:b002973"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1786]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-173ecb6d3d876af1395e3b74",
+      "rrf_score": 0.03125763125763126,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 15.474991798400879
+        },
+        "dense": {
+          "rank": 5,
+          "raw_score": 0.647187183234456
+        }
+      },
+      "rerank_raw_logit_difference": 3.5,
+      "rerank_p_yes": 0.9706877692486436,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "parent_id": "section-6ce42cd6a967c385307e",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\n如果pod状态为Error或crashloopbackoff异常，可以查看pod运行日志",
+      "block_ids": [
+        "manual-1edf23113651430f:b002992"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1805]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-5433f2361d7cbceae8092553",
+      "rrf_score": 0.031009615384615385,
+      "routes": {
+        "bm25": {
+          "rank": 5,
+          "raw_score": 14.82730770111084
+        },
+        "dense": {
+          "rank": 4,
+          "raw_score": 0.6517328017658034
+        }
+      },
+      "rerank_raw_logit_difference": 3.4375,
+      "rerank_p_yes": 0.9688561694652216,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "parent_id": "section-6ce42cd6a967c385307e",
+      "kind": "command",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> describe pods <pod-name>",
+      "block_ids": [
+        "manual-1edf23113651430f:b002990"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1803]"
+      ],
+      "command_id": "cmd-bf37de02499f3d23",
+      "command_family": "other",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-fb7bc2a93813a5faee1ad595",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nPod状态异常\nPOD状态Pending异常，一般由于节点不满足运行要求、pod调度失败会处于Pending状态，使用describe命令查看错误信息：",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002988",
+            "manual-1edf23113651430f:b002989"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1801]",
+            "word/document.xml/body/p[1802]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-8b7190a7813bebeffe210cc7",
+      "rrf_score": 0.02803921568627451,
+      "routes": {
+        "bm25": {
+          "rank": 8,
+          "raw_score": 14.53536605834961
+        },
+        "dense": {
+          "rank": 15,
+          "raw_score": 0.6004943895095924
+        }
+      },
+      "rerank_raw_logit_difference": 3.4375,
+      "rerank_p_yes": 0.9688561694652216,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "集群安装问题"
+      ],
+      "parent_id": "section-8baf65985aebaf898945",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / 集群安装问题\n集群安装问题\n集群安装失败时，集群安装过程中输出的日志信息有限，一般需要进一步检查kubernetes系统进程例如kubelet、containerd状态及日志。\n1.\t查看kubelet运行状态",
+      "block_ids": [
+        "manual-1edf23113651430f:b002975",
+        "manual-1edf23113651430f:b002976",
+        "manual-1edf23113651430f:b002977"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1788]",
+        "word/document.xml/body/p[1789]",
+        "word/document.xml/body/p[1790]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-7d6750acd76fa1ca0043ec44",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / 集群安装问题\nsystemctl status kubelet",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002978"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1791]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-d228af64df28fdea95b91934",
+      "rrf_score": 0.02964426877470356,
+      "routes": {
+        "bm25": {
+          "rank": 6,
+          "raw_score": 14.740350723266602
+        },
+        "dense": {
+          "rank": 9,
+          "raw_score": 0.6401284145232847
+        }
+      },
+      "rerank_raw_logit_difference": 3.0,
+      "rerank_p_yes": 0.9525741268224334,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "parent_id": "section-6ce42cd6a967c385307e",
+      "kind": "command",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> logs -f <pod-name>",
+      "block_ids": [
+        "manual-1edf23113651430f:b002993"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1806]"
+      ],
+      "command_id": "cmd-a029187449e258c7",
+      "command_family": "other",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-431e9c929de7ea7de7c14431",
+      "rrf_score": 0.013333333333333334,
+      "routes": {
+        "bm25": {
+          "rank": 15,
+          "raw_score": 14.160395622253418
+        }
+      },
+      "rerank_raw_logit_difference": 2.6875,
+      "rerank_p_yes": 0.9362850057480346,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Flannel pod异常"
+      ],
+      "parent_id": "section-bdf04987dddc916b1c6a",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Flannel pod异常\nFlannel pod异常\n未配置网关地址时，flannle pod将处于异常状态。主机网络必须配置网关地址",
+      "block_ids": [
+        "manual-1edf23113651430f:b003030",
+        "manual-1edf23113651430f:b003031"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1842]",
+        "word/document.xml/body/p[1843]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,51 @@
+{
+  "row": {
+    "id": "knowledge-004",
+    "model": "target",
+    "evidence_sha256": "9d68871d15a3cb21863d9d218fa8c401a5ebcd041430eb0e6130d10a54a87644",
+    "elapsed_ms": 26899.54054588452,
+    "usage": {
+      "requests": 1,
+      "prompt_tokens_observed": 3683,
+      "completion_tokens_observed": 384,
+      "usage_responses": 1
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）’解释说明和关键字段，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "not_run",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "status": "failed",
+    "missing_information": [
+      "生成或引用校验失败，未发布未经验证的回答。"
+    ],
+    "error": "1 validation error for EvidenceGate\n  Invalid JSON: EOF while parsing a string at line 15 column 358 [type=json_invalid, input_value='{\\n  \"has_relevant_evide...'S5Q1\\', \\'S5Q2\\', \\'S5', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "pipeline_identity": "bb857ccc332c28e3978c19c296d4a2762b10a59a7bbf960e0c1da4035b21b9df",
+  "suite_sha256": "a1060098d02e7df07bac3d507666c65e62c0c079ea096d7624df452fd578a190",
+  "development_summary_sha256": "616f25686441f1d7dd1712016dc046316069e28bb373954c43c9b96cdea7dd47",
+  "development_adjudication_sha256": "1316319f2447975e0408416793a8d44b5efef2beb4bee4a2fce662e917e15f42",
+  "gates": {
+    "P6_1_current_development_human_semantics": {
+      "pass": true,
+      "support": {
+        "n": 60,
+        "pass": 60,
+        "rate": 1.0
+      },
+      "completeness": {
+        "n": 60,
+        "pass": 60,
+        "rate": 1.0
+      }
+    },
+    "P6_2_default_baseline_selection": {
+      "supported": true,
+      "strict_current_target_ab": false,
+      "decision": "runs/p6-v4-v5e/P6模型与Agent决策草案.md"
+    },
+    "P6_3_agent_gain": {
+      "comparison_performed": true,
+      "business_gain_validated": false,
+      "selection": "explicit fixed tools/manual direct preferred"
+    },
+    "P6_4_manual_full_answer_budget": {
+      "pass": true,
+      "p95_ms": 2782.409332692623
+    },
+    "P6_4_log_diagnosis_budget": {
+      "pass": true,
+      "p95_ms": 58356.89741419628
+    },
+    "P6_4_current_resource_sample": {
+      "available": true,
+      "shared_job_attribution_limit": true
+    },
+    "P6_4_current_cli_first_visible": {
+      "measured": false,
+      "pass": false,
+      "blocker": "shared GPU occupancy prevents baseline model startup",
+      "feasibility_assessment": "runs/p6-v4-v5e/gpu_start_assessment.json",
+      "same_model_alternate_service_formal_compatible": false
+    },
+    "P6_5_configuration_accepted": {
+      "pass": false,
+      "draft": "eval/p6/development_decision.v5e.draft.json"
+    },
+    "P6_5_heldout_executed": {
+      "pass": false,
+      "marker_absent": true
+    }
+  },
+  "freeze_ready": false,
+  "M6_pass": false
+}

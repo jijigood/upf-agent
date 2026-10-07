@@ -1,0 +1,16 @@
+
+==================================== ERRORS ====================================
+__________________ ERROR collecting tests/test_p3_literal.py ___________________
+ImportError while importing test module '/home/huangxiaolin/upf-agent/tests/test_p3_literal.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_p3_literal.py:2: in <module>
+    from upf_agent.p3_literal import literal_extracts
+E   ModuleNotFoundError: No module named 'upf_agent.p3_literal'
+=========================== short test summary info ============================
+ERROR tests/test_p3_literal.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.17s

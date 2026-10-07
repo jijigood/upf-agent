@@ -1,0 +1,1500 @@
+{
+  "suite_sha256": "b90fed730ee01ab5688e36209fd518dbfe020ac984fa91ddf4b1576cd2f25cf6",
+  "split": "dev",
+  "rows": [
+    {
+      "id": "command-001",
+      "elapsed_ms": 3197.873679921031,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7653606369886217
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6364391809889587
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.4776237035032179
+        },
+        "reranked": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.16716045496620227
+        }
+      },
+      "context_tokens": 1929,
+      "evidence_hash": "0e08b75cc58d9a8884dde7db30a679afe2d217a0a75de042a8b82767f22bfb8e"
+    },
+    {
+      "id": "command-002",
+      "elapsed_ms": 2649.670816026628,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.3333333333333333,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "bm25": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.617319681505689
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "reranked": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        }
+      },
+      "context_tokens": 1706,
+      "evidence_hash": "e203bf3d60b8cbd14cde93ea660f774968d7094137cb0d073d225729a9d9a040"
+    },
+    {
+      "id": "command-003",
+      "elapsed_ms": 2083.4124661050737,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6713860725233041
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5508095940041026
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6713860725233041
+        }
+      },
+      "context_tokens": 1473,
+      "evidence_hash": "eb5615b3ebb2a3f24c3e2a52bd455776b12bd0265464a3c57c50efc03429851a"
+    },
+    {
+      "id": "command-004",
+      "elapsed_ms": 1829.0226152166724,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.3333333333333333,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "bm25": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.617319681505689
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "reranked": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6364391809889587
+        }
+      },
+      "context_tokens": 1675,
+      "evidence_hash": "7e1ed4f9811ae3642353e873e17f404229f92b79fb832ba32449342b0347142c"
+    },
+    {
+      "id": "command-005",
+      "elapsed_ms": 2038.1431300193071,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.9166666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 0.5833333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7645921559984156
+        },
+        "rrf": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9202054614375518
+        },
+        "reranked": {
+          "recall_at_20": 0.5,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.27226583754341377
+        }
+      },
+      "context_tokens": 1600,
+      "evidence_hash": "04b24ffbc7b2c74a296fa9e38972a2183f7e9d3763a992d571bcfcd90de8f4f4"
+    },
+    {
+      "id": "command-006",
+      "elapsed_ms": 1930.1220830529928,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.08333333333333333,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.2529427027676571
+        },
+        "bm25": {
+          "recall_at_20": 0.9166666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8910635073822442
+        },
+        "dense": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8178341711089538
+        },
+        "rrf": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 0.4166666666666667,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.4592085927139339
+        }
+      },
+      "context_tokens": 1239,
+      "evidence_hash": "a650e9af3ec070010ded8c327ed8db6c70aea2865d84b330746bc8c1f04f2be0"
+    },
+    {
+      "id": "command-007",
+      "elapsed_ms": 1867.0830531045794,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8910635073822442
+        },
+        "dense": {
+          "recall_at_20": 0.5833333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7645921559984156
+        },
+        "rrf": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9202054614375518
+        },
+        "reranked": {
+          "recall_at_20": 0.5,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.36585496707117304
+        }
+      },
+      "context_tokens": 1435,
+      "evidence_hash": "145b8bf0e80bd7006ddbd35054b66addfd2841830f5a293c7522dcee00a8d67a"
+    },
+    {
+      "id": "command-008",
+      "elapsed_ms": 1856.3636620528996,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.08333333333333333,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.2529427027676571
+        },
+        "bm25": {
+          "recall_at_20": 0.9166666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8067492731263585
+        },
+        "dense": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8358912271816661
+        },
+        "rrf": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 0.75,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.41253177989255346
+        }
+      },
+      "context_tokens": 1529,
+      "evidence_hash": "4b0882a8356cf1a22b1a70d4dcf85d1ba6d584bfeb1267a1e30b06d759668e45"
+    },
+    {
+      "id": "command-009",
+      "elapsed_ms": 2227.482776157558,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8480740740411332
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.892210845475489
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8573475126545858
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7402849195166222
+        }
+      },
+      "context_tokens": 825,
+      "evidence_hash": "ef080d64fde651c1d335f7e052b78e256799ce16953b730c7d6aa007e4e80fa8"
+    },
+    {
+      "id": "command-010",
+      "elapsed_ms": 2578.0825978145003,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.16666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.30260241349881345
+        },
+        "bm25": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7751482523375255
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.892210845475489
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.892210845475489
+        },
+        "reranked": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7456919575934261
+        }
+      },
+      "context_tokens": 744,
+      "evidence_hash": "2501a303229880aca83d9684b62294eb6266536e5c101ae42ab753844febad49"
+    },
+    {
+      "id": "command-011",
+      "elapsed_ms": 2260.123219806701,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7456919575934261
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.540715333933695
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.601312434202259
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7193074786775862
+        }
+      },
+      "context_tokens": 437,
+      "evidence_hash": "f7f6c1863c26a9e367e64f41259a477c77eb8ec87ea690b33672023dcb955663"
+    },
+    {
+      "id": "command-012",
+      "elapsed_ms": 2483.0302190966904,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.16666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.30260241349881345
+        },
+        "bm25": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7751482523375255
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8760157235037966
+        },
+        "rrf": {
+          "recall_at_20": 0.8333333333333334,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7751482523375255
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7618870795651185
+        }
+      },
+      "context_tokens": 822,
+      "evidence_hash": "e0710b047aad0d77b85dee5093b9cb3d59c77f2f03e9af110a09d8072d5cbbcb"
+    },
+    {
+      "id": "command-013",
+      "elapsed_ms": 2094.3631008267403,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9202054614375518
+        }
+      },
+      "context_tokens": 502,
+      "evidence_hash": "54caea5b2c0408ac82d8425117c1520bc33ab9574d130567fb1e0e1da09dd327"
+    },
+    {
+      "id": "command-014",
+      "elapsed_ms": 2563.849409110844,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.1,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.2529427027676571
+        },
+        "bm25": {
+          "recall_at_20": 0.4,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.647939623894138
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8358912271816661
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 368,
+      "evidence_hash": "09928bbfb2e4048b6648a410b612158648800d18985580892cdddee8f55e433b"
+    },
+    {
+      "id": "command-015",
+      "elapsed_ms": 2112.8625529818237,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 368,
+      "evidence_hash": "5bfb5c2e6332c1e802d84f80666de9e76554323a07d0e21cd1316b53b0227f5c"
+    },
+    {
+      "id": "command-016",
+      "elapsed_ms": 2906.4715555869043,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.1,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.2529427027676571
+        },
+        "bm25": {
+          "recall_at_20": 0.4,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.647939623894138
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9156857657441143
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 368,
+      "evidence_hash": "b4ccb3a0b6c82479451c97613b0d48b9005c8aa4e634d49998fd65affca66000"
+    },
+    {
+      "id": "command-017",
+      "elapsed_ms": 2477.2877278737724,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8710785440003369
+        }
+      },
+      "context_tokens": 537,
+      "evidence_hash": "e6cb00c4939fe697b7d3280a49cf5d7dc1e5b21db122b234472cb4fb028435ae"
+    },
+    {
+      "id": "command-018",
+      "elapsed_ms": 2265.1391881518066,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.3333333333333333,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8529278650606567
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9674679834891693
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8854598815714874
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9217868789962071
+        }
+      },
+      "context_tokens": 545,
+      "evidence_hash": "972e5521aa6ec4e0c4345a4473f7efb94dfb8ddae1e931ec5d859fba459ed6c5"
+    },
+    {
+      "id": "command-019",
+      "elapsed_ms": 2203.545660711825,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9674679834891693
+        }
+      },
+      "context_tokens": 468,
+      "evidence_hash": "e90209943ebd27e570c0c539a941a387e05b651c02cb11887bbf67842e4e41cc"
+    },
+    {
+      "id": "command-020",
+      "elapsed_ms": 2508.4520131349564,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.3333333333333333,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.46927872602275644
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8529278650606567
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9469024295259745
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9217868789962071
+        }
+      },
+      "context_tokens": 533,
+      "evidence_hash": "cc09d4e2e9c702f7ba9e31747903353b49c4e2b6b63ac0f6cdf65e29204fc533"
+    },
+    {
+      "id": "knowledge-001",
+      "elapsed_ms": 1926.4064603485167,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 741,
+      "evidence_hash": "1d14de865eb2dde3ce77dd586f19713e16e9b1c0d9d55010c989c3fe4a0b5e22"
+    },
+    {
+      "id": "knowledge-002",
+      "elapsed_ms": 1888.0263329483569,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6309297535714575
+        }
+      },
+      "context_tokens": 1151,
+      "evidence_hash": "26eec66aefd90003caa5ee2c08e52f3ca84e2cba8b3d00c5dce6f551bd7efc95"
+    },
+    {
+      "id": "knowledge-003",
+      "elapsed_ms": 2215.31006321311,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5173087569496825
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5931729515195112
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5256940434743352
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9325210919548239
+        }
+      },
+      "context_tokens": 2039,
+      "evidence_hash": "a2bd50eb7f1a8cf4a5871258a43392e4b4bc0f38bb35ccd6668c7ca8127ef968"
+    },
+    {
+      "id": "knowledge-004",
+      "elapsed_ms": 2160.100686829537,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5173087569496825
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6546154994739983
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5508095940041026
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9469024295259745
+        }
+      },
+      "context_tokens": 1447,
+      "evidence_hash": "9d68871d15a3cb21863d9d218fa8c401a5ebcd041430eb0e6130d10a54a87644"
+    },
+    {
+      "id": "knowledge-005",
+      "elapsed_ms": 2367.7671919576824,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.8,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6548086577531307
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.9609247825245575
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7678620595110026
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.49661976912920763
+        }
+      },
+      "context_tokens": 2179,
+      "evidence_hash": "da28cbd9f4974ccc33cd1e5946a27163468bb2e6705dcbf9633083f4e0ea9ca5"
+    },
+    {
+      "id": "knowledge-006",
+      "elapsed_ms": 2255.5889929644763,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.8,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6548086577531307
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.830419897363192
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6548086577531307
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6217645772509411
+        }
+      },
+      "context_tokens": 2243,
+      "evidence_hash": "e2ce166b652827dcc8f81f3b8008b692f702d1d95800818d43db5ebb2197d443"
+    },
+    {
+      "id": "knowledge-007",
+      "elapsed_ms": 2457.2697281837463,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.1480409554829326
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5256940434743352
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.8385465274895063
+        }
+      },
+      "context_tokens": 2978,
+      "evidence_hash": "af9f20f0dcdd6a812de0da3e638cdcd9e9ccfa4bc166504575dc5f3bc1df55ef"
+    },
+    {
+      "id": "knowledge-008",
+      "elapsed_ms": 2521.344243083149,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.6666666666666666,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.1480409554829326
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.36926780146674987
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6112833214150002
+        }
+      },
+      "context_tokens": 3000,
+      "evidence_hash": "72517f5f67ced43c67561ed689d1ac655ab1263d55e333a9f3185f5848457db2"
+    },
+    {
+      "id": "knowledge-009",
+      "elapsed_ms": 1750.5203639157116,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.5555555555555556,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.647939623894138
+        },
+        "dense": {
+          "recall_at_20": 0.8888888888888888,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.5390031312763821
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6187976698388302
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6705163756602877
+        }
+      },
+      "context_tokens": 1590,
+      "evidence_hash": "efdf8b053c6d2856206a9af0f0f505dc70149e2c543cd387c28399100bb99d1e"
+    },
+    {
+      "id": "knowledge-010",
+      "elapsed_ms": 1715.3150821104646,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 0.5555555555555556,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.647939623894138
+        },
+        "dense": {
+          "recall_at_20": 0.8888888888888888,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6187976698388302
+        },
+        "rrf": {
+          "recall_at_20": 0.8888888888888888,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6233173655322678
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.7606163843126554
+        }
+      },
+      "context_tokens": 1340,
+      "evidence_hash": "1f44912cec36a02f28c5bea449d204e4850cd93de0ef2efa84202975c393e836"
+    },
+    {
+      "id": "troubleshooting-001",
+      "elapsed_ms": 1802.435936871916,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 1342,
+      "evidence_hash": "e96c6aa687f54a202d7a6a4d99c26b8f3bf23aed25eb5263361d03dc90771dbd"
+    },
+    {
+      "id": "troubleshooting-002",
+      "elapsed_ms": 1612.0536508969963,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 462,
+      "evidence_hash": "7cdf86614c7c34bcaf8cb9d93a1367c66ccb12b52981e42b74626dbb80db5519"
+    },
+    {
+      "id": "troubleshooting-003",
+      "elapsed_ms": 2007.3937699198723,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.3562071871080222
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.43067655807339306
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.38685280723454163
+        }
+      },
+      "context_tokens": 1237,
+      "evidence_hash": "77edf8ca3afbf6ab0bc631c25ff8de51b84ae62bd859eb85e07c740e67c232da"
+    },
+    {
+      "id": "troubleshooting-004",
+      "elapsed_ms": 2137.606085743755,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.43067655807339306
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.38685280723454163
+        }
+      },
+      "context_tokens": 995,
+      "evidence_hash": "975136822a9929bb30404c7b43df7a4c16545c7cc1900739fc586934185a423d"
+    },
+    {
+      "id": "troubleshooting-005",
+      "elapsed_ms": 2018.1228262372315,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.43067655807339306
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.38685280723454163
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.3562071871080222
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.6309297535714575
+        }
+      },
+      "context_tokens": 2132,
+      "evidence_hash": "cf24be4e28a30ee54a8d378aadd0e5f18ba97a2f148fe46878a2f35a4cfc13cb"
+    },
+    {
+      "id": "troubleshooting-006",
+      "elapsed_ms": 2102.7791779488325,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.43067655807339306
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.38685280723454163
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.3562071871080222
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 0.3562071871080222
+        }
+      },
+      "context_tokens": 1711,
+      "evidence_hash": "57022c5699c7626c86ad30ae75482f5e0ef0ba61d4e599c1fe581c98d04f7cbf"
+    },
+    {
+      "id": "troubleshooting-007",
+      "elapsed_ms": 1984.2464923858643,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 1447,
+      "evidence_hash": "2f7c85118e03546b5462cac8da30d0f4d3d3131035ff970b372156f44d38ef28"
+    },
+    {
+      "id": "troubleshooting-008",
+      "elapsed_ms": 1985.336886253208,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 1504,
+      "evidence_hash": "ddae73f095a33fb2de2c27a2f12f239e2128fb8c79cc304386a1f6605bcc6902"
+    },
+    {
+      "id": "troubleshooting-009",
+      "elapsed_ms": 1931.0122421011329,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 1640,
+      "evidence_hash": "9043ffe82e52bfa4e90321ca1200d74a73f02b56b8c30d308f0c7d3144106a3c"
+    },
+    {
+      "id": "troubleshooting-010",
+      "elapsed_ms": 2025.454404298216,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": 0.0,
+          "hit_at_20": 0.0,
+          "ndcg_at_8": 0.0
+        },
+        "bm25": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "dense": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "rrf": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        },
+        "reranked": {
+          "recall_at_20": 1.0,
+          "hit_at_20": 1.0,
+          "ndcg_at_8": 1.0
+        }
+      },
+      "context_tokens": 1101,
+      "evidence_hash": "b25fe99d83f30454b8a2feb28614dd014f1700160e64c821d61c5b3cfa2e3cae"
+    },
+    {
+      "id": "missing-003",
+      "elapsed_ms": 1817.7689327858388,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "bm25": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "dense": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "rrf": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "reranked": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        }
+      },
+      "context_tokens": 1188,
+      "evidence_hash": "e263495d3ef04df7165dc8ed14589fc9f1a5ca820488098b8a2c01c3b0d6d563"
+    },
+    {
+      "id": "missing-004",
+      "elapsed_ms": 1671.15593329072,
+      "label_status": "draft",
+      "metrics_scope": "draft_source_group_proxy_not_human_relevance",
+      "routes": {
+        "exact": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "bm25": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "dense": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "rrf": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        },
+        "reranked": {
+          "recall_at_20": null,
+          "hit_at_20": null,
+          "ndcg_at_8": null
+        }
+      },
+      "context_tokens": 1223,
+      "evidence_hash": "eb9feb929a6a0f7ce4b97489d90463dec2be5646a5ed9c5077934091e7aafad9"
+    }
+  ],
+  "model_loading_ms": 13489.511999301612,
+  "warm_retrieval_ms": {
+    "n": 42,
+    "p50": 2094.3631008267403,
+    "p95": 2649.670816026628
+  },
+  "process_lifetime_rss_bytes": 562135040,
+  "formal_recall_or_business_accuracy": false,
+  "persistent_workers_scope": "warm workers for this batch; CLI remains task-scoped",
+  "resources": {
+    "sampling_seconds": 0.5,
+    "samples": 120,
+    "gpu_device_peak_used_mib": {
+      "0": 69300,
+      "1": 26030
+    },
+    "app_tree_peak_rss_bytes": 5629845504,
+    "server_tree_peak_rss_bytes": null,
+    "server_pid": null,
+    "errors": [],
+    "scope": "sampled process-tree totals and physical GPU usage; GPU shared jobs included, peaks between samples may be missed"
+  },
+  "previous_draft_sha256": "4d488e5f3f798a61d0cdc0051b5aa4fbec209c322823dec24d7f7e92aed1ac49",
+  "rebound_before_model_comparison_same_retrieved_cases": true
+}

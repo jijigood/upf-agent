@@ -1,0 +1,25 @@
+{
+  "suite_sha256": "9a4b81454509cde5c68bdaa27063f96fc05dd97255d930ecb67158f63dd41e22",
+  "old_reviewed_suite_sha256": "a1060098d02e7df07bac3d507666c65e62c0c079ea096d7624df452fd578a190",
+  "old_heldout_reclassified_as_development": 60,
+  "new_heldout_draft": 60,
+  "new_heldout_human_reviewed": 0,
+  "new_heldout_executed": false,
+  "old_new_group_overlap": 0,
+  "category_counts": {
+    "command": 20,
+    "knowledge": 10,
+    "troubleshooting": 10,
+    "log": 10,
+    "topology": 5,
+    "missing": 5
+  },
+  "topology_fixture_sha256": {
+    "topology_synthetic_10.csv": "5e9c26df0bb4ca16d0a1b0f45271b2e3a2981560b20c401d57e2b91724d89671",
+    "topology_synthetic_11.csv": "e7b764000e8b9b0bfd1333fbf4472680709b5d410925aa63c73349f09c302c10",
+    "topology_synthetic_13.csv": "cd7287687513aac403f6efa27eb670451ec24c8dcba1559236e7603fe1ab6c8a",
+    "topology_synthetic_12.csv": "7dfba3b8b90fbb45d91f6a7b1cc8b3d826fbf9093988eef5f976e82859246c3b",
+    "topology_synthetic_14.csv": "a25bc65ea2ffb9779c61a4cec8c9705270038bf12f7f8f16f5558bad9d991b9c"
+  },
+  "formal_M6_pass": false
+}

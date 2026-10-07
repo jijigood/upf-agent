@@ -1,0 +1,2138 @@
+{
+  "row": {
+    "case": "log-009",
+    "mode": "finite_agent",
+    "task_id": "157eec0a5c414dde85aef9247e2be0f0",
+    "elapsed_ms": 38827.935280278325,
+    "tool_attempts": 4,
+    "model_calls": 2,
+    "status": "partial",
+    "representative_log_ids": [
+      "log-a698d029342259b7-123369",
+      "log-a698d029342259b7-1683",
+      "log-a698d029342259b7-223312",
+      "log-a698d029342259b7-228664",
+      "log-a698d029342259b7-4545",
+      "log-a698d029342259b7-478508",
+      "log-a698d029342259b7-6013182",
+      "log-a698d029342259b7-6019956",
+      "log-a698d029342259b7-6191116",
+      "log-a698d029342259b7-6197938",
+      "log-a698d029342259b7-6728"
+    ],
+    "requested_event_evidence_hit": true,
+    "root_cause_accuracy": null,
+    "human_business_accuracy": null
+  },
+  "result": {
+    "state": {
+      "task": {
+        "run_id": "157eec0a5c414dde85aef9247e2be0f0",
+        "question": "查询 license_not_installed 的代表日志，保留发生/解除/正常状态。",
+        "task_type": "diagnose",
+        "attachment_ids": [],
+        "product": null,
+        "version": null,
+        "device_ids": [],
+        "time_window": null,
+        "interactive": false,
+        "log_generation": "a6f18ac81a18aa2125fa",
+        "topology_generation": null,
+        "manual_generation": "c61e9796eead2610cfd4",
+        "model_profile": "baseline",
+        "retrieval_device": "cuda:1",
+        "mode": "agent",
+        "session_id": null,
+        "budget": {
+          "max_rounds": 3,
+          "max_tool_calls": 8,
+          "max_model_calls": 8,
+          "timeout_seconds": 180.0
+        },
+        "execution_fingerprint": "2306578f9f913fcc34c09b2438eeffea890a6860c3e8fd0e40a06c8d31655687"
+      },
+      "route": "diagnose",
+      "receipts": [
+        {
+          "key": "21f97e126b5aa43b57d7caedc5a752ef16ed15e34386023ddc9e9215f86f4df3",
+          "call": {
+            "name": "analyze_log_window",
+            "arguments": {
+              "log_id": "a6f18ac81a18aa2125fa",
+              "window": null,
+              "device_id": null,
+              "event_type": null,
+              "bucket_minutes": 60
+            }
+          },
+          "packet": {
+            "result": {
+              "status": "completed",
+              "data": {
+                "total_events": 32539,
+                "physical_lines": 32539,
+                "source_bytes": 6347974,
+                "generation": "a6f18ac81a18aa2125fa",
+                "counts": [
+                  {
+                    "event_type": "unclassified",
+                    "event_state": "unknown",
+                    "messages": 22718
+                  },
+                  {
+                    "event_type": "pfcp_session_deleted",
+                    "event_state": "observed",
+                    "messages": 5715
+                  },
+                  {
+                    "event_type": "far_handover",
+                    "event_state": "observed",
+                    "messages": 3238
+                  },
+                  {
+                    "event_type": "gtpu_echo_retry",
+                    "event_state": "observed",
+                    "messages": 382
+                  },
+                  {
+                    "event_type": "gtpu_unreachable_detected",
+                    "event_state": "raised",
+                    "messages": 120
+                  },
+                  {
+                    "event_type": "gtpu_unreachable_report",
+                    "event_state": "raised",
+                    "messages": 120
+                  },
+                  {
+                    "event_type": "interface_index_failure",
+                    "event_state": "observed",
+                    "messages": 111
+                  },
+                  {
+                    "event_type": "n4_name_failure",
+                    "event_state": "observed",
+                    "messages": 30
+                  },
+                  {
+                    "event_type": "pfcp_heartbeat_request",
+                    "event_state": "observed",
+                    "messages": 23
+                  },
+                  {
+                    "event_type": "upfd_start",
+                    "event_state": "observed",
+                    "messages": 21
+                  },
+                  {
+                    "event_type": "timer_init_failure",
+                    "event_state": "observed",
+                    "messages": 16
+                  },
+                  {
+                    "event_type": "pfcp_node_unreachable",
+                    "event_state": "raised",
+                    "messages": 14
+                  },
+                  {
+                    "event_type": "pfcp_node_unreachable",
+                    "event_state": "cleared",
+                    "messages": 12
+                  },
+                  {
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "messages": 11
+                  },
+                  {
+                    "event_type": "pfcp_heartbeat_response",
+                    "event_state": "observed",
+                    "messages": 7
+                  },
+                  {
+                    "event_type": "license_not_installed",
+                    "event_state": "raised",
+                    "messages": 1
+                  }
+                ],
+                "representatives": [
+                  {
+                    "event_type": "far_handover",
+                    "first_event_id": "log-a698d029342259b7-12005",
+                    "last_event_id": "log-a698d029342259b7-6337704"
+                  },
+                  {
+                    "event_type": "gtpu_echo_retry",
+                    "first_event_id": "log-a698d029342259b7-14801",
+                    "last_event_id": "log-a698d029342259b7-6341444"
+                  },
+                  {
+                    "event_type": "gtpu_unreachable_detected",
+                    "first_event_id": "log-a698d029342259b7-17561",
+                    "last_event_id": "log-a698d029342259b7-6326728"
+                  },
+                  {
+                    "event_type": "gtpu_unreachable_report",
+                    "first_event_id": "log-a698d029342259b7-17664",
+                    "last_event_id": "log-a698d029342259b7-6326831"
+                  },
+                  {
+                    "event_type": "interface_index_failure",
+                    "first_event_id": "log-a698d029342259b7-2080",
+                    "last_event_id": "log-a698d029342259b7-6221806"
+                  },
+                  {
+                    "event_type": "license_not_installed",
+                    "first_event_id": "log-a698d029342259b7-1683",
+                    "last_event_id": "log-a698d029342259b7-6218178"
+                  },
+                  {
+                    "event_type": "n4_name_failure",
+                    "first_event_id": "log-a698d029342259b7-4665",
+                    "last_event_id": "log-a698d029342259b7-6221623"
+                  },
+                  {
+                    "event_type": "pfcp_heartbeat_request",
+                    "first_event_id": "log-a698d029342259b7-3182914",
+                    "last_event_id": "log-a698d029342259b7-6347556"
+                  },
+                  {
+                    "event_type": "pfcp_heartbeat_response",
+                    "first_event_id": "log-a698d029342259b7-3183220",
+                    "last_event_id": "log-a698d029342259b7-4297294"
+                  },
+                  {
+                    "event_type": "pfcp_node_unreachable",
+                    "first_event_id": "log-a698d029342259b7-5967589",
+                    "last_event_id": "log-a698d029342259b7-6347849"
+                  },
+                  {
+                    "event_type": "pfcp_session_deleted",
+                    "first_event_id": "log-a698d029342259b7-13071",
+                    "last_event_id": "log-a698d029342259b7-6338869"
+                  },
+                  {
+                    "event_type": "timer_init_failure",
+                    "first_event_id": "log-a698d029342259b7-972",
+                    "last_event_id": "log-a698d029342259b7-6229664"
+                  },
+                  {
+                    "event_type": "unclassified",
+                    "first_event_id": "log-a698d029342259b7-0",
+                    "last_event_id": "log-a698d029342259b7-6345419"
+                  },
+                  {
+                    "event_type": "upfd_start",
+                    "first_event_id": "log-a698d029342259b7-231",
+                    "last_event_id": "log-a698d029342259b7-6217506"
+                  }
+                ],
+                "peak_bucket": [],
+                "entity_representatives": [
+                  {
+                    "device_id": null,
+                    "peer_ip": "2408:8142:60ff:fc01:1706:406::",
+                    "messages": 138,
+                    "example_event_id": "log-a698d029342259b7-3144399"
+                  },
+                  {
+                    "device_id": null,
+                    "peer_ip": "2408:8142:60ff:fc02:1706:406::",
+                    "messages": 113,
+                    "example_event_id": "log-a698d029342259b7-3136194"
+                  },
+                  {
+                    "device_id": null,
+                    "peer_ip": "2408:8142:60ff:fc0b:171f:406::",
+                    "messages": 2,
+                    "example_event_id": "log-a698d029342259b7-6327639"
+                  },
+                  {
+                    "device_id": null,
+                    "peer_ip": "2408:8142:60ff:fc0b:1721:406::",
+                    "messages": 2,
+                    "example_event_id": "log-a698d029342259b7-6327150"
+                  },
+                  {
+                    "device_id": null,
+                    "peer_ip": "2408:8142:60ff:fc0c:171f:406::",
+                    "messages": 2,
+                    "example_event_id": "log-a698d029342259b7-6328128"
+                  },
+                  {
+                    "device_id": null,
+                    "peer_ip": "2408:8142:60ff:fc0c:1721:406::",
+                    "messages": 2,
+                    "example_event_id": "log-a698d029342259b7-6328617"
+                  }
+                ],
+                "entity_representatives_truncated": false,
+                "buckets": [],
+                "bucket_seconds": 3600,
+                "buckets_truncated": false,
+                "scope": {
+                  "event_type": null,
+                  "device_id": null,
+                  "window": null
+                },
+                "accounting": {
+                  "source_bytes": 6347974,
+                  "physical_lines": 32539,
+                  "line_status_counts": {
+                    "parsed": 32539
+                  }
+                },
+                "_task_scope": "9e62bbc7cdf4b2a781b2342301d7b556ae60c4434c44f6c70fd23cd095b59966"
+              },
+              "evidence_ids": [],
+              "warnings": [
+                "Counts represent log messages, not independent faults; FATAL remains raw severity.",
+                "Timezone unknown: UTC timeline unavailable for unresolved events; no cross-source time correlation."
+              ],
+              "elapsed_ms": 133
+            },
+            "evidence": [
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "full selected scope; {\"log_id\":\"a6f18ac81a18aa2125fa\",\"window\":null,\"device_id\":null,\"event_type\":null,\"bucket_minutes\":60}",
+                "kind": "tool",
+                "excerpt": "{\"total_events\": 32539, \"physical_lines\": 32539, \"source_bytes\": 6347974, \"generation\": \"a6f18ac81a18aa2125fa\", \"counts\": [{\"event_type\": \"unclassified\", \"event_state\": \"unknown\", \"messages\": 22718}, {\"event_type\": \"pfcp_session_deleted\", \"event_state\": \"observed\", \"messages\": 5715}, {\"event_type\": \"far_handover\", \"event_state\": \"observed\", \"messages\": 3238}, {\"event_type\": \"gtpu_echo_retry\", \"event_state\": \"observed\", \"messages\": 382}, {\"event_type\": \"gtpu_unreachable_detected\", \"event_state\": \"raised\", \"messages\": 120}, {\"event_type\": \"gtpu_unreachable_report\", \"event_state\": \"raised\", \"messages\": 120}, {\"event_type\": \"interface_index_failure\", \"event_state\": \"observed\", \"messages\": 111}, {\"event_type\": \"n4_name_failure\", \"event_state\": \"observed\", \"messages\": 30}, {\"event_type\": \"pfcp_heartbeat_request\", \"event_state\": \"observed\", \"messages\": 23}, {\"event_type\": \"upfd_start\", \"event_state\": \"observed\", \"messages\": 21}, {\"event_type\": \"timer_init_failure\", \"event_state\": \"observed\", \"messages\": 16}, {\"event_type\": \"pfcp_node_unreachable\", \"event_state\": \"raised\", \"messages\": 14}, {\"event_type\": \"pfcp_node_unreachable\", \"event_state\": \"cleared\", \"messages\": 12}, {\"event_type\": \"license_not_installed\", \"event_state\": \"cleared\", \"messages\": 11}, {\"event_type\": \"pfcp_heartbeat_response\", \"event_state\": \"observed\", \"messages\": 7}, {\"event_type\": \"license_not_installed\", \"event_state\": \"raised\", \"messages\": 1}], \"representatives\": [{\"event_type\": \"far_handover\", \"first_event_id\": \"log-a698d029342259b7-12005\", \"last_event_id\": \"log-a698d029342259b7-6337704\"}, {\"event_type\": \"gtpu_echo_retry\", \"first_event_id\": \"log-a698d029342259b7-14801\", \"last_event_id\": \"log-a698d029342259b7-6341444\"}, {\"event_type\": \"gtpu_unreachable_detected\", \"first_event_id\": \"log-a698d029342259b7-17561\", \"last_event_id\": \"log-a698d029342259b7-6326728\"}, {\"event_type\": \"gtpu_unreachable_report\", \"first_event_id\": \"log-a698d029342259b7-17664\", \"last_event_id\": \"log-a698d029342259b7-6326831\"}, {\"event_type\": \"interface_index_failure\", \"first_event_id\": \"log-a698d029342259b7-2080\", \"last_event_id\": \"log-a698d029342259b7-6221806\"}, {\"event_type\": \"license_not_installed\", \"first_event_id\": \"log-a698d029342259b7-1683\", \"last_event_id\": \"log-a698d029342259b7-6218178\"}, {\"event_type\": \"n4_name_failure\", \"first_event_id\": \"log-a698d029342259b7-4665\", \"last_event_id\": \"log-a698d029342259b7-6221623\"}, {\"event_type\": \"pfcp_heartbeat_request\", \"first_event_id\": \"log-a698d029342259b7-3182914\", \"last_event_id\": \"log-a698d029342259b7-6347556\"}, {\"event_type\": \"pfcp_heartbeat_response\", \"first_event_id\": \"log-a698d029342259b7-3183220\", \"last_event_id\": \"log-a698d029342259b7-4297294\"}, {\"event_type\": \"pfcp_node_unreachable\", \"first_event_id\": \"log-a698d029342259b7-5967589\", \"last_event_id\": \"log-a698d029342259b7-6347849\"}, {\"event_type\": \"pfcp_session_deleted\", \"first_event_id\": \"log-a698d029342259b7-13071\", \"last_event_id\": \"log-a698d029342259b7-6338869\"}, {\"event_type\": \"timer_init_failure\", \"first_event_id\": \"log-a698d029342259b7-972\", \"last_event_id\": \"log-a698d029342259b7-6229664\"}, {\"event_type\": \"unclassified\", \"first_event_id\": \"log-a698d029342259b7-0\", \"last_event_id\": \"log-a698d029342259b7-6345419\"}, {\"event_type\": \"upfd_start\", \"first_event_id\": \"log-a698d029342259b7-231\", \"last_event_id\": \"log-a698d029342259b7-6217506\"}], \"peak_bucket\": [], \"entity_representatives\": [{\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc01:1706:406::\", \"messages\": 138, \"example_event_id\": \"log-a698d029342259b7-3144399\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc02:1706:406::\", \"messages\": 113, \"example_event_id\": \"log-a698d029342259b7-3136194\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0b:171f:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6327639\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0b:1721:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6327150\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0c:171f:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6328128\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0c:1721:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6328617\"}], \"entity_representatives_truncated\": false, \"buckets\": [], \"bucket_seconds\": 3600, \"buckets_truncated\": false, \"scope\": {\"event_type\": null, \"device_id\": null, \"window\": null}, \"accounting\": {\"source_bytes\": 6347974, \"physical_lines\": 32539, \"line_status_counts\": {\"parsed\": 32539}}}",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "aggregate:a6f18ac81a18aa2125fa:317917850655208e",
+                "metadata": {
+                  "generation": "a6f18ac81a18aa2125fa",
+                  "scope": {
+                    "event_type": null,
+                    "device_id": null,
+                    "window": null
+                  },
+                  "device_id": null,
+                  "synthetic": false
+                }
+              }
+            ],
+            "facts": [
+              {
+                "text": "所选范围包含 32539 条日志事件，覆盖 32539 行；计数单位为消息，不是独立故障。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "unclassified / unknown：22718 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "pfcp_session_deleted / observed：5715 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "far_handover / observed：3238 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "gtpu_echo_retry / observed：382 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "gtpu_unreachable_detected / raised：120 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "gtpu_unreachable_report / raised：120 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "interface_index_failure / observed：111 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "n4_name_failure / observed：30 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "pfcp_heartbeat_request / observed：23 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "upfd_start / observed：21 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "timer_init_failure / observed：16 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "pfcp_node_unreachable / raised：14 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "pfcp_node_unreachable / cleared：12 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "license_not_installed / cleared：11 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "pfcp_heartbeat_response / observed：7 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              },
+              {
+                "text": "license_not_installed / raised：1 条消息。",
+                "evidence_ids": [
+                  "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+                ]
+              }
+            ],
+            "gaps": [],
+            "error_code": null,
+            "retryable": false
+          },
+          "cached": false
+        },
+        {
+          "key": "7e54d3037f4ab54ad637f6f93b24bb619401b0eefacb42090c6c28684b454348",
+          "call": {
+            "name": "find_log_events",
+            "arguments": {
+              "log_id": "a6f18ac81a18aa2125fa",
+              "window": null,
+              "device_id": null,
+              "event_type": "license_not_installed",
+              "event_state": "raised",
+              "protocol": null,
+              "peer_ip": null,
+              "seid": null,
+              "teid": null,
+              "limit": 10
+            }
+          },
+          "packet": {
+            "result": {
+              "status": "completed",
+              "data": {
+                "events": [
+                  {
+                    "event_id": "log-a698d029342259b7-1683",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 16,
+                    "line_end": 16,
+                    "byte_offset": 1683,
+                    "byte_length": 121,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-14 16:07:43.723036",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "raised",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:4",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:9",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-14 16:07:43.723036 ERROR FID.0 upfd_alarm.c:816(upfdAlarmLicenseNotInstall): Report license not installed alarm\r\n"
+                  }
+                ],
+                "truncated": false,
+                "limit": 10,
+                "generation": "a6f18ac81a18aa2125fa",
+                "order": "source_byte_offset",
+                "_task_scope": "9e62bbc7cdf4b2a781b2342301d7b556ae60c4434c44f6c70fd23cd095b59966"
+              },
+              "evidence_ids": [
+                "log-a698d029342259b7-1683"
+              ],
+              "warnings": [],
+              "elapsed_ms": 23
+            },
+            "evidence": [
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-1683",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=16-16;offset=1683",
+                "kind": "log",
+                "excerpt": "2025-05-14 16:07:43.723036 ERROR FID.0 upfd_alarm.c:816(upfdAlarmLicenseNotInstall): Report license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-1683",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-1683",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 16,
+                  "line_end": 16,
+                  "byte_offset": 1683,
+                  "byte_length": 121,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-14 16:07:43.723036",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "raised",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:4",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:9",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-14 16:07:43.723036 ERROR FID.0 upfd_alarm.c:816(upfdAlarmLicenseNotInstall): Report license not installed alarm\r\n"
+                }
+              }
+            ],
+            "facts": [],
+            "gaps": [],
+            "error_code": null,
+            "retryable": false
+          },
+          "cached": false
+        },
+        {
+          "key": "44fde2e27470263bdd19a9b5493218ce6f258e94b53a1bf46d8878780c616615",
+          "call": {
+            "name": "find_log_events",
+            "arguments": {
+              "log_id": "a6f18ac81a18aa2125fa",
+              "window": null,
+              "device_id": null,
+              "event_type": "license_not_installed",
+              "event_state": "cleared",
+              "protocol": null,
+              "peer_ip": null,
+              "seid": null,
+              "teid": null,
+              "limit": 10
+            }
+          },
+          "packet": {
+            "result": {
+              "status": "partial",
+              "data": {
+                "events": [
+                  {
+                    "event_id": "log-a698d029342259b7-4545",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 41,
+                    "line_end": 41,
+                    "byte_offset": 4545,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-14 16:17:05.649346",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-14 16:17:05.649346 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-6728",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 58,
+                    "line_end": 58,
+                    "byte_offset": 6728,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-14 16:21:21.586574",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-14 16:21:21.586574 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-123369",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 763,
+                    "line_end": 763,
+                    "byte_offset": 123369,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-14 20:21:20.404341",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-14 20:21:20.404341 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-223312",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 1409,
+                    "line_end": 1409,
+                    "byte_offset": 223312,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-14 20:33:45.021305",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-14 20:33:45.021305 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-228664",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 1453,
+                    "line_end": 1453,
+                    "byte_offset": 228664,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-14 20:37:26.722956",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-14 20:37:26.722956 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-478508",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 2619,
+                    "line_end": 2619,
+                    "byte_offset": 478508,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-14 21:25:04.558832",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-14 21:25:04.558832 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-6013182",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 30871,
+                    "line_end": 30871,
+                    "byte_offset": 6013182,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-21 21:04:44.681377",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-21 21:04:44.681377 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-6019956",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 30925,
+                    "line_end": 30925,
+                    "byte_offset": 6019956,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-05-21 21:05:32.118887",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-05-21 21:05:32.118887 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-6191116",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 31746,
+                    "line_end": 31746,
+                    "byte_offset": 6191116,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-06-01 07:13:46.804354",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-06-01 07:13:46.804354 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  },
+                  {
+                    "event_id": "log-a698d029342259b7-6197938",
+                    "source_id": "log-a698d029342259b7",
+                    "line_start": 31801,
+                    "line_end": 31801,
+                    "byte_offset": 6197938,
+                    "byte_length": 120,
+                    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                    "timestamp_original": "2025-06-30 13:54:00.445049",
+                    "timestamp_utc": null,
+                    "timezone_status": "unknown",
+                    "device_id": null,
+                    "protocol": null,
+                    "event_type": "license_not_installed",
+                    "event_state": "cleared",
+                    "severity_raw": "ERROR",
+                    "peer_ip": null,
+                    "session": null,
+                    "seid": null,
+                    "teid": null,
+                    "imsi": null,
+                    "interface_type": null,
+                    "port": null,
+                    "rule_id": "upfd-rules-v1:3",
+                    "classification_basis": "message_regex",
+                    "template_id": "a3cd7316c1311b10e2be:21",
+                    "parse_status": "parsed",
+                    "quality_flags": [
+                      "timezone_unresolved"
+                    ],
+                    "masked_fields": [],
+                    "parser_version": "upfd-stream-v1",
+                    "raw_excerpt": "2025-06-30 13:54:00.445049 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                  }
+                ],
+                "truncated": true,
+                "limit": 10,
+                "generation": "a6f18ac81a18aa2125fa",
+                "order": "source_byte_offset",
+                "_task_scope": "9e62bbc7cdf4b2a781b2342301d7b556ae60c4434c44f6c70fd23cd095b59966"
+              },
+              "evidence_ids": [
+                "log-a698d029342259b7-4545",
+                "log-a698d029342259b7-6728",
+                "log-a698d029342259b7-123369",
+                "log-a698d029342259b7-223312",
+                "log-a698d029342259b7-228664",
+                "log-a698d029342259b7-478508",
+                "log-a698d029342259b7-6013182",
+                "log-a698d029342259b7-6019956",
+                "log-a698d029342259b7-6191116",
+                "log-a698d029342259b7-6197938"
+              ],
+              "warnings": [
+                "Result capped; counts must use analyze, not sample length."
+              ],
+              "elapsed_ms": 26
+            },
+            "evidence": [
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-4545",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=41-41;offset=4545",
+                "kind": "log",
+                "excerpt": "2025-05-14 16:17:05.649346 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-4545",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-4545",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 41,
+                  "line_end": 41,
+                  "byte_offset": 4545,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-14 16:17:05.649346",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-14 16:17:05.649346 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6728",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=58-58;offset=6728",
+                "kind": "log",
+                "excerpt": "2025-05-14 16:21:21.586574 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-6728",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-6728",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 58,
+                  "line_end": 58,
+                  "byte_offset": 6728,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-14 16:21:21.586574",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-14 16:21:21.586574 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-123369",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=763-763;offset=123369",
+                "kind": "log",
+                "excerpt": "2025-05-14 20:21:20.404341 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-123369",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-123369",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 763,
+                  "line_end": 763,
+                  "byte_offset": 123369,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-14 20:21:20.404341",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-14 20:21:20.404341 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-223312",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=1409-1409;offset=223312",
+                "kind": "log",
+                "excerpt": "2025-05-14 20:33:45.021305 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-223312",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-223312",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 1409,
+                  "line_end": 1409,
+                  "byte_offset": 223312,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-14 20:33:45.021305",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-14 20:33:45.021305 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-228664",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=1453-1453;offset=228664",
+                "kind": "log",
+                "excerpt": "2025-05-14 20:37:26.722956 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-228664",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-228664",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 1453,
+                  "line_end": 1453,
+                  "byte_offset": 228664,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-14 20:37:26.722956",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-14 20:37:26.722956 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-478508",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=2619-2619;offset=478508",
+                "kind": "log",
+                "excerpt": "2025-05-14 21:25:04.558832 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-478508",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-478508",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 2619,
+                  "line_end": 2619,
+                  "byte_offset": 478508,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-14 21:25:04.558832",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-14 21:25:04.558832 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6013182",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=30871-30871;offset=6013182",
+                "kind": "log",
+                "excerpt": "2025-05-21 21:04:44.681377 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-6013182",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-6013182",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 30871,
+                  "line_end": 30871,
+                  "byte_offset": 6013182,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-21 21:04:44.681377",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-21 21:04:44.681377 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6019956",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=30925-30925;offset=6019956",
+                "kind": "log",
+                "excerpt": "2025-05-21 21:05:32.118887 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-6019956",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-6019956",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 30925,
+                  "line_end": 30925,
+                  "byte_offset": 6019956,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-05-21 21:05:32.118887",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-05-21 21:05:32.118887 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6191116",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=31746-31746;offset=6191116",
+                "kind": "log",
+                "excerpt": "2025-06-01 07:13:46.804354 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-6191116",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-6191116",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 31746,
+                  "line_end": 31746,
+                  "byte_offset": 6191116,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-06-01 07:13:46.804354",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-06-01 07:13:46.804354 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              },
+              {
+                "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6197938",
+                "source_id": "log-a698d029342259b7",
+                "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                "locator": "lines=31801-31801;offset=6197938",
+                "kind": "log",
+                "excerpt": "2025-06-30 13:54:00.445049 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+                "tool_version": "p5-tools-v1",
+                "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+                "native_id": "log-a698d029342259b7-6197938",
+                "metadata": {
+                  "event_id": "log-a698d029342259b7-6197938",
+                  "source_id": "log-a698d029342259b7",
+                  "line_start": 31801,
+                  "line_end": 31801,
+                  "byte_offset": 6197938,
+                  "byte_length": 120,
+                  "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+                  "timestamp_original": "2025-06-30 13:54:00.445049",
+                  "timestamp_utc": null,
+                  "timezone_status": "unknown",
+                  "device_id": null,
+                  "protocol": null,
+                  "event_type": "license_not_installed",
+                  "event_state": "cleared",
+                  "severity_raw": "ERROR",
+                  "peer_ip": null,
+                  "session": null,
+                  "seid": null,
+                  "teid": null,
+                  "imsi": null,
+                  "interface_type": null,
+                  "port": null,
+                  "rule_id": "upfd-rules-v1:3",
+                  "classification_basis": "message_regex",
+                  "template_id": "a3cd7316c1311b10e2be:21",
+                  "parse_status": "parsed",
+                  "quality_flags": [
+                    "timezone_unresolved"
+                  ],
+                  "masked_fields": [],
+                  "parser_version": "upfd-stream-v1",
+                  "raw_excerpt": "2025-06-30 13:54:00.445049 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+                }
+              }
+            ],
+            "facts": [],
+            "gaps": [],
+            "error_code": null,
+            "retryable": false
+          },
+          "cached": false
+        },
+        {
+          "key": "1916e4a4a82126e20ab956bafd6b34f803f7721d162dbf4aeda44960927b1f8a",
+          "call": {
+            "name": "find_log_events",
+            "arguments": {
+              "log_id": "a6f18ac81a18aa2125fa",
+              "window": null,
+              "device_id": null,
+              "event_type": "license_not_installed",
+              "event_state": "observed",
+              "protocol": null,
+              "peer_ip": null,
+              "seid": null,
+              "teid": null,
+              "limit": 10
+            }
+          },
+          "packet": {
+            "result": {
+              "status": "completed",
+              "data": {
+                "events": [],
+                "truncated": false,
+                "limit": 10,
+                "generation": "a6f18ac81a18aa2125fa",
+                "order": "source_byte_offset",
+                "_task_scope": "9e62bbc7cdf4b2a781b2342301d7b556ae60c4434c44f6c70fd23cd095b59966"
+              },
+              "evidence_ids": [],
+              "warnings": [],
+              "elapsed_ms": 23
+            },
+            "evidence": [],
+            "facts": [],
+            "gaps": [],
+            "error_code": null,
+            "retryable": false
+          },
+          "cached": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "full selected scope; {\"log_id\":\"a6f18ac81a18aa2125fa\",\"window\":null,\"device_id\":null,\"event_type\":null,\"bucket_minutes\":60}",
+          "kind": "tool",
+          "excerpt": "{\"total_events\": 32539, \"physical_lines\": 32539, \"source_bytes\": 6347974, \"generation\": \"a6f18ac81a18aa2125fa\", \"counts\": [{\"event_type\": \"unclassified\", \"event_state\": \"unknown\", \"messages\": 22718}, {\"event_type\": \"pfcp_session_deleted\", \"event_state\": \"observed\", \"messages\": 5715}, {\"event_type\": \"far_handover\", \"event_state\": \"observed\", \"messages\": 3238}, {\"event_type\": \"gtpu_echo_retry\", \"event_state\": \"observed\", \"messages\": 382}, {\"event_type\": \"gtpu_unreachable_detected\", \"event_state\": \"raised\", \"messages\": 120}, {\"event_type\": \"gtpu_unreachable_report\", \"event_state\": \"raised\", \"messages\": 120}, {\"event_type\": \"interface_index_failure\", \"event_state\": \"observed\", \"messages\": 111}, {\"event_type\": \"n4_name_failure\", \"event_state\": \"observed\", \"messages\": 30}, {\"event_type\": \"pfcp_heartbeat_request\", \"event_state\": \"observed\", \"messages\": 23}, {\"event_type\": \"upfd_start\", \"event_state\": \"observed\", \"messages\": 21}, {\"event_type\": \"timer_init_failure\", \"event_state\": \"observed\", \"messages\": 16}, {\"event_type\": \"pfcp_node_unreachable\", \"event_state\": \"raised\", \"messages\": 14}, {\"event_type\": \"pfcp_node_unreachable\", \"event_state\": \"cleared\", \"messages\": 12}, {\"event_type\": \"license_not_installed\", \"event_state\": \"cleared\", \"messages\": 11}, {\"event_type\": \"pfcp_heartbeat_response\", \"event_state\": \"observed\", \"messages\": 7}, {\"event_type\": \"license_not_installed\", \"event_state\": \"raised\", \"messages\": 1}], \"representatives\": [{\"event_type\": \"far_handover\", \"first_event_id\": \"log-a698d029342259b7-12005\", \"last_event_id\": \"log-a698d029342259b7-6337704\"}, {\"event_type\": \"gtpu_echo_retry\", \"first_event_id\": \"log-a698d029342259b7-14801\", \"last_event_id\": \"log-a698d029342259b7-6341444\"}, {\"event_type\": \"gtpu_unreachable_detected\", \"first_event_id\": \"log-a698d029342259b7-17561\", \"last_event_id\": \"log-a698d029342259b7-6326728\"}, {\"event_type\": \"gtpu_unreachable_report\", \"first_event_id\": \"log-a698d029342259b7-17664\", \"last_event_id\": \"log-a698d029342259b7-6326831\"}, {\"event_type\": \"interface_index_failure\", \"first_event_id\": \"log-a698d029342259b7-2080\", \"last_event_id\": \"log-a698d029342259b7-6221806\"}, {\"event_type\": \"license_not_installed\", \"first_event_id\": \"log-a698d029342259b7-1683\", \"last_event_id\": \"log-a698d029342259b7-6218178\"}, {\"event_type\": \"n4_name_failure\", \"first_event_id\": \"log-a698d029342259b7-4665\", \"last_event_id\": \"log-a698d029342259b7-6221623\"}, {\"event_type\": \"pfcp_heartbeat_request\", \"first_event_id\": \"log-a698d029342259b7-3182914\", \"last_event_id\": \"log-a698d029342259b7-6347556\"}, {\"event_type\": \"pfcp_heartbeat_response\", \"first_event_id\": \"log-a698d029342259b7-3183220\", \"last_event_id\": \"log-a698d029342259b7-4297294\"}, {\"event_type\": \"pfcp_node_unreachable\", \"first_event_id\": \"log-a698d029342259b7-5967589\", \"last_event_id\": \"log-a698d029342259b7-6347849\"}, {\"event_type\": \"pfcp_session_deleted\", \"first_event_id\": \"log-a698d029342259b7-13071\", \"last_event_id\": \"log-a698d029342259b7-6338869\"}, {\"event_type\": \"timer_init_failure\", \"first_event_id\": \"log-a698d029342259b7-972\", \"last_event_id\": \"log-a698d029342259b7-6229664\"}, {\"event_type\": \"unclassified\", \"first_event_id\": \"log-a698d029342259b7-0\", \"last_event_id\": \"log-a698d029342259b7-6345419\"}, {\"event_type\": \"upfd_start\", \"first_event_id\": \"log-a698d029342259b7-231\", \"last_event_id\": \"log-a698d029342259b7-6217506\"}], \"peak_bucket\": [], \"entity_representatives\": [{\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc01:1706:406::\", \"messages\": 138, \"example_event_id\": \"log-a698d029342259b7-3144399\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc02:1706:406::\", \"messages\": 113, \"example_event_id\": \"log-a698d029342259b7-3136194\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0b:171f:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6327639\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0b:1721:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6327150\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0c:171f:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6328128\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0c:1721:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6328617\"}], \"entity_representatives_truncated\": false, \"buckets\": [], \"bucket_seconds\": 3600, \"buckets_truncated\": false, \"scope\": {\"event_type\": null, \"device_id\": null, \"window\": null}, \"accounting\": {\"source_bytes\": 6347974, \"physical_lines\": 32539, \"line_status_counts\": {\"parsed\": 32539}}}",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "aggregate:a6f18ac81a18aa2125fa:317917850655208e",
+          "metadata": {
+            "generation": "a6f18ac81a18aa2125fa",
+            "scope": {
+              "event_type": null,
+              "device_id": null,
+              "window": null
+            },
+            "device_id": null,
+            "synthetic": false
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-1683",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=16-16;offset=1683",
+          "kind": "log",
+          "excerpt": "2025-05-14 16:07:43.723036 ERROR FID.0 upfd_alarm.c:816(upfdAlarmLicenseNotInstall): Report license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-1683",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-1683",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 16,
+            "line_end": 16,
+            "byte_offset": 1683,
+            "byte_length": 121,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-14 16:07:43.723036",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "raised",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:4",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:9",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-14 16:07:43.723036 ERROR FID.0 upfd_alarm.c:816(upfdAlarmLicenseNotInstall): Report license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-4545",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=41-41;offset=4545",
+          "kind": "log",
+          "excerpt": "2025-05-14 16:17:05.649346 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-4545",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-4545",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 41,
+            "line_end": 41,
+            "byte_offset": 4545,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-14 16:17:05.649346",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-14 16:17:05.649346 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6728",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=58-58;offset=6728",
+          "kind": "log",
+          "excerpt": "2025-05-14 16:21:21.586574 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-6728",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-6728",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 58,
+            "line_end": 58,
+            "byte_offset": 6728,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-14 16:21:21.586574",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-14 16:21:21.586574 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-123369",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=763-763;offset=123369",
+          "kind": "log",
+          "excerpt": "2025-05-14 20:21:20.404341 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-123369",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-123369",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 763,
+            "line_end": 763,
+            "byte_offset": 123369,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-14 20:21:20.404341",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-14 20:21:20.404341 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-223312",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=1409-1409;offset=223312",
+          "kind": "log",
+          "excerpt": "2025-05-14 20:33:45.021305 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-223312",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-223312",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 1409,
+            "line_end": 1409,
+            "byte_offset": 223312,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-14 20:33:45.021305",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-14 20:33:45.021305 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-228664",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=1453-1453;offset=228664",
+          "kind": "log",
+          "excerpt": "2025-05-14 20:37:26.722956 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-228664",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-228664",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 1453,
+            "line_end": 1453,
+            "byte_offset": 228664,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-14 20:37:26.722956",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-14 20:37:26.722956 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-478508",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=2619-2619;offset=478508",
+          "kind": "log",
+          "excerpt": "2025-05-14 21:25:04.558832 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-478508",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-478508",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 2619,
+            "line_end": 2619,
+            "byte_offset": 478508,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-14 21:25:04.558832",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-14 21:25:04.558832 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6013182",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=30871-30871;offset=6013182",
+          "kind": "log",
+          "excerpt": "2025-05-21 21:04:44.681377 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-6013182",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-6013182",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 30871,
+            "line_end": 30871,
+            "byte_offset": 6013182,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-21 21:04:44.681377",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-21 21:04:44.681377 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6019956",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=30925-30925;offset=6019956",
+          "kind": "log",
+          "excerpt": "2025-05-21 21:05:32.118887 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-6019956",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-6019956",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 30925,
+            "line_end": 30925,
+            "byte_offset": 6019956,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-21 21:05:32.118887",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-21 21:05:32.118887 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6191116",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=31746-31746;offset=6191116",
+          "kind": "log",
+          "excerpt": "2025-06-01 07:13:46.804354 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-6191116",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-6191116",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 31746,
+            "line_end": 31746,
+            "byte_offset": 6191116,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-06-01 07:13:46.804354",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-06-01 07:13:46.804354 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        },
+        {
+          "evidence_id": "157eec0a5c414dde85aef9247e2be0f0:log-a698d029342259b7-6197938",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=31801-31801;offset=6197938",
+          "kind": "log",
+          "excerpt": "2025-06-30 13:54:00.445049 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-6197938",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-6197938",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 31801,
+            "line_end": 31801,
+            "byte_offset": 6197938,
+            "byte_length": 120,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-06-30 13:54:00.445049",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": null,
+            "event_type": "license_not_installed",
+            "event_state": "cleared",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:3",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:21",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-06-30 13:54:00.445049 ERROR FID.0 upfd_alarm.c:823(upfdAlarmLicenseNotInstall): Clear license not installed alarm\r\n"
+          }
+        }
+      ],
+      "facts": [
+        {
+          "text": "所选范围包含 32539 条日志事件，覆盖 32539 行；计数单位为消息，不是独立故障。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "unclassified / unknown：22718 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_session_deleted / observed：5715 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "far_handover / observed：3238 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "gtpu_echo_retry / observed：382 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "gtpu_unreachable_detected / raised：120 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "gtpu_unreachable_report / raised：120 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "interface_index_failure / observed：111 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "n4_name_failure / observed：30 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_heartbeat_request / observed：23 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "upfd_start / observed：21 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "timer_init_failure / observed：16 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_node_unreachable / raised：14 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_node_unreachable / cleared：12 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "license_not_installed / cleared：11 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_heartbeat_response / observed：7 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "license_not_installed / raised：1 条消息。",
+          "evidence_ids": [
+            "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        }
+      ],
+      "gaps": [
+        "补查没有新增信息，已终止重复工具循环。",
+        "没有真实拓扑，无法确认实际链路/交换机端口与传播路径。",
+        "源时区未知，未计算绝对时间关联或故障持续时间。",
+        "缺少原始真实设备身份，脱敏值不能用于事件配对。"
+      ],
+      "warnings": [
+        "Counts represent log messages, not independent faults; FATAL remains raw severity.",
+        "Timezone unknown: UTC timeline unavailable for unresolved events; no cross-source time correlation.",
+        "Result capped; counts must use analyze, not sample length."
+      ],
+      "questions": [],
+      "candidates": [],
+      "actions": [],
+      "rounds": 2,
+      "repairs": 0,
+      "degraded": false,
+      "terminal": true,
+      "resume_count": 0,
+      "user_answers": [],
+      "report": {
+        "run_id": "157eec0a5c414dde85aef9247e2be0f0",
+        "status": "partial",
+        "facts": [
+          "所选范围包含 32539 条日志事件，覆盖 32539 行；计数单位为消息，不是独立故障。",
+          "unclassified / unknown：22718 条消息。",
+          "pfcp_session_deleted / observed：5715 条消息。",
+          "far_handover / observed：3238 条消息。",
+          "gtpu_echo_retry / observed：382 条消息。",
+          "gtpu_unreachable_detected / raised：120 条消息。",
+          "gtpu_unreachable_report / raised：120 条消息。",
+          "interface_index_failure / observed：111 条消息。",
+          "n4_name_failure / observed：30 条消息。",
+          "pfcp_heartbeat_request / observed：23 条消息。",
+          "upfd_start / observed：21 条消息。",
+          "timer_init_failure / observed：16 条消息。",
+          "pfcp_node_unreachable / raised：14 条消息。",
+          "pfcp_node_unreachable / cleared：12 条消息。",
+          "license_not_installed / cleared：11 条消息。",
+          "pfcp_heartbeat_response / observed：7 条消息。",
+          "license_not_installed / raised：1 条消息。"
+        ],
+        "hypotheses": [],
+        "supporting_evidence_ids": [
+          "157eec0a5c414dde85aef9247e2be0f0:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+        ],
+        "opposing_evidence_ids": [],
+        "missing_information": [
+          "补查没有新增信息，已终止重复工具循环。",
+          "没有真实拓扑，无法确认实际链路/交换机端口与传播路径。",
+          "源时区未知，未计算绝对时间关联或故障持续时间。",
+          "缺少原始真实设备身份，脱敏值不能用于事件配对。"
+        ],
+        "recommendations": [
+          "按报告来源位置复核原文，并补充列出的现场资料；建议不自动执行。"
+        ],
+        "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "corpus_generation": "c61e9796eead2610cfd4"
+      }
+    },
+    "metrics": {
+      "tool_attempts": 4,
+      "model_requests_reserved": 2,
+      "rounds": 2,
+      "parameter_repairs": 0,
+      "active_seconds": 38.7912417431362,
+      "observed_usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 15264,
+        "completion_tokens_observed": 596,
+        "usage_responses": 2
+      },
+      "stage_elapsed_ms": {
+        "tool_finished": 6651,
+        "plan": 32001
+      },
+      "peak_observed_process_rss_bytes": 239079424,
+      "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+    }
+  }
+}

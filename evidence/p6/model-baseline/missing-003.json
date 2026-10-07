@@ -1,0 +1,585 @@
+{
+  "row": {
+    "id": "missing-003",
+    "model": "baseline",
+    "evidence_sha256": "e263495d3ef04df7165dc8ed14589fc9f1a5ca820488098b8a2c01c3b0d6d563",
+    "elapsed_ms": 20921.722650993615,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 7239,
+      "completion_tokens_observed": 412,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": null,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "UPF 9.9 版本如何配置 N3 接口？",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "9.9",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n\n其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+            "quote": "网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n"
+          },
+          {
+            "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+            "quote": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n"
+          }
+        ]
+      },
+      {
+        "text": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n\n参数名称：接口类型 | 参数值类型：枚举型 | 取值范围：N3,N6,N9,N4 | 是否必选：必选 | 默认值：无 | 参数说明：示例：N6\n\n参数名称：IP地址类型 | 参数值类型：枚举型 | 取值范围：IPv4,IPv6 | 是否必选",
+        "citations": [
+          {
+            "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+            "quote": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n"
+          },
+          {
+            "chunk_id": "chunk-fafb030542846a960f60d97d",
+            "quote": "参数名称：接口类型 | 参数值类型：枚举型 | 取值范围：N3,N6,N9,N4 | 是否必选：必选 | 默认值：无 | 参数说明：示例：N6\n"
+          },
+          {
+            "chunk_id": "chunk-fafb030542846a960f60d97d",
+            "quote": "参数名称：IP地址类型 | 参数值类型：枚举型 | 取值范围：IPv4,IPv6 | 是否必选"
+          }
+        ]
+      },
+      {
+        "text": "注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！",
+        "citations": [
+          {
+            "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+            "quote": "注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "交付配置",
+          "接口地址配置"
+        ],
+        "parent_id": "section-739647ba5572f2dd5a85",
+        "kind": "prose",
+        "text": "交付配置 / 接口地址配置\n接口地址配置\n网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n同理，配置N6地址，其中的接口ID填入“2”，配置如下图所示\n同理，配置N4地址，其中的接口ID填入”3”，配置如下图所示：\n注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！",
+        "token_count": 215,
+        "block_ids": [
+          "manual-341440f7dd103f51:b001101",
+          "manual-341440f7dd103f51:b001102",
+          "manual-341440f7dd103f51:b001107",
+          "manual-341440f7dd103f51:b001108",
+          "manual-341440f7dd103f51:b001111",
+          "manual-341440f7dd103f51:b001114"
+        ],
+        "locators": [
+          "word/document.xml/body/p[398]",
+          "word/document.xml/body/p[399]",
+          "word/document.xml/body/p[403]",
+          "word/document.xml/body/p[404]",
+          "word/document.xml/body/p[406]",
+          "word/document.xml/body/p[408]"
+        ],
+        "ordinal_start": 1101,
+        "ordinal_end": 1114,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "N4",
+          "N6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-fafb030542846a960f60d97d",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品配置",
+          "网管配置管理",
+          "接口地址配置",
+          "功能配置"
+        ],
+        "parent_id": "section-d4ce23a67f85b23bb481",
+        "kind": "table",
+        "text": "网管配置管理 / 接口地址配置 / 功能配置\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：接口ID | 参数值类型：整型 | 取值范围：(1,16) | 是否必选：必选 | 默认值：无 | 参数说明：示例：6\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：接口类型 | 参数值类型：枚举型 | 取值范围：N3,N6,N9,N4 | 是否必选：必选 | 默认值：无 | 参数说明：示例：N6\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IP地址类型 | 参数值类型：枚举型 | 取值范围：IPv4,IPv6 | 是否必选：必选 | 默认值：无 | 参数说明：示例：IPv4\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IPv4地址 | 参数值类型：Ipv4型 | 取值范围：16 字节 | 是否必选：可选 | 默认值：无 | 参数说明：示例：173.1.6.151\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IPv4子网掩码 | 参数值类型：Ipv4型 | 取值范围：16 字节 | 是否必选：可选 | 默认值：无 | 参数说明：示例：255.255.255.0\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IPv6地址 | 参数值类型：Ipv6型 | 取值范围：40 字节 | 是否必选：可选 | 默认值：无 | 参数说明：示例：173:1:6::151",
+        "token_count": 529,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000071",
+          "manual-341440f7dd103f51:b000078",
+          "manual-341440f7dd103f51:b000085",
+          "manual-341440f7dd103f51:b000092",
+          "manual-341440f7dd103f51:b000099",
+          "manual-341440f7dd103f51:b000106"
+        ],
+        "locators": [
+          "word/document.xml/body/tbl[1]/tr[2]",
+          "word/document.xml/body/tbl[1]/tr[3]",
+          "word/document.xml/body/tbl[1]/tr[4]",
+          "word/document.xml/body/tbl[1]/tr[5]",
+          "word/document.xml/body/tbl[1]/tr[6]",
+          "word/document.xml/body/tbl[1]/tr[7]"
+        ],
+        "ordinal_start": 71,
+        "ordinal_end": 106,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "N4",
+          "N6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": "manual-341440f7dd103f51:b000057",
+        "table_header": "参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明",
+        "table_cells": [
+          {
+            "row": 2,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[6]",
+            "vmerge": null
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。",
+      "引用手册版本未知，需核对目标设备版本与操作前提。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q3",
+        "S1Q4",
+        "S1Q7",
+        "S4Q4",
+        "S10Q7",
+        "S10Q10"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "在网管界面，依次点击【配置管理】>【UPF】>【接口地址配置】>【添加】，进入业务口地址管理界面，选择接口配置为“N3”，IP地址类型为“Ipv4”，填入规划的N3地址，子网掩码为“255.255.255.0”，配置完成后点击执行，完成N3地址配置。",
+            "quote_ids": [
+              "S1Q3",
+              "S1Q4"
+            ]
+          },
+          {
+            "text": "配置N3接口地址时，接口ID需根据规划填写，接口类型选择“N3”，IP地址类型选择“Ipv4”，IPv4地址按《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节进行规划。",
+            "quote_ids": [
+              "S1Q4",
+              "S10Q7",
+              "S10Q10"
+            ]
+          },
+          {
+            "text": "首次配置接口地址时，N3、N4、N6三个服务化接口的IPv4地址必须全部配置完成。",
+            "quote_ids": [
+              "S1Q7"
+            ]
+          }
+        ],
+        "missing_information": [
+          "未确认UPF 9.9版本是否适用上述配置步骤，证据版本为unknown。"
+        ]
+      },
+      "draft": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "在网管界面，依次点击【配置管理】>【UPF】>【接口地址配置】>【添加】，进入业务口地址管理界面，选择接口配置为“N3”，IP地址类型为“Ipv4”，填入规划的N3地址，子网掩码为“255.255.255.0”，配置完成后点击执行，完成N3地址配置。",
+            "citations": [
+              {
+                "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+                "quote": "网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n"
+              },
+              {
+                "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+                "quote": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n"
+              }
+            ]
+          },
+          {
+            "text": "配置N3接口地址时，接口ID需根据规划填写，接口类型选择“N3”，IP地址类型选择“Ipv4”，IPv4地址按《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节进行规划。",
+            "citations": [
+              {
+                "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+                "quote": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n"
+              },
+              {
+                "chunk_id": "chunk-fafb030542846a960f60d97d",
+                "quote": "参数名称：接口类型 | 参数值类型：枚举型 | 取值范围：N3,N6,N9,N4 | 是否必选：必选 | 默认值：无 | 参数说明：示例：N6\n"
+              },
+              {
+                "chunk_id": "chunk-fafb030542846a960f60d97d",
+                "quote": "参数名称：IP地址类型 | 参数值类型：枚举型 | 取值范围：IPv4,IPv6 | 是否必选"
+              }
+            ]
+          },
+          {
+            "text": "首次配置接口地址时，N3、N4、N6三个服务化接口的IPv4地址必须全部配置完成。",
+            "citations": [
+              {
+                "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+                "quote": "注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "未确认UPF 9.9版本是否适用上述配置步骤，证据版本为unknown。"
+        ]
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "未确认UPF 9.9版本是否适用上述配置步骤，证据版本为unknown。",
+      "引用资料版本未知，无法确认对请求版本的适用性。"
+    ]
+  }
+}

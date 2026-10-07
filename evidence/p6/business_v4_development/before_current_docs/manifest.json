@@ -1,0 +1,9 @@
+{
+  "artifacts_sha256": {
+    "upf-agent/README.md": "b7bdf1a44ca90f55f4121e3f03c16e9d2bb8711f52f9f8ca031e0cbf862e9dcf",
+    "upf-agent/docs/P6_evaluation.md": "c4c8f275dfd4aa355c041c10dad30dc8666e537183fd74e9cbf6c62658c7ca10",
+    "upf-agent/evidence/quality_closure.json": "17e9601de6d5e7acd09f5928d0368002a91397aa868235326a15dd8003670b25",
+    "dify/plan.md": "2ba9eada2dc029a1bd4e2801ca594316b10b5e89e1effe45f66efcfbd18e79cb",
+    "dify/plam.md": "2ba9eada2dc029a1bd4e2801ca594316b10b5e89e1effe45f66efcfbd18e79cb"
+  }
+}

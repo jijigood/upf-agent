@@ -1,0 +1,30 @@
+{
+  "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "endpoint": "http://127.0.0.1:18000/v1",
+  "text": {
+    "pass": true,
+    "content": "本地模型已连接"
+  },
+  "json": {
+    "pass": true,
+    "result": {
+      "ok": true,
+      "name": "UPF"
+    }
+  },
+  "tool_roundtrip": {
+    "pass": true,
+    "tool_name": "lookup_local_version",
+    "arguments": {
+      "product": "UPF"
+    },
+    "final_content": "UPF 的当前版本为：5.0。"
+  },
+  "timings_ms": {
+    "text": 1453,
+    "json": 4153,
+    "tool_call": 1611,
+    "tool_result": 1442,
+    "total": 8906
+  }
+}

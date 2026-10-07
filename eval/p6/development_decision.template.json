@@ -1,0 +1,9 @@
+{
+  "configuration_accepted": false,
+  "model_profile": null,
+  "development_sha256": null,
+  "adjudication_path": null,
+  "reviewer": null,
+  "date": null,
+  "notes": "待开发集人工答案评分及检索/工具/性能门槛检查；不得据草案测试直接确认"
+}

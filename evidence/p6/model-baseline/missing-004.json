@@ -1,0 +1,153 @@
+{
+  "row": {
+    "id": "missing-004",
+    "model": "baseline",
+    "evidence_sha256": "eb9feb929a6a0f7ce4b97489d90463dec2be5646a5ed9c5077934091e7aafad9",
+    "elapsed_ms": 18379.933374002576,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 7999,
+      "completion_tokens_observed": 351,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": null,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "UPF 9.9 的 CLI 配置指令是什么？",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "9.9",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S4Q2",
+        "S4Q3",
+        "S10Q3",
+        "S10Q4",
+        "S11Q2",
+        "S11Q3"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "UPF 9.9 的 CLI 配置指令包括登录命令 telnet 0 37100 和配置命令 set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>。",
+            "quote_ids": [
+              "S3Q6",
+              "S4Q2"
+            ]
+          },
+          {
+            "text": "登录 UPF 物理机后，通过 telnet 0 37100 进入 CLI 界面，输入命令进行配置，使用 ? 获取提示。",
+            "quote_ids": [
+              "S3Q4",
+              "S3Q6",
+              "S3Q7"
+            ]
+          },
+          {
+            "text": "配置完成后，可通过执行 show config 命令确认配置是否成功。",
+            "quote_ids": [
+              "S11Q2",
+              "S11Q3"
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为 unknown，无法确认适用于 UPF 9.9 版本。"
+        ]
+      },
+      "draft": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "UPF 9.9 的 CLI 配置指令包括登录命令 telnet 0 37100 和配置命令 set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>。",
+            "citations": [
+              {
+                "chunk_id": "chunk-f526d9f9745532f316c7e439",
+                "quote": "# telnet 0 37100                        \n"
+              },
+              {
+                "chunk_id": "chunk-ed162186f81b734c927091f0",
+                "quote": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n"
+              }
+            ]
+          },
+          {
+            "text": "登录 UPF 物理机后，通过 telnet 0 37100 进入 CLI 界面，输入命令进行配置，使用 ? 获取提示。",
+            "citations": [
+              {
+                "chunk_id": "chunk-f526d9f9745532f316c7e439",
+                "quote": " 用户可以通过telnet命令进入CLI(Command Line Interface, 命令行界面)。使用输入的指令进行配置。通过 \"?\"获取输入提示。\n"
+              },
+              {
+                "chunk_id": "chunk-f526d9f9745532f316c7e439",
+                "quote": "# telnet 0 37100                        \n"
+              },
+              {
+                "chunk_id": "chunk-f526d9f9745532f316c7e439",
+                "quote": "UPFD> ?\n"
+              }
+            ]
+          },
+          {
+            "text": "配置完成后，可通过执行 show config 命令确认配置是否成功。",
+            "citations": [
+              {
+                "chunk_id": "chunk-af31d71436dfc30b6e215672",
+                "quote": "show config\n"
+              },
+              {
+                "chunk_id": "chunk-af31d71436dfc30b6e215672",
+                "quote": "相关说明：UPFD> show config"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为 unknown，无法确认适用于 UPF 9.9 版本。"
+        ]
+      },
+      "support_decisions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "status": "missing_source",
+    "missing_information": [
+      "证据版本为 unknown，无法确认适用于 UPF 9.9 版本。",
+      "部分陈述未通过自动证据支持检查，已移除。"
+    ]
+  }
+}

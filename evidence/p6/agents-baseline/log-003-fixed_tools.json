@@ -1,0 +1,746 @@
+{
+  "row": {
+    "case": "log-003",
+    "mode": "fixed_tools",
+    "task_id": "81f50dd7d9eb4e0889cea4f6267735f8",
+    "elapsed_ms": 238.91993379220366,
+    "tool_attempts": 3,
+    "model_calls": 0,
+    "status": "partial",
+    "representative_log_ids": [
+      "log-a698d029342259b7-5967589",
+      "log-a698d029342259b7-5968078",
+      "log-a698d029342259b7-6327317"
+    ],
+    "requested_event_evidence_hit": true,
+    "root_cause_accuracy": null,
+    "human_business_accuracy": null
+  },
+  "result": {
+    "seed": {
+      "result": {
+        "status": "completed",
+        "data": {
+          "total_events": 32539,
+          "physical_lines": 32539,
+          "source_bytes": 6347974,
+          "generation": "a6f18ac81a18aa2125fa",
+          "counts": [
+            {
+              "event_type": "unclassified",
+              "event_state": "unknown",
+              "messages": 22718
+            },
+            {
+              "event_type": "pfcp_session_deleted",
+              "event_state": "observed",
+              "messages": 5715
+            },
+            {
+              "event_type": "far_handover",
+              "event_state": "observed",
+              "messages": 3238
+            },
+            {
+              "event_type": "gtpu_echo_retry",
+              "event_state": "observed",
+              "messages": 382
+            },
+            {
+              "event_type": "gtpu_unreachable_detected",
+              "event_state": "raised",
+              "messages": 120
+            },
+            {
+              "event_type": "gtpu_unreachable_report",
+              "event_state": "raised",
+              "messages": 120
+            },
+            {
+              "event_type": "interface_index_failure",
+              "event_state": "observed",
+              "messages": 111
+            },
+            {
+              "event_type": "n4_name_failure",
+              "event_state": "observed",
+              "messages": 30
+            },
+            {
+              "event_type": "pfcp_heartbeat_request",
+              "event_state": "observed",
+              "messages": 23
+            },
+            {
+              "event_type": "upfd_start",
+              "event_state": "observed",
+              "messages": 21
+            },
+            {
+              "event_type": "timer_init_failure",
+              "event_state": "observed",
+              "messages": 16
+            },
+            {
+              "event_type": "pfcp_node_unreachable",
+              "event_state": "raised",
+              "messages": 14
+            },
+            {
+              "event_type": "pfcp_node_unreachable",
+              "event_state": "cleared",
+              "messages": 12
+            },
+            {
+              "event_type": "license_not_installed",
+              "event_state": "cleared",
+              "messages": 11
+            },
+            {
+              "event_type": "pfcp_heartbeat_response",
+              "event_state": "observed",
+              "messages": 7
+            },
+            {
+              "event_type": "license_not_installed",
+              "event_state": "raised",
+              "messages": 1
+            }
+          ],
+          "representatives": [
+            {
+              "event_type": "far_handover",
+              "first_event_id": "log-a698d029342259b7-12005",
+              "last_event_id": "log-a698d029342259b7-6337704"
+            },
+            {
+              "event_type": "gtpu_echo_retry",
+              "first_event_id": "log-a698d029342259b7-14801",
+              "last_event_id": "log-a698d029342259b7-6341444"
+            },
+            {
+              "event_type": "gtpu_unreachable_detected",
+              "first_event_id": "log-a698d029342259b7-17561",
+              "last_event_id": "log-a698d029342259b7-6326728"
+            },
+            {
+              "event_type": "gtpu_unreachable_report",
+              "first_event_id": "log-a698d029342259b7-17664",
+              "last_event_id": "log-a698d029342259b7-6326831"
+            },
+            {
+              "event_type": "interface_index_failure",
+              "first_event_id": "log-a698d029342259b7-2080",
+              "last_event_id": "log-a698d029342259b7-6221806"
+            },
+            {
+              "event_type": "license_not_installed",
+              "first_event_id": "log-a698d029342259b7-1683",
+              "last_event_id": "log-a698d029342259b7-6218178"
+            },
+            {
+              "event_type": "n4_name_failure",
+              "first_event_id": "log-a698d029342259b7-4665",
+              "last_event_id": "log-a698d029342259b7-6221623"
+            },
+            {
+              "event_type": "pfcp_heartbeat_request",
+              "first_event_id": "log-a698d029342259b7-3182914",
+              "last_event_id": "log-a698d029342259b7-6347556"
+            },
+            {
+              "event_type": "pfcp_heartbeat_response",
+              "first_event_id": "log-a698d029342259b7-3183220",
+              "last_event_id": "log-a698d029342259b7-4297294"
+            },
+            {
+              "event_type": "pfcp_node_unreachable",
+              "first_event_id": "log-a698d029342259b7-5967589",
+              "last_event_id": "log-a698d029342259b7-6347849"
+            },
+            {
+              "event_type": "pfcp_session_deleted",
+              "first_event_id": "log-a698d029342259b7-13071",
+              "last_event_id": "log-a698d029342259b7-6338869"
+            },
+            {
+              "event_type": "timer_init_failure",
+              "first_event_id": "log-a698d029342259b7-972",
+              "last_event_id": "log-a698d029342259b7-6229664"
+            },
+            {
+              "event_type": "unclassified",
+              "first_event_id": "log-a698d029342259b7-0",
+              "last_event_id": "log-a698d029342259b7-6345419"
+            },
+            {
+              "event_type": "upfd_start",
+              "first_event_id": "log-a698d029342259b7-231",
+              "last_event_id": "log-a698d029342259b7-6217506"
+            }
+          ],
+          "peak_bucket": [],
+          "entity_representatives": [
+            {
+              "device_id": null,
+              "peer_ip": "2408:8142:60ff:fc01:1706:406::",
+              "messages": 138,
+              "example_event_id": "log-a698d029342259b7-3144399"
+            },
+            {
+              "device_id": null,
+              "peer_ip": "2408:8142:60ff:fc02:1706:406::",
+              "messages": 113,
+              "example_event_id": "log-a698d029342259b7-3136194"
+            },
+            {
+              "device_id": null,
+              "peer_ip": "2408:8142:60ff:fc0b:171f:406::",
+              "messages": 2,
+              "example_event_id": "log-a698d029342259b7-6327639"
+            },
+            {
+              "device_id": null,
+              "peer_ip": "2408:8142:60ff:fc0b:1721:406::",
+              "messages": 2,
+              "example_event_id": "log-a698d029342259b7-6327150"
+            },
+            {
+              "device_id": null,
+              "peer_ip": "2408:8142:60ff:fc0c:171f:406::",
+              "messages": 2,
+              "example_event_id": "log-a698d029342259b7-6328128"
+            },
+            {
+              "device_id": null,
+              "peer_ip": "2408:8142:60ff:fc0c:1721:406::",
+              "messages": 2,
+              "example_event_id": "log-a698d029342259b7-6328617"
+            }
+          ],
+          "entity_representatives_truncated": false,
+          "buckets": [],
+          "bucket_seconds": 3600,
+          "buckets_truncated": false,
+          "scope": {
+            "event_type": null,
+            "device_id": null,
+            "window": null
+          },
+          "accounting": {
+            "source_bytes": 6347974,
+            "physical_lines": 32539,
+            "line_status_counts": {
+              "parsed": 32539
+            }
+          }
+        },
+        "evidence_ids": [],
+        "warnings": [
+          "Counts represent log messages, not independent faults; FATAL remains raw severity.",
+          "Timezone unknown: UTC timeline unavailable for unresolved events; no cross-source time correlation."
+        ],
+        "elapsed_ms": 133
+      },
+      "evidence": [
+        {
+          "evidence_id": "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "full selected scope; {\"log_id\":\"a6f18ac81a18aa2125fa\",\"window\":null,\"device_id\":null,\"event_type\":null,\"bucket_minutes\":60}",
+          "kind": "tool",
+          "excerpt": "{\"total_events\": 32539, \"physical_lines\": 32539, \"source_bytes\": 6347974, \"generation\": \"a6f18ac81a18aa2125fa\", \"counts\": [{\"event_type\": \"unclassified\", \"event_state\": \"unknown\", \"messages\": 22718}, {\"event_type\": \"pfcp_session_deleted\", \"event_state\": \"observed\", \"messages\": 5715}, {\"event_type\": \"far_handover\", \"event_state\": \"observed\", \"messages\": 3238}, {\"event_type\": \"gtpu_echo_retry\", \"event_state\": \"observed\", \"messages\": 382}, {\"event_type\": \"gtpu_unreachable_detected\", \"event_state\": \"raised\", \"messages\": 120}, {\"event_type\": \"gtpu_unreachable_report\", \"event_state\": \"raised\", \"messages\": 120}, {\"event_type\": \"interface_index_failure\", \"event_state\": \"observed\", \"messages\": 111}, {\"event_type\": \"n4_name_failure\", \"event_state\": \"observed\", \"messages\": 30}, {\"event_type\": \"pfcp_heartbeat_request\", \"event_state\": \"observed\", \"messages\": 23}, {\"event_type\": \"upfd_start\", \"event_state\": \"observed\", \"messages\": 21}, {\"event_type\": \"timer_init_failure\", \"event_state\": \"observed\", \"messages\": 16}, {\"event_type\": \"pfcp_node_unreachable\", \"event_state\": \"raised\", \"messages\": 14}, {\"event_type\": \"pfcp_node_unreachable\", \"event_state\": \"cleared\", \"messages\": 12}, {\"event_type\": \"license_not_installed\", \"event_state\": \"cleared\", \"messages\": 11}, {\"event_type\": \"pfcp_heartbeat_response\", \"event_state\": \"observed\", \"messages\": 7}, {\"event_type\": \"license_not_installed\", \"event_state\": \"raised\", \"messages\": 1}], \"representatives\": [{\"event_type\": \"far_handover\", \"first_event_id\": \"log-a698d029342259b7-12005\", \"last_event_id\": \"log-a698d029342259b7-6337704\"}, {\"event_type\": \"gtpu_echo_retry\", \"first_event_id\": \"log-a698d029342259b7-14801\", \"last_event_id\": \"log-a698d029342259b7-6341444\"}, {\"event_type\": \"gtpu_unreachable_detected\", \"first_event_id\": \"log-a698d029342259b7-17561\", \"last_event_id\": \"log-a698d029342259b7-6326728\"}, {\"event_type\": \"gtpu_unreachable_report\", \"first_event_id\": \"log-a698d029342259b7-17664\", \"last_event_id\": \"log-a698d029342259b7-6326831\"}, {\"event_type\": \"interface_index_failure\", \"first_event_id\": \"log-a698d029342259b7-2080\", \"last_event_id\": \"log-a698d029342259b7-6221806\"}, {\"event_type\": \"license_not_installed\", \"first_event_id\": \"log-a698d029342259b7-1683\", \"last_event_id\": \"log-a698d029342259b7-6218178\"}, {\"event_type\": \"n4_name_failure\", \"first_event_id\": \"log-a698d029342259b7-4665\", \"last_event_id\": \"log-a698d029342259b7-6221623\"}, {\"event_type\": \"pfcp_heartbeat_request\", \"first_event_id\": \"log-a698d029342259b7-3182914\", \"last_event_id\": \"log-a698d029342259b7-6347556\"}, {\"event_type\": \"pfcp_heartbeat_response\", \"first_event_id\": \"log-a698d029342259b7-3183220\", \"last_event_id\": \"log-a698d029342259b7-4297294\"}, {\"event_type\": \"pfcp_node_unreachable\", \"first_event_id\": \"log-a698d029342259b7-5967589\", \"last_event_id\": \"log-a698d029342259b7-6347849\"}, {\"event_type\": \"pfcp_session_deleted\", \"first_event_id\": \"log-a698d029342259b7-13071\", \"last_event_id\": \"log-a698d029342259b7-6338869\"}, {\"event_type\": \"timer_init_failure\", \"first_event_id\": \"log-a698d029342259b7-972\", \"last_event_id\": \"log-a698d029342259b7-6229664\"}, {\"event_type\": \"unclassified\", \"first_event_id\": \"log-a698d029342259b7-0\", \"last_event_id\": \"log-a698d029342259b7-6345419\"}, {\"event_type\": \"upfd_start\", \"first_event_id\": \"log-a698d029342259b7-231\", \"last_event_id\": \"log-a698d029342259b7-6217506\"}], \"peak_bucket\": [], \"entity_representatives\": [{\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc01:1706:406::\", \"messages\": 138, \"example_event_id\": \"log-a698d029342259b7-3144399\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc02:1706:406::\", \"messages\": 113, \"example_event_id\": \"log-a698d029342259b7-3136194\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0b:171f:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6327639\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0b:1721:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6327150\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0c:171f:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6328128\"}, {\"device_id\": null, \"peer_ip\": \"2408:8142:60ff:fc0c:1721:406::\", \"messages\": 2, \"example_event_id\": \"log-a698d029342259b7-6328617\"}], \"entity_representatives_truncated\": false, \"buckets\": [], \"bucket_seconds\": 3600, \"buckets_truncated\": false, \"scope\": {\"event_type\": null, \"device_id\": null, \"window\": null}, \"accounting\": {\"source_bytes\": 6347974, \"physical_lines\": 32539, \"line_status_counts\": {\"parsed\": 32539}}}",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "aggregate:a6f18ac81a18aa2125fa:317917850655208e",
+          "metadata": {
+            "generation": "a6f18ac81a18aa2125fa",
+            "scope": {
+              "event_type": null,
+              "device_id": null,
+              "window": null
+            },
+            "device_id": null,
+            "synthetic": false
+          }
+        }
+      ],
+      "facts": [
+        {
+          "text": "所选范围包含 32539 条日志事件，覆盖 32539 行；计数单位为消息，不是独立故障。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "unclassified / unknown：22718 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_session_deleted / observed：5715 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "far_handover / observed：3238 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "gtpu_echo_retry / observed：382 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "gtpu_unreachable_detected / raised：120 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "gtpu_unreachable_report / raised：120 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "interface_index_failure / observed：111 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "n4_name_failure / observed：30 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_heartbeat_request / observed：23 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "upfd_start / observed：21 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "timer_init_failure / observed：16 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_node_unreachable / raised：14 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_node_unreachable / cleared：12 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "license_not_installed / cleared：11 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "pfcp_heartbeat_response / observed：7 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        },
+        {
+          "text": "license_not_installed / raised：1 条消息。",
+          "evidence_ids": [
+            "81f50dd7d9eb4e0889cea4f6267735f8:aggregate:a6f18ac81a18aa2125fa:317917850655208e"
+          ]
+        }
+      ],
+      "gaps": [],
+      "error_code": null,
+      "retryable": false
+    },
+    "sample": {
+      "result": {
+        "status": "partial",
+        "data": {
+          "events": [
+            {
+              "event_id": "log-a698d029342259b7-5967589",
+              "source_id": "log-a698d029342259b7",
+              "line_start": 30659,
+              "line_end": 30659,
+              "byte_offset": 5967589,
+              "byte_length": 126,
+              "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+              "timestamp_original": "2025-05-21 20:57:10.493959",
+              "timestamp_utc": null,
+              "timezone_status": "unknown",
+              "device_id": null,
+              "protocol": "PFCP",
+              "event_type": "pfcp_node_unreachable",
+              "event_state": "raised",
+              "severity_raw": "ERROR",
+              "peer_ip": null,
+              "session": null,
+              "seid": null,
+              "teid": null,
+              "imsi": null,
+              "interface_type": null,
+              "port": null,
+              "rule_id": "upfd-rules-v1:2",
+              "classification_basis": "message_regex",
+              "template_id": "a3cd7316c1311b10e2be:144",
+              "parse_status": "parsed",
+              "quality_flags": [
+                "timezone_unresolved"
+              ],
+              "masked_fields": [],
+              "parser_version": "upfd-stream-v1",
+              "raw_excerpt": "2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n"
+            },
+            {
+              "event_id": "log-a698d029342259b7-5968078",
+              "source_id": "log-a698d029342259b7",
+              "line_start": 30662,
+              "line_end": 30662,
+              "byte_offset": 5968078,
+              "byte_length": 126,
+              "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+              "timestamp_original": "2025-05-21 20:57:10.494068",
+              "timestamp_utc": null,
+              "timezone_status": "unknown",
+              "device_id": null,
+              "protocol": "PFCP",
+              "event_type": "pfcp_node_unreachable",
+              "event_state": "raised",
+              "severity_raw": "ERROR",
+              "peer_ip": null,
+              "session": null,
+              "seid": null,
+              "teid": null,
+              "imsi": null,
+              "interface_type": null,
+              "port": null,
+              "rule_id": "upfd-rules-v1:2",
+              "classification_basis": "message_regex",
+              "template_id": "a3cd7316c1311b10e2be:144",
+              "parse_status": "parsed",
+              "quality_flags": [
+                "timezone_unresolved"
+              ],
+              "masked_fields": [],
+              "parser_version": "upfd-stream-v1",
+              "raw_excerpt": "2025-05-21 20:57:10.494068 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n"
+            },
+            {
+              "event_id": "log-a698d029342259b7-6327317",
+              "source_id": "log-a698d029342259b7",
+              "line_start": 32430,
+              "line_end": 32430,
+              "byte_offset": 6327317,
+              "byte_length": 126,
+              "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+              "timestamp_original": "2025-07-12 01:00:46.637266",
+              "timestamp_utc": null,
+              "timezone_status": "unknown",
+              "device_id": null,
+              "protocol": "PFCP",
+              "event_type": "pfcp_node_unreachable",
+              "event_state": "raised",
+              "severity_raw": "ERROR",
+              "peer_ip": null,
+              "session": null,
+              "seid": null,
+              "teid": null,
+              "imsi": null,
+              "interface_type": null,
+              "port": null,
+              "rule_id": "upfd-rules-v1:2",
+              "classification_basis": "message_regex",
+              "template_id": "a3cd7316c1311b10e2be:144",
+              "parse_status": "parsed",
+              "quality_flags": [
+                "timezone_unresolved"
+              ],
+              "masked_fields": [],
+              "parser_version": "upfd-stream-v1",
+              "raw_excerpt": "2025-07-12 01:00:46.637266 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n"
+            }
+          ],
+          "truncated": true,
+          "limit": 3,
+          "generation": "a6f18ac81a18aa2125fa",
+          "order": "source_byte_offset"
+        },
+        "evidence_ids": [
+          "log-a698d029342259b7-5967589",
+          "log-a698d029342259b7-5968078",
+          "log-a698d029342259b7-6327317"
+        ],
+        "warnings": [
+          "Result capped; counts must use analyze, not sample length."
+        ],
+        "elapsed_ms": 27
+      },
+      "evidence": [
+        {
+          "evidence_id": "81f50dd7d9eb4e0889cea4f6267735f8:log-a698d029342259b7-5967589",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=30659-30659;offset=5967589",
+          "kind": "log",
+          "excerpt": "2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-5967589",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-5967589",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 30659,
+            "line_end": 30659,
+            "byte_offset": 5967589,
+            "byte_length": 126,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-21 20:57:10.493959",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": "PFCP",
+            "event_type": "pfcp_node_unreachable",
+            "event_state": "raised",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:2",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:144",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n"
+          }
+        },
+        {
+          "evidence_id": "81f50dd7d9eb4e0889cea4f6267735f8:log-a698d029342259b7-5968078",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=30662-30662;offset=5968078",
+          "kind": "log",
+          "excerpt": "2025-05-21 20:57:10.494068 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-5968078",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-5968078",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 30662,
+            "line_end": 30662,
+            "byte_offset": 5968078,
+            "byte_length": 126,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-21 20:57:10.494068",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": "PFCP",
+            "event_type": "pfcp_node_unreachable",
+            "event_state": "raised",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:2",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:144",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-05-21 20:57:10.494068 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n"
+          }
+        },
+        {
+          "evidence_id": "81f50dd7d9eb4e0889cea4f6267735f8:log-a698d029342259b7-6327317",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=32430-32430;offset=6327317",
+          "kind": "log",
+          "excerpt": "2025-07-12 01:00:46.637266 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-6327317",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-6327317",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 32430,
+            "line_end": 32430,
+            "byte_offset": 6327317,
+            "byte_length": 126,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-07-12 01:00:46.637266",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": "PFCP",
+            "event_type": "pfcp_node_unreachable",
+            "event_state": "raised",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:2",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:144",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "parser_version": "upfd-stream-v1",
+            "raw_excerpt": "2025-07-12 01:00:46.637266 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n"
+          }
+        }
+      ],
+      "facts": [],
+      "gaps": [],
+      "error_code": null,
+      "retryable": false
+    },
+    "context": {
+      "result": {
+        "status": "completed",
+        "data": {
+          "event": {
+            "event_id": "log-a698d029342259b7-5967589",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 30659,
+            "line_end": 30659,
+            "byte_offset": 5967589,
+            "byte_length": 126,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-21 20:57:10.493959",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": "PFCP",
+            "event_type": "pfcp_node_unreachable",
+            "event_state": "raised",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:2",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:144",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "raw_excerpt": "2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n",
+            "parser_version": "upfd-stream-v1"
+          },
+          "raw_text": "2025-05-21 20:57:10.493797 ERROR FID.0 upfd_pfcp_v6.c:346(upfdTimerPfcpV6HeartBeat): #MsgHeartbeat# timeout! peer node:2408:8142:60ff:fc01:1706:406:: no rsp over 3 times, del association with it\r\n2025-05-21 20:57:10.493876 ERROR FID.0 upfd_pfcp.c:970(upfdCpNodeRestart): #PfcpNode# {node:0x7f1dc830d418,peer ip: 2408:8142:60ff:fc01:1706:406::} status to 'DOWN'.\r\n2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n2025-05-21 20:57:10.494011 ERROR FID.0 upfd_pfcp_v6.c:346(upfdTimerPfcpV6HeartBeat): #MsgHeartbeat# timeout! peer node:2408:8142:60ff:fc02:1706:406:: no rsp over 3 times, del association with it\r\n2025-05-21 20:57:10.494031 ERROR FID.0 upfd_pfcp.c:970(upfdCpNodeRestart): #PfcpNode# {node:0x7f1dc830d030,peer ip: 2408:8142:60ff:fc02:1706:406::} status to 'DOWN'.\r\n",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "byte_offset": 5967589,
+          "byte_length": 126,
+          "line_start": 30659,
+          "line_end": 30659,
+          "truncated": false
+        },
+        "evidence_ids": [
+          "log-a698d029342259b7-5967589"
+        ],
+        "warnings": [],
+        "elapsed_ms": 0
+      },
+      "evidence": [
+        {
+          "evidence_id": "81f50dd7d9eb4e0889cea4f6267735f8:log-a698d029342259b7-5967589",
+          "source_id": "log-a698d029342259b7",
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "locator": "lines=30659-30659;offset=5967589",
+          "kind": "log",
+          "excerpt": "2025-05-21 20:57:10.493797 ERROR FID.0 upfd_pfcp_v6.c:346(upfdTimerPfcpV6HeartBeat): #MsgHeartbeat# timeout! peer node:2408:8142:60ff:fc01:1706:406:: no rsp over 3 times, del association with it\r\n2025-05-21 20:57:10.493876 ERROR FID.0 upfd_pfcp.c:970(upfdCpNodeRestart): #PfcpNode# {node:0x7f1dc830d418,peer ip: 2408:8142:60ff:fc01:1706:406::} status to 'DOWN'.\r\n2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n2025-05-21 20:57:10.494011 ERROR FID.0 upfd_pfcp_v6.c:346(upfdTimerPfcpV6HeartBeat): #MsgHeartbeat# timeout! peer node:2408:8142:60ff:fc02:1706:406:: no rsp over 3 times, del association with it\r\n2025-05-21 20:57:10.494031 ERROR FID.0 upfd_pfcp.c:970(upfdCpNodeRestart): #PfcpNode# {node:0x7f1dc830d030,peer ip: 2408:8142:60ff:fc02:1706:406::} status to 'DOWN'.\r\n",
+          "tool_version": "p5-tools-v1",
+          "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+          "native_id": "log-a698d029342259b7-5967589",
+          "metadata": {
+            "event_id": "log-a698d029342259b7-5967589",
+            "source_id": "log-a698d029342259b7",
+            "line_start": 30659,
+            "line_end": 30659,
+            "byte_offset": 5967589,
+            "byte_length": 126,
+            "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+            "timestamp_original": "2025-05-21 20:57:10.493959",
+            "timestamp_utc": null,
+            "timezone_status": "unknown",
+            "device_id": null,
+            "protocol": "PFCP",
+            "event_type": "pfcp_node_unreachable",
+            "event_state": "raised",
+            "severity_raw": "ERROR",
+            "peer_ip": null,
+            "session": null,
+            "seid": null,
+            "teid": null,
+            "imsi": null,
+            "interface_type": null,
+            "port": null,
+            "rule_id": "upfd-rules-v1:2",
+            "classification_basis": "message_regex",
+            "template_id": "a3cd7316c1311b10e2be:144",
+            "parse_status": "parsed",
+            "quality_flags": [
+              "timezone_unresolved"
+            ],
+            "masked_fields": [],
+            "raw_excerpt": "2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n",
+            "parser_version": "upfd-stream-v1"
+          }
+        }
+      ],
+      "facts": [],
+      "gaps": [],
+      "error_code": null,
+      "retryable": false
+    }
+  }
+}

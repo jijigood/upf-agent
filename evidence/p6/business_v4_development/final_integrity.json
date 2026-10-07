@@ -1,0 +1,9 @@
+{
+  "ledger_artifacts_checked": 452,
+  "changed_artifacts": [],
+  "review_cases": 60,
+  "review_binding_valid": true,
+  "pipeline_matches": true,
+  "heldout_consumed": false,
+  "data_raw_matches_P0": true
+}

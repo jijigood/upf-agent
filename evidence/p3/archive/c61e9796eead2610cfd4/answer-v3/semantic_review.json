@@ -1,0 +1,139 @@
+{
+  "evaluation_sha256": "c861bdfcec9195fdd604ce1ea4b8e79ff2b656f9829d341b8ba18ef22ca488da",
+  "reviewer_type": "assistant_source_semantic_review",
+  "human_signoff": false,
+  "machine_contract_pass": 16,
+  "human_semantic_completed": 0,
+  "assistant_cases_with_findings": 6,
+  "formal_business_accuracy_claim": false,
+  "rows": [
+    {
+      "id": "answer-01",
+      "question": "如何执行 show cp-node 查询对端 SMF 信息？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-02",
+      "question": "show config 用于查询哪些网元配置信息？",
+      "machine_contract_pass": true,
+      "assistant_review": "finding_requires_semantic_followup",
+      "note": "第一条同时归纳 N3/N6/N9/N4、CP IP 和 UE 地址池，但自己的四条引用主要只覆盖 N3/N4。需补齐逐事实引用或缩小归纳范围；关键字/引用存在检查无法证明整个陈述被支持。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-03",
+      "question": "set-upf-prt-sw 的参数格式是什么？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-04",
+      "question": "N4 IPv6 到 SMF 链路不通应收集什么信息？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-05",
+      "question": "UPF N6 IPv4 到网关不通应如何处理？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-06",
+      "question": "UPF 5.0 物理机如何打开 Coredump？",
+      "machine_contract_pass": true,
+      "assistant_review": "finding_requires_semantic_followup",
+      "note": "Coredump 命令归纳使用单引号，而原文 echo 使用双引号，且未统一反引号格式；此外答案未覆盖原件完整配置/生效过程。不能把程序字符串存在检查视为完整、可直接执行的操作验收。原文末尾单独 % 已在 P2 原件疑点中保留。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-07",
+      "question": "5GC网管 V1.3 实时告警在哪里查询？",
+      "machine_contract_pass": true,
+      "assistant_review": "finding_requires_semantic_followup",
+      "note": "原文 Query Alarm-->Refresh 是顺序，回答改写为“或”；第三条罗列更多筛选字段，但引用只覆盖前四项。应保留动作关系并补齐逐事实引用。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-08",
+      "question": "5GC网管如何查询历史告警？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-09",
+      "question": "网管如何建立 PFCP 偶联？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-10",
+      "question": "UPF 5.0 怎样检查 N3N6 接口和 IP 地址？",
+      "machine_contract_pass": true,
+      "assistant_review": "finding_requires_semantic_followup",
+      "note": "ping 地址来自手册示例，没有现场拓扑真值，不能按文字直接断言其适用于用户现场；show interface 与 show interface addr 的用途也需逐项核对。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-11",
+      "question": "UPF 5.0 网管如何设置网元时间同步？",
+      "machine_contract_pass": true,
+      "assistant_review": "finding_requires_semantic_followup",
+      "note": "NTP IP 来自原手册示例环境；现场适用性未知。第三条覆盖两个白名单地址，但自身引用仅列出一个，应补齐来源或收缩该条。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-12",
+      "question": "网管如何下载实时告警？",
+      "machine_contract_pass": true,
+      "assistant_review": "finding_requires_semantic_followup",
+      "note": "第三条把邻近章节的查询/刷新步骤归纳成下载前的必要前提，引用没有明确该必然关系。自动支持检查出现过度认可，应删除强制前提或以原文关系重新表述。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-13",
+      "question": "现场 UPF 当前 CPU 温度是多少摄氏度？请给出精确数值。",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-14",
+      "question": "UPF 的 Wi-Fi 7 无线信道切换命令和全部参数是什么？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-15",
+      "question": "如何执行 show cp-node？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    },
+    {
+      "id": "answer-16",
+      "question": "UPF 999.9 如何执行 show cp-node？",
+      "machine_contract_pass": true,
+      "assistant_review": "no_specific_new_finding_in_this_assistant_pass",
+      "note": "未发现上述类型的新问题，不作为人工准确性签署；答案完整性和现场适用性仍未正式评测。",
+      "human_status": "pending"
+    }
+  ]
+}

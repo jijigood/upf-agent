@@ -1,0 +1,51 @@
+{
+  "updated_at": "2026-09-28T13:54:21.095013+00:00",
+  "generation": "c05fe621e37ebdb1c663",
+  "stage": "user_review_received_4_corrected_images_pending_recheck",
+  "items_reviewed": 90,
+  "structure_reviewed": 60,
+  "structure_passed": 60,
+  "ocr_reviewed": 30,
+  "ocr_passed": 26,
+  "ocr_failed_at_submission": [
+    1,
+    7,
+    17,
+    20
+  ],
+  "corrected_pending_recheck": [
+    1,
+    7,
+    17,
+    20
+  ],
+  "fragment_targets_corrected_this_round": 20,
+  "reconstructed_grub_rows": 6,
+  "quarantined_lines": 7,
+  "original_ocr_preserved": true,
+  "submitted_sheet_preserved": true,
+  "unchanged_accepted_images": 26,
+  "changed_review_source_rejected": true,
+  "m2_human_acceptance_pass": false,
+  "formal_business_accuracy_claim": false,
+  "tests_passed": 203,
+  "new_row_tests": 6,
+  "ruff_pass": true,
+  "format_files_passed": 69,
+  "artifacts_sha256": {
+    "evidence/p2/human_review_v3.json": "4eb5f74b6f5047a6f5d7f186ed8e0d0a3b08cea34bd66f8484fba73219bbffad",
+    "evidence/p2/review_sheet_c05fe621e37ebdb1c663_v3.md": "9a6672be842ff331a3c23f0dd4565e521273f1e5e8e538da33ad994c0fdc957b",
+    "evidence/p2/review_followup_v3_4_images.md": "35725abcbe969b71e1f4022feba7e78426f1a7d18c7647e107927531f1275d3e",
+    "evidence/p2/ocr_corrections.json": "cefcee0e4f85b6ab6a666e0f0ff56aa93081ad9a1df7f5e6f7c09f0cce95721b",
+    "evidence/p2/ocr_corrected.json": "7ec9dd78fec57b5ac71427a91a3ac8ae60133b008a7fbc0a7799573ecc5e4f9e",
+    "evidence/p2/ocr_corrected_text.md": "61bb2e75c1f364ab1ffd33f1f1814bf962e571ca56f6df55529b94a171538cfd",
+    "evidence/p2/ocr_repair_validation.json": "3c067967a8174ab3368e56a609285a5b3607809f6aa8d398621486d33562057a",
+    "evidence/p2/validation.json": "8d125edf8bc873c8cb3975189e034f02e41901a5c237b597fc68ce4b48affc1f",
+    "evidence/p2/user_review_tests.log": "598bbcb0aeb0f2e21d8502a01fc4e61777b924d9f20a6fc89b55828533a56699",
+    "src/upf_agent/quality_repair.py": "79980e95349eab00128788683f93b3095cd3128664ecfcfa7d5bf306f9674520",
+    "src/upf_agent/p2_verify.py": "15720d12a913b0098cf40115ddbf766e0c80e8bf20b9265b9459d9b0c72581da",
+    "scripts/sync_p2_review.py": "f14cfb2b715a7e1bb77f86664f35773d9813989257dd7cefec3afcb3db683cd7",
+    "tests/test_ocr_reconstructed_rows.py": "9e7a8705977ed23b3f4adf11fafd5ab8bd08225f5409816f86dfaaada3f2d37f",
+    "docs/P2_acceptance.md": "c01f3df15e615585a081825e2a25b367d01572f770ac6072338eb35bea29ae19"
+  }
+}

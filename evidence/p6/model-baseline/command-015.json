@@ -1,0 +1,366 @@
+{
+  "row": {
+    "id": "command-015",
+    "model": "baseline",
+    "evidence_sha256": "5bfb5c2e6332c1e802d84f80666de9e76554323a07d0e21cd1316b53b0227f5c",
+    "elapsed_ms": 13901.802129112184,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 4241,
+      "completion_tokens_observed": 268,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": true,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册‘配置UPF物理机 / Coredump开关打开’如何使用 echo？只摘录原文并说明示例适用范围。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf\necho \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern",
+        "citations": [
+          {
+            "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+            "quote": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf"
+          },
+          {
+            "chunk_id": "chunk-01998c8695e66a6318101bb8",
+            "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+          }
+        ]
+      },
+      {
+        "text": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf\necho \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern\n物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+            "quote": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf"
+          },
+          {
+            "chunk_id": "chunk-01998c8695e66a6318101bb8",
+            "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+          },
+          {
+            "chunk_id": "chunk-da1f7676d2f30661bb5e00a8",
+            "quote": "物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\n"
+          }
+        ]
+      },
+      {
+        "text": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf\necho \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern\n$ ulimit -a\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+            "quote": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf"
+          },
+          {
+            "chunk_id": "chunk-01998c8695e66a6318101bb8",
+            "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+          },
+          {
+            "chunk_id": "chunk-3ecddf27a8093a17064a1a8a",
+            "quote": "$ ulimit -a\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "配置UPF物理机",
+          "Coredump开关打开"
+        ],
+        "parent_id": "section-279f5f812451d0bbf03e",
+        "kind": "command",
+        "text": "物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\necho \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf",
+        "token_count": 53,
+        "block_ids": [
+          "manual-1edf23113651430f:b000917"
+        ],
+        "locators": [
+          "word/document.xml/body/p[388]"
+        ],
+        "ordinal_start": 917,
+        "ordinal_end": 917,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-8160fc6d72cba140",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-01998c8695e66a6318101bb8",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "配置UPF物理机",
+          "Coredump开关打开"
+        ],
+        "parent_id": "section-279f5f812451d0bbf03e",
+        "kind": "command",
+        "text": "物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\necho \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern",
+        "token_count": 48,
+        "block_ids": [
+          "manual-1edf23113651430f:b000916"
+        ],
+        "locators": [
+          "word/document.xml/body/p[387]"
+        ],
+        "ordinal_start": 916,
+        "ordinal_end": 916,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-65c8090e5aa1049a",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-da1f7676d2f30661bb5e00a8",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "配置UPF物理机",
+          "Coredump开关打开"
+        ],
+        "parent_id": "section-279f5f812451d0bbf03e",
+        "kind": "command",
+        "text": "物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\nmkdir -p /opt/local/tmp/core",
+        "token_count": 29,
+        "block_ids": [
+          "manual-1edf23113651430f:b000909"
+        ],
+        "locators": [
+          "word/document.xml/body/p[380]"
+        ],
+        "ordinal_start": 909,
+        "ordinal_end": 909,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-4574dc7940e98d6f",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-3ecddf27a8093a17064a1a8a",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "配置UPF物理机",
+          "Coredump开关打开"
+        ],
+        "parent_id": "section-279f5f812451d0bbf03e",
+        "kind": "prose",
+        "text": "物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\n查看coredump开关是否打开，键入如下命令：\n$ ulimit -a\n若输出如下配置，表示coredump开关已打开",
+        "token_count": 50,
+        "block_ids": [
+          "manual-1edf23113651430f:b000925",
+          "manual-1edf23113651430f:b000926",
+          "manual-1edf23113651430f:b000927"
+        ],
+        "locators": [
+          "word/document.xml/body/p[396]",
+          "word/document.xml/body/p[397]",
+          "word/document.xml/body/p[398]"
+        ],
+        "ordinal_start": 925,
+        "ordinal_end": 927,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q2",
+        "S4Q2"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "使用 echo 命令配置 Coredump 开关，可执行命令：echo ",
+            "quote_ids": [
+              "S1Q2",
+              "S4Q2"
+            ]
+          },
+          {
+            "text": "该命令适用于 UPF 物理机在 5.0 版本下配置 Coredump 开关，且需确保 /opt/local/tmp/core 目录存在。",
+            "quote_ids": [
+              "S1Q2",
+              "S4Q2",
+              "S10Q1"
+            ]
+          },
+          {
+            "text": "示例中使用 echo 配置 core_pattern，适用于在系统启动后生效的 Coredump 路径设置，需配合 ulimit 和配置文件生效。",
+            "quote_ids": [
+              "S1Q2",
+              "S4Q2",
+              "S3Q3"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "使用 echo 命令配置 Coredump 开关，可执行命令：echo ",
+            "citations": [
+              {
+                "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+                "quote": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf"
+              },
+              {
+                "chunk_id": "chunk-01998c8695e66a6318101bb8",
+                "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+              }
+            ]
+          },
+          {
+            "text": "该命令适用于 UPF 物理机在 5.0 版本下配置 Coredump 开关，且需确保 /opt/local/tmp/core 目录存在。",
+            "citations": [
+              {
+                "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+                "quote": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf"
+              },
+              {
+                "chunk_id": "chunk-01998c8695e66a6318101bb8",
+                "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+              },
+              {
+                "chunk_id": "chunk-da1f7676d2f30661bb5e00a8",
+                "quote": "物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\n"
+              }
+            ]
+          },
+          {
+            "text": "示例中使用 echo 配置 core_pattern，适用于在系统启动后生效的 Coredump 路径设置，需配合 ulimit 和配置文件生效。",
+            "citations": [
+              {
+                "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+                "quote": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf"
+              },
+              {
+                "chunk_id": "chunk-01998c8695e66a6318101bb8",
+                "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+              },
+              {
+                "chunk_id": "chunk-3ecddf27a8093a17064a1a8a",
+                "quote": "$ ulimit -a\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

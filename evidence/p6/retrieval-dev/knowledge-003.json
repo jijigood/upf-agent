@@ -1,0 +1,704 @@
+{
+  "query": "手册中‘物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）’的说明和关键字段是什么？请给出原文依据。",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 24,
+  "reranked_candidates": 24,
+  "context_tokens": 2039,
+  "rankings": {
+    "exact": [],
+    "bm25": [
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-2a2915aa6b985318b40a709c",
+      "chunk-b7601c47a674d45aa5edb654",
+      "chunk-8516d529791bd1e59ca97908",
+      "chunk-0e6125c6e45114759813ca6f",
+      "chunk-c68506d4ec5e247b1185a691",
+      "chunk-28fd074f4b22d698b62a4944",
+      "chunk-130842ca33fc1ee9055d1bc3",
+      "chunk-16fee487f5b1d994bf3d1d2b",
+      "chunk-e12d9bf36df803c8b7738d7c",
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-6db4df6282bac3938feb2393",
+      "chunk-a3be36a9bb0bf67ddeca1d77",
+      "chunk-a2f0e973ecafca96904e1119",
+      "chunk-f524ca5abe39582dd582c6d5",
+      "chunk-6b0446f6dce9b3c8264797fa",
+      "chunk-a6ebd51a1ef3ed24a4a75496",
+      "chunk-b2179e1b9bd99c6087b009f6",
+      "chunk-4e25ba573761d9255423ae67",
+      "chunk-835a471f00cc9e6a2ac976f2"
+    ],
+    "dense": [
+      "chunk-b7601c47a674d45aa5edb654",
+      "chunk-2a2915aa6b985318b40a709c",
+      "chunk-130842ca33fc1ee9055d1bc3",
+      "chunk-c68506d4ec5e247b1185a691",
+      "chunk-0e6125c6e45114759813ca6f",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-8516d529791bd1e59ca97908",
+      "chunk-28fd074f4b22d698b62a4944",
+      "chunk-e12d9bf36df803c8b7738d7c",
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-16fee487f5b1d994bf3d1d2b",
+      "chunk-835a471f00cc9e6a2ac976f2",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-b2179e1b9bd99c6087b009f6",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-e6f2de49b4548626e1ea62af",
+      "chunk-a3be36a9bb0bf67ddeca1d77",
+      "chunk-f524ca5abe39582dd582c6d5",
+      "chunk-a2f0e973ecafca96904e1119",
+      "chunk-23889edf75e20c140c288bc1"
+    ],
+    "rrf": [
+      "chunk-b7601c47a674d45aa5edb654",
+      "chunk-2a2915aa6b985318b40a709c",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-c68506d4ec5e247b1185a691",
+      "chunk-0e6125c6e45114759813ca6f",
+      "chunk-130842ca33fc1ee9055d1bc3",
+      "chunk-8516d529791bd1e59ca97908",
+      "chunk-28fd074f4b22d698b62a4944",
+      "chunk-e12d9bf36df803c8b7738d7c",
+      "chunk-16fee487f5b1d994bf3d1d2b",
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-a3be36a9bb0bf67ddeca1d77",
+      "chunk-835a471f00cc9e6a2ac976f2",
+      "chunk-b2179e1b9bd99c6087b009f6",
+      "chunk-a2f0e973ecafca96904e1119",
+      "chunk-f524ca5abe39582dd582c6d5",
+      "chunk-6db4df6282bac3938feb2393",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-6b0446f6dce9b3c8264797fa",
+      "chunk-e6f2de49b4548626e1ea62af",
+      "chunk-a6ebd51a1ef3ed24a4a75496",
+      "chunk-4e25ba573761d9255423ae67",
+      "chunk-23889edf75e20c140c288bc1"
+    ],
+    "reranked": [
+      "chunk-130842ca33fc1ee9055d1bc3",
+      "chunk-c68506d4ec5e247b1185a691",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-2a2915aa6b985318b40a709c",
+      "chunk-16fee487f5b1d994bf3d1d2b",
+      "chunk-8516d529791bd1e59ca97908",
+      "chunk-e12d9bf36df803c8b7738d7c",
+      "chunk-b7601c47a674d45aa5edb654",
+      "chunk-b2179e1b9bd99c6087b009f6",
+      "chunk-a3be36a9bb0bf67ddeca1d77",
+      "chunk-a2f0e973ecafca96904e1119",
+      "chunk-0e6125c6e45114759813ca6f",
+      "chunk-6b0446f6dce9b3c8264797fa",
+      "chunk-28fd074f4b22d698b62a4944",
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-23889edf75e20c140c288bc1",
+      "chunk-4e25ba573761d9255423ae67",
+      "chunk-f524ca5abe39582dd582c6d5",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-6db4df6282bac3938feb2393",
+      "chunk-835a471f00cc9e6a2ac976f2",
+      "chunk-a6ebd51a1ef3ed24a4a75496",
+      "chunk-e6f2de49b4548626e1ea62af",
+      "chunk-33b026566dc49b8dc4880bde"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+      "rrf_score": 0.03057889822595705,
+      "routes": {
+        "bm25": {
+          "rank": 8,
+          "raw_score": 29.001943588256836
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.8657226799978316
+        }
+      },
+      "rerank_raw_logit_difference": 9.375,
+      "rerank_p_yes": 0.9999151889582765,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）",
+        "netplan Bond模式（现网部署配置）"
+      ],
+      "parent_id": "section-003d947b9a7eb6f58ab9",
+      "kind": "code",
+      "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）\n# This is the network config written by 'subiquity'\nnetwork:\n  ethernets:\n    enp61s0f0:\n      dhcp4: no\n    enp61s0f1:\n      dhcp4: no\n    ens1f0:\n      dhcp4: no\n    ens1f1:\n      dhcp4: no\n    ens3f0:\n      dhcp4: no\n    ens3f1:\n      dhcp4: no\n  bonds:\n    bond0:\n      interfaces:\n        - enp61s0f0\n        - enp61s0f1\n      parameters:\n        mode: 802.3ad                       #mode设置为4，交换机对应lacp-dynamic\n        mii-monitor-interval: 100\n  vlans:\n    bond0.90:                               #规划的Bond子接口，用于K8s\n      id: 90\n      link: bond0\n      addresses: [ 172.16.100.50/24 ]\n      routes:\n        - to: default\n          via: 172.16.100.1                   #规划的K8s地址网关\n      #gateway4: 172.16.100.1\n      nameservers:                         # DNS 服务器地址\n        addresses: [\"172.16.100.1\"]\n    bond0.299:                              #规划的Bond子接口，用于部署UPF时N4使用\n      id: 299\n      link: bond0\n     # addresses: [ 100.101.1.50/24 ]          #规划的N4地址后续通过网管(curl)配置\n  version: 2",
+      "block_ids": [
+        "manual-1edf23113651430f:b001022",
+        "manual-1edf23113651430f:b001023",
+        "manual-1edf23113651430f:b001024",
+        "manual-1edf23113651430f:b001025",
+        "manual-1edf23113651430f:b001026",
+        "manual-1edf23113651430f:b001027",
+        "manual-1edf23113651430f:b001028",
+        "manual-1edf23113651430f:b001029",
+        "manual-1edf23113651430f:b001030",
+        "manual-1edf23113651430f:b001031",
+        "manual-1edf23113651430f:b001032",
+        "manual-1edf23113651430f:b001033",
+        "manual-1edf23113651430f:b001034",
+        "manual-1edf23113651430f:b001035",
+        "manual-1edf23113651430f:b001036",
+        "manual-1edf23113651430f:b001037",
+        "manual-1edf23113651430f:b001038",
+        "manual-1edf23113651430f:b001039",
+        "manual-1edf23113651430f:b001040",
+        "manual-1edf23113651430f:b001041",
+        "manual-1edf23113651430f:b001042",
+        "manual-1edf23113651430f:b001043",
+        "manual-1edf23113651430f:b001044",
+        "manual-1edf23113651430f:b001045",
+        "manual-1edf23113651430f:b001046",
+        "manual-1edf23113651430f:b001047",
+        "manual-1edf23113651430f:b001048",
+        "manual-1edf23113651430f:b001049",
+        "manual-1edf23113651430f:b001050",
+        "manual-1edf23113651430f:b001051",
+        "manual-1edf23113651430f:b001052",
+        "manual-1edf23113651430f:b001053",
+        "manual-1edf23113651430f:b001054",
+        "manual-1edf23113651430f:b001055",
+        "manual-1edf23113651430f:b001056",
+        "manual-1edf23113651430f:b001057",
+        "manual-1edf23113651430f:b001058",
+        "manual-1edf23113651430f:b001059",
+        "manual-1edf23113651430f:b001060"
+      ],
+      "locators": [
+        "word/document.xml/body/p[461]",
+        "word/document.xml/body/p[462]",
+        "word/document.xml/body/p[463]",
+        "word/document.xml/body/p[464]",
+        "word/document.xml/body/p[465]",
+        "word/document.xml/body/p[466]",
+        "word/document.xml/body/p[467]",
+        "word/document.xml/body/p[468]",
+        "word/document.xml/body/p[469]",
+        "word/document.xml/body/p[470]",
+        "word/document.xml/body/p[471]",
+        "word/document.xml/body/p[472]",
+        "word/document.xml/body/p[473]",
+        "word/document.xml/body/p[474]",
+        "word/document.xml/body/p[475]",
+        "word/document.xml/body/p[476]",
+        "word/document.xml/body/p[477]",
+        "word/document.xml/body/p[478]",
+        "word/document.xml/body/p[479]",
+        "word/document.xml/body/p[480]",
+        "word/document.xml/body/p[481]",
+        "word/document.xml/body/p[482]",
+        "word/document.xml/body/p[483]",
+        "word/document.xml/body/p[484]",
+        "word/document.xml/body/p[485]",
+        "word/document.xml/body/p[486]",
+        "word/document.xml/body/p[487]",
+        "word/document.xml/body/p[488]",
+        "word/document.xml/body/p[489]",
+        "word/document.xml/body/p[490]",
+        "word/document.xml/body/p[491]",
+        "word/document.xml/body/p[492]",
+        "word/document.xml/body/p[493]",
+        "word/document.xml/body/p[494]",
+        "word/document.xml/body/p[495]",
+        "word/document.xml/body/p[496]",
+        "word/document.xml/body/p[497]",
+        "word/document.xml/body/p[498]",
+        "word/document.xml/body/p[499]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-c68506d4ec5e247b1185a691",
+      "rrf_score": 0.030776515151515152,
+      "routes": {
+        "bm25": {
+          "rank": 6,
+          "raw_score": 38.68107986450195
+        },
+        "dense": {
+          "rank": 4,
+          "raw_score": 0.8534863996770076
+        }
+      },
+      "rerank_raw_logit_difference": 9.25,
+      "rerank_p_yes": 0.9999038975845005,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）",
+        "netplan Bond模式（现网部署配置）"
+      ],
+      "parent_id": "section-003d947b9a7eb6f58ab9",
+      "kind": "prose",
+      "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）\n参数说明：\n其中enp61s0f0/enp61s0f1需根据实际部署情况选择需要做bonding的网口；\n此处只需考虑N4、K8S和管理口共口部署，N3/N6/N9接口不需要在此处做bonding设置；\n用于K8s接口地址网络必须配置nameservers网关地址。后续部署K8s时需要，否则会有报错提示；\n默认路由routes.default需要配置。后续部署K8s时需要，否则会有报错提示。",
+      "block_ids": [
+        "manual-1edf23113651430f:b001061",
+        "manual-1edf23113651430f:b001062",
+        "manual-1edf23113651430f:b001063",
+        "manual-1edf23113651430f:b001064",
+        "manual-1edf23113651430f:b001065"
+      ],
+      "locators": [
+        "word/document.xml/body/p[500]",
+        "word/document.xml/body/p[501]",
+        "word/document.xml/body/p[502]",
+        "word/document.xml/body/p[503]",
+        "word/document.xml/body/p[504]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N3",
+        "N4",
+        "N6"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-f152a1ca8242c5d6e8fa25c0",
+      "rrf_score": 0.031544957774465976,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 42.433441162109375
+        },
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.8297747385305869
+        }
+      },
+      "rerank_raw_logit_difference": 7.8125,
+      "rerank_p_yes": 0.9995955185021579,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）"
+      ],
+      "parent_id": "section-5339b4d479b276b883d0",
+      "kind": "prose",
+      "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）\n配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）\n将两个物理网口做动态lacp的Bonding操作，绑定为一个逻辑口。Bonding通过将物理网口转换为逻辑网口，突破物理网口数量限制的局限。根据不同的VLAN ID配置不同的bonding子接口。此处做bond0主要是用于为N4和K8s分配子接口。",
+      "block_ids": [
+        "manual-1edf23113651430f:b000982",
+        "manual-1edf23113651430f:b000983"
+      ],
+      "locators": [
+        "word/document.xml/body/p[421]",
+        "word/document.xml/body/p[422]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-2a2915aa6b985318b40a709c",
+      "rrf_score": 0.03225806451612903,
+      "routes": {
+        "bm25": {
+          "rank": 2,
+          "raw_score": 42.37553405761719
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.8766047836736311
+        }
+      },
+      "rerank_raw_logit_difference": 7.3125,
+      "rerank_p_yes": 0.9993332976907565,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）",
+        "netplan非Bond模式（实验室内部使用）"
+      ],
+      "parent_id": "section-91bcd2ca1ea44ffdcdcb",
+      "kind": "prose",
+      "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan非Bond模式（实验室内部使用）\nnetplan非Bond模式（实验室内部使用）\nBond模式下00-installer-config.yaml 配置信息如下：",
+      "block_ids": [
+        "manual-1edf23113651430f:b000986",
+        "manual-1edf23113651430f:b000987"
+      ],
+      "locators": [
+        "word/document.xml/body/p[425]",
+        "word/document.xml/body/p[426]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-16fee487f5b1d994bf3d1d2b",
+      "rrf_score": 0.028577260665441927,
+      "routes": {
+        "bm25": {
+          "rank": 9,
+          "raw_score": 24.48480987548828
+        },
+        "dense": {
+          "rank": 11,
+          "raw_score": 0.624054166111804
+        }
+      },
+      "rerank_raw_logit_difference": 5.75,
+      "rerank_p_yes": 0.9968273171575148,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "调整UPF配置（现网部署方式）",
+        "N4网卡配置"
+      ],
+      "parent_id": "section-50537a2b65559907e261",
+      "kind": "prose",
+      "text": "单节点离线部署UPF / 调整UPF配置（现网部署方式） / N4网卡配置\n N4网卡配置\n根据前面 REF _Toc132029006 \\r \\h 2.3.2.3 REF _Toc132029006 \\h 确定网卡映射关系和 REF _Ref7209 \\n \\h 3.2.4 REF _Ref7209 \\h 配置netplan Bond0口与Bond0子接口章节内容，确定N4对应的网卡。\n根据现网冗余备份配置考虑，一般将两个物理网口做动态lacp的Bonding操作，绑定为一个逻辑口。参看 REF _Ref7209 \\n \\h 3.2.4 REF _Ref7209 \\h 配置netplan Bond0口与Bond0子接口章节，一般是将服务器的两个电口作动态绑定，分别用于N4和K8s接口。\n前面章节部署K8s时已经在host机完成netplan配置，其中一个子接口是用于UPF N4配置的。UPF N4网卡配置参数在config.yaml文件（默认路径为：/home/upf_setup_CU5GC_UPF_5.0.210/integration/）中对应配置参数如下：\n# 设置N4网卡配置\nn4:\n  bond:                                #UPF N4网卡是Bond模式\n    enabled: false                       #默认配置为false，前面部署K8s时已经在host机netplan配置\n  nics:\n    - bond0.299                        #默认配置为false，前面部署K8s时已经在host机netplan配置\n  vlan:\n    enabled: false                       #默认配置为false，对端交换机配置为：动态lacp，Trunk\n    id: 299                             #UPF N4 VlanId\n  ipv4:\n    enabled: false                       #默认配置为false，通过网管配置下发\n    address: \"100.101.1.55/24\"\n    gateway: \"100.101.1.1\"\n    service_ip: \"100.101.1.55\"\n  ipv6:\n    enabled: false                      #默认配置为false，通过网管配置下发\n    address: \"2404::4:55/64\"\n    gateway: \"2404::4:254\"\n  intf_mode: 1 # 0-seperated,1-combined  #UPF N4合设、分设模式选择：1表示合设",
+      "block_ids": [
+        "manual-1edf23113651430f:b001780",
+        "manual-1edf23113651430f:b001781",
+        "manual-1edf23113651430f:b001782",
+        "manual-1edf23113651430f:b001783",
+        "manual-1edf23113651430f:b001784",
+        "manual-1edf23113651430f:b001785",
+        "manual-1edf23113651430f:b001786",
+        "manual-1edf23113651430f:b001787",
+        "manual-1edf23113651430f:b001788",
+        "manual-1edf23113651430f:b001789",
+        "manual-1edf23113651430f:b001790",
+        "manual-1edf23113651430f:b001791",
+        "manual-1edf23113651430f:b001792",
+        "manual-1edf23113651430f:b001793",
+        "manual-1edf23113651430f:b001794",
+        "manual-1edf23113651430f:b001795",
+        "manual-1edf23113651430f:b001796",
+        "manual-1edf23113651430f:b001797",
+        "manual-1edf23113651430f:b001798",
+        "manual-1edf23113651430f:b001799",
+        "manual-1edf23113651430f:b001800",
+        "manual-1edf23113651430f:b001801",
+        "manual-1edf23113651430f:b001802"
+      ],
+      "locators": [
+        "word/document.xml/body/p[883]",
+        "word/document.xml/body/p[884]",
+        "word/document.xml/body/p[885]",
+        "word/document.xml/body/p[886]",
+        "word/document.xml/body/p[887]",
+        "word/document.xml/body/p[888]",
+        "word/document.xml/body/p[889]",
+        "word/document.xml/body/p[890]",
+        "word/document.xml/body/p[891]",
+        "word/document.xml/body/p[892]",
+        "word/document.xml/body/p[893]",
+        "word/document.xml/body/p[894]",
+        "word/document.xml/body/p[895]",
+        "word/document.xml/body/p[896]",
+        "word/document.xml/body/p[897]",
+        "word/document.xml/body/p[898]",
+        "word/document.xml/body/p[899]",
+        "word/document.xml/body/p[900]",
+        "word/document.xml/body/p[901]",
+        "word/document.xml/body/p[902]",
+        "word/document.xml/body/p[903]",
+        "word/document.xml/body/p[904]",
+        "word/document.xml/body/p[905]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "n4",
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-8516d529791bd1e59ca97908",
+      "rrf_score": 0.03055037313432836,
+      "routes": {
+        "bm25": {
+          "rank": 4,
+          "raw_score": 39.18155288696289
+        },
+        "dense": {
+          "rank": 7,
+          "raw_score": 0.8084631274196021
+        }
+      },
+      "rerank_raw_logit_difference": 5.5625,
+      "rerank_p_yes": 0.9961755163553627,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）",
+        "netplan Bond模式（现网部署配置）"
+      ],
+      "parent_id": "section-003d947b9a7eb6f58ab9",
+      "kind": "prose",
+      "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）\nnetplan Bond模式（现网部署配置）\n现网场景下，更推荐使用Bond模式，增加冗余备份。当任意一张网卡因故障无法工作时候，另外一张网卡仍可继续工作，不影响UPF软件和各个接口之间进行数据通信。\nBond模式下00-installer-config.yaml 配置信息如下，具体对应关系可以和 REF _Ref4002 \\n \\h 2.2.3.2 REF _Ref4002 \\h UPF地址规划Bonding模式章节内容彼此对应查看。",
+      "block_ids": [
+        "manual-1edf23113651430f:b001019",
+        "manual-1edf23113651430f:b001020",
+        "manual-1edf23113651430f:b001021"
+      ],
+      "locators": [
+        "word/document.xml/body/p[458]",
+        "word/document.xml/body/p[459]",
+        "word/document.xml/body/p[460]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-e12d9bf36df803c8b7738d7c",
+      "rrf_score": 0.02877846790890269,
+      "routes": {
+        "bm25": {
+          "rank": 10,
+          "raw_score": 23.748594284057617
+        },
+        "dense": {
+          "rank": 9,
+          "raw_score": 0.7613601706041719
+        }
+      },
+      "rerank_raw_logit_difference": 5.5625,
+      "rerank_p_yes": 0.9961755163553627,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）",
+        "netplan非Bond模式（实验室内部使用）"
+      ],
+      "parent_id": "section-91bcd2ca1ea44ffdcdcb",
+      "kind": "code",
+      "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan非Bond模式（实验室内部使用）\n# This is the network config written by 'subiquity'\nnetwork:\n  ethernets:\n    ens16f0:\n      addresses:\n      - 172.16.100.50/24             # 用于K8s地址\n      gateway4: 172.16.100.1\n      nameservers:                 # DNS 服务器地址\n        addresses:\n        - 114.114.114.114\n        - 172.16.100.1\n        search: []\n      routes:\n      - to: default\n        via: 172.16.100.1\n    ens16f1:\n      dhcp4: no                    # 用于UPF N4地址\n    ens16f2:\n      dhcp4: no\n    ens16f3:\n      dhcp4: no\n    ens1f0:                         # 可用于UPF N6地址 \n      dhcp4: no\n    ens1f1:                         # 可用于UPF N3地址\n      dhcp4: no\n    ens3f0:\n      dhcp4: no\n    ens3f1:\n      dhcp4: no\n  version: 2",
+      "block_ids": [
+        "manual-1edf23113651430f:b000988",
+        "manual-1edf23113651430f:b000989",
+        "manual-1edf23113651430f:b000990",
+        "manual-1edf23113651430f:b000991",
+        "manual-1edf23113651430f:b000992",
+        "manual-1edf23113651430f:b000993",
+        "manual-1edf23113651430f:b000994",
+        "manual-1edf23113651430f:b000995",
+        "manual-1edf23113651430f:b000996",
+        "manual-1edf23113651430f:b000997",
+        "manual-1edf23113651430f:b000998",
+        "manual-1edf23113651430f:b000999",
+        "manual-1edf23113651430f:b001000",
+        "manual-1edf23113651430f:b001001",
+        "manual-1edf23113651430f:b001002",
+        "manual-1edf23113651430f:b001003",
+        "manual-1edf23113651430f:b001004",
+        "manual-1edf23113651430f:b001005",
+        "manual-1edf23113651430f:b001006",
+        "manual-1edf23113651430f:b001007",
+        "manual-1edf23113651430f:b001008",
+        "manual-1edf23113651430f:b001009",
+        "manual-1edf23113651430f:b001010",
+        "manual-1edf23113651430f:b001011",
+        "manual-1edf23113651430f:b001012",
+        "manual-1edf23113651430f:b001013",
+        "manual-1edf23113651430f:b001014",
+        "manual-1edf23113651430f:b001015",
+        "manual-1edf23113651430f:b001016",
+        "manual-1edf23113651430f:b001017"
+      ],
+      "locators": [
+        "word/document.xml/body/p[427]",
+        "word/document.xml/body/p[428]",
+        "word/document.xml/body/p[429]",
+        "word/document.xml/body/p[430]",
+        "word/document.xml/body/p[431]",
+        "word/document.xml/body/p[432]",
+        "word/document.xml/body/p[433]",
+        "word/document.xml/body/p[434]",
+        "word/document.xml/body/p[435]",
+        "word/document.xml/body/p[436]",
+        "word/document.xml/body/p[437]",
+        "word/document.xml/body/p[438]",
+        "word/document.xml/body/p[439]",
+        "word/document.xml/body/p[440]",
+        "word/document.xml/body/p[441]",
+        "word/document.xml/body/p[442]",
+        "word/document.xml/body/p[443]",
+        "word/document.xml/body/p[444]",
+        "word/document.xml/body/p[445]",
+        "word/document.xml/body/p[446]",
+        "word/document.xml/body/p[447]",
+        "word/document.xml/body/p[448]",
+        "word/document.xml/body/p[449]",
+        "word/document.xml/body/p[450]",
+        "word/document.xml/body/p[451]",
+        "word/document.xml/body/p[452]",
+        "word/document.xml/body/p[453]",
+        "word/document.xml/body/p[454]",
+        "word/document.xml/body/p[455]",
+        "word/document.xml/body/p[456]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N3",
+        "N4",
+        "N6"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-28fd074f4b22d698b62a4944",
+          "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan非Bond模式（实验室内部使用）\n非Bonding模式下，每个物理口都是独自作为UPF的接口和交换机通信。此时的参考配置如上表。具体可以和 REF _Ref31777 \\n \\h 2.2.3.1 REF _Ref31777 \\h UPF地址规划非Bonding模式相对应。",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b001018"
+          ],
+          "locators": [
+            "word/document.xml/body/p[457]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-b7601c47a674d45aa5edb654",
+      "rrf_score": 0.032266458495966696,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 41.93133544921875
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.8894004683580756
+        }
+      },
+      "rerank_raw_logit_difference": 5.0625,
+      "rerank_p_yes": 0.9937100978631075,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）"
+      ],
+      "parent_id": "section-5339b4d479b276b883d0",
+      "kind": "command",
+      "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）\ncd /etc/netplan",
+      "block_ids": [
+        "manual-1edf23113651430f:b000984"
+      ],
+      "locators": [
+        "word/document.xml/body/p[423]"
+      ],
+      "command_id": "cmd-08f42a3fcf2aad6b",
+      "command_family": "other",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-0e6125c6e45114759813ca6f",
+          "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）\nvim 00-installer-config.yaml",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b000985"
+          ],
+          "locators": [
+            "word/document.xml/body/p[424]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-09-28T10:33:04.745822+00:00",
+  "stage": "M4_technical_exit_passed_real_topology_pending",
+  "generation": "a6f18ac81a18aa2125fa",
+  "tests_passed": 78,
+  "p4_tests_passed": 26,
+  "ruff_pass": true,
+  "dependency_check_pass": true,
+  "packages": {
+    "duckdb": "1.5.5",
+    "pyarrow": "23.0.1",
+    "drain3": "0.9.11",
+    "openpyxl": "3.1.5"
+  },
+  "physical_lines": 32539,
+  "source_bytes": 6347974,
+  "continuity_pass": true,
+  "synthetic_capacity_rss_pass": true,
+  "synthetic_capacity_scaled_counts_pass": true,
+  "real_timezone_confirmed": false,
+  "real_device_identity_confirmed": false,
+  "real_topology_validated": false,
+  "human_signoff": false,
+  "formal_business_accuracy_claim": false,
+  "artifacts_sha256": {
+    "evidence/p4/regression.json": "7d7af94ecd673bbea7d3785ce3d15a989d3dabaa481dfa269c7a2810e283bf9c",
+    "evidence/p4/capacity.json": "05a9d9dad745a451c07ce0aa89966172a1832aa07e398551bec04b585a5838d9",
+    "evidence/p4/capacity_real.json": "ffe5cb813553cf4478f637cf0f11c7d5aafb740d197f7c51ac23bde0d5e7fbf2",
+    "evidence/p4/capacity_synthetic.json": "23db512878cf89c7f03f0b618b2be10bd08016b39da59ff790c6da68861bd844",
+    "evidence/p4/amplification.json": "bf926974adc0ef747e6b1e9ba565c7b22b51500a068f04bd5f6c275b82d4a4be",
+    "evidence/p4/tests.log": "2ce812de237ea4728d066edca61e91adf97b200ccf74205de18cf92e7fbc053b",
+    "docs/P4_acceptance.md": "723d561df5ba18d3d6f6734691d25cc5c54fe773b21890a046b5d98fa25723b0",
+    "uv.lock": "a8d5aba74d99f1c33bbf7cf38911f60f39b60a78d11ce2092f12ba7b13f237f4"
+  }
+}

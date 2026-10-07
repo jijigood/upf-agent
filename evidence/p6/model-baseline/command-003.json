@@ -1,0 +1,372 @@
+{
+  "row": {
+    "id": "command-003",
+    "model": "baseline",
+    "evidence_sha256": "eb5615b3ebb2a3f24c3e2a52bd455776b12bd0265464a3c57c50efc03429851a",
+    "elapsed_ms": 15528.365415986627,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 8256,
+      "completion_tokens_observed": 290,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": false,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册‘检查upf 业务网络地址配置 / 检查所有接口地址’如何使用 show？只摘录原文并说明示例适用范围。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "UPF# show interface addr",
+        "citations": [
+          {
+            "chunk_id": "chunk-7186a25131ec3f73b59889b5",
+            "quote": "UPF# show interface addr"
+          }
+        ]
+      },
+      {
+        "text": "UPF# show interface\nBondEthernet0 (up):\n\nBondEthernet1 (up):\n\nport17/0/0 (up):\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-a8f5ff09d0cf29498ce8c9d0",
+            "quote": "UPF# show interface"
+          },
+          {
+            "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+            "quote": "BondEthernet0 (up):\n"
+          },
+          {
+            "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+            "quote": "BondEthernet1 (up):\n"
+          },
+          {
+            "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+            "quote": "port17/0/0 (up):\n"
+          }
+        ]
+      },
+      {
+        "text": "UPF# show hardware-interfaces port17/0/0",
+        "citations": [
+          {
+            "chunk_id": "chunk-4065867d9b809a1a9ef3d21b",
+            "quote": "UPF# show hardware-interfaces port17/0/0"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-7186a25131ec3f73b59889b5",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查N3N6接口及IP配置"
+        ],
+        "parent_id": "section-4074dc47431e95e1d96d",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nUPF# show interface addr",
+        "token_count": 39,
+        "block_ids": [
+          "manual-1edf23113651430f:b002003"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1096]"
+        ],
+        "ordinal_start": 2003,
+        "ordinal_end": 2003,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-35dca7543f116ef7",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-a8f5ff09d0cf29498ce8c9d0",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查N3N6接口及IP配置"
+        ],
+        "parent_id": "section-4074dc47431e95e1d96d",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nUPF# show interface",
+        "token_count": 38,
+        "block_ids": [
+          "manual-1edf23113651430f:b002023"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1115]"
+        ],
+        "ordinal_start": 2023,
+        "ordinal_end": 2023,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-a2fad1e5c3b3fd74",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查N3N6接口及IP配置"
+        ],
+        "parent_id": "section-4074dc47431e95e1d96d",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nBondEthernet0 (up):\n  L3 100.10.1.50/24\n  L3 2303::3:50/64\nBondEthernet1 (up):\n  L3 174.100.100.50/24\n  L3 2606::6:50/64\nlocal0 (dn):\nport17/0/0 (up):\nport17/0/1 (up):\nport4b/0/0 (up):\nport4b/0/1 (up):\n示例输出截图：\n在vpp中测试业务地址连通性，该地址为交换机上的网关地址",
+        "token_count": 190,
+        "block_ids": [
+          "manual-1edf23113651430f:b002004",
+          "manual-1edf23113651430f:b002005",
+          "manual-1edf23113651430f:b002006",
+          "manual-1edf23113651430f:b002007",
+          "manual-1edf23113651430f:b002008",
+          "manual-1edf23113651430f:b002009",
+          "manual-1edf23113651430f:b002010",
+          "manual-1edf23113651430f:b002011",
+          "manual-1edf23113651430f:b002012",
+          "manual-1edf23113651430f:b002013",
+          "manual-1edf23113651430f:b002014",
+          "manual-1edf23113651430f:b002015",
+          "manual-1edf23113651430f:b002018"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1097]",
+          "word/document.xml/body/p[1098]",
+          "word/document.xml/body/p[1099]",
+          "word/document.xml/body/p[1100]",
+          "word/document.xml/body/p[1101]",
+          "word/document.xml/body/p[1102]",
+          "word/document.xml/body/p[1103]",
+          "word/document.xml/body/p[1104]",
+          "word/document.xml/body/p[1105]",
+          "word/document.xml/body/p[1106]",
+          "word/document.xml/body/p[1107]",
+          "word/document.xml/body/p[1108]",
+          "word/document.xml/body/p[1110]"
+        ],
+        "ordinal_start": 2004,
+        "ordinal_end": 2018,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-4065867d9b809a1a9ef3d21b",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查N3N6接口及IP配置"
+        ],
+        "parent_id": "section-4074dc47431e95e1d96d",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nUPF# show hardware-interfaces port17/0/0",
+        "token_count": 47,
+        "block_ids": [
+          "manual-1edf23113651430f:b002030"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1121]"
+        ],
+        "ordinal_start": 2030,
+        "ordinal_end": 2030,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-ff64a8e96cab328a",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q2",
+        "S5Q2",
+        "S6Q1",
+        "S7Q1",
+        "S9Q1",
+        "S13Q1"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "使用 show interface addr 命令可检查所有接口地址配置，适用于单节点离线部署UPF场景。",
+            "quote_ids": [
+              "S2Q2"
+            ]
+          },
+          {
+            "text": "使用 show interface 命令可查看N3N6接口及IP配置，输出结果包含接口状态、L3地址及PCI地址信息，适用于检查N3N6接口配置是否正确。",
+            "quote_ids": [
+              "S5Q2",
+              "S9Q2",
+              "S9Q5",
+              "S9Q9"
+            ]
+          },
+          {
+            "text": "通过执行 show hardware-interfaces port17/0/0 命令可查看指定物理接口的详细信息，适用于确认特定网卡接口的配置状态。",
+            "quote_ids": [
+              "S7Q2"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "使用 show interface addr 命令可检查所有接口地址配置，适用于单节点离线部署UPF场景。",
+            "citations": [
+              {
+                "chunk_id": "chunk-7186a25131ec3f73b59889b5",
+                "quote": "UPF# show interface addr"
+              }
+            ]
+          },
+          {
+            "text": "使用 show interface 命令可查看N3N6接口及IP配置，输出结果包含接口状态、L3地址及PCI地址信息，适用于检查N3N6接口配置是否正确。",
+            "citations": [
+              {
+                "chunk_id": "chunk-a8f5ff09d0cf29498ce8c9d0",
+                "quote": "UPF# show interface"
+              },
+              {
+                "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+                "quote": "BondEthernet0 (up):\n"
+              },
+              {
+                "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+                "quote": "BondEthernet1 (up):\n"
+              },
+              {
+                "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+                "quote": "port17/0/0 (up):\n"
+              }
+            ]
+          },
+          {
+            "text": "通过执行 show hardware-interfaces port17/0/0 命令可查看指定物理接口的详细信息，适用于确认特定网卡接口的配置状态。",
+            "citations": [
+              {
+                "chunk_id": "chunk-4065867d9b809a1a9ef3d21b",
+                "quote": "UPF# show hardware-interfaces port17/0/0"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

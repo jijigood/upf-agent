@@ -1,0 +1,24 @@
+{
+  "run_id": "8b9a8e52c9e947ec9a623512a42ccbf4",
+  "status": "need_input",
+  "facts": [],
+  "hypotheses": [],
+  "supporting_evidence_ids": [],
+  "opposing_evidence_ids": [],
+  "missing_information": [
+    "没有真实拓扑，无法确认实际链路/交换机端口与传播路径。",
+    "请先导入日志并提供已登记的 log_generation。"
+  ],
+  "recommendations": [
+    "按报告来源位置复核原文，并补充列出的现场资料；建议不自动执行。"
+  ],
+  "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "corpus_generation": "c61e9796eead2610cfd4",
+  "question": "分析这次故障日志的原因",
+  "fact_records": [],
+  "candidates": [],
+  "evidence": [],
+  "warnings": [],
+  "degraded": false,
+  "publication_policy": "deterministic_tool_facts_and_verified_manual_source_extracts"
+}

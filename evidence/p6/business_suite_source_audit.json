@@ -1,0 +1,23 @@
+{
+  "suite_sha256": "f631cdc1131e200304654f2abccf54adcd1417042b0c09a1247eca6734a26bf3",
+  "cases": 120,
+  "counts": {
+    "command": 40,
+    "knowledge": 20,
+    "troubleshooting": 20,
+    "log": 20,
+    "topology": 10,
+    "missing": 10
+  },
+  "splits": {
+    "dev": 60,
+    "heldout": 60
+  },
+  "unique_native_chunks_resolved": 155,
+  "log_references_resolved": 60,
+  "historical_published_source_group_overlap_in_new_heldout": [],
+  "source_group_partition_pass": true,
+  "scope": "source integrity and prior published/dev source exposure; no human relevance or complete corpus blindness claim",
+  "human_reviewed": 0,
+  "heldout_model_execution": false
+}

@@ -1,0 +1,950 @@
+{
+  "original_sha256": "dddf4af7c23ee1cffe746e8f78bc5a168391a229f45027fb01b66fadba248f05",
+  "prompt_version": "v1-schema-only",
+  "mode": "deterministic_rescore_of_recorded_responses_no_new_inference",
+  "rows": [
+    {
+      "id": 0,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "attempts": [
+        {
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "attempts": [
+        {
+          "pass": true,
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "first_pass": 90,
+  "after_repair": 100,
+  "tools_executed": 0
+}

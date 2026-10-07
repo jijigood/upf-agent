@@ -1,0 +1,185 @@
+{
+  "row": {
+    "id": "command-012",
+    "model": "baseline",
+    "evidence_sha256": "e0710b047aad0d77b85dee5093b9cb3d59c77f2f03e9af110a09d8072d5cbbcb",
+    "elapsed_ms": 15041.217797901481,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 5703,
+      "completion_tokens_observed": 289,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": true,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "核对 set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4> 在‘UPF系统能力 / 功能配置’中的原始语法，不把示例当现场参数。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": null,
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-ed162186f81b734c927091f0",
+            "quote": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-ed162186f81b734c927091f0",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品配置",
+          "CLI配置命令",
+          "UPF系统能力",
+          "功能配置"
+        ],
+        "parent_id": "section-93a4864c8a3b2c42c793",
+        "kind": "command",
+        "text": "CLI配置命令 / UPF系统能力 / 功能配置\nset-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n相关说明：UPFD> set-upf-prt-sw n4-prt-sw 4",
+        "token_count": 59,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000752"
+        ],
+        "locators": [
+          "word/document.xml/body/p[177]"
+        ],
+        "ordinal_start": 752,
+        "ordinal_end": 752,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "n4"
+        ],
+        "command_id": "cmd-011a8faed078e465",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。",
+      "引用手册版本未知，需核对目标设备版本与操作前提。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q2",
+        "S5Q5"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4> 是在‘UPF系统能力 / 功能配置’中的原始语法。",
+            "quote_ids": [
+              "S1Q2"
+            ]
+          },
+          {
+            "text": "n4-prt-sw 用于设置UPF信令面日志打印级别，取值范围为 fatal(1)、error(2)、alert(3)、debug(4)。",
+            "quote_ids": [
+              "S2Q3"
+            ]
+          },
+          {
+            "text": "gtpu-prt-sw 用于设置UPF数据面日志打印级别，取值范围为 off(0)、on(1)。",
+            "quote_ids": [
+              "S2Q4"
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性未确认，证据版本为unknown。"
+        ]
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4> 是在‘UPF系统能力 / 功能配置’中的原始语法。",
+            "citations": [
+              {
+                "chunk_id": "chunk-ed162186f81b734c927091f0",
+                "quote": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n"
+              }
+            ]
+          },
+          {
+            "text": "n4-prt-sw 用于设置UPF信令面日志打印级别，取值范围为 fatal(1)、error(2)、alert(3)、debug(4)。",
+            "citations": [
+              {
+                "chunk_id": "chunk-21b601c9353349f7eb3ab15c",
+                "quote": "n4-prt-sw: upf信令面日志打印级别设置。级别：fatal(1), error(2), alert(3), debug(4)；\n"
+              }
+            ]
+          },
+          {
+            "text": "gtpu-prt-sw 用于设置UPF数据面日志打印级别，取值范围为 off(0)、on(1)。",
+            "citations": [
+              {
+                "chunk_id": "chunk-21b601c9353349f7eb3ab15c",
+                "quote": "gtpu-prt-sw: upf数据面日志打印级别设置。级别：off(0), on(1)。\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性未确认，证据版本为unknown。"
+        ]
+      },
+      "support_decisions": [
+        true,
+        false,
+        false
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "版本适用性未确认，证据版本为unknown。",
+      "部分陈述未通过自动证据支持检查，已移除。"
+    ]
+  }
+}

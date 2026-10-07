@@ -1,0 +1,33 @@
+{
+  "suite_sha256": "b90fed730ee01ab5688e36209fd518dbfe020ac984fa91ddf4b1576cd2f25cf6",
+  "prior_answer_regression_sha256": "8809c0d8b9f2ff9abce8f6b0b0751f46d7b8f14c9fd4865493bf4144bd24fcd3",
+  "prior_published_parents": [
+    "section-0314b45459b4d50ca9e1",
+    "section-12574399cf754e91b178",
+    "section-279f5f812451d0bbf03e",
+    "section-2ffe9e94e6b3b25df7c2",
+    "section-314d5be1655ed1806639",
+    "section-3475d8b0d5f7feb7478f",
+    "section-36be7173e30260255627",
+    "section-4074dc47431e95e1d96d",
+    "section-60d6c998896609d32258",
+    "section-6dbbd25d0bcb9b848452",
+    "section-6e60743092cbb0b5a760",
+    "section-710fd076f227ac4cc09e",
+    "section-774d189010d35807861b",
+    "section-81c9b2198144abe8fd73",
+    "section-831bb73123d41b9e704c",
+    "section-88ee61405d61db1669e2",
+    "section-93a4864c8a3b2c42c793",
+    "section-a0d2c40fcf8c66d55828",
+    "section-a574708e806efe03efac",
+    "section-d4ce23a67f85b23bb481",
+    "section-e203deac6ae5f4262e1c",
+    "section-e80c7044dfc53c9a3cda",
+    "section-ec59c4407654d89c2ae9",
+    "section-fd3f22918fba8d8acc95"
+  ],
+  "heldout_source_group_overlap": [],
+  "pass": true,
+  "scope": "P3 prior published manual sources; distinct question/family groups; not a corpus pretraining claim"
+}

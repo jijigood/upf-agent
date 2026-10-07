@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-09-29T01:31:56.400325+00:00",
+  "pipeline_identity": "07109699091734a709ec309a9933d91b23190c61176a4ad9425e041160579174",
+  "owned_model_services_remaining": [],
+  "gpu_memory_after_shutdown_mib": {
+    "0": 0,
+    "1": 0
+  },
+  "original_user_server_pid": 2889914,
+  "original_user_server_alive": true,
+  "user_server_stopped_by_this_task": false,
+  "owned_runner_completed": {
+    "time": 1790618076.1931763,
+    "step": "all",
+    "state": "done"
+  },
+  "earlier_target_runner_note": "runner.json retains its interrupted phase state; both low16K output files completed before stopping continuation; 32K low skipped per generation_budget_failure.json",
+  "heldout_executed": false
+}

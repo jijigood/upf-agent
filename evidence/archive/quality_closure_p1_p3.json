@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-09-28T09:58:49.099261+00:00",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "p3_generation": "c61e9796eead2610cfd4",
+  "commands": 107,
+  "chunks": 1061,
+  "ocr_corrected_findings": 116,
+  "ocr_quarantined_lines": 7,
+  "structure_assistant_checked": 60,
+  "merged_cells_source_checked": 144,
+  "automated_tests_passed": 52,
+  "answer_regression": {
+    "cases": 16,
+    "machine_contract_pass": 16,
+    "quote_integrity_pass": 16,
+    "generation_failed": 0,
+    "human_semantic_completed": 0
+  },
+  "answer_evaluation_processing_mode": "deterministic_publication_replay_of_v3_real_model_outputs_no_new_inference",
+  "current_production_txt_cli": "completed",
+  "human_signoff": false,
+  "formal_business_accuracy_claim": false,
+  "pending": [
+    "M2 人工业务签署与原件疑点确认",
+    "P6 独立语义、完整性和现场适用性评测"
+  ],
+  "artifacts_sha256": {
+    "evidence/p2/ocr_30.json": "f08aba39596180dc832a713af25ac6df5c97ba6638b5d07661b91622c406e619",
+    "evidence/p2/截图OCR复核报告_bf8fb923cd90036e501f.md": "99b165e6f97e77d5b93621638d4d795864ad506cec6709876a99dc7e25a95673",
+    "evidence/p2/ocr_corrections.json": "58b1b8a6c65c8d27c8a7f82589d940ba0b9966808f1bdee47bc74d87a581374e",
+    "evidence/p2/ocr_corrected.json": "fb5353dbaea8a315deaa253fc1299d7a5eb35a7d52f6657648fb9ddcbcece7ee",
+    "evidence/p2/structure_audit.json": "f11d0c1d779cc9fe07c14745a284cc346eddd050979dc91901c23ab436a2a4aa",
+    "evidence/p2/merged_cells_audit.json": "86be92af2251c4460192529d077df62bb552aadf5668bd2be6a39cdbdcd6e173",
+    "evidence/p2/validation.json": "db873f16f1e01ea7e87dbf21603e70500f19c6047f3a364f99aa7432bd2c4825",
+    "evidence/p3/ablation.json": "8e477adbf38e053594aa1188dd4dd88ef33e1e5816a38ede52e842e56af4d39a",
+    "evidence/p3/quality_regression.json": "8809c0d8b9f2ff9abce8f6b0b0751f46d7b8f14c9fd4865493bf4144bd24fcd3",
+    "evidence/p3/semantic_review.json": "2692c39f19c17cbbffd25c0c476812b06cd8e8f24c572ce961bc4d51d15a16cb",
+    "evidence/p3/cli_quality_answer.json": "e8f3ce12617f8260efd08d3a7a3f6635cc5887975ac2a992497c9adf412452d0",
+    "evidence/p3/validation.json": "8200a44c96169a1ee7ae90092937c43b82b86bc393a7b89a2e89e04e194aa7d4"
+  }
+}

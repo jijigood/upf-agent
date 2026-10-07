@@ -1,0 +1,349 @@
+{
+  "row": {
+    "id": "troubleshooting-004",
+    "model": "baseline",
+    "evidence_sha256": "975136822a9929bb30404c7b43df7a4c16545c7cc1900739fc586934185a423d",
+    "elapsed_ms": 19548.548253253102,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 6317,
+      "completion_tokens_observed": 366,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘部署FAQ / K8S集群软件故障排查 / 插件维护管理’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n"
+          }
+        ]
+      },
+      {
+        "text": "1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\n\nroot@upf:~# helm -n openebs ls\n\nNAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION\n\nopenebs openebs         1               2023-03-30 11:16:53.302896372 +0800 CST deployed        openebs-3.3.1   3.3.0  \n",
+        "citations": [
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\n"
+          },
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "root@upf:~# helm -n openebs ls\n"
+          },
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "NAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION\n"
+          },
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "openebs openebs         1               2023-03-30 11:16:53.302896372 +0800 CST deployed        openebs-3.3.1   3.3.0  \n"
+          }
+        ]
+      },
+      {
+        "text": "kubectl -n <namespace> describe pods <pod-name>\nkubectl -n <namespace> logs -f <pod-name>",
+        "citations": [
+          {
+            "chunk_id": "chunk-5433f2361d7cbceae8092553",
+            "quote": "kubectl -n <namespace> describe pods <pod-name>"
+          },
+          {
+            "chunk_id": "chunk-d228af64df28fdea95b91934",
+            "quote": "kubectl -n <namespace> logs -f <pod-name>"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "基本故障排查",
+          "插件安装问题"
+        ],
+        "parent_id": "section-206f98b59b4a27568dd1",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 基本故障排查 / 插件安装问题\n插件安装问题\n每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n以openebs存储插件为例，插件安装在openebs命名空间，使用helm进行部署。其他插件信息请参考插件运行管理章节。\n1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\nroot@upf:~# helm -n openebs ls\nNAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION\nopenebs openebs         1               2023-03-30 11:16:53.302896372 +0800 CST deployed        openebs-3.3.1   3.3.0  \n2.\t检查openebs命名空间下的pod状态，查看STATUS列是否为Running\nroot@upf:~# kubectl -n openebs get pods \nNAME                                          READY   STATUS    RESTARTS       AGE\nopenebs-localpv-provisioner-7b4db8497-bjjvp   1/1     Running   3 (149m ago)   5h59m\n3.\t如果pod状态异常，需要查看pod日志，分析定位具体原因，一般使用以下命令查看openebs pod日志\nroot@upf:~# kubectl -n openebs logs -f openebs-localpv-provisioner-7b4db8497-bjjvp\nroot@upf:~# kubectl -n openebs describe pods openebs-localpv-provisioner-7b4db8497-bjjvp\n4.\t相关问题解决后可以尝试删除openebs插件重新安装",
+        "token_count": 449,
+        "block_ids": [
+          "manual-1edf23113651430f:b002994",
+          "manual-1edf23113651430f:b002995",
+          "manual-1edf23113651430f:b002996",
+          "manual-1edf23113651430f:b002997",
+          "manual-1edf23113651430f:b002998",
+          "manual-1edf23113651430f:b002999",
+          "manual-1edf23113651430f:b003000",
+          "manual-1edf23113651430f:b003002",
+          "manual-1edf23113651430f:b003003",
+          "manual-1edf23113651430f:b003004",
+          "manual-1edf23113651430f:b003005",
+          "manual-1edf23113651430f:b003007",
+          "manual-1edf23113651430f:b003008",
+          "manual-1edf23113651430f:b003009",
+          "manual-1edf23113651430f:b003011"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1807]",
+          "word/document.xml/body/p[1808]",
+          "word/document.xml/body/p[1809]",
+          "word/document.xml/body/p[1810]",
+          "word/document.xml/body/p[1811]",
+          "word/document.xml/body/p[1812]",
+          "word/document.xml/body/p[1813]",
+          "word/document.xml/body/p[1815]",
+          "word/document.xml/body/p[1816]",
+          "word/document.xml/body/p[1817]",
+          "word/document.xml/body/p[1818]",
+          "word/document.xml/body/p[1820]",
+          "word/document.xml/body/p[1821]",
+          "word/document.xml/body/p[1822]",
+          "word/document.xml/body/p[1824]"
+        ],
+        "ordinal_start": 2994,
+        "ordinal_end": 3011,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-5433f2361d7cbceae8092553",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "基本故障排查",
+          "Pod状态异常"
+        ],
+        "parent_id": "section-6ce42cd6a967c385307e",
+        "kind": "command",
+        "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> describe pods <pod-name>",
+        "token_count": 31,
+        "block_ids": [
+          "manual-1edf23113651430f:b002990"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1803]"
+        ],
+        "ordinal_start": 2990,
+        "ordinal_end": 2990,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-bf37de02499f3d23",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-d228af64df28fdea95b91934",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "基本故障排查",
+          "Pod状态异常"
+        ],
+        "parent_id": "section-6ce42cd6a967c385307e",
+        "kind": "command",
+        "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> logs -f <pod-name>",
+        "token_count": 32,
+        "block_ids": [
+          "manual-1edf23113651430f:b002993"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1806]"
+        ],
+        "ordinal_start": 2993,
+        "ordinal_end": 2993,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-a029187449e258c7",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q1",
+        "S2Q2",
+        "S2Q3",
+        "S2Q4",
+        "S2Q5",
+        "S2Q6",
+        "S2Q7",
+        "S2Q8",
+        "S2Q9",
+        "S2Q10",
+        "S2Q11",
+        "S2Q12"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "插件安装失败时不会终止整个安装流程，可在安装完成后单独处理失败插件，具体原因需分析插件pod日志。",
+            "quote_ids": [
+              "S2Q3"
+            ]
+          },
+          {
+            "text": "排查插件问题时，需先检查helm是否成功下发chart且状态为deployed，再检查对应命名空间下pod状态是否为Running，异常时需查看pod日志。",
+            "quote_ids": [
+              "S2Q5",
+              "S2Q6",
+              "S2Q7",
+              "S2Q8"
+            ]
+          },
+          {
+            "text": "若pod状态异常，可使用kubectl -n <namespace> describe pods <pod-name>和kubectl -n <namespace> logs -f <pod-name>命令查看详细信息。",
+            "quote_ids": [
+              "S8Q2",
+              "S11Q2"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "插件安装失败时不会终止整个安装流程，可在安装完成后单独处理失败插件，具体原因需分析插件pod日志。",
+            "citations": [
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n"
+              }
+            ]
+          },
+          {
+            "text": "排查插件问题时，需先检查helm是否成功下发chart且状态为deployed，再检查对应命名空间下pod状态是否为Running，异常时需查看pod日志。",
+            "citations": [
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\n"
+              },
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "root@upf:~# helm -n openebs ls\n"
+              },
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "NAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION\n"
+              },
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "openebs openebs         1               2023-03-30 11:16:53.302896372 +0800 CST deployed        openebs-3.3.1   3.3.0  \n"
+              }
+            ]
+          },
+          {
+            "text": "若pod状态异常，可使用kubectl -n <namespace> describe pods <pod-name>和kubectl -n <namespace> logs -f <pod-name>命令查看详细信息。",
+            "citations": [
+              {
+                "chunk_id": "chunk-5433f2361d7cbceae8092553",
+                "quote": "kubectl -n <namespace> describe pods <pod-name>"
+              },
+              {
+                "chunk_id": "chunk-d228af64df28fdea95b91934",
+                "quote": "kubectl -n <namespace> logs -f <pod-name>"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

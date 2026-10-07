@@ -1,0 +1,889 @@
+{
+  "scope": "draft machine/selection failure classification; human truth pending",
+  "rows": [
+    {
+      "profile": "baseline",
+      "case": "command-001",
+      "machine_checks": {
+        "status_expected": true,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q2",
+          "S4Q2",
+          "S5Q2",
+          "S7Q2",
+          "S10Q2",
+          "S14Q3",
+          "S18Q3"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "baseline",
+      "case": "command-003",
+      "machine_checks": {
+        "status_expected": true,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q2",
+          "S5Q2",
+          "S6Q1",
+          "S7Q1",
+          "S9Q1",
+          "S13Q1"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "baseline",
+      "case": "command-005",
+      "machine_checks": {
+        "status_expected": true,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q12",
+          "S3Q4",
+          "S5Q2",
+          "S6Q2",
+          "S11Q2",
+          "S12Q1"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "baseline",
+      "case": "command-007",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q7",
+          "S3Q5",
+          "S3Q6",
+          "S4Q4",
+          "S4Q8",
+          "S10Q3",
+          "S12Q2",
+          "S13Q2",
+          "S14Q2",
+          "S15Q1",
+          "S15Q3",
+          "S15Q6"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "baseline",
+      "case": "command-008",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "1 validation error for SelectedAnswer\n  Invalid JSON: EOF while parsing an object at line 567 column 0 [type=json_invalid, input_value='{\\n  \"status\": \"complete...   \\t   \\n      \\t   \\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid",
+      "validation_errors": [
+        "1 validation error for SelectedAnswer\n  Invalid JSON: EOF while parsing an object at line 382 column 0 [type=json_invalid, input_value='{\\n  \"status\": \"complete...   \\t   \\n      \\t   \\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid",
+        "1 validation error for SelectedAnswer\n  Invalid JSON: EOF while parsing an object at line 567 column 0 [type=json_invalid, input_value='{\\n  \"status\": \"complete...   \\t   \\n      \\t   \\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q2",
+          "S2Q3",
+          "S2Q4",
+          "S2Q5",
+          "S2Q6",
+          "S3Q7",
+          "S3Q9",
+          "S4Q2",
+          "S5Q2",
+          "S6Q2",
+          "S8Q2",
+          "S9Q3"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "baseline",
+      "case": "knowledge-005",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q3",
+          "S2Q4",
+          "S2Q5",
+          "S2Q6",
+          "S2Q7",
+          "S2Q8",
+          "S2Q9",
+          "S2Q10",
+          "S2Q11",
+          "S2Q12",
+          "S2Q13",
+          "S2Q14"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "baseline",
+      "case": "troubleshooting-003",
+      "machine_checks": {
+        "status_expected": true,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": true,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S3Q3",
+          "S3Q4",
+          "S3Q5",
+          "S3Q6",
+          "S3Q7",
+          "S3Q8",
+          "S3Q9",
+          "S3Q10",
+          "S3Q11",
+          "S3Q12",
+          "S3Q13",
+          "S3Q14"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "baseline",
+      "case": "troubleshooting-004",
+      "machine_checks": {
+        "status_expected": true,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": true,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q1",
+          "S2Q2",
+          "S2Q3",
+          "S2Q4",
+          "S2Q5",
+          "S2Q6",
+          "S2Q7",
+          "S2Q8",
+          "S2Q9",
+          "S2Q10",
+          "S2Q11",
+          "S2Q12"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "baseline",
+      "case": "troubleshooting-005",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q3",
+          "S2Q4",
+          "S2Q5",
+          "S2Q6",
+          "S2Q7",
+          "S2Q8",
+          "S2Q9",
+          "S2Q10",
+          "S1Q6",
+          "S1Q7",
+          "S1Q11",
+          "S1Q12"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "target",
+      "case": "command-003",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S1Q2",
+          "S1Q3",
+          "S1Q4",
+          "S1Q5",
+          "S1Q6",
+          "S1Q7",
+          "S1Q8",
+          "S4Q1",
+          "S4Q2",
+          "S11Q1",
+          "S11Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-004",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S1Q2",
+          "S6Q1",
+          "S6Q2",
+          "S6Q3",
+          "S6Q4",
+          "S6Q5",
+          "S6Q6",
+          "S6Q7",
+          "S6Q8"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-005",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S5Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-006",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S1Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-007",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q1",
+          "S2Q2",
+          "S3Q1",
+          "S3Q2",
+          "S3Q3",
+          "S3Q4",
+          "S3Q5",
+          "S3Q6",
+          "S8Q1",
+          "S8Q2",
+          "S10Q1",
+          "S10Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-008",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S1Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-013",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q2",
+          "S3Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-014",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-015",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q2",
+          "S4Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "command-016",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q2"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": true,
+      "stage_proxy": "model_or_publication"
+    },
+    {
+      "profile": "target",
+      "case": "knowledge-003",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S1Q2",
+          "S1Q3",
+          "S1Q4",
+          "S1Q5",
+          "S1Q6",
+          "S1Q7",
+          "S1Q8",
+          "S1Q9",
+          "S1Q10",
+          "S1Q11",
+          "S1Q12"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "target",
+      "case": "knowledge-004",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "1 validation error for EvidenceGate\n  Invalid JSON: EOF while parsing a string at line 15 column 358 [type=json_invalid, input_value='{\\n  \"has_relevant_evide...'S5Q1\\', \\'S5Q2\\', \\'S5', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid",
+      "validation_errors": null,
+      "relevance_gate": null,
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "target",
+      "case": "knowledge-006",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "evidence gate returned unknown quote_id",
+      "validation_errors": null,
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q1",
+          "S2Q2",
+          "S2Q3",
+          "S2Q4",
+          "S2Q5",
+          "S2Q6",
+          "S2Q7",
+          "S2Q8",
+          "S2Q9",
+          "S3Q1",
+          "S3Q2",
+          "S3Q342"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "target",
+      "case": "knowledge-007",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S1Q20",
+          "S1Q21",
+          "S1Q22",
+          "S1Q23",
+          "S1Q24",
+          "S1Q25",
+          "S1Q26",
+          "S1Q27",
+          "S1Q28",
+          "S1Q29",
+          "S1Q30"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "target",
+      "case": "knowledge-008",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": null,
+      "validation_errors": [],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S2Q1",
+          "S2Q20",
+          "S2Q21",
+          "S2Q22",
+          "S2Q23",
+          "S2Q24",
+          "S2Q25",
+          "S2Q26",
+          "S2Q27",
+          "S2Q28",
+          "S2Q29",
+          "S2Q30"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "target",
+      "case": "knowledge-009",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "evidence gate returned unknown quote_id",
+      "validation_errors": null,
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S2Q1",
+          "S2Q2",
+          "S3Q1",
+          "S3Q2",
+          "S4Q1",
+          "S4Q2",
+          "S4Q3",
+          "S4Q4",
+          "S5Q1",
+          "S5Q2",
+          "S6Q11"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    },
+    {
+      "profile": "target",
+      "case": "troubleshooting-009",
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": null,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "source_group_hit": false,
+      "failure": null,
+      "answer_error": "formatted command differs from cited original",
+      "validation_errors": [
+        "formatted command differs from cited original",
+        "formatted command differs from cited original"
+      ],
+      "relevance_gate": {
+        "has_relevant_evidence": true,
+        "relevant_quote_ids": [
+          "S1Q1",
+          "S1Q3",
+          "S1Q4",
+          "S1Q5",
+          "S1Q6",
+          "S1Q7",
+          "S1Q8",
+          "S1Q11",
+          "S1Q12",
+          "S5Q3"
+        ],
+        "missing_information": []
+      },
+      "candidate_command_literal_in_context": null,
+      "stage_proxy": "requires_source_review"
+    }
+  ]
+}

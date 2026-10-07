@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-09-29T06:40:15.902500+00:00",
+  "stage": "truth_imported_development_service_starting",
+  "human_truth_formally_imported": 120,
+  "reviewer_label": "张三",
+  "reviewer_label_source": "explicit user instruction",
+  "review_date": "2026-09-28",
+  "date_source": "submitted review retained date",
+  "signed_review": "eval/p6/business_v4/reviewed_truth_user_named.md",
+  "reviewed_suite": "eval/p6/business_v4/reviewed_suite.jsonl",
+  "reviewed_suite_sha256": "a1060098d02e7df07bac3d507666c65e62c0c079ea096d7624df452fd578a190",
+  "content_cases_pending": 0,
+  "reviewer_attribution_pending": false,
+  "source_validation": {
+    "native_chunks_resolved": 155,
+    "log_events_resolved": 30,
+    "topology_files_resolved": 5,
+    "actual_source_partition_pass": true,
+    "scope": "source identity and original SHA; human relevance still required"
+  },
+  "model_answer_review_complete": false,
+  "heldout_executed": false,
+  "M6_pass": false
+}

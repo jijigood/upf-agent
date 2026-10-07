@@ -1,0 +1,163 @@
+{
+  "created_at": "2026-09-28T09:58:49.099261+00:00",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "p3_generation": "c61e9796eead2610cfd4",
+  "commands": 107,
+  "chunks": 1061,
+  "ocr_corrected_findings": 116,
+  "ocr_quarantined_lines": 7,
+  "structure_assistant_checked": 60,
+  "merged_cells_source_checked": 144,
+  "automated_tests_passed": 197,
+  "answer_regression": {
+    "cases": 16,
+    "machine_contract_pass": 16,
+    "quote_integrity_pass": 16,
+    "generation_failed": 0,
+    "human_semantic_completed": 0
+  },
+  "answer_evaluation_processing_mode": "deterministic_publication_replay_of_v3_real_model_outputs_no_new_inference",
+  "current_production_txt_cli": "completed",
+  "human_signoff": false,
+  "formal_business_accuracy_claim": false,
+  "pending": [
+    "M2 人工业务签署与原件疑点确认",
+    "P6 独立语义、完整性和现场适用性评测",
+    "P4 源日志时区、真实设备标识及真实拓扑的现场验收",
+    "P7 离线重建、外联阻断、Dify不可达及备份恢复演练"
+  ],
+  "artifacts_sha256": {
+    "evidence/p2/ocr_30.json": "f08aba39596180dc832a713af25ac6df5c97ba6638b5d07661b91622c406e619",
+    "evidence/p2/截图OCR复核报告_bf8fb923cd90036e501f.md": "99b165e6f97e77d5b93621638d4d795864ad506cec6709876a99dc7e25a95673",
+    "evidence/p2/ocr_corrections.json": "58b1b8a6c65c8d27c8a7f82589d940ba0b9966808f1bdee47bc74d87a581374e",
+    "evidence/p2/ocr_corrected.json": "fb5353dbaea8a315deaa253fc1299d7a5eb35a7d52f6657648fb9ddcbcece7ee",
+    "evidence/p2/structure_audit.json": "f11d0c1d779cc9fe07c14745a284cc346eddd050979dc91901c23ab436a2a4aa",
+    "evidence/p2/merged_cells_audit.json": "86be92af2251c4460192529d077df62bb552aadf5668bd2be6a39cdbdcd6e173",
+    "evidence/p2/validation.json": "db873f16f1e01ea7e87dbf21603e70500f19c6047f3a364f99aa7432bd2c4825",
+    "evidence/p3/ablation.json": "8e477adbf38e053594aa1188dd4dd88ef33e1e5816a38ede52e842e56af4d39a",
+    "evidence/p3/quality_regression.json": "8809c0d8b9f2ff9abce8f6b0b0751f46d7b8f14c9fd4865493bf4144bd24fcd3",
+    "evidence/p3/semantic_review.json": "2692c39f19c17cbbffd25c0c476812b06cd8e8f24c572ce961bc4d51d15a16cb",
+    "evidence/p3/cli_quality_answer.json": "e8f3ce12617f8260efd08d3a7a3f6635cc5887975ac2a992497c9adf412452d0",
+    "evidence/p3/validation.json": "8200a44c96169a1ee7ae90092937c43b82b86bc393a7b89a2e89e04e194aa7d4",
+    "evidence/p4/acceptance.json": "2077c8f8173909fd47a83a6c53a03acb656703a6e7c65521c0cbb24ff8a36c93",
+    "evidence/p4/regression.json": "7d7af94ecd673bbea7d3785ce3d15a989d3dabaa481dfa269c7a2810e283bf9c",
+    "evidence/p4/capacity.json": "05a9d9dad745a451c07ce0aa89966172a1832aa07e398551bec04b585a5838d9",
+    "evidence/p5/acceptance.json": "5e2f3c91ec5e74debf0bca9e216a9c32c39de7c9137135ded54fdd61ae0ac0d0",
+    "evidence/p5/regression.json": "d537c044ffd7671cd59f271f5012e43df837f98a9942d7b2b387b2cb31b2ecdd",
+    "docs/P5_acceptance.md": "ca87448d1108a6752c44aeef3464cb4af46d8a0b3f65eacad51cfc288871da0a"
+  },
+  "updated_at": "2026-09-28T12:57:45.705827+00:00",
+  "p4": {
+    "updated_at": "2026-09-28T10:33:04.745822+00:00",
+    "stage": "M4_technical_exit_passed_real_topology_pending",
+    "generation": "a6f18ac81a18aa2125fa",
+    "tests_passed": 78,
+    "p4_tests_passed": 26,
+    "ruff_pass": true,
+    "dependency_check_pass": true,
+    "packages": {
+      "duckdb": "1.5.5",
+      "pyarrow": "23.0.1",
+      "drain3": "0.9.11",
+      "openpyxl": "3.1.5"
+    },
+    "physical_lines": 32539,
+    "source_bytes": 6347974,
+    "continuity_pass": true,
+    "synthetic_capacity_rss_pass": true,
+    "synthetic_capacity_scaled_counts_pass": true,
+    "real_timezone_confirmed": false,
+    "real_device_identity_confirmed": false,
+    "real_topology_validated": false,
+    "human_signoff": false,
+    "formal_business_accuracy_claim": false,
+    "artifacts_sha256": {
+      "evidence/p4/regression.json": "7d7af94ecd673bbea7d3785ce3d15a989d3dabaa481dfa269c7a2810e283bf9c",
+      "evidence/p4/capacity.json": "05a9d9dad745a451c07ce0aa89966172a1832aa07e398551bec04b585a5838d9",
+      "evidence/p4/capacity_real.json": "ffe5cb813553cf4478f637cf0f11c7d5aafb740d197f7c51ac23bde0d5e7fbf2",
+      "evidence/p4/capacity_synthetic.json": "23db512878cf89c7f03f0b618b2be10bd08016b39da59ff790c6da68861bd844",
+      "evidence/p4/amplification.json": "bf926974adc0ef747e6b1e9ba565c7b22b51500a068f04bd5f6c275b82d4a4be",
+      "evidence/p4/tests.log": "2ce812de237ea4728d066edca61e91adf97b200ccf74205de18cf92e7fbc053b",
+      "docs/P4_acceptance.md": "723d561df5ba18d3d6f6734691d25cc5c54fe773b21890a046b5d98fa25723b0",
+      "uv.lock": "a8d5aba74d99f1c33bbf7cf38911f60f39b60a78d11ce2092f12ba7b13f237f4"
+    }
+  },
+  "p5": {
+    "updated_at": "2026-09-28T12:57:45.705827+00:00",
+    "stage": "M5_technical_exit_passed_P6_business_quality_pending",
+    "tests_passed": 197,
+    "new_p5_tests_passed": 119,
+    "fixed_contract_requests": 100,
+    "fixed_contract_families": 10,
+    "contract_measurement": "code_schema_and_scope_not_model_accuracy",
+    "ruff_pass": true,
+    "format_files_passed": 67,
+    "dependency_check_pass": true,
+    "framework": {
+      "langgraph": "1.2.12",
+      "langgraph-checkpoint-sqlite": "3.1.1"
+    },
+    "execution_fingerprint": "2306578f9f913fcc34c09b2438eeffea890a6860c3e8fd0e40a06c8d31655687",
+    "budget": {
+      "rounds": 3,
+      "tool_attempts": 8,
+      "model_requests_reserved": 8,
+      "active_seconds": 180,
+      "parameter_repairs": 1
+    },
+    "real_cli_cases": [
+      {
+        "label": "manual_txt",
+        "run_id": "c5188363e85441eeb01bc889ed7d0603",
+        "status": "completed"
+      },
+      {
+        "label": "log_agent_resume",
+        "run_id": "aab84eec08c6474e906f3ef8be09c8d8",
+        "status": "partial"
+      },
+      {
+        "label": "deterministic_counts",
+        "run_id": "8d973189072a4e908e5a7798435ec203",
+        "status": "partial"
+      },
+      {
+        "label": "missing_live_source",
+        "run_id": "a2b0aea41b2745a7b088022c5fcf578f",
+        "status": "missing_source"
+      },
+      {
+        "label": "missing_log_resume",
+        "run_id": "eeee0f955f754d21a82e487eabec8488",
+        "status": "partial"
+      }
+    ],
+    "batch_statuses": [
+      "partial",
+      "missing_source",
+      "failed",
+      "need_input"
+    ],
+    "batch_deliberate_invalid_record_exit_code": 1,
+    "source_and_task_scoped_citations_verified": true,
+    "same_runtime_version_real_runs_verified": true,
+    "real_model_and_cross_process_resume_pass": true,
+    "own_model_service_stopped": true,
+    "gpu_memory_after_service_shutdown_mib": {
+      "0": 0,
+      "1": 0
+    },
+    "human_signoff": false,
+    "formal_business_accuracy_claim": false,
+    "p7_network_isolation_validated": false,
+    "resource_measurement": "process-lifetime ru_maxrss observation; excludes GPU generation service and is not task-exclusive or simultaneous process-tree peak",
+    "historical_lock_note": "P4 acceptance retains its pre-P5 uv.lock SHA; current P5 lock snapshot is archived here",
+    "pending": [
+      "M2 人工业务签署与原件疑点确认",
+      "P6 独立语义、完整性和现场适用性评测",
+      "P4 源日志时区、真实设备标识及真实拓扑的现场验收",
+      "P7 离线重建、外联阻断、Dify不可达及备份恢复演练"
+    ],
+    "acceptance": "evidence/p5/acceptance.json"
+  }
+}

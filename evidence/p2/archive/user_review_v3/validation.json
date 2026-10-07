@@ -1,0 +1,21 @@
+{
+  "generation": "c05fe621e37ebdb1c663",
+  "source_count": 4,
+  "blocks": 9713,
+  "commands": 107,
+  "tables": 126,
+  "textboxes": 55,
+  "review_source_exact": 60,
+  "review_human_completed": 0,
+  "ocr_images": 30,
+  "ocr_lines": 1712,
+  "ocr_human_completed": 0,
+  "pdf_pages": 12,
+  "pdf_items": 57,
+  "pdf_tables": 2,
+  "paper_role_isolated": true,
+  "pass": true,
+  "ocr_assistant_checked": 30,
+  "ocr_quarantined_lines": 7,
+  "ocr_corrected_sha256": "fb5353dbaea8a315deaa253fc1299d7a5eb35a7d52f6657648fb9ddcbcece7ee"
+}

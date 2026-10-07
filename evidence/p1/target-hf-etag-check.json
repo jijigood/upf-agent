@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-09-25T14:03:33.181097+00:00",
+  "pass": true,
+  "models": [
+    {
+      "profile": "target",
+      "pass": true,
+      "checked_weight_files": 18,
+      "repository_revisions": [
+        "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0"
+      ],
+      "problems": []
+    }
+  ]
+}

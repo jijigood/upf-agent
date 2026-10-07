@@ -1,0 +1,25 @@
+{
+  "index_generation": "4b57484621bf3e547723",
+  "reused": false,
+  "stats": {
+    "chunks": 1065,
+    "by_kind": {
+      "prose": 799,
+      "table": 153,
+      "command": 109,
+      "code": 4
+    },
+    "max_tokens": 600,
+    "sensitive_chunks_redacted": 1,
+    "bm25": {
+      "documents": 1065,
+      "vocabulary": 4442
+    },
+    "exact": {
+      "commands": 109,
+      "distinct_aliases": 73
+    },
+    "qdrant_points": 1065,
+    "dimension": 2560
+  }
+}

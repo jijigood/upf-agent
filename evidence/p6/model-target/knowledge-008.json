@@ -1,0 +1,179 @@
+{
+  "row": {
+    "id": "knowledge-008",
+    "model": "target",
+    "evidence_sha256": "72517f5f67ced43c67561ed689d1ac655ab1263d55e333a9f3185f5848457db2",
+    "elapsed_ms": 44903.037378098816,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 14514,
+      "completion_tokens_observed": 602,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘单节点离线部署UPF / 调整UPF配置（现网部署方式） / 调整后的配置文件’解释说明和关键字段，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q1",
+        "S2Q20",
+        "S2Q21",
+        "S2Q22",
+        "S2Q23",
+        "S2Q24",
+        "S2Q25",
+        "S2Q26",
+        "S2Q27",
+        "S2Q28",
+        "S2Q29",
+        "S2Q30"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的配置文件（config.yaml）参数分为五个部分：base（配置upf helm chart参数）、networking（配置UPF N3、N6参数）、n4（配置UPF N4参数）、cpu（配置upf应用startup.conf启动文件参数）。",
+            "quote_ids": [
+              "S2Q20",
+              "S2Q21",
+              "S2Q22",
+              "S2Q23"
+            ]
+          },
+          {
+            "text": "base部分关键字段包括：namespace（upf及vdos部署的命名空间，默认ns1）、upf_version（upf版本号）、vdos_version（vdos版本号）、instanceId（upf实例化ID）、neId（由网管系统统一分配）、upfd_cpu（设置UPF最大CPU数量，默认9）。",
+            "quote_ids": [
+              "S2Q25",
+              "S2Q26",
+              "S2Q27",
+              "S2Q28"
+            ]
+          },
+          {
+            "text": "networking部分关键字段包括：intf_mode（N3/N6合设、分设模式，1表示合设，0表示分设）、bond.enabled（N3和N6使用bond模式开关，若为true则nic部分必须是2张网卡）、vlan.enabled（N3和N6配置vlan id开关）、n3.nic（N3对应的物理网卡）、n3.vlan（N3 vlan id）、n6.nic（N6对应的物理网卡）、n6.vlan（N6 vlan id）。",
+            "quote_ids": [
+              "S2Q31",
+              "S2Q32",
+              "S2Q33",
+              "S2Q34"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的配置文件（config.yaml）参数分为五个部分：base（配置upf helm chart参数）、networking（配置UPF N3、N6参数）、n4（配置UPF N4参数）、cpu（配置upf应用startup.conf启动文件参数）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "配置参数分为五个部分：\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "base：配置upf helm chart参数\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking：配置UPF N3、N6参数\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "n4：配置UPF N4参数\n"
+              }
+            ]
+          },
+          {
+            "text": "base部分关键字段包括：namespace（upf及vdos部署的命名空间，默认ns1）、upf_version（upf版本号）、vdos_version（vdos版本号）、instanceId（upf实例化ID）、neId（由网管系统统一分配）、upfd_cpu（设置UPF最大CPU数量，默认9）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "base部分参数说明：\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "namespace：  upf及vdos部署的命名空间\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "upf_version：  upf版本号，通过发布的软件包识别版本号\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "vdos_version：  vdos版本号，通过发布的软件包识别版本号\n"
+              }
+            ]
+          },
+          {
+            "text": "networking部分关键字段包括：intf_mode（N3/N6合设、分设模式，1表示合设，0表示分设）、bond.enabled（N3和N6使用bond模式开关，若为true则nic部分必须是2张网卡）、vlan.enabled（N3和N6配置vlan id开关）、n3.nic（N3对应的物理网卡）、n3.vlan（N3 vlan id）、n6.nic（N6对应的物理网卡）、n6.vlan（N6 vlan id）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking部分参数说明：\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking.intf_mode：UPF N3/N6合设、分设模式选择：1表示合设，0表示分设。\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking.bond.enabled：N3和N6使用bond模式开关，即是否启用bond模式，如果为true则使用bond模式下的nic配置，此时networking.nic部分必须是2张网卡。\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking.vlan.enabled：N3和N6配置vlan id开关，即networking.n3.vlan和networking.n6.vlan是否仍然有效。\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "status": "missing_source",
+    "missing_information": [
+      "部分陈述未通过自动证据支持检查，已移除。"
+    ]
+  }
+}

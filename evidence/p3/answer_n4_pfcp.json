@@ -1,0 +1,339 @@
+{
+  "question": "N4 PFCP 链路故障如何排查？",
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "product": "UPF",
+  "version": "5.0",
+  "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "claims": [
+    {
+      "text": "检查UPF链路是否异常，结合UPF组网图排查链路故障。",
+      "citations": [
+        {
+          "chunk_id": "chunk-f862dec7c5463231da13444f",
+          "quote": "检查UPF链路是否异常。排查链路故障通常结合UPF的组网图检查链路即可。\n"
+        }
+      ]
+    },
+    {
+      "text": "使用upfmgr bash命令进入pod内部，执行ip a检查网卡状态，使用ping命令检查自身IP、对端SMF N4接口地址及N4网关地址的连通性。",
+      "citations": [
+        {
+          "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+          "quote": "使用upfmgr bash命令进入pod内部，执行ip a命令查看网卡状态是否正常，可使用ping命令ping自身ip检查自己的ip状态是否正常；\n"
+        },
+        {
+          "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+          "quote": "使用ping命令ping对端SMF的N4接口地址ip是否正常响应；\n"
+        },
+        {
+          "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+          "quote": "使用ping命令检查到UPF N4网关地址是否正常响应；"
+        },
+        {
+          "chunk_id": "chunk-77beb9ec6530fb26ec9f73cd",
+          "quote": "使用upfmgr bash 命令进入pod内部，执行 ip a 命令查看网卡状态是否正常，可使用ping命令ping自身 ip 检查自己的ip状态是否正常；\n"
+        }
+      ]
+    },
+    {
+      "text": "若N4链路异常，可尝试执行upfmgr restart命令重启upfd pod，再检查链路状态；若网关地址未配置，需添加UPF_N4_GW_IPv6_ADDRES配置。",
+      "citations": [
+        {
+          "chunk_id": "chunk-b3585cf70dc08b7a26681d9d",
+          "quote": "若检查发现自身ip地址状态异常，首先尝试执行 upfmgr restart 命令重启upfd pod 后再检查到UPF N4网关链路是否正常；\n"
+        },
+        {
+          "chunk_id": "chunk-b3585cf70dc08b7a26681d9d",
+          "quote": "若检查发现/root/${HOSTNAME}_CU5GC_UPF_${VERSION}_IP.conf 未配UPF_N4_GW_IPv6_ADDRES 网关地址，则添加 UPF_N4_GW_IPv6_ADDRES 接口网关地址配置；"
+        }
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-f862dec7c5463231da13444f",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "通用指引步骤",
+        "通用排查步骤"
+      ],
+      "parent_id": "section-fe6364276e8aecd1690c",
+      "kind": "prose",
+      "text": "通用指引步骤 / 通用排查步骤\n检查UPF链路是否异常。排查链路故障通常结合UPF的组网图检查链路即可。\n//正常情况：n4链路能通",
+      "token_count": 44,
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000038",
+        "manual-9f16bf8ca11723a2:b000041"
+      ],
+      "locators": [
+        "word/document.xml/body/p[12]",
+        "word/document.xml/body/p[13]/txbxContent[1]/p[1]"
+      ],
+      "ordinal_start": 38,
+      "ordinal_end": 41,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [],
+      "interface_tags": [
+        "n4"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到 SMF 链路异常",
+        "信息收集"
+      ],
+      "parent_id": "section-88ee61405d61db1669e2",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到 SMF 链路异常 / 信息收集\n信息收集\n使用upfmgr bash命令进入pod内部，执行ip a命令查看网卡状态是否正常，可使用ping命令ping自身ip检查自己的ip状态是否正常；\n使用ping命令ping对端SMF的N4接口地址ip是否正常响应；\n使用ping命令检查到UPF N4网关地址是否正常响应；",
+      "token_count": 99,
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000487",
+        "manual-9f16bf8ca11723a2:b000488",
+        "manual-9f16bf8ca11723a2:b000489",
+        "manual-9f16bf8ca11723a2:b000490"
+      ],
+      "locators": [
+        "word/document.xml/body/p[202]",
+        "word/document.xml/body/p[203]",
+        "word/document.xml/body/p[204]",
+        "word/document.xml/body/p[205]"
+      ],
+      "ordinal_start": 487,
+      "ordinal_end": 490,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [],
+      "interface_tags": [
+        "N4",
+        "SMF"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-77beb9ec6530fb26ec9f73cd",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到网关链路异常",
+        "信息收集"
+      ],
+      "parent_id": "section-fd3f22918fba8d8acc95",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到网关链路异常 / 信息收集\n信息收集\n使用upfmgr bash 命令进入pod内部，执行 ip a 命令查看网卡状态是否正常，可使用ping命令ping自身 ip 检查自己的ip状态是否正常；\n使用ping命令检查到UPF N4网关地址是否正常响应；\n检查/root/${HOSTNAME}_CU5GC_UPF_${VERSION}_IP.conf 有无配N4网关地址；",
+      "token_count": 114,
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000515",
+        "manual-9f16bf8ca11723a2:b000516",
+        "manual-9f16bf8ca11723a2:b000517",
+        "manual-9f16bf8ca11723a2:b000518"
+      ],
+      "locators": [
+        "word/document.xml/body/p[217]",
+        "word/document.xml/body/p[218]",
+        "word/document.xml/body/p[219]",
+        "word/document.xml/body/p[220]"
+      ],
+      "ordinal_start": 515,
+      "ordinal_end": 518,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [],
+      "interface_tags": [
+        "N4"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-b3585cf70dc08b7a26681d9d",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到网关链路异常",
+        "解决方法"
+      ],
+      "parent_id": "section-70f27c3332eff59fadc4",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到网关链路异常 / 解决方法\n解决方法\n若检查发现自身ip地址状态异常，首先尝试执行 upfmgr restart 命令重启upfd pod 后再检查到UPF N4网关链路是否正常；\n若检查UPF N4网关地址不通，首先联系交换机运维人员排查交换机接口有无收到 N4接口的数据报文。\n若检查发现/root/${HOSTNAME}_CU5GC_UPF_${VERSION}_IP.conf 未配UPF_N4_GW_IPv6_ADDRES 网关地址，则添加 UPF_N4_GW_IPv6_ADDRES 接口网关地址配置；",
+      "token_count": 157,
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000519",
+        "manual-9f16bf8ca11723a2:b000520",
+        "manual-9f16bf8ca11723a2:b000521",
+        "manual-9f16bf8ca11723a2:b000522"
+      ],
+      "locators": [
+        "word/document.xml/body/p[221]",
+        "word/document.xml/body/p[222]",
+        "word/document.xml/body/p[223]",
+        "word/document.xml/body/p[224]"
+      ],
+      "ordinal_start": 519,
+      "ordinal_end": 522,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [],
+      "interface_tags": [
+        "N4"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    }
+  ],
+  "warnings": [
+    "P2 命令与截图人工复核尚未完成；引用存在不等于现场适用。",
+    "引用手册版本未知，需核对目标设备版本与操作前提。"
+  ],
+  "support_check": "model_checked_not_human_verified",
+  "validation_errors": [],
+  "generation_attempts": 1,
+  "audit": {
+    "selection": {
+      "status": "partial",
+      "claims": [
+        {
+          "text": "检查UPF链路是否异常，结合UPF组网图排查链路故障。",
+          "quote_ids": [
+            "S1Q2"
+          ]
+        },
+        {
+          "text": "使用upfmgr bash命令进入pod内部，执行ip a检查网卡状态，使用ping命令检查自身IP、对端SMF N4接口地址及N4网关地址的连通性。",
+          "quote_ids": [
+            "S7Q3",
+            "S7Q4",
+            "S7Q5",
+            "S8Q3"
+          ]
+        },
+        {
+          "text": "若N4链路异常，可尝试执行upfmgr restart命令重启upfd pod，再检查链路状态；若网关地址未配置，需添加UPF_N4_GW_IPv6_ADDRES配置。",
+          "quote_ids": [
+            "S5Q3",
+            "S5Q5"
+          ]
+        }
+      ],
+      "missing_information": [
+        "证据版本为unknown，无法确认是否适用于 requested_version: 5.0"
+      ]
+    },
+    "draft": {
+      "status": "partial",
+      "claims": [
+        {
+          "text": "检查UPF链路是否异常，结合UPF组网图排查链路故障。",
+          "citations": [
+            {
+              "chunk_id": "chunk-f862dec7c5463231da13444f",
+              "quote": "检查UPF链路是否异常。排查链路故障通常结合UPF的组网图检查链路即可。\n"
+            }
+          ]
+        },
+        {
+          "text": "使用upfmgr bash命令进入pod内部，执行ip a检查网卡状态，使用ping命令检查自身IP、对端SMF N4接口地址及N4网关地址的连通性。",
+          "citations": [
+            {
+              "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+              "quote": "使用upfmgr bash命令进入pod内部，执行ip a命令查看网卡状态是否正常，可使用ping命令ping自身ip检查自己的ip状态是否正常；\n"
+            },
+            {
+              "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+              "quote": "使用ping命令ping对端SMF的N4接口地址ip是否正常响应；\n"
+            },
+            {
+              "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+              "quote": "使用ping命令检查到UPF N4网关地址是否正常响应；"
+            },
+            {
+              "chunk_id": "chunk-77beb9ec6530fb26ec9f73cd",
+              "quote": "使用upfmgr bash 命令进入pod内部，执行 ip a 命令查看网卡状态是否正常，可使用ping命令ping自身 ip 检查自己的ip状态是否正常；\n"
+            }
+          ]
+        },
+        {
+          "text": "若N4链路异常，可尝试执行upfmgr restart命令重启upfd pod，再检查链路状态；若网关地址未配置，需添加UPF_N4_GW_IPv6_ADDRES配置。",
+          "citations": [
+            {
+              "chunk_id": "chunk-b3585cf70dc08b7a26681d9d",
+              "quote": "若检查发现自身ip地址状态异常，首先尝试执行 upfmgr restart 命令重启upfd pod 后再检查到UPF N4网关链路是否正常；\n"
+            },
+            {
+              "chunk_id": "chunk-b3585cf70dc08b7a26681d9d",
+              "quote": "若检查发现/root/${HOSTNAME}_CU5GC_UPF_${VERSION}_IP.conf 未配UPF_N4_GW_IPv6_ADDRES 网关地址，则添加 UPF_N4_GW_IPv6_ADDRES 接口网关地址配置；"
+            }
+          ]
+        }
+      ],
+      "missing_information": [
+        "证据版本为unknown，无法确认是否适用于 requested_version: 5.0"
+      ]
+    },
+    "support_decisions": [
+      true,
+      true,
+      true
+    ]
+  },
+  "status": "partial",
+  "missing_information": [
+    "证据版本为unknown，无法确认是否适用于 requested_version: 5.0",
+    "引用资料版本未知，无法确认对请求版本的适用性。"
+  ]
+}

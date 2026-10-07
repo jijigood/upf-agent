@@ -1,0 +1,317 @@
+{
+  "row": {
+    "id": "missing-004",
+    "model": "target",
+    "evidence_sha256": "eb9feb929a6a0f7ce4b97489d90463dec2be5646a5ed9c5077934091e7aafad9",
+    "elapsed_ms": 26552.39875987172,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 7842,
+      "completion_tokens_observed": 367,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": null,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "UPF 9.9 的 CLI 配置指令是什么？",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "9.9",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [
+      {
+        "text": "CLI命令的格式：命令由一行关键词组成，词语跟词语间用空格分开。CLI命令中的各个关键词有唯一解释。\n\n 用户可以通过telnet命令进入CLI(Command Line Interface, 命令行界面)。使用输入的指令进行配置。通过 \"?\"获取输入提示。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-f526d9f9745532f316c7e439",
+            "quote": "CLI命令的格式：命令由一行关键词组成，词语跟词语间用空格分开。CLI命令中的各个关键词有唯一解释。\n"
+          },
+          {
+            "chunk_id": "chunk-f526d9f9745532f316c7e439",
+            "quote": " 用户可以通过telnet命令进入CLI(Command Line Interface, 命令行界面)。使用输入的指令进行配置。通过 \"?\"获取输入提示。\n"
+          }
+        ]
+      },
+      {
+        "text": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n\nshow config\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-ed162186f81b734c927091f0",
+            "quote": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n"
+          },
+          {
+            "chunk_id": "chunk-af31d71436dfc30b6e215672",
+            "quote": "show config\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-f526d9f9745532f316c7e439",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品配置",
+          "CLI配置命令"
+        ],
+        "parent_id": "section-4e604a1760d0fdd7acce",
+        "kind": "prose",
+        "text": "产品配置 / CLI配置命令\nCLI配置命令\n功能介绍\n 用户可以通过telnet命令进入CLI(Command Line Interface, 命令行界面)。使用输入的指令进行配置。通过 \"?\"获取输入提示。\n登录方式：\n# telnet 0 37100                        \nUPFD> ?\n命令格式\nCLI命令的格式：命令由一行关键词组成，词语跟词语间用空格分开。CLI命令中的各个关键词有唯一解释。\n文档中CLI书写格式约定如下：",
+        "token_count": 105,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000701",
+          "manual-341440f7dd103f51:b000702",
+          "manual-341440f7dd103f51:b000703",
+          "manual-341440f7dd103f51:b000704",
+          "manual-341440f7dd103f51:b000705",
+          "manual-341440f7dd103f51:b000706",
+          "manual-341440f7dd103f51:b000708",
+          "manual-341440f7dd103f51:b000709",
+          "manual-341440f7dd103f51:b000710"
+        ],
+        "locators": [
+          "word/document.xml/body/p[145]",
+          "word/document.xml/body/p[146]",
+          "word/document.xml/body/p[147]",
+          "word/document.xml/body/p[148]",
+          "word/document.xml/body/p[149]",
+          "word/document.xml/body/p[150]",
+          "word/document.xml/body/p[152]",
+          "word/document.xml/body/p[153]",
+          "word/document.xml/body/p[154]"
+        ],
+        "ordinal_start": 701,
+        "ordinal_end": 710,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-ed162186f81b734c927091f0",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品配置",
+          "CLI配置命令",
+          "UPF系统能力",
+          "功能配置"
+        ],
+        "parent_id": "section-93a4864c8a3b2c42c793",
+        "kind": "command",
+        "text": "CLI配置命令 / UPF系统能力 / 功能配置\nset-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n相关说明：UPFD> set-upf-prt-sw n4-prt-sw 4",
+        "token_count": 59,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000752"
+        ],
+        "locators": [
+          "word/document.xml/body/p[177]"
+        ],
+        "ordinal_start": 752,
+        "ordinal_end": 752,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "n4"
+        ],
+        "command_id": "cmd-011a8faed078e465",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-af31d71436dfc30b6e215672",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品监控",
+          "业务信息监控",
+          "查询网元配置信息",
+          "功能配置"
+        ],
+        "parent_id": "section-6e60743092cbb0b5a760",
+        "kind": "command",
+        "text": "业务信息监控 / 查询网元配置信息 / 功能配置\nshow config\n相关说明：UPFD> show config",
+        "token_count": 25,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000821"
+        ],
+        "locators": [
+          "word/document.xml/body/p[226]"
+        ],
+        "ordinal_start": 821,
+        "ordinal_end": 821,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-a8be5c2302fa3d2e",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。",
+      "引用手册版本未知，需核对目标设备版本与操作前提。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S3Q4",
+        "S3Q6",
+        "S3Q9",
+        "S4Q2",
+        "S11Q2"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "UPF CLI 配置指令的登录方式为在终端执行 `telnet 0 37100` 进入 CLI 界面。",
+            "quote_ids": [
+              "S3Q6",
+              "S1Q5"
+            ]
+          },
+          {
+            "text": "CLI 命令格式由一行关键词组成，词语间用空格分开，可通过输入 `?` 获取输入提示。",
+            "quote_ids": [
+              "S3Q9",
+              "S3Q4"
+            ]
+          },
+          {
+            "text": "示例配置指令包括设置日志打印级别的 `set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>` 以及查询配置的 `show config`。",
+            "quote_ids": [
+              "S4Q2",
+              "S11Q2"
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为 unknown，无法确认上述指令是否完全适用于 UPF 9.9 版本。"
+        ]
+      },
+      "draft": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "UPF CLI 配置指令的登录方式为在终端执行 `telnet 0 37100` 进入 CLI 界面。",
+            "citations": [
+              {
+                "chunk_id": "chunk-f526d9f9745532f316c7e439",
+                "quote": "# telnet 0 37100                        \n"
+              },
+              {
+                "chunk_id": "chunk-05b46622548cea41921ec8c4",
+                "quote": "终端键入命令：telnet 0 37100；\n"
+              }
+            ]
+          },
+          {
+            "text": "CLI 命令格式由一行关键词组成，词语间用空格分开，可通过输入 `?` 获取输入提示。",
+            "citations": [
+              {
+                "chunk_id": "chunk-f526d9f9745532f316c7e439",
+                "quote": "CLI命令的格式：命令由一行关键词组成，词语跟词语间用空格分开。CLI命令中的各个关键词有唯一解释。\n"
+              },
+              {
+                "chunk_id": "chunk-f526d9f9745532f316c7e439",
+                "quote": " 用户可以通过telnet命令进入CLI(Command Line Interface, 命令行界面)。使用输入的指令进行配置。通过 \"?\"获取输入提示。\n"
+              }
+            ]
+          },
+          {
+            "text": "示例配置指令包括设置日志打印级别的 `set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>` 以及查询配置的 `show config`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-ed162186f81b734c927091f0",
+                "quote": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n"
+              },
+              {
+                "chunk_id": "chunk-af31d71436dfc30b6e215672",
+                "quote": "show config\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为 unknown，无法确认上述指令是否完全适用于 UPF 9.9 版本。"
+        ]
+      },
+      "support_decisions": [
+        false,
+        true,
+        true
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "证据版本为 unknown，无法确认上述指令是否完全适用于 UPF 9.9 版本。",
+      "部分陈述未通过自动证据支持检查，已移除。",
+      "引用资料版本未知，无法确认对请求版本的适用性。"
+    ]
+  }
+}

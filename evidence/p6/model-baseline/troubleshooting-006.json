@@ -1,0 +1,386 @@
+{
+  "row": {
+    "id": "troubleshooting-006",
+    "model": "baseline",
+    "evidence_sha256": "57022c5699c7626c86ad30ae75482f5e0ef0ba61d4e599c1fe581c98d04f7cbf",
+    "elapsed_ms": 19183.802051935345,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 8884,
+      "completion_tokens_observed": 359,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘K8S集群软件故障排查 / 插件维护管理 / Helm’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n"
+          }
+        ]
+      },
+      {
+        "text": "1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\n\n2.\t检查openebs命名空间下的pod状态，查看STATUS列是否为Running\n\n3.\t如果pod状态异常，需要查看pod日志，分析定位具体原因，一般使用以下命令查看openebs pod日志\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\n"
+          },
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "2.\t检查openebs命名空间下的pod状态，查看STATUS列是否为Running\n"
+          },
+          {
+            "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+            "quote": "3.\t如果pod状态异常，需要查看pod日志，分析定位具体原因，一般使用以下命令查看openebs pod日志\n"
+          }
+        ]
+      },
+      {
+        "text": "helm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n\n前置要求：已安装能够提供动态持久卷的存储插件，例如openebs。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+            "quote": "helm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n"
+          },
+          {
+            "chunk_id": "chunk-44dec42639466228f7fc64b8",
+            "quote": "前置要求：已安装能够提供动态持久卷的存储插件，例如openebs。\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "基本故障排查",
+          "插件安装问题"
+        ],
+        "parent_id": "section-206f98b59b4a27568dd1",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 基本故障排查 / 插件安装问题\n插件安装问题\n每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n以openebs存储插件为例，插件安装在openebs命名空间，使用helm进行部署。其他插件信息请参考插件运行管理章节。\n1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\nroot@upf:~# helm -n openebs ls\nNAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION\nopenebs openebs         1               2023-03-30 11:16:53.302896372 +0800 CST deployed        openebs-3.3.1   3.3.0  \n2.\t检查openebs命名空间下的pod状态，查看STATUS列是否为Running\nroot@upf:~# kubectl -n openebs get pods \nNAME                                          READY   STATUS    RESTARTS       AGE\nopenebs-localpv-provisioner-7b4db8497-bjjvp   1/1     Running   3 (149m ago)   5h59m\n3.\t如果pod状态异常，需要查看pod日志，分析定位具体原因，一般使用以下命令查看openebs pod日志\nroot@upf:~# kubectl -n openebs logs -f openebs-localpv-provisioner-7b4db8497-bjjvp\nroot@upf:~# kubectl -n openebs describe pods openebs-localpv-provisioner-7b4db8497-bjjvp\n4.\t相关问题解决后可以尝试删除openebs插件重新安装",
+        "token_count": 449,
+        "block_ids": [
+          "manual-1edf23113651430f:b002994",
+          "manual-1edf23113651430f:b002995",
+          "manual-1edf23113651430f:b002996",
+          "manual-1edf23113651430f:b002997",
+          "manual-1edf23113651430f:b002998",
+          "manual-1edf23113651430f:b002999",
+          "manual-1edf23113651430f:b003000",
+          "manual-1edf23113651430f:b003002",
+          "manual-1edf23113651430f:b003003",
+          "manual-1edf23113651430f:b003004",
+          "manual-1edf23113651430f:b003005",
+          "manual-1edf23113651430f:b003007",
+          "manual-1edf23113651430f:b003008",
+          "manual-1edf23113651430f:b003009",
+          "manual-1edf23113651430f:b003011"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1807]",
+          "word/document.xml/body/p[1808]",
+          "word/document.xml/body/p[1809]",
+          "word/document.xml/body/p[1810]",
+          "word/document.xml/body/p[1811]",
+          "word/document.xml/body/p[1812]",
+          "word/document.xml/body/p[1813]",
+          "word/document.xml/body/p[1815]",
+          "word/document.xml/body/p[1816]",
+          "word/document.xml/body/p[1817]",
+          "word/document.xml/body/p[1818]",
+          "word/document.xml/body/p[1820]",
+          "word/document.xml/body/p[1821]",
+          "word/document.xml/body/p[1822]",
+          "word/document.xml/body/p[1824]"
+        ],
+        "ordinal_start": 2994,
+        "ordinal_end": 3011,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "插件维护管理",
+          "Helm"
+        ],
+        "parent_id": "section-a6c2f639d4d11cf91408",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 插件维护管理 / Helm\nHelm\nhelm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n执行以下命令安装helm插件\n$ sealos run docker.io/labring/helm:v3.11.0\n使用以下命令查看helm安装路径\n$ which helm\n/usr/bin/helm\n如需卸载helm 插件，执行以下命令\n$ rm -rf /usr/bin/helm",
+        "token_count": 127,
+        "block_ids": [
+          "manual-1edf23113651430f:b003087",
+          "manual-1edf23113651430f:b003088",
+          "manual-1edf23113651430f:b003089",
+          "manual-1edf23113651430f:b003090",
+          "manual-1edf23113651430f:b003092",
+          "manual-1edf23113651430f:b003093",
+          "manual-1edf23113651430f:b003094",
+          "manual-1edf23113651430f:b003096",
+          "manual-1edf23113651430f:b003097"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1896]",
+          "word/document.xml/body/p[1897]",
+          "word/document.xml/body/p[1898]",
+          "word/document.xml/body/p[1899]",
+          "word/document.xml/body/p[1901]",
+          "word/document.xml/body/p[1902]",
+          "word/document.xml/body/p[1903]",
+          "word/document.xml/body/p[1905]",
+          "word/document.xml/body/p[1906]"
+        ],
+        "ordinal_start": 3087,
+        "ordinal_end": 3097,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-44dec42639466228f7fc64b8",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "插件维护管理",
+          "Prometheus"
+        ],
+        "parent_id": "section-71f2f3f970d83664c466",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 插件维护管理 / Prometheus\nPrometheus\nPrometheus为监控插件，能够收集并展示kubernetes集群组件、Node节点及pod监控指标。K8s集群中的Prometheus需要上报监控指标到网管平台，通过prometheus集群联邦方式进行对接，对接的定制化helm values.yaml配置已封装在镜像中。\nsealos底层调用helm命令安装Prometheus插件，默认安装在monitoring命名空间下。\n前置要求：已安装能够提供动态持久卷的存储插件，例如openebs。\n安装prometheus插件\n$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/kube-prometheus-stack-cucc:v0.63.0\n查看prometheus helm chart\nroot@upf:~# helm -n monitoring ls\nNAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION\nprometheus      monitoring      1               2023-03-30 11:18:14.407943736 +0800 CST deployed        kube-prometheus-stack-45.3.0    v0.63.0   \n查看prometheus pods\nroot@upf:~# kubectl -n monitoring get pods \nNAME                                                 READY   STATUS    RESTARTS        AGE\nprometheus-kube-prometheus-operator-7757f46c-vmsnj   1/1     Running   3 (5h30m ago)   8h\nprometheus-kube-state-metrics-678b896dcf-8v6d6       1/1     Running   3 (5h30m ago)   8h\nprometheus-prometheus-kube-prometheus-prometheus-0   2/2     Running   6 (5h30m ago)   8h\nprometheus-prometheus-node-exporter-lhnwm            1/1     Running   3 (5h30m ago)   8h\n卸载prometheus插件",
+        "token_count": 457,
+        "block_ids": [
+          "manual-1edf23113651430f:b003343",
+          "manual-1edf23113651430f:b003344",
+          "manual-1edf23113651430f:b003345",
+          "manual-1edf23113651430f:b003346",
+          "manual-1edf23113651430f:b003348",
+          "manual-1edf23113651430f:b003349",
+          "manual-1edf23113651430f:b003351",
+          "manual-1edf23113651430f:b003352",
+          "manual-1edf23113651430f:b003353",
+          "manual-1edf23113651430f:b003354",
+          "manual-1edf23113651430f:b003356",
+          "manual-1edf23113651430f:b003357",
+          "manual-1edf23113651430f:b003358",
+          "manual-1edf23113651430f:b003359",
+          "manual-1edf23113651430f:b003360",
+          "manual-1edf23113651430f:b003361",
+          "manual-1edf23113651430f:b003362",
+          "manual-1edf23113651430f:b003364"
+        ],
+        "locators": [
+          "word/document.xml/body/p[2149]",
+          "word/document.xml/body/p[2150]",
+          "word/document.xml/body/p[2151]",
+          "word/document.xml/body/p[2152]",
+          "word/document.xml/body/p[2154]",
+          "word/document.xml/body/p[2155]",
+          "word/document.xml/body/p[2157]",
+          "word/document.xml/body/p[2158]",
+          "word/document.xml/body/p[2159]",
+          "word/document.xml/body/p[2160]",
+          "word/document.xml/body/p[2162]",
+          "word/document.xml/body/p[2163]",
+          "word/document.xml/body/p[2164]",
+          "word/document.xml/body/p[2165]",
+          "word/document.xml/body/p[2166]",
+          "word/document.xml/body/p[2167]",
+          "word/document.xml/body/p[2168]",
+          "word/document.xml/body/p[2170]"
+        ],
+        "ordinal_start": 3343,
+        "ordinal_end": 3364,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q3",
+        "S1Q5",
+        "S1Q6",
+        "S1Q9",
+        "S1Q10",
+        "S1Q13",
+        "S1Q14",
+        "S1Q15",
+        "S2Q3",
+        "S2Q4",
+        "S2Q5",
+        "S2Q7"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "插件安装失败时不会终止整个安装流程，可在安装完成后单独处理失败插件，具体原因需分析插件pod日志。",
+            "quote_ids": [
+              "S1Q3"
+            ]
+          },
+          {
+            "text": "排查插件问题需先检查helm是否成功下发chart且状态为deployed，再检查对应命名空间下pod状态是否为Running，异常时需查看pod日志进行定位。",
+            "quote_ids": [
+              "S1Q5",
+              "S1Q9",
+              "S1Q13"
+            ]
+          },
+          {
+            "text": "操作前提包括：已安装helm插件，且对于Prometheus等监控插件，需前置安装提供动态持久卷的存储插件（如openebs）。",
+            "quote_ids": [
+              "S6Q3",
+              "S2Q5"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "插件安装失败时不会终止整个安装流程，可在安装完成后单独处理失败插件，具体原因需分析插件pod日志。",
+            "citations": [
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n"
+              }
+            ]
+          },
+          {
+            "text": "排查插件问题需先检查helm是否成功下发chart且状态为deployed，再检查对应命名空间下pod状态是否为Running，异常时需查看pod日志进行定位。",
+            "citations": [
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\n"
+              },
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "2.\t检查openebs命名空间下的pod状态，查看STATUS列是否为Running\n"
+              },
+              {
+                "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+                "quote": "3.\t如果pod状态异常，需要查看pod日志，分析定位具体原因，一般使用以下命令查看openebs pod日志\n"
+              }
+            ]
+          },
+          {
+            "text": "操作前提包括：已安装helm插件，且对于Prometheus等监控插件，需前置安装提供动态持久卷的存储插件（如openebs）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+                "quote": "helm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n"
+              },
+              {
+                "chunk_id": "chunk-44dec42639466228f7fc64b8",
+                "quote": "前置要求：已安装能够提供动态持久卷的存储插件，例如openebs。\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

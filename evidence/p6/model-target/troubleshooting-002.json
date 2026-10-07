@@ -1,0 +1,212 @@
+{
+  "row": {
+    "id": "troubleshooting-002",
+    "model": "target",
+    "evidence_sha256": "7cdf86614c7c34bcaf8cb9d93a1367c66ccb12b52981e42b74626dbb80db5519",
+    "elapsed_ms": 23805.851377081126,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 3975,
+      "completion_tokens_observed": 324,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘K8S集群软件故障排查 / 基本故障排查 / ice网卡驱动’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [
+      {
+        "text": "WingTech 服务器需要更新ICE网卡驱动，否则可能遇到以下问题：\n\n以上问题需要更新ICE网卡驱动解决，否则影响sriov对网卡的识别以及VF的生成。",
+        "citations": [
+          {
+            "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+            "quote": "WingTech 服务器需要更新ICE网卡驱动，否则可能遇到以下问题：\n"
+          },
+          {
+            "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+            "quote": "以上问题需要更新ICE网卡驱动解决，否则影响sriov对网卡的识别以及VF的生成。"
+          }
+        ]
+      },
+      {
+        "text": "检查用于UPF的物理网卡状态，确认状态是否都为UP状态，发现其中eno4 状态为down，并且执行up命令无法启动\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+            "quote": "检查用于UPF的物理网卡状态，确认状态是否都为UP状态，发现其中eno4 状态为down，并且执行up命令无法启动\n"
+          }
+        ]
+      },
+      {
+        "text": "通过查找eno4 网卡PCI地址，执行dmesg查看日志，日志存在以下报错\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+            "quote": "通过查找eno4 网卡PCI地址，执行dmesg查看日志，日志存在以下报错\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "基本故障排查",
+          "ice网卡驱动"
+        ],
+        "parent_id": "section-d4f2e279b4d191eac6de",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 基本故障排查 / ice网卡驱动\nice网卡驱动\nWingTech 服务器需要更新ICE网卡驱动，否则可能遇到以下问题：\n检查用于UPF的物理网卡状态，确认状态是否都为UP状态，发现其中eno4 状态为down，并且执行up命令无法启动\n通过查找eno4 网卡PCI地址，执行dmesg查看日志，日志存在以下报错\n以上问题需要更新ICE网卡驱动解决，否则影响sriov对网卡的识别以及VF的生成。",
+        "token_count": 128,
+        "block_ids": [
+          "manual-1edf23113651430f:b003035",
+          "manual-1edf23113651430f:b003036",
+          "manual-1edf23113651430f:b003037",
+          "manual-1edf23113651430f:b003040",
+          "manual-1edf23113651430f:b003043"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1846]",
+          "word/document.xml/body/p[1847]",
+          "word/document.xml/body/p[1848]",
+          "word/document.xml/body/p[1850]",
+          "word/document.xml/body/p[1852]"
+        ],
+        "ordinal_start": 3035,
+        "ordinal_end": 3043,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S1Q3",
+        "S1Q4",
+        "S1Q5",
+        "S1Q6"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "操作前提：WingTech 服务器需要更新ICE网卡驱动，否则可能影响sriov对网卡的识别以及VF的生成。",
+            "quote_ids": [
+              "S1Q3",
+              "S1Q6"
+            ]
+          },
+          {
+            "text": "排查步骤：检查用于UPF的物理网卡状态，确认状态是否都为UP状态；若发现网卡（如eno4）状态为down且执行up命令无法启动，需进一步排查。",
+            "quote_ids": [
+              "S1Q4"
+            ]
+          },
+          {
+            "text": "排查步骤：通过查找网卡（如eno4）PCI地址，执行dmesg查看日志，确认是否存在相关报错。",
+            "quote_ids": [
+              "S1Q5"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "操作前提：WingTech 服务器需要更新ICE网卡驱动，否则可能影响sriov对网卡的识别以及VF的生成。",
+            "citations": [
+              {
+                "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+                "quote": "WingTech 服务器需要更新ICE网卡驱动，否则可能遇到以下问题：\n"
+              },
+              {
+                "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+                "quote": "以上问题需要更新ICE网卡驱动解决，否则影响sriov对网卡的识别以及VF的生成。"
+              }
+            ]
+          },
+          {
+            "text": "排查步骤：检查用于UPF的物理网卡状态，确认状态是否都为UP状态；若发现网卡（如eno4）状态为down且执行up命令无法启动，需进一步排查。",
+            "citations": [
+              {
+                "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+                "quote": "检查用于UPF的物理网卡状态，确认状态是否都为UP状态，发现其中eno4 状态为down，并且执行up命令无法启动\n"
+              }
+            ]
+          },
+          {
+            "text": "排查步骤：通过查找网卡（如eno4）PCI地址，执行dmesg查看日志，确认是否存在相关报错。",
+            "citations": [
+              {
+                "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+                "quote": "通过查找eno4 网卡PCI地址，执行dmesg查看日志，日志存在以下报错\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "question": "如何执行 show cp-node 查询 SMF 节点信息？",
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "product": "UPF",
+  "version": "5.0",
+  "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "claims": [
+    {
+      "text": "执行 show cp-node 命令可查询 SMF 节点信息。",
+      "citations": [
+        {
+          "chunk_id": "chunk-109f80277ceee86e3a5ab591",
+          "quote": "show cp-node\n"
+        },
+        {
+          "chunk_id": "chunk-ce7ad9b644df3dad74de0df1",
+          "quote": "UPFD> show cp-node\n"
+        },
+        {
+          "chunk_id": "chunk-c78d58541685b3b7de723d54",
+          "quote": "show cp-node"
+        },
+        {
+          "chunk_id": "chunk-a91841d9e88f9812d3a3eede",
+          "quote": "通用排查步骤\n"
+        }
+      ]
+    },
+    {
+      "text": "该命令需在 telnet 0 37100 连接的 upfd 调试台中输入。",
+      "citations": [
+        {
+          "chunk_id": "chunk-109f80277ceee86e3a5ab591",
+          "quote": "相关说明：telnet 0 37100中输入命令。\n"
+        },
+        {
+          "chunk_id": "chunk-75f55cf9fe42fee0e3fd4ff0",
+          "quote": "telnet 0 37100中输入命令。\n"
+        }
+      ]
+    },
+    {
+      "text": "命令输出显示对端 SMF 的 CP-IP-ADDR、NODE-ID、ASSO-STATUS 等信息。",
+      "citations": [
+        {
+          "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+          "quote": "CP-IP-ADDR     NODE-ID        NODEID-TYPE  RECOVERY-TIMESTAMP     ASSO-STATUS  RETRY-HB-REQ\n"
+        },
+        {
+          "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+          "quote": "173.1.4.152    173.1.4.152    IPv4         L:2022-03-22 18:51:44  UP           0        \n"
+        },
+        {
+          "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+          "quote": "                                           P:2021-12-16 16:38:31 "
+        }
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-109f80277ceee86e3a5ab591",
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "parent_id": "section-831bb73123d41b9e704c",
+      "kind": "command",
+      "text": "业务信息监控 / 查询cp node信息 / 功能配置\nshow cp-node\n相关说明：telnet 0 37100中输入命令。\nUPFD> show cp-node",
+      "token_count": 40,
+      "block_ids": [
+        "manual-341440f7dd103f51:b000852"
+      ],
+      "locators": [
+        "word/document.xml/body/p[257]"
+      ],
+      "ordinal_start": 852,
+      "ordinal_end": 852,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "interface_tags": [],
+      "command_id": "cmd-08ffd19e25837474",
+      "command_family": "CLI",
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-ce7ad9b644df3dad74de0df1",
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "parent_id": "section-831bb73123d41b9e704c",
+      "kind": "command",
+      "text": "业务信息监控 / 查询cp node信息 / 功能配置\nUPFD> show cp-node\n相关说明：telnet 0 37100中输入命令。",
+      "token_count": 37,
+      "block_ids": [
+        "manual-341440f7dd103f51:b000855"
+      ],
+      "locators": [
+        "word/document.xml/body/p[260]"
+      ],
+      "ordinal_start": 855,
+      "ordinal_end": 855,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "interface_tags": [],
+      "command_id": "cmd-79b2e6bf7ec5a4ee",
+      "command_family": "CLI",
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-c78d58541685b3b7de723d54",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "通用指引步骤",
+        "通用排查步骤"
+      ],
+      "parent_id": "section-fe6364276e8aecd1690c",
+      "kind": "command",
+      "text": "通用指引步骤 / 通用排查步骤\nshow cp-node",
+      "token_count": 12,
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000030"
+      ],
+      "locators": [
+        "word/document.xml/body/p[10]/txbxContent[1]/p[2]"
+      ],
+      "ordinal_start": 30,
+      "ordinal_end": 30,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "interface_tags": [],
+      "command_id": "cmd-200fc153e97ba7a6",
+      "command_family": "CLI",
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-a91841d9e88f9812d3a3eede",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "通用指引步骤",
+        "通用排查步骤"
+      ],
+      "parent_id": "section-fe6364276e8aecd1690c",
+      "kind": "prose",
+      "text": "通用指引步骤 / 通用排查步骤\n通用排查步骤\n检查UPF系统平台状态是否异常。异常情况见系统平台故障排查案例。\n//正常状态如下\n# kubectl get pods -A\nNAMESPACE         NAME                                                  READY   STATUS      RESTARTS        AGE\ningress-nginx     ingress-nginx-controller-wbgg9                        1/1     Running     1 (107d ago)    107d\nns1               upf-1-oam-main-6f875879df-qvkt5                       4/4     Running     0               12d\nns1               upf-1-oam-nma-5fcc4b8564-nxhpd                        1/1     Running     0               62d\nns1               upf-1-oam-redis-0                                     2/2     Running     0               62d\nns1               upf-1-oam-redis-1                                     2/2     Running     0               62d\nns1               upf-1-oam-redis-2                                     2/2     Running     0               62d\nns1               upf-1-oam-res-cu5gcupf5.0.0-x2gpd                     0/1     Completed   0               62d\nns1               upfd-1-84c86c9445-qfh84                               1/1     Running     1 (6h26m ago)   6h27m\nns1               upfe-1-778f58d5bb-drmrr                               1/1     Running     0               62d\nns1               upfm-1-6f6b6585df-gqjc2                               1/1     Running     0               62d\nns1               vdos-etcd-0                                           1/1     Running     1 (26d ago)     62d\nns1               vdos-server-577f4c9554-6dhs7                          1/1     Running     0               62d\n检查UPF业务是否异常。异常情况见业务故障排查案例。\n//正常情况可以看到SMF的节点信息",
+      "token_count": 517,
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000006",
+        "manual-9f16bf8ca11723a2:b000007",
+        "manual-9f16bf8ca11723a2:b000010",
+        "manual-9f16bf8ca11723a2:b000011",
+        "manual-9f16bf8ca11723a2:b000012",
+        "manual-9f16bf8ca11723a2:b000013",
+        "manual-9f16bf8ca11723a2:b000014",
+        "manual-9f16bf8ca11723a2:b000015",
+        "manual-9f16bf8ca11723a2:b000016",
+        "manual-9f16bf8ca11723a2:b000017",
+        "manual-9f16bf8ca11723a2:b000018",
+        "manual-9f16bf8ca11723a2:b000019",
+        "manual-9f16bf8ca11723a2:b000020",
+        "manual-9f16bf8ca11723a2:b000021",
+        "manual-9f16bf8ca11723a2:b000022",
+        "manual-9f16bf8ca11723a2:b000023",
+        "manual-9f16bf8ca11723a2:b000024",
+        "manual-9f16bf8ca11723a2:b000026",
+        "manual-9f16bf8ca11723a2:b000029"
+      ],
+      "locators": [
+        "word/document.xml/body/p[5]",
+        "word/document.xml/body/p[6]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[1]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[2]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[3]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[4]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[5]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[6]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[7]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[8]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[9]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[10]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[11]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[12]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[13]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[14]",
+        "word/document.xml/body/p[7]/txbxContent[1]/p[15]",
+        "word/document.xml/body/p[9]",
+        "word/document.xml/body/p[10]/txbxContent[1]/p[1]"
+      ],
+      "ordinal_start": 6,
+      "ordinal_end": 29,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [],
+      "interface_tags": [
+        "SMF"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-75f55cf9fe42fee0e3fd4ff0",
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "parent_id": "section-831bb73123d41b9e704c",
+      "kind": "prose",
+      "text": "业务信息监控 / 查询cp node信息 / 功能配置\n功能配置\n操作步骤\ntelnet 0 37100中输入命令。\n在upfd调试台中键入命令\n命令格式",
+      "token_count": 45,
+      "block_ids": [
+        "manual-341440f7dd103f51:b000846",
+        "manual-341440f7dd103f51:b000847",
+        "manual-341440f7dd103f51:b000848",
+        "manual-341440f7dd103f51:b000849",
+        "manual-341440f7dd103f51:b000850"
+      ],
+      "locators": [
+        "word/document.xml/body/p[251]",
+        "word/document.xml/body/p[252]",
+        "word/document.xml/body/p[253]",
+        "word/document.xml/body/p[254]",
+        "word/document.xml/body/p[255]"
+      ],
+      "ordinal_start": 846,
+      "ordinal_end": 850,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [],
+      "interface_tags": [],
+      "command_id": null,
+      "command_family": null,
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    },
+    {
+      "index_generation": "4b57484621bf3e547723",
+      "p2_generation": "bf8fb923cd90036e501f",
+      "source_verified": true,
+      "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "role": "manual",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "parent_id": "section-831bb73123d41b9e704c",
+      "kind": "prose",
+      "text": "业务信息监控 / 查询cp node信息 / 功能配置\nCP-IP-ADDR     NODE-ID        NODEID-TYPE  RECOVERY-TIMESTAMP     ASSO-STATUS  RETRY-HB-REQ\n173.1.4.152    173.1.4.152    IPv4         L:2022-03-22 18:51:44  UP           0        \n                                           P:2021-12-16 16:38:31 ",
+      "token_count": 123,
+      "block_ids": [
+        "manual-341440f7dd103f51:b000856",
+        "manual-341440f7dd103f51:b000857",
+        "manual-341440f7dd103f51:b000858"
+      ],
+      "locators": [
+        "word/document.xml/body/p[261]",
+        "word/document.xml/body/p[262]",
+        "word/document.xml/body/p[263]"
+      ],
+      "ordinal_start": 856,
+      "ordinal_end": 858,
+      "extraction_methods": [
+        "docx-xml-v4"
+      ],
+      "quality_flags": [],
+      "interface_tags": [],
+      "command_id": null,
+      "command_family": null,
+      "table_id": null,
+      "table_header": null,
+      "table_cells": []
+    }
+  ],
+  "warnings": [
+    "P2 命令与截图人工复核尚未完成；引用存在不等于现场适用。",
+    "引用手册版本未知，需核对目标设备版本与操作前提。"
+  ],
+  "support_check": "model_checked_not_human_verified",
+  "validation_errors": [],
+  "generation_attempts": 1,
+  "audit": {
+    "selection": {
+      "status": "partial",
+      "claims": [
+        {
+          "text": "执行 show cp-node 命令可查询 SMF 节点信息。",
+          "quote_ids": [
+            "S1Q2",
+            "S2Q2",
+            "S6Q2",
+            "S12Q2"
+          ]
+        },
+        {
+          "text": "该命令需在 telnet 0 37100 连接的 upfd 调试台中输入。",
+          "quote_ids": [
+            "S1Q3",
+            "S8Q4"
+          ]
+        },
+        {
+          "text": "命令输出显示对端 SMF 的 CP-IP-ADDR、NODE-ID、ASSO-STATUS 等信息。",
+          "quote_ids": [
+            "S10Q2",
+            "S10Q3",
+            "S10Q4"
+          ]
+        }
+      ],
+      "missing_information": [
+        "版本适用性未确认，证据版本为 unknown，无法确认是否适用于 5.0 版本。"
+      ]
+    },
+    "draft": {
+      "status": "partial",
+      "claims": [
+        {
+          "text": "执行 show cp-node 命令可查询 SMF 节点信息。",
+          "citations": [
+            {
+              "chunk_id": "chunk-109f80277ceee86e3a5ab591",
+              "quote": "show cp-node\n"
+            },
+            {
+              "chunk_id": "chunk-ce7ad9b644df3dad74de0df1",
+              "quote": "UPFD> show cp-node\n"
+            },
+            {
+              "chunk_id": "chunk-c78d58541685b3b7de723d54",
+              "quote": "show cp-node"
+            },
+            {
+              "chunk_id": "chunk-a91841d9e88f9812d3a3eede",
+              "quote": "通用排查步骤\n"
+            }
+          ]
+        },
+        {
+          "text": "该命令需在 telnet 0 37100 连接的 upfd 调试台中输入。",
+          "citations": [
+            {
+              "chunk_id": "chunk-109f80277ceee86e3a5ab591",
+              "quote": "相关说明：telnet 0 37100中输入命令。\n"
+            },
+            {
+              "chunk_id": "chunk-75f55cf9fe42fee0e3fd4ff0",
+              "quote": "telnet 0 37100中输入命令。\n"
+            }
+          ]
+        },
+        {
+          "text": "命令输出显示对端 SMF 的 CP-IP-ADDR、NODE-ID、ASSO-STATUS 等信息。",
+          "citations": [
+            {
+              "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+              "quote": "CP-IP-ADDR     NODE-ID        NODEID-TYPE  RECOVERY-TIMESTAMP     ASSO-STATUS  RETRY-HB-REQ\n"
+            },
+            {
+              "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+              "quote": "173.1.4.152    173.1.4.152    IPv4         L:2022-03-22 18:51:44  UP           0        \n"
+            },
+            {
+              "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+              "quote": "                                           P:2021-12-16 16:38:31 "
+            }
+          ]
+        }
+      ],
+      "missing_information": [
+        "版本适用性未确认，证据版本为 unknown，无法确认是否适用于 5.0 版本。"
+      ]
+    },
+    "support_decisions": [
+      true,
+      true,
+      true
+    ]
+  },
+  "status": "partial",
+  "missing_information": [
+    "版本适用性未确认，证据版本为 unknown，无法确认是否适用于 5.0 版本。",
+    "引用资料版本未知，无法确认对请求版本的适用性。"
+  ]
+}

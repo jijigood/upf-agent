@@ -1,0 +1,2603 @@
+{
+  "kind": "development_deterministic_regression_not_business_gold",
+  "log": {
+    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+    "timezone": null,
+    "device_id": null,
+    "parser": "upfd-stream-v1",
+    "rules": "upfd-rules-v1",
+    "parser_sha256": "9997ae03a8872661c16446dc8cc8357f4bce0c735a79e30d0772ccfbd3e0bf08",
+    "store_sha256": "e3a9f90192c373968fa324b4127de3a76ebde64d7a78dd60ef1cb4b3aa2026c9",
+    "template_sha256": "5264f3b2a77cb19ab3763fdcca3d3171f25b4a18b21ebacb4df9454a193d7206",
+    "synthetic": false,
+    "source_path": "/home/huangxiaolin/upf-agent/data/raw/upfd_masked.log",
+    "contracts_sha256": "e276a5e396c75740b389489973a9d8d9cb394719ad794657cf755b606166dd6e",
+    "generation": "a6f18ac81a18aa2125fa",
+    "source_id": "log-a698d029342259b7",
+    "source_bytes": 6347974,
+    "physical_lines": 32539,
+    "events": 32539,
+    "line_status_counts": {
+      "parsed": 32539
+    },
+    "event_counts": {
+      "unclassified": 22718,
+      "upfd_start": 21,
+      "timer_init_failure": 16,
+      "license_not_installed": 12,
+      "interface_index_failure": 111,
+      "n4_name_failure": 30,
+      "far_handover": 3238,
+      "pfcp_session_deleted": 5715,
+      "gtpu_echo_retry": 382,
+      "gtpu_unreachable_detected": 120,
+      "gtpu_unreachable_report": 120,
+      "pfcp_heartbeat_request": 23,
+      "pfcp_heartbeat_response": 7,
+      "pfcp_node_unreachable": 26
+    },
+    "state_counts": {
+      "unclassified:unknown": 22718,
+      "upfd_start:observed": 21,
+      "timer_init_failure:observed": 16,
+      "license_not_installed:raised": 1,
+      "interface_index_failure:observed": 111,
+      "license_not_installed:cleared": 11,
+      "n4_name_failure:observed": 30,
+      "far_handover:observed": 3238,
+      "pfcp_session_deleted:observed": 5715,
+      "gtpu_echo_retry:observed": 382,
+      "gtpu_unreachable_detected:raised": 120,
+      "gtpu_unreachable_report:raised": 120,
+      "pfcp_heartbeat_request:observed": 23,
+      "pfcp_heartbeat_response:observed": 7,
+      "pfcp_node_unreachable:raised": 14,
+      "pfcp_node_unreachable:cleared": 12
+    },
+    "unresolved_timezone_events": 32539,
+    "adjacent_wall_time_disorder": 1,
+    "timezone_source": "unknown",
+    "elapsed_seconds": 2.1782,
+    "files": {
+      "month=2025-05/part-000002.parquet": "9706c3c8c85b324e788536d2f09f53bbe7c15c5b7e2c307931780e66528a0e4b",
+      "month=2025-05/part-000005.parquet": "982f4f1f2918250ce9e9cabbd71a617c7f520c9bca264b3143abcf7f71ea6a34",
+      "month=2025-05/part-000003.parquet": "cb23117f0e94a8ffad39867d556cf449e2dcf7c880a5b34ef5316dea8ae46114",
+      "month=2025-05/part-000001.parquet": "7c05a59b11f7f8892df52bc62ca5499d52006adf6bf6cb8ea096e8dad76197e7",
+      "month=2025-05/part-000004.parquet": "1c4658618f2e0bf372114bc8cc3bd9bc38160ad2f789e32ea09b796a874c1ba8",
+      "month=2025-05/part-000006.parquet": "fe61a13ae1964f970daf7f58bdf7f26c697b14c23e987b003a11bc22e86e232c",
+      "month=2025-05/part-000000.parquet": "90e0381efe899ef81b4cdaec76d3ffdb988a7fa9dc278f998632a2d3ca8f9c34",
+      "month=2025-05/part-000007.parquet": "2ee9f11afd69b9f6e61fc176229d9e8d6f28590c32a52c64cfb6de24a3d501ad",
+      "month=2025-07/part-000009.parquet": "528f74281282ec6d2bec64e676337b107958ccc032a34e898e1d639a5deaeb9a",
+      "month=2025-06/part-000008.parquet": "360206916f83ebdc9fec829850d23b457d8a803ce5113030992622afbbaaaf7e"
+    },
+    "count_unit": "log_messages_not_independent_faults",
+    "template_snapshot": "/home/huangxiaolin/upf-agent/data/p4/templates/a3cd7316c1311b10e2be"
+  },
+  "analysis": {
+    "status": "completed",
+    "data": {
+      "total_events": 32539,
+      "physical_lines": 32539,
+      "source_bytes": 6347974,
+      "generation": "a6f18ac81a18aa2125fa",
+      "counts": [
+        {
+          "event_type": "unclassified",
+          "event_state": "unknown",
+          "messages": 22718
+        },
+        {
+          "event_type": "pfcp_session_deleted",
+          "event_state": "observed",
+          "messages": 5715
+        },
+        {
+          "event_type": "far_handover",
+          "event_state": "observed",
+          "messages": 3238
+        },
+        {
+          "event_type": "gtpu_echo_retry",
+          "event_state": "observed",
+          "messages": 382
+        },
+        {
+          "event_type": "gtpu_unreachable_detected",
+          "event_state": "raised",
+          "messages": 120
+        },
+        {
+          "event_type": "gtpu_unreachable_report",
+          "event_state": "raised",
+          "messages": 120
+        },
+        {
+          "event_type": "interface_index_failure",
+          "event_state": "observed",
+          "messages": 111
+        },
+        {
+          "event_type": "n4_name_failure",
+          "event_state": "observed",
+          "messages": 30
+        },
+        {
+          "event_type": "pfcp_heartbeat_request",
+          "event_state": "observed",
+          "messages": 23
+        },
+        {
+          "event_type": "upfd_start",
+          "event_state": "observed",
+          "messages": 21
+        },
+        {
+          "event_type": "timer_init_failure",
+          "event_state": "observed",
+          "messages": 16
+        },
+        {
+          "event_type": "pfcp_node_unreachable",
+          "event_state": "raised",
+          "messages": 14
+        },
+        {
+          "event_type": "pfcp_node_unreachable",
+          "event_state": "cleared",
+          "messages": 12
+        },
+        {
+          "event_type": "license_not_installed",
+          "event_state": "cleared",
+          "messages": 11
+        },
+        {
+          "event_type": "pfcp_heartbeat_response",
+          "event_state": "observed",
+          "messages": 7
+        },
+        {
+          "event_type": "license_not_installed",
+          "event_state": "raised",
+          "messages": 1
+        }
+      ],
+      "representatives": [
+        {
+          "event_type": "far_handover",
+          "first_event_id": "log-a698d029342259b7-12005",
+          "last_event_id": "log-a698d029342259b7-6337704"
+        },
+        {
+          "event_type": "gtpu_echo_retry",
+          "first_event_id": "log-a698d029342259b7-14801",
+          "last_event_id": "log-a698d029342259b7-6341444"
+        },
+        {
+          "event_type": "gtpu_unreachable_detected",
+          "first_event_id": "log-a698d029342259b7-17561",
+          "last_event_id": "log-a698d029342259b7-6326728"
+        },
+        {
+          "event_type": "gtpu_unreachable_report",
+          "first_event_id": "log-a698d029342259b7-17664",
+          "last_event_id": "log-a698d029342259b7-6326831"
+        },
+        {
+          "event_type": "interface_index_failure",
+          "first_event_id": "log-a698d029342259b7-2080",
+          "last_event_id": "log-a698d029342259b7-6221806"
+        },
+        {
+          "event_type": "license_not_installed",
+          "first_event_id": "log-a698d029342259b7-1683",
+          "last_event_id": "log-a698d029342259b7-6218178"
+        },
+        {
+          "event_type": "n4_name_failure",
+          "first_event_id": "log-a698d029342259b7-4665",
+          "last_event_id": "log-a698d029342259b7-6221623"
+        },
+        {
+          "event_type": "pfcp_heartbeat_request",
+          "first_event_id": "log-a698d029342259b7-3182914",
+          "last_event_id": "log-a698d029342259b7-6347556"
+        },
+        {
+          "event_type": "pfcp_heartbeat_response",
+          "first_event_id": "log-a698d029342259b7-3183220",
+          "last_event_id": "log-a698d029342259b7-4297294"
+        },
+        {
+          "event_type": "pfcp_node_unreachable",
+          "first_event_id": "log-a698d029342259b7-5967589",
+          "last_event_id": "log-a698d029342259b7-6347849"
+        },
+        {
+          "event_type": "pfcp_session_deleted",
+          "first_event_id": "log-a698d029342259b7-13071",
+          "last_event_id": "log-a698d029342259b7-6338869"
+        },
+        {
+          "event_type": "timer_init_failure",
+          "first_event_id": "log-a698d029342259b7-972",
+          "last_event_id": "log-a698d029342259b7-6229664"
+        },
+        {
+          "event_type": "unclassified",
+          "first_event_id": "log-a698d029342259b7-0",
+          "last_event_id": "log-a698d029342259b7-6345419"
+        },
+        {
+          "event_type": "upfd_start",
+          "first_event_id": "log-a698d029342259b7-231",
+          "last_event_id": "log-a698d029342259b7-6217506"
+        }
+      ],
+      "peak_bucket": [],
+      "entity_representatives": [
+        {
+          "device_id": null,
+          "peer_ip": "2408:8142:60ff:fc01:1706:406::",
+          "messages": 138,
+          "example_event_id": "log-a698d029342259b7-3144399"
+        },
+        {
+          "device_id": null,
+          "peer_ip": "2408:8142:60ff:fc02:1706:406::",
+          "messages": 113,
+          "example_event_id": "log-a698d029342259b7-3136194"
+        },
+        {
+          "device_id": null,
+          "peer_ip": "2408:8142:60ff:fc0b:171f:406::",
+          "messages": 2,
+          "example_event_id": "log-a698d029342259b7-6327639"
+        },
+        {
+          "device_id": null,
+          "peer_ip": "2408:8142:60ff:fc0b:1721:406::",
+          "messages": 2,
+          "example_event_id": "log-a698d029342259b7-6327150"
+        },
+        {
+          "device_id": null,
+          "peer_ip": "2408:8142:60ff:fc0c:171f:406::",
+          "messages": 2,
+          "example_event_id": "log-a698d029342259b7-6328128"
+        },
+        {
+          "device_id": null,
+          "peer_ip": "2408:8142:60ff:fc0c:1721:406::",
+          "messages": 2,
+          "example_event_id": "log-a698d029342259b7-6328617"
+        }
+      ],
+      "entity_representatives_truncated": false,
+      "buckets": [],
+      "bucket_seconds": 3600,
+      "buckets_truncated": false,
+      "scope": {
+        "event_type": null,
+        "device_id": null,
+        "window": null
+      },
+      "accounting": {
+        "source_bytes": 6347974,
+        "physical_lines": 32539,
+        "line_status_counts": {
+          "parsed": 32539
+        }
+      }
+    },
+    "evidence_ids": [],
+    "warnings": [
+      "Counts represent log messages, not independent faults; FATAL remains raw severity.",
+      "Timezone unknown: UTC timeline unavailable for unresolved events; no cross-source time correlation."
+    ],
+    "elapsed_ms": 97
+  },
+  "continuity": {
+    "violations": 0
+  },
+  "independently_counted_semantic_checks": {
+    "pfcp_heartbeat_request:observed": 23,
+    "pfcp_node_unreachable:raised": 14,
+    "pfcp_node_unreachable:cleared": 12,
+    "license_not_installed:raised": 1,
+    "license_not_installed:cleared": 11,
+    "far_handover:observed": 3238,
+    "gtpu_unreachable_detected:raised": 120,
+    "gtpu_unreachable_report:raised": 120,
+    "pfcp_session_deleted:observed": 5715,
+    "gtpu_echo_retry:observed": 382
+  },
+  "old_baseline": {
+    "yaml_sha256": "bd4d045782c4b250d1b0694a669d6e5d09891de1a1f676c13160770bfb444c3c",
+    "legacy_code_sha256": "c88450bd5214d59f61c0a2402d69bfc191e38badab1902c6c82c6ecddbcc708a",
+    "log_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+    "category_counts": {
+      "Unclassified": 25979,
+      "PFCP 会话释放": 5715,
+      "GTP-U 链路探测请求": 382,
+      "GTP-U 不可达上报": 120,
+      "GTP-U 节点不可达": 120,
+      "接口索引获取失败（接口状态异常）": 111,
+      "PFCP 节点不可达": 37,
+      "UPF重启/服务启动": 21,
+      "定时器初始化失败": 16,
+      "N4链路名称识别失败": 15,
+      "PFCP 节点恢复": 12,
+      "许可证未安装告警": 11
+    },
+    "total_classified_records": 32539,
+    "known_bad_labels": [
+      "PFCP heartbeat request classified as unreachable",
+      "license alarm clear classified as raised",
+      "masked FAR handover not matched"
+    ],
+    "interpretation": "Historical output only; not ground truth for the new event classifier"
+  },
+  "examples": {
+    "far_handover": {
+      "status": "completed",
+      "data": {
+        "event": {
+          "event_id": "log-a698d029342259b7-12005",
+          "source_id": "log-a698d029342259b7",
+          "line_start": 101,
+          "line_end": 101,
+          "byte_offset": 12005,
+          "byte_length": 278,
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "timestamp_original": "2025-05-14 20:08:47.594133",
+          "timestamp_utc": null,
+          "timezone_status": "unknown",
+          "device_id": null,
+          "protocol": "GTP-U",
+          "event_type": "far_handover",
+          "event_state": "observed",
+          "severity_raw": "FATAL",
+          "peer_ip": null,
+          "session": null,
+          "seid": null,
+          "teid": null,
+          "imsi": null,
+          "interface_type": null,
+          "port": null,
+          "rule_id": "upfd-rules-v1:7",
+          "classification_basis": "message_regex",
+          "template_id": "a3cd7316c1311b10e2be:27",
+          "parse_status": "parsed",
+          "quality_flags": [
+            "timezone_unresolved"
+          ],
+          "masked_fields": [
+            "dnn",
+            "imsi",
+            "peer_ip",
+            "seid",
+            "session",
+            "teid"
+          ],
+          "raw_excerpt": "2025-05-14 20:08:47.594133 FATAL FID.0 upfd_pfcp.c:6681(upfdUpdateFar): #GtpuNode# handover old ip: IP_ADDR to new ip: IP_ADDR. CAUSE farId:0x21700002 update, #session# {session: SESSION_MASKED dnn: DNN_MASKED,imsi: IMSI_MASKED,local seid: SEID_MASKED,local teid: TEID_MASKED}\r\n",
+          "parser_version": "upfd-stream-v1"
+        },
+        "raw_text": "2025-05-14 20:08:47.594133 FATAL FID.0 upfd_pfcp.c:6681(upfdUpdateFar): #GtpuNode# handover old ip: IP_ADDR to new ip: IP_ADDR. CAUSE farId:0x21700002 update, #session# {session: SESSION_MASKED dnn: DNN_MASKED,imsi: IMSI_MASKED,local seid: SEID_MASKED,local teid: TEID_MASKED}\r\n",
+        "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+        "byte_offset": 12005,
+        "byte_length": 278,
+        "line_start": 101,
+        "line_end": 101,
+        "truncated": false
+      },
+      "evidence_ids": [
+        "log-a698d029342259b7-12005"
+      ],
+      "warnings": [],
+      "elapsed_ms": 0
+    },
+    "pfcp_heartbeat_request": {
+      "status": "completed",
+      "data": {
+        "event": {
+          "event_id": "log-a698d029342259b7-3182914",
+          "source_id": "log-a698d029342259b7",
+          "line_start": 15128,
+          "line_end": 15128,
+          "byte_offset": 3182914,
+          "byte_length": 121,
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "timestamp_original": "2025-05-15 09:10:45.375909",
+          "timestamp_utc": null,
+          "timezone_status": "unknown",
+          "device_id": null,
+          "protocol": "PFCP",
+          "event_type": "pfcp_heartbeat_request",
+          "event_state": "observed",
+          "severity_raw": "DEBUG",
+          "peer_ip": null,
+          "session": null,
+          "seid": null,
+          "teid": null,
+          "imsi": null,
+          "interface_type": null,
+          "port": null,
+          "rule_id": "upfd-rules-v1:5",
+          "classification_basis": "message_regex",
+          "template_id": "a3cd7316c1311b10e2be:91",
+          "parse_status": "parsed",
+          "quality_flags": [
+            "timezone_unresolved"
+          ],
+          "masked_fields": [],
+          "raw_excerpt": "2025-05-15 09:10:45.375909 DEBUG FID.0 upfd_pfcp.c:2031(upfdPfcpMsgEntryHeartBeatReq): Recv #MsgHeartbeat# Req from cp.\r\n",
+          "parser_version": "upfd-stream-v1"
+        },
+        "raw_text": "2025-05-15 09:10:45.375909 DEBUG FID.0 upfd_pfcp.c:2031(upfdPfcpMsgEntryHeartBeatReq): Recv #MsgHeartbeat# Req from cp.\r\n",
+        "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+        "byte_offset": 3182914,
+        "byte_length": 121,
+        "line_start": 15128,
+        "line_end": 15128,
+        "truncated": false
+      },
+      "evidence_ids": [
+        "log-a698d029342259b7-3182914"
+      ],
+      "warnings": [],
+      "elapsed_ms": 0
+    },
+    "pfcp_node_unreachable": {
+      "status": "completed",
+      "data": {
+        "event": {
+          "event_id": "log-a698d029342259b7-5967589",
+          "source_id": "log-a698d029342259b7",
+          "line_start": 30659,
+          "line_end": 30659,
+          "byte_offset": 5967589,
+          "byte_length": 126,
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "timestamp_original": "2025-05-21 20:57:10.493959",
+          "timestamp_utc": null,
+          "timezone_status": "unknown",
+          "device_id": null,
+          "protocol": "PFCP",
+          "event_type": "pfcp_node_unreachable",
+          "event_state": "raised",
+          "severity_raw": "ERROR",
+          "peer_ip": null,
+          "session": null,
+          "seid": null,
+          "teid": null,
+          "imsi": null,
+          "interface_type": null,
+          "port": null,
+          "rule_id": "upfd-rules-v1:2",
+          "classification_basis": "message_regex",
+          "template_id": "a3cd7316c1311b10e2be:144",
+          "parse_status": "parsed",
+          "quality_flags": [
+            "timezone_unresolved"
+          ],
+          "masked_fields": [],
+          "raw_excerpt": "2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n",
+          "parser_version": "upfd-stream-v1"
+        },
+        "raw_text": "2025-05-21 20:57:10.493959 ERROR FID.0 upfd_alarm.c:314(upfdAlarmPfcpNodeUnreachable): #Alarm# report PFCP node unreachable!\r\n",
+        "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+        "byte_offset": 5967589,
+        "byte_length": 126,
+        "line_start": 30659,
+        "line_end": 30659,
+        "truncated": false
+      },
+      "evidence_ids": [
+        "log-a698d029342259b7-5967589"
+      ],
+      "warnings": [],
+      "elapsed_ms": 0
+    },
+    "license_not_installed": {
+      "status": "completed",
+      "data": {
+        "event": {
+          "event_id": "log-a698d029342259b7-1683",
+          "source_id": "log-a698d029342259b7",
+          "line_start": 16,
+          "line_end": 16,
+          "byte_offset": 1683,
+          "byte_length": 121,
+          "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+          "timestamp_original": "2025-05-14 16:07:43.723036",
+          "timestamp_utc": null,
+          "timezone_status": "unknown",
+          "device_id": null,
+          "protocol": null,
+          "event_type": "license_not_installed",
+          "event_state": "raised",
+          "severity_raw": "ERROR",
+          "peer_ip": null,
+          "session": null,
+          "seid": null,
+          "teid": null,
+          "imsi": null,
+          "interface_type": null,
+          "port": null,
+          "rule_id": "upfd-rules-v1:4",
+          "classification_basis": "message_regex",
+          "template_id": "a3cd7316c1311b10e2be:9",
+          "parse_status": "parsed",
+          "quality_flags": [
+            "timezone_unresolved"
+          ],
+          "masked_fields": [],
+          "raw_excerpt": "2025-05-14 16:07:43.723036 ERROR FID.0 upfd_alarm.c:816(upfdAlarmLicenseNotInstall): Report license not installed alarm\r\n",
+          "parser_version": "upfd-stream-v1"
+        },
+        "raw_text": "2025-05-14 16:07:43.723036 ERROR FID.0 upfd_alarm.c:816(upfdAlarmLicenseNotInstall): Report license not installed alarm\r\n",
+        "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+        "byte_offset": 1683,
+        "byte_length": 121,
+        "line_start": 16,
+        "line_end": 16,
+        "truncated": false
+      },
+      "evidence_ids": [
+        "log-a698d029342259b7-1683"
+      ],
+      "warnings": [],
+      "elapsed_ms": 0
+    }
+  },
+  "templates": {
+    "version": "drain3-0.9.11-upfd-v1",
+    "code_sha256": "3d2fce311161af4260163997babb83335c4fee40cc439c6310dc30a12b1c0777",
+    "source_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+    "max_clusters": 1024,
+    "sim_th": 0.5,
+    "message_body_version": "9997ae03a8872661c16446dc8cc8357f4bce0c735a79e30d0772ccfbd3e0bf08",
+    "snapshot_id": "a3cd7316c1311b10e2be",
+    "templates_sha256": "2c72588f469375735a5b5030cc7ce13369fb9e4442b706a2a4a9dca186cd8495",
+    "clusters": 162,
+    "training_messages": 32539,
+    "evicted_clusters": 0,
+    "unknown_is_anomaly": false,
+    "inference": "match_only_full_search_always",
+    "warnings": []
+  },
+  "template_replay": {
+    "matches": [
+      "a3cd7316c1311b10e2be:27",
+      "a3cd7316c1311b10e2be:27",
+      "a3cd7316c1311b10e2be:27"
+    ],
+    "snapshot_unchanged": true
+  },
+  "template_inventory": {
+    "status": "partial",
+    "data": {
+      "unclassified_message_templates": [
+        {
+          "template_id": "a3cd7316c1311b10e2be:28",
+          "messages": 6046,
+          "example_event_id": "log-a698d029342259b7-12839"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:30",
+          "messages": 6031,
+          "example_event_id": "log-a698d029342259b7-13205"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:47",
+          "messages": 1636,
+          "example_event_id": "log-a698d029342259b7-3135474"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:73",
+          "messages": 605,
+          "example_event_id": "log-a698d029342259b7-3144926"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:44",
+          "messages": 369,
+          "example_event_id": "log-a698d029342259b7-3135086"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:145",
+          "messages": 296,
+          "example_event_id": "log-a698d029342259b7-5968799"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:74",
+          "messages": 288,
+          "example_event_id": "log-a698d029342259b7-3145064"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:34",
+          "messages": 278,
+          "example_event_id": "log-a698d029342259b7-126926"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:43",
+          "messages": 252,
+          "example_event_id": "log-a698d029342259b7-3134942"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:45",
+          "messages": 252,
+          "example_event_id": "log-a698d029342259b7-3135198"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:46",
+          "messages": 252,
+          "example_event_id": "log-a698d029342259b7-3135350"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:51",
+          "messages": 252,
+          "example_event_id": "log-a698d029342259b7-3136362"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:52",
+          "messages": 252,
+          "example_event_id": "log-a698d029342259b7-3136527"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:66",
+          "messages": 235,
+          "example_event_id": "log-a698d029342259b7-3142028"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:67",
+          "messages": 235,
+          "example_event_id": "log-a698d029342259b7-3142150"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:72",
+          "messages": 232,
+          "example_event_id": "log-a698d029342259b7-3144231"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:50",
+          "messages": 227,
+          "example_event_id": "log-a698d029342259b7-3136194"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:69",
+          "messages": 224,
+          "example_event_id": "log-a698d029342259b7-3143061"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:68",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3142672"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:75",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3145203"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:76",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3145307"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:77",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3145412"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:78",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3145658"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:79",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3145776"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:80",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3145896"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:81",
+          "messages": 216,
+          "example_event_id": "log-a698d029342259b7-3146014"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:65",
+          "messages": 214,
+          "example_event_id": "log-a698d029342259b7-3139724"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:70",
+          "messages": 208,
+          "example_event_id": "log-a698d029342259b7-3143422"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:61",
+          "messages": 205,
+          "example_event_id": "log-a698d029342259b7-3138321"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:64",
+          "messages": 203,
+          "example_event_id": "log-a698d029342259b7-3139617"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:83",
+          "messages": 202,
+          "example_event_id": "log-a698d029342259b7-3154175"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:71",
+          "messages": 200,
+          "example_event_id": "log-a698d029342259b7-3143985"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:53",
+          "messages": 126,
+          "example_event_id": "log-a698d029342259b7-3137088"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:82",
+          "messages": 117,
+          "example_event_id": "log-a698d029342259b7-3152432"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:84",
+          "messages": 101,
+          "example_event_id": "log-a698d029342259b7-3154429"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:85",
+          "messages": 101,
+          "example_event_id": "log-a698d029342259b7-3154543"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:19",
+          "messages": 77,
+          "example_event_id": "log-a698d029342259b7-3293"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:20",
+          "messages": 44,
+          "example_event_id": "log-a698d029342259b7-4040"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:25",
+          "messages": 44,
+          "example_event_id": "log-a698d029342259b7-7454"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:49",
+          "messages": 44,
+          "example_event_id": "log-a698d029342259b7-3135818"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:117",
+          "messages": 40,
+          "example_event_id": "log-a698d029342259b7-3195306"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:118",
+          "messages": 40,
+          "example_event_id": "log-a698d029342259b7-3195413"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:119",
+          "messages": 40,
+          "example_event_id": "log-a698d029342259b7-3195522"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:56",
+          "messages": 38,
+          "example_event_id": "log-a698d029342259b7-3137474"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:35",
+          "messages": 34,
+          "example_event_id": "log-a698d029342259b7-142166"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:17",
+          "messages": 33,
+          "example_event_id": "log-a698d029342259b7-3029"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:104",
+          "messages": 32,
+          "example_event_id": "log-a698d029342259b7-3188725"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:105",
+          "messages": 32,
+          "example_event_id": "log-a698d029342259b7-3189037"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:13",
+          "messages": 23,
+          "example_event_id": "log-a698d029342259b7-2200"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:5",
+          "messages": 22,
+          "example_event_id": "log-a698d029342259b7-1097"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:1",
+          "messages": 21,
+          "example_event_id": "log-a698d029342259b7-0"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:2",
+          "messages": 21,
+          "example_event_id": "log-a698d029342259b7-126"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:57",
+          "messages": 19,
+          "example_event_id": "log-a698d029342259b7-3137638"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:100",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3187259"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:106",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3189250"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:112",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3192365"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:114",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3193149"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:115",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3193279"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:120",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3196014"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:121",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3196131"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:122",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3196235"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:123",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3199174"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:124",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3199277"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:125",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3199381"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:93",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3185053"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:94",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3185182"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:95",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3185656"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:99",
+          "messages": 16,
+          "example_event_id": "log-a698d029342259b7-3187070"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:142",
+          "messages": 14,
+          "example_event_id": "log-a698d029342259b7-5967226"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:143",
+          "messages": 14,
+          "example_event_id": "log-a698d029342259b7-5967422"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:133",
+          "messages": 13,
+          "example_event_id": "log-a698d029342259b7-3517860"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:138",
+          "messages": 13,
+          "example_event_id": "log-a698d029342259b7-4637640"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:11",
+          "messages": 12,
+          "example_event_id": "log-a698d029342259b7-1930"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:24",
+          "messages": 12,
+          "example_event_id": "log-a698d029342259b7-5519"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:149",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-6025895"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:15",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-2508"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:150",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-6041257"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:16",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-2848"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:48",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-3135574"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:54",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-3137254"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:55",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-3137345"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:58",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-3137802"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:59",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-3137912"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:6",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-1327"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:60",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-3138209"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:63",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-3139515"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:7",
+          "messages": 11,
+          "example_event_id": "log-a698d029342259b7-1432"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:127",
+          "messages": 10,
+          "example_event_id": "log-a698d029342259b7-3245737"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:132",
+          "messages": 10,
+          "example_event_id": "log-a698d029342259b7-3274294"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:91",
+          "messages": 10,
+          "example_event_id": "log-a698d029342259b7-3275894"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:140",
+          "messages": 9,
+          "example_event_id": "log-a698d029342259b7-5965235"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:101",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3187629"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:102",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3188011"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:103",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3188294"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:107",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3189843"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:108",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3190174"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:109",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3190453"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:110",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3191154"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:111",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3191550"
+        },
+        {
+          "template_id": "a3cd7316c1311b10e2be:113",
+          "messages": 8,
+          "example_event_id": "log-a698d029342259b7-3192960"
+        }
+      ],
+      "snapshot_unmatched_messages": 0,
+      "templates_truncated": true,
+      "unknown_is_anomaly": false,
+      "snapshot": "/home/huangxiaolin/upf-agent/data/p4/templates/a3cd7316c1311b10e2be"
+    },
+    "evidence_ids": [],
+    "warnings": [
+      "Unclassified business rules and unseen Drain templates are separate; neither proves an anomaly."
+    ],
+    "elapsed_ms": 0
+  },
+  "synthetic_csv_topology": {
+    "source_sha256": "ddb3abc66bd33402d83b24df1dbfd5c4698f172f551639a35205ebb003b14e24",
+    "version": "topology-v1",
+    "code_sha256": "0ebd8b93f03086f4084bd41b2822ad520cf19bbdc245527ad6ec1364e68637f0",
+    "synthetic": true,
+    "device_aliases": {
+      "DEMO": "SYNTHETIC-UPF"
+    },
+    "header_mapping": {
+      "网元": "device_id",
+      "端口": "device_port",
+      "对端网元": "peer_device_id",
+      "对端端口": "peer_port",
+      "接口": "interface_type",
+      "生效时间": "valid_from",
+      "失效时间": "valid_to",
+      "VLAN": "vlan",
+      "用途": "purpose"
+    },
+    "interface_aliases": {},
+    "generation": "5dfe0ce45cd3a3faad89",
+    "source_path": "/home/huangxiaolin/upf-agent/data/p4/fixtures/synthetic_topology.csv",
+    "source_id": "topology-ddb3abc66bd33402",
+    "accepted_edges": 2,
+    "quarantined_rows": 1,
+    "edges_sha256": "469b2c22b9a60c78f4ee74aa04f98a52f0f7a70ef5271dadfbeb6cfed9f1f1e5",
+    "quarantine_sha256": "22bd96f312612ed009f204260c7ff7b738486d5157f417f7da6cd2bced44a788"
+  },
+  "synthetic_xlsx_topology": {
+    "source_sha256": "830453dc57a53e4b60e5afb23f762f3b0a3f311077d09ea9152c4cc7e7c3277b",
+    "version": "topology-v1",
+    "code_sha256": "0ebd8b93f03086f4084bd41b2822ad520cf19bbdc245527ad6ec1364e68637f0",
+    "synthetic": true,
+    "device_aliases": {},
+    "header_mapping": {
+      "网元": "device_id",
+      "端口": "device_port",
+      "对端网元": "peer_device_id",
+      "对端端口": "peer_port",
+      "接口": "interface_type",
+      "生效时间": "valid_from",
+      "失效时间": "valid_to",
+      "VLAN": "vlan",
+      "用途": "purpose"
+    },
+    "interface_aliases": {},
+    "generation": "5bdcb4094b1c813fa889",
+    "source_path": "/home/huangxiaolin/upf-agent/data/p4/fixtures/synthetic_merged_topology.xlsx",
+    "source_id": "topology-830453dc57a53e4b",
+    "accepted_edges": 2,
+    "quarantined_rows": 1,
+    "edges_sha256": "b07a765fcd6d6787fc7565bce0129c2ca33819e28c05154910986999618c891f",
+    "quarantine_sha256": "a54893b3c1e11d2f2396d4b61dc2614cf3e211a62c5b7639e5749bc578010a6e"
+  },
+  "synthetic_lookup": {
+    "status": "partial",
+    "data": {
+      "edges": [
+        {
+          "edge_id": "topology-ddb3abc66bd33402:csv:2",
+          "device_id": "SYNTHETIC-UPF",
+          "device_port": "p1",
+          "peer_device_id": "SYNTHETIC-SW",
+          "peer_port": "x1",
+          "interface_type": "N3",
+          "valid_from": "2025-01-01T00:00:00Z",
+          "valid_to": "2026-01-01T00:00:00Z",
+          "source_id": "topology-ddb3abc66bd33402",
+          "source_sheet": null,
+          "source_row": 2,
+          "synthetic": true,
+          "source_sha256": "ddb3abc66bd33402d83b24df1dbfd5c4698f172f551639a35205ebb003b14e24",
+          "vlan": null,
+          "purpose": null,
+          "quality_flags": []
+        }
+      ],
+      "total_matches": 1,
+      "truncated": false,
+      "source_sha256": "ddb3abc66bd33402d83b24df1dbfd5c4698f172f551639a35205ebb003b14e24",
+      "generation": "5dfe0ce45cd3a3faad89"
+    },
+    "evidence_ids": [
+      "topology-ddb3abc66bd33402:csv:2"
+    ],
+    "warnings": [
+      "Synthetic fixture only; does not describe the real network.",
+      "No observation time selected; applicability at incident time is unverified.",
+      "Some imported rows are quarantined; topology may be incomplete."
+    ],
+    "elapsed_ms": 0
+  },
+  "real_log_correlation": {
+    "status": "partial",
+    "data": {
+      "alarm_pairs": [],
+      "unpaired": [
+        {
+          "event_id": "log-a698d029342259b7-1683",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-4545",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6728",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-17561",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-17664",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-19494",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-19597",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-19720",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-19823",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-20744",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-20847",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-20970",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-21073",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-22260",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-22363",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-23673",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-23776",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-24032",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-24135",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-24392",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-24495",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-25119",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-25222",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-25881",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-25984",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-26509",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-26612",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-27673",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-27776",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-28301",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-28404",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-28661",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-28764",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-28887",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-28990",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-29515",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-29618",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-34088",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-34191",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-38646",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-38749",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-39661",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-39764",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-43817",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-43920",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-55848",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-55951",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-58173",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-58276",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-62746",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-62849",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-64684",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-64787",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-65044",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-65147",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-65925",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-66028",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-69441",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-69544",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-71111",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-71214",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-72007",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-72110",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-72913",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-73016",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-73273",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-73376",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-74169",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-74272",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-74529",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-74632",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-75827",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-75930",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-76455",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-76558",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-76815",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-76918",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-77041",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-77144",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-77937",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-78040",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-78297",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-78400",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-79461",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-79564",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-79955",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-80058",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-80181",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-80284",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-81623",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-81726",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-82117",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-82220",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-82343",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-82446",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-83641",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-83744",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-84269",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-84372",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-84629",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-84732",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-84855",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-84958",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-95189",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-95292",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-96993",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-97096",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-99839",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-99942",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-102447",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-102550",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-103730",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-103833",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-104090",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-104193",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-104316",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-104419",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-105212",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-105315",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-105572",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-105675",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-107525",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-107628",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-108153",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-108256",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-108513",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-108616",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-108739",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-108842",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-110558",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-110661",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-111052",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-111155",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-111933",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-112036",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-117027",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-117130",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-118831",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-118934",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-119712",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-119815",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-123369",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-161759",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-161862",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-161985",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162088",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162211",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162314",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162437",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162540",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162663",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162766",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162889",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-162992",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-163115",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-163218",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-169535",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-169638",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-169761",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-169864",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-169987",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-170090",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-170213",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-170316",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-173506",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-173609",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-173732",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-173835",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-173958",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-174061",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-174184",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-174287",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-174410",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-174513",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-174636",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-174739",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-177676",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-177779",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-177902",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178005",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178128",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178231",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178354",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178457",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178580",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178683",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178806",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-178909",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-179032",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-179135",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-181948",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182051",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182174",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182277",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182400",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182503",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182626",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182729",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182852",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-182955",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-183078",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-183181",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-185314",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-185417",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-185540",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-185643",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-185766",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-185869",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-185992",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-186095",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-186218",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-186321",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-189764",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-189867",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-189990",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-190093",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-190216",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-190319",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-190442",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-190545",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-190668",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-190771",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-214519",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-214622",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-214745",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-214848",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-214971",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-215074",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-215197",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-215300",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-215423",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-215526",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-218820",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-218923",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-219046",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-219149",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-219272",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-219375",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-223312",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-228664",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-478508",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-5967589",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-5968078",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-5968204",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-5968307",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6013182",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6019956",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6191116",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6197938",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6218178",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6326502",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6326605",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6326728",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6326831",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6327317",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6327806",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6328295",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6328784",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6329273",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6329762",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6332222",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6332347",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6332640",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6332765",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6333562",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6333687",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6340340",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6340829",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6341318",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6341944",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6345097",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6345586",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6346384",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6346509",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6347138",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6347431",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6347724",
+          "reason": "missing_real_device_or_peer_identity"
+        },
+        {
+          "event_id": "log-a698d029342259b7-6347849",
+          "reason": "missing_real_device_or_peer_identity"
+        }
+      ],
+      "identity_gap_messages": 278,
+      "timezone_gap_messages": 0,
+      "topology_checks": [],
+      "input_messages": 278,
+      "truncated": false,
+      "horizon_seconds": 86400,
+      "count_unit": "messages_not_independent_faults",
+      "scope_generation": "a6f18ac81a18aa2125fa"
+    },
+    "evidence_ids": [
+      "log-a698d029342259b7-1683",
+      "log-a698d029342259b7-4545",
+      "log-a698d029342259b7-6728",
+      "log-a698d029342259b7-17561",
+      "log-a698d029342259b7-17664",
+      "log-a698d029342259b7-19494",
+      "log-a698d029342259b7-19597",
+      "log-a698d029342259b7-19720",
+      "log-a698d029342259b7-19823",
+      "log-a698d029342259b7-20744",
+      "log-a698d029342259b7-20847",
+      "log-a698d029342259b7-20970",
+      "log-a698d029342259b7-21073",
+      "log-a698d029342259b7-22260",
+      "log-a698d029342259b7-22363",
+      "log-a698d029342259b7-23673",
+      "log-a698d029342259b7-23776",
+      "log-a698d029342259b7-24032",
+      "log-a698d029342259b7-24135",
+      "log-a698d029342259b7-24392",
+      "log-a698d029342259b7-24495",
+      "log-a698d029342259b7-25119",
+      "log-a698d029342259b7-25222",
+      "log-a698d029342259b7-25881",
+      "log-a698d029342259b7-25984",
+      "log-a698d029342259b7-26509",
+      "log-a698d029342259b7-26612",
+      "log-a698d029342259b7-27673",
+      "log-a698d029342259b7-27776",
+      "log-a698d029342259b7-28301",
+      "log-a698d029342259b7-28404",
+      "log-a698d029342259b7-28661",
+      "log-a698d029342259b7-28764",
+      "log-a698d029342259b7-28887",
+      "log-a698d029342259b7-28990",
+      "log-a698d029342259b7-29515",
+      "log-a698d029342259b7-29618",
+      "log-a698d029342259b7-34088",
+      "log-a698d029342259b7-34191",
+      "log-a698d029342259b7-38646",
+      "log-a698d029342259b7-38749",
+      "log-a698d029342259b7-39661",
+      "log-a698d029342259b7-39764",
+      "log-a698d029342259b7-43817",
+      "log-a698d029342259b7-43920",
+      "log-a698d029342259b7-55848",
+      "log-a698d029342259b7-55951",
+      "log-a698d029342259b7-58173",
+      "log-a698d029342259b7-58276",
+      "log-a698d029342259b7-62746",
+      "log-a698d029342259b7-62849",
+      "log-a698d029342259b7-64684",
+      "log-a698d029342259b7-64787",
+      "log-a698d029342259b7-65044",
+      "log-a698d029342259b7-65147",
+      "log-a698d029342259b7-65925",
+      "log-a698d029342259b7-66028",
+      "log-a698d029342259b7-69441",
+      "log-a698d029342259b7-69544",
+      "log-a698d029342259b7-71111",
+      "log-a698d029342259b7-71214",
+      "log-a698d029342259b7-72007",
+      "log-a698d029342259b7-72110",
+      "log-a698d029342259b7-72913",
+      "log-a698d029342259b7-73016",
+      "log-a698d029342259b7-73273",
+      "log-a698d029342259b7-73376",
+      "log-a698d029342259b7-74169",
+      "log-a698d029342259b7-74272",
+      "log-a698d029342259b7-74529",
+      "log-a698d029342259b7-74632",
+      "log-a698d029342259b7-75827",
+      "log-a698d029342259b7-75930",
+      "log-a698d029342259b7-76455",
+      "log-a698d029342259b7-76558",
+      "log-a698d029342259b7-76815",
+      "log-a698d029342259b7-76918",
+      "log-a698d029342259b7-77041",
+      "log-a698d029342259b7-77144",
+      "log-a698d029342259b7-77937",
+      "log-a698d029342259b7-78040",
+      "log-a698d029342259b7-78297",
+      "log-a698d029342259b7-78400",
+      "log-a698d029342259b7-79461",
+      "log-a698d029342259b7-79564",
+      "log-a698d029342259b7-79955",
+      "log-a698d029342259b7-80058",
+      "log-a698d029342259b7-80181",
+      "log-a698d029342259b7-80284",
+      "log-a698d029342259b7-81623",
+      "log-a698d029342259b7-81726",
+      "log-a698d029342259b7-82117",
+      "log-a698d029342259b7-82220",
+      "log-a698d029342259b7-82343",
+      "log-a698d029342259b7-82446",
+      "log-a698d029342259b7-83641",
+      "log-a698d029342259b7-83744",
+      "log-a698d029342259b7-84269",
+      "log-a698d029342259b7-84372",
+      "log-a698d029342259b7-84629",
+      "log-a698d029342259b7-84732",
+      "log-a698d029342259b7-84855",
+      "log-a698d029342259b7-84958",
+      "log-a698d029342259b7-95189",
+      "log-a698d029342259b7-95292",
+      "log-a698d029342259b7-96993",
+      "log-a698d029342259b7-97096",
+      "log-a698d029342259b7-99839",
+      "log-a698d029342259b7-99942",
+      "log-a698d029342259b7-102447",
+      "log-a698d029342259b7-102550",
+      "log-a698d029342259b7-103730",
+      "log-a698d029342259b7-103833",
+      "log-a698d029342259b7-104090",
+      "log-a698d029342259b7-104193",
+      "log-a698d029342259b7-104316",
+      "log-a698d029342259b7-104419",
+      "log-a698d029342259b7-105212",
+      "log-a698d029342259b7-105315",
+      "log-a698d029342259b7-105572",
+      "log-a698d029342259b7-105675",
+      "log-a698d029342259b7-107525",
+      "log-a698d029342259b7-107628",
+      "log-a698d029342259b7-108153",
+      "log-a698d029342259b7-108256",
+      "log-a698d029342259b7-108513",
+      "log-a698d029342259b7-108616",
+      "log-a698d029342259b7-108739",
+      "log-a698d029342259b7-108842",
+      "log-a698d029342259b7-110558",
+      "log-a698d029342259b7-110661",
+      "log-a698d029342259b7-111052",
+      "log-a698d029342259b7-111155",
+      "log-a698d029342259b7-111933",
+      "log-a698d029342259b7-112036",
+      "log-a698d029342259b7-117027",
+      "log-a698d029342259b7-117130",
+      "log-a698d029342259b7-118831",
+      "log-a698d029342259b7-118934",
+      "log-a698d029342259b7-119712",
+      "log-a698d029342259b7-119815",
+      "log-a698d029342259b7-123369",
+      "log-a698d029342259b7-161759",
+      "log-a698d029342259b7-161862",
+      "log-a698d029342259b7-161985",
+      "log-a698d029342259b7-162088",
+      "log-a698d029342259b7-162211",
+      "log-a698d029342259b7-162314",
+      "log-a698d029342259b7-162437",
+      "log-a698d029342259b7-162540",
+      "log-a698d029342259b7-162663",
+      "log-a698d029342259b7-162766",
+      "log-a698d029342259b7-162889",
+      "log-a698d029342259b7-162992",
+      "log-a698d029342259b7-163115",
+      "log-a698d029342259b7-163218",
+      "log-a698d029342259b7-169535",
+      "log-a698d029342259b7-169638",
+      "log-a698d029342259b7-169761",
+      "log-a698d029342259b7-169864",
+      "log-a698d029342259b7-169987",
+      "log-a698d029342259b7-170090",
+      "log-a698d029342259b7-170213",
+      "log-a698d029342259b7-170316",
+      "log-a698d029342259b7-173506",
+      "log-a698d029342259b7-173609",
+      "log-a698d029342259b7-173732",
+      "log-a698d029342259b7-173835",
+      "log-a698d029342259b7-173958",
+      "log-a698d029342259b7-174061",
+      "log-a698d029342259b7-174184",
+      "log-a698d029342259b7-174287",
+      "log-a698d029342259b7-174410",
+      "log-a698d029342259b7-174513",
+      "log-a698d029342259b7-174636",
+      "log-a698d029342259b7-174739",
+      "log-a698d029342259b7-177676",
+      "log-a698d029342259b7-177779",
+      "log-a698d029342259b7-177902",
+      "log-a698d029342259b7-178005",
+      "log-a698d029342259b7-178128",
+      "log-a698d029342259b7-178231",
+      "log-a698d029342259b7-178354",
+      "log-a698d029342259b7-178457",
+      "log-a698d029342259b7-178580",
+      "log-a698d029342259b7-178683",
+      "log-a698d029342259b7-178806",
+      "log-a698d029342259b7-178909",
+      "log-a698d029342259b7-179032",
+      "log-a698d029342259b7-179135",
+      "log-a698d029342259b7-181948",
+      "log-a698d029342259b7-182051",
+      "log-a698d029342259b7-182174",
+      "log-a698d029342259b7-182277",
+      "log-a698d029342259b7-182400",
+      "log-a698d029342259b7-182503",
+      "log-a698d029342259b7-182626",
+      "log-a698d029342259b7-182729",
+      "log-a698d029342259b7-182852",
+      "log-a698d029342259b7-182955",
+      "log-a698d029342259b7-183078",
+      "log-a698d029342259b7-183181",
+      "log-a698d029342259b7-185314",
+      "log-a698d029342259b7-185417",
+      "log-a698d029342259b7-185540",
+      "log-a698d029342259b7-185643",
+      "log-a698d029342259b7-185766",
+      "log-a698d029342259b7-185869",
+      "log-a698d029342259b7-185992",
+      "log-a698d029342259b7-186095",
+      "log-a698d029342259b7-186218",
+      "log-a698d029342259b7-186321",
+      "log-a698d029342259b7-189764",
+      "log-a698d029342259b7-189867",
+      "log-a698d029342259b7-189990",
+      "log-a698d029342259b7-190093",
+      "log-a698d029342259b7-190216",
+      "log-a698d029342259b7-190319",
+      "log-a698d029342259b7-190442",
+      "log-a698d029342259b7-190545",
+      "log-a698d029342259b7-190668",
+      "log-a698d029342259b7-190771",
+      "log-a698d029342259b7-214519",
+      "log-a698d029342259b7-214622",
+      "log-a698d029342259b7-214745",
+      "log-a698d029342259b7-214848",
+      "log-a698d029342259b7-214971",
+      "log-a698d029342259b7-215074",
+      "log-a698d029342259b7-215197",
+      "log-a698d029342259b7-215300",
+      "log-a698d029342259b7-215423",
+      "log-a698d029342259b7-215526",
+      "log-a698d029342259b7-218820",
+      "log-a698d029342259b7-218923",
+      "log-a698d029342259b7-219046",
+      "log-a698d029342259b7-219149",
+      "log-a698d029342259b7-219272",
+      "log-a698d029342259b7-219375",
+      "log-a698d029342259b7-223312",
+      "log-a698d029342259b7-228664",
+      "log-a698d029342259b7-478508",
+      "log-a698d029342259b7-5967589",
+      "log-a698d029342259b7-5968078",
+      "log-a698d029342259b7-5968204",
+      "log-a698d029342259b7-5968307",
+      "log-a698d029342259b7-6013182",
+      "log-a698d029342259b7-6019956",
+      "log-a698d029342259b7-6191116",
+      "log-a698d029342259b7-6197938",
+      "log-a698d029342259b7-6218178",
+      "log-a698d029342259b7-6326502",
+      "log-a698d029342259b7-6326605",
+      "log-a698d029342259b7-6326728",
+      "log-a698d029342259b7-6326831",
+      "log-a698d029342259b7-6327317",
+      "log-a698d029342259b7-6327806",
+      "log-a698d029342259b7-6328295",
+      "log-a698d029342259b7-6328784",
+      "log-a698d029342259b7-6329273",
+      "log-a698d029342259b7-6329762",
+      "log-a698d029342259b7-6332222",
+      "log-a698d029342259b7-6332347",
+      "log-a698d029342259b7-6332640",
+      "log-a698d029342259b7-6332765",
+      "log-a698d029342259b7-6333562",
+      "log-a698d029342259b7-6333687",
+      "log-a698d029342259b7-6340340",
+      "log-a698d029342259b7-6340829",
+      "log-a698d029342259b7-6341318",
+      "log-a698d029342259b7-6341944",
+      "log-a698d029342259b7-6345097",
+      "log-a698d029342259b7-6345586",
+      "log-a698d029342259b7-6346384",
+      "log-a698d029342259b7-6346509",
+      "log-a698d029342259b7-6347138",
+      "log-a698d029342259b7-6347431",
+      "log-a698d029342259b7-6347724",
+      "log-a698d029342259b7-6347849"
+    ],
+    "warnings": [
+      "Associations are entity/time observations, not root causes or independent fault counts.",
+      "No topology source: cannot identify real switch ports or a causal propagation path.",
+      "Masked/missing entity identifiers prevent alarm pairing."
+    ],
+    "elapsed_ms": 34
+  },
+  "human_timezone_confirmed": false,
+  "real_topology_validated": false,
+  "business_accuracy_validated": false
+}

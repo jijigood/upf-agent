@@ -1,0 +1,74 @@
+{
+  "row": {
+    "id": "command-003",
+    "model": "target",
+    "evidence_sha256": "eb5615b3ebb2a3f24c3e2a52bd455776b12bd0265464a3c57c50efc03429851a",
+    "elapsed_ms": 45772.919556126,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 10573,
+      "completion_tokens_observed": 624,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": false,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册‘检查upf 业务网络地址配置 / 检查所有接口地址’如何使用 show？只摘录原文并说明示例适用范围。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "not_run",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S1Q3",
+        "S1Q4",
+        "S1Q5",
+        "S1Q6",
+        "S1Q7",
+        "S1Q8",
+        "S4Q1",
+        "S4Q2",
+        "S11Q1",
+        "S11Q2"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [
+      "formatted command differs from cited original",
+      "formatted command differs from cited original"
+    ],
+    "generation_attempts": 2,
+    "status": "failed",
+    "missing_information": [
+      "生成或引用校验失败，未发布未经验证的回答。"
+    ],
+    "error": "formatted command differs from cited original"
+  }
+}

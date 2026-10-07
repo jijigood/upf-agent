@@ -1,0 +1,12 @@
+{
+  "generation": "c05fe621e37ebdb1c663",
+  "original_ocr_sha256": "f08aba39596180dc832a713af25ac6df5c97ba6638b5d07661b91622c406e619",
+  "images_revalidated": 30,
+  "review_findings": 140,
+  "corrected_findings": 134,
+  "report_false_positives": 1,
+  "quarantined_lines": 7,
+  "original_preserved": true,
+  "human_signoff": false,
+  "corrected_artifact_sha256": "d9a3ae878e4f520c89f6779b439bb84c692c22df671ad177ded074b18727830e"
+}

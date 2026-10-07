@@ -1,0 +1,572 @@
+{
+  "query": "请引用‘UPF系统能力 / 功能配置’中的命令 set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>，保留占位符和参数。",
+  "product": "UPF",
+  "version": null,
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 1,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 36,
+  "reranked_candidates": 32,
+  "context_tokens": 744,
+  "rankings": {
+    "exact": [
+      "chunk-ed162186f81b734c927091f0"
+    ],
+    "bm25": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-c8deaa189d6c9bfc9f3a227e",
+      "chunk-0de81a0ec40a03b6c44cebc0",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-e3a8a048c9df63535a5efedd",
+      "chunk-7982385ed7db803a5236d264",
+      "chunk-933eaabcb30fd402335d30bb",
+      "chunk-612da00cb44680f1e077a6a5",
+      "chunk-9c1e42a1583c5971a02326fa",
+      "chunk-4e25ba573761d9255423ae67",
+      "chunk-8af46eaef600a97d5dc3c07c",
+      "chunk-455575eca6404bd6acf1d2cc",
+      "chunk-e92da9776842d89ff6e5177e",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-cd02aad9886b7f914423edb0"
+    ],
+    "dense": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-05b46622548cea41921ec8c4",
+      "chunk-f8dc340c7dfc306c405fe10e",
+      "chunk-5b4a8a7067c844ef4753d14d",
+      "chunk-5295b7f20340ba5ae824fb01",
+      "chunk-782e13db22ca562774fdf840",
+      "chunk-fad1a36f8df1f846f5781590",
+      "chunk-4810f364c95856d4a4b9902f",
+      "chunk-bb0ffd8669a264fc11208deb",
+      "chunk-42035679118d3add2cffd9bc",
+      "chunk-42359eedabf592cf36ef38d1",
+      "chunk-533e87fb05b4b2d2b7b93b2e",
+      "chunk-c590bc00f87ad7cae47ce7d4",
+      "chunk-bb3e665f6b54bf7ce9595476",
+      "chunk-0ca8a1cfc4b1cd97b3f413b2",
+      "chunk-699cc3669eaf0cbf2b0b107e",
+      "chunk-9603e775b04fed52d142444e"
+    ],
+    "rrf": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-05b46622548cea41921ec8c4",
+      "chunk-c8deaa189d6c9bfc9f3a227e",
+      "chunk-0de81a0ec40a03b6c44cebc0",
+      "chunk-f8dc340c7dfc306c405fe10e",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-5b4a8a7067c844ef4753d14d",
+      "chunk-5295b7f20340ba5ae824fb01",
+      "chunk-e3a8a048c9df63535a5efedd",
+      "chunk-782e13db22ca562774fdf840",
+      "chunk-7982385ed7db803a5236d264",
+      "chunk-933eaabcb30fd402335d30bb",
+      "chunk-fad1a36f8df1f846f5781590",
+      "chunk-4810f364c95856d4a4b9902f",
+      "chunk-612da00cb44680f1e077a6a5",
+      "chunk-9c1e42a1583c5971a02326fa",
+      "chunk-bb0ffd8669a264fc11208deb",
+      "chunk-42035679118d3add2cffd9bc",
+      "chunk-4e25ba573761d9255423ae67",
+      "chunk-42359eedabf592cf36ef38d1",
+      "chunk-8af46eaef600a97d5dc3c07c",
+      "chunk-455575eca6404bd6acf1d2cc",
+      "chunk-533e87fb05b4b2d2b7b93b2e",
+      "chunk-c590bc00f87ad7cae47ce7d4",
+      "chunk-e92da9776842d89ff6e5177e",
+      "chunk-bb3e665f6b54bf7ce9595476",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-0ca8a1cfc4b1cd97b3f413b2",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-699cc3669eaf0cbf2b0b107e",
+      "chunk-9603e775b04fed52d142444e",
+      "chunk-cd02aad9886b7f914423edb0"
+    ],
+    "reranked": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-c590bc00f87ad7cae47ce7d4",
+      "chunk-5295b7f20340ba5ae824fb01",
+      "chunk-5b4a8a7067c844ef4753d14d",
+      "chunk-05b46622548cea41921ec8c4",
+      "chunk-8af46eaef600a97d5dc3c07c",
+      "chunk-782e13db22ca562774fdf840",
+      "chunk-4e25ba573761d9255423ae67",
+      "chunk-533e87fb05b4b2d2b7b93b2e",
+      "chunk-42035679118d3add2cffd9bc",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-f8dc340c7dfc306c405fe10e",
+      "chunk-bb0ffd8669a264fc11208deb",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-c8deaa189d6c9bfc9f3a227e",
+      "chunk-e92da9776842d89ff6e5177e",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-fad1a36f8df1f846f5781590",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-4810f364c95856d4a4b9902f",
+      "chunk-0ca8a1cfc4b1cd97b3f413b2",
+      "chunk-42359eedabf592cf36ef38d1",
+      "chunk-0de81a0ec40a03b6c44cebc0",
+      "chunk-933eaabcb30fd402335d30bb",
+      "chunk-7982385ed7db803a5236d264",
+      "chunk-bb3e665f6b54bf7ce9595476",
+      "chunk-9c1e42a1583c5971a02326fa",
+      "chunk-455575eca6404bd6acf1d2cc",
+      "chunk-612da00cb44680f1e077a6a5",
+      "chunk-e3a8a048c9df63535a5efedd"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-ed162186f81b734c927091f0",
+      "rrf_score": 0.04918032786885246,
+      "routes": {
+        "exact": {
+          "rank": 1,
+          "raw_score": 40.0
+        },
+        "bm25": {
+          "rank": 1,
+          "raw_score": 65.82244873046875
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.8752053728924446
+        }
+      },
+      "rerank_raw_logit_difference": 8.0,
+      "rerank_p_yes": 0.9996646498695336,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "command",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\nset-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n相关说明：UPFD> set-upf-prt-sw n4-prt-sw 4",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000752"
+      ],
+      "locators": [
+        "word/document.xml/body/p[177]"
+      ],
+      "command_id": "cmd-011a8faed078e465",
+      "command_family": "CLI",
+      "interface_tags": [
+        "n4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-5508ad2ffaa25a9c28d1634f",
+      "rrf_score": 0.03225806451612903,
+      "routes": {
+        "bm25": {
+          "rank": 2,
+          "raw_score": 48.52128219604492
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.8224905111593629
+        }
+      },
+      "rerank_raw_logit_difference": 6.1875,
+      "rerank_p_yes": 0.9979492564600826,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "command",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\nUPFD> set-upf-prt-sw n4-prt-sw 4",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000758"
+      ],
+      "locators": [
+        "word/document.xml/body/p[183]"
+      ],
+      "command_id": "cmd-cdadb39e7c5528b7",
+      "command_family": "CLI",
+      "interface_tags": [
+        "n4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-4810f364c95856d4a4b9902f",
+          "text": "CLI配置命令 / UPF系统能力 / 功能配置\nUPFD> show config",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000759"
+          ],
+          "locators": [
+            "word/document.xml/body/p[184]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-21b601c9353349f7eb3ab15c",
+      "rrf_score": 0.031746031746031744,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 43.53689193725586
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.8137031789506622
+        }
+      },
+      "rerank_raw_logit_difference": 5.75,
+      "rerank_p_yes": 0.9968273171575148,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "prose",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\n说明：\nn4-prt-sw: upf信令面日志打印级别设置。级别：fatal(1), error(2), alert(3), debug(4)；\ngtpu-prt-sw: upf数据面日志打印级别设置。级别：off(0), on(1)。\n举例：",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000753",
+        "manual-341440f7dd103f51:b000754",
+        "manual-341440f7dd103f51:b000755",
+        "manual-341440f7dd103f51:b000757"
+      ],
+      "locators": [
+        "word/document.xml/body/p[178]",
+        "word/document.xml/body/p[179]",
+        "word/document.xml/body/p[180]",
+        "word/document.xml/body/p[182]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "n4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-c590bc00f87ad7cae47ce7d4",
+      "rrf_score": 0.013157894736842105,
+      "routes": {
+        "dense": {
+          "rank": 16,
+          "raw_score": 0.6102800040655298
+        }
+      },
+      "rerank_raw_logit_difference": 5.125,
+      "rerank_p_yes": 0.9940889311437562,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询网元配置信息",
+        "功能配置"
+      ],
+      "parent_id": "section-6e60743092cbb0b5a760",
+      "kind": "prose",
+      "text": "业务信息监控 / 查询网元配置信息 / 功能配置\n功能配置\n操作步骤\n登录UPF物理机，打开终端；\n终端键入命令：telnet 0 37100；\n进入upfd调试台，如下图所示\n在upfd调试台中键入如下命令\n命令格式",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000811",
+        "manual-341440f7dd103f51:b000812",
+        "manual-341440f7dd103f51:b000813",
+        "manual-341440f7dd103f51:b000814",
+        "manual-341440f7dd103f51:b000815",
+        "manual-341440f7dd103f51:b000818",
+        "manual-341440f7dd103f51:b000819"
+      ],
+      "locators": [
+        "word/document.xml/body/p[217]",
+        "word/document.xml/body/p[218]",
+        "word/document.xml/body/p[219]",
+        "word/document.xml/body/p[220]",
+        "word/document.xml/body/p[221]",
+        "word/document.xml/body/p[223]",
+        "word/document.xml/body/p[224]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-af31d71436dfc30b6e215672",
+          "text": "业务信息监控 / 查询网元配置信息 / 功能配置\nshow config\n相关说明：UPFD> show config",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000821"
+          ],
+          "locators": [
+            "word/document.xml/body/p[226]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-5295b7f20340ba5ae824fb01",
+      "rrf_score": 0.014705882352941176,
+      "routes": {
+        "dense": {
+          "rank": 8,
+          "raw_score": 0.6658985363529817
+        }
+      },
+      "rerank_raw_logit_difference": 4.5,
+      "rerank_p_yes": 0.9890130573694068,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "网管配置管理",
+        "UPF系统能力"
+      ],
+      "parent_id": "section-fb322618941b1f6a12af",
+      "kind": "prose",
+      "text": "产品配置 / 网管配置管理 / UPF系统能力\nUPF系统能力",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000608"
+      ],
+      "locators": [
+        "word/document.xml/body/p[125]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-5b4a8a7067c844ef4753d14d",
+      "rrf_score": 0.014925373134328358,
+      "routes": {
+        "dense": {
+          "rank": 7,
+          "raw_score": 0.6911949434934241
+        }
+      },
+      "rerank_raw_logit_difference": 4.3125,
+      "rerank_p_yes": 0.9867771782476948,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力"
+      ],
+      "parent_id": "section-8ffb41c03d80f99aa8ea",
+      "kind": "prose",
+      "text": "产品配置 / CLI配置命令 / UPF系统能力\nUPF系统能力",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000740"
+      ],
+      "locators": [
+        "word/document.xml/body/p[165]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-05b46622548cea41921ec8c4",
+      "rrf_score": 0.015384615384615385,
+      "routes": {
+        "dense": {
+          "rank": 5,
+          "raw_score": 0.7093266583698163
+        }
+      },
+      "rerank_raw_logit_difference": 4.25,
+      "rerank_p_yes": 0.9859363729567544,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "prose",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\n功能配置\n操作步骤\n登录UPF物理机，打开终端；\n终端键入命令：telnet 0 37100；\n进入upfd调试台，输入命令；\nUPF上 show config 可以确认配置成功。\n命令格式\nupf日志打印级别设置",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000743",
+        "manual-341440f7dd103f51:b000744",
+        "manual-341440f7dd103f51:b000745",
+        "manual-341440f7dd103f51:b000746",
+        "manual-341440f7dd103f51:b000747",
+        "manual-341440f7dd103f51:b000748",
+        "manual-341440f7dd103f51:b000749",
+        "manual-341440f7dd103f51:b000751"
+      ],
+      "locators": [
+        "word/document.xml/body/p[168]",
+        "word/document.xml/body/p[169]",
+        "word/document.xml/body/p[170]",
+        "word/document.xml/body/p[171]",
+        "word/document.xml/body/p[172]",
+        "word/document.xml/body/p[173]",
+        "word/document.xml/body/p[174]",
+        "word/document.xml/body/p[176]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+      "rrf_score": 0.013513513513513514,
+      "routes": {
+        "bm25": {
+          "rank": 14,
+          "raw_score": 9.974113464355469
+        }
+      },
+      "rerank_raw_logit_difference": 4.25,
+      "rerank_p_yes": 0.9859363729567544,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "配置UPF各个接口地址"
+      ],
+      "parent_id": "section-e84ad9708a71d319b94f",
+      "kind": "prose",
+      "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n说明：\n其中ns1是UPF对应的namespace；\nupf-1.com是通过kubectl get ingress -A命令查询的结果。截图如下：\n具体的ADD/DEL/QRY命令则可以参考《中国联通5G专网UPF5.0产品使用手册》、\ncurl 命令配置完成后，需要重启UPFD 和UPFM 2个POD，具体命令为：\n#kubectl delete pod upfm-1-b8fc7f485-hw47c -n ns1\n#kubectl delete pod upfd-1-594847d77d-jg6ch -n ns1\n或者执行下面命令重启UPFD 和UPFM 2个POD。\n# upfmgr restart all\n重启UPFD POD，查看接口IP配置是否生效。",
+      "block_ids": [
+        "manual-1edf23113651430f:b001947",
+        "manual-1edf23113651430f:b001948",
+        "manual-1edf23113651430f:b001949",
+        "manual-1edf23113651430f:b001952",
+        "manual-1edf23113651430f:b001953",
+        "manual-1edf23113651430f:b001954",
+        "manual-1edf23113651430f:b001955",
+        "manual-1edf23113651430f:b001956",
+        "manual-1edf23113651430f:b001957",
+        "manual-1edf23113651430f:b001958"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1044]",
+        "word/document.xml/body/p[1045]",
+        "word/document.xml/body/p[1046]",
+        "word/document.xml/body/p[1048]",
+        "word/document.xml/body/p[1049]",
+        "word/document.xml/body/p[1050]",
+        "word/document.xml/body/p[1051]",
+        "word/document.xml/body/p[1052]",
+        "word/document.xml/body/p[1053]",
+        "word/document.xml/body/p[1054]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-37015f8c510912ff3ba8d98a",
+          "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b001946"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1043]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

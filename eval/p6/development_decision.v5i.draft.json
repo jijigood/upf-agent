@@ -1,0 +1,18 @@
+{
+  "configuration_accepted": false,
+  "model_profile": "baseline",
+  "development_sha256": "3411a372cbb7d63d817fffd407608425df08033c76eb564a44e418b5f3e3c7c8",
+  "suite_sha256": "da075d6654bd661872aef8f7dda2d5038e39c4450dc8c911b3612c743ba24a6b",
+  "adjudication_path": null,
+  "reviewer": "张三",
+  "date": "2026-10-06",
+  "notes": "待v5i三题变化答案人工复核和正式开发集判定后接受；拟继续采用既已获用户授权的2507 BF16/GPU0/16K/并发1与固定工具/手册直答优先。旧v5f保留集失败记录不覆盖，新留出尚未消费。",
+  "evidence": {
+    "development_summary": "runs/p6-v4-v5i/reviewed-dev/summary.json",
+    "development_delta": "runs/p6-v4-v5i/reviewed-dev/development_delta.json",
+    "truth_import_receipt": "eval/p6/business_v5_replacement/reviewed_suite.receipt.json",
+    "pre_freeze_audit": "runs/p6-v4-v5i/pre_freeze_audit.json",
+    "prior_accepted_configuration": "eval/p6/development_decision.v5f.accepted.json",
+    "agent_comparison": "runs/p6-v4-v5d/复杂任务取证对照.md"
+  }
+}

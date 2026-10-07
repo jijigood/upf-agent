@@ -1,0 +1,16 @@
+version: p3-retrieval-v1
+chunker_version: structural-v2-native-command
+tokenizer_path: /home/huangxiaolin/models/Qwen3-Embedding-4B/tokenizer.json
+dictionary_path: /home/huangxiaolin/upf-agent/config/telecom_dictionary.txt
+target_tokens: 600
+max_tokens: 800
+collection: qwen3_embedding_4b_2560
+embedding_batch_size: 8
+dense_top_k: 20
+bm25_top_k: 20
+exact_top_k: 20
+rrf_k: 60
+rerank_candidates: 32
+final_evidence: 8
+context_token_budget: 5000
+neighbor_token_budget: 240

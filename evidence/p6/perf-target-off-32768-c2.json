@@ -1,0 +1,609 @@
+{
+  "profile": "target",
+  "thinking_policy": "off",
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "server_context_capacity": 32768,
+  "client_concurrency": 2,
+  "cases_per_budget": 20,
+  "rows": [
+    {
+      "context_characters": 1227,
+      "requested_context_budget_characters": 1200,
+      "warmup": {
+        "total_ms": 3123.2635299675167,
+        "first_visible_ms": 300.2003231085837,
+        "first_model_event_ms": 300.19918689504266,
+        "usage": {
+          "prompt_tokens": 830,
+          "total_tokens": 875,
+          "completion_tokens": 45
+        },
+        "finish_reason": "stop",
+        "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+        "failure": null
+      },
+      "runs": [
+        {
+          "total_ms": 3516.3439670577645,
+          "first_visible_ms": 393.3958103880286,
+          "first_model_event_ms": 393.39387509971857,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3579.0087510831654,
+          "first_visible_ms": 571.5251038782299,
+          "first_model_event_ms": 571.5236747637391,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3518.346270080656,
+          "first_visible_ms": 418.96587889641523,
+          "first_model_event_ms": 418.96479902788997,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3518.3315998874605,
+          "first_visible_ms": 479.4622790068388,
+          "first_model_event_ms": 479.459956753999,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3503.8700220175087,
+          "first_visible_ms": 419.2374860867858,
+          "first_model_event_ms": 419.2346860654652,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3508.137308061123,
+          "first_visible_ms": 479.0599960833788,
+          "first_model_event_ms": 479.0576519444585,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3522.622934076935,
+          "first_visible_ms": 415.20592104643583,
+          "first_model_event_ms": 415.2030679397285,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3527.6139434427023,
+          "first_visible_ms": 480.4442171007395,
+          "first_model_event_ms": 480.4418492130935,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3496.84283323586,
+          "first_visible_ms": 419.35984836891294,
+          "first_model_event_ms": 419.35871401801705,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3500.5865348502994,
+          "first_visible_ms": 482.4130148626864,
+          "first_model_event_ms": 482.41024697199464,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3525.6971530616283,
+          "first_visible_ms": 422.30739910155535,
+          "first_model_event_ms": 422.3047271370888,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3525.0914716161788,
+          "first_visible_ms": 483.3035757765174,
+          "first_model_event_ms": 483.300952706486,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3536.6444773972034,
+          "first_visible_ms": 420.73614336550236,
+          "first_model_event_ms": 420.73377408087254,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3542.9928828962147,
+          "first_visible_ms": 488.1892018020153,
+          "first_model_event_ms": 488.18808468058705,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3602.0142659544945,
+          "first_visible_ms": 422.7660386823118,
+          "first_model_event_ms": 422.76438791304827,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3628.86530905962,
+          "first_visible_ms": 487.0298830792308,
+          "first_model_event_ms": 487.0287971571088,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3862.486754078418,
+          "first_visible_ms": 452.8156747110188,
+          "first_model_event_ms": 452.8124309144914,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3858.5310466587543,
+          "first_visible_ms": 493.88858675956726,
+          "first_model_event_ms": 493.88771457597613,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3559.3320638872683,
+          "first_visible_ms": 420.2731391415,
+          "first_model_event_ms": 420.2702511101961,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        },
+        {
+          "total_ms": 3556.2875526957214,
+          "first_visible_ms": 479.516311082989,
+          "first_model_event_ms": 479.51367078348994,
+          "usage": {
+            "prompt_tokens": 830,
+            "total_tokens": 875,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标与根因分析需严格区分，避免数据误读。",
+          "failure": null
+        }
+      ],
+      "total_ms": {
+        "n": 20,
+        "p50": 3525.6971530616283,
+        "p95": 3858.5310466587543
+      },
+      "first_visible_ms": {
+        "n": 20,
+        "p50": 452.8156747110188,
+        "p95": 493.88858675956726
+      },
+      "nonempty_completed": 20
+    },
+    {
+      "context_characters": 5027,
+      "requested_context_budget_characters": 5000,
+      "warmup": {
+        "total_ms": 4257.018171716481,
+        "first_visible_ms": 938.5585887357593,
+        "first_model_event_ms": 938.5527819395065,
+        "usage": {
+          "prompt_tokens": 3364,
+          "total_tokens": 3409,
+          "completion_tokens": 45
+        },
+        "finish_reason": "stop",
+        "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+        "failure": null
+      },
+      "runs": [
+        {
+          "total_ms": 4739.375702105463,
+          "first_visible_ms": 1345.5178029835224,
+          "first_model_event_ms": 1345.5164139159024,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 5059.325063135475,
+          "first_visible_ms": 1793.7870658934116,
+          "first_model_event_ms": 1793.7852670438588,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4732.977025676519,
+          "first_visible_ms": 1193.332586903125,
+          "first_model_event_ms": 1193.3300127275288,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4752.996733877808,
+          "first_visible_ms": 1524.977297987789,
+          "first_model_event_ms": 1524.9753938987851,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 5009.07731289044,
+          "first_visible_ms": 1204.7821218147874,
+          "first_model_event_ms": 1204.7797022387385,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 5007.91958719492,
+          "first_visible_ms": 1517.8329618647695,
+          "first_model_event_ms": 1517.8302731364965,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4986.647670157254,
+          "first_visible_ms": 1207.0274860598147,
+          "first_model_event_ms": 1207.024906296283,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4985.198932234198,
+          "first_visible_ms": 1525.3898142836988,
+          "first_model_event_ms": 1525.3873779438436,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4747.229706961662,
+          "first_visible_ms": 1204.1143039241433,
+          "first_model_event_ms": 1204.111855942756,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4747.3798100836575,
+          "first_visible_ms": 1521.3473169133067,
+          "first_model_event_ms": 1521.3447618298233,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4771.355675999075,
+          "first_visible_ms": 1201.8302492797375,
+          "first_model_event_ms": 1201.8275843001902,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4575.734035111964,
+          "first_visible_ms": 1520.0244123116136,
+          "first_model_event_ms": 1520.023032091558,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4786.575992126018,
+          "first_visible_ms": 1393.887635320425,
+          "first_model_event_ms": 1393.8852371647954,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 5001.522049307823,
+          "first_visible_ms": 1750.0308542512357,
+          "first_model_event_ms": 1750.0283191911876,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4827.904240693897,
+          "first_visible_ms": 1205.1531486213207,
+          "first_model_event_ms": 1205.1506559364498,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4826.47954300046,
+          "first_visible_ms": 1519.4896501488984,
+          "first_model_event_ms": 1519.4871602579951,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4744.541354011744,
+          "first_visible_ms": 1203.6500740796328,
+          "first_model_event_ms": 1203.6475711502135,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4746.870988048613,
+          "first_visible_ms": 1518.1220779195428,
+          "first_model_event_ms": 1518.1198217906058,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4729.466716758907,
+          "first_visible_ms": 1204.395434819162,
+          "first_model_event_ms": 1204.3930529616773,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        },
+        {
+          "total_ms": 4541.972801089287,
+          "first_visible_ms": 1517.3204597085714,
+          "first_model_event_ms": 1517.3177258111537,
+          "usage": {
+            "prompt_tokens": 3364,
+            "total_tokens": 3409,
+            "completion_tokens": 45
+          },
+          "finish_reason": "stop",
+          "content": "消息数仅反映事件频次，不等同于故障数量。\n时区未知时，禁止计算绝对时长，仅保留相对时间。\n统计指标用于量化现象，根因分析需结合具体业务逻辑。",
+          "failure": null
+        }
+      ],
+      "total_ms": {
+        "n": 20,
+        "p50": 4752.996733877808,
+        "p95": 5009.07731289044
+      },
+      "first_visible_ms": {
+        "n": 20,
+        "p50": 1393.887635320425,
+        "p95": 1750.0308542512357
+      },
+      "nonempty_completed": 20
+    }
+  ],
+  "scope": "warm generation only; retrieval excluded; character budgets differ from tokens",
+  "prefix_cache_policy": "server defaults; repeated prompts may use prefix cache",
+  "pipeline_identity": "07109699091734a709ec309a9933d91b23190c61176a4ad9425e041160579174",
+  "resources": {
+    "sampling_seconds": 0.5,
+    "samples": 141,
+    "gpu_device_peak_used_mib": {
+      "0": 68110,
+      "1": 0
+    },
+    "app_tree_peak_rss_bytes": 223780864,
+    "server_tree_peak_rss_bytes": 4227895296,
+    "server_pid": 3677401,
+    "errors": [],
+    "scope": "sampled RSS/GPU totals; shared jobs included; peaks may be missed"
+  },
+  "server_max_num_seqs": 2
+}

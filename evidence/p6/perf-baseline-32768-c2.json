@@ -1,0 +1,605 @@
+{
+  "profile": "baseline",
+  "server_context_capacity": 32768,
+  "client_concurrency": 2,
+  "cases_per_budget": 20,
+  "rows": [
+    {
+      "context_characters": 1227,
+      "requested_context_budget_characters": 1200,
+      "warmup": {
+        "total_ms": 1532.6448162086308,
+        "first_visible_ms": 146.33224392309785,
+        "first_model_event_ms": 146.33087813854218,
+        "usage": {
+          "prompt_tokens": 827,
+          "total_tokens": 858,
+          "completion_tokens": 31
+        },
+        "finish_reason": "stop",
+        "content": "统计仅计数，不判定故障；根因分析需结合上下文定位问题；未知时区数据不参与绝对时长计算。",
+        "failure": null
+      },
+      "runs": [
+        {
+          "total_ms": 2644.065243192017,
+          "first_visible_ms": 116.40472523868084,
+          "first_model_event_ms": 116.40329426154494,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 881,
+            "completion_tokens": 54
+          },
+          "finish_reason": "stop",
+          "content": "统计仅记录消息数与时区状态，不包含故障判定。  \n根因分析需基于明确故障事件，不依赖未知时区数据。  \n两者边界在于：统计不涉及故障判断，根因需有可追溯的故障依据。",
+          "failure": null
+        },
+        {
+          "total_ms": 1683.152605779469,
+          "first_visible_ms": 158.7304719723761,
+          "first_model_event_ms": 158.72915275394917,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1653.4016383811831,
+          "first_visible_ms": 134.59413219243288,
+          "first_model_event_ms": 134.59167536348104,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1643.898838199675,
+          "first_visible_ms": 137.45756400749087,
+          "first_model_event_ms": 137.45495211333036,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1699.5984339155257,
+          "first_visible_ms": 172.2972192801535,
+          "first_model_event_ms": 172.29443415999413,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1652.0154108293355,
+          "first_visible_ms": 136.44201727584004,
+          "first_model_event_ms": 136.43965311348438,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1636.7025030776858,
+          "first_visible_ms": 125.72117196395993,
+          "first_model_event_ms": 125.71972096338868,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1649.6554827317595,
+          "first_visible_ms": 131.31386693567038,
+          "first_model_event_ms": 131.31147483363748,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1658.9577570557594,
+          "first_visible_ms": 128.90024576336145,
+          "first_model_event_ms": 128.89793189242482,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1655.4717747494578,
+          "first_visible_ms": 132.80308758839965,
+          "first_model_event_ms": 132.80055578798056,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1646.460233721882,
+          "first_visible_ms": 132.12508102878928,
+          "first_model_event_ms": 132.12256971746683,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1687.9793568514287,
+          "first_visible_ms": 132.55818700417876,
+          "first_model_event_ms": 132.55528872832656,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1701.8163981847465,
+          "first_visible_ms": 133.32880707457662,
+          "first_model_event_ms": 133.32654209807515,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1657.5496471486986,
+          "first_visible_ms": 133.02681129425764,
+          "first_model_event_ms": 133.02415097132325,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1628.2677478156984,
+          "first_visible_ms": 130.93645265325904,
+          "first_model_event_ms": 130.93369081616402,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1647.1280721016228,
+          "first_visible_ms": 132.75238825008273,
+          "first_model_event_ms": 132.75012327358127,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1709.2563342303038,
+          "first_visible_ms": 175.05747033283114,
+          "first_model_event_ms": 175.05558812990785,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1666.8443731032312,
+          "first_visible_ms": 133.7146651931107,
+          "first_model_event_ms": 133.71198531240225,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        },
+        {
+          "total_ms": 1607.0204051211476,
+          "first_visible_ms": 174.05657516792417,
+          "first_model_event_ms": 174.05389621853828,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 858,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析基于有效数据，排除无效信息。",
+          "failure": null
+        },
+        {
+          "total_ms": 1627.3337579332292,
+          "first_visible_ms": 134.95128694921732,
+          "first_model_event_ms": 134.9487630650401,
+          "usage": {
+            "prompt_tokens": 827,
+            "total_tokens": 860,
+            "completion_tokens": 33
+          },
+          "finish_reason": "stop",
+          "content": "统计仅计数消息，不包含故障；未知时区不参与时长计算；根因分析需结合上下文，不依赖统计结果。",
+          "failure": null
+        }
+      ],
+      "total_ms": {
+        "n": 20,
+        "p50": 1653.4016383811831,
+        "p95": 1709.2563342303038
+      },
+      "first_visible_ms": {
+        "n": 20,
+        "p50": 133.02681129425764,
+        "p95": 174.05657516792417
+      },
+      "nonempty_completed": 20
+    },
+    {
+      "context_characters": 5027,
+      "requested_context_budget_characters": 5000,
+      "warmup": {
+        "total_ms": 1524.7404677793384,
+        "first_visible_ms": 140.22186398506165,
+        "first_model_event_ms": 140.21928003057837,
+        "usage": {
+          "prompt_tokens": 3360,
+          "total_tokens": 3391,
+          "completion_tokens": 31
+        },
+        "finish_reason": "stop",
+        "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+        "failure": null
+      },
+      "runs": [
+        {
+          "total_ms": 1842.3011880367994,
+          "first_visible_ms": 140.4412379488349,
+          "first_model_event_ms": 140.43997367843986,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3396,
+            "completion_tokens": 36
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因需结合业务逻辑与上下文推断；两者边界在于“描述”与“归因”的区分。",
+          "failure": null
+        },
+        {
+          "total_ms": 1645.6569768488407,
+          "first_visible_ms": 186.74517096951604,
+          "first_model_event_ms": 186.7440310306847,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1804.0737630799413,
+          "first_visible_ms": 174.85570907592773,
+          "first_model_event_ms": 174.85330300405622,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3394,
+            "completion_tokens": 34
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合业务逻辑推断；两者边界在于“描述”与“归因”的区分。",
+          "failure": null
+        },
+        {
+          "total_ms": 1624.069670215249,
+          "first_visible_ms": 144.89656500518322,
+          "first_model_event_ms": 144.8950730264187,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1657.4885407462716,
+          "first_visible_ms": 214.66332487761974,
+          "first_model_event_ms": 214.66219704598188,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1861.9140558876097,
+          "first_visible_ms": 168.31133794039488,
+          "first_model_event_ms": 168.30869391560555,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3396,
+            "completion_tokens": 36
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因需结合业务逻辑与上下文推断；两者边界在于“描述”与“归因”的区分。",
+          "failure": null
+        },
+        {
+          "total_ms": 1614.7146890871227,
+          "first_visible_ms": 149.36506003141403,
+          "first_model_event_ms": 149.36375990509987,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1653.230736963451,
+          "first_visible_ms": 198.01105000078678,
+          "first_model_event_ms": 198.00812797620893,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1635.5384574271739,
+          "first_visible_ms": 188.57802404090762,
+          "first_model_event_ms": 188.57500841841102,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1643.1751102209091,
+          "first_visible_ms": 184.84788527712226,
+          "first_model_event_ms": 184.84529806300998,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 2226.521811913699,
+          "first_visible_ms": 151.54409687966108,
+          "first_model_event_ms": 151.54280187562108,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3398,
+            "completion_tokens": 38
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于：数据汇总为统计，深入分析为根因。",
+          "failure": null
+        },
+        {
+          "total_ms": 1875.6863339804113,
+          "first_visible_ms": 177.14742198586464,
+          "first_model_event_ms": 177.1457139402628,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1898.0175401084125,
+          "first_visible_ms": 158.1181799992919,
+          "first_model_event_ms": 158.1166130490601,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3397,
+            "completion_tokens": 37
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合业务逻辑与数据关联推断；两者边界在于“描述”与“归因”的区分。",
+          "failure": null
+        },
+        {
+          "total_ms": 1594.409815967083,
+          "first_visible_ms": 145.19111393019557,
+          "first_model_event_ms": 145.19010577350855,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1820.053543895483,
+          "first_visible_ms": 188.36501706391573,
+          "first_model_event_ms": 188.36262729018927,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3395,
+            "completion_tokens": 35
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需基于逻辑推理与证据链；两者边界在于“描述”与“归因”的区分。",
+          "failure": null
+        },
+        {
+          "total_ms": 1621.3833959773183,
+          "first_visible_ms": 185.53489120677114,
+          "first_model_event_ms": 185.53231190890074,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1824.8802260495722,
+          "first_visible_ms": 149.7282045893371,
+          "first_model_event_ms": 149.72527278587222,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3396,
+            "completion_tokens": 36
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因需结合业务逻辑与上下文推断；两者边界在于“描述”与“归因”的区分。",
+          "failure": null
+        },
+        {
+          "total_ms": 1623.1109532527626,
+          "first_visible_ms": 193.22223495692015,
+          "first_model_event_ms": 193.21952108293772,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        },
+        {
+          "total_ms": 1810.251243878156,
+          "first_visible_ms": 184.82016399502754,
+          "first_model_event_ms": 184.81739284470677,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3395,
+            "completion_tokens": 35
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需基于逻辑推理与证据链；两者边界在于“描述”与“归因”的区分。",
+          "failure": null
+        },
+        {
+          "total_ms": 1616.8429730460048,
+          "first_visible_ms": 188.18710697814822,
+          "first_model_event_ms": 188.18462686613202,
+          "usage": {
+            "prompt_tokens": 3360,
+            "total_tokens": 3391,
+            "completion_tokens": 31
+          },
+          "finish_reason": "stop",
+          "content": "统计仅反映现象，不涉及原因分析；根因结论需结合上下文推断根本原因；两者边界在于是否进行因果推理。",
+          "failure": null
+        }
+      ],
+      "total_ms": {
+        "n": 20,
+        "p50": 1653.230736963451,
+        "p95": 1898.0175401084125
+      },
+      "first_visible_ms": {
+        "n": 20,
+        "p50": 177.14742198586464,
+        "p95": 198.01105000078678
+      },
+      "nonempty_completed": 20
+    }
+  ],
+  "scope": "warm generation only; retrieval excluded; character budgets differ from tokens",
+  "prefix_cache_policy": "server defaults; repeated prompts may use prefix cache",
+  "pipeline_identity": "760309bcd4672dbbd0fd1c8dd805c3a6ff656e8e5bb5d59ee1279313639bf7a3",
+  "resources": {
+    "sampling_seconds": 0.5,
+    "samples": 59,
+    "gpu_device_peak_used_mib": {
+      "0": 69353,
+      "1": 0
+    },
+    "app_tree_peak_rss_bytes": 224309248,
+    "server_tree_peak_rss_bytes": 3127730176,
+    "server_pid": 3509550,
+    "errors": [],
+    "scope": "sampled RSS/GPU totals; shared jobs included; peaks may be missed"
+  },
+  "server_max_num_seqs": 2
+}

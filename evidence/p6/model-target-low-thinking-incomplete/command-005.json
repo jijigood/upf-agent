@@ -1,0 +1,51 @@
+{
+  "row": {
+    "id": "command-005",
+    "model": "target",
+    "evidence_sha256": "04b24ffbc7b2c74a296fa9e38972a2183f7e9d3763a992d571bcfcd90de8f4f4",
+    "elapsed_ms": 27875.20954106003,
+    "usage": {
+      "requests": 1,
+      "prompt_tokens_observed": 3597,
+      "completion_tokens_observed": 384,
+      "usage_responses": 1
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": false,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，upfmgr 命令的原文写法是什么？",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "not_run",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "status": "failed",
+    "missing_information": [
+      "生成或引用校验失败，未发布未经验证的回答。"
+    ],
+    "error": "1 validation error for EvidenceGate\n  Invalid JSON: EOF while parsing a value at line 1 column 0 [type=json_invalid, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid"
+  }
+}

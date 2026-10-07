@@ -1,0 +1,69 @@
+{
+  "row": {
+    "id": "knowledge-006",
+    "model": "target",
+    "evidence_sha256": "e2ce166b652827dcc8f81f3b8008b692f702d1d95800818d43db5ebb2197d443",
+    "elapsed_ms": 10894.895665813237,
+    "usage": {
+      "requests": 1,
+      "prompt_tokens_observed": 5465,
+      "completion_tokens_observed": 133,
+      "usage_responses": 1
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘单节点部署K8S / 调整集群配置 / 调整后的集群配置文件’解释说明和关键字段，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "not_run",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q1",
+        "S2Q2",
+        "S2Q3",
+        "S2Q4",
+        "S2Q5",
+        "S2Q6",
+        "S2Q7",
+        "S2Q8",
+        "S2Q9",
+        "S3Q1",
+        "S3Q2",
+        "S3Q342"
+      ],
+      "missing_information": []
+    },
+    "status": "failed",
+    "missing_information": [
+      "生成或引用校验失败，未发布未经验证的回答。"
+    ],
+    "error": "evidence gate returned unknown quote_id"
+  }
+}

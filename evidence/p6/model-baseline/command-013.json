@@ -1,0 +1,186 @@
+{
+  "row": {
+    "id": "command-013",
+    "model": "baseline",
+    "evidence_sha256": "54caea5b2c0408ac82d8425117c1520bc33ab9574d130567fb1e0e1da09dd327",
+    "elapsed_ms": 12558.165004011244,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 4842,
+      "completion_tokens_observed": 235,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": true,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "在‘配置UPF物理机 / Coredump开关打开’中，echo 命令的原文写法是什么？",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern",
+        "citations": [
+          {
+            "chunk_id": "chunk-01998c8695e66a6318101bb8",
+            "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+          }
+        ]
+      },
+      {
+        "text": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern",
+        "citations": [
+          {
+            "chunk_id": "chunk-01998c8695e66a6318101bb8",
+            "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-01998c8695e66a6318101bb8",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "配置UPF物理机",
+          "Coredump开关打开"
+        ],
+        "parent_id": "section-279f5f812451d0bbf03e",
+        "kind": "command",
+        "text": "物理机安装操作系统并配置 / 配置UPF物理机 / Coredump开关打开\necho \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern",
+        "token_count": 48,
+        "block_ids": [
+          "manual-1edf23113651430f:b000916"
+        ],
+        "locators": [
+          "word/document.xml/body/p[387]"
+        ],
+        "ordinal_start": 916,
+        "ordinal_end": 916,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-65c8090e5aa1049a",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q2",
+        "S3Q2"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "echo 命令的原文写法是：echo “/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t” > /proc/sys/kernel/core_pattern",
+            "quote_ids": [
+              "S3Q2"
+            ]
+          },
+          {
+            "text": "echo 命令的原文写法是：echo ",
+            "quote_ids": [
+              "S2Q2"
+            ]
+          },
+          {
+            "text": "echo 命令的原文写法是：echo /opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t > /proc/sys/kernel/core_pattern",
+            "quote_ids": [
+              "S3Q2"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "echo 命令的原文写法是：echo “/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t” > /proc/sys/kernel/core_pattern",
+            "citations": [
+              {
+                "chunk_id": "chunk-01998c8695e66a6318101bb8",
+                "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+              }
+            ]
+          },
+          {
+            "text": "echo 命令的原文写法是：echo ",
+            "citations": [
+              {
+                "chunk_id": "chunk-b7e7f004b9f94894131191dc",
+                "quote": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf"
+              }
+            ]
+          },
+          {
+            "text": "echo 命令的原文写法是：echo /opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t > /proc/sys/kernel/core_pattern",
+            "citations": [
+              {
+                "chunk_id": "chunk-01998c8695e66a6318101bb8",
+                "quote": "echo \"/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%t\" > /proc/sys/kernel/core_pattern"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        false,
+        true
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "部分陈述未通过自动证据支持检查，已移除。"
+    ]
+  }
+}

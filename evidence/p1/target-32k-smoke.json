@@ -1,0 +1,40 @@
+{
+  "model": "Qwen/Qwen3.8-27B",
+  "endpoint": "http://127.0.0.1:18001/v1",
+  "chat_template_kwargs": {
+    "reasoning_effort": "low"
+  },
+  "text": {
+    "pass": true,
+    "content": "\n\n本地模型已连接"
+  },
+  "json": {
+    "pass": true,
+    "result": {
+      "ok": true,
+      "name": "UPF"
+    }
+  },
+  "tool_roundtrip": {
+    "pass": true,
+    "tool_name": "lookup_local_version",
+    "arguments": {
+      "product": "UPF"
+    },
+    "final_content": "\n\nUPF 的版本是 **5.0**。"
+  },
+  "reasoning": {
+    "pass": true,
+    "reasoning_content_present": true,
+    "reasoning_field": "reasoning",
+    "final_content": "\n\n2"
+  },
+  "timings_ms": {
+    "text": 2975,
+    "json": 3477,
+    "tool_call": 5026,
+    "tool_result": 3525,
+    "reasoning": 3706,
+    "total": 18739
+  }
+}

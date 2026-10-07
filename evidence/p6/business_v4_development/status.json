@@ -1,0 +1,103 @@
+{
+  "updated_at": "2026-09-29T08:35:14.888243+00:00",
+  "stage": "ai_assisted_review_received_partial_repairs_pending_development",
+  "current_pipeline_identity": "60c036155dab7b5de4225f1072c5acf5f04008c9b251eb1b9839dbe9ca3980a1",
+  "reviewed_development_pipeline_identity": "2e14cb34b5c5b5c793b644c726fc6483d3e6cf10d3f20b209fd9bc5f9f0e1121",
+  "reviewed_development_summary": "runs/p6-v4-v3/reviewed-dev/summary.json",
+  "reviewed_development_summary_sha256": "beb729f9c5842a174b6f83801ecca507ca1fa4a86373257f5cdd6fa46e1029f9",
+  "current_development_execution_complete": false,
+  "formal_truth_cases": 120,
+  "human_truth_signed": true,
+  "answer_review_kind": "ai_assisted",
+  "ai_answer_review_complete": true,
+  "human_answer_review_complete": false,
+  "ai_assisted_scores": "runs/p6-v4-v3/review-intake-f7fb338d3c11/ai_assisted_scores.json",
+  "ai_scores_scope": "previous 60-case development run only; not repaired code or human business accuracy",
+  "ai_assisted_metrics": {
+    "summary_sha256": "beb729f9c5842a174b6f83801ecca507ca1fa4a86373257f5cdd6fa46e1029f9",
+    "review_sha256": "bab9185ba8dfaebd1edd01e98ea41850ae39aebb83e0119c4b58d6b5231f652a",
+    "suite_sha256": "a1060098d02e7df07bac3d507666c65e62c0c079ea096d7624df452fd578a190",
+    "split": "dev",
+    "cases": 60,
+    "support": {
+      "n": 60,
+      "pass": 56,
+      "rate": 0.9333333333333333
+    },
+    "completeness": {
+      "n": 60,
+      "pass": 26,
+      "rate": 0.43333333333333335
+    },
+    "command_exact": {
+      "n": 20,
+      "pass": 20,
+      "rate": 1.0
+    },
+    "missing_source_correct": {
+      "n": 4,
+      "pass": 3,
+      "rate": 0.75
+    },
+    "invented_critical_parameters": 0,
+    "semantic_gate_pass": false,
+    "review_kind": "ai_assisted",
+    "review_complete": true,
+    "human_review_complete": false,
+    "M6_pass": false,
+    "remaining": "retrieval/tools/performance/release gates evaluated separately"
+  },
+  "reported_failure_cases": 34,
+  "targeted_repairs": [
+    "AI-assisted attribution cannot grant human acceptance",
+    "requested-version operational publication gate",
+    "manual report excludes rejected candidates",
+    "log counts supplemented with raw per-state representatives"
+  ],
+  "log_tool_verification": "runs/p6-v4-v3/review-intake-f7fb338d3c11/log-sample-validation/summary.json",
+  "txt_version_verification": "runs/p6-v4-v3/review-intake-f7fb338d3c11/missing-version-publication-cli/report.md",
+  "raw_sources_unchanged": [
+    {
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48"
+    },
+    {
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe"
+    },
+    {
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85"
+    },
+    {
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e"
+    },
+    {
+      "relative_path": "upfd_masked.log",
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "relative_path": "提取自main.pdf",
+      "sha256": "d23b138f9a73d510e2aa3d5d015d30ff8ecc0fbe55915a6fff1d5bcf0604b68b"
+    },
+    {
+      "relative_path": "upftest.yml",
+      "sha256": "bd4d045782c4b250d1b0694a669d6e5d09891de1a1f676c13160770bfb444c3c"
+    }
+  ],
+  "tests_passed": 280,
+  "ruff_pass": true,
+  "format_pass": true,
+  "M6_pass": false,
+  "heldout_executed": false,
+  "configuration_frozen": false,
+  "remaining": [
+    "manual completeness and model publication failures",
+    "command context and example applicability",
+    "expired topology evidence",
+    "fresh 60-case development execution and human answer review",
+    "current model/tools/performance gates",
+    "freeze and one-use heldout evaluation"
+  ]
+}

@@ -1,0 +1,605 @@
+{
+  "profile": "target",
+  "server_context_capacity": 16384,
+  "client_concurrency": 2,
+  "cases_per_budget": 20,
+  "rows": [
+    {
+      "context_characters": 1227,
+      "requested_context_budget_characters": 1200,
+      "warmup": {
+        "total_ms": 16525.82106925547,
+        "first_visible_ms": 15018.19396391511,
+        "first_model_event_ms": 15018.190579954535,
+        "usage": {
+          "prompt_tokens": 858,
+          "total_tokens": 1114,
+          "completion_tokens": 256
+        },
+        "finish_reason": "length",
+        "content": "\n\n消息数不等于故障数，统计量不能直接作为根因判定。未知时区不计算绝对时长，数据",
+        "failure": null
+      },
+      "runs": [
+        {
+          "total_ms": 18836.291659623384,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18831.536340992898,
+          "first_visible_ms": 16830.175260081887,
+          "first_model_event_ms": 16830.171771347523,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 17760.782585013658,
+          "first_visible_ms": 15569.652592763305,
+          "first_model_event_ms": 15569.649377837777,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1111,
+            "completion_tokens": 253
+          },
+          "finish_reason": "stop",
+          "content": "\n\n消息数仅反映频次，不等于故障数。时区未知时，不可推算绝对时长。统计量是线索，非根因定论。",
+          "failure": null
+        },
+        {
+          "total_ms": 17776.498578954488,
+          "first_visible_ms": 15579.632577020675,
+          "first_model_event_ms": 15579.629870131612,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1111,
+            "completion_tokens": 253
+          },
+          "finish_reason": "stop",
+          "content": "\n\n消息数仅反映频次，不等于故障数。时区未知时，不可推算绝对时长。统计量是线索，非根因定论。",
+          "failure": null
+        },
+        {
+          "total_ms": 17899.641767144203,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 17895.3978382051,
+          "first_visible_ms": 15910.662136040628,
+          "first_model_event_ms": 15910.6590943411,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 17883.727001026273,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 17885.316517669708,
+          "first_visible_ms": 15910.838782787323,
+          "first_model_event_ms": 15910.835952032357,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 18455.280136317015,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18457.20883924514,
+          "first_visible_ms": 16449.401997961104,
+          "first_model_event_ms": 16449.399216100574,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 18336.790445726365,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18338.227924890816,
+          "first_visible_ms": 16251.604471821338,
+          "first_model_event_ms": 16251.602003816515,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 17792.46559040621,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 17788.811116945,
+          "first_visible_ms": 15824.746863916516,
+          "first_model_event_ms": 15824.744044803083,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 17693.51260177791,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 17688.741291873157,
+          "first_visible_ms": 15722.815722692758,
+          "first_model_event_ms": 15722.813002765179,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 18003.422670066357,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18000.39677787572,
+          "first_visible_ms": 15882.10385479033,
+          "first_model_event_ms": 15882.10131879896,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1114,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "\n\n消息数不等于故障数，统计量不能直接作为根因依据。未知时区不计算绝对时长，数据缺失时不做推断。统计",
+          "failure": null
+        },
+        {
+          "total_ms": 17918.562742881477,
+          "first_visible_ms": 15722.403715830296,
+          "first_model_event_ms": 15722.401067614555,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1111,
+            "completion_tokens": 253
+          },
+          "finish_reason": "stop",
+          "content": "\n\n消息数仅反映频次，不等于故障数。时区未知时，不可推算绝对时长。统计量是线索，非根因定论。",
+          "failure": null
+        },
+        {
+          "total_ms": 17909.79539928958,
+          "first_visible_ms": 15712.89290394634,
+          "first_model_event_ms": 15712.889740243554,
+          "usage": {
+            "prompt_tokens": 858,
+            "total_tokens": 1111,
+            "completion_tokens": 253
+          },
+          "finish_reason": "stop",
+          "content": "\n\n消息数仅反映频次，不等于故障数。时区未知时，不可推算绝对时长。统计量是线索，非根因定论。",
+          "failure": null
+        }
+      ],
+      "total_ms": {
+        "n": 20,
+        "p50": 17899.641767144203,
+        "p95": 18831.536340992898
+      },
+      "first_visible_ms": {
+        "n": 12,
+        "p50": 15824.746863916516,
+        "p95": 16830.175260081887
+      },
+      "nonempty_completed": 4
+    },
+    {
+      "context_characters": 5027,
+      "requested_context_budget_characters": 5000,
+      "warmup": {
+        "total_ms": 17023.775313980877,
+        "first_visible_ms": null,
+        "first_model_event_ms": null,
+        "usage": {
+          "prompt_tokens": 3392,
+          "total_tokens": 3648,
+          "completion_tokens": 256
+        },
+        "finish_reason": "length",
+        "content": "",
+        "failure": null
+      },
+      "runs": [
+        {
+          "total_ms": 19312.985956203192,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18986.306661739945,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19944.87761799246,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18297.794424928725,
+          "first_visible_ms": 16084.48484679684,
+          "first_model_event_ms": 16084.481895901263,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3637,
+            "completion_tokens": 245
+          },
+          "finish_reason": "stop",
+          "content": "\n\n消息数仅反映统计量，不等于故障数。时区未知时不推算绝对时长。统计描述现象，根因须独立证据支撑。",
+          "failure": null
+        },
+        {
+          "total_ms": 19687.943868804723,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19686.73910573125,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19262.3208980076,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19275.984948966652,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19790.076672565192,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19760.637659113854,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18938.70901176706,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18926.819465123117,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19165.015378035605,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19154.737333767116,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18788.164423778653,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18769.80785606429,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 19725.61726393178,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 17194.328292272985,
+          "first_visible_ms": 15020.80504130572,
+          "first_model_event_ms": 15020.802565384656,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3632,
+            "completion_tokens": 240
+          },
+          "finish_reason": "stop",
+          "content": "\n\n消息数仅反映统计量，不等于故障数。时区未知时不推算绝对时长。统计描述现象，根因须独立证据支撑。",
+          "failure": null
+        },
+        {
+          "total_ms": 19096.724573988467,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        },
+        {
+          "total_ms": 18325.760200154036,
+          "first_visible_ms": null,
+          "first_model_event_ms": null,
+          "usage": {
+            "prompt_tokens": 3392,
+            "total_tokens": 3648,
+            "completion_tokens": 256
+          },
+          "finish_reason": "length",
+          "content": "",
+          "failure": null
+        }
+      ],
+      "total_ms": {
+        "n": 20,
+        "p50": 19154.737333767116,
+        "p95": 19790.076672565192
+      },
+      "first_visible_ms": {
+        "n": 2,
+        "p50": 15020.80504130572,
+        "p95": 16084.48484679684
+      },
+      "nonempty_completed": 2
+    }
+  ],
+  "scope": "warm generation only; retrieval excluded; character budgets differ from tokens",
+  "prefix_cache_policy": "server defaults; repeated prompts may use prefix cache",
+  "pipeline_identity": "c32bde84383e0b6319657d740474f29da28198721a050a8fd622f57377fbe789",
+  "resources": {
+    "sampling_seconds": 0.5,
+    "samples": 619,
+    "gpu_device_peak_used_mib": {
+      "0": 68126,
+      "1": 0
+    },
+    "app_tree_peak_rss_bytes": 221491200,
+    "server_tree_peak_rss_bytes": 4359127040,
+    "server_pid": 3608971,
+    "errors": [],
+    "scope": "sampled RSS/GPU totals; shared jobs included; peaks may be missed"
+  },
+  "server_max_num_seqs": 2
+}

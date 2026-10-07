@@ -1,0 +1,13 @@
+{
+  "tool_attempts": 1,
+  "model_requests_reserved": 0,
+  "rounds": 0,
+  "parameter_repairs": 0,
+  "active_seconds": 1.6972883250564337,
+  "observed_usage": {},
+  "stage_elapsed_ms": {
+    "tool_finished": 1610
+  },
+  "peak_observed_process_rss_bytes": 210374656,
+  "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+}

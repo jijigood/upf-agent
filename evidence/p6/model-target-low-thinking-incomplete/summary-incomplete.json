@@ -1,0 +1,126 @@
+{
+  "profile": "target",
+  "rows": [
+    {
+      "id": "command-001",
+      "model": "target",
+      "evidence_sha256": "0e08b75cc58d9a8884dde7db30a679afe2d217a0a75de042a8b82767f22bfb8e",
+      "elapsed_ms": 57846.30891028792,
+      "usage": {
+        "requests": 3,
+        "prompt_tokens_observed": 10799,
+        "completion_tokens_observed": 732,
+        "usage_responses": 3
+      },
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "draft_source_group_hit": false,
+      "failure": null
+    },
+    {
+      "id": "command-002",
+      "model": "target",
+      "evidence_sha256": "e203bf3d60b8cbd14cde93ea660f774968d7094137cb0d073d225729a9d9a040",
+      "elapsed_ms": 55648.41327490285,
+      "usage": {
+        "requests": 3,
+        "prompt_tokens_observed": 9408,
+        "completion_tokens_observed": 783,
+        "usage_responses": 3
+      },
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "draft_source_group_hit": false,
+      "failure": null
+    },
+    {
+      "id": "command-003",
+      "model": "target",
+      "evidence_sha256": "eb5615b3ebb2a3f24c3e2a52bd455776b12bd0265464a3c57c50efc03429851a",
+      "elapsed_ms": 27721.24813264236,
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 3392,
+        "completion_tokens_observed": 384,
+        "usage_responses": 1
+      },
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "draft_source_group_hit": false,
+      "failure": null
+    },
+    {
+      "id": "command-004",
+      "model": "target",
+      "evidence_sha256": "7e1ed4f9811ae3642353e873e17f404229f92b79fb832ba32449342b0347142c",
+      "elapsed_ms": 28032.30004897341,
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 4430,
+        "completion_tokens_observed": 384,
+        "usage_responses": 1
+      },
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "draft_source_group_hit": false,
+      "failure": null
+    },
+    {
+      "id": "command-005",
+      "model": "target",
+      "evidence_sha256": "04b24ffbc7b2c74a296fa9e38972a2183f7e9d3763a992d571bcfcd90de8f4f4",
+      "elapsed_ms": 27875.20954106003,
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 3597,
+        "completion_tokens_observed": 384,
+        "usage_responses": 1
+      },
+      "machine_checks": {
+        "status_expected": false,
+        "quote_integrity": true,
+        "refusal_contract": true,
+        "source_extract_integrity": true,
+        "critical_literal_coverage": false,
+        "machine_contract_pass": false,
+        "business_semantics": "pending_human_review"
+      },
+      "draft_source_group_hit": false,
+      "failure": null
+    }
+  ],
+  "cases": 5,
+  "planned_cases": 42,
+  "complete": false,
+  "pipeline_identity": "760309bcd4672dbbd0fd1c8dd805c3a6ff656e8e5bb5d59ee1279313639bf7a3",
+  "reason": "low reasoning consumes structured-output token budget; aborted development probe before adapter repair",
+  "heldout_executed": false
+}

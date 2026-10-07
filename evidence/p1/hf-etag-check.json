@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-09-25T09:28:01.562040+00:00",
+  "pass": true,
+  "models": [
+    {
+      "profile": "baseline",
+      "pass": true,
+      "checked_weight_files": 16,
+      "repository_revisions": [
+        "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe"
+      ],
+      "problems": []
+    },
+    {
+      "profile": "embedding",
+      "pass": true,
+      "checked_weight_files": 2,
+      "repository_revisions": [
+        "5cf2132abc99cad020ac570b19d031efec650f2b"
+      ],
+      "problems": []
+    },
+    {
+      "profile": "reranker",
+      "pass": true,
+      "checked_weight_files": 2,
+      "repository_revisions": [
+        "22e683669bc0f0bd69640a1354a6d0aebcfeede5"
+      ],
+      "problems": []
+    }
+  ]
+}

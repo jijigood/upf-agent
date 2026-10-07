@@ -1,0 +1,226 @@
+{
+  "row": {
+    "id": "command-005",
+    "model": "baseline",
+    "evidence_sha256": "04b24ffbc7b2c74a296fa9e38972a2183f7e9d3763a992d571bcfcd90de8f4f4",
+    "elapsed_ms": 9579.344274941832,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 8310,
+      "completion_tokens_observed": 167,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": false,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，upfmgr 命令的原文写法是什么？",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "# upfmgr ip qry\n\nroot@gd-gz-gdlt-upf01:~# upfmgr ip qry\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-611060638cb88f44e6bbdfc9",
+            "quote": "# upfmgr ip qry\n"
+          },
+          {
+            "chunk_id": "chunk-f9722da50bf4f3243b27226e",
+            "quote": "root@gd-gz-gdlt-upf01:~# upfmgr ip qry\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-611060638cb88f44e6bbdfc9",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查所有接口地址"
+        ],
+        "parent_id": "section-5c4b984cb9fb9b794139",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查所有接口地址\n检查所有接口地址\n方法1、使用脚本查询\n# upfmgr ip qry\n方法2、使用curll命令查询\n# curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: `kubectl get ingress -A |grep \"HOSTS\\|nma\"| awk '{for(i=1;i<=NF;i++){if($i==\"HOSTS\") {getline;print $i;}}}'`\" -X POST -d '{QRY UpfIntfAddrConfig;}' 127.0.0.1\n方法3、使用telnet登录UPFD POD 37100端口查询\n# upfmgr ctrl",
+        "token_count": 184,
+        "block_ids": [
+          "manual-1edf23113651430f:b001959",
+          "manual-1edf23113651430f:b001960",
+          "manual-1edf23113651430f:b001961",
+          "manual-1edf23113651430f:b001962",
+          "manual-1edf23113651430f:b001963",
+          "manual-1edf23113651430f:b001964",
+          "manual-1edf23113651430f:b001965"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1055]",
+          "word/document.xml/body/p[1056]",
+          "word/document.xml/body/p[1057]",
+          "word/document.xml/body/p[1058]",
+          "word/document.xml/body/p[1059]",
+          "word/document.xml/body/p[1060]",
+          "word/document.xml/body/p[1061]"
+        ],
+        "ordinal_start": 1959,
+        "ordinal_end": 1965,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-f9722da50bf4f3243b27226e",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "UPF软件升级更新",
+          "部署新的UPF软件"
+        ],
+        "parent_id": "section-1f02256364f9f8dcadec",
+        "kind": "prose",
+        "text": "UPF软件升级更新 / 部署新的UPF软件\n部署新的UPF软件\n进入到新发布的UPF版本（如：CU5GC_UPF_5.0.218）路径，执行install命令安装UPF。具体步骤如下：\nroot@gd-gz-gdlt-upf01:~# cd /home/upf_setup_CU5GC_UPF_5.0.218/integration/\nroot@gd-gz-gdlt-upf01::/home/upf_setup_CU5GC_UPF_5.0.218/integration# ./deploy.sh install\n之后通过下面命令检查新的UPF软件（如：CU5GC_UPF_5.0.218）是否安装成功。\nroot@gd-gz-gdlt-upf01:/home/upf_setup_CU5GC_UPF_5.0.218/integration# upfmgr info\nCurrent UPF Version is:   CU5GC_UPF_5.0.218\nclusterIP:            193.9.3.55\nNodeName:             gd-gz-gdlt-upf01\n说明：重新部署UPF完成后，正常情况下，UPF的各个接口IP地址和静态路由等配置，是存储在数据库的。因此，可以通过下面命令检查各个地址配置是否仍在：\nroot@gd-gz-gdlt-upf01:~# upfmgr ip qry\n如果检查发现UPF各个接口IP地址不存在，则需要参考 REF _Toc10483 \\r \\h 5.1.7 REF _Toc10483 \\h 检查upf 业务网络地址配置重新配置各个接口地址。",
+        "token_count": 380,
+        "block_ids": [
+          "manual-1edf23113651430f:b002950",
+          "manual-1edf23113651430f:b002951",
+          "manual-1edf23113651430f:b002952",
+          "manual-1edf23113651430f:b002953",
+          "manual-1edf23113651430f:b002954",
+          "manual-1edf23113651430f:b002955",
+          "manual-1edf23113651430f:b002957",
+          "manual-1edf23113651430f:b002959",
+          "manual-1edf23113651430f:b002960",
+          "manual-1edf23113651430f:b002961",
+          "manual-1edf23113651430f:b002962",
+          "manual-1edf23113651430f:b002963"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1763]",
+          "word/document.xml/body/p[1764]",
+          "word/document.xml/body/p[1765]",
+          "word/document.xml/body/p[1766]",
+          "word/document.xml/body/p[1767]",
+          "word/document.xml/body/p[1768]",
+          "word/document.xml/body/p[1770]",
+          "word/document.xml/body/p[1772]",
+          "word/document.xml/body/p[1773]",
+          "word/document.xml/body/p[1774]",
+          "word/document.xml/body/p[1775]",
+          "word/document.xml/body/p[1776]"
+        ],
+        "ordinal_start": 2950,
+        "ordinal_end": 2963,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q12",
+        "S3Q4",
+        "S5Q2",
+        "S6Q2",
+        "S11Q2",
+        "S12Q1"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，upfmgr 命令的原文写法是 `upfmgr ip qry`。",
+            "quote_ids": [
+              "S3Q4",
+              "S1Q12"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，upfmgr 命令的原文写法是 `upfmgr ip qry`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-611060638cb88f44e6bbdfc9",
+                "quote": "# upfmgr ip qry\n"
+              },
+              {
+                "chunk_id": "chunk-f9722da50bf4f3243b27226e",
+                "quote": "root@gd-gz-gdlt-upf01:~# upfmgr ip qry\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

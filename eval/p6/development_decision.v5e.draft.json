@@ -1,0 +1,17 @@
+{
+  "configuration_accepted": false,
+  "model_profile": "baseline",
+  "development_sha256": "616f25686441f1d7dd1712016dc046316069e28bb373954c43c9b96cdea7dd47",
+  "adjudication_path": "runs/p6-v4-v5e/review-intake-3db73a9c8b42/adjudication.json",
+  "reviewer": null,
+  "date": null,
+  "notes": "候选为2507 BF16/16K/并发1；已有同轮完整答案耗时和共享设备资源采样，当前CLI首字与预热后代表题重复测量仍未完成；Agent增益未获证实。此文件是未接受草案，不得用作freeze-config输入。",
+  "evidence": {
+    "development_summary": "runs/p6-v4-v5e/reviewed-dev/summary.json",
+    "development_adjudication_sha256": "1316319f2447975e0408416793a8d44b5efef2beb4bee4a2fce662e917e15f42",
+    "model_agent_decision": "runs/p6-v4-v5e/P6模型与Agent决策草案.md",
+    "performance_precheck": "runs/p6-v4-v5e/current_performance_precheck.json",
+    "cli_first_visible_blocked": "runs/p6-v4-v5e/cli-first-visible/blocked.json",
+    "current_resource_sample": "runs/p6-v4-v5e/resources.json"
+  }
+}

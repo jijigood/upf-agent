@@ -1,0 +1,74 @@
+{
+  "row": {
+    "id": "command-007",
+    "model": "baseline",
+    "evidence_sha256": "145b8bf0e80bd7006ddbd35054b66addfd2841830f5a293c7522dcee00a8d67a",
+    "elapsed_ms": 38515.27545740828,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 10999,
+      "completion_tokens_observed": 743,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": false,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’如何使用 upfmgr？只摘录原文并说明示例适用范围。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "not_run",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q7",
+        "S3Q5",
+        "S3Q6",
+        "S4Q4",
+        "S4Q8",
+        "S10Q3",
+        "S12Q2",
+        "S13Q2",
+        "S14Q2",
+        "S15Q1",
+        "S15Q3",
+        "S15Q6"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [
+      "formatted command differs from cited original",
+      "formatted command differs from cited original"
+    ],
+    "generation_attempts": 2,
+    "status": "failed",
+    "missing_information": [
+      "生成或引用校验失败，未发布未经验证的回答。"
+    ],
+    "error": "formatted command differs from cited original"
+  }
+}

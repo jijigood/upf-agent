@@ -1,0 +1,636 @@
+{
+  "query": "在‘检查upf 业务网络地址配置 / 检查N3N6接口及IP配置’中，upfmgr 命令的原文写法是什么？",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 32,
+  "reranked_candidates": 32,
+  "context_tokens": 1600,
+  "rankings": {
+    "exact": [],
+    "bm25": [
+      "chunk-5f39f6e176cd5d50da043a23",
+      "chunk-c47de373b7bf531a3080853d",
+      "chunk-2b204cd7383c816b26ba3e86",
+      "chunk-a3845a8d6d582d25a6c91232",
+      "chunk-a8f5ff09d0cf29498ce8c9d0",
+      "chunk-ee7cc9ff13c00222dee84783",
+      "chunk-cf3d3bb155ff05c4e0809464",
+      "chunk-8424f0e01f9e2107b966e55a",
+      "chunk-7186a25131ec3f73b59889b5",
+      "chunk-11a36e941df0bf71b559d52b",
+      "chunk-4065867d9b809a1a9ef3d21b",
+      "chunk-dc02ac600279f9e0cbe2b2fc",
+      "chunk-153f077d0acebd6573a938ab",
+      "chunk-2b949aa06d43c57aebfcea21",
+      "chunk-6357170e31e51f6c05b15696",
+      "chunk-5ec751e7281d9c8ea6ae8357",
+      "chunk-27ef72ccf4b8d59bfc1dffa3",
+      "chunk-c8dee8160e184631ec81f843",
+      "chunk-9341b8446fb8458e6bc96e24",
+      "chunk-f9722da50bf4f3243b27226e"
+    ],
+    "dense": [
+      "chunk-5f39f6e176cd5d50da043a23",
+      "chunk-c47de373b7bf531a3080853d",
+      "chunk-df5b58cb3e57cebf7145f57a",
+      "chunk-d4340ab4f0ea6f40f65fc77c",
+      "chunk-4065867d9b809a1a9ef3d21b",
+      "chunk-7186a25131ec3f73b59889b5",
+      "chunk-a8f5ff09d0cf29498ce8c9d0",
+      "chunk-cf3d3bb155ff05c4e0809464",
+      "chunk-4c21851d9deb5b668916c02a",
+      "chunk-08630c4b1f06ce898a787d1f",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-611060638cb88f44e6bbdfc9",
+      "chunk-8424f0e01f9e2107b966e55a",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-90b8a37655128bab4cb85c5a",
+      "chunk-23dbf77e259512f04b1b34ad",
+      "chunk-b586b6d6c78e913d75bfa0b2",
+      "chunk-c8dee8160e184631ec81f843"
+    ],
+    "rrf": [
+      "chunk-5f39f6e176cd5d50da043a23",
+      "chunk-c47de373b7bf531a3080853d",
+      "chunk-a8f5ff09d0cf29498ce8c9d0",
+      "chunk-7186a25131ec3f73b59889b5",
+      "chunk-cf3d3bb155ff05c4e0809464",
+      "chunk-4065867d9b809a1a9ef3d21b",
+      "chunk-8424f0e01f9e2107b966e55a",
+      "chunk-c8dee8160e184631ec81f843",
+      "chunk-2b204cd7383c816b26ba3e86",
+      "chunk-df5b58cb3e57cebf7145f57a",
+      "chunk-a3845a8d6d582d25a6c91232",
+      "chunk-d4340ab4f0ea6f40f65fc77c",
+      "chunk-ee7cc9ff13c00222dee84783",
+      "chunk-4c21851d9deb5b668916c02a",
+      "chunk-08630c4b1f06ce898a787d1f",
+      "chunk-11a36e941df0bf71b559d52b",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-611060638cb88f44e6bbdfc9",
+      "chunk-dc02ac600279f9e0cbe2b2fc",
+      "chunk-153f077d0acebd6573a938ab",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-2b949aa06d43c57aebfcea21",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-6357170e31e51f6c05b15696",
+      "chunk-5ec751e7281d9c8ea6ae8357",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-27ef72ccf4b8d59bfc1dffa3",
+      "chunk-90b8a37655128bab4cb85c5a",
+      "chunk-23dbf77e259512f04b1b34ad",
+      "chunk-9341b8446fb8458e6bc96e24",
+      "chunk-b586b6d6c78e913d75bfa0b2",
+      "chunk-f9722da50bf4f3243b27226e"
+    ],
+    "reranked": [
+      "chunk-f9722da50bf4f3243b27226e",
+      "chunk-4c21851d9deb5b668916c02a",
+      "chunk-611060638cb88f44e6bbdfc9",
+      "chunk-11a36e941df0bf71b559d52b",
+      "chunk-5f39f6e176cd5d50da043a23",
+      "chunk-c47de373b7bf531a3080853d",
+      "chunk-7186a25131ec3f73b59889b5",
+      "chunk-90b8a37655128bab4cb85c5a",
+      "chunk-6357170e31e51f6c05b15696",
+      "chunk-5ec751e7281d9c8ea6ae8357",
+      "chunk-dc02ac600279f9e0cbe2b2fc",
+      "chunk-a3845a8d6d582d25a6c91232",
+      "chunk-08630c4b1f06ce898a787d1f",
+      "chunk-153f077d0acebd6573a938ab",
+      "chunk-a8f5ff09d0cf29498ce8c9d0",
+      "chunk-9341b8446fb8458e6bc96e24",
+      "chunk-23dbf77e259512f04b1b34ad",
+      "chunk-b586b6d6c78e913d75bfa0b2",
+      "chunk-d4340ab4f0ea6f40f65fc77c",
+      "chunk-cf3d3bb155ff05c4e0809464",
+      "chunk-8424f0e01f9e2107b966e55a",
+      "chunk-df5b58cb3e57cebf7145f57a",
+      "chunk-c8dee8160e184631ec81f843",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-27ef72ccf4b8d59bfc1dffa3",
+      "chunk-ee7cc9ff13c00222dee84783",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-4065867d9b809a1a9ef3d21b",
+      "chunk-2b949aa06d43c57aebfcea21",
+      "chunk-2b204cd7383c816b26ba3e86"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-f9722da50bf4f3243b27226e",
+      "rrf_score": 0.0125,
+      "routes": {
+        "bm25": {
+          "rank": 20,
+          "raw_score": 12.494011878967285
+        }
+      },
+      "rerank_raw_logit_difference": 6.5,
+      "rerank_p_yes": 0.998498817743263,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "UPF软件升级更新",
+        "部署新的UPF软件"
+      ],
+      "parent_id": "section-1f02256364f9f8dcadec",
+      "kind": "prose",
+      "text": "UPF软件升级更新 / 部署新的UPF软件\n部署新的UPF软件\n进入到新发布的UPF版本（如：CU5GC_UPF_5.0.218）路径，执行install命令安装UPF。具体步骤如下：\nroot@gd-gz-gdlt-upf01:~# cd /home/upf_setup_CU5GC_UPF_5.0.218/integration/\nroot@gd-gz-gdlt-upf01::/home/upf_setup_CU5GC_UPF_5.0.218/integration# ./deploy.sh install\n之后通过下面命令检查新的UPF软件（如：CU5GC_UPF_5.0.218）是否安装成功。\nroot@gd-gz-gdlt-upf01:/home/upf_setup_CU5GC_UPF_5.0.218/integration# upfmgr info\nCurrent UPF Version is:   CU5GC_UPF_5.0.218\nclusterIP:            193.9.3.55\nNodeName:             gd-gz-gdlt-upf01\n说明：重新部署UPF完成后，正常情况下，UPF的各个接口IP地址和静态路由等配置，是存储在数据库的。因此，可以通过下面命令检查各个地址配置是否仍在：\nroot@gd-gz-gdlt-upf01:~# upfmgr ip qry\n如果检查发现UPF各个接口IP地址不存在，则需要参考 REF _Toc10483 \\r \\h 5.1.7 REF _Toc10483 \\h 检查upf 业务网络地址配置重新配置各个接口地址。",
+      "block_ids": [
+        "manual-1edf23113651430f:b002950",
+        "manual-1edf23113651430f:b002951",
+        "manual-1edf23113651430f:b002952",
+        "manual-1edf23113651430f:b002953",
+        "manual-1edf23113651430f:b002954",
+        "manual-1edf23113651430f:b002955",
+        "manual-1edf23113651430f:b002957",
+        "manual-1edf23113651430f:b002959",
+        "manual-1edf23113651430f:b002960",
+        "manual-1edf23113651430f:b002961",
+        "manual-1edf23113651430f:b002962",
+        "manual-1edf23113651430f:b002963"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1763]",
+        "word/document.xml/body/p[1764]",
+        "word/document.xml/body/p[1765]",
+        "word/document.xml/body/p[1766]",
+        "word/document.xml/body/p[1767]",
+        "word/document.xml/body/p[1768]",
+        "word/document.xml/body/p[1770]",
+        "word/document.xml/body/p[1772]",
+        "word/document.xml/body/p[1773]",
+        "word/document.xml/body/p[1774]",
+        "word/document.xml/body/p[1775]",
+        "word/document.xml/body/p[1776]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-4c21851d9deb5b668916c02a",
+      "rrf_score": 0.014492753623188406,
+      "routes": {
+        "dense": {
+          "rank": 9,
+          "raw_score": 0.7396150094614277
+        }
+      },
+      "rerank_raw_logit_difference": 5.75,
+      "rerank_p_yes": 0.9968273171575148,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "系统平台故障案例",
+        "upfmgr hc执行显示N3和N6的v4/v6地址都为空",
+        "解决办法"
+      ],
+      "parent_id": "section-8b36c9a625381139afe8",
+      "kind": "prose",
+      "text": "系统平台故障案例 / upfmgr hc执行显示N3和N6的v4/v6地址都为空 / 解决办法\n解决办法\nupfmgr ctrl登录37100去show config看N4/N3/N6的地址配置是否存在\n如果步骤1 show config配置不存在，则需要执行相关配置N3/N6业务口地址的MML命令。\n如果步骤1 show config配置存在，则执行命令：dpkg -l | grep expect 看看是否没有安装expect工具，如果expect和tcl-expect不存在，则需要把工具拷贝过来执行dpkg -i <name>命令安装。",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000300",
+        "manual-9f16bf8ca11723a2:b000301",
+        "manual-9f16bf8ca11723a2:b000302",
+        "manual-9f16bf8ca11723a2:b000303"
+      ],
+      "locators": [
+        "word/document.xml/body/p[75]",
+        "word/document.xml/body/p[76]",
+        "word/document.xml/body/p[77]",
+        "word/document.xml/body/p[78]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N3",
+        "N4",
+        "N6"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-611060638cb88f44e6bbdfc9",
+      "rrf_score": 0.013888888888888888,
+      "routes": {
+        "dense": {
+          "rank": 12,
+          "raw_score": 0.7271055785017183
+        }
+      },
+      "rerank_raw_logit_difference": 5.625,
+      "rerank_p_yes": 0.9964063974185798,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "检查所有接口地址"
+      ],
+      "parent_id": "section-5c4b984cb9fb9b794139",
+      "kind": "prose",
+      "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查所有接口地址\n检查所有接口地址\n方法1、使用脚本查询\n# upfmgr ip qry\n方法2、使用curll命令查询\n# curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: `kubectl get ingress -A |grep \"HOSTS\\|nma\"| awk '{for(i=1;i<=NF;i++){if($i==\"HOSTS\") {getline;print $i;}}}'`\" -X POST -d '{QRY UpfIntfAddrConfig;}' 127.0.0.1\n方法3、使用telnet登录UPFD POD 37100端口查询\n# upfmgr ctrl",
+      "block_ids": [
+        "manual-1edf23113651430f:b001959",
+        "manual-1edf23113651430f:b001960",
+        "manual-1edf23113651430f:b001961",
+        "manual-1edf23113651430f:b001962",
+        "manual-1edf23113651430f:b001963",
+        "manual-1edf23113651430f:b001964",
+        "manual-1edf23113651430f:b001965"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1055]",
+        "word/document.xml/body/p[1056]",
+        "word/document.xml/body/p[1057]",
+        "word/document.xml/body/p[1058]",
+        "word/document.xml/body/p[1059]",
+        "word/document.xml/body/p[1060]",
+        "word/document.xml/body/p[1061]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-b586b6d6c78e913d75bfa0b2",
+          "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查所有接口地址\nshow config",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b001966"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1062]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-11a36e941df0bf71b559d52b",
+      "rrf_score": 0.014285714285714285,
+      "routes": {
+        "bm25": {
+          "rank": 10,
+          "raw_score": 15.993194580078125
+        }
+      },
+      "rerank_raw_logit_difference": 5.1875,
+      "rerank_p_yes": 0.994445075296309,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "检查N4接口及IP配置"
+      ],
+      "parent_id": "section-6b4fa4c642e749c348d2",
+      "kind": "prose",
+      "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N4接口及IP配置\n检查N4接口及IP配置\n检查子接口模式下UPF N4网卡配置及连通性。\n进入upfd pod\n方法1、使用脚本\n# cd /home/upf_setup_CU5GC_UPF_5.0.210/integration/\n# .upfmgr bash\n方法2、使用kubectl命令\n# kubectl -n ns1-ee0e0 exec -it upfd-1-59c99d97f6-7rj22 -- bash",
+      "block_ids": [
+        "manual-1edf23113651430f:b001970",
+        "manual-1edf23113651430f:b001971",
+        "manual-1edf23113651430f:b001972",
+        "manual-1edf23113651430f:b001973",
+        "manual-1edf23113651430f:b001974",
+        "manual-1edf23113651430f:b001975",
+        "manual-1edf23113651430f:b001976",
+        "manual-1edf23113651430f:b001977"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1065]",
+        "word/document.xml/body/p[1066]",
+        "word/document.xml/body/p[1067]",
+        "word/document.xml/body/p[1068]",
+        "word/document.xml/body/p[1069]",
+        "word/document.xml/body/p[1070]",
+        "word/document.xml/body/p[1071]",
+        "word/document.xml/body/p[1072]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-c8dee8160e184631ec81f843",
+          "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N4接口及IP配置\ntelnet 100.64.0.237 37100",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b001978"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1073]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-5f39f6e176cd5d50da043a23",
+      "rrf_score": 0.03278688524590164,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 20.645544052124023
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.813501991706141
+        }
+      },
+      "rerank_raw_logit_difference": 4.8125,
+      "rerank_p_yes": 0.9919380084717284,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "检查N3N6接口及IP配置"
+      ],
+      "parent_id": "section-4074dc47431e95e1d96d",
+      "kind": "command",
+      "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nupfmgr data",
+      "block_ids": [
+        "manual-1edf23113651430f:b001999"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1092]"
+      ],
+      "command_id": "cmd-d9692bc23cd69787",
+      "command_family": "MML",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-a3845a8d6d582d25a6c91232",
+          "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\n或使用kubectl命令进入pod，并在pod中执行vppctl命令\n# kubectl exec -it -n ns1 upfd-1-594847d77d-7pblh -- './vppctl'\n查看VPP接口地址",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002000",
+            "manual-1edf23113651430f:b002001",
+            "manual-1edf23113651430f:b002002"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1093]",
+            "word/document.xml/body/p[1094]",
+            "word/document.xml/body/p[1095]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-c47de373b7bf531a3080853d",
+      "rrf_score": 0.03225806451612903,
+      "routes": {
+        "bm25": {
+          "rank": 2,
+          "raw_score": 17.804954528808594
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.7744336857339229
+        }
+      },
+      "rerank_raw_logit_difference": 4.625,
+      "rerank_p_yes": 0.9902915235185259,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "检查N3N6接口及IP配置"
+      ],
+      "parent_id": "section-4074dc47431e95e1d96d",
+      "kind": "prose",
+      "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\n检查N3N6接口及IP配置\n查看N3 N6 网口配置，需要访问upfd pod中的vpp CLI 命令行界面。\n首先进入upfd pod中\n直接使用脚本\n# cd /home/upf_setup_CU5GC_UPF_5.0.210/integration/",
+      "block_ids": [
+        "manual-1edf23113651430f:b001994",
+        "manual-1edf23113651430f:b001995",
+        "manual-1edf23113651430f:b001996",
+        "manual-1edf23113651430f:b001997",
+        "manual-1edf23113651430f:b001998"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1087]",
+        "word/document.xml/body/p[1088]",
+        "word/document.xml/body/p[1089]",
+        "word/document.xml/body/p[1090]",
+        "word/document.xml/body/p[1091]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N3",
+        "N6"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-7186a25131ec3f73b59889b5",
+      "rrf_score": 0.02964426877470356,
+      "routes": {
+        "bm25": {
+          "rank": 9,
+          "raw_score": 16.032865524291992
+        },
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.7476458991951189
+        }
+      },
+      "rerank_raw_logit_difference": 4.125,
+      "rerank_p_yes": 0.9840936082881853,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "检查N3N6接口及IP配置"
+      ],
+      "parent_id": "section-4074dc47431e95e1d96d",
+      "kind": "command",
+      "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nUPF# show interface addr",
+      "block_ids": [
+        "manual-1edf23113651430f:b002003"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1096]"
+      ],
+      "command_id": "cmd-35dca7543f116ef7",
+      "command_family": "CLI",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-27ef72ccf4b8d59bfc1dffa3",
+          "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查N3N6接口及IP配置\nBondEthernet0 (up):\n  L3 100.10.1.50/24\n  L3 2303::3:50/64\nBondEthernet1 (up):\n  L3 174.100.100.50/24\n  L3 2606::6:50/64\nlocal0 (dn):\nport17/0/0 (up):\nport17/0/1 (up):\nport4b/0/0 (up):\nport4b/0/1 (up):\n示例输出截图：\n在vpp中测试业务地址连通性，该地址为交换机上的网关地址",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002004",
+            "manual-1edf23113651430f:b002005",
+            "manual-1edf23113651430f:b002006",
+            "manual-1edf23113651430f:b002007",
+            "manual-1edf23113651430f:b002008",
+            "manual-1edf23113651430f:b002009",
+            "manual-1edf23113651430f:b002010",
+            "manual-1edf23113651430f:b002011",
+            "manual-1edf23113651430f:b002012",
+            "manual-1edf23113651430f:b002013",
+            "manual-1edf23113651430f:b002014",
+            "manual-1edf23113651430f:b002015",
+            "manual-1edf23113651430f:b002018"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1097]",
+            "word/document.xml/body/p[1098]",
+            "word/document.xml/body/p[1099]",
+            "word/document.xml/body/p[1100]",
+            "word/document.xml/body/p[1101]",
+            "word/document.xml/body/p[1102]",
+            "word/document.xml/body/p[1103]",
+            "word/document.xml/body/p[1104]",
+            "word/document.xml/body/p[1105]",
+            "word/document.xml/body/p[1106]",
+            "word/document.xml/body/p[1107]",
+            "word/document.xml/body/p[1108]",
+            "word/document.xml/body/p[1110]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+      "rrf_score": 0.012987012987012988,
+      "routes": {
+        "dense": {
+          "rank": 17,
+          "raw_score": 0.7116500221865416
+        }
+      },
+      "rerank_raw_logit_difference": 3.9375,
+      "rerank_p_yes": 0.9808759632491112,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "配置UPF各个接口地址"
+      ],
+      "parent_id": "section-e84ad9708a71d319b94f",
+      "kind": "prose",
+      "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n配置UPF各个接口地址\n若网管未分配IP地址时可以手动配置，一般通过CURL命令配置接口地址。具体命令格式为：\n为接口配置N4 地址",
+      "block_ids": [
+        "manual-1edf23113651430f:b001936",
+        "manual-1edf23113651430f:b001937",
+        "manual-1edf23113651430f:b001938"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1033]",
+        "word/document.xml/body/p[1034]",
+        "word/document.xml/body/p[1035]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-21dccc114177dcd35158f743",
+          "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"2\", InterfaceType = \"N4\", IPAddressType = \"IPv6\", IPv6Address = \"2404::4:50\", IPv6PrefixLen = 64, VRFEnable = \"OFF\";}' 127.0.0.1",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b001939"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1036]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

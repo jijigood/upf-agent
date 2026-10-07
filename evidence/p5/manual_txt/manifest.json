@@ -1,0 +1,34 @@
+{
+  "task": {
+    "run_id": "c5188363e85441eeb01bc889ed7d0603",
+    "question": "网管如何下载实时告警？",
+    "task_type": "other",
+    "attachment_ids": [],
+    "product": "5GC网管",
+    "version": "V1.3",
+    "device_ids": [],
+    "time_window": null,
+    "interactive": false,
+    "log_generation": null,
+    "topology_generation": null,
+    "manual_generation": "c61e9796eead2610cfd4",
+    "model_profile": "baseline",
+    "retrieval_device": "cuda:1",
+    "mode": "agent",
+    "session_id": null,
+    "budget": {
+      "max_rounds": 3,
+      "max_tool_calls": 8,
+      "max_model_calls": 8,
+      "timeout_seconds": 180.0
+    },
+    "execution_fingerprint": "2306578f9f913fcc34c09b2438eeffea890a6860c3e8fd0e40a06c8d31655687"
+  },
+  "pipeline_version": "p5-agent-v1",
+  "pending_nodes": [],
+  "no_equipment_changes": true,
+  "framework": {
+    "langgraph": "1.2.12",
+    "sqlite_checkpointer": "3.1.1"
+  }
+}

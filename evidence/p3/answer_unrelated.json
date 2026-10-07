@@ -1,0 +1,36 @@
+{
+  "question": "苹果蛋糕需要多少克面粉？",
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "product": "UPF",
+  "version": "5.0",
+  "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "claims": [],
+  "citations": [],
+  "warnings": [
+    "P2 命令与截图人工复核尚未完成；引用存在不等于现场适用。"
+  ],
+  "support_check": "not_run",
+  "validation_errors": [],
+  "generation_attempts": 1,
+  "audit": {
+    "selection": {
+      "status": "missing_source",
+      "claims": [],
+      "missing_information": [
+        "问题涉及苹果蛋糕的面粉用量，但提供的证据均为UPF产品相关技术文档，无任何与食谱或食材用量相关的内容，无法提供回答。"
+      ]
+    },
+    "draft": {
+      "status": "missing_source",
+      "claims": [],
+      "missing_information": [
+        "问题涉及苹果蛋糕的面粉用量，但提供的证据均为UPF产品相关技术文档，无任何与食谱或食材用量相关的内容，无法提供回答。"
+      ]
+    }
+  },
+  "status": "missing_source",
+  "missing_information": [
+    "问题涉及苹果蛋糕的面粉用量，但提供的证据均为UPF产品相关技术文档，无任何与食谱或食材用量相关的内容，无法提供回答。"
+  ]
+}

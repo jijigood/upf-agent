@@ -1,0 +1,8 @@
+{
+  "runner_pid": 3452583,
+  "server_pid": 3514386,
+  "reason": "continue progressing cold load beyond the original 300-second startup window",
+  "started_utc_epoch": 1790612062.950971,
+  "health_ready": true,
+  "ended_utc_epoch": 1790612218.6576765
+}

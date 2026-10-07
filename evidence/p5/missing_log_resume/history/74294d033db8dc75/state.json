@@ -1,0 +1,63 @@
+{
+  "task": {
+    "run_id": "eeee0f955f754d21a82e487eabec8488",
+    "question": "统计日志消息数量",
+    "task_type": "diagnose",
+    "attachment_ids": [],
+    "product": null,
+    "version": null,
+    "device_ids": [],
+    "time_window": null,
+    "interactive": false,
+    "log_generation": null,
+    "topology_generation": null,
+    "manual_generation": "c61e9796eead2610cfd4",
+    "model_profile": "baseline",
+    "retrieval_device": "cuda:1",
+    "mode": "deterministic",
+    "session_id": null,
+    "budget": {
+      "max_rounds": 3,
+      "max_tool_calls": 8,
+      "max_model_calls": 8,
+      "timeout_seconds": 180.0
+    },
+    "execution_fingerprint": "2306578f9f913fcc34c09b2438eeffea890a6860c3e8fd0e40a06c8d31655687"
+  },
+  "route": "diagnose",
+  "receipts": [],
+  "evidence": [],
+  "facts": [],
+  "gaps": [
+    "没有真实拓扑，无法确认实际链路/交换机端口与传播路径。"
+  ],
+  "warnings": [],
+  "questions": [
+    "请先导入日志并提供已登记的 log_generation。"
+  ],
+  "candidates": [],
+  "actions": [],
+  "rounds": 0,
+  "repairs": 0,
+  "degraded": false,
+  "terminal": false,
+  "resume_count": 0,
+  "user_answers": [],
+  "report": {
+    "run_id": "eeee0f955f754d21a82e487eabec8488",
+    "status": "need_input",
+    "facts": [],
+    "hypotheses": [],
+    "supporting_evidence_ids": [],
+    "opposing_evidence_ids": [],
+    "missing_information": [
+      "没有真实拓扑，无法确认实际链路/交换机端口与传播路径。",
+      "请先导入日志并提供已登记的 log_generation。"
+    ],
+    "recommendations": [
+      "按报告来源位置复核原文，并补充列出的现场资料；建议不自动执行。"
+    ],
+    "model_id": null,
+    "corpus_generation": "c61e9796eead2610cfd4"
+  }
+}

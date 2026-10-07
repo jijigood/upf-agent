@@ -1,0 +1,20 @@
+{
+  "pipeline_identity": "c32bde84383e0b6319657d740474f29da28198721a050a8fd622f57377fbe789",
+  "previous_pipeline_identity": "8a7a200cef9912c9eeb61bfdaac72bf86f9d3843e58753b2ee49f7257ab6fd69",
+  "changes": [
+    "formal preflight before heldout reservation and freeze binding",
+    "source fences excluded from human signature fields",
+    "default new business suite for future development"
+  ],
+  "inference_and_generation_benchmark_modules_unchanged": {
+    "agent_worker.py": "c46704c258745522b5b54633144259dbaddfc8e046f9075c5084011af23a85e6",
+    "models.py": "7842a4ad08b440aa82c676c035562938d68e1360ba7df80a3cebb5a852a4fd81",
+    "p3_answer.py": "4b3cf12c1cfd07b7621cf0c2a03e7b621f46532797cdc062dbb29a0e7a5253b4",
+    "p3_search.py": "f031ad393df9cc0fac8684dd5fa4492e34b23f5f025f72efedb5720625b4f0ba",
+    "p6_evaluation.py": "8662b0565dce95539a73d55f8645f2de60d19d994dcb784a7c2f48c1df747220",
+    "p6_agents.py": "d2ad6e53b74ebce0224a0a7d219a8ccbed515f61089cdcf612dcf0515d77a660",
+    "p6_resources.py": "13ba69c52796dfee1f9f4cfcdc740daa9dae4702e67dd57f2e39c1d4ce128b2f"
+  },
+  "phase": "after AB/parameters/agent/full-RAG; before target generation-only matrix",
+  "as_run_snapshot": "evidence/p6/archive/formal-preflight"
+}

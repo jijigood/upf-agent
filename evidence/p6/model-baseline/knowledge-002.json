@@ -1,0 +1,325 @@
+{
+  "row": {
+    "id": "knowledge-002",
+    "model": "baseline",
+    "evidence_sha256": "26eec66aefd90003caa5ee2c08e52f3ca84e2cba8b3d00c5dce6f551bd7efc95",
+    "elapsed_ms": 23411.93083487451,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 7537,
+      "completion_tokens_observed": 435,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘物理机安装操作系统并配置 / 安装Ubuntu操作系统 / 配置网口地址’解释说明和关键字段，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "按照网络规划，配置网口地址，以配置eno1的静态地址为例：\n\nGateway：必须设置\n\nName servers：必须设置，在离线环境没有DNS服务器时，该地址配置为Gateway地址",
+        "citations": [
+          {
+            "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+            "quote": "按照网络规划，配置网口地址，以配置eno1的静态地址为例：\n"
+          },
+          {
+            "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+            "quote": "Gateway：必须设置\n"
+          },
+          {
+            "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+            "quote": "Name servers：必须设置，在离线环境没有DNS服务器时，该地址配置为Gateway地址"
+          }
+        ]
+      },
+      {
+        "text": "局点现场获取到新服务器之后，需要先对服务器进行新物理机预装配置，预装配置包括新物理机接线，U盘启动盘制作，配置RAID阵列，配置IPMI地址。进一步地，安装Ubuntu22.04.2操作系统并配置。\n对于全新的物理机服务器，在安装Ubuntu 22.04.2操作系统之前，需要先配置RAID阵列，配置IPMI地址等预装机配置。下面逐一阐述每个步骤：",
+        "citations": [
+          {
+            "chunk_id": "chunk-3912dfe744eb7e6aa847727f",
+            "quote": "局点现场获取到新服务器之后，需要先对服务器进行新物理机预装配置，预装配置包括新物理机接线，U盘启动盘制作，配置RAID阵列，配置IPMI地址。进一步地，安装Ubuntu22.04.2操作系统并配置。"
+          },
+          {
+            "chunk_id": "chunk-d973015bdd2cb66d8e222e59",
+            "quote": "对于全新的物理机服务器，在安装Ubuntu 22.04.2操作系统之前，需要先配置RAID阵列，配置IPMI地址等预装机配置。下面逐一阐述每个步骤："
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "安装Ubuntu操作系统",
+          "配置网口地址"
+        ],
+        "parent_id": "section-5a92fa412edb46d34881",
+        "kind": "prose",
+        "text": "物理机安装操作系统并配置 / 安装Ubuntu操作系统 / 配置网口地址\n配置网口地址\n说明：本步骤并非必须配置，之后可以通过修改netplan的配置文件实完成。需要跟进现网实际情况进行配置，示例仅给出参考：\n按照网络规划，配置网口地址，以配置eno1的静态地址为例：\n参数说明：\nGateway：必须设置\nName servers：必须设置，在离线环境没有DNS服务器时，该地址配置为Gateway地址",
+        "token_count": 104,
+        "block_ids": [
+          "manual-1edf23113651430f:b000783",
+          "manual-1edf23113651430f:b000784",
+          "manual-1edf23113651430f:b000785",
+          "manual-1edf23113651430f:b000786",
+          "manual-1edf23113651430f:b000787",
+          "manual-1edf23113651430f:b000788"
+        ],
+        "locators": [
+          "word/document.xml/body/p[302]",
+          "word/document.xml/body/p[303]",
+          "word/document.xml/body/p[304]",
+          "word/document.xml/body/p[305]",
+          "word/document.xml/body/p[306]",
+          "word/document.xml/body/p[307]"
+        ],
+        "ordinal_start": 783,
+        "ordinal_end": 788,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-3912dfe744eb7e6aa847727f",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统"
+        ],
+        "parent_id": "section-7236819f67a051feae06",
+        "kind": "prose",
+        "text": "安装并配置操作系统\n安装并配置操作系统\n局点现场获取到新服务器之后，需要先对服务器进行新物理机预装配置，预装配置包括新物理机接线，U盘启动盘制作，配置RAID阵列，配置IPMI地址。进一步地，安装Ubuntu22.04.2操作系统并配置。",
+        "token_count": 74,
+        "block_ids": [
+          "manual-1edf23113651430f:b000630",
+          "manual-1edf23113651430f:b000631"
+        ],
+        "locators": [
+          "word/document.xml/body/p[191]",
+          "word/document.xml/body/p[192]"
+        ],
+        "ordinal_start": 630,
+        "ordinal_end": 631,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-d973015bdd2cb66d8e222e59",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "新物理机预装配置"
+        ],
+        "parent_id": "section-2bece3b6483584e13c21",
+        "kind": "prose",
+        "text": "安装并配置操作系统 / 新物理机预装配置\n新物理机预装配置\n对于全新的物理机服务器，在安装Ubuntu 22.04.2操作系统之前，需要先配置RAID阵列，配置IPMI地址等预装机配置。下面逐一阐述每个步骤：",
+        "token_count": 62,
+        "block_ids": [
+          "manual-1edf23113651430f:b000632",
+          "manual-1edf23113651430f:b000633"
+        ],
+        "locators": [
+          "word/document.xml/body/p[193]",
+          "word/document.xml/body/p[194]"
+        ],
+        "ordinal_start": 632,
+        "ordinal_end": 633,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q1",
+        "S2Q2",
+        "S2Q3",
+        "S2Q4",
+        "S2Q5",
+        "S2Q6",
+        "S2Q7",
+        "S3Q1",
+        "S3Q2",
+        "S3Q3",
+        "S3Q4",
+        "S3Q5"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "配置网口地址时需按照网络规划设置IP地址，以配置eno1的静态地址为例，Gateway和Name servers为必须设置项，离线环境无DNS服务器时Name servers可配置为Gateway地址。",
+            "quote_ids": [
+              "S2Q4",
+              "S2Q6",
+              "S2Q7"
+            ]
+          },
+          {
+            "text": "在非Bond模式下，每个物理网口独立作为UPF接口与交换机通信，配置示例中ens16f0用于K8s地址，ens16f1、ens16f2、ens1f0、ens1f1、ens3f0、ens3f1均配置为dhcp4: no，表示不使用DHCP获取IP。",
+            "quote_ids": [
+              "S3Q10",
+              "S3Q11",
+              "S3Q12",
+              "S3Q13"
+            ]
+          },
+          {
+            "text": "物理机安装Ubuntu操作系统前需完成新物理机预装配置，包括接线、U盘启动盘制作、配置RAID阵列及IPMI地址。",
+            "quote_ids": [
+              "S1Q3",
+              "S5Q3"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "配置网口地址时需按照网络规划设置IP地址，以配置eno1的静态地址为例，Gateway和Name servers为必须设置项，离线环境无DNS服务器时Name servers可配置为Gateway地址。",
+            "citations": [
+              {
+                "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+                "quote": "按照网络规划，配置网口地址，以配置eno1的静态地址为例：\n"
+              },
+              {
+                "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+                "quote": "Gateway：必须设置\n"
+              },
+              {
+                "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+                "quote": "Name servers：必须设置，在离线环境没有DNS服务器时，该地址配置为Gateway地址"
+              }
+            ]
+          },
+          {
+            "text": "在非Bond模式下，每个物理网口独立作为UPF接口与交换机通信，配置示例中ens16f0用于K8s地址，ens16f1、ens16f2、ens1f0、ens1f1、ens3f0、ens3f1均配置为dhcp4: no，表示不使用DHCP获取IP。",
+            "citations": [
+              {
+                "chunk_id": "chunk-e12d9bf36df803c8b7738d7c",
+                "quote": "        addresses:\n"
+              },
+              {
+                "chunk_id": "chunk-e12d9bf36df803c8b7738d7c",
+                "quote": "        - 114.114.114.114\n"
+              },
+              {
+                "chunk_id": "chunk-e12d9bf36df803c8b7738d7c",
+                "quote": "        - 172.16.100.1\n"
+              },
+              {
+                "chunk_id": "chunk-e12d9bf36df803c8b7738d7c",
+                "quote": "        search: []\n"
+              }
+            ]
+          },
+          {
+            "text": "物理机安装Ubuntu操作系统前需完成新物理机预装配置，包括接线、U盘启动盘制作、配置RAID阵列及IPMI地址。",
+            "citations": [
+              {
+                "chunk_id": "chunk-3912dfe744eb7e6aa847727f",
+                "quote": "局点现场获取到新服务器之后，需要先对服务器进行新物理机预装配置，预装配置包括新物理机接线，U盘启动盘制作，配置RAID阵列，配置IPMI地址。进一步地，安装Ubuntu22.04.2操作系统并配置。"
+              },
+              {
+                "chunk_id": "chunk-d973015bdd2cb66d8e222e59",
+                "quote": "对于全新的物理机服务器，在安装Ubuntu 22.04.2操作系统之前，需要先配置RAID阵列，配置IPMI地址等预装机配置。下面逐一阐述每个步骤："
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        false,
+        true
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "部分陈述未通过自动证据支持检查，已移除。"
+    ]
+  }
+}

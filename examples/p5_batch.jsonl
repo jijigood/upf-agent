@@ -1,0 +1,4 @@
+{"question":"统计日志消息数量","task_type":"diagnose","log_generation":"a6f18ac81a18aa2125fa","mode":"deterministic"}
+{"question":"当前UPF设备CPU温度是多少？","task_type":"network_status"}
+not-json-this-is-an-explicit-failure-fixture
+{"question":"分析这次故障日志的原因","task_type":"diagnose"}

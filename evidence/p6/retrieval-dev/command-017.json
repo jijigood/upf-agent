@@ -1,0 +1,541 @@
+{
+  "query": "在‘逻辑口报文信息统计 / 统计N4口报文信息’中，tcpdump 命令的原文写法是什么？",
+  "product": "UPF",
+  "version": null,
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 31,
+  "reranked_candidates": 31,
+  "context_tokens": 537,
+  "rankings": {
+    "exact": [],
+    "bm25": [
+      "chunk-7fdde4d9a3c3a42036bffd3d",
+      "chunk-cd469b95520a9da4928f8fa7",
+      "chunk-67083f7c25d8e6bb5ac216ee",
+      "chunk-4abc9674d69f914509d63d07",
+      "chunk-d0c887c77602608cd8564210",
+      "chunk-5cca60bd0707dc50b64408dd",
+      "chunk-02af9d6c3db3829804315799",
+      "chunk-abe3fb88e22ab7df7bd1bf6a",
+      "chunk-2a86717984bc2563904e0f10",
+      "chunk-835a471f00cc9e6a2ac976f2",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-e6f2de49b4548626e1ea62af",
+      "chunk-3941266deaac792a5ea329db",
+      "chunk-16fee487f5b1d994bf3d1d2b",
+      "chunk-bbf13cab6aca8034ef1d180e",
+      "chunk-643ef3546ff26ffc2ff33d60",
+      "chunk-da79f1572c8b981ab1f34446",
+      "chunk-ac5b2cbf45905a965e6d592f"
+    ],
+    "dense": [
+      "chunk-7fdde4d9a3c3a42036bffd3d",
+      "chunk-cd469b95520a9da4928f8fa7",
+      "chunk-67083f7c25d8e6bb5ac216ee",
+      "chunk-2a86717984bc2563904e0f10",
+      "chunk-d0c887c77602608cd8564210",
+      "chunk-5cca60bd0707dc50b64408dd",
+      "chunk-02af9d6c3db3829804315799",
+      "chunk-4abc9674d69f914509d63d07",
+      "chunk-abe3fb88e22ab7df7bd1bf6a",
+      "chunk-1a48b47560e5aec2eb0b8ce6",
+      "chunk-a1f2f45426bc95aca44473ab",
+      "chunk-3f05c538ebe4ef1a69c2878b",
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-74ed7e4644572a4ce6e24e90",
+      "chunk-cc2b6ade4761a6ac87e3321f",
+      "chunk-3d1e35446073fb46992c0d86",
+      "chunk-1a7770ae009e8ef364200ef8",
+      "chunk-a5fe4f06446c7d0b912e0a86"
+    ],
+    "rrf": [
+      "chunk-7fdde4d9a3c3a42036bffd3d",
+      "chunk-cd469b95520a9da4928f8fa7",
+      "chunk-67083f7c25d8e6bb5ac216ee",
+      "chunk-d0c887c77602608cd8564210",
+      "chunk-4abc9674d69f914509d63d07",
+      "chunk-5cca60bd0707dc50b64408dd",
+      "chunk-2a86717984bc2563904e0f10",
+      "chunk-02af9d6c3db3829804315799",
+      "chunk-abe3fb88e22ab7df7bd1bf6a",
+      "chunk-1a48b47560e5aec2eb0b8ce6",
+      "chunk-835a471f00cc9e6a2ac976f2",
+      "chunk-a1f2f45426bc95aca44473ab",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-3f05c538ebe4ef1a69c2878b",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e6f2de49b4548626e1ea62af",
+      "chunk-3941266deaac792a5ea329db",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-16fee487f5b1d994bf3d1d2b",
+      "chunk-74ed7e4644572a4ce6e24e90",
+      "chunk-bbf13cab6aca8034ef1d180e",
+      "chunk-cc2b6ade4761a6ac87e3321f",
+      "chunk-3d1e35446073fb46992c0d86",
+      "chunk-643ef3546ff26ffc2ff33d60",
+      "chunk-1a7770ae009e8ef364200ef8",
+      "chunk-da79f1572c8b981ab1f34446",
+      "chunk-a5fe4f06446c7d0b912e0a86",
+      "chunk-ac5b2cbf45905a965e6d592f"
+    ],
+    "reranked": [
+      "chunk-7fdde4d9a3c3a42036bffd3d",
+      "chunk-d0c887c77602608cd8564210",
+      "chunk-cd469b95520a9da4928f8fa7",
+      "chunk-4abc9674d69f914509d63d07",
+      "chunk-2a86717984bc2563904e0f10",
+      "chunk-67083f7c25d8e6bb5ac216ee",
+      "chunk-bbf13cab6aca8034ef1d180e",
+      "chunk-02af9d6c3db3829804315799",
+      "chunk-3d1e35446073fb46992c0d86",
+      "chunk-5cca60bd0707dc50b64408dd",
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-1a48b47560e5aec2eb0b8ce6",
+      "chunk-abe3fb88e22ab7df7bd1bf6a",
+      "chunk-16fee487f5b1d994bf3d1d2b",
+      "chunk-a1f2f45426bc95aca44473ab",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-3941266deaac792a5ea329db",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-a5fe4f06446c7d0b912e0a86",
+      "chunk-74ed7e4644572a4ce6e24e90",
+      "chunk-da79f1572c8b981ab1f34446",
+      "chunk-1a7770ae009e8ef364200ef8",
+      "chunk-ac5b2cbf45905a965e6d592f",
+      "chunk-cc2b6ade4761a6ac87e3321f",
+      "chunk-3f05c538ebe4ef1a69c2878b",
+      "chunk-835a471f00cc9e6a2ac976f2",
+      "chunk-e6f2de49b4548626e1ea62af",
+      "chunk-643ef3546ff26ffc2ff33d60"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-7fdde4d9a3c3a42036bffd3d",
+      "rrf_score": 0.03278688524590164,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 29.80233383178711
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.8334981851862369
+        }
+      },
+      "rerank_raw_logit_difference": 5.9375,
+      "rerank_p_yes": 0.9973683260251155,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "逻辑口报文信息统计",
+        "统计N4口报文信息"
+      ],
+      "parent_id": "section-b046170188e546647016",
+      "kind": "command",
+      "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N4口报文信息\ntcpdump -i {N4口逻辑ID} port 8805 -vv -w {数据包名}.pcap",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000891"
+      ],
+      "locators": [
+        "word/document.xml/body/p[296]"
+      ],
+      "command_id": "cmd-94b517f0ad9d259f",
+      "command_family": "other",
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-d0c887c77602608cd8564210",
+      "rrf_score": 0.03076923076923077,
+      "routes": {
+        "bm25": {
+          "rank": 5,
+          "raw_score": 20.25290298461914
+        },
+        "dense": {
+          "rank": 5,
+          "raw_score": 0.6630098671656645
+        }
+      },
+      "rerank_raw_logit_difference": 3.75,
+      "rerank_p_yes": 0.9770226300899744,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "逻辑口报文信息统计",
+        "统计管理口报文信息"
+      ],
+      "parent_id": "section-d3c5f16f49123f1febeb",
+      "kind": "prose",
+      "text": "业务信息监控 / 逻辑口报文信息统计 / 统计管理口报文信息\n统计管理口报文信息\n登录UPF物理机，打开终端\n查看管理IP在哪个端口\n选择该端口，运行如下命令抓包\ntupdump -i {管理口逻辑ID} -vv -w {数据包名}.pcap\n一段时间后，键入Ctrl+C停止抓包",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000881",
+        "manual-341440f7dd103f51:b000882",
+        "manual-341440f7dd103f51:b000883",
+        "manual-341440f7dd103f51:b000884",
+        "manual-341440f7dd103f51:b000885",
+        "manual-341440f7dd103f51:b000886"
+      ],
+      "locators": [
+        "word/document.xml/body/p[286]",
+        "word/document.xml/body/p[287]",
+        "word/document.xml/body/p[288]",
+        "word/document.xml/body/p[289]",
+        "word/document.xml/body/p[290]",
+        "word/document.xml/body/p[291]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-cd469b95520a9da4928f8fa7",
+      "rrf_score": 0.03225806451612903,
+      "routes": {
+        "bm25": {
+          "rank": 2,
+          "raw_score": 23.423410415649414
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.7358672070395169
+        }
+      },
+      "rerank_raw_logit_difference": 2.25,
+      "rerank_p_yes": 0.9046505351008906,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "逻辑口报文信息统计",
+        "统计N4口报文信息"
+      ],
+      "parent_id": "section-b046170188e546647016",
+      "kind": "prose",
+      "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N4口报文信息\n统计N4口报文信息\n登录UPF物理机，打开终端\n查看N4IP在哪个端口\n选择该端口，运行如下命令抓包",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000887",
+        "manual-341440f7dd103f51:b000888",
+        "manual-341440f7dd103f51:b000889",
+        "manual-341440f7dd103f51:b000890"
+      ],
+      "locators": [
+        "word/document.xml/body/p[292]",
+        "word/document.xml/body/p[293]",
+        "word/document.xml/body/p[294]",
+        "word/document.xml/body/p[295]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-4abc9674d69f914509d63d07",
+      "rrf_score": 0.030330882352941176,
+      "routes": {
+        "bm25": {
+          "rank": 4,
+          "raw_score": 20.471895217895508
+        },
+        "dense": {
+          "rank": 8,
+          "raw_score": 0.6144573845834386
+        }
+      },
+      "rerank_raw_logit_difference": 1.0,
+      "rerank_p_yes": 0.7310585786300049,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "逻辑口报文信息统计"
+      ],
+      "parent_id": "section-3679b95ee981b7e86caa",
+      "kind": "prose",
+      "text": "产品监控 / 业务信息监控 / 逻辑口报文信息统计\n逻辑口报文信息统计",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000878"
+      ],
+      "locators": [
+        "word/document.xml/body/p[283]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-2a86717984bc2563904e0f10",
+      "rrf_score": 0.030117753623188408,
+      "routes": {
+        "bm25": {
+          "rank": 9,
+          "raw_score": 16.86157989501953
+        },
+        "dense": {
+          "rank": 4,
+          "raw_score": 0.6689057599397842
+        }
+      },
+      "rerank_raw_logit_difference": 0.25,
+      "rerank_p_yes": 0.5621765008857981,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "逻辑口报文信息统计",
+        "统计N3、N6、N9口报文信息"
+      ],
+      "parent_id": "section-369936b858c78d2ebf1a",
+      "kind": "prose",
+      "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N3、N6、N9口报文信息\n输入如下命令，打开抓包开关，开始抓包\npcap dispatch trace on max 100000 file {数据包名}.pcap buffer-trace dpdk-input 100000\n一段时间之后，输入如下命令，停止抓包\npcap dispatch trace off",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000900",
+        "manual-341440f7dd103f51:b000902",
+        "manual-341440f7dd103f51:b000903",
+        "manual-341440f7dd103f51:b000904"
+      ],
+      "locators": [
+        "word/document.xml/body/p[304]",
+        "word/document.xml/body/p[306]",
+        "word/document.xml/body/p[307]",
+        "word/document.xml/body/p[308]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N3",
+        "N6"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-5cca60bd0707dc50b64408dd",
+          "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N3、N6、N9口报文信息\ntelnet 0 5002",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000897"
+          ],
+          "locators": [
+            "word/document.xml/body/p[302]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-67083f7c25d8e6bb5ac216ee",
+      "rrf_score": 0.031746031746031744,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 20.698368072509766
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.7355974519832582
+        }
+      },
+      "rerank_raw_logit_difference": -0.5,
+      "rerank_p_yes": 0.37754066879814546,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "逻辑口报文信息统计",
+        "统计N4口报文信息"
+      ],
+      "parent_id": "section-b046170188e546647016",
+      "kind": "prose",
+      "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N4口报文信息\n一段时间后，键入Ctrl+C停止抓包",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000892"
+      ],
+      "locators": [
+        "word/document.xml/body/p[297]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-bbf13cab6aca8034ef1d180e",
+      "rrf_score": 0.012987012987012988,
+      "routes": {
+        "bm25": {
+          "rank": 17,
+          "raw_score": 7.283247947692871
+        }
+      },
+      "rerank_raw_logit_difference": -1.0,
+      "rerank_p_yes": 0.2689414213699951,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "偶联建立失败：SMF open upf开关",
+        "信息收集"
+      ],
+      "parent_id": "section-60d6c998896609d32258",
+      "kind": "prose",
+      "text": "业务故障案例 / 偶联建立失败：SMF open upf开关 / 信息收集\n信息收集\n抓包。抓取N4口PFCP信令包。\n37100 show cp-node, show pfcp-stats",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000346",
+        "manual-9f16bf8ca11723a2:b000347",
+        "manual-9f16bf8ca11723a2:b000348"
+      ],
+      "locators": [
+        "word/document.xml/body/p[115]",
+        "word/document.xml/body/p[116]",
+        "word/document.xml/body/p[117]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4",
+        "pfcp",
+        "PFCP",
+        "SMF"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-02af9d6c3db3829804315799",
+      "rrf_score": 0.029850746268656716,
+      "routes": {
+        "bm25": {
+          "rank": 7,
+          "raw_score": 18.853967666625977
+        },
+        "dense": {
+          "rank": 7,
+          "raw_score": 0.6267566360015626
+        }
+      },
+      "rerank_raw_logit_difference": -1.75,
+      "rerank_p_yes": 0.1480471980316895,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "逻辑口报文信息统计",
+        "统计N3、N6、N9口报文信息"
+      ],
+      "parent_id": "section-369936b858c78d2ebf1a",
+      "kind": "prose",
+      "text": "业务信息监控 / 逻辑口报文信息统计 / 统计N3、N6、N9口报文信息\n统计N3、N6、N9口报文信息\n前言：N3、N6、N9接口被dpdk接管，不受系统内核管理，需要进入VPP调试台进行操作\n登录UPF物理机，打开终端\n输入如下命令，进入VPP调试台，如下图所示",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000893",
+        "manual-341440f7dd103f51:b000894",
+        "manual-341440f7dd103f51:b000895",
+        "manual-341440f7dd103f51:b000896"
+      ],
+      "locators": [
+        "word/document.xml/body/p[298]",
+        "word/document.xml/body/p[299]",
+        "word/document.xml/body/p[300]",
+        "word/document.xml/body/p[301]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N3",
+        "N6"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    }
+  ],
+  "warnings": []
+}

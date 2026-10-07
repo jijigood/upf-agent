@@ -1,0 +1,382 @@
+{
+  "row": {
+    "id": "knowledge-010",
+    "model": "target",
+    "evidence_sha256": "1f44912cec36a02f28c5bea449d204e4850cd93de0ef2efa84202975c393e836",
+    "elapsed_ms": 56700.789286289364,
+    "usage": {
+      "requests": 4,
+      "prompt_tokens_observed": 11171,
+      "completion_tokens_observed": 796,
+      "usage_responses": 4
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址’解释说明和关键字段，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [
+      {
+        "text": "若网管未分配IP地址时可以手动配置，一般通过CURL命令配置接口地址。具体命令格式为：\n\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+        "citations": [
+          {
+            "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+            "quote": "若网管未分配IP地址时可以手动配置，一般通过CURL命令配置接口地址。具体命令格式为：\n"
+          },
+          {
+            "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+            "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+          }
+        ]
+      },
+      {
+        "text": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+        "citations": [
+          {
+            "chunk_id": "chunk-e8683a340f2175d73a20ff1b",
+            "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+          }
+        ]
+      },
+      {
+        "text": "curl 命令配置完成后，需要重启UPFD 和UPFM 2个POD，具体命令为：\n\n#kubectl delete pod upfm-1-b8fc7f485-hw47c -n ns1\n\n#kubectl delete pod upfd-1-594847d77d-jg6ch -n ns1\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+            "quote": "curl 命令配置完成后，需要重启UPFD 和UPFM 2个POD，具体命令为：\n"
+          },
+          {
+            "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+            "quote": "#kubectl delete pod upfm-1-b8fc7f485-hw47c -n ns1\n"
+          },
+          {
+            "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+            "quote": "#kubectl delete pod upfd-1-594847d77d-jg6ch -n ns1\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n配置UPF各个接口地址\n若网管未分配IP地址时可以手动配置，一般通过CURL命令配置接口地址。具体命令格式为：\n为接口配置N4 地址",
+        "token_count": 70,
+        "block_ids": [
+          "manual-1edf23113651430f:b001936",
+          "manual-1edf23113651430f:b001937",
+          "manual-1edf23113651430f:b001938"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1033]",
+          "word/document.xml/body/p[1034]",
+          "word/document.xml/body/p[1035]"
+        ],
+        "ordinal_start": 1936,
+        "ordinal_end": 1938,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N4"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+        "token_count": 157,
+        "block_ids": [
+          "manual-1edf23113651430f:b001944"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1041]"
+        ],
+        "ordinal_start": 1944,
+        "ordinal_end": 1944,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "N6"
+        ],
+        "command_id": "cmd-8a9d5a785f046c34",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-e8683a340f2175d73a20ff1b",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+        "token_count": 154,
+        "block_ids": [
+          "manual-1edf23113651430f:b001942"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1039]"
+        ],
+        "ordinal_start": 1942,
+        "ordinal_end": 1942,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "N3"
+        ],
+        "command_id": "cmd-7df83c46314b80e3",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n说明：\n其中ns1是UPF对应的namespace；\nupf-1.com是通过kubectl get ingress -A命令查询的结果。截图如下：\n具体的ADD/DEL/QRY命令则可以参考《中国联通5G专网UPF5.0产品使用手册》、\ncurl 命令配置完成后，需要重启UPFD 和UPFM 2个POD，具体命令为：\n#kubectl delete pod upfm-1-b8fc7f485-hw47c -n ns1\n#kubectl delete pod upfd-1-594847d77d-jg6ch -n ns1\n或者执行下面命令重启UPFD 和UPFM 2个POD。\n# upfmgr restart all\n重启UPFD POD，查看接口IP配置是否生效。",
+        "token_count": 200,
+        "block_ids": [
+          "manual-1edf23113651430f:b001947",
+          "manual-1edf23113651430f:b001948",
+          "manual-1edf23113651430f:b001949",
+          "manual-1edf23113651430f:b001952",
+          "manual-1edf23113651430f:b001953",
+          "manual-1edf23113651430f:b001954",
+          "manual-1edf23113651430f:b001955",
+          "manual-1edf23113651430f:b001956",
+          "manual-1edf23113651430f:b001957",
+          "manual-1edf23113651430f:b001958"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1044]",
+          "word/document.xml/body/p[1045]",
+          "word/document.xml/body/p[1046]",
+          "word/document.xml/body/p[1048]",
+          "word/document.xml/body/p[1049]",
+          "word/document.xml/body/p[1050]",
+          "word/document.xml/body/p[1051]",
+          "word/document.xml/body/p[1052]",
+          "word/document.xml/body/p[1053]",
+          "word/document.xml/body/p[1054]"
+        ],
+        "ordinal_start": 1947,
+        "ordinal_end": 1958,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q2",
+        "S3Q3",
+        "S3Q4",
+        "S3Q5",
+        "S3Q6",
+        "S3Q7",
+        "S3Q8",
+        "S3Q10",
+        "S3Q11",
+        "S4Q2",
+        "S6Q2",
+        "S7Q3"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [
+      "formatted command differs from cited original"
+    ],
+    "generation_attempts": 2,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "若网管未分配IP地址，可通过CURL命令手动配置接口地址，例如配置N6地址的命令为：`curl -H ",
+            "quote_ids": [
+              "S7Q3",
+              "S1Q2"
+            ]
+          },
+          {
+            "text": "配置命令中的关键字段包括InterfaceId、InterfaceType、IPAddressType、IPv4Address、IPv4Mask、VRFEnable等，例如配置N3地址的命令为：`curl -H ",
+            "quote_ids": [
+              "S4Q2"
+            ]
+          },
+          {
+            "text": "curl命令配置完成后，需要重启UPFD和UPFM 2个POD，具体命令为：`#kubectl delete pod upfm-1-b8fc7f485-hw47c -n ns1` 和 `#kubectl delete pod upfd-1-594847d77d-jg6ch -n ns1`。",
+            "quote_ids": [
+              "S3Q6",
+              "S3Q7",
+              "S3Q8"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "若网管未分配IP地址，可通过CURL命令手动配置接口地址，例如配置N6地址的命令为：`curl -H ",
+            "citations": [
+              {
+                "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+                "quote": "若网管未分配IP地址时可以手动配置，一般通过CURL命令配置接口地址。具体命令格式为：\n"
+              },
+              {
+                "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+                "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+              }
+            ]
+          },
+          {
+            "text": "配置命令中的关键字段包括InterfaceId、InterfaceType、IPAddressType、IPv4Address、IPv4Mask、VRFEnable等，例如配置N3地址的命令为：`curl -H ",
+            "citations": [
+              {
+                "chunk_id": "chunk-e8683a340f2175d73a20ff1b",
+                "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+              }
+            ]
+          },
+          {
+            "text": "curl命令配置完成后，需要重启UPFD和UPFM 2个POD，具体命令为：`#kubectl delete pod upfm-1-b8fc7f485-hw47c -n ns1` 和 `#kubectl delete pod upfd-1-594847d77d-jg6ch -n ns1`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+                "quote": "curl 命令配置完成后，需要重启UPFD 和UPFM 2个POD，具体命令为：\n"
+              },
+              {
+                "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+                "quote": "#kubectl delete pod upfm-1-b8fc7f485-hw47c -n ns1\n"
+              },
+              {
+                "chunk_id": "chunk-8af46eaef600a97d5dc3c07c",
+                "quote": "#kubectl delete pod upfd-1-594847d77d-jg6ch -n ns1\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

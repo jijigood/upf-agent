@@ -1,0 +1,23 @@
+{
+  "status": "frozen_after_reviewed_development",
+  "suite_sha256": "da075d6654bd661872aef8f7dda2d5038e39c4450dc8c911b3612c743ba24a6b",
+  "pipeline_identity": "db0de94505d5786666323c9b76229ae2850d5a26a13fe63eab9413dadfa5a27b",
+  "model_profile": "baseline",
+  "server_configuration": {
+    "model_path": "/home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507",
+    "served_name": "Qwen3-30B-A3B-Instruct-2507",
+    "context": 16384,
+    "max_num_seqs": 1,
+    "dtype": "bfloat16",
+    "gpu_memory_utilization": 0.85,
+    "tool_parser": "hermes",
+    "reasoning_parser": null,
+    "eager": true
+  },
+  "development_sha256": "87d73ec30e8882ce8af9868c722ec3e13661e3d43f2d40e35c86ccb9d8b6f410",
+  "decision_sha256": "fcb36e68b0d9ee96d78b7d7ef32057aaebadc2b5da123658873a2a30b21c2430",
+  "adjudication_sha256": "e2ef86af6a688b0845858815b6a70a1b509817cb45a4402eacb338be7a7b16aa",
+  "retrieval_gate_pass": true,
+  "frozen_at": "2026-10-06T14:56:01.540672+00:00",
+  "final_semantic_support_must_be_reviewed": true
+}

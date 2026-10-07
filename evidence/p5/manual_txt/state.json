@@ -1,0 +1,698 @@
+{
+  "task": {
+    "run_id": "c5188363e85441eeb01bc889ed7d0603",
+    "question": "网管如何下载实时告警？",
+    "task_type": "other",
+    "attachment_ids": [],
+    "product": "5GC网管",
+    "version": "V1.3",
+    "device_ids": [],
+    "time_window": null,
+    "interactive": false,
+    "log_generation": null,
+    "topology_generation": null,
+    "manual_generation": "c61e9796eead2610cfd4",
+    "model_profile": "baseline",
+    "retrieval_device": "cuda:1",
+    "mode": "agent",
+    "session_id": null,
+    "budget": {
+      "max_rounds": 3,
+      "max_tool_calls": 8,
+      "max_model_calls": 8,
+      "timeout_seconds": 180.0
+    },
+    "execution_fingerprint": "2306578f9f913fcc34c09b2438eeffea890a6860c3e8fd0e40a06c8d31655687"
+  },
+  "route": "manual",
+  "receipts": [
+    {
+      "key": "ef2ce7357a197243d435f7f833736ac0a2ce5127e3c52c1ea84449f8bd3a4e0f",
+      "call": {
+        "name": "search_manual",
+        "arguments": {
+          "query": "网管如何下载实时告警？",
+          "product": "5GC网管",
+          "version": "V1.3",
+          "top_k": 6
+        }
+      },
+      "packet": {
+        "result": {
+          "status": "completed",
+          "data": {
+            "retrieval": {
+              "query": "网管如何下载实时告警？",
+              "product": "5GC网管",
+              "version": "V1.3",
+              "index_generation": "c61e9796eead2610cfd4",
+              "p2_generation": "c05fe621e37ebdb1c663",
+              "route_counts": {
+                "exact": 0,
+                "bm25": 20,
+                "dense": 20
+              },
+              "fused_candidates": 24,
+              "reranked_candidates": 24,
+              "context_tokens": 971,
+              "evidence": [
+                {
+                  "chunk_id": "chunk-8155920f16768dca1cb872d8",
+                  "rrf_score": 0.03278688524590164,
+                  "routes": {
+                    "bm25": {
+                      "rank": 1,
+                      "raw_score": 7.653105735778809
+                    },
+                    "dense": {
+                      "rank": 1,
+                      "raw_score": 0.7475437266592928
+                    }
+                  },
+                  "rerank_raw_logit_difference": 7.6875,
+                  "rerank_p_yes": 0.999541687099365,
+                  "source_id": "manual-98aa0505da555a15",
+                  "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+                  "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+                  "product": "5GC网管",
+                  "version": "V1.3",
+                  "section_path": [
+                    "7 故障管理（Fault Management）",
+                    "7.1 实时告警",
+                    "7.1.3 告警下载"
+                  ],
+                  "parent_id": "section-ec59c4407654d89c2ae9",
+                  "kind": "prose",
+                  "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.3 告警下载\n7.1.3 告警下载\n路径：Alarm-->Active Alarm\n步骤：点击“Download”-->选择打开或保存下载的excel文件。\n图7.1.3-1 告警下载示例",
+                  "block_ids": [
+                    "manual-98aa0505da555a15:b001431",
+                    "manual-98aa0505da555a15:b001432",
+                    "manual-98aa0505da555a15:b001433",
+                    "manual-98aa0505da555a15:b001436"
+                  ],
+                  "locators": [
+                    "word/document.xml/body/p[851]",
+                    "word/document.xml/body/p[852]",
+                    "word/document.xml/body/p[853]",
+                    "word/document.xml/body/p[855]"
+                  ],
+                  "command_id": null,
+                  "command_family": null,
+                  "interface_tags": [],
+                  "table_id": null,
+                  "table_cells": [],
+                  "quality_flags": [],
+                  "applicability_note": null,
+                  "neighbors": []
+                },
+                {
+                  "chunk_id": "chunk-0d555a667d8458f08194b6fa",
+                  "rrf_score": 0.02844551282051282,
+                  "routes": {
+                    "bm25": {
+                      "rank": 18,
+                      "raw_score": 3.680307626724243
+                    },
+                    "dense": {
+                      "rank": 4,
+                      "raw_score": 0.6242441617782328
+                    }
+                  },
+                  "rerank_raw_logit_difference": 3.875,
+                  "rerank_p_yes": 0.9796676466573412,
+                  "source_id": "manual-98aa0505da555a15",
+                  "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+                  "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+                  "product": "5GC网管",
+                  "version": "V1.3",
+                  "section_path": [
+                    "7 故障管理（Fault Management）",
+                    "7.1 实时告警",
+                    "7.1.1 告警查询"
+                  ],
+                  "parent_id": "section-314d5be1655ed1806639",
+                  "kind": "prose",
+                  "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n7.1.1 告警查询\n路径：Alarm-->Active Alarm\n步骤：在各个下拉框中选择选项-->点击“Query Alarm”-->点击“Refresh”，查询接果将在列表显示。\n图7.1.1-1 Active Alarm页面\n配置项及说明：",
+                  "block_ids": [
+                    "manual-98aa0505da555a15:b001368",
+                    "manual-98aa0505da555a15:b001369",
+                    "manual-98aa0505da555a15:b001370",
+                    "manual-98aa0505da555a15:b001373",
+                    "manual-98aa0505da555a15:b001374"
+                  ],
+                  "locators": [
+                    "word/document.xml/body/p[839]",
+                    "word/document.xml/body/p[840]",
+                    "word/document.xml/body/p[841]",
+                    "word/document.xml/body/p[843]",
+                    "word/document.xml/body/p[844]"
+                  ],
+                  "command_id": null,
+                  "command_family": null,
+                  "interface_tags": [],
+                  "table_id": null,
+                  "table_cells": [],
+                  "quality_flags": [],
+                  "applicability_note": null,
+                  "neighbors": [
+                    {
+                      "chunk_id": "chunk-a014cd03bfc802738d470de9",
+                      "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF Type | 说明：NF类型\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Region | 说明：区域\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Point | 说明：局点\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF ID | 说明：NF ID\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Select Alarm Level | 说明：选择告警等级",
+                      "truncated": true,
+                      "block_ids": [
+                        "manual-98aa0505da555a15:b001381",
+                        "manual-98aa0505da555a15:b001384",
+                        "manual-98aa0505da555a15:b001387",
+                        "manual-98aa0505da555a15:b001390",
+                        "manual-98aa0505da555a15:b001393",
+                        "manual-98aa0505da555a15:b001396",
+                        "manual-98aa0505da555a15:b001399",
+                        "manual-98aa0505da555a15:b001402",
+                        "manual-98aa0505da555a15:b001405",
+                        "manual-98aa0505da555a15:b001408",
+                        "manual-98aa0505da555a15:b001411",
+                        "manual-98aa0505da555a15:b001414"
+                      ],
+                      "locators": [
+                        "word/document.xml/body/tbl[22]/tr[2]",
+                        "word/document.xml/body/tbl[22]/tr[3]",
+                        "word/document.xml/body/tbl[22]/tr[4]",
+                        "word/document.xml/body/tbl[22]/tr[5]",
+                        "word/document.xml/body/tbl[22]/tr[6]",
+                        "word/document.xml/body/tbl[22]/tr[7]",
+                        "word/document.xml/body/tbl[22]/tr[8]",
+                        "word/document.xml/body/tbl[22]/tr[9]",
+                        "word/document.xml/body/tbl[22]/tr[10]",
+                        "word/document.xml/body/tbl[22]/tr[11]",
+                        "word/document.xml/body/tbl[22]/tr[12]",
+                        "word/document.xml/body/tbl[22]/tr[13]"
+                      ],
+                      "source_id": "manual-98aa0505da555a15"
+                    }
+                  ]
+                },
+                {
+                  "chunk_id": "chunk-e4853f57767ab702e0cb20e7",
+                  "rrf_score": 0.029411764705882353,
+                  "routes": {
+                    "bm25": {
+                      "rank": 8,
+                      "raw_score": 4.408721923828125
+                    },
+                    "dense": {
+                      "rank": 8,
+                      "raw_score": 0.5938992486550908
+                    }
+                  },
+                  "rerank_raw_logit_difference": 3.625,
+                  "rerank_p_yes": 0.9740426428022031,
+                  "source_id": "manual-98aa0505da555a15",
+                  "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+                  "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+                  "product": "5GC网管",
+                  "version": "V1.3",
+                  "section_path": [
+                    "7 故障管理（Fault Management）",
+                    "7.1 实时告警",
+                    "7.1.7 刷新告警"
+                  ],
+                  "parent_id": "section-774d189010d35807861b",
+                  "kind": "prose",
+                  "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.7 刷新告警\n7.1.7 刷新告警\n路径：Alarm-->Active Alarm\n步骤：点击按钮刷新告警页面。\n图7.1.7-1 告警刷新示例",
+                  "block_ids": [
+                    "manual-98aa0505da555a15:b001455",
+                    "manual-98aa0505da555a15:b001456",
+                    "manual-98aa0505da555a15:b001457",
+                    "manual-98aa0505da555a15:b001460"
+                  ],
+                  "locators": [
+                    "word/document.xml/body/p[871]",
+                    "word/document.xml/body/p[872]",
+                    "word/document.xml/body/p[873]",
+                    "word/document.xml/body/p[875]"
+                  ],
+                  "command_id": null,
+                  "command_family": null,
+                  "interface_tags": [],
+                  "table_id": null,
+                  "table_cells": [],
+                  "quality_flags": [],
+                  "applicability_note": null,
+                  "neighbors": []
+                },
+                {
+                  "chunk_id": "chunk-e419fcbf253aa038abee8bcf",
+                  "rrf_score": 0.03225806451612903,
+                  "routes": {
+                    "bm25": {
+                      "rank": 2,
+                      "raw_score": 5.779642581939697
+                    },
+                    "dense": {
+                      "rank": 2,
+                      "raw_score": 0.6434700237392252
+                    }
+                  },
+                  "rerank_raw_logit_difference": 3.4375,
+                  "rerank_p_yes": 0.9688561694652216,
+                  "source_id": "manual-98aa0505da555a15",
+                  "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+                  "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+                  "product": "5GC网管",
+                  "version": "V1.3",
+                  "section_path": [
+                    "7 故障管理（Fault Management）",
+                    "7.2 历史告警",
+                    "7.2.3 历史告警下载"
+                  ],
+                  "parent_id": "section-710fd076f227ac4cc09e",
+                  "kind": "prose",
+                  "text": "7 故障管理（Fault Management） / 7.2 历史告警 / 7.2.3 历史告警下载\n7.2.3 历史告警下载\n路径：Alarm-->History Alarm\n步骤：点击“Download”-->选择打开或保存下载的excel文件。\n图7.2.3-1  Histroy Alarm下载",
+                  "block_ids": [
+                    "manual-98aa0505da555a15:b001568",
+                    "manual-98aa0505da555a15:b001569",
+                    "manual-98aa0505da555a15:b001570",
+                    "manual-98aa0505da555a15:b001573"
+                  ],
+                  "locators": [
+                    "word/document.xml/body/p[918]",
+                    "word/document.xml/body/p[919]",
+                    "word/document.xml/body/p[920]",
+                    "word/document.xml/body/p[922]"
+                  ],
+                  "command_id": null,
+                  "command_family": null,
+                  "interface_tags": [],
+                  "table_id": null,
+                  "table_cells": [],
+                  "quality_flags": [],
+                  "applicability_note": null,
+                  "neighbors": []
+                },
+                {
+                  "chunk_id": "chunk-e4229ea5c61e1e102ac02218",
+                  "rrf_score": 0.028814262023217248,
+                  "routes": {
+                    "bm25": {
+                      "rank": 7,
+                      "raw_score": 4.580091953277588
+                    },
+                    "dense": {
+                      "rank": 12,
+                      "raw_score": 0.5735135739946057
+                    }
+                  },
+                  "rerank_raw_logit_difference": 3.125,
+                  "rerank_p_yes": 0.9579122720843811,
+                  "source_id": "manual-98aa0505da555a15",
+                  "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+                  "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+                  "product": "5GC网管",
+                  "version": "V1.3",
+                  "section_path": [
+                    "7 故障管理（Fault Management）"
+                  ],
+                  "parent_id": "section-56b161b70c309562c2c1",
+                  "kind": "prose",
+                  "text": "7 故障管理（Fault Management）\n7 故障管理（Fault Management）\n说明：提供了实时告警，历史告警，告警汇总视图，告警文件管理，告警存储时间，告警产生时间，CPU阈值设置几大功能。",
+                  "block_ids": [
+                    "manual-98aa0505da555a15:b001365",
+                    "manual-98aa0505da555a15:b001366"
+                  ],
+                  "locators": [
+                    "word/document.xml/body/p[836]",
+                    "word/document.xml/body/p[837]"
+                  ],
+                  "command_id": null,
+                  "command_family": null,
+                  "interface_tags": [],
+                  "table_id": null,
+                  "table_cells": [],
+                  "quality_flags": [],
+                  "applicability_note": null,
+                  "neighbors": []
+                },
+                {
+                  "chunk_id": "chunk-de099c30517a742759b73e73",
+                  "rrf_score": 0.028370221327967807,
+                  "routes": {
+                    "bm25": {
+                      "rank": 11,
+                      "raw_score": 4.25647497177124
+                    },
+                    "dense": {
+                      "rank": 10,
+                      "raw_score": 0.5818631022254187
+                    }
+                  },
+                  "rerank_raw_logit_difference": 2.4375,
+                  "rerank_p_yes": 0.9196425311777929,
+                  "source_id": "manual-98aa0505da555a15",
+                  "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+                  "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+                  "product": "5GC网管",
+                  "version": "V1.3",
+                  "section_path": [
+                    "7 故障管理（Fault Management）",
+                    "7.1 实时告警",
+                    "7.1.8 告警同步"
+                  ],
+                  "parent_id": "section-e203deac6ae5f4262e1c",
+                  "kind": "prose",
+                  "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.8 告警同步\n7.1.8 告警同步\n路径：Alarm-->Active Alarm\n步骤：点击同步按钮-->提示同步成功。\n图7.1.8-1 告警同步示例",
+                  "block_ids": [
+                    "manual-98aa0505da555a15:b001461",
+                    "manual-98aa0505da555a15:b001462",
+                    "manual-98aa0505da555a15:b001463",
+                    "manual-98aa0505da555a15:b001466"
+                  ],
+                  "locators": [
+                    "word/document.xml/body/p[876]",
+                    "word/document.xml/body/p[877]",
+                    "word/document.xml/body/p[878]",
+                    "word/document.xml/body/p[880]"
+                  ],
+                  "command_id": null,
+                  "command_family": null,
+                  "interface_tags": [],
+                  "table_id": null,
+                  "table_cells": [],
+                  "quality_flags": [],
+                  "applicability_note": null,
+                  "neighbors": []
+                }
+              ],
+              "warnings": []
+            },
+            "_task_scope": "f5d384508efa10eca3a5f6a6560d9f346c4ccb40bc21dc0a02ffc6a5901ac3f3"
+          },
+          "evidence_ids": [
+            "c5188363e85441eeb01bc889ed7d0603:chunk-8155920f16768dca1cb872d8",
+            "c5188363e85441eeb01bc889ed7d0603:chunk-0d555a667d8458f08194b6fa",
+            "c5188363e85441eeb01bc889ed7d0603:chunk-a014cd03bfc802738d470de9",
+            "c5188363e85441eeb01bc889ed7d0603:chunk-e4853f57767ab702e0cb20e7",
+            "c5188363e85441eeb01bc889ed7d0603:chunk-e419fcbf253aa038abee8bcf",
+            "c5188363e85441eeb01bc889ed7d0603:chunk-e4229ea5c61e1e102ac02218",
+            "c5188363e85441eeb01bc889ed7d0603:chunk-de099c30517a742759b73e73"
+          ],
+          "warnings": [
+            "检索命中是候选原文，不等于已经回答问题。"
+          ],
+          "elapsed_ms": 0
+        },
+        "evidence": [
+          {
+            "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-8155920f16768dca1cb872d8",
+            "source_id": "manual-98aa0505da555a15",
+            "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+            "locator": "word/document.xml/body/p[851], word/document.xml/body/p[852], word/document.xml/body/p[853], word/document.xml/body/p[855]",
+            "kind": "manual",
+            "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.3 告警下载\n7.1.3 告警下载\n路径：Alarm-->Active Alarm\n步骤：点击“Download”-->选择打开或保存下载的excel文件。\n图7.1.3-1 告警下载示例",
+            "tool_version": "p5-tools-v1",
+            "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+            "native_id": "chunk-8155920f16768dca1cb872d8",
+            "metadata": {
+              "product": "5GC网管",
+              "version": "V1.3",
+              "generation": "c61e9796eead2610cfd4"
+            }
+          },
+          {
+            "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-0d555a667d8458f08194b6fa",
+            "source_id": "manual-98aa0505da555a15",
+            "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+            "locator": "word/document.xml/body/p[839], word/document.xml/body/p[840], word/document.xml/body/p[841], word/document.xml/body/p[843], word/document.xml/body/p[844]",
+            "kind": "manual",
+            "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n7.1.1 告警查询\n路径：Alarm-->Active Alarm\n步骤：在各个下拉框中选择选项-->点击“Query Alarm”-->点击“Refresh”，查询接果将在列表显示。\n图7.1.1-1 Active Alarm页面\n配置项及说明：",
+            "tool_version": "p5-tools-v1",
+            "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+            "native_id": "chunk-0d555a667d8458f08194b6fa",
+            "metadata": {
+              "product": "5GC网管",
+              "version": "V1.3",
+              "generation": "c61e9796eead2610cfd4"
+            }
+          },
+          {
+            "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-a014cd03bfc802738d470de9",
+            "source_id": "manual-98aa0505da555a15",
+            "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+            "locator": "word/document.xml/body/tbl[22]/tr[2], word/document.xml/body/tbl[22]/tr[3], word/document.xml/body/tbl[22]/tr[4], word/document.xml/body/tbl[22]/tr[5], word/document.xml/body/tbl[22]/tr[6], word/document.xml/body/tbl[22]/tr[7], word/document.xml/body/tbl[22]/tr[8], word/document.xml/body/tbl[22]/tr[9], word/document.xml/body/tbl[22]/tr[10], word/document.xml/body/tbl[22]/tr[11], word/document.xml/body/tbl[22]/tr[12], word/document.xml/body/tbl[22]/tr[13]",
+            "kind": "manual",
+            "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF Type | 说明：NF类型\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Region | 说明：区域\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Point | 说明：局点\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF ID | 说明：NF ID\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Select Alarm Level | 说明：选择告警等级",
+            "tool_version": "p5-tools-v1",
+            "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+            "native_id": "chunk-a014cd03bfc802738d470de9",
+            "metadata": {
+              "product": "5GC网管",
+              "version": "V1.3",
+              "generation": "c61e9796eead2610cfd4"
+            }
+          },
+          {
+            "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-e4853f57767ab702e0cb20e7",
+            "source_id": "manual-98aa0505da555a15",
+            "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+            "locator": "word/document.xml/body/p[871], word/document.xml/body/p[872], word/document.xml/body/p[873], word/document.xml/body/p[875]",
+            "kind": "manual",
+            "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.7 刷新告警\n7.1.7 刷新告警\n路径：Alarm-->Active Alarm\n步骤：点击按钮刷新告警页面。\n图7.1.7-1 告警刷新示例",
+            "tool_version": "p5-tools-v1",
+            "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+            "native_id": "chunk-e4853f57767ab702e0cb20e7",
+            "metadata": {
+              "product": "5GC网管",
+              "version": "V1.3",
+              "generation": "c61e9796eead2610cfd4"
+            }
+          },
+          {
+            "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-e419fcbf253aa038abee8bcf",
+            "source_id": "manual-98aa0505da555a15",
+            "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+            "locator": "word/document.xml/body/p[918], word/document.xml/body/p[919], word/document.xml/body/p[920], word/document.xml/body/p[922]",
+            "kind": "manual",
+            "excerpt": "7 故障管理（Fault Management） / 7.2 历史告警 / 7.2.3 历史告警下载\n7.2.3 历史告警下载\n路径：Alarm-->History Alarm\n步骤：点击“Download”-->选择打开或保存下载的excel文件。\n图7.2.3-1  Histroy Alarm下载",
+            "tool_version": "p5-tools-v1",
+            "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+            "native_id": "chunk-e419fcbf253aa038abee8bcf",
+            "metadata": {
+              "product": "5GC网管",
+              "version": "V1.3",
+              "generation": "c61e9796eead2610cfd4"
+            }
+          },
+          {
+            "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-e4229ea5c61e1e102ac02218",
+            "source_id": "manual-98aa0505da555a15",
+            "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+            "locator": "word/document.xml/body/p[836], word/document.xml/body/p[837]",
+            "kind": "manual",
+            "excerpt": "7 故障管理（Fault Management）\n7 故障管理（Fault Management）\n说明：提供了实时告警，历史告警，告警汇总视图，告警文件管理，告警存储时间，告警产生时间，CPU阈值设置几大功能。",
+            "tool_version": "p5-tools-v1",
+            "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+            "native_id": "chunk-e4229ea5c61e1e102ac02218",
+            "metadata": {
+              "product": "5GC网管",
+              "version": "V1.3",
+              "generation": "c61e9796eead2610cfd4"
+            }
+          },
+          {
+            "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-de099c30517a742759b73e73",
+            "source_id": "manual-98aa0505da555a15",
+            "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+            "locator": "word/document.xml/body/p[876], word/document.xml/body/p[877], word/document.xml/body/p[878], word/document.xml/body/p[880]",
+            "kind": "manual",
+            "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.8 告警同步\n7.1.8 告警同步\n路径：Alarm-->Active Alarm\n步骤：点击同步按钮-->提示同步成功。\n图7.1.8-1 告警同步示例",
+            "tool_version": "p5-tools-v1",
+            "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+            "native_id": "chunk-de099c30517a742759b73e73",
+            "metadata": {
+              "product": "5GC网管",
+              "version": "V1.3",
+              "generation": "c61e9796eead2610cfd4"
+            }
+          }
+        ],
+        "facts": [],
+        "gaps": [],
+        "error_code": null,
+        "retryable": false
+      },
+      "cached": false
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-8155920f16768dca1cb872d8",
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "locator": "word/document.xml/body/p[851], word/document.xml/body/p[852], word/document.xml/body/p[853], word/document.xml/body/p[855]",
+      "kind": "manual",
+      "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.3 告警下载\n7.1.3 告警下载\n路径：Alarm-->Active Alarm\n步骤：点击“Download”-->选择打开或保存下载的excel文件。\n图7.1.3-1 告警下载示例",
+      "tool_version": "p5-tools-v1",
+      "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+      "native_id": "chunk-8155920f16768dca1cb872d8",
+      "metadata": {
+        "product": "5GC网管",
+        "version": "V1.3",
+        "generation": "c61e9796eead2610cfd4"
+      }
+    },
+    {
+      "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-0d555a667d8458f08194b6fa",
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "locator": "word/document.xml/body/p[839], word/document.xml/body/p[840], word/document.xml/body/p[841], word/document.xml/body/p[843], word/document.xml/body/p[844]",
+      "kind": "manual",
+      "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n7.1.1 告警查询\n路径：Alarm-->Active Alarm\n步骤：在各个下拉框中选择选项-->点击“Query Alarm”-->点击“Refresh”，查询接果将在列表显示。\n图7.1.1-1 Active Alarm页面\n配置项及说明：",
+      "tool_version": "p5-tools-v1",
+      "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+      "native_id": "chunk-0d555a667d8458f08194b6fa",
+      "metadata": {
+        "product": "5GC网管",
+        "version": "V1.3",
+        "generation": "c61e9796eead2610cfd4"
+      }
+    },
+    {
+      "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-a014cd03bfc802738d470de9",
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "locator": "word/document.xml/body/tbl[22]/tr[2], word/document.xml/body/tbl[22]/tr[3], word/document.xml/body/tbl[22]/tr[4], word/document.xml/body/tbl[22]/tr[5], word/document.xml/body/tbl[22]/tr[6], word/document.xml/body/tbl[22]/tr[7], word/document.xml/body/tbl[22]/tr[8], word/document.xml/body/tbl[22]/tr[9], word/document.xml/body/tbl[22]/tr[10], word/document.xml/body/tbl[22]/tr[11], word/document.xml/body/tbl[22]/tr[12], word/document.xml/body/tbl[22]/tr[13]",
+      "kind": "manual",
+      "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF Type | 说明：NF类型\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Region | 说明：区域\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Point | 说明：局点\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF ID | 说明：NF ID\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Select Alarm Level | 说明：选择告警等级",
+      "tool_version": "p5-tools-v1",
+      "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+      "native_id": "chunk-a014cd03bfc802738d470de9",
+      "metadata": {
+        "product": "5GC网管",
+        "version": "V1.3",
+        "generation": "c61e9796eead2610cfd4"
+      }
+    },
+    {
+      "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-e4853f57767ab702e0cb20e7",
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "locator": "word/document.xml/body/p[871], word/document.xml/body/p[872], word/document.xml/body/p[873], word/document.xml/body/p[875]",
+      "kind": "manual",
+      "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.7 刷新告警\n7.1.7 刷新告警\n路径：Alarm-->Active Alarm\n步骤：点击按钮刷新告警页面。\n图7.1.7-1 告警刷新示例",
+      "tool_version": "p5-tools-v1",
+      "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+      "native_id": "chunk-e4853f57767ab702e0cb20e7",
+      "metadata": {
+        "product": "5GC网管",
+        "version": "V1.3",
+        "generation": "c61e9796eead2610cfd4"
+      }
+    },
+    {
+      "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-e419fcbf253aa038abee8bcf",
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "locator": "word/document.xml/body/p[918], word/document.xml/body/p[919], word/document.xml/body/p[920], word/document.xml/body/p[922]",
+      "kind": "manual",
+      "excerpt": "7 故障管理（Fault Management） / 7.2 历史告警 / 7.2.3 历史告警下载\n7.2.3 历史告警下载\n路径：Alarm-->History Alarm\n步骤：点击“Download”-->选择打开或保存下载的excel文件。\n图7.2.3-1  Histroy Alarm下载",
+      "tool_version": "p5-tools-v1",
+      "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+      "native_id": "chunk-e419fcbf253aa038abee8bcf",
+      "metadata": {
+        "product": "5GC网管",
+        "version": "V1.3",
+        "generation": "c61e9796eead2610cfd4"
+      }
+    },
+    {
+      "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-e4229ea5c61e1e102ac02218",
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "locator": "word/document.xml/body/p[836], word/document.xml/body/p[837]",
+      "kind": "manual",
+      "excerpt": "7 故障管理（Fault Management）\n7 故障管理（Fault Management）\n说明：提供了实时告警，历史告警，告警汇总视图，告警文件管理，告警存储时间，告警产生时间，CPU阈值设置几大功能。",
+      "tool_version": "p5-tools-v1",
+      "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+      "native_id": "chunk-e4229ea5c61e1e102ac02218",
+      "metadata": {
+        "product": "5GC网管",
+        "version": "V1.3",
+        "generation": "c61e9796eead2610cfd4"
+      }
+    },
+    {
+      "evidence_id": "c5188363e85441eeb01bc889ed7d0603:chunk-de099c30517a742759b73e73",
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "locator": "word/document.xml/body/p[876], word/document.xml/body/p[877], word/document.xml/body/p[878], word/document.xml/body/p[880]",
+      "kind": "manual",
+      "excerpt": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.8 告警同步\n7.1.8 告警同步\n路径：Alarm-->Active Alarm\n步骤：点击同步按钮-->提示同步成功。\n图7.1.8-1 告警同步示例",
+      "tool_version": "p5-tools-v1",
+      "applicability_note": "来源可核查；现场适用性与因果支持未由引用检查证明。",
+      "native_id": "chunk-de099c30517a742759b73e73",
+      "metadata": {
+        "product": "5GC网管",
+        "version": "V1.3",
+        "generation": "c61e9796eead2610cfd4"
+      }
+    }
+  ],
+  "facts": [
+    {
+      "text": "路径：Alarm-->Active Alarm\n",
+      "evidence_ids": [
+        "c5188363e85441eeb01bc889ed7d0603:chunk-8155920f16768dca1cb872d8",
+        "c5188363e85441eeb01bc889ed7d0603:chunk-0d555a667d8458f08194b6fa",
+        "c5188363e85441eeb01bc889ed7d0603:chunk-e4853f57767ab702e0cb20e7",
+        "c5188363e85441eeb01bc889ed7d0603:chunk-de099c30517a742759b73e73"
+      ]
+    },
+    {
+      "text": "步骤：点击“Download”-->选择打开或保存下载的excel文件。\n",
+      "evidence_ids": [
+        "c5188363e85441eeb01bc889ed7d0603:chunk-8155920f16768dca1cb872d8"
+      ]
+    },
+    {
+      "text": "步骤：在各个下拉框中选择选项-->点击“Query Alarm”-->点击“Refresh”，查询接果将在列表显示。\n",
+      "evidence_ids": [
+        "c5188363e85441eeb01bc889ed7d0603:chunk-0d555a667d8458f08194b6fa"
+      ]
+    }
+  ],
+  "gaps": [],
+  "warnings": [
+    "检索命中是候选原文，不等于已经回答问题。",
+    "P2 命令与截图人工复核尚未完成；引用存在不等于现场适用。",
+    "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+  ],
+  "questions": [],
+  "candidates": [],
+  "actions": [],
+  "rounds": 0,
+  "repairs": 0,
+  "degraded": false,
+  "terminal": false,
+  "resume_count": 0,
+  "user_answers": [],
+  "report": {
+    "run_id": "c5188363e85441eeb01bc889ed7d0603",
+    "status": "completed",
+    "facts": [
+      "路径：Alarm-->Active Alarm\n",
+      "步骤：点击“Download”-->选择打开或保存下载的excel文件。\n",
+      "步骤：在各个下拉框中选择选项-->点击“Query Alarm”-->点击“Refresh”，查询接果将在列表显示。\n"
+    ],
+    "hypotheses": [],
+    "supporting_evidence_ids": [
+      "c5188363e85441eeb01bc889ed7d0603:chunk-8155920f16768dca1cb872d8",
+      "c5188363e85441eeb01bc889ed7d0603:chunk-0d555a667d8458f08194b6fa",
+      "c5188363e85441eeb01bc889ed7d0603:chunk-e4853f57767ab702e0cb20e7",
+      "c5188363e85441eeb01bc889ed7d0603:chunk-de099c30517a742759b73e73"
+    ],
+    "opposing_evidence_ids": [],
+    "missing_information": [],
+    "recommendations": [],
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "corpus_generation": "c61e9796eead2610cfd4"
+  }
+}

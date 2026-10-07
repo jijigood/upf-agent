@@ -1,0 +1,19 @@
+{
+  "pipeline_identity": "8a7a200cef9912c9eeb61bfdaac72bf86f9d3843e58753b2ee49f7257ab6fd69",
+  "target_structured": {
+    "enable_thinking": false
+  },
+  "target_plain": {
+    "reasoning_effort": "low"
+  },
+  "baseline_template_kwargs": null,
+  "common_path_sha256": {
+    "p3_answer.py": "4b3cf12c1cfd07b7621cf0c2a03e7b621f46532797cdc062dbb29a0e7a5253b4",
+    "models.py": "7842a4ad08b440aa82c676c035562938d68e1360ba7df80a3cebb5a852a4fd81",
+    "p3_search.py": "f031ad393df9cc0fac8684dd5fa4492e34b23f5f025f72efedb5720625b4f0ba",
+    "p3_quality.py": "b12643e6ee9449ccdd990687c7807e73f86c452619bb21b928501b1b7d4f9d77"
+  },
+  "baseline_request_body_regression_verified": true,
+  "partial_low_thinking_run_preserved": "runs/p6/model-target-low-thinking-incomplete",
+  "scope": "model profile tuning; business labels still draft"
+}

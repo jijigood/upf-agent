@@ -1,0 +1,437 @@
+{
+  "query": "N4 PFCP 链路故障如何排查？",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 36,
+  "reranked_candidates": 32,
+  "context_tokens": 749,
+  "evidence": [
+    {
+      "chunk_id": "chunk-f862dec7c5463231da13444f",
+      "rrf_score": 0.03252247488101534,
+      "routes": {
+        "bm25": {
+          "rank": 2,
+          "raw_score": 7.826213359832764
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.7715263008618921
+        }
+      },
+      "rerank_raw_logit_difference": 7.75,
+      "rerank_p_yes": 0.9995694429186754,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "通用指引步骤",
+        "通用排查步骤"
+      ],
+      "parent_id": "section-fe6364276e8aecd1690c",
+      "kind": "prose",
+      "text": "通用指引步骤 / 通用排查步骤\n检查UPF链路是否异常。排查链路故障通常结合UPF的组网图检查链路即可。\n//正常情况：n4链路能通",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000038",
+        "manual-9f16bf8ca11723a2:b000041"
+      ],
+      "locators": [
+        "word/document.xml/body/p[12]",
+        "word/document.xml/body/p[13]/txbxContent[1]/p[1]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "n4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-ae1bb6b1705f296f1b895f6c",
+          "text": "通用指引步骤 / 通用排查步骤\nshow pdu-session stats",
+          "truncated": false,
+          "block_ids": [
+            "manual-9f16bf8ca11723a2:b000036"
+          ],
+          "locators": [
+            "word/document.xml/body/p[10]/txbxContent[1]/p[8]"
+          ],
+          "source_id": "manual-9f16bf8ca11723a2"
+        },
+        {
+          "chunk_id": "chunk-5e8a4f1081d079f3f1710e02",
+          "text": "通用指引步骤 / 通用排查步骤\nping <n4_gateway_ip>",
+          "truncated": false,
+          "block_ids": [
+            "manual-9f16bf8ca11723a2:b000042"
+          ],
+          "locators": [
+            "word/document.xml/body/p[13]/txbxContent[1]/p[2]"
+          ],
+          "source_id": "manual-9f16bf8ca11723a2"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-5903e5b711889d79e57ecd09",
+      "rrf_score": 0.02964426877470356,
+      "routes": {
+        "bm25": {
+          "rank": 9,
+          "raw_score": 6.4239606857299805
+        },
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.6719024883101752
+        }
+      },
+      "rerank_raw_logit_difference": 7.125,
+      "rerank_p_yes": 0.9991959140643708,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到 SMF 链路异常",
+        "解决方法"
+      ],
+      "parent_id": "section-e4e0dd252fa75830aae0",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到 SMF 链路异常 / 解决方法\n解决方法\n若自身ip状态异常，检查upf N4地址是否正常配置，尝试重启pod后再检查到SMF N4链路是否正常；\n若N4对端或交换机网关地址无法ping通，需SMF和交换机检查是否有异常；",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000491",
+        "manual-9f16bf8ca11723a2:b000492",
+        "manual-9f16bf8ca11723a2:b000493"
+      ],
+      "locators": [
+        "word/document.xml/body/p[206]",
+        "word/document.xml/body/p[207]",
+        "word/document.xml/body/p[208]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4",
+        "SMF"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-d251cd0c9c751b16031bb50c",
+      "rrf_score": 0.0136986301369863,
+      "routes": {
+        "bm25": {
+          "rank": 13,
+          "raw_score": 5.605149269104004
+        }
+      },
+      "rerank_raw_logit_difference": 6.625,
+      "rerank_p_yes": 0.9986749775827868,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF 终端负载情况异常",
+        "信息收集"
+      ],
+      "parent_id": "section-36be7173e30260255627",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF 终端负载情况异常 / 信息收集\npdu sesn num = 0\n确认执行upfmgr hc命令显示信息时，N4链路是否正常，或执行upfmg ctrl命令进入cli控制台，show cp-node查看N4链路是否正常。\n在upfd pod内部抓包确认终端会话是否可以正常建立。",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000852",
+        "manual-9f16bf8ca11723a2:b000853",
+        "manual-9f16bf8ca11723a2:b000854"
+      ],
+      "locators": [
+        "word/document.xml/body/p[328]/txbxContent[1]/p[2]",
+        "word/document.xml/body/p[329]",
+        "word/document.xml/body/p[330]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-20475a0537b2e3b7b48c7fec",
+          "text": "业务故障案例 / UPF 终端负载情况异常 / 信息收集\nUPFD> show pdu-session",
+          "truncated": false,
+          "block_ids": [
+            "manual-9f16bf8ca11723a2:b000851"
+          ],
+          "locators": [
+            "word/document.xml/body/p[328]/txbxContent[1]/p[1]"
+          ],
+          "source_id": "manual-9f16bf8ca11723a2"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-a4c2208f8735256b0b7e437b",
+      "rrf_score": 0.015151515151515152,
+      "routes": {
+        "bm25": {
+          "rank": 6,
+          "raw_score": 6.693148136138916
+        }
+      },
+      "rerank_raw_logit_difference": 6.4375,
+      "rerank_p_yes": 0.9984021545059827,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "偶联建立失败：SMF open upf开关",
+        "解决方法"
+      ],
+      "parent_id": "section-9ec1ddfc11bd23064a55",
+      "kind": "prose",
+      "text": "业务故障案例 / 偶联建立失败：SMF open upf开关 / 解决方法\n解决方法\n排查N4链路是否正常。\nSMF要开支持open upf的开关。",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000350",
+        "manual-9f16bf8ca11723a2:b000351",
+        "manual-9f16bf8ca11723a2:b000352"
+      ],
+      "locators": [
+        "word/document.xml/body/p[119]",
+        "word/document.xml/body/p[120]",
+        "word/document.xml/body/p[121]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4",
+        "SMF"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-b3585cf70dc08b7a26681d9d",
+      "rrf_score": 0.014925373134328358,
+      "routes": {
+        "bm25": {
+          "rank": 7,
+          "raw_score": 6.586134910583496
+        }
+      },
+      "rerank_raw_logit_difference": 6.375,
+      "rerank_p_yes": 0.9982992775885648,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到网关链路异常",
+        "解决方法"
+      ],
+      "parent_id": "section-70f27c3332eff59fadc4",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到网关链路异常 / 解决方法\n解决方法\n若检查发现自身ip地址状态异常，首先尝试执行 upfmgr restart 命令重启upfd pod 后再检查到UPF N4网关链路是否正常；\n若检查UPF N4网关地址不通，首先联系交换机运维人员排查交换机接口有无收到 N4接口的数据报文。\n若检查发现/root/${HOSTNAME}_CU5GC_UPF_${VERSION}_IP.conf 未配UPF_N4_GW_IPv6_ADDRES 网关地址，则添加 UPF_N4_GW_IPv6_ADDRES 接口网关地址配置；",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000519",
+        "manual-9f16bf8ca11723a2:b000520",
+        "manual-9f16bf8ca11723a2:b000521",
+        "manual-9f16bf8ca11723a2:b000522"
+      ],
+      "locators": [
+        "word/document.xml/body/p[221]",
+        "word/document.xml/body/p[222]",
+        "word/document.xml/body/p[223]",
+        "word/document.xml/body/p[224]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-6bd7a2298de438a7a6e031e9",
+      "rrf_score": 0.0315136476426799,
+      "routes": {
+        "bm25": {
+          "rank": 5,
+          "raw_score": 6.747076988220215
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.6816084227400706
+        }
+      },
+      "rerank_raw_logit_difference": 5.875,
+      "rerank_p_yes": 0.9971990730328789,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到 SMF 链路异常",
+        "症状现象"
+      ],
+      "parent_id": "section-052138fa6b7209948c58",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到 SMF 链路异常 / 症状现象\n症状现象\nN4偶联无法正常建立；\nPDU会话无法正常建立；\n执行upfmgr hc命令显示“N4(v6)到SMF链路状态 | Error”",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000483",
+        "manual-9f16bf8ca11723a2:b000484",
+        "manual-9f16bf8ca11723a2:b000485",
+        "manual-9f16bf8ca11723a2:b000486"
+      ],
+      "locators": [
+        "word/document.xml/body/p[198]",
+        "word/document.xml/body/p[199]",
+        "word/document.xml/body/p[200]",
+        "word/document.xml/body/p[201]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4",
+        "SMF"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-0101383eb18f2d012e10d7a6",
+      "rrf_score": 0.013333333333333334,
+      "routes": {
+        "bm25": {
+          "rank": 15,
+          "raw_score": 5.519082546234131
+        }
+      },
+      "rerank_raw_logit_difference": 5.5625,
+      "rerank_p_yes": 0.9961755163553627,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到 SMF 链路异常",
+        "信息收集"
+      ],
+      "parent_id": "section-88ee61405d61db1669e2",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到 SMF 链路异常 / 信息收集\n信息收集\n使用upfmgr bash命令进入pod内部，执行ip a命令查看网卡状态是否正常，可使用ping命令ping自身ip检查自己的ip状态是否正常；\n使用ping命令ping对端SMF的N4接口地址ip是否正常响应；\n使用ping命令检查到UPF N4网关地址是否正常响应；",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000487",
+        "manual-9f16bf8ca11723a2:b000488",
+        "manual-9f16bf8ca11723a2:b000489",
+        "manual-9f16bf8ca11723a2:b000490"
+      ],
+      "locators": [
+        "word/document.xml/body/p[202]",
+        "word/document.xml/body/p[203]",
+        "word/document.xml/body/p[204]",
+        "word/document.xml/body/p[205]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4",
+        "SMF"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-77beb9ec6530fb26ec9f73cd",
+      "rrf_score": 0.013157894736842105,
+      "routes": {
+        "bm25": {
+          "rank": 16,
+          "raw_score": 5.223019599914551
+        }
+      },
+      "rerank_raw_logit_difference": 5.5625,
+      "rerank_p_yes": 0.9961755163553627,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF N4 IPv6 接口地址到网关链路异常",
+        "信息收集"
+      ],
+      "parent_id": "section-fd3f22918fba8d8acc95",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF N4 IPv6 接口地址到网关链路异常 / 信息收集\n信息收集\n使用upfmgr bash 命令进入pod内部，执行 ip a 命令查看网卡状态是否正常，可使用ping命令ping自身 ip 检查自己的ip状态是否正常；\n使用ping命令检查到UPF N4网关地址是否正常响应；\n检查/root/${HOSTNAME}_CU5GC_UPF_${VERSION}_IP.conf 有无配N4网关地址；",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000515",
+        "manual-9f16bf8ca11723a2:b000516",
+        "manual-9f16bf8ca11723a2:b000517",
+        "manual-9f16bf8ca11723a2:b000518"
+      ],
+      "locators": [
+        "word/document.xml/body/p[217]",
+        "word/document.xml/body/p[218]",
+        "word/document.xml/body/p[219]",
+        "word/document.xml/body/p[220]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    }
+  ],
+  "warnings": []
+}

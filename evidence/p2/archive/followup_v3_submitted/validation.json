@@ -1,0 +1,31 @@
+{
+  "generation": "c05fe621e37ebdb1c663",
+  "source_count": 4,
+  "blocks": 9713,
+  "commands": 107,
+  "tables": 126,
+  "textboxes": 55,
+  "review_source_exact": 60,
+  "review_human_completed": 60,
+  "ocr_images": 30,
+  "ocr_lines": 1712,
+  "ocr_human_completed": 30,
+  "pdf_pages": 12,
+  "pdf_items": 57,
+  "pdf_tables": 2,
+  "paper_role_isolated": true,
+  "pass": true,
+  "ocr_assistant_checked": 30,
+  "ocr_quarantined_lines": 7,
+  "ocr_corrected_sha256": "7ec9dd78fec57b5ac71427a91a3ac8ae60133b008a7fbc0a7799573ecc5e4f9e",
+  "review_human_passed": 60,
+  "ocr_human_passed": 26,
+  "ocr_corrected_pending_recheck": [
+    1,
+    7,
+    17,
+    20
+  ],
+  "human_review_receipt_sha256": "4eb5f74b6f5047a6f5d7f186ed8e0d0a3b08cea34bd66f8484fba73219bbffad",
+  "m2_human_acceptance_pass": false
+}

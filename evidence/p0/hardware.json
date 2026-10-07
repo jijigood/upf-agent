@@ -1,0 +1,12 @@
+{
+  "captured_utc": "2026-09-25T14:16:21.037705+00:00",
+  "platform": "Linux-5.19.0-32-generic-x86_64-with-glibc2.35",
+  "cpu_count_logical": 48,
+  "gpu_query_exit_code": 0,
+  "gpu_csv": [
+    "0, NVIDIA A100 80GB PCIe, 81920, 0, 81050, 535.183.06",
+    "1, NVIDIA A100 80GB PCIe, 81920, 0, 81050, 535.183.06"
+  ],
+  "gpu_query_error": null,
+  "resource_note": "Snapshot only; GPU free memory may change without notice"
+}

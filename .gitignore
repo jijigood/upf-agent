@@ -1,0 +1,17 @@
+.venv/
+.venv-retrieval/
+.venv-inference/
+.venv-docling/
+.venv-ocr/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+*.[mM][dD]
+*.[mM][aA][rR][kK][dD][oO][wW][nN]
+*.[pP][dD][fF]
+*.[dD][oO][cC]
+*.[dD][oO][cC][xX]
+data/
+runs/
+!data/.gitkeep

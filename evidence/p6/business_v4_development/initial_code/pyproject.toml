@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "upf-agent"
+version = "0.1.0"
+description = "Offline UPF operations agent, independent of Dify"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "bm25s>=0.2.14,<1",
+  "drain3==0.9.11",
+  "duckdb>=1.4,<2",
+  "httpx>=0.28,<0.29",
+  "jieba>=0.42.1,<1",
+  "langgraph>=1.1,<2",
+  "langgraph-checkpoint-sqlite>=3.1,<4",
+  "lxml>=5,<7",
+  "openpyxl>=3.1.5,<4",
+  "pillow>=11,<13",
+  "pyarrow>=19,<24",
+  "pydantic>=2.12,<3",
+  "pypdf>=6,<7",
+  "python-docx>=1.2,<2",
+  "PyYAML>=6.0,<7",
+  "qdrant-client>=1.15,<2",
+  "rich>=14,<15",
+  "tokenizers>=0.22,<1",
+  "typer>=0.20,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1"]
+
+[project.scripts]
+upf-agent = "upf_agent.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/upf_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

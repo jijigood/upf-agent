@@ -1,0 +1,19 @@
+{
+  "tool_attempts": 7,
+  "model_requests_reserved": 3,
+  "rounds": 3,
+  "parameter_repairs": 0,
+  "active_seconds": 59.053909429349005,
+  "observed_usage": {
+    "requests": 3,
+    "prompt_tokens_observed": 29311,
+    "completion_tokens_observed": 769,
+    "usage_responses": 3
+  },
+  "stage_elapsed_ms": {
+    "tool_finished": 11326,
+    "plan": 47337
+  },
+  "peak_observed_process_rss_bytes": 218296320,
+  "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+}

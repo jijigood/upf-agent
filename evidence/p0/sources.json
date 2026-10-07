@@ -1,0 +1,157 @@
+[
+  {
+    "source_id": "manual-341440f7dd103f51",
+    "sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+    "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+    "role": "manual",
+    "product": "UPF",
+    "version": "unknown",
+    "size_bytes": 1147834,
+    "structure": {
+      "paragraph_elements_including_nested": 1019,
+      "tables": 17,
+      "table_rows": 108,
+      "textboxes": 0,
+      "media_files": 17,
+      "term_occurrences_in_ooxml_text": {
+        "set-log-level": 0,
+        "upfmgr mml": 0,
+        "MML": 1,
+        "37100": 6,
+        "5002": 1,
+        "VPP": 6,
+        "PFCP": 9,
+        "GTP-U": 2,
+        "N3": 17,
+        "N4": 15
+      },
+      "text_count_method": "Each OOXML w:t element once; excludes image-only text; no gold labels"
+    }
+  },
+  {
+    "source_id": "manual-98aa0505da555a15",
+    "sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+    "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+    "role": "manual",
+    "product": "5GC网管",
+    "version": "V1.3",
+    "size_bytes": 14511985,
+    "structure": {
+      "paragraph_elements_including_nested": 3095,
+      "tables": 83,
+      "table_rows": 561,
+      "textboxes": 6,
+      "media_files": 313,
+      "term_occurrences_in_ooxml_text": {
+        "set-log-level": 0,
+        "upfmgr mml": 0,
+        "MML": 0,
+        "37100": 0,
+        "5002": 0,
+        "VPP": 0,
+        "PFCP": 38,
+        "GTP-U": 0,
+        "N3": 4,
+        "N4": 21
+      },
+      "text_count_method": "Each OOXML w:t element once; excludes image-only text; no gold labels"
+    }
+  },
+  {
+    "source_id": "manual-9f16bf8ca11723a2",
+    "sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+    "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+    "role": "manual",
+    "product": "UPF",
+    "version": "unknown",
+    "size_bytes": 297575,
+    "structure": {
+      "paragraph_elements_including_nested": 820,
+      "tables": 0,
+      "table_rows": 0,
+      "textboxes": 52,
+      "media_files": 1,
+      "term_occurrences_in_ooxml_text": {
+        "set-log-level": 0,
+        "upfmgr mml": 0,
+        "MML": 7,
+        "37100": 3,
+        "5002": 0,
+        "VPP": 27,
+        "PFCP": 6,
+        "GTP-U": 0,
+        "N3": 40,
+        "N4": 51
+      },
+      "text_count_method": "Each OOXML w:t element once; excludes image-only text; no gold labels"
+    }
+  },
+  {
+    "source_id": "manual-1edf23113651430f",
+    "sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+    "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+    "role": "manual",
+    "product": "UPF",
+    "version": "5.0",
+    "size_bytes": 17534983,
+    "structure": {
+      "paragraph_elements_including_nested": 3256,
+      "tables": 26,
+      "table_rows": 202,
+      "textboxes": 0,
+      "media_files": 141,
+      "term_occurrences_in_ooxml_text": {
+        "set-log-level": 0,
+        "upfmgr mml": 0,
+        "MML": 0,
+        "37100": 5,
+        "5002": 0,
+        "VPP": 17,
+        "PFCP": 0,
+        "GTP-U": 0,
+        "N3": 101,
+        "N4": 107
+      },
+      "text_count_method": "Each OOXML w:t element once; excludes image-only text; no gold labels"
+    }
+  },
+  {
+    "source_id": "log-a698d029342259b7",
+    "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+    "relative_path": "upfd_masked.log",
+    "role": "log",
+    "product": "UPF",
+    "version": "unknown",
+    "size_bytes": 6347974,
+    "structure": {
+      "lines": 32539,
+      "nonblank_lines": 32539,
+      "timestamped_lines": 32539,
+      "first_timestamp_in_file_order": "2025-05-14 16:07:17.926985",
+      "last_timestamp_in_file_order": "2025-07-12 16:59:07.069077",
+      "adjacent_out_of_order_pairs": 1,
+      "timezone": "unknown"
+    }
+  },
+  {
+    "source_id": "paper-d23b138f9a73d510",
+    "sha256": "d23b138f9a73d510e2aa3d5d015d30ff8ecc0fbe55915a6fff1d5bcf0604b68b",
+    "relative_path": "提取自main.pdf",
+    "role": "paper",
+    "product": null,
+    "version": "unknown",
+    "size_bytes": 889977,
+    "structure": {
+      "pdf_pages": 12
+    }
+  },
+  {
+    "source_id": "fixture-bd4d045782c4b250",
+    "sha256": "bd4d045782c4b250d1b0694a669d6e5d09891de1a1f676c13160770bfb444c3c",
+    "relative_path": "upftest.yml",
+    "role": "fixture",
+    "product": "UPF",
+    "version": "DSL-0.3.0",
+    "size_bytes": 61414
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "result": "pending_human_attribution_rejected",
+  "reason": "1 validation error for EvalCase\n  Value error, Reviewed truth requires an actual reviewer, not pending attribution [type=value_error, input_value={'id': 'command-001', 'ca...iew_date': '2026-09-28'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+  "output_created": false,
+  "heldout_consumed": false
+}

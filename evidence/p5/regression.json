@@ -1,0 +1,150 @@
+{
+  "kind": "development_functional_validation_not_business_accuracy",
+  "cases": [
+    {
+      "label": "manual_txt",
+      "run_id": "c5188363e85441eeb01bc889ed7d0603",
+      "status": "completed",
+      "degraded": false,
+      "facts": 3,
+      "evidence": 7,
+      "metrics": {
+        "tool_attempts": 1,
+        "model_requests_reserved": 4,
+        "rounds": 0,
+        "parameter_repairs": 0,
+        "active_seconds": 39.66881852783263,
+        "observed_usage": {
+          "requests": 3,
+          "prompt_tokens_observed": 4831,
+          "completion_tokens_observed": 264,
+          "usage_responses": 3
+        },
+        "stage_elapsed_ms": {
+          "tool_finished": 22533,
+          "manual_answer": 17065
+        },
+        "peak_observed_process_rss_bytes": 5998120960,
+        "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+      },
+      "pending_nodes": [],
+      "report_sha256": "9d9840e26f35988044fb4b33a738756e22b93aa4029aa4a0b755b1741a4a3d6c",
+      "manifest_sha256": "2bf5c04208050d0a42bb6c20ba9b585866d6b024b7c030f19e20b7984c79aae4"
+    },
+    {
+      "label": "log_agent_resume",
+      "run_id": "aab84eec08c6474e906f3ef8be09c8d8",
+      "status": "partial",
+      "degraded": false,
+      "facts": 17,
+      "evidence": 38,
+      "metrics": {
+        "tool_attempts": 7,
+        "model_requests_reserved": 3,
+        "rounds": 3,
+        "parameter_repairs": 0,
+        "active_seconds": 59.053909429349005,
+        "observed_usage": {
+          "requests": 3,
+          "prompt_tokens_observed": 29311,
+          "completion_tokens_observed": 769,
+          "usage_responses": 3
+        },
+        "stage_elapsed_ms": {
+          "tool_finished": 11326,
+          "plan": 47337
+        },
+        "peak_observed_process_rss_bytes": 218296320,
+        "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+      },
+      "pending_nodes": [],
+      "report_sha256": "fbafe55df157f0f17059f6b92ebb4bdbd6d07caf6e579e1fd692663bd18c0a6d",
+      "manifest_sha256": "8aac3ad2921e302e05041c38dc684a96663ecedb47151e7251291bd1b48f17f2"
+    },
+    {
+      "label": "deterministic_counts",
+      "run_id": "8d973189072a4e908e5a7798435ec203",
+      "status": "partial",
+      "degraded": false,
+      "facts": 17,
+      "evidence": 1,
+      "metrics": {
+        "tool_attempts": 1,
+        "model_requests_reserved": 0,
+        "rounds": 0,
+        "parameter_repairs": 0,
+        "active_seconds": 1.652968730777502,
+        "observed_usage": {},
+        "stage_elapsed_ms": {
+          "tool_finished": 1631
+        },
+        "peak_observed_process_rss_bytes": 210382848,
+        "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+      },
+      "pending_nodes": [],
+      "report_sha256": "ba19d4133abf72a4c2577d5ab38de7808925eb4c8e75cac7e8a4df45aef67720",
+      "manifest_sha256": "94e5b3b93959a8e31f158fa9dd608b4f778d41c62e34f9309a951125d9f73978"
+    },
+    {
+      "label": "missing_live_source",
+      "run_id": "a2b0aea41b2745a7b088022c5fcf578f",
+      "status": "missing_source",
+      "degraded": false,
+      "facts": 0,
+      "evidence": 0,
+      "metrics": {
+        "tool_attempts": 0,
+        "model_requests_reserved": 0,
+        "rounds": 0,
+        "parameter_repairs": 0,
+        "active_seconds": 0.0681190793402493,
+        "observed_usage": {},
+        "stage_elapsed_ms": {},
+        "peak_observed_process_rss_bytes": 209592320,
+        "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+      },
+      "pending_nodes": [],
+      "report_sha256": "6396c744acbcdb6c584ac65964cd4c0e99fd90e3f7fdee5c21bd16dff3e1295e",
+      "manifest_sha256": "0c82ce7215dd60918cc2db0d43f3879b32249cb65d165b00312202d261cdf941"
+    },
+    {
+      "label": "missing_log_resume",
+      "run_id": "eeee0f955f754d21a82e487eabec8488",
+      "status": "partial",
+      "degraded": false,
+      "facts": 17,
+      "evidence": 1,
+      "metrics": {
+        "tool_attempts": 1,
+        "model_requests_reserved": 0,
+        "rounds": 0,
+        "parameter_repairs": 0,
+        "active_seconds": 1.6972883250564337,
+        "observed_usage": {},
+        "stage_elapsed_ms": {
+          "tool_finished": 1610
+        },
+        "peak_observed_process_rss_bytes": 210374656,
+        "resource_scope": "max parent/direct-child Linux ru_maxrss for process lifetime; not summed tree/task-exclusive memory or GPU model service"
+      },
+      "pending_nodes": [],
+      "report_sha256": "f66744a2a37513940b0a32560b776f5746dbee5edfdd8fa702d99e1d29777748",
+      "manifest_sha256": "a8f547ee8eec7ecfb4bb7403bdf7a1cbd107fb2e25c272a9024bd687e754551f"
+    }
+  ],
+  "tests_output": "........................................................................ [ 36%]\n........................................................................ [ 73%]\n.....................................................                    [100%]\n197 passed in 19.40s\n",
+  "fixed_contract_requests": 100,
+  "contract_suite_scope": "code_schema_and_scope_validation_not_model_parameter_accuracy",
+  "human_business_signoff": false,
+  "formal_business_accuracy_claim": false,
+  "pipeline_files": {
+    "src/upf_agent/agent_cli.py": "3b750f3281c823c8bc31735039e13e4e4b9592020267db89ebaa688f70ae22d4",
+    "src/upf_agent/agent_worker.py": "c4832348f26d0f94c56502db314e252a677f75cb214dc62ca6fc965d91b765a7",
+    "src/upf_agent/agent_contracts.py": "c6a9a7168ce1b10d35589ff853161b0070ae4d41ec2aa74dfa2e5106cd6449ce",
+    "src/upf_agent/agent_engine.py": "72db0ec68bb4b764ead87f21291b37df437b180a4aefb6540d564aa1b269d8fb",
+    "src/upf_agent/agent_store.py": "04fb770f621a4dbec7e1f80ccba8b8fd03c8781d275fd8045cbfc1c8087df19c",
+    "src/upf_agent/agent_runtime.py": "f6d3decaed51aa566dcec3f539c22dc1c3ce7951b15a7a1c99deeee6571013a1",
+    "src/upf_agent/agent_tools.py": "1f24e5161ad6d814631037e816aa6da9bb78b3d41a3f000ad7d19b84d0be3d16"
+  },
+  "uv_lock_sha256": "7f1a173587103c1a8908efcb064bac13ff1ac88553d98080d718f95b09cf7a92"
+}

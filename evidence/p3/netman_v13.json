@@ -1,0 +1,670 @@
+{
+  "query": "5GC网管 V1.3 如何查询告警？",
+  "product": "5GC网管",
+  "version": "V1.3",
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 30,
+  "reranked_candidates": 30,
+  "context_tokens": 1668,
+  "evidence": [
+    {
+      "chunk_id": "chunk-2ba8e9f369f045ad715ff45d",
+      "rrf_score": 0.030798389007344232,
+      "routes": {
+        "bm25": {
+          "rank": 7,
+          "raw_score": 4.135209560394287
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.6381543359932305
+        }
+      },
+      "rerank_raw_logit_difference": 5.8125,
+      "rerank_p_yes": 0.9970189672701452,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.1 实时告警",
+        "7.1.1 告警查询"
+      ],
+      "parent_id": "section-314d5be1655ed1806639",
+      "kind": "prose",
+      "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n7.1.1 告警查询\n路径：Alarm-->Active Alarm\n步骤：在各个下拉框中选择选项-->点击“Query Alarm”-->点击“Refresh”，查询接果将在列表显示。\n图7.1.1-1 Active Alarm页面\n配置项及说明：",
+      "block_ids": [
+        "manual-98aa0505da555a15:b001368",
+        "manual-98aa0505da555a15:b001369",
+        "manual-98aa0505da555a15:b001370",
+        "manual-98aa0505da555a15:b001373",
+        "manual-98aa0505da555a15:b001374"
+      ],
+      "locators": [
+        "word/document.xml/body/p[839]",
+        "word/document.xml/body/p[840]",
+        "word/document.xml/body/p[841]",
+        "word/document.xml/body/p[843]",
+        "word/document.xml/body/p[844]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-1e8b69cb6d530a1da19e3b41",
+      "rrf_score": 0.030303030303030304,
+      "routes": {
+        "bm25": {
+          "rank": 6,
+          "raw_score": 4.271663665771484
+        },
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.5691922541363511
+        }
+      },
+      "rerank_raw_logit_difference": 5.125,
+      "rerank_p_yes": 0.9940889311437562,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.2 历史告警",
+        "7.2.1 历史告警查询"
+      ],
+      "parent_id": "section-0314b45459b4d50ca9e1",
+      "kind": "prose",
+      "text": "7 故障管理（Fault Management） / 7.2 历史告警 / 7.2.1 历史告警查询\n7.2.1 历史告警查询\n路径：Alarm-->History Alarm\n步骤：在各个下拉框中选择选项-->点击“Query”，查询结果将在列表显示。\n图7.2.1-1 Histroy Alarm页面\n图7.2.1-2 Histroy Alarm查询\n配置项及说明：",
+      "block_ids": [
+        "manual-98aa0505da555a15:b001495",
+        "manual-98aa0505da555a15:b001496",
+        "manual-98aa0505da555a15:b001497",
+        "manual-98aa0505da555a15:b001500",
+        "manual-98aa0505da555a15:b001502",
+        "manual-98aa0505da555a15:b001503"
+      ],
+      "locators": [
+        "word/document.xml/body/p[905]",
+        "word/document.xml/body/p[906]",
+        "word/document.xml/body/p[907]",
+        "word/document.xml/body/p[909]",
+        "word/document.xml/body/p[911]",
+        "word/document.xml/body/p[912]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-d20dc77e8468912aec803969",
+          "text": "7 故障管理（Fault Management） / 7.2 历史告警 / 7.2.1 历史告警查询\n表格：7.2 历史告警 / 7.2.1 历史告警查询\n表头：配置项\t说明\n配置项：NF Type | 说明：NF类型\n表格：7.2 历史告警 / 7.2.1 历史告警查询\n表头：配置项\t说明\n配置项：Region | 说明：区域\n表格：7.2 历史告警 / 7.2.1 历史告警查询\n表头：配置项\t说明\n配置项：Point | 说明：局点\n表格：7.2 历史告警 / 7.2.1 历史告警查询\n表头：配置项\t说明\n配置项：NF ID | 说明：NF名\n表格：7.2 历史告警 / 7.2.1 历史告警",
+          "truncated": true,
+          "block_ids": [
+            "manual-98aa0505da555a15:b001510",
+            "manual-98aa0505da555a15:b001513",
+            "manual-98aa0505da555a15:b001516",
+            "manual-98aa0505da555a15:b001519",
+            "manual-98aa0505da555a15:b001522",
+            "manual-98aa0505da555a15:b001525",
+            "manual-98aa0505da555a15:b001528",
+            "manual-98aa0505da555a15:b001531",
+            "manual-98aa0505da555a15:b001534",
+            "manual-98aa0505da555a15:b001537",
+            "manual-98aa0505da555a15:b001540",
+            "manual-98aa0505da555a15:b001543"
+          ],
+          "locators": [
+            "word/document.xml/body/tbl[23]/tr[2]",
+            "word/document.xml/body/tbl[23]/tr[3]",
+            "word/document.xml/body/tbl[23]/tr[4]",
+            "word/document.xml/body/tbl[23]/tr[5]",
+            "word/document.xml/body/tbl[23]/tr[6]",
+            "word/document.xml/body/tbl[23]/tr[7]",
+            "word/document.xml/body/tbl[23]/tr[8]",
+            "word/document.xml/body/tbl[23]/tr[9]",
+            "word/document.xml/body/tbl[23]/tr[10]",
+            "word/document.xml/body/tbl[23]/tr[11]",
+            "word/document.xml/body/tbl[23]/tr[12]",
+            "word/document.xml/body/tbl[23]/tr[13]"
+          ],
+          "source_id": "manual-98aa0505da555a15"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-8317b3fc7671dcd878ee1754",
+      "rrf_score": 0.028404512489927477,
+      "routes": {
+        "bm25": {
+          "rank": 8,
+          "raw_score": 3.5583300590515137
+        },
+        "dense": {
+          "rank": 13,
+          "raw_score": 0.5421301441211592
+        }
+      },
+      "rerank_raw_logit_difference": 3.5625,
+      "rerank_p_yes": 0.9724147177732099,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.1 实时告警",
+        "7.1.3 告警下载"
+      ],
+      "parent_id": "section-ec59c4407654d89c2ae9",
+      "kind": "prose",
+      "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.3 告警下载\n7.1.3 告警下载\n路径：Alarm-->Active Alarm\n步骤：点击“Download”-->选择打开或保存下载的excel文件。\n图7.1.3-1 告警下载示例",
+      "block_ids": [
+        "manual-98aa0505da555a15:b001431",
+        "manual-98aa0505da555a15:b001432",
+        "manual-98aa0505da555a15:b001433",
+        "manual-98aa0505da555a15:b001436"
+      ],
+      "locators": [
+        "word/document.xml/body/p[851]",
+        "word/document.xml/body/p[852]",
+        "word/document.xml/body/p[853]",
+        "word/document.xml/body/p[855]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-d18175b20a0b5505f8a248a6",
+      "rrf_score": 0.02803921568627451,
+      "routes": {
+        "bm25": {
+          "rank": 15,
+          "raw_score": 3.2057414054870605
+        },
+        "dense": {
+          "rank": 8,
+          "raw_score": 0.5611438658101936
+        }
+      },
+      "rerank_raw_logit_difference": 3.5625,
+      "rerank_p_yes": 0.9724147177732099,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "1 概述",
+        "1.3 开始使用网管"
+      ],
+      "parent_id": "section-708b8dfccaedb304e4ac",
+      "kind": "prose",
+      "text": "1 概述 / 1.3 开始使用网管\n1.3 开始使用网管\n第一步，网管安装完毕，从浏览器（建议使用Chrome浏览器、火狐浏览器或者edge浏览器）打开Web网管登录页面，填写网管RESTful接口的URL（即提供网管后端服务的服务器的IP地址和端口），默认提供的账号和密码（账号：admin，密码：123456）登录系统。\n第二步，开始部署网元，具体见第11章 K8S。\n第三步，开始配置各网元参数，具体见第2章 网元配置，或者第9章配置管理。\n如果要查看各NF的性能参数，请参照第8章 性能管理。\n如果要查看各NF的告警，请参照第7章 故障管理。\n其他功能，请参看后面其他章节。",
+      "block_ids": [
+        "manual-98aa0505da555a15:b000290",
+        "manual-98aa0505da555a15:b000291",
+        "manual-98aa0505da555a15:b000292",
+        "manual-98aa0505da555a15:b000293",
+        "manual-98aa0505da555a15:b000294",
+        "manual-98aa0505da555a15:b000295",
+        "manual-98aa0505da555a15:b000296"
+      ],
+      "locators": [
+        "word/document.xml/body/p[236]",
+        "word/document.xml/body/p[237]",
+        "word/document.xml/body/p[238]",
+        "word/document.xml/body/p[239]",
+        "word/document.xml/body/p[240]",
+        "word/document.xml/body/p[241]",
+        "word/document.xml/body/p[242]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-1e1f2668894d4d106d9c7b33",
+      "rrf_score": 0.012987012987012988,
+      "routes": {
+        "dense": {
+          "rank": 17,
+          "raw_score": 0.5206850130670696
+        }
+      },
+      "rerank_raw_logit_difference": 3.375,
+      "rerank_p_yes": 0.9669140216112958,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.1 实时告警",
+        "7.1.7 刷新告警"
+      ],
+      "parent_id": "section-774d189010d35807861b",
+      "kind": "prose",
+      "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.7 刷新告警\n7.1.7 刷新告警\n路径：Alarm-->Active Alarm\n步骤：点击按钮刷新告警页面。\n图7.1.7-1 告警刷新示例",
+      "block_ids": [
+        "manual-98aa0505da555a15:b001455",
+        "manual-98aa0505da555a15:b001456",
+        "manual-98aa0505da555a15:b001457",
+        "manual-98aa0505da555a15:b001460"
+      ],
+      "locators": [
+        "word/document.xml/body/p[871]",
+        "word/document.xml/body/p[872]",
+        "word/document.xml/body/p[873]",
+        "word/document.xml/body/p[875]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-a2020d351a1cd5c458d5e1d5",
+      "rrf_score": 0.014084507042253521,
+      "routes": {
+        "dense": {
+          "rank": 11,
+          "raw_score": 0.5453360560658103
+        }
+      },
+      "rerank_raw_logit_difference": 2.875,
+      "rerank_p_yes": 0.9465966702001757,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.1 实时告警",
+        "7.1.4 告警打印"
+      ],
+      "parent_id": "section-832a10eaf3e1ddbfa12e",
+      "kind": "prose",
+      "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.4 告警打印\n7.1.4 告警打印\n路径：Alarm-->Active Alarm\n步骤：点击“Print”，即可跳转到连接打印机的页面。\n图7.1.4-1 告警打印示例",
+      "block_ids": [
+        "manual-98aa0505da555a15:b001437",
+        "manual-98aa0505da555a15:b001438",
+        "manual-98aa0505da555a15:b001439",
+        "manual-98aa0505da555a15:b001442"
+      ],
+      "locators": [
+        "word/document.xml/body/p[856]",
+        "word/document.xml/body/p[857]",
+        "word/document.xml/body/p[858]",
+        "word/document.xml/body/p[860]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-fa1c1efe4cb6b0570f50e9cf",
+      "rrf_score": 0.014492753623188406,
+      "routes": {
+        "dense": {
+          "rank": 9,
+          "raw_score": 0.5494473312369273
+        }
+      },
+      "rerank_raw_logit_difference": 2.5,
+      "rerank_p_yes": 0.9241418199787566,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.1 实时告警",
+        "7.1.11 确认告警"
+      ],
+      "parent_id": "section-45b1f478bbabba5562c2",
+      "kind": "prose",
+      "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.11 确认告警\n7.1.11 确认告警\n路径：Alarm-->Active Alarm\n步骤：点击确认按钮-->提示确认告警成功。\n图7.1.11-1 确认告警示例",
+      "block_ids": [
+        "manual-98aa0505da555a15:b001480",
+        "manual-98aa0505da555a15:b001481",
+        "manual-98aa0505da555a15:b001482",
+        "manual-98aa0505da555a15:b001485"
+      ],
+      "locators": [
+        "word/document.xml/body/p[892]",
+        "word/document.xml/body/p[893]",
+        "word/document.xml/body/p[894]",
+        "word/document.xml/body/p[896]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-ff4e86a41604b6336da9fb9f",
+      "rrf_score": 0.03200204813108039,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 4.868036270141602
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.6482537445291832
+        }
+      },
+      "rerank_raw_logit_difference": 2.25,
+      "rerank_p_yes": 0.9046505351008906,
+      "source_id": "manual-98aa0505da555a15",
+      "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+      "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+      "product": "5GC网管",
+      "version": "V1.3",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.1 实时告警",
+        "7.1.1 告警查询"
+      ],
+      "parent_id": "section-314d5be1655ed1806639",
+      "kind": "table",
+      "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF Type | 说明：NF类型\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Region | 说明：区域\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Point | 说明：局点\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：NF ID | 说明：NF ID\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Select Alarm Level | 说明：选择告警等级，可选All Status/minor/major/critical\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Select Alarm Type | 说明：选择告警类型，可选All/AppAlarm/LinkAlarm/SystemAlarm\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Start | 说明：起始时间\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：End | 说明：终止时间\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Alarm Code | 说明：告警编码\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Alarm Ne ID | 说明：告警模块名\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Alarm Sync Mode | 说明：告警同步模式\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Alarm Info | 说明：告警信息",
+      "block_ids": [
+        "manual-98aa0505da555a15:b001381",
+        "manual-98aa0505da555a15:b001384",
+        "manual-98aa0505da555a15:b001387",
+        "manual-98aa0505da555a15:b001390",
+        "manual-98aa0505da555a15:b001393",
+        "manual-98aa0505da555a15:b001396",
+        "manual-98aa0505da555a15:b001399",
+        "manual-98aa0505da555a15:b001402",
+        "manual-98aa0505da555a15:b001405",
+        "manual-98aa0505da555a15:b001408",
+        "manual-98aa0505da555a15:b001411",
+        "manual-98aa0505da555a15:b001414"
+      ],
+      "locators": [
+        "word/document.xml/body/tbl[22]/tr[2]",
+        "word/document.xml/body/tbl[22]/tr[3]",
+        "word/document.xml/body/tbl[22]/tr[4]",
+        "word/document.xml/body/tbl[22]/tr[5]",
+        "word/document.xml/body/tbl[22]/tr[6]",
+        "word/document.xml/body/tbl[22]/tr[7]",
+        "word/document.xml/body/tbl[22]/tr[8]",
+        "word/document.xml/body/tbl[22]/tr[9]",
+        "word/document.xml/body/tbl[22]/tr[10]",
+        "word/document.xml/body/tbl[22]/tr[11]",
+        "word/document.xml/body/tbl[22]/tr[12]",
+        "word/document.xml/body/tbl[22]/tr[13]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": "manual-98aa0505da555a15:b001375",
+      "table_cells": [
+        {
+          "row": 2,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[2]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[2]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[2]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[2]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[3]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[3]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[3]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[3]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 4,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[4]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[4]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 4,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[4]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[4]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[5]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[5]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[5]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[5]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 6,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[6]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[6]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 6,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[6]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[6]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 7,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[7]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[7]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 7,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[7]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[7]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 8,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[8]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[8]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 8,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[8]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[8]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 9,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[9]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[9]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 9,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[9]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[9]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 10,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[10]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[10]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 10,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[10]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[10]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 11,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[11]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[11]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 11,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[11]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[11]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 12,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[12]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[12]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 12,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[12]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[12]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 13,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[13]/tc[1]",
+          "locator": "word/document.xml/body/tbl[22]/tr[13]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 13,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[22]/tr[13]/tc[2]",
+          "locator": "word/document.xml/body/tbl[22]/tr[13]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-6e85c1b1d2901384e8ad25d4",
+          "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Event Time | 说明：触发告警时间\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Limit Set | 说明：阈值\n表格：7.1 实时告警 / 7.1.1 告警查询\n表头：配置项\t说明\n配置项：Alarm Status | 说明：告警状态",
+          "truncated": false,
+          "block_ids": [
+            "manual-98aa0505da555a15:b001417",
+            "manual-98aa0505da555a15:b001420",
+            "manual-98aa0505da555a15:b001423"
+          ],
+          "locators": [
+            "word/document.xml/body/tbl[22]/tr[14]",
+            "word/document.xml/body/tbl[22]/tr[15]",
+            "word/document.xml/body/tbl[22]/tr[16]"
+          ],
+          "source_id": "manual-98aa0505da555a15"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

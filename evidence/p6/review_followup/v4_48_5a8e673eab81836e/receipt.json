@@ -1,0 +1,373 @@
+{
+  "created_at": "2026-09-29T06:35:38.622330+00:00",
+  "submitted_path": "/home/huangxiaolin/upf-agent/eval/p6/business_v4/pending_48_review.md",
+  "submitted_sha256": "5a8e673eab81836e37a88d9cc15ce1627da854be2ad593277a74dafd2a5cabad",
+  "submitted_cases": 48,
+  "passed": 48,
+  "failed": 0,
+  "pending_content": 0,
+  "all_checkboxes_checked": true,
+  "all_sources_questions_and_expected_truth_unchanged": true,
+  "merged_cases": 120,
+  "merged_passed": 120,
+  "inherited_passed_cases": 72,
+  "merged_review_path": "/home/huangxiaolin/upf-agent/evidence/p6/review_followup/v4_48_5a8e673eab81836e/merged_truth_review_120.md",
+  "merged_review_sha256": "812fc5f1ad07dd935a596a40279a4c82fb87cfa5abb976f435e2c34933929c44",
+  "actual_human_attribution_pending": true,
+  "placeholder_reviewers": 120,
+  "reviewer_values": {
+    "AI辅助复核（待人工签名）": 120
+  },
+  "date_values": {
+    "2026-09-28": 120
+  },
+  "source_validation": {
+    "native_chunks_resolved": 155,
+    "log_events_resolved": 30,
+    "topology_files_resolved": 5,
+    "actual_source_partition_pass": true,
+    "scope": "source identity and original SHA; human relevance still required"
+  },
+  "rows": [
+    {
+      "case": "command-009",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "command-010",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "command-011",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "command-012",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "command-025",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "command-026",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "command-027",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "command-028",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-001",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-002",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-003",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-004",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-005",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-006",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-007",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-008",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-009",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-010",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-011",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-012",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-013",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-014",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-015",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-016",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-017",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-018",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-019",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "knowledge-020",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-001",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-002",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-003",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-004",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-005",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-006",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-007",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-008",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-009",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-010",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-011",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-012",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-013",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-014",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-015",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-016",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-017",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-018",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-019",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    },
+    {
+      "case": "troubleshooting-020",
+      "conclusion": "通过",
+      "reviewer": "AI辅助复核（待人工签名）",
+      "date": "2026-09-28",
+      "opinion": "无"
+    }
+  ],
+  "formal_import_executed": false,
+  "model_evaluation_executed": false,
+  "heldout_executed": false,
+  "M6_pass": false
+}

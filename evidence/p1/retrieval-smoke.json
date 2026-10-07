@@ -1,0 +1,19 @@
+{
+  "device": "cpu",
+  "embedding": {
+    "pass": true,
+    "dimension": 2560,
+    "l2_norm": 0.9999999907447585
+  },
+  "reranker": {
+    "pass": true,
+    "raw_logit_difference": [
+      8.022268295288086,
+      -13.05892562866211
+    ],
+    "p_yes": [
+      0.9996720325907273,
+      2.1309817698026817e-06
+    ]
+  }
+}

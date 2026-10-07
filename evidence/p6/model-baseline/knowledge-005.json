@@ -1,0 +1,184 @@
+{
+  "row": {
+    "id": "knowledge-005",
+    "model": "baseline",
+    "evidence_sha256": "da28cbd9f4974ccc33cd1e5946a27163468bb2e6705dcbf9633083f4e0ea9ca5",
+    "elapsed_ms": 27345.21528100595,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 12326,
+      "completion_tokens_observed": 531,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册中‘单节点部署K8S / 调整集群配置 / 调整后的集群配置文件’的说明和关键字段是什么？请给出原文依据。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q3",
+        "S2Q4",
+        "S2Q5",
+        "S2Q6",
+        "S2Q7",
+        "S2Q8",
+        "S2Q9",
+        "S2Q10",
+        "S2Q11",
+        "S2Q12",
+        "S2Q13",
+        "S2Q14"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的集群配置文件为config.yaml，需在路径/home/kubefusion-litebox-v1.5.6/下进行编辑，关键字段包括UPF节点名称、K8s地址、物理机绑核方案、防火墙白名单、pod网段、service网段、CPU隔离配置、HugePage配置及registry配置。",
+            "quote_ids": [
+              "S2Q3",
+              "S2Q4",
+              "S2Q5",
+              "S2Q6"
+            ]
+          },
+          {
+            "text": "关键字段包括：hostname（UPF节点名称，如gd-gz-gdlt-upf01）、masters（K8s地址，如172.16.100.50）、cpu_manager_policy.reserved_system_cpus（绑核方案，如12-23,29-47）、ufw.enabled及whitelist（防火墙白名单）、networking.pod_subnet和service_subnet（pod与service网段）、hugepage.total（HugePage数量）。",
+            "quote_ids": [
+              "S2Q10",
+              "S2Q11",
+              "S2Q12",
+              "S2Q13"
+            ]
+          },
+          {
+            "text": "配置文件修改后需执行命令：vim config.yaml进入编辑，修改后按【ESC】键输入“:wq”保存退出。",
+            "quote_ids": [
+              "S2Q8",
+              "S2Q9",
+              "S2Q10",
+              "S2Q11"
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性未确认，但内容基于5.0版本证据。"
+        ]
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的集群配置文件为config.yaml，需在路径/home/kubefusion-litebox-v1.5.6/下进行编辑，关键字段包括UPF节点名称、K8s地址、物理机绑核方案、防火墙白名单、pod网段、service网段、CPU隔离配置、HugePage配置及registry配置。",
+            "citations": [
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "部署集群前，需要新建并调整集群配置文件，当前集群自定义参数通过config.yaml文件进行配置。\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "执行以下命令，基于config.sample.yaml示例配置文件生成一份名为config.yaml的配置文件\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "#cd /home/kubefusion-litebox-v1.5.6/\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "# cp config.sample.yaml config.yaml\n"
+              }
+            ]
+          },
+          {
+            "text": "关键字段包括：hostname（UPF节点名称，如gd-gz-gdlt-upf01）、masters（K8s地址，如172.16.100.50）、cpu_manager_policy.reserved_system_cpus（绑核方案，如12-23,29-47）、ufw.enabled及whitelist（防火墙白名单）、networking.pod_subnet和service_subnet（pod与service网段）、hugepage.total（HugePage数量）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "UPF节点名称：gd-gz-gdlt-upf01；\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "K8s地址：172.16.100.50；\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "物理机绑核方案：12-23, 29-47（本文档模板样例），或者是0-9,20-29；\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "防火墙白名单：ufw.enabled设置为true，并填写放通的IP地址；\n"
+              }
+            ]
+          },
+          {
+            "text": "配置文件修改后需执行命令：vim config.yaml进入编辑，修改后按【ESC】键输入“:wq”保存退出。",
+            "citations": [
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "$ vim config.yaml\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "按【I】键进入编辑模式，根据前面章节的确定的参数修改config.yaml文件对应的配置内容：\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "UPF节点名称：gd-gz-gdlt-upf01；\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "K8s地址：172.16.100.50；\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性未确认，但内容基于5.0版本证据。"
+        ]
+      },
+      "support_decisions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "status": "missing_source",
+    "missing_information": [
+      "版本适用性未确认，但内容基于5.0版本证据。",
+      "部分陈述未通过自动证据支持检查，已移除。"
+    ]
+  }
+}

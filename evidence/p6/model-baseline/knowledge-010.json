@@ -1,0 +1,486 @@
+{
+  "row": {
+    "id": "knowledge-010",
+    "model": "baseline",
+    "evidence_sha256": "1f44912cec36a02f28c5bea449d204e4850cd93de0ef2efa84202975c393e836",
+    "elapsed_ms": 25929.300627671182,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 8190,
+      "completion_tokens_observed": 495,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址’解释说明和关键字段，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "检查upf 业务网络地址配置\n单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+        "citations": [
+          {
+            "chunk_id": "chunk-0a6f7d1d943a62614770907f",
+            "quote": "检查upf 业务网络地址配置"
+          },
+          {
+            "chunk_id": "chunk-37015f8c510912ff3ba8d98a",
+            "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+          },
+          {
+            "chunk_id": "chunk-37015f8c510912ff3ba8d98a",
+            "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+          },
+          {
+            "chunk_id": "chunk-349d0a04c0da3c79c5dab97b",
+            "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+          }
+        ]
+      },
+      {
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1\n配置UPF各个接口地址\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+            "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+          },
+          {
+            "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+            "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+          },
+          {
+            "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+            "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+          },
+          {
+            "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+            "quote": "配置UPF各个接口地址\n"
+          }
+        ]
+      },
+      {
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"2\", InterfaceType = \"N4\", IPAddressType = \"IPv6\", IPv6Address = \"2404::4:50\", IPv6PrefixLen = 64, VRFEnable = \"OFF\";}' 127.0.0.1",
+        "citations": [
+          {
+            "chunk_id": "chunk-21dccc114177dcd35158f743",
+            "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+          },
+          {
+            "chunk_id": "chunk-21dccc114177dcd35158f743",
+            "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"2\", InterfaceType = \"N4\", IPAddressType = \"IPv6\", IPv6Address = \"2404::4:50\", IPv6PrefixLen = 64, VRFEnable = \"OFF\";}' 127.0.0.1"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-0a6f7d1d943a62614770907f",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置"
+        ],
+        "parent_id": "section-167740f376c6b5f71927",
+        "kind": "prose",
+        "text": "安装5GC业务软件 / 单节点离线部署UPF / 检查upf 业务网络地址配置\n检查upf 业务网络地址配置",
+        "token_count": 35,
+        "block_ids": [
+          "manual-1edf23113651430f:b001935"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1032]"
+        ],
+        "ordinal_start": 1935,
+        "ordinal_end": 1935,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-37015f8c510912ff3ba8d98a",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+        "token_count": 154,
+        "block_ids": [
+          "manual-1edf23113651430f:b001946"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1043]"
+        ],
+        "ordinal_start": 1946,
+        "ordinal_end": 1946,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "N3"
+        ],
+        "command_id": "cmd-c68de5f3e77561cc",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-349d0a04c0da3c79c5dab97b",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n为N3/N6接口配置IP地址\n配置N3地址",
+        "token_count": 43,
+        "block_ids": [
+          "manual-1edf23113651430f:b001940",
+          "manual-1edf23113651430f:b001941"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1037]",
+          "word/document.xml/body/p[1038]"
+        ],
+        "ordinal_start": 1940,
+        "ordinal_end": 1941,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "N6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1",
+        "token_count": 157,
+        "block_ids": [
+          "manual-1edf23113651430f:b001944"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1041]"
+        ],
+        "ordinal_start": 1944,
+        "ordinal_end": 1944,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "N6"
+        ],
+        "command_id": "cmd-8a9d5a785f046c34",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n配置UPF各个接口地址\n若网管未分配IP地址时可以手动配置，一般通过CURL命令配置接口地址。具体命令格式为：\n为接口配置N4 地址",
+        "token_count": 70,
+        "block_ids": [
+          "manual-1edf23113651430f:b001936",
+          "manual-1edf23113651430f:b001937",
+          "manual-1edf23113651430f:b001938"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1033]",
+          "word/document.xml/body/p[1034]",
+          "word/document.xml/body/p[1035]"
+        ],
+        "ordinal_start": 1936,
+        "ordinal_end": 1938,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N4"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-21dccc114177dcd35158f743",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "配置UPF各个接口地址"
+        ],
+        "parent_id": "section-e84ad9708a71d319b94f",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\ncurl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"2\", InterfaceType = \"N4\", IPAddressType = \"IPv6\", IPv6Address = \"2404::4:50\", IPv6PrefixLen = 64, VRFEnable = \"OFF\";}' 127.0.0.1",
+        "token_count": 142,
+        "block_ids": [
+          "manual-1edf23113651430f:b001939"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1036]"
+        ],
+        "ordinal_start": 1939,
+        "ordinal_end": 1939,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [
+          "N4"
+        ],
+        "command_id": "cmd-f4399e2df5f49217",
+        "command_family": "other",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S3Q1",
+        "S3Q2",
+        "S3Q3",
+        "S3Q4",
+        "S3Q5",
+        "S3Q6",
+        "S3Q7",
+        "S3Q8",
+        "S3Q9",
+        "S3Q10"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "配置UPF各个接口地址可通过curl命令行工具执行ADD UpfIntfAddrConfig操作，例如为N3接口配置IPv4地址：InterfaceId = '3', InterfaceType = 'N3', IPv4Address = '100.10.1.50', IPv4Mask = '255.255.255.0'。",
+            "quote_ids": [
+              "S2Q2",
+              "S5Q1",
+              "S5Q2",
+              "S11Q1"
+            ]
+          },
+          {
+            "text": "为N6接口配置IPv4地址时，需设置InterfaceId = '5', InterfaceType = 'N6', IPv4Address = '174.100.100.50', IPv4Mask = '255.255.255.0'，并使用curl命令发送至127.0.0.1。",
+            "quote_ids": [
+              "S1Q1",
+              "S1Q2",
+              "S7Q1",
+              "S7Q2"
+            ]
+          },
+          {
+            "text": "配置N4接口地址时可使用IPv6，例如设置InterfaceId = '2', InterfaceType = 'N4', IPv6Address = '2404::4:50', IPv6PrefixLen = 64，通过curl命令完成配置。",
+            "quote_ids": [
+              "S6Q1",
+              "S6Q2"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "配置UPF各个接口地址可通过curl命令行工具执行ADD UpfIntfAddrConfig操作，例如为N3接口配置IPv4地址：InterfaceId = '3', InterfaceType = 'N3', IPv4Address = '100.10.1.50', IPv4Mask = '255.255.255.0'。",
+            "citations": [
+              {
+                "chunk_id": "chunk-0a6f7d1d943a62614770907f",
+                "quote": "检查upf 业务网络地址配置"
+              },
+              {
+                "chunk_id": "chunk-37015f8c510912ff3ba8d98a",
+                "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+              },
+              {
+                "chunk_id": "chunk-37015f8c510912ff3ba8d98a",
+                "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"3\", InterfaceType = \"N3\", IPAddressType = \"IPv4\", IPv4Address = \"100.10.1.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+              },
+              {
+                "chunk_id": "chunk-349d0a04c0da3c79c5dab97b",
+                "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+              }
+            ]
+          },
+          {
+            "text": "为N6接口配置IPv4地址时，需设置InterfaceId = '5', InterfaceType = 'N6', IPv4Address = '174.100.100.50', IPv4Mask = '255.255.255.0'，并使用curl命令发送至127.0.0.1。",
+            "citations": [
+              {
+                "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+                "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+              },
+              {
+                "chunk_id": "chunk-013b7cb89c91edbafb296e8a",
+                "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"5\", InterfaceType = \"N6\", IPAddressType = \"IPv4\", IPv4Address = \"174.100.100.50\", IPv4Mask = \"255.255.255.0\", VRFEnable = \"OFF\";}' 127.0.0.1"
+              },
+              {
+                "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+                "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+              },
+              {
+                "chunk_id": "chunk-90b8a37655128bab4cb85c5a",
+                "quote": "配置UPF各个接口地址\n"
+              }
+            ]
+          },
+          {
+            "text": "配置N4接口地址时可使用IPv6，例如设置InterfaceId = '2', InterfaceType = 'N4', IPv6Address = '2404::4:50', IPv6PrefixLen = 64，通过curl命令完成配置。",
+            "citations": [
+              {
+                "chunk_id": "chunk-21dccc114177dcd35158f743",
+                "quote": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址\n"
+              },
+              {
+                "chunk_id": "chunk-21dccc114177dcd35158f743",
+                "quote": "curl -H \"Content-Type:application/json\" -H \"User-Agent: okhttp/3.6.0\" -H \"Host: ns1.upf-1.com\" -X POST -d '{ADD UpfIntfAddrConfig : InterfaceId = \"2\", InterfaceType = \"N4\", IPAddressType = \"IPv6\", IPv6Address = \"2404::4:50\", IPv6PrefixLen = 64, VRFEnable = \"OFF\";}' 127.0.0.1"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

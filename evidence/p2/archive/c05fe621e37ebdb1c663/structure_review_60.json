@@ -1,0 +1,1417 @@
+{
+  "generation": "c05fe621e37ebdb1c663",
+  "counts": {
+    "command": 20,
+    "table": 20,
+    "step": 20
+  },
+  "human_reviewed": 0,
+  "items": [
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000919",
+      "locator": "word/document.xml/body/p[390]",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置UPF物理机",
+        "Coredump开关打开"
+      ],
+      "excerpt": "cat >/etc/profile.d/coredump.sh<<EOF",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002003",
+      "locator": "word/document.xml/body/p[1096]",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "检查N3N6接口及IP配置"
+      ],
+      "excerpt": "UPF# show interface addr",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000909",
+      "locator": "word/document.xml/body/p[380]",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置UPF物理机",
+        "Coredump开关打开"
+      ],
+      "excerpt": "mkdir -p /opt/local/tmp/core",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002398",
+      "locator": "word/document.xml/body/p[1485]",
+      "section_path": [
+        "安装5GC业务软件",
+        "基本配置说明",
+        "更换upfd镜像"
+      ],
+      "excerpt": "kubectl -n ns1-ee0e0 delete pods -l app=upfd-1",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002980",
+      "locator": "word/document.xml/body/p[1793]",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "集群安装问题"
+      ],
+      "excerpt": "systemctl status containerd",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000917",
+      "locator": "word/document.xml/body/p[388]",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置UPF物理机",
+        "Coredump开关打开"
+      ],
+      "excerpt": "echo \"kernel.core_pattern=/opt/local/tmp/core/core_%h_%e_%p_%i_%s_%\" > /etc/sysctl.d/coredump.conf",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002993",
+      "locator": "word/document.xml/body/p[1806]",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "excerpt": "kubectl -n <namespace> logs -f <pod-name>",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002990",
+      "locator": "word/document.xml/body/p[1803]",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "excerpt": "kubectl -n <namespace> describe pods <pod-name>",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000941",
+      "locator": "word/document.xml/body/p[410]",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置UPF物理机",
+        "修改CPU中断配置"
+      ],
+      "excerpt": "reboot",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b003021",
+      "locator": "word/document.xml/body/p[1834]",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "插件安装问题"
+      ],
+      "excerpt": "helm -n openebs ls",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b000752",
+      "locator": "word/document.xml/body/p[177]",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "excerpt": "set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b001135",
+      "locator": "word/document.xml/body/p[427]",
+      "section_path": [
+        "交付配置",
+        "GRE隧道配置"
+      ],
+      "excerpt": "ip route add {UE地址池网段} via gre3（业务运行前配置）",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b000855",
+      "locator": "word/document.xml/body/p[260]",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "excerpt": "UPFD> show cp-node",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b000821",
+      "locator": "word/document.xml/body/p[226]",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询网元配置信息",
+        "功能配置"
+      ],
+      "excerpt": "show config",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000071",
+      "locator": "word/document.xml/body/p[25]/txbxContent[1]/p[1]",
+      "section_path": [
+        "通用指引步骤",
+        "通用处理步骤"
+      ],
+      "excerpt": "upfmgr restart",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000711",
+      "locator": "word/document.xml/body/p[281]/txbxContent[1]/p[1]",
+      "section_path": [
+        "业务故障案例",
+        "UPF 到基站链路异常",
+        "信息收集"
+      ],
+      "excerpt": "UPF# show interface",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000587",
+      "locator": "word/document.xml/body/p[239]/txbxContent[1]/p[1]",
+      "section_path": [
+        "业务故障案例",
+        "UPF N3 IPv4 接口地址到网关链路异常",
+        "信息收集"
+      ],
+      "excerpt": "UPF# show bond",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000382",
+      "locator": "word/document.xml/body/p[128]/txbxContent[1]/p[22]",
+      "section_path": [
+        "业务故障案例",
+        "N3N6接口地址未配置进data plane",
+        "症状现象"
+      ],
+      "excerpt": "UPF# show interface addr",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000772",
+      "locator": "word/document.xml/body/p[303]/txbxContent[1]/p[1]",
+      "section_path": [
+        "业务故障案例",
+        "UPF 到客户内网链路异常",
+        "信息收集"
+      ],
+      "excerpt": "UPF# show interface addr",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "command",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000046",
+      "locator": "word/document.xml/body/p[13]/txbxContent[1]/p[6]",
+      "section_path": [
+        "通用指引步骤",
+        "通用排查步骤"
+      ],
+      "excerpt": "ping <n3_gateway_ip>",
+      "source_xml_exact": true,
+      "human_status": "pending"
+    },
+    {
+      "category": "table",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000135",
+      "locator": "word/document.xml/body/tbl[1]/tr[1]",
+      "section_path": [
+        "目录",
+        "标识符号约定"
+      ],
+      "excerpt": "符号\t意义",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "符号",
+          "effective_text": "符号",
+          "origin": "word/document.xml/body/tbl[1]/tr[1]/tc[1]",
+          "locator": "word/document.xml/body/tbl[1]/tr[1]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "意义",
+          "effective_text": "意义",
+          "origin": "word/document.xml/body/tbl[1]/tr[1]/tc[2]",
+          "locator": "word/document.xml/body/tbl[1]/tr[1]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000393",
+      "locator": "word/document.xml/body/tbl[8]/tr[1]",
+      "section_path": [
+        "安装准备",
+        "安装规划",
+        "UPF节点IP规划",
+        "UPF地址规划Bonding模式"
+      ],
+      "excerpt": "节点\t网口规划\t网口\tVLAN子接口\tVLANID\tIP规划\t说明",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "节点",
+          "effective_text": "节点",
+          "origin": "word/document.xml/body/tbl[8]/tr[1]/tc[1]",
+          "locator": "word/document.xml/body/tbl[8]/tr[1]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "网口规划",
+          "effective_text": "网口规划",
+          "origin": "word/document.xml/body/tbl[8]/tr[1]/tc[2]",
+          "locator": "word/document.xml/body/tbl[8]/tr[1]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "column": 3,
+          "span": 1,
+          "raw_text": "网口",
+          "effective_text": "网口",
+          "origin": "word/document.xml/body/tbl[8]/tr[1]/tc[3]",
+          "locator": "word/document.xml/body/tbl[8]/tr[1]/tc[3]",
+          "vmerge": null
+        },
+        {
+          "column": 4,
+          "span": 1,
+          "raw_text": "VLAN子接口",
+          "effective_text": "VLAN子接口",
+          "origin": "word/document.xml/body/tbl[8]/tr[1]/tc[4]",
+          "locator": "word/document.xml/body/tbl[8]/tr[1]/tc[4]",
+          "vmerge": null
+        },
+        {
+          "column": 5,
+          "span": 1,
+          "raw_text": "VLANID",
+          "effective_text": "VLANID",
+          "origin": "word/document.xml/body/tbl[8]/tr[1]/tc[5]",
+          "locator": "word/document.xml/body/tbl[8]/tr[1]/tc[5]",
+          "vmerge": null
+        },
+        {
+          "column": 6,
+          "span": 1,
+          "raw_text": "IP规划",
+          "effective_text": "IP规划",
+          "origin": "word/document.xml/body/tbl[8]/tr[1]/tc[6]",
+          "locator": "word/document.xml/body/tbl[8]/tr[1]/tc[6]",
+          "vmerge": null
+        },
+        {
+          "column": 7,
+          "span": 1,
+          "raw_text": "说明",
+          "effective_text": "说明",
+          "origin": "word/document.xml/body/tbl[8]/tr[1]/tc[7]",
+          "locator": "word/document.xml/body/tbl[8]/tr[1]/tc[7]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000977",
+      "locator": "word/document.xml/body/tbl[13]/tr[8]",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "确定网卡映射关系"
+      ],
+      "excerpt": "N9光口上\t\tens1f0",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "N9光口上",
+          "effective_text": "N9光口上",
+          "origin": "word/document.xml/body/tbl[13]/tr[8]/tc[1]",
+          "locator": "word/document.xml/body/tbl[13]/tr[8]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "\tens1f0",
+          "effective_text": "\tens1f0",
+          "origin": "word/document.xml/body/tbl[13]/tr[8]/tc[2]",
+          "locator": "word/document.xml/body/tbl[13]/tr[8]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b001712",
+      "locator": "word/document.xml/body/tbl[21]/tr[2]",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "上传upf安装包"
+      ],
+      "excerpt": "1\tservicePack-CU5GC_UPF_5.0.210.zip\tUPF镜像及helm chart",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "1",
+          "effective_text": "1",
+          "origin": "word/document.xml/body/tbl[21]/tr[2]/tc[1]",
+          "locator": "word/document.xml/body/tbl[21]/tr[2]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "servicePack-CU5GC_UPF_5.0.210.zip",
+          "effective_text": "servicePack-CU5GC_UPF_5.0.210.zip",
+          "origin": "word/document.xml/body/tbl[21]/tr[2]/tc[2]",
+          "locator": "word/document.xml/body/tbl[21]/tr[2]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "column": 3,
+          "span": 1,
+          "raw_text": "UPF镜像及helm chart",
+          "effective_text": "UPF镜像及helm chart",
+          "origin": "word/document.xml/body/tbl[21]/tr[2]/tc[3]",
+          "locator": "word/document.xml/body/tbl[21]/tr[2]/tc[3]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002785",
+      "locator": "word/document.xml/body/tbl[24]/tr[27]",
+      "section_path": [
+        "网管纳管存量UPF",
+        "填入存量UPF环境信息",
+        "sheet3 (网元pod)填写"
+      ],
+      "excerpt": "生产厂家manufacturer\t自定义参数\t默认为CUCC",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "生产厂家manufacturer",
+          "effective_text": "生产厂家manufacturer",
+          "origin": "word/document.xml/body/tbl[24]/tr[27]/tc[1]",
+          "locator": "word/document.xml/body/tbl[24]/tr[27]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "自定义参数",
+          "effective_text": "自定义参数",
+          "origin": "word/document.xml/body/tbl[24]/tr[27]/tc[2]",
+          "locator": "word/document.xml/body/tbl[24]/tr[27]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "column": 3,
+          "span": 1,
+          "raw_text": "默认为CUCC",
+          "effective_text": "默认为CUCC",
+          "origin": "word/document.xml/body/tbl[24]/tr[27]/tc[3]",
+          "locator": "word/document.xml/body/tbl[24]/tr[27]/tc[3]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b000342",
+      "locator": "word/document.xml/body/tbl[7]/tr[1]",
+      "section_path": [
+        "产品配置",
+        "网管配置管理",
+        "GRE隧道配置",
+        "功能配置"
+      ],
+      "excerpt": "参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "参数名称",
+          "effective_text": "参数名称",
+          "origin": "word/document.xml/body/tbl[7]/tr[1]/tc[1]",
+          "locator": "word/document.xml/body/tbl[7]/tr[1]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "参数值类型",
+          "effective_text": "参数值类型",
+          "origin": "word/document.xml/body/tbl[7]/tr[1]/tc[2]",
+          "locator": "word/document.xml/body/tbl[7]/tr[1]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "column": 3,
+          "span": 1,
+          "raw_text": "取值范围",
+          "effective_text": "取值范围",
+          "origin": "word/document.xml/body/tbl[7]/tr[1]/tc[3]",
+          "locator": "word/document.xml/body/tbl[7]/tr[1]/tc[3]",
+          "vmerge": null
+        },
+        {
+          "column": 4,
+          "span": 1,
+          "raw_text": "是否必选",
+          "effective_text": "是否必选",
+          "origin": "word/document.xml/body/tbl[7]/tr[1]/tc[4]",
+          "locator": "word/document.xml/body/tbl[7]/tr[1]/tc[4]",
+          "vmerge": null
+        },
+        {
+          "column": 5,
+          "span": 1,
+          "raw_text": "默认值",
+          "effective_text": "默认值",
+          "origin": "word/document.xml/body/tbl[7]/tr[1]/tc[5]",
+          "locator": "word/document.xml/body/tbl[7]/tr[1]/tc[5]",
+          "vmerge": null
+        },
+        {
+          "column": 6,
+          "span": 1,
+          "raw_text": "参数说明",
+          "effective_text": "参数说明",
+          "origin": "word/document.xml/body/tbl[7]/tr[1]/tc[6]",
+          "locator": "word/document.xml/body/tbl[7]/tr[1]/tc[6]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b000665",
+      "locator": "word/document.xml/body/tbl[11]/tr[1]",
+      "section_path": [
+        "产品配置",
+        "网管配置管理",
+        "PFCP定时器配置",
+        "功能配置"
+      ],
+      "excerpt": "参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "参数名称",
+          "effective_text": "参数名称",
+          "origin": "word/document.xml/body/tbl[11]/tr[1]/tc[1]",
+          "locator": "word/document.xml/body/tbl[11]/tr[1]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "参数值类型",
+          "effective_text": "参数值类型",
+          "origin": "word/document.xml/body/tbl[11]/tr[1]/tc[2]",
+          "locator": "word/document.xml/body/tbl[11]/tr[1]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "column": 3,
+          "span": 1,
+          "raw_text": "取值范围",
+          "effective_text": "取值范围",
+          "origin": "word/document.xml/body/tbl[11]/tr[1]/tc[3]",
+          "locator": "word/document.xml/body/tbl[11]/tr[1]/tc[3]",
+          "vmerge": null
+        },
+        {
+          "column": 4,
+          "span": 1,
+          "raw_text": "是否必选",
+          "effective_text": "是否必选",
+          "origin": "word/document.xml/body/tbl[11]/tr[1]/tc[4]",
+          "locator": "word/document.xml/body/tbl[11]/tr[1]/tc[4]",
+          "vmerge": null
+        },
+        {
+          "column": 5,
+          "span": 1,
+          "raw_text": "默认值",
+          "effective_text": "默认值",
+          "origin": "word/document.xml/body/tbl[11]/tr[1]/tc[5]",
+          "locator": "word/document.xml/body/tbl[11]/tr[1]/tc[5]",
+          "vmerge": null
+        },
+        {
+          "column": 6,
+          "span": 1,
+          "raw_text": "参数说明",
+          "effective_text": "参数说明",
+          "origin": "word/document.xml/body/tbl[11]/tr[1]/tc[6]",
+          "locator": "word/document.xml/body/tbl[11]/tr[1]/tc[6]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b000347",
+      "locator": "word/document.xml/body/tbl[2]/tr[4]",
+      "section_path": [
+        "2 网元配置（Configuration）",
+        "2.2 UPF",
+        "2.2.1 接口配置"
+      ],
+      "excerpt": "IP地址类型\t\t无",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "IP地址类型",
+          "effective_text": "IP地址类型",
+          "origin": "word/document.xml/body/tbl[2]/tr[4]/tc[1]",
+          "locator": "word/document.xml/body/tbl[2]/tr[4]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "",
+          "effective_text": "",
+          "origin": "word/document.xml/body/tbl[2]/tr[4]/tc[2]",
+          "locator": "word/document.xml/body/tbl[2]/tr[4]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "column": 3,
+          "span": 1,
+          "raw_text": "无",
+          "effective_text": "无",
+          "origin": "word/document.xml/body/tbl[2]/tr[4]/tc[3]",
+          "locator": "word/document.xml/body/tbl[2]/tr[4]/tc[3]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b000619",
+      "locator": "word/document.xml/body/tbl[9]/tr[12]",
+      "section_path": [
+        "2 网元配置（Configuration）",
+        "2.2 UPF",
+        "2.2.5 系统配置",
+        "2.2.5.1 UPF功能特性"
+      ],
+      "excerpt": "UDBC\tUL/DL缓存控制",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "UDBC",
+          "effective_text": "UDBC",
+          "origin": "word/document.xml/body/tbl[9]/tr[12]/tc[1]",
+          "locator": "word/document.xml/body/tbl[9]/tr[12]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "UL/DL缓存控制",
+          "effective_text": "UL/DL缓存控制",
+          "origin": "word/document.xml/body/tbl[9]/tr[12]/tc[2]",
+          "locator": "word/document.xml/body/tbl[9]/tr[12]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b001070",
+      "locator": "word/document.xml/body/tbl[16]/tr[3]",
+      "section_path": [
+        "4 安全管理（Security Management）",
+        "4.2 用户组管理",
+        "4.2.1 添加用户组"
+      ],
+      "excerpt": "Create Time\t创建时间",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "Create Time",
+          "effective_text": "Create Time",
+          "origin": "word/document.xml/body/tbl[16]/tr[3]/tc[1]",
+          "locator": "word/document.xml/body/tbl[16]/tr[3]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "创建时间",
+          "effective_text": "创建时间",
+          "origin": "word/document.xml/body/tbl[16]/tr[3]/tc[2]",
+          "locator": "word/document.xml/body/tbl[16]/tr[3]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b001519",
+      "locator": "word/document.xml/body/tbl[23]/tr[5]",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.2 历史告警",
+        "7.2.1 历史告警查询"
+      ],
+      "excerpt": "NF ID\tNF名",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "NF ID",
+          "effective_text": "NF ID",
+          "origin": "word/document.xml/body/tbl[23]/tr[5]/tc[1]",
+          "locator": "word/document.xml/body/tbl[23]/tr[5]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "NF名",
+          "effective_text": "NF名",
+          "origin": "word/document.xml/body/tbl[23]/tr[5]/tc[2]",
+          "locator": "word/document.xml/body/tbl[23]/tr[5]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b001831",
+      "locator": "word/document.xml/body/tbl[30]/tr[1]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.1 Manage-AMF",
+        "8.2.1.3 Registration Update Procedure",
+        "8.2.1.3.2 Registration Update Success"
+      ],
+      "excerpt": "统计参数\t说明",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "统计参数",
+          "effective_text": "统计参数",
+          "origin": "word/document.xml/body/tbl[30]/tr[1]/tc[1]",
+          "locator": "word/document.xml/body/tbl[30]/tr[1]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "说明",
+          "effective_text": "说明",
+          "origin": "word/document.xml/body/tbl[30]/tr[1]/tc[2]",
+          "locator": "word/document.xml/body/tbl[30]/tr[1]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b002057",
+      "locator": "word/document.xml/body/tbl[38]/tr[3]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.1 Manage-AMF",
+        "8.2.1.8 Inter RAT Handover Procedure",
+        "8.2.1.8.1 4G Handover To 5G"
+      ],
+      "excerpt": "4G Handover To 5G Success\t\t成功从4G切换到5G次数",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "4G Handover To 5G Success\t",
+          "effective_text": "4G Handover To 5G Success\t",
+          "origin": "word/document.xml/body/tbl[38]/tr[3]/tc[1]",
+          "locator": "word/document.xml/body/tbl[38]/tr[3]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "成功从4G切换到5G次数",
+          "effective_text": "成功从4G切换到5G次数",
+          "origin": "word/document.xml/body/tbl[38]/tr[3]/tc[2]",
+          "locator": "word/document.xml/body/tbl[38]/tr[3]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b002238",
+      "locator": "word/document.xml/body/tbl[44]/tr[5]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.1 Manage-AMF",
+        "8.2.1.9 Service Base Interface Message",
+        "8.2.1.9.5 Ue Context Management Registration Failed"
+      ],
+      "excerpt": "Roaming Not Allowed\t不允许漫游",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "Roaming Not Allowed",
+          "effective_text": "Roaming Not Allowed",
+          "origin": "word/document.xml/body/tbl[44]/tr[5]/tc[1]",
+          "locator": "word/document.xml/body/tbl[44]/tr[5]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "不允许漫游",
+          "effective_text": "不允许漫游",
+          "origin": "word/document.xml/body/tbl[44]/tr[5]/tc[2]",
+          "locator": "word/document.xml/body/tbl[44]/tr[5]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b002391",
+      "locator": "word/document.xml/body/tbl[47]/tr[12]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.1 Manage-AMF",
+        "8.2.1.9 Service Base Interface Message",
+        "8.2.1.9.8 Namf Communication Service"
+      ],
+      "excerpt": "CreateUeContextRsp Send\t创建UE上下文回复发送",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "CreateUeContextRsp Send",
+          "effective_text": "CreateUeContextRsp Send",
+          "origin": "word/document.xml/body/tbl[47]/tr[12]/tc[1]",
+          "locator": "word/document.xml/body/tbl[47]/tr[12]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "创建UE上下文回复发送",
+          "effective_text": "创建UE上下文回复发送",
+          "origin": "word/document.xml/body/tbl[47]/tr[12]/tc[2]",
+          "locator": "word/document.xml/body/tbl[47]/tr[12]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b002548",
+      "locator": "word/document.xml/body/tbl[51]/tr[14]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.1 Manage-AMF",
+        "8.2.1.9 Service Base Interface Message",
+        "8.2.1.9.12 Nnrf Service"
+      ],
+      "excerpt": "NfDiscoveryReq Send\t\tNF发现成功",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "NfDiscoveryReq Send\t",
+          "effective_text": "NfDiscoveryReq Send\t",
+          "origin": "word/document.xml/body/tbl[51]/tr[14]/tc[1]",
+          "locator": "word/document.xml/body/tbl[51]/tr[14]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "NF发现成功",
+          "effective_text": "NF发现成功",
+          "origin": "word/document.xml/body/tbl[51]/tr[14]/tc[2]",
+          "locator": "word/document.xml/body/tbl[51]/tr[14]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b002707",
+      "locator": "word/document.xml/body/tbl[54]/tr[11]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.1 Manage-AMF",
+        "8.2.1.10 N2 Interface Message",
+        "8.2.1.10.2 Outgoing Messages"
+      ],
+      "excerpt": "Initial ContextSetup Request\t\t下行RAN状态传递",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "Initial ContextSetup Request\t",
+          "effective_text": "Initial ContextSetup Request\t",
+          "origin": "word/document.xml/body/tbl[54]/tr[11]/tc[1]",
+          "locator": "word/document.xml/body/tbl[54]/tr[11]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "下行RAN状态传递",
+          "effective_text": "下行RAN状态传递",
+          "origin": "word/document.xml/body/tbl[54]/tr[11]/tc[2]",
+          "locator": "word/document.xml/body/tbl[54]/tr[11]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b002943",
+      "locator": "word/document.xml/body/tbl[63]/tr[4]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.2 Manage-SMF",
+        "8.2.2.5 N7 Interface Measurement Data",
+        "8.2.2.5.2 Modify SM Policy Number"
+      ],
+      "excerpt": "Update SM Policy Fail Number\t更新SM 策略请求失败的次数",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "Update SM Policy Fail Number",
+          "effective_text": "Update SM Policy Fail Number",
+          "origin": "word/document.xml/body/tbl[63]/tr[4]/tc[1]",
+          "locator": "word/document.xml/body/tbl[63]/tr[4]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "更新SM 策略请求失败的次数",
+          "effective_text": "更新SM 策略请求失败的次数",
+          "origin": "word/document.xml/body/tbl[63]/tr[4]/tc[2]",
+          "locator": "word/document.xml/body/tbl[63]/tr[4]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b003176",
+      "locator": "word/document.xml/body/tbl[73]/tr[6]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.3 Manage-UPF",
+        "8.2.3.5 N4 Node Level Procedures",
+        "8.2.3.5.1 PFCP Assosication Related Statistics"
+      ],
+      "excerpt": "association update request received\t接收的关联更新请求",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "association update request received",
+          "effective_text": "association update request received",
+          "origin": "word/document.xml/body/tbl[73]/tr[6]/tc[1]",
+          "locator": "word/document.xml/body/tbl[73]/tr[6]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "接收的关联更新请求",
+          "effective_text": "接收的关联更新请求",
+          "origin": "word/document.xml/body/tbl[73]/tr[6]/tc[2]",
+          "locator": "word/document.xml/body/tbl[73]/tr[6]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "table",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b003355",
+      "locator": "word/document.xml/body/tbl[78]/tr[3]",
+      "section_path": [
+        "8 性能管理（Performance Management）",
+        "8.2 Manage",
+        "8.2.3 Manage-UPF",
+        "8.2.3.7 N4 Session Loading Statistics",
+        "8.2.3.7.2 Live Session Statistic"
+      ],
+      "excerpt": "current ipv6 session number\t当前的ipv6会话数",
+      "cells": [
+        {
+          "column": 1,
+          "span": 1,
+          "raw_text": "current ipv6 session number",
+          "effective_text": "current ipv6 session number",
+          "origin": "word/document.xml/body/tbl[78]/tr[3]/tc[1]",
+          "locator": "word/document.xml/body/tbl[78]/tr[3]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "column": 2,
+          "span": 1,
+          "raw_text": "当前的ipv6会话数",
+          "effective_text": "当前的ipv6会话数",
+          "origin": "word/document.xml/body/tbl[78]/tr[3]/tc[2]",
+          "locator": "word/document.xml/body/tbl[78]/tr[3]/tc[2]",
+          "vmerge": null
+        }
+      ],
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000049",
+      "locator": "word/document.xml/body/p[49]",
+      "section_path": [
+        "目录"
+      ],
+      "excerpt": "\t\t HYPERLINK \\l _Toc23800 3. 安装并配置操作系统\t PAGEREF _Toc23800 \\h 15",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000631",
+      "locator": "word/document.xml/body/p[192]",
+      "section_path": [
+        "安装并配置操作系统"
+      ],
+      "excerpt": "局点现场获取到新服务器之后，需要先对服务器进行新物理机预装配置，预装配置包括新物理机接线，U盘启动盘制作，配置RAID阵列，配置IPMI地址。进一步地，安装Ubuntu22.04.2操作系统并配置。",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b000908",
+      "locator": "word/document.xml/body/p[379]",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置UPF物理机",
+        "Coredump开关打开"
+      ],
+      "excerpt": "复制并输入如下命令：",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b001304",
+      "locator": "word/document.xml/body/p[739]",
+      "section_path": [
+        "安装K8S集群软件",
+        "单节点部署K8S",
+        "检查集群状态"
+      ],
+      "excerpt": "查看节点状态是否为Ready，执行以下命令",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b001781",
+      "locator": "word/document.xml/body/p[884]",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "调整UPF配置（现网部署方式）",
+        "N4网卡配置"
+      ],
+      "excerpt": "根据前面 REF _Toc132029006 \\r \\h 2.3.2.3 REF _Toc132029006 \\h 确定网卡映射关系和 REF _Ref7209 \\n \\h 3.2.4 REF _Ref7209 \\h 配置netplan Bond0口与Bond0子接口章节内容，确定N4对应的网卡。",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b001953",
+      "locator": "word/document.xml/body/p[1049]",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "检查upf 业务网络地址配置",
+        "配置UPF各个接口地址"
+      ],
+      "excerpt": "curl 命令配置完成后，需要重启UPFD 和UPFM 2个POD，具体命令为：",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002213",
+      "locator": "word/document.xml/body/p[1303]",
+      "section_path": [
+        "安装5GC业务软件",
+        "单节点离线部署UPF",
+        "调整UPF配置参数",
+        "非Bond模式转换为bond模式（现网部署方式4/5G融合场景）"
+      ],
+      "excerpt": "  intf_mode: 1 # 0-seperated,1-combined  #UPF N4合设、分设模式选择：1表示合设",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002521",
+      "locator": "word/document.xml/body/p[1606]",
+      "section_path": [
+        "安装License",
+        "UPF激活密钥"
+      ],
+      "excerpt": "throughput(Mbps)     : 1000                                 <<< 确认License限制吞吐量",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-1edf23113651430f",
+      "block_id": "manual-1edf23113651430f:b002963",
+      "locator": "word/document.xml/body/p[1776]",
+      "section_path": [
+        "UPF软件升级更新",
+        "部署新的UPF软件"
+      ],
+      "excerpt": "如果检查发现UPF各个接口IP地址不存在，则需要参考 REF _Toc10483 \\r \\h 5.1.7 REF _Toc10483 \\h 检查upf 业务网络地址配置重新配置各个接口地址。",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b000699",
+      "locator": "word/document.xml/body/tbl[12]/tr[2]/tc[6]/p[1]",
+      "section_path": [
+        "产品配置",
+        "网管配置管理",
+        "UPF网元重启",
+        "功能配置"
+      ],
+      "excerpt": "重启upfd,upfm pod",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-341440f7dd103f51",
+      "block_id": "manual-341440f7dd103f51:b001019",
+      "locator": "word/document.xml/body/tbl[17]/tr[9]/tc[4]/p[1]",
+      "section_path": [
+        "产品监控",
+        "网管告警监控",
+        "告警清单"
+      ],
+      "excerpt": "增加UPF配置相关DNN吞吐量",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b000076",
+      "locator": "word/document.xml/body/p[69]",
+      "section_path": [],
+      "excerpt": "\t HYPERLINK \\l \"_Toc109919664\" 3.3.1 添加路由配置\t PAGEREF _Toc109919664 \\h 244",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b000303",
+      "locator": "word/document.xml/body/p[249]",
+      "section_path": [
+        "2 网元配置（Configuration）",
+        "2.2 UPF"
+      ],
+      "excerpt": "本产品提供多个页面给用户配置UPF各个参数。",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b000729",
+      "locator": "word/document.xml/body/p[418]",
+      "section_path": [
+        "3 设备管理（Device Management）"
+      ],
+      "excerpt": "说明：对核心网进行操作系统层面的管理，提供系统服务管理（配置网管北向接口、南向接口和license服务地址），网卡管理（网卡的查增删改），路由管理（路由的查增删改）和系统管理的功能",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b001076",
+      "locator": "word/document.xml/body/p[653]",
+      "section_path": [
+        "4 安全管理（Security Management）",
+        "4.2 用户组管理",
+        "4.2.2 修改用户组"
+      ],
+      "excerpt": "图4.2.2-1 修改用户组",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b001564",
+      "locator": "word/document.xml/body/p[915]",
+      "section_path": [
+        "7 故障管理（Fault Management）",
+        "7.2 历史告警",
+        "7.2.2 历史告警备注"
+      ],
+      "excerpt": "步骤：勾选列表中想要添加备注的告警记录项-->点击“Alarm Remarks”-->填备注信息-->点击“Save”-->点击弹框中的“OK”按钮，备注成功。",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b003531",
+      "locator": "word/document.xml/body/p[1530]",
+      "section_path": [
+        "9 配置管理（Configure Management）",
+        "9.2 配置备份与恢复"
+      ],
+      "excerpt": "图9.2-1  配置备份与恢复",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-98aa0505da555a15",
+      "block_id": "manual-98aa0505da555a15:b003794",
+      "locator": "word/document.xml/body/p[1707]",
+      "section_path": [
+        "11 K8S",
+        "11.2集群管理",
+        "11.2.2查看集群信息",
+        "11.2.2.4连接节点机器终端"
+      ],
+      "excerpt": "步骤：点击列表的连接按钮，在弹出框内填写主机IP、用户名、密码、端口信息，点击连接打开新窗口连接终端，同11.2.1.4连接集群机器终端",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000282",
+      "locator": "word/document.xml/body/p[71]",
+      "section_path": [
+        "系统平台故障案例",
+        "upfmgr hc执行显示N3和N6的v4/v6地址都为空",
+        "症状现象"
+      ],
+      "excerpt": "upfmgr hc执行报错",
+      "human_status": "pending",
+      "source_xml_exact": true
+    },
+    {
+      "category": "step",
+      "source_id": "manual-9f16bf8ca11723a2",
+      "block_id": "manual-9f16bf8ca11723a2:b000591",
+      "locator": "word/document.xml/body/p[240]",
+      "section_path": [
+        "业务故障案例",
+        "UPF N3 IPv4 接口地址到网关链路异常",
+        "信息收集"
+      ],
+      "excerpt": "检查/root/${HOSTNAME}_CU5GC_UPF_${VERSION}_IP.conf 有无配N3网关地址。",
+      "human_status": "pending",
+      "source_xml_exact": true
+    }
+  ]
+}

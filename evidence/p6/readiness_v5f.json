@@ -1,0 +1,131 @@
+{
+  "pipeline_identity": "ad36d358c78be0406d9f69e4211760b2f56991c3c808dd9fe3952f47bb3477b8",
+  "suite_sha256": "a1060098d02e7df07bac3d507666c65e62c0c079ea096d7624df452fd578a190",
+  "development_summary_sha256": "ac57532cd831b69a0079b81e974ce0e73dc0a5ec6b3ea3c8113af84053f7a7d5",
+  "development_adjudication_sha256": "603e844206f1e9f24712f53f64ab18259a61e5f46a0be93f7587fe279a4efca7",
+  "gates": {
+    "P6_1_current_development_machine": {
+      "pass": true,
+      "cases": 60,
+      "audit": "runs/p6-v4-v5f/repair_audit.json"
+    },
+    "P6_1_current_development_human_semantics": {
+      "pass": true,
+      "support": {
+        "n": 60,
+        "pass": 60,
+        "rate": 1.0
+      },
+      "completeness": {
+        "n": 60,
+        "pass": 60,
+        "rate": 1.0
+      },
+      "command_exact": {
+        "n": 20,
+        "pass": 20,
+        "rate": 1.0
+      },
+      "missing_source_correct": {
+        "n": 4,
+        "pass": 4,
+        "rate": 1.0
+      },
+      "invented_critical_parameters": 0,
+      "carried_prior_user_reviews": 56,
+      "newly_user_reviewed": 4,
+      "adjudication": "runs/p6-v4-v5f/review-intake-fb450cc8cee8/adjudication.json"
+    },
+    "P6_2_default_baseline_selection": {
+      "supported": true,
+      "strict_current_target_ab": false,
+      "model": "Qwen3-30B-A3B-Instruct-2507"
+    },
+    "P6_3_agent_gain": {
+      "comparison_performed": true,
+      "business_gain_validated": false,
+      "selection": "explicit fixed tools/manual direct preferred; finite agent optional exploratory"
+    },
+    "P6_4_manual_full_answer_budget": {
+      "pass": true,
+      "p95_ms": 4792.276856023818
+    },
+    "P6_4_log_diagnosis_budget": {
+      "pass": true,
+      "p95_ms": 98121.99188722298
+    },
+    "P6_4_warm_session_first_visible": {
+      "pass": true,
+      "p95_ms": 4672.030488029122,
+      "n": 20,
+      "startup_ms": 26480.0132131204
+    },
+    "P6_4_one_shot_first_visible": {
+      "pass": false,
+      "p95_ms": 35112.93658101931,
+      "n": 20
+    },
+    "P6_5_configuration_accepted": {
+      "pass": true,
+      "decision": "eval/p6/development_decision.v5f.accepted.json",
+      "frozen": "evidence/p6/frozen_v5f.json"
+    },
+    "P6_5_heldout_executed": {
+      "pass": true,
+      "one_time_consumed": true,
+      "cases": 60,
+      "machine_status_contract_pass": 60,
+      "execution_errors": 0,
+      "retrieval_gate_pass": true,
+      "source_partition_pass": true,
+      "summary": "runs/p6-v4-v5f/heldout-run/reviewed-heldout/summary.json",
+      "machine_audit": "runs/p6-v4-v5f/heldout-run/machine_audit.json"
+    },
+    "P6_5_heldout_human_answers": {
+      "pass": false,
+      "review_complete": true,
+      "user_attested": true,
+      "semantic_gate_pass": false,
+      "support": {
+        "n": 60,
+        "pass": 60,
+        "rate": 1.0
+      },
+      "completeness": {
+        "n": 60,
+        "pass": 42,
+        "rate": 0.7
+      },
+      "command_exact": {
+        "n": 20,
+        "pass": 20,
+        "rate": 1.0
+      },
+      "missing_source_correct": {
+        "n": 6,
+        "pass": 5,
+        "rate": 0.8333333333333334
+      },
+      "invented_critical_parameters": 0,
+      "adjudication": "runs/p6-v4-v5f/heldout-run/review-intake-232c9043e180/adjudication.json",
+      "receipt": "runs/p6-v4-v5f/heldout-run/review-intake-232c9043e180/接收与验收.md",
+      "reviewer_label_identity_verified": false,
+      "disputed_completeness_case_ids": [
+        "knowledge-017",
+        "knowledge-018",
+        "knowledge-019",
+        "knowledge-020"
+      ]
+    },
+    "P6_2_current_manual_ab_signal": {
+      "strict_generation_ab_complete": false,
+      "baseline_dev_cases": 42,
+      "baseline_model_requests": 0,
+      "machine_contract_pass": 42,
+      "reason": "Current manual publication extracts source text deterministically",
+      "baseline_summary": "runs/p6-v4-v5f/current-ab-baseline/summary.json"
+    }
+  },
+  "freeze_ready": true,
+  "M6_pass": false
+}

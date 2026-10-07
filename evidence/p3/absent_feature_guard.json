@@ -1,0 +1,25 @@
+{
+  "pipeline_version": "p3-answer-v3-source-term-gate",
+  "question": "UPF 的 Wi-Fi 7 无线信道切换命令和全部参数是什么？",
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "product": "UPF",
+  "version": null,
+  "model_id": "no-model-called-source-term-check",
+  "claims": [],
+  "citations": [],
+  "warnings": [
+    "P2 命令与截图人工复核尚未完成；引用存在不等于现场适用。"
+  ],
+  "support_check": "not_run",
+  "source_term_gate": {
+    "unsupported_terms": [
+      "Wi-Fi"
+    ],
+    "scope": "complete_native_manual_product_version_corpus"
+  },
+  "status": "missing_source",
+  "missing_information": [
+    "当前产品/版本的原生手册没有明确标识 Wi-Fi 的原文依据；请补充对应资料或核对名称/别名。"
+  ]
+}

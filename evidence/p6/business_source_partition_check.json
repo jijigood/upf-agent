@@ -1,0 +1,11 @@
+{
+  "native_chunks_resolved": 155,
+  "log_events_resolved": 30,
+  "topology_files_resolved": 5,
+  "actual_source_partition_pass": true,
+  "scope": "source identity and original SHA; human relevance still required",
+  "suite_sha256": "f631cdc1131e200304654f2abccf54adcd1417042b0c09a1247eca6734a26bf3",
+  "label_mode": "draft",
+  "human_reviewed": 0,
+  "heldout_model_execution": false
+}

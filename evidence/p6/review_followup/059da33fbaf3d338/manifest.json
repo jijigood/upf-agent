@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-09-29T05:36:34.786815+00:00",
+  "pipeline_identity": "d2a7f1490cbf178e10b3a3cf11b3d241d2faa7b615353ebcae9d99aeb8c090ae",
+  "scope": "followup snapshot; excludes own manifest; submitted and historical sources immutable",
+  "artifact_sha256": {
+    "evidence/p6/review_followup/059da33fbaf3d338/before/config/retrieval.yaml": "47e2c98de7c33dd5fb6ddabca76dcd87bca65782af476bcf99b09e71764bcd10",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/data/p3/indexes/active.json": "69d7cf92ca5c3c04402121476c5e884c4b19f7ae8b29a5a20bee5b8c73692274",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/docs/P6_evaluation.md": "55e0bd70752f2a26a893beeeff660698042a04657ee21280e9797ab1b483b675",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/docs/README.md": "74595eafc2b9423571588fe1520e91b189efeef0dc56bb80c0b84152efcad510",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/docs/dify_plam.md": "88affe8bb0f9cb3d5e7d6273cbe306b8bbc21caf300038585797aef47191cf6e",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/docs/dify_plan.md": "88affe8bb0f9cb3d5e7d6273cbe306b8bbc21caf300038585797aef47191cf6e",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/evidence/quality_closure.json": "0eb0a96fb517e11ea691128b1acfbd6f8106e8340905e4ce1064acca1c1f6fa3",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/src/upf_agent/p3_chunks.py": "30368430ac63f1256a4c5afd495767ff555387944352566ebf67c423751570f8",
+    "evidence/p6/review_followup/059da33fbaf3d338/before/src/upf_agent/p6_contracts.py": "b16772464ced3534be23ab782fa1eb20e834d322fa340d7ede007298e0713645",
+    "evidence/p6/review_followup/059da33fbaf3d338/dependencies.log": "811dfdace2febc8c19a869a97fd5ff6aed53274cf9148bfe4c0b29f8aebd28e8",
+    "evidence/p6/review_followup/059da33fbaf3d338/format.log": "00a7f07f2dd4a1459bd76952c6f781e7b70e6fa643c75909fde50a665b52b5f6",
+    "evidence/p6/review_followup/059da33fbaf3d338/historical_integrity_before_docs.json": "919efedf9f98175f2e7702f212d651122346dbe6c56f31efb0fffc1bc803a440",
+    "evidence/p6/review_followup/059da33fbaf3d338/index_build.log": "43ac10ea80a09d7b986c49f51a0fb93005c0b19286d58304db3c2fd601ed5e6c",
+    "evidence/p6/review_followup/059da33fbaf3d338/index_validation.json": "2a7d124726942bdd48828cfb0fcdc21808ce1d899980a0827257ab557efa5bde",
+    "evidence/p6/review_followup/059da33fbaf3d338/native_command_source_check.json": "57d5e626b494a878e4465fa98f6b2d5be22936e256f99efa75e0bb33dee3fa0a",
+    "evidence/p6/review_followup/059da33fbaf3d338/receipt.json": "8f4309c3f57fd681acb0dc8816bf3f4e84c01f7e230cf311c45c774758bcca64",
+    "evidence/p6/review_followup/059da33fbaf3d338/ruff.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "evidence/p6/review_followup/059da33fbaf3d338/status.json": "a7e7752d32f2bea44502a9cb0deca4d76f3e5baa11b5b46c264788ff34503fcd",
+    "evidence/p6/review_followup/059da33fbaf3d338/submitted_truth_review.md": "059da33fbaf3d338e7a378b73ac3c213520d913c49e1f33b56e7c09be7913b85",
+    "evidence/p6/review_followup/059da33fbaf3d338/tests.log": "f5e5c8564972460e15a761bb89ab6200ea4001218ed3a96e7b29d1c512796da2",
+    "evidence/p6/review_followup/059da33fbaf3d338/接收与待办.md": "c81823cfe785ab29ee4679b3eb7aabeb86d9843bb4f049bb8597fd3d1fad486c"
+  },
+  "external_artifacts_sha256": {
+    "/home/huangxiaolin/upf-agent/eval/p6/business_v4/candidates.jsonl": "8df48554d0d0604754d14bae89b907232fc5ee1faa3b0a18243e5661cc1add25",
+    "/home/huangxiaolin/upf-agent/eval/p6/business_v4/truth_review.md": "b528eb2ba73e1fcab18eda0886ec9b81703de7dbb8e9401712f82572d14a0614",
+    "/home/huangxiaolin/upf-agent/eval/p6/business_v4/pending_48_review.md": "1a723002eb6cec5df8c5f84efe9d56fc6b0eef8dcad5b581ce07fc8ed0e23a44",
+    "/home/huangxiaolin/upf-agent/eval/p6/business_v4/pending_48_sources.md": "d3625418118c4320d5731e963d505f35f3b5e6d21dfabc02e788083e84ead853",
+    "/home/huangxiaolin/upf-agent/docs/P6_evaluation.md": "248920e0570f601d96c3a35ad80faadecd8d29d42474ac886372f99e5922838e",
+    "/home/huangxiaolin/upf-agent/README.md": "788e0a6140e3b30101088025e04b2152ac156e0f9bc07765dad274edb9af9457",
+    "/home/huangxiaolin/upf-agent/evidence/quality_closure.json": "9168ce5b1d6a72c1642db60c5418c0cfa0f365081e213cad44d38237f949eb5a",
+    "/home/huangxiaolin/dify/plan.md": "ed381761aec713c224546eca2f6cf77cc28db04bae443ad77511d5eab1bdb59b",
+    "/home/huangxiaolin/dify/plam.md": "ed381761aec713c224546eca2f6cf77cc28db04bae443ad77511d5eab1bdb59b"
+  },
+  "source_sha256": {
+    "src/upf_agent/p3_chunks.py": "0d5740b811226c80bbd36f38109f718bd189b324aa7f262b7a3332d399fe9c01",
+    "src/upf_agent/p6_contracts.py": "e1ed4a45769c7d24a57c77ca70aba1488cfeddb6de4b1fd58e07122792270cc9",
+    "src/upf_agent/p6_cli.py": "ad7efa3e702ae7f2b52403be9c1c91cab5c838d726942dbece38af2f88290cbe",
+    "scripts/prepare_p6_review_followup.py": "641638d46c61fc5b026b07b477fa4982a9567f721a35b3a46182fb3cac93dc50"
+  }
+}

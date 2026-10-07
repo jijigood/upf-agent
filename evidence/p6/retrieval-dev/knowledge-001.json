@@ -1,0 +1,511 @@
+{
+  "query": "手册中‘物理机安装操作系统并配置 / 安装Ubuntu操作系统 / 配置网口地址’的说明和关键字段是什么？请给出原文依据。",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 24,
+  "reranked_candidates": 24,
+  "context_tokens": 741,
+  "rankings": {
+    "exact": [],
+    "bm25": [
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-300424af87b2a7cc7a7df87b",
+      "chunk-fcce52fb040107f7d6c5e5bf",
+      "chunk-d973015bdd2cb66d8e222e59",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-a846c9489e877a0a17a69165",
+      "chunk-e2c1ce070f653a3e6545c801",
+      "chunk-f524ca5abe39582dd582c6d5",
+      "chunk-c7c48b5c6bfc868cb1cb96f9",
+      "chunk-1661300b770090d43f584a2d",
+      "chunk-996cd8d3d2616ab24df53cfa",
+      "chunk-d7a0702956305a00a0292550",
+      "chunk-9eb01f7db0567c69d16d79dd",
+      "chunk-8836cbe51e722a7632eaf354",
+      "chunk-24f373a53a9946dfa016147e",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-3912dfe744eb7e6aa847727f",
+      "chunk-8bd613b4c3867a839ff387d5",
+      "chunk-272cabc97bba39b55fa5f665"
+    ],
+    "dense": [
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-fcce52fb040107f7d6c5e5bf",
+      "chunk-300424af87b2a7cc7a7df87b",
+      "chunk-e2c1ce070f653a3e6545c801",
+      "chunk-9eb01f7db0567c69d16d79dd",
+      "chunk-0e6125c6e45114759813ca6f",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-24f373a53a9946dfa016147e",
+      "chunk-b7601c47a674d45aa5edb654",
+      "chunk-d973015bdd2cb66d8e222e59",
+      "chunk-272cabc97bba39b55fa5f665",
+      "chunk-c7c48b5c6bfc868cb1cb96f9",
+      "chunk-a846c9489e877a0a17a69165",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-3912dfe744eb7e6aa847727f",
+      "chunk-116407f4c1008f5d3975f0ba",
+      "chunk-8bd613b4c3867a839ff387d5",
+      "chunk-1661300b770090d43f584a2d",
+      "chunk-d7a0702956305a00a0292550",
+      "chunk-b9738b69aa0ba01e3313192b"
+    ],
+    "rrf": [
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-fcce52fb040107f7d6c5e5bf",
+      "chunk-300424af87b2a7cc7a7df87b",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-e2c1ce070f653a3e6545c801",
+      "chunk-d973015bdd2cb66d8e222e59",
+      "chunk-9eb01f7db0567c69d16d79dd",
+      "chunk-a846c9489e877a0a17a69165",
+      "chunk-c7c48b5c6bfc868cb1cb96f9",
+      "chunk-24f373a53a9946dfa016147e",
+      "chunk-1661300b770090d43f584a2d",
+      "chunk-272cabc97bba39b55fa5f665",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-d7a0702956305a00a0292550",
+      "chunk-3912dfe744eb7e6aa847727f",
+      "chunk-8bd613b4c3867a839ff387d5",
+      "chunk-0e6125c6e45114759813ca6f",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-b7601c47a674d45aa5edb654",
+      "chunk-f524ca5abe39582dd582c6d5",
+      "chunk-996cd8d3d2616ab24df53cfa",
+      "chunk-8836cbe51e722a7632eaf354",
+      "chunk-116407f4c1008f5d3975f0ba",
+      "chunk-b9738b69aa0ba01e3313192b"
+    ],
+    "reranked": [
+      "chunk-e792107b5ba57b6b518b558d",
+      "chunk-3912dfe744eb7e6aa847727f",
+      "chunk-d973015bdd2cb66d8e222e59",
+      "chunk-d7a0702956305a00a0292550",
+      "chunk-300424af87b2a7cc7a7df87b",
+      "chunk-f524ca5abe39582dd582c6d5",
+      "chunk-0e6125c6e45114759813ca6f",
+      "chunk-fcce52fb040107f7d6c5e5bf",
+      "chunk-d190f59508d9a8a6a5cc2c60",
+      "chunk-272cabc97bba39b55fa5f665",
+      "chunk-b7601c47a674d45aa5edb654",
+      "chunk-8bd613b4c3867a839ff387d5",
+      "chunk-9eb01f7db0567c69d16d79dd",
+      "chunk-a846c9489e877a0a17a69165",
+      "chunk-116407f4c1008f5d3975f0ba",
+      "chunk-b9738b69aa0ba01e3313192b",
+      "chunk-33b026566dc49b8dc4880bde",
+      "chunk-8836cbe51e722a7632eaf354",
+      "chunk-e2c1ce070f653a3e6545c801",
+      "chunk-f152a1ca8242c5d6e8fa25c0",
+      "chunk-996cd8d3d2616ab24df53cfa",
+      "chunk-c7c48b5c6bfc868cb1cb96f9",
+      "chunk-24f373a53a9946dfa016147e",
+      "chunk-1661300b770090d43f584a2d"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-e792107b5ba57b6b518b558d",
+      "rrf_score": 0.03278688524590164,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 19.883975982666016
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.7816991532302122
+        }
+      },
+      "rerank_raw_logit_difference": 8.5,
+      "rerank_p_yes": 0.9997965730219448,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "安装Ubuntu操作系统",
+        "配置网口地址"
+      ],
+      "parent_id": "section-5a92fa412edb46d34881",
+      "kind": "prose",
+      "text": "物理机安装操作系统并配置 / 安装Ubuntu操作系统 / 配置网口地址\n配置网口地址\n说明：本步骤并非必须配置，之后可以通过修改netplan的配置文件实完成。需要跟进现网实际情况进行配置，示例仅给出参考：\n按照网络规划，配置网口地址，以配置eno1的静态地址为例：\n参数说明：\nGateway：必须设置\nName servers：必须设置，在离线环境没有DNS服务器时，该地址配置为Gateway地址",
+      "block_ids": [
+        "manual-1edf23113651430f:b000783",
+        "manual-1edf23113651430f:b000784",
+        "manual-1edf23113651430f:b000785",
+        "manual-1edf23113651430f:b000786",
+        "manual-1edf23113651430f:b000787",
+        "manual-1edf23113651430f:b000788"
+      ],
+      "locators": [
+        "word/document.xml/body/p[302]",
+        "word/document.xml/body/p[303]",
+        "word/document.xml/body/p[304]",
+        "word/document.xml/body/p[305]",
+        "word/document.xml/body/p[306]",
+        "word/document.xml/body/p[307]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-3912dfe744eb7e6aa847727f",
+      "rrf_score": 0.026153846153846153,
+      "routes": {
+        "bm25": {
+          "rank": 18,
+          "raw_score": 14.699073791503906
+        },
+        "dense": {
+          "rank": 15,
+          "raw_score": 0.6479913489903536
+        }
+      },
+      "rerank_raw_logit_difference": 8.125,
+      "rerank_p_yes": 0.999704042886487,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统"
+      ],
+      "parent_id": "section-7236819f67a051feae06",
+      "kind": "prose",
+      "text": "安装并配置操作系统\n安装并配置操作系统\n局点现场获取到新服务器之后，需要先对服务器进行新物理机预装配置，预装配置包括新物理机接线，U盘启动盘制作，配置RAID阵列，配置IPMI地址。进一步地，安装Ubuntu22.04.2操作系统并配置。",
+      "block_ids": [
+        "manual-1edf23113651430f:b000630",
+        "manual-1edf23113651430f:b000631"
+      ],
+      "locators": [
+        "word/document.xml/body/p[191]",
+        "word/document.xml/body/p[192]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-d973015bdd2cb66d8e222e59",
+      "rrf_score": 0.02967032967032967,
+      "routes": {
+        "bm25": {
+          "rank": 5,
+          "raw_score": 16.488508224487305
+        },
+        "dense": {
+          "rank": 10,
+          "raw_score": 0.6636410511412627
+        }
+      },
+      "rerank_raw_logit_difference": 6.375,
+      "rerank_p_yes": 0.9982992775885648,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "新物理机预装配置"
+      ],
+      "parent_id": "section-2bece3b6483584e13c21",
+      "kind": "prose",
+      "text": "安装并配置操作系统 / 新物理机预装配置\n新物理机预装配置\n对于全新的物理机服务器，在安装Ubuntu 22.04.2操作系统之前，需要先配置RAID阵列，配置IPMI地址等预装机配置。下面逐一阐述每个步骤：",
+      "block_ids": [
+        "manual-1edf23113651430f:b000632",
+        "manual-1edf23113651430f:b000633"
+      ],
+      "locators": [
+        "word/document.xml/body/p[193]",
+        "word/document.xml/body/p[194]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-d7a0702956305a00a0292550",
+      "rrf_score": 0.026356857985087564,
+      "routes": {
+        "bm25": {
+          "rank": 13,
+          "raw_score": 15.099339485168457
+        },
+        "dense": {
+          "rank": 19,
+          "raw_score": 0.6411662907445956
+        }
+      },
+      "rerank_raw_logit_difference": 6.3125,
+      "rerank_p_yes": 0.9981897889737974,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置"
+      ],
+      "parent_id": "section-a2084bd3936be4c89663",
+      "kind": "prose",
+      "text": "安装并配置操作系统 / 物理机安装操作系统并配置\n物理机安装操作系统并配置",
+      "block_ids": [
+        "manual-1edf23113651430f:b000732"
+      ],
+      "locators": [
+        "word/document.xml/body/p[266]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-300424af87b2a7cc7a7df87b",
+      "rrf_score": 0.031746031746031744,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 17.393091201782227
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.7066129325158481
+        }
+      },
+      "rerank_raw_logit_difference": 5.25,
+      "rerank_p_yes": 0.9947798743064417,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "安装Ubuntu操作系统"
+      ],
+      "parent_id": "section-c309ae35df8ef24799d5",
+      "kind": "prose",
+      "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 安装Ubuntu操作系统\n安装Ubuntu操作系统",
+      "block_ids": [
+        "manual-1edf23113651430f:b000733"
+      ],
+      "locators": [
+        "word/document.xml/body/p[267]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-f524ca5abe39582dd582c6d5",
+      "rrf_score": 0.014492753623188406,
+      "routes": {
+        "bm25": {
+          "rank": 9,
+          "raw_score": 15.392566680908203
+        }
+      },
+      "rerank_raw_logit_difference": 3.625,
+      "rerank_p_yes": 0.9740426428022031,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "确定网卡映射关系"
+      ],
+      "parent_id": "section-c2abc2228d057c9f3640",
+      "kind": "prose",
+      "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 确定网卡映射关系\n各网口配置的IP地址仿照 REF _Toc5403 \\n \\h 2.2.3 REF _Toc5403 \\h UPF节点IP规划，按照局点现场申请到的IP资源进行配置，其中N9接口是和N3接口共物理口部署，通过不同Vlan划分子接口进行区分。",
+      "block_ids": [
+        "manual-1edf23113651430f:b000981"
+      ],
+      "locators": [
+        "word/document.xml/body/p[420]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N3"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-d190f59508d9a8a6a5cc2c60",
+          "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 确定网卡映射关系\n表格：物理机安装操作系统并配置 / 确定网卡映射关系\n表头：物理网口\t逻辑口\n物理网口：电口1 | 逻辑口：enp61s0f0\n表格：物理机安装操作系统并配置 / 确定网卡映射关系\n表头：物理网口\t逻辑口\n物理网口：电口2 | 逻辑口：enp61s0f1\n表格：物理机安装操作系统并配置 / 确定网卡映射关系\n表头：物理网口\t逻辑口\n物理网口：N3光口上 | 逻辑口：ens1f0\n表格：物理机安装操作系统并配置 / 确定网卡映射关系\n表头：物理网口\t逻辑口\n物理网口：N3光口下 | 逻辑口：ens3f0\n表格：物理机安装操作系统并配置 / 确定网卡映射关系\n表",
+          "truncated": true,
+          "block_ids": [
+            "manual-1edf23113651430f:b000959",
+            "manual-1edf23113651430f:b000962",
+            "manual-1edf23113651430f:b000965",
+            "manual-1edf23113651430f:b000968",
+            "manual-1edf23113651430f:b000971",
+            "manual-1edf23113651430f:b000974",
+            "manual-1edf23113651430f:b000977",
+            "manual-1edf23113651430f:b000980"
+          ],
+          "locators": [
+            "word/document.xml/body/tbl[13]/tr[2]",
+            "word/document.xml/body/tbl[13]/tr[3]",
+            "word/document.xml/body/tbl[13]/tr[4]",
+            "word/document.xml/body/tbl[13]/tr[5]",
+            "word/document.xml/body/tbl[13]/tr[6]",
+            "word/document.xml/body/tbl[13]/tr[7]",
+            "word/document.xml/body/tbl[13]/tr[8]",
+            "word/document.xml/body/tbl[13]/tr[9]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-0e6125c6e45114759813ca6f",
+      "rrf_score": 0.015151515151515152,
+      "routes": {
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.6864938523335982
+        }
+      },
+      "rerank_raw_logit_difference": 3.4375,
+      "rerank_p_yes": 0.9688561694652216,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）"
+      ],
+      "parent_id": "section-5339b4d479b276b883d0",
+      "kind": "command",
+      "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）\nvim 00-installer-config.yaml",
+      "block_ids": [
+        "manual-1edf23113651430f:b000985"
+      ],
+      "locators": [
+        "word/document.xml/body/p[424]"
+      ],
+      "command_id": "cmd-80b2ff1e76a6a56e",
+      "command_family": "other",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-b7601c47a674d45aa5edb654",
+          "text": "安装并配置操作系统 / 物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）\ncd /etc/netplan",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b000984"
+          ],
+          "locators": [
+            "word/document.xml/body/p[423]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-fcce52fb040107f7d6c5e5bf",
+      "rrf_score": 0.031754032258064516,
+      "routes": {
+        "bm25": {
+          "rank": 4,
+          "raw_score": 16.726394653320312
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.7322904672023673
+        }
+      },
+      "rerank_raw_logit_difference": 3.375,
+      "rerank_p_yes": 0.9669140216112958,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装并配置操作系统",
+        "物理机安装操作系统并配置",
+        "安装Ubuntu操作系统",
+        "配置代理地址"
+      ],
+      "parent_id": "section-c89e52cef60fb73880c1",
+      "kind": "prose",
+      "text": "物理机安装操作系统并配置 / 安装Ubuntu操作系统 / 配置代理地址\n配置代理地址\n选择不配置代理，Proxy address留空",
+      "block_ids": [
+        "manual-1edf23113651430f:b000791",
+        "manual-1edf23113651430f:b000792"
+      ],
+      "locators": [
+        "word/document.xml/body/p[309]",
+        "word/document.xml/body/p[310]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    }
+  ],
+  "warnings": []
+}

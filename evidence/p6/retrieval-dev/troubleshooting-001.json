@@ -1,0 +1,736 @@
+{
+  "query": "手册中‘K8S集群软件故障排查 / 基本故障排查 / ice网卡驱动’的排查步骤和操作前提是什么？请给出原文依据。",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 22,
+  "reranked_candidates": 22,
+  "context_tokens": 1342,
+  "rankings": {
+    "exact": [],
+    "bm25": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-002d97a55d8b83668dc3dfa6",
+      "chunk-431e9c929de7ea7de7c14431",
+      "chunk-fb7bc2a93813a5faee1ad595"
+    ],
+    "dense": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-058b942e931659f44495305e",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-002d97a55d8b83668dc3dfa6"
+    ],
+    "rrf": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-002d97a55d8b83668dc3dfa6",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-058b942e931659f44495305e",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-431e9c929de7ea7de7c14431"
+    ],
+    "reranked": [
+      "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-058b942e931659f44495305e",
+      "chunk-431e9c929de7ea7de7c14431",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-7d6750acd76fa1ca0043ec44",
+      "chunk-002d97a55d8b83668dc3dfa6",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-cabd3152ee269df6489ed07b",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-04f75f76e3e997b3afb95ab4"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-b6fb841cfccf4c91fa7d9f9e",
+      "rrf_score": 0.03278688524590164,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 20.59596824645996
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.7408129030238984
+        }
+      },
+      "rerank_raw_logit_difference": 7.625,
+      "rerank_p_yes": 0.9995121428772178,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "ice网卡驱动"
+      ],
+      "parent_id": "section-d4f2e279b4d191eac6de",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / ice网卡驱动\nice网卡驱动\nWingTech 服务器需要更新ICE网卡驱动，否则可能遇到以下问题：\n检查用于UPF的物理网卡状态，确认状态是否都为UP状态，发现其中eno4 状态为down，并且执行up命令无法启动\n通过查找eno4 网卡PCI地址，执行dmesg查看日志，日志存在以下报错\n以上问题需要更新ICE网卡驱动解决，否则影响sriov对网卡的识别以及VF的生成。",
+      "block_ids": [
+        "manual-1edf23113651430f:b003035",
+        "manual-1edf23113651430f:b003036",
+        "manual-1edf23113651430f:b003037",
+        "manual-1edf23113651430f:b003040",
+        "manual-1edf23113651430f:b003043"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1846]",
+        "word/document.xml/body/p[1847]",
+        "word/document.xml/body/p[1848]",
+        "word/document.xml/body/p[1850]",
+        "word/document.xml/body/p[1852]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-2936ef5a513ec429aa132e1a",
+      "rrf_score": 0.03225806451612903,
+      "routes": {
+        "bm25": {
+          "rank": 2,
+          "raw_score": 15.415167808532715
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.6916457930252238
+        }
+      },
+      "rerank_raw_logit_difference": 5.8125,
+      "rerank_p_yes": 0.9970189672701452,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查"
+      ],
+      "parent_id": "section-56bbce0acab9aa3a814a",
+      "kind": "prose",
+      "text": "部署FAQ / K8S集群软件故障排查 / 基本故障排查\n基本故障排查",
+      "block_ids": [
+        "manual-1edf23113651430f:b002974"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1787]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-8ba926a9b133cfc159707ad8",
+      "rrf_score": 0.029386529386529386,
+      "routes": {
+        "bm25": {
+          "rank": 14,
+          "raw_score": 13.59261703491211
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.6386684461873053
+        }
+      },
+      "rerank_raw_logit_difference": 5.0,
+      "rerank_p_yes": 0.9933071490757153,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查"
+      ],
+      "parent_id": "section-fec536992e66503b2f87",
+      "kind": "prose",
+      "text": "部署FAQ / K8S集群软件故障排查\nK8S集群软件故障排查",
+      "block_ids": [
+        "manual-1edf23113651430f:b002973"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1786]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-8b7190a7813bebeffe210cc7",
+      "rrf_score": 0.014925373134328358,
+      "routes": {
+        "bm25": {
+          "rank": 7,
+          "raw_score": 14.364500999450684
+        }
+      },
+      "rerank_raw_logit_difference": 1.875,
+      "rerank_p_yes": 0.8670357598021706,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "集群安装问题"
+      ],
+      "parent_id": "section-8baf65985aebaf898945",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / 集群安装问题\n集群安装问题\n集群安装失败时，集群安装过程中输出的日志信息有限，一般需要进一步检查kubernetes系统进程例如kubelet、containerd状态及日志。\n1.\t查看kubelet运行状态",
+      "block_ids": [
+        "manual-1edf23113651430f:b002975",
+        "manual-1edf23113651430f:b002976",
+        "manual-1edf23113651430f:b002977"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1788]",
+        "word/document.xml/body/p[1789]",
+        "word/document.xml/body/p[1790]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-7d6750acd76fa1ca0043ec44",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / 集群安装问题\nsystemctl status kubelet",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002978"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1791]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-058b942e931659f44495305e",
+      "rrf_score": 0.013513513513513514,
+      "routes": {
+        "dense": {
+          "rank": 14,
+          "raw_score": 0.5780440511298255
+        }
+      },
+      "rerank_raw_logit_difference": 1.6875,
+      "rerank_p_yes": 0.8438951025545426,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "安装K8S集群软件",
+        "单节点部署K8S",
+        "调整集群配置",
+        "调整后的集群配置文件"
+      ],
+      "parent_id": "section-6dbbd25d0bcb9b848452",
+      "kind": "prose",
+      "text": "单节点部署K8S / 调整集群配置 / 调整后的集群配置文件\n# 设置主机防火墙, 放通IP白名单\nufw:\n  enabled: true\n    ipv4:\n  whitelist:\n      - 1.73.6.70/32\n      - 1.73.6.59/32\n      - 1.73.6.60/32\n      - 1.0.144.134/32                   #放通ntp的server ip\n      - 1.0.144.130/32                   #放通ntp的server ip\n    ipv6:\n      - 2408:8142:60ff:fc01:1706:406::/128\n      - 2408:8142:60ff:fc02:1706:406::/128\n# 编译安装ice网卡驱动\nice_driver:\n  enabled: true\n  version: 1.7.16\n# 安装Intel Ethernet Port Configuration Tool\nepct_tool:\n  enabled: true\n  version: 1.39.32.5\n# 启用k8s可选插件, 部分UPF依赖插件已默认启用\naddons:\n  sealos: 4.3.7\n  kubernetes:\n    image: docker.io/labring/kubernetes:v1.25.11-4.3.3\n  network_plugin:\n    image: docker.io/labring/calico:v3.26.1",
+      "block_ids": [
+        "manual-1edf23113651430f:b001193",
+        "manual-1edf23113651430f:b001194",
+        "manual-1edf23113651430f:b001195",
+        "manual-1edf23113651430f:b001196",
+        "manual-1edf23113651430f:b001197",
+        "manual-1edf23113651430f:b001198",
+        "manual-1edf23113651430f:b001199",
+        "manual-1edf23113651430f:b001200",
+        "manual-1edf23113651430f:b001201",
+        "manual-1edf23113651430f:b001202",
+        "manual-1edf23113651430f:b001203",
+        "manual-1edf23113651430f:b001204",
+        "manual-1edf23113651430f:b001205",
+        "manual-1edf23113651430f:b001207",
+        "manual-1edf23113651430f:b001208",
+        "manual-1edf23113651430f:b001209",
+        "manual-1edf23113651430f:b001210",
+        "manual-1edf23113651430f:b001212",
+        "manual-1edf23113651430f:b001213",
+        "manual-1edf23113651430f:b001214",
+        "manual-1edf23113651430f:b001215",
+        "manual-1edf23113651430f:b001217",
+        "manual-1edf23113651430f:b001218",
+        "manual-1edf23113651430f:b001219",
+        "manual-1edf23113651430f:b001220",
+        "manual-1edf23113651430f:b001221",
+        "manual-1edf23113651430f:b001222",
+        "manual-1edf23113651430f:b001223"
+      ],
+      "locators": [
+        "word/document.xml/body/p[630]",
+        "word/document.xml/body/p[631]",
+        "word/document.xml/body/p[632]",
+        "word/document.xml/body/p[633]",
+        "word/document.xml/body/p[634]",
+        "word/document.xml/body/p[635]",
+        "word/document.xml/body/p[636]",
+        "word/document.xml/body/p[637]",
+        "word/document.xml/body/p[638]",
+        "word/document.xml/body/p[639]",
+        "word/document.xml/body/p[640]",
+        "word/document.xml/body/p[641]",
+        "word/document.xml/body/p[642]",
+        "word/document.xml/body/p[644]",
+        "word/document.xml/body/p[645]",
+        "word/document.xml/body/p[646]",
+        "word/document.xml/body/p[647]",
+        "word/document.xml/body/p[649]",
+        "word/document.xml/body/p[650]",
+        "word/document.xml/body/p[651]",
+        "word/document.xml/body/p[652]",
+        "word/document.xml/body/p[654]",
+        "word/document.xml/body/p[655]",
+        "word/document.xml/body/p[656]",
+        "word/document.xml/body/p[657]",
+        "word/document.xml/body/p[658]",
+        "word/document.xml/body/p[659]",
+        "word/document.xml/body/p[660]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+          "text": "单节点部署K8S / 调整集群配置 / 调整后的集群配置文件\n调整后的集群配置文件\n部署集群前，需要新建并调整集群配置文件，当前集群自定义参数通过config.yaml文件进行配置。\n执行以下命令，基于config.sample.yaml示例配置文件生成一份名为config.yaml的配置文件\n#cd /home/kubefusion-litebox-v1.5.6/\n# cp config.sample.yaml config.yaml\n参照“config.yaml”自定义配置参数，执行如下命令进入config.yaml文件编辑界面。\n$ vim config.yaml\n按【I】键进入编辑模式，根据前面章节的确定的参数修改config.yaml文件对应的配置内容：\nUPF节点名称：gd-gz-gdlt-upf01；\nK8s地址：172.16.100.50；\n物理机绑核方案：12-23, 29-47（本文档模板样例），或者是0-9,20-29；\n防火墙白名单：ufw.enabled设置为true，并填写放通的IP地址；\n其他参数",
+          "truncated": true,
+          "block_ids": [
+            "manual-1edf23113651430f:b001144",
+            "manual-1edf23113651430f:b001145",
+            "manual-1edf23113651430f:b001146",
+            "manual-1edf23113651430f:b001147",
+            "manual-1edf23113651430f:b001148",
+            "manual-1edf23113651430f:b001150",
+            "manual-1edf23113651430f:b001151",
+            "manual-1edf23113651430f:b001152",
+            "manual-1edf23113651430f:b001153",
+            "manual-1edf23113651430f:b001154",
+            "manual-1edf23113651430f:b001155",
+            "manual-1edf23113651430f:b001156",
+            "manual-1edf23113651430f:b001157",
+            "manual-1edf23113651430f:b001158",
+            "manual-1edf23113651430f:b001159",
+            "manual-1edf23113651430f:b001160",
+            "manual-1edf23113651430f:b001162",
+            "manual-1edf23113651430f:b001163",
+            "manual-1edf23113651430f:b001164",
+            "manual-1edf23113651430f:b001165",
+            "manual-1edf23113651430f:b001167",
+            "manual-1edf23113651430f:b001168",
+            "manual-1edf23113651430f:b001169",
+            "manual-1edf23113651430f:b001171",
+            "manual-1edf23113651430f:b001172",
+            "manual-1edf23113651430f:b001173",
+            "manual-1edf23113651430f:b001174",
+            "manual-1edf23113651430f:b001176",
+            "manual-1edf23113651430f:b001177",
+            "manual-1edf23113651430f:b001178",
+            "manual-1edf23113651430f:b001179",
+            "manual-1edf23113651430f:b001181",
+            "manual-1edf23113651430f:b001182",
+            "manual-1edf23113651430f:b001183",
+            "manual-1edf23113651430f:b001184",
+            "manual-1edf23113651430f:b001186",
+            "manual-1edf23113651430f:b001187",
+            "manual-1edf23113651430f:b001188",
+            "manual-1edf23113651430f:b001189",
+            "manual-1edf23113651430f:b001190",
+            "manual-1edf23113651430f:b001191"
+          ],
+          "locators": [
+            "word/document.xml/body/p[581]",
+            "word/document.xml/body/p[582]",
+            "word/document.xml/body/p[583]",
+            "word/document.xml/body/p[584]",
+            "word/document.xml/body/p[585]",
+            "word/document.xml/body/p[587]",
+            "word/document.xml/body/p[588]",
+            "word/document.xml/body/p[589]",
+            "word/document.xml/body/p[590]",
+            "word/document.xml/body/p[591]",
+            "word/document.xml/body/p[592]",
+            "word/document.xml/body/p[593]",
+            "word/document.xml/body/p[594]",
+            "word/document.xml/body/p[595]",
+            "word/document.xml/body/p[596]",
+            "word/document.xml/body/p[597]",
+            "word/document.xml/body/p[599]",
+            "word/document.xml/body/p[600]",
+            "word/document.xml/body/p[601]",
+            "word/document.xml/body/p[602]",
+            "word/document.xml/body/p[604]",
+            "word/document.xml/body/p[605]",
+            "word/document.xml/body/p[606]",
+            "word/document.xml/body/p[608]",
+            "word/document.xml/body/p[609]",
+            "word/document.xml/body/p[610]",
+            "word/document.xml/body/p[611]",
+            "word/document.xml/body/p[613]",
+            "word/document.xml/body/p[614]",
+            "word/document.xml/body/p[615]",
+            "word/document.xml/body/p[616]",
+            "word/document.xml/body/p[618]",
+            "word/document.xml/body/p[619]",
+            "word/document.xml/body/p[620]",
+            "word/document.xml/body/p[621]",
+            "word/document.xml/body/p[623]",
+            "word/document.xml/body/p[624]",
+            "word/document.xml/body/p[625]",
+            "word/document.xml/body/p[626]",
+            "word/document.xml/body/p[627]",
+            "word/document.xml/body/p[628]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        },
+        {
+          "chunk_id": "chunk-3a8216a32c845db4f16ce088",
+          "text": "单节点部署K8S / 调整集群配置 / 调整后的集群配置文件\n  helm:",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b001224"
+          ],
+          "locators": [
+            "word/document.xml/body/p[661]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-431e9c929de7ea7de7c14431",
+      "rrf_score": 0.012658227848101266,
+      "routes": {
+        "bm25": {
+          "rank": 19,
+          "raw_score": 12.745185852050781
+        }
+      },
+      "rerank_raw_logit_difference": 0.5,
+      "rerank_p_yes": 0.6224593312018546,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Flannel pod异常"
+      ],
+      "parent_id": "section-bdf04987dddc916b1c6a",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Flannel pod异常\nFlannel pod异常\n未配置网关地址时，flannle pod将处于异常状态。主机网络必须配置网关地址",
+      "block_ids": [
+        "manual-1edf23113651430f:b003030",
+        "manual-1edf23113651430f:b003031"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1842]",
+        "word/document.xml/body/p[1843]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-173ecb6d3d876af1395e3b74",
+      "rrf_score": 0.028958333333333336,
+      "routes": {
+        "bm25": {
+          "rank": 15,
+          "raw_score": 13.563228607177734
+        },
+        "dense": {
+          "rank": 4,
+          "raw_score": 0.6327917274410284
+        }
+      },
+      "rerank_raw_logit_difference": 0.125,
+      "rerank_p_yes": 0.5312093733737563,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "parent_id": "section-6ce42cd6a967c385307e",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\n如果pod状态为Error或crashloopbackoff异常，可以查看pod运行日志",
+      "block_ids": [
+        "manual-1edf23113651430f:b002992"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1805]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-5433f2361d7cbceae8092553",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> describe pods <pod-name>",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002990"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1803]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        },
+        {
+          "chunk_id": "chunk-d228af64df28fdea95b91934",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> logs -f <pod-name>",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002993"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1806]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "rrf_score": 0.012987012987012988,
+      "routes": {
+        "dense": {
+          "rank": 17,
+          "raw_score": 0.5729490518489034
+        }
+      },
+      "rerank_raw_logit_difference": 0.125,
+      "rerank_p_yes": 0.5312093733737563,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "插件维护管理",
+        "Kubernetes"
+      ],
+      "parent_id": "section-ebed6f3dd99afc98121b",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 插件维护管理 / Kubernetes\nd.使用本地镜像安装集群或插件，后续操作与在线安装步骤相同\nsealos run docker.io/labring/kubernetes:v1.25.6 --single",
+      "block_ids": [
+        "manual-1edf23113651430f:b003084",
+        "manual-1edf23113651430f:b003085"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1893]",
+        "word/document.xml/body/p[1894]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-fa4337014e04a5b240327874",
+          "text": "K8S集群软件故障排查 / 插件维护管理 / Kubernetes\nKubernetes\nKubernetes为核心镜像，开始安装集群的第一步必须先安装kubernetes，该镜像包含容器运行时及kubernetes核心组件，但不包含网络插件。\n安装kubernetes\nsealos run docker.io/labring/kubernetes:v1.25.6 --single\n说明：其--single参数表示在当前节点运行单节点集群，无需传递节点IP地址信息。\n由于kubernetes镜像不包含网络插件，运行一个完整可用的集群，一般需要安装以下三个镜像\nsealos run docker.io/labring/kubernetes:v1.25.6 –single\nsealos run docker.io/labring/helm:v3.11.0\nsealos run docker.io/labring/flannel:v0.21.4\n说明：由于flannel依赖helm命令，因此也需要安装helm插件。\n以上命令也可以合并在一条命令执行\nsealos run \\\ndocker.io/labring/kubernetes:v1.25.6 \\ \ndocker.io/labring/helm:v3.11.0 \\\n",
+          "truncated": true,
+          "block_ids": [
+            "manual-1edf23113651430f:b003047",
+            "manual-1edf23113651430f:b003048",
+            "manual-1edf23113651430f:b003049",
+            "manual-1edf23113651430f:b003050",
+            "manual-1edf23113651430f:b003051",
+            "manual-1edf23113651430f:b003053",
+            "manual-1edf23113651430f:b003054",
+            "manual-1edf23113651430f:b003055",
+            "manual-1edf23113651430f:b003056",
+            "manual-1edf23113651430f:b003057",
+            "manual-1edf23113651430f:b003059",
+            "manual-1edf23113651430f:b003060",
+            "manual-1edf23113651430f:b003061",
+            "manual-1edf23113651430f:b003062",
+            "manual-1edf23113651430f:b003063",
+            "manual-1edf23113651430f:b003065",
+            "manual-1edf23113651430f:b003066",
+            "manual-1edf23113651430f:b003067",
+            "manual-1edf23113651430f:b003068",
+            "manual-1edf23113651430f:b003069",
+            "manual-1edf23113651430f:b003070",
+            "manual-1edf23113651430f:b003071",
+            "manual-1edf23113651430f:b003072",
+            "manual-1edf23113651430f:b003073",
+            "manual-1edf23113651430f:b003074",
+            "manual-1edf23113651430f:b003076",
+            "manual-1edf23113651430f:b003077",
+            "manual-1edf23113651430f:b003078",
+            "manual-1edf23113651430f:b003079",
+            "manual-1edf23113651430f:b003080",
+            "manual-1edf23113651430f:b003081",
+            "manual-1edf23113651430f:b003082",
+            "manual-1edf23113651430f:b003083"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1856]",
+            "word/document.xml/body/p[1857]",
+            "word/document.xml/body/p[1858]",
+            "word/document.xml/body/p[1859]",
+            "word/document.xml/body/p[1860]",
+            "word/document.xml/body/p[1862]",
+            "word/document.xml/body/p[1863]",
+            "word/document.xml/body/p[1864]",
+            "word/document.xml/body/p[1865]",
+            "word/document.xml/body/p[1866]",
+            "word/document.xml/body/p[1868]",
+            "word/document.xml/body/p[1869]",
+            "word/document.xml/body/p[1870]",
+            "word/document.xml/body/p[1871]",
+            "word/document.xml/body/p[1872]",
+            "word/document.xml/body/p[1874]",
+            "word/document.xml/body/p[1875]",
+            "word/document.xml/body/p[1876]",
+            "word/document.xml/body/p[1877]",
+            "word/document.xml/body/p[1878]",
+            "word/document.xml/body/p[1879]",
+            "word/document.xml/body/p[1880]",
+            "word/document.xml/body/p[1881]",
+            "word/document.xml/body/p[1882]",
+            "word/document.xml/body/p[1883]",
+            "word/document.xml/body/p[1885]",
+            "word/document.xml/body/p[1886]",
+            "word/document.xml/body/p[1887]",
+            "word/document.xml/body/p[1888]",
+            "word/document.xml/body/p[1889]",
+            "word/document.xml/body/p[1890]",
+            "word/document.xml/body/p[1891]",
+            "word/document.xml/body/p[1892]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

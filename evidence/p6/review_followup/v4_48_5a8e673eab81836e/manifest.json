@@ -1,0 +1,29 @@
+{
+  "pipeline_identity": "d2a7f1490cbf178e10b3a3cf11b3d241d2faa7b615353ebcae9d99aeb8c090ae",
+  "scope": "48-case submission receipt and merged review; no formal signature or inference",
+  "artifact_sha256": {
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/before_docs/P6_evaluation.md": "248920e0570f601d96c3a35ad80faadecd8d29d42474ac886372f99e5922838e",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/before_docs/README.md": "788e0a6140e3b30101088025e04b2152ac156e0f9bc07765dad274edb9af9457",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/before_docs/dify_plam.md": "ed381761aec713c224546eca2f6cf77cc28db04bae443ad77511d5eab1bdb59b",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/before_docs/dify_plan.md": "ed381761aec713c224546eca2f6cf77cc28db04bae443ad77511d5eab1bdb59b",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/formal_import_guard.json": "f8db9ec8e6b09426a95fff4445c138ec1e25909bb98a5182ff53b65a036ed8e0",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/full_review_before_merge.md": "b528eb2ba73e1fcab18eda0886ec9b81703de7dbb8e9401712f82572d14a0614",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/historical_integrity.json": "4d3fe6adecb74b775f97e1f5058480ccf8348e4e8cd754421b8926c1982d3d59",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/merged_truth_review_120.md": "812fc5f1ad07dd935a596a40279a4c82fb87cfa5abb976f435e2c34933929c44",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/quality_closure_before_merge.json": "9168ce5b1d6a72c1642db60c5418c0cfa0f365081e213cad44d38237f949eb5a",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/receipt.json": "20d358142934f7345dcd461cdb41fa47641d2448aee98f49c47a90c906431ca5",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/status.json": "24d08dd1e837847faac40d48416154f63b077fff0944b09367be334ed542e9b5",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/submitted_pending_48_review.md": "5a8e673eab81836e37a88d9cc15ce1627da854be2ad593277a74dafd2a5cabad",
+    "evidence/p6/review_followup/v4_48_5a8e673eab81836e/接收与待办.md": "040a43bcb2df10320a0a9b215781137e3bc147f2c2dccade588c8374b459a664"
+  },
+  "external_sha256": {
+    "/home/huangxiaolin/upf-agent/eval/p6/business_v4/candidates.jsonl": "8df48554d0d0604754d14bae89b907232fc5ee1faa3b0a18243e5661cc1add25",
+    "/home/huangxiaolin/upf-agent/docs/P6_evaluation.md": "247a164ef3686122677800d06d4914cae9423900a85c2c185d6bb60b8ad9bb3a",
+    "/home/huangxiaolin/upf-agent/README.md": "c5ddd22962402cbc2701392120f134e2f98c0ff1fe47403db46bd1557207a98e",
+    "/home/huangxiaolin/upf-agent/evidence/quality_closure.json": "90de4e5b5f7da84e26fb3f1e031a0a9626628185808b1ab523a0fcbbefe8f41d",
+    "/home/huangxiaolin/dify/plan.md": "2c2f27242bf528c4eab603a2c765e22bea22f5a2ec4a8bec5b6f7e56102e096c",
+    "/home/huangxiaolin/dify/plam.md": "2c2f27242bf528c4eab603a2c765e22bea22f5a2ec4a8bec5b6f7e56102e096c"
+  },
+  "formal_import_executed": false,
+  "M6_pass": false
+}

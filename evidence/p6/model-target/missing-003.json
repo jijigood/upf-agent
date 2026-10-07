@@ -1,0 +1,218 @@
+{
+  "row": {
+    "id": "missing-003",
+    "model": "target",
+    "evidence_sha256": "e263495d3ef04df7165dc8ed14589fc9f1a5ca820488098b8a2c01c3b0d6d563",
+    "elapsed_ms": 28309.22829080373,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 6765,
+      "completion_tokens_observed": 392,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": null,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "UPF 9.9 版本如何配置 N3 接口？",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "9.9",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [
+      {
+        "text": "网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+            "quote": "网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n"
+          }
+        ]
+      },
+      {
+        "text": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+            "quote": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n"
+          }
+        ]
+      },
+      {
+        "text": "注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！",
+        "citations": [
+          {
+            "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+            "quote": "注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "交付配置",
+          "接口地址配置"
+        ],
+        "parent_id": "section-739647ba5572f2dd5a85",
+        "kind": "prose",
+        "text": "交付配置 / 接口地址配置\n接口地址配置\n网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n同理，配置N6地址，其中的接口ID填入“2”，配置如下图所示\n同理，配置N4地址，其中的接口ID填入”3”，配置如下图所示：\n注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！",
+        "token_count": 215,
+        "block_ids": [
+          "manual-341440f7dd103f51:b001101",
+          "manual-341440f7dd103f51:b001102",
+          "manual-341440f7dd103f51:b001107",
+          "manual-341440f7dd103f51:b001108",
+          "manual-341440f7dd103f51:b001111",
+          "manual-341440f7dd103f51:b001114"
+        ],
+        "locators": [
+          "word/document.xml/body/p[398]",
+          "word/document.xml/body/p[399]",
+          "word/document.xml/body/p[403]",
+          "word/document.xml/body/p[404]",
+          "word/document.xml/body/p[406]",
+          "word/document.xml/body/p[408]"
+        ],
+        "ordinal_start": 1101,
+        "ordinal_end": 1114,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "N4",
+          "N6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。",
+      "引用手册版本未知，需核对目标设备版本与操作前提。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q3",
+        "S1Q4",
+        "S1Q7",
+        "S3Q3",
+        "S4Q4",
+        "S4Q5",
+        "S10Q4",
+        "S10Q7",
+        "S10Q10"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "在网管界面依次点击【配置管理】>【UPF】>【接口地址配置】>【添加】，进入业务口地址管理界面。",
+            "quote_ids": [
+              "S1Q3"
+            ]
+          },
+          {
+            "text": "接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。",
+            "quote_ids": [
+              "S1Q4"
+            ]
+          },
+          {
+            "text": "首次配置接口地址时，N3、N4、N6三个服务化接口的ipv4地址必须配全。",
+            "quote_ids": [
+              "S1Q7"
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为unknown，未确认是否适用于UPF 9.9版本"
+        ]
+      },
+      "draft": {
+        "status": "partial",
+        "claims": [
+          {
+            "text": "在网管界面依次点击【配置管理】>【UPF】>【接口地址配置】>【添加】，进入业务口地址管理界面。",
+            "citations": [
+              {
+                "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+                "quote": "网管界面，依次点击【配置管理】>【UPF】> 【接口地址配置】> 【添加】，进入业务口地址管理界面，如下图所示\n"
+              }
+            ]
+          },
+          {
+            "text": "接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。",
+            "citations": [
+              {
+                "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+                "quote": "其中，接口配置选择“N3”，IP地址类型选择“Ipv4”，IPv4地址填入规划的N3地址，按照《UPF安装部署指导书(h3c服务器版)_V3.3》2.2.3节IP规划，子网掩码填入“255.255.255.0”，配置完上述参数之后，点击执行，完成N3地址的配置。\n"
+              }
+            ]
+          },
+          {
+            "text": "首次配置接口地址时，N3、N4、N6三个服务化接口的ipv4地址必须配全。",
+            "citations": [
+              {
+                "chunk_id": "chunk-6b96204074b53ada6b717bf2",
+                "quote": "注意：首次配置接口地址，N3、N4、N6三个服务化接口的ipv4地址必须配全！！！"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "证据版本为unknown，未确认是否适用于UPF 9.9版本"
+        ]
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "证据版本为unknown，未确认是否适用于UPF 9.9版本",
+      "引用资料版本未知，无法确认对请求版本的适用性。"
+    ]
+  }
+}

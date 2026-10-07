@@ -1,0 +1,47 @@
+{
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "source_verified": true,
+  "chunk_id": "chunk-2ba8e9f369f045ad715ff45d",
+  "source_id": "manual-98aa0505da555a15",
+  "source_sha256": "98aa0505da555a15a2c78a64aab0cbf7dfcaf5dc3029d54e96e16d513981f5fe",
+  "relative_path": "5GC网管使用手册_V1.3_20220916(1).docx",
+  "role": "manual",
+  "product": "5GC网管",
+  "version": "V1.3",
+  "section_path": [
+    "7 故障管理（Fault Management）",
+    "7.1 实时告警",
+    "7.1.1 告警查询"
+  ],
+  "parent_id": "section-314d5be1655ed1806639",
+  "kind": "prose",
+  "text": "7 故障管理（Fault Management） / 7.1 实时告警 / 7.1.1 告警查询\n7.1.1 告警查询\n路径：Alarm-->Active Alarm\n步骤：在各个下拉框中选择选项-->点击“Query Alarm”-->点击“Refresh”，查询接果将在列表显示。\n图7.1.1-1 Active Alarm页面\n配置项及说明：",
+  "token_count": 94,
+  "block_ids": [
+    "manual-98aa0505da555a15:b001368",
+    "manual-98aa0505da555a15:b001369",
+    "manual-98aa0505da555a15:b001370",
+    "manual-98aa0505da555a15:b001373",
+    "manual-98aa0505da555a15:b001374"
+  ],
+  "locators": [
+    "word/document.xml/body/p[839]",
+    "word/document.xml/body/p[840]",
+    "word/document.xml/body/p[841]",
+    "word/document.xml/body/p[843]",
+    "word/document.xml/body/p[844]"
+  ],
+  "ordinal_start": 1368,
+  "ordinal_end": 1374,
+  "extraction_methods": [
+    "docx-xml-v4"
+  ],
+  "quality_flags": [],
+  "interface_tags": [],
+  "command_id": null,
+  "command_family": null,
+  "table_id": null,
+  "table_header": null,
+  "table_cells": []
+}

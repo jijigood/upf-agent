@@ -1,0 +1,479 @@
+{
+  "assets": {
+    "ocr_detection": {
+      "path": "/home/huangxiaolin/models/ocr/PP-OCRv5_server_det",
+      "sha256_tree": "ebc1443d15a659567ea5f015441010e9f7bb4b48493ce3ac38ca63fe567786f3",
+      "files": [
+        {
+          "path": ".cache/huggingface/.gitignore",
+          "bytes": 1,
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "path": ".cache/huggingface/CACHEDIR.TAG",
+          "bytes": 191,
+          "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d"
+        },
+        {
+          "path": ".cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 101,
+          "sha256": "95d02d8b725d50d25cfb78e2e5deb3a0d4ac1395add00c37b17991b655706063"
+        },
+        {
+          "path": ".cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "sha256": "96de76e142bcfb7de06d987ab2bfd72257a04c7592f1bc17723f91cbc2ac803b"
+        },
+        {
+          "path": ".cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".cache/huggingface/download/config.json.metadata",
+          "bytes": 101,
+          "sha256": "fed24a07b9d174e1b8d62f7b93e800326ec3c33f8344fe59f62f206d03acac9e"
+        },
+        {
+          "path": ".cache/huggingface/download/inference.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".cache/huggingface/download/inference.json.metadata",
+          "bytes": 101,
+          "sha256": "ccda354717be9f33b7285210dfba304335ee02d23c9e86523dd5b5d4b6e5bbcc"
+        },
+        {
+          "path": ".cache/huggingface/download/inference.pdiparams.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".cache/huggingface/download/inference.pdiparams.metadata",
+          "bytes": 124,
+          "sha256": "623af2b6531e65404cb0cd54bc775568428cdc3e67b892666b391a79f8c9c3da"
+        },
+        {
+          "path": ".cache/huggingface/download/inference.yml.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".cache/huggingface/download/inference.yml.metadata",
+          "bytes": 101,
+          "sha256": "55c1bb8b7c4c97bcd58e2135d1f71f640e56f615f900bb9920f7a76f0b06da0e"
+        },
+        {
+          "path": ".cache/huggingface/trees/ca867c897ecbca8873081573a802ad70d499cb94.json",
+          "bytes": 840,
+          "sha256": "8156d6fa45403316f5f390b105cee5075ad2c1a6b73868ee2411c2c9b92c5714"
+        },
+        {
+          "path": ".gitattributes",
+          "bytes": 1575,
+          "sha256": "a3a43406012ee8c7b9b38dfab1b11610f33e8245cd864a9a9302d042616a859e"
+        },
+        {
+          "path": "README.md",
+          "bytes": 15912,
+          "sha256": "4fd4cf7c6fc3239ede7274c3877e7a0c4424ffa7f56b2775e4e7961c24b1f107"
+        },
+        {
+          "path": "config.json",
+          "bytes": 2871,
+          "sha256": "436bf19010fe3879477e8599a870a0ec8ccd14ca39056805ec4ed20ab318ec04"
+        },
+        {
+          "path": "inference.json",
+          "bytes": 402480,
+          "sha256": "af5876933d8806a1b50d895867e0781e135cd92ff37381992828fc8d1b842d28"
+        },
+        {
+          "path": "inference.pdiparams",
+          "bytes": 87932887,
+          "sha256": "183146fe9d9910352f68482f623bcbbb9fa7b9e8fa1463b9ad288cef00524d2d"
+        },
+        {
+          "path": "inference.yml",
+          "bytes": 903,
+          "sha256": "28fb721efc3634fc8aa677e474b9602cb815a91cf569ef357a7a553d7b3ce685"
+        }
+      ],
+      "total_bytes": 88358289
+    },
+    "ocr_recognition": {
+      "path": "/home/huangxiaolin/models/ocr/PP-OCRv5_server_rec",
+      "sha256_tree": "4b851ba21bbab8e47eec903016c13d2198fc25211245716fddcd492f904938c7",
+      "files": [
+        {
+          "path": "inference.json",
+          "bytes": 325204,
+          "sha256": "8e6e12e5d42531840310977fffb58165bf889fc5061408c5a8afdb6985f47fcb"
+        },
+        {
+          "path": "inference.pdiparams",
+          "bytes": 84390117,
+          "sha256": "63853f062a5f4089befc16f565a68277618e0da5cb45468b49d11079de0ada77"
+        },
+        {
+          "path": "inference.yml",
+          "bytes": 148345,
+          "sha256": "2c719dba044c4e2228aef8ff92f5f575394d75d24c16de096a33b7cfd902f66d"
+        }
+      ],
+      "total_bytes": 84863666
+    },
+    "docling": {
+      "path": "/home/huangxiaolin/models/docling",
+      "sha256_tree": "9e40989b3eb48f2d836e2c27755e418281dda3c7e0128c0ad735a00bf416a5d0",
+      "files": [
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/CACHEDIR.TAG",
+          "bytes": 191,
+          "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 101,
+          "sha256": "e8614c54c4fdc41675801b5e582c9311893102749777e462fb63bb6c95c3d19a"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "sha256": "e4ca5e370c95cdb894148a20cf52f9739de3aac1217d6ccacc921ab0c0f03654"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/config.json.metadata",
+          "bytes": 101,
+          "sha256": "b357d45e6d1c3217283a3b4129f42b7e4eb30162916daaa425790affc37c17db"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/docling_heron_400.png.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/docling_heron_400.png.metadata",
+          "bytes": 101,
+          "sha256": "4c1f0d30b92e3a72de92f6856d7bc1d9fd9db621935ee80fbc35904ef698fe0c"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/model.safetensors.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/model.safetensors.metadata",
+          "bytes": 125,
+          "sha256": "bd72c940e2b2f05b4d0d51ad5720e4cc39fc6ff6e3dbbc14c928796fa58c8275"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/preprocessor_config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/download/preprocessor_config.json.metadata",
+          "bytes": 99,
+          "sha256": "f77b368591c3bd247753fe338cb7bdb9f27a19052936ece3339ddce0926a2a61"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.cache/huggingface/trees/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8.json",
+          "bytes": 856,
+          "sha256": "bc7fa4e3aab7315b44d7897eca8056d69388ccb80d33db5f9ba7d6fa2a8fe9f2"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/.gitattributes",
+          "bytes": 1519,
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/README.md",
+          "bytes": 3219,
+          "sha256": "175700839bc7808eac6af1d0c23e4f483606ab2276fe01122f4093e61a1a65b6"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/config.json",
+          "bytes": 3268,
+          "sha256": "fdea30805ce2f5666b147fca941dcdd27ad468e27d6ed21902207d3da056a97d"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/docling_heron_400.png",
+          "bytes": 96925,
+          "sha256": "e7f78610372b32a7938e480d2c7fa1c3037ee170bd82282a5bd026232f6e6f9e"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/model.safetensors",
+          "bytes": 171658996,
+          "sha256": "00333a43451945aaf89db8ca9c0a17e75d1537c17db60fdb91aa95f4c7929e0c"
+        },
+        {
+          "path": "docling-project--docling-layout-heron/preprocessor_config.json",
+          "bytes": 444,
+          "sha256": "cd38cd59999e7a95d68e487fbe5132df3d4e5c32a0836add57e6126ba0c4eaf1"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/CACHEDIR.TAG",
+          "bytes": 191,
+          "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 101,
+          "sha256": "daca2abfb4363c487d62b01d05272014e6999ec5447df2af1000552f6d40a349"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "sha256": "c05e496a302ed072f6de6a9632d52b57b9a8b420539215f083cde653bf981b5c"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/config.json.metadata",
+          "bytes": 100,
+          "sha256": "2775bca2df0107e67d6eb3982ea082a261af1d92480aa5697711f87918a3f73b"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/model.onnx.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/model.onnx.metadata",
+          "bytes": 125,
+          "sha256": "c6868eb91763dda1770ba48f499e501197d2c7885c3c51582e514e2065dcd3ef"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/preprocessor_config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/download/preprocessor_config.json.metadata",
+          "bytes": 100,
+          "sha256": "8b9fe2c86197216358588ff1757eb76f919796974a840d130d08e322db0aacf9"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.cache/huggingface/trees/40bde044036bb181c130ddf6c51792187268748f.json",
+          "bytes": 738,
+          "sha256": "bf77257f92da661c7a941042e96de82d5717230f3b986340116da5137820cd9e"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/.gitattributes",
+          "bytes": 1519,
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/README.md",
+          "bytes": 294,
+          "sha256": "48de0f07390f6823a225ce8aab348e7b57408534b56b71f1433ed6280456597f"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/config.json",
+          "bytes": 878,
+          "sha256": "c6e67b6cdf64fa245779d0409bb994aa96e8c1790e15ec07a65843628e232180"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/model.onnx",
+          "bytes": 171220471,
+          "sha256": "59c81a3a2923042d85034ffc487f8f47e4854117e879aef89b2b9f728fb4922a"
+        },
+        {
+          "path": "docling-project--docling-layout-heron-onnx/preprocessor_config.json",
+          "bytes": 445,
+          "sha256": "54d086cf0d7d371f7fac36e5d3a0dae31e211298affc816106cc376506799d58"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/CACHEDIR.TAG",
+          "bytes": 191,
+          "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 100,
+          "sha256": "1f70784e1d1ffccb9c1215f062a025e03bca296cd73d3ec490cb6b7bafc99b86"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/.gitignore.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/.gitignore.metadata",
+          "bytes": 100,
+          "sha256": "777a8cd736a4481d0d5736727b539b69ab28265151ae424e36e829806043b71d"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/README.md.metadata",
+          "bytes": 100,
+          "sha256": "17daa2f1ba801ae04ae1013b7c872ff6f2b87748da6700f47d2e50500456cf41"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/config.json.metadata",
+          "bytes": 100,
+          "sha256": "d498a1c6c2c43bb740ba1e7053001a8fa4f2ecab8f280e068be0185002e6de22"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tableformer_accurate.safetensors.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tableformer_accurate.safetensors.metadata",
+          "bytes": 125,
+          "sha256": "c793684d000a52539a21c32f5e8e4d190c522fd717702616c5ab6b95d21abf8b"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tm_config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tm_config.json.metadata",
+          "bytes": 101,
+          "sha256": "a84b902ed79291439943111b11f3400c7d9422cbbc140ed1c25dadfd610fecab"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tableformer_fast.safetensors.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tableformer_fast.safetensors.metadata",
+          "bytes": 125,
+          "sha256": "0d8676d328589f83a3284fed92ee75aea5395f7f7077160432afe29b50c4010e"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tm_config.json.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tm_config.json.metadata",
+          "bytes": 101,
+          "sha256": "de95b005e53c0450052976e34669a5b48440d96630e5796c1d9746a05de2656c"
+        },
+        {
+          "path": "docling-project--docling-models/.cache/huggingface/trees/fc0f2d45e2218ea24bce5045f58a389aed16dc23.json",
+          "bytes": 1403,
+          "sha256": "8f74cb05610126508c4afcae60003fb238e7845e53655de6f3140c979e826df0"
+        },
+        {
+          "path": "docling-project--docling-models/.gitattributes",
+          "bytes": 1905,
+          "sha256": "360aba3ff7ce75396f13f0a77925fe9e79997e8d4bac064595ebb00c82700386"
+        },
+        {
+          "path": "docling-project--docling-models/.gitignore",
+          "bytes": 5180,
+          "sha256": "b44b404189eaff3631c470946e7350c2e88cead304d332a8ad50325e6f56e95d"
+        },
+        {
+          "path": "docling-project--docling-models/README.md",
+          "bytes": 3413,
+          "sha256": "d17f233378eff1240b623b36da76ee8b40afcca05d505949713bf03f7e00822a"
+        },
+        {
+          "path": "docling-project--docling-models/config.json",
+          "bytes": 41,
+          "sha256": "9c34024dc28ff47b75818f415e769809798c29bf9bde6f2ccc63a4acb62396d9"
+        },
+        {
+          "path": "docling-project--docling-models/model_artifacts/tableformer/accurate/tableformer_accurate.safetensors",
+          "bytes": 212758388,
+          "sha256": "2a7d6c924b3cd12fb99a09280ca9c33a89c5d60b93253617d2e088c1a40374d9"
+        },
+        {
+          "path": "docling-project--docling-models/model_artifacts/tableformer/accurate/tm_config.json",
+          "bytes": 7060,
+          "sha256": "984e122ceb8ccf84d84c9d2882f6f2302a44b4f1e577babd6289892c36f3cffd"
+        },
+        {
+          "path": "docling-project--docling-models/model_artifacts/tableformer/fast/tableformer_fast.safetensors",
+          "bytes": 145453276,
+          "sha256": "3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718"
+        },
+        {
+          "path": "docling-project--docling-models/model_artifacts/tableformer/fast/tm_config.json",
+          "bytes": 7060,
+          "sha256": "dca6762508dddfae6d57d6cb4ef822c6000119dff0f3b6489db7413118c2622a"
+        }
+      ],
+      "total_bytes": 701229881
+    }
+  },
+  "environments": {
+    "ocr": "environment-lock/ocr.freeze.txt",
+    "docling": "environment-lock/docling.freeze.txt"
+  }
+}

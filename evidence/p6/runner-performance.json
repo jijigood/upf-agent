@@ -1,0 +1,84 @@
+{
+  "events": [
+    {
+      "time": 1790616925.4108608,
+      "step": "adopt-owned-16K-service",
+      "state": "ready",
+      "pid": 3608971
+    },
+    {
+      "time": 1790616925.414036,
+      "step": "perf-target-off-16384-c1",
+      "state": "running"
+    },
+    {
+      "time": 1790617671.8257,
+      "step": "perf-target-off-16384-c1",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790617671.8286128,
+      "step": "perf-target-off-16384-c2",
+      "state": "running"
+    },
+    {
+      "time": 1790617765.1715434,
+      "step": "perf-target-off-16384-c2",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790617767.175425,
+      "step": "server-stop",
+      "state": "done",
+      "pid": 3608971
+    },
+    {
+      "time": 1790617829.6056263,
+      "step": "server-target-32768-s2",
+      "state": "ready",
+      "pid": 3677401
+    },
+    {
+      "time": 1790617829.6141393,
+      "step": "perf-target-off-32768-c1",
+      "state": "running"
+    },
+    {
+      "time": 1790617979.9680622,
+      "step": "perf-target-off-32768-c1",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790617979.9705179,
+      "step": "perf-target-off-32768-c2",
+      "state": "running"
+    },
+    {
+      "time": 1790618074.1611047,
+      "step": "perf-target-off-32768-c2",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790618076.165541,
+      "step": "server-stop",
+      "state": "done",
+      "pid": 3677401
+    },
+    {
+      "time": 1790618076.1931763,
+      "step": "all",
+      "state": "done"
+    }
+  ],
+  "owned_server_pid": null,
+  "pipeline_identity": "07109699091734a709ec309a9933d91b23190c61176a4ad9425e041160579174",
+  "generation_policy": {
+    "enable_thinking": false
+  },
+  "scope": "generation component optimization; not a new Agent/business evaluation",
+  "heldout_executed": false
+}

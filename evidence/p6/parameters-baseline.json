@@ -1,0 +1,1914 @@
+{
+  "profile": "baseline",
+  "cases": 100,
+  "families": 10,
+  "rows": [
+    {
+      "id": 0,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-10-01T00:00:00Z\", \"end\": \"2023-10-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 10575.20677195862
+    },
+    {
+      "id": 1,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 9122.99255328253
+    },
+    {
+      "id": 2,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 8843.968668021262
+    },
+    {
+      "id": 3,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 9627.642227802426
+    },
+    {
+      "id": 4,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 8985.013225115836
+    },
+    {
+      "id": 5,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 9187.489771749824
+    },
+    {
+      "id": 6,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 9053.03081870079
+    },
+    {
+      "id": 7,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 9010.995728895068
+    },
+    {
+      "id": 8,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 8948.265827726573
+    },
+    {
+      "id": 9,
+      "family": 0,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": {\"start\": \"2023-01-01T00:00:00Z\", \"end\": \"2023-01-01T01:00:00Z\", \"timezone_source\": \"UTC\"}, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": false,
+          "reason": "scope_denied"
+        },
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"window\": null, \"device_id\": null, \"event_type\": null, \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "prompt_tokens_observed": 785,
+        "completion_tokens_observed": 175,
+        "usage_responses": 2
+      },
+      "elapsed_ms": 8815.704520791769
+    },
+    {
+      "id": 10,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2551.7785088159144
+    },
+    {
+      "id": 11,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2527.0636840723455
+    },
+    {
+      "id": 12,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2528.722153045237
+    },
+    {
+      "id": 13,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2555.4077569395304
+    },
+    {
+      "id": 14,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2911.5352230146527
+    },
+    {
+      "id": 15,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2557.6506229117513
+    },
+    {
+      "id": 16,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2506.616243161261
+    },
+    {
+      "id": 17,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2546.766920015216
+    },
+    {
+      "id": 18,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2524.4929203763604
+    },
+    {
+      "id": 19,
+      "family": 1,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_node_unreachable\", \"limit\": 3}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2587.5079478137195
+    },
+    {
+      "id": 20,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2549.674157053232
+    },
+    {
+      "id": 21,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2542.0845355838537
+    },
+    {
+      "id": 22,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2593.1609352119267
+    },
+    {
+      "id": 23,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2543.010131921619
+    },
+    {
+      "id": 24,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2510.530893225223
+    },
+    {
+      "id": 25,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2824.8791596852243
+    },
+    {
+      "id": 26,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2491.142530925572
+    },
+    {
+      "id": 27,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2494.6114039048553
+    },
+    {
+      "id": 28,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2534.2721710912883
+    },
+    {
+      "id": 29,
+      "family": 2,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_heartbeat_request\", \"limit\": 5}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 574,
+        "completion_tokens_observed": 52,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2504.2105722241104
+    },
+    {
+      "id": 30,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\n  \"name\": \"find_log_events\",\n  \"arguments\": {\n    \"log_id\": \"a6f18ac81a18aa2125fa\",\n    \"event_type\": \"中文';DROP TABLE events;--\",\n    \"limit\": 1\n  }\n}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 64,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 3326.813006773591
+    },
+    {
+      "id": 31,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"中文';DROP TABLE events;--\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 54,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2598.1497187167406
+    },
+    {
+      "id": 32,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\n  \"name\": \"find_log_events\",\n  \"arguments\": {\n    \"log_id\": \"a6f18ac81a18aa2125fa\",\n    \"event_type\": \"中文';DROP TABLE events;--\",\n    \"limit\": 1\n  }\n}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 64,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 3121.2420286610723
+    },
+    {
+      "id": 33,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"中文';DROP TABLE events;--\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 54,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2596.6660091653466
+    },
+    {
+      "id": 34,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\n  \"name\": \"find_log_events\",\n  \"arguments\": {\n    \"log_id\": \"a6f18ac81a18aa2125fa\",\n    \"event_type\": \"中文';DROP TABLE events;--\",\n    \"limit\": 1\n  }\n}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 64,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 3049.5857559144497
+    },
+    {
+      "id": 35,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\n  \"name\": \"find_log_events\",\n  \"arguments\": {\n    \"log_id\": \"a6f18ac81a18aa2125fa\",\n    \"event_type\": \"中文';DROP TABLE events;--\",\n    \"limit\": 1\n  }\n}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 64,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 3083.9070938527584
+    },
+    {
+      "id": 36,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"中文';DROP TABLE events;--\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 54,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2601.6443902626634
+    },
+    {
+      "id": 37,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"中文';DROP TABLE events;--\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 54,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2620.588131248951
+    },
+    {
+      "id": 38,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"中文';DROP TABLE events;--\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 54,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2627.692598849535
+    },
+    {
+      "id": 39,
+      "family": 3,
+      "attempts": [
+        {
+          "raw": "{\n  \"name\": \"find_log_events\",\n  \"arguments\": {\n    \"log_id\": \"a6f18ac81a18aa2125fa\",\n    \"event_type\": \"中文';DROP TABLE events;--\",\n    \"limit\": 1\n  }\n}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 576,
+        "completion_tokens_observed": 64,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 3056.766256224364
+    },
+    {
+      "id": 40,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2460.508340038359
+    },
+    {
+      "id": 41,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2613.021911121905
+    },
+    {
+      "id": 42,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2477.4107467383146
+    },
+    {
+      "id": 43,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2479.014755692333
+    },
+    {
+      "id": 44,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2498.5722792334855
+    },
+    {
+      "id": 45,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2844.117884989828
+    },
+    {
+      "id": 46,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2651.898914948106
+    },
+    {
+      "id": 47,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2488.8180550187826
+    },
+    {
+      "id": 48,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2534.499485976994
+    },
+    {
+      "id": 49,
+      "family": 4,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"far_handover\", \"limit\": 50}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2535.8350221067667
+    },
+    {
+      "id": 50,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2474.3146430701017
+    },
+    {
+      "id": 51,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2452.260560821742
+    },
+    {
+      "id": 52,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2447.5436322391033
+    },
+    {
+      "id": 53,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2409.5634599216282
+    },
+    {
+      "id": 54,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2385.3283058851957
+    },
+    {
+      "id": 55,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2447.1842432394624
+    },
+    {
+      "id": 56,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2367.5388521514833
+    },
+    {
+      "id": 57,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2408.5678150877357
+    },
+    {
+      "id": 58,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2433.324018958956
+    },
+    {
+      "id": 59,
+      "family": 5,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"license_not_installed\", \"limit\": 1}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 572,
+        "completion_tokens_observed": 50,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2441.2464667111635
+    },
+    {
+      "id": 60,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2359.3555842526257
+    },
+    {
+      "id": 61,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2109.7951410338283
+    },
+    {
+      "id": 62,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2103.7104199640453
+    },
+    {
+      "id": 63,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2096.5359499678016
+    },
+    {
+      "id": 64,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2081.595436204225
+    },
+    {
+      "id": 65,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2077.3645350709558
+    },
+    {
+      "id": 66,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2186.898262705654
+    },
+    {
+      "id": 67,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2090.98490094766
+    },
+    {
+      "id": 68,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2101.094872225076
+    },
+    {
+      "id": 69,
+      "family": 6,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"analyze_log_window\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"bucket_minutes\": 60}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 390,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2085.9369039535522
+    },
+    {
+      "id": 70,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2103.143989108503
+    },
+    {
+      "id": 71,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2094.7439637966454
+    },
+    {
+      "id": 72,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2400.598934851587
+    },
+    {
+      "id": 73,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2191.1713727749884
+    },
+    {
+      "id": 74,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2533.875710796565
+    },
+    {
+      "id": 75,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2252.776026725769
+    },
+    {
+      "id": 76,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2091.74872469157
+    },
+    {
+      "id": 77,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2123.3210540376604
+    },
+    {
+      "id": 78,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2089.386344887316
+    },
+    {
+      "id": 79,
+      "family": 7,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"correlate_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"limit\": 20}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 402,
+        "completion_tokens_observed": 43,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2086.4037722349167
+    },
+    {
+      "id": 80,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2471.133021172136
+    },
+    {
+      "id": 81,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2474.2101319134235
+    },
+    {
+      "id": 82,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2470.952705014497
+    },
+    {
+      "id": 83,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2465.0359973311424
+    },
+    {
+      "id": 84,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2473.4010701067746
+    },
+    {
+      "id": 85,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2475.177268963307
+    },
+    {
+      "id": 86,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2514.222757425159
+    },
+    {
+      "id": 87,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2525.210689753294
+    },
+    {
+      "id": 88,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2471.678758971393
+    },
+    {
+      "id": 89,
+      "family": 8,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"n4_name_failure\", \"limit\": 2}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2496.190610807389
+    },
+    {
+      "id": 90,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2505.473024211824
+    },
+    {
+      "id": 91,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2537.7099313773215
+    },
+    {
+      "id": 92,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2516.6418431326747
+    },
+    {
+      "id": 93,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2501.7961682751775
+    },
+    {
+      "id": 94,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2554.7312516719103
+    },
+    {
+      "id": 95,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2519.7693430818617
+    },
+    {
+      "id": 96,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2490.907193161547
+    },
+    {
+      "id": 97,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2560.1848186925054
+    },
+    {
+      "id": 98,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2593.6710252426565
+    },
+    {
+      "id": 99,
+      "family": 9,
+      "attempts": [
+        {
+          "raw": "{\"name\": \"find_log_events\", \"arguments\": {\"log_id\": \"a6f18ac81a18aa2125fa\", \"event_type\": \"pfcp_session_deleted\", \"limit\": 4}}",
+          "pass": true,
+          "reason": null
+        }
+      ],
+      "usage": {
+        "requests": 1,
+        "prompt_tokens_observed": 573,
+        "completion_tokens_observed": 51,
+        "usage_responses": 1
+      },
+      "elapsed_ms": 2563.3304370567203
+    }
+  ],
+  "first_pass": 90,
+  "after_one_repair": 100,
+  "by_family": {
+    "0": {
+      "n": 10,
+      "first_pass": 0,
+      "after_repair": 10
+    },
+    "1": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "2": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "3": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "4": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "5": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "6": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "7": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "8": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    },
+    "9": {
+      "n": 10,
+      "first_pass": 10,
+      "after_repair": 10
+    }
+  },
+  "complete": true,
+  "tools_executed": 0,
+  "scope": "explicit argument generation; excludes autonomous selection/business accuracy"
+}

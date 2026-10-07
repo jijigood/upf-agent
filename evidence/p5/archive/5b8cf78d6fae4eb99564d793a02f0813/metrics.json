@@ -1,0 +1,13 @@
+{
+  "tool_attempts": 4,
+  "model_requests_reserved": 3,
+  "rounds": 2,
+  "parameter_repairs": 1,
+  "active_seconds": 69.58394911885262,
+  "observed_usage": {
+    "requests": 3,
+    "prompt_tokens_observed": 27409,
+    "completion_tokens_observed": 1097,
+    "usage_responses": 3
+  }
+}

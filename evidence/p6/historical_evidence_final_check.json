@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-09-29T01:31:56.400325+00:00",
+  "referenced_artifacts": 23,
+  "changed_artifacts": [],
+  "quality_closure_before_sha256": "4b1a559b2c1157f97e076443ddcb7a1b5503f875dfdfea3d18d8eaea52eee7f5",
+  "archived_quality_closure": "evidence/p6/archive/quality_closure_before_p6/quality_closure.json",
+  "P1_P5_original_evidence_preserved": true,
+  "P2_user_signoff_scope_preserved": "P2 extraction samples and visible OCR with accepted quarantine; P6 business accuracy not evaluated"
+}

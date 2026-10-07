@@ -1,0 +1,15 @@
+I001 [*] Import block is un-sorted or un-formatted
+ --> tests/test_p3_rank_fusion.py:1:1
+  |
+1 | / import pytest
+2 | | from upf_agent.p3_search import combine_rerank
+  | |______________________________________________^
+help: Organize imports
+  |
+1 | import pytest
+2 +
+3 | from upf_agent.p3_search import combine_rerank
+  |
+
+Found 1 error.
+[*] 1 fixable with the `--fix` option.

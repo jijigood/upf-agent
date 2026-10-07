@@ -1,0 +1,81 @@
+{
+  "generation": "bf8fb923cd90036e501f",
+  "reused": true,
+  "stats": {
+    "sources": 4,
+    "blocks": 9713,
+    "commands": 109,
+    "images": 474,
+    "textboxes_raw": 58,
+    "textboxes_selected": 55,
+    "fallback_skipped": 3,
+    "tables": 126,
+    "media_unreferenced": 1,
+    "per_source": [
+      {
+        "source_id": "manual-341440f7dd103f51",
+        "blocks": 1162,
+        "tables": 17,
+        "textboxes_raw": 0,
+        "textboxes_selected": 0,
+        "compatibility": {
+          "alternate_content": 0,
+          "choice": 0,
+          "fallback": 0
+        },
+        "images_referenced": 18,
+        "media_files": 17,
+        "media_unreferenced": 0,
+        "commands": 21
+      },
+      {
+        "source_id": "manual-98aa0505da555a15",
+        "blocks": 4053,
+        "tables": 83,
+        "textboxes_raw": 6,
+        "textboxes_selected": 3,
+        "compatibility": {
+          "alternate_content": 3,
+          "choice": 3,
+          "fallback": 3
+        },
+        "images_referenced": 314,
+        "media_files": 313,
+        "media_unreferenced": 1,
+        "commands": 0
+      },
+      {
+        "source_id": "manual-9f16bf8ca11723a2",
+        "blocks": 873,
+        "tables": 0,
+        "textboxes_raw": 52,
+        "textboxes_selected": 52,
+        "compatibility": {
+          "alternate_content": 0,
+          "choice": 0,
+          "fallback": 0
+        },
+        "images_referenced": 1,
+        "media_files": 1,
+        "media_unreferenced": 0,
+        "commands": 34
+      },
+      {
+        "source_id": "manual-1edf23113651430f",
+        "blocks": 3625,
+        "tables": 26,
+        "textboxes_raw": 0,
+        "textboxes_selected": 0,
+        "compatibility": {
+          "alternate_content": 0,
+          "choice": 0,
+          "fallback": 0
+        },
+        "images_referenced": 141,
+        "media_files": 141,
+        "media_unreferenced": 0,
+        "commands": 54
+      }
+    ]
+  }
+}

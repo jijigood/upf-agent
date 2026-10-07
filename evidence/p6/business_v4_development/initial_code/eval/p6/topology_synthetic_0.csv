@@ -1,0 +1,2 @@
+device_id,device_port,peer_device_id,peer_port,interface_type,valid_from,valid_to
+SYN-UPF-0,eth0,SYN-SW-0,port1,N3,2025-01-01T00:00:00+00:00,2026-01-01T00:00:00+00:00

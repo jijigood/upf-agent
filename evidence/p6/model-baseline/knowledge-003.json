@@ -1,0 +1,394 @@
+{
+  "row": {
+    "id": "knowledge-003",
+    "model": "baseline",
+    "evidence_sha256": "a2bd50eb7f1a8cf4a5871258a43392e4b4bc0f38bb35ccd6668c7ca8127ef968",
+    "elapsed_ms": 25281.091486103833,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 11065,
+      "completion_tokens_observed": 479,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册中‘物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）’的说明和关键字段是什么？请给出原文依据。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "      interfaces:\n\n        - enp61s0f0\n\n        - enp61s0f1\n\n        mode: 802.3ad                       #mode设置为4，交换机对应lacp-dynamic\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "      interfaces:\n"
+          },
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "        - enp61s0f0\n"
+          },
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "        - enp61s0f1\n"
+          },
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "        mode: 802.3ad                       #mode设置为4，交换机对应lacp-dynamic\n"
+          }
+        ]
+      },
+      {
+        "text": "    bond0.90:                               #规划的Bond子接口，用于K8s\n\n      id: 90\n\n      link: bond0\n\n      addresses: [ 172.16.100.50/24 ]\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "    bond0.90:                               #规划的Bond子接口，用于K8s\n"
+          },
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "      id: 90\n"
+          },
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "      link: bond0\n"
+          },
+          {
+            "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+            "quote": "      addresses: [ 172.16.100.50/24 ]\n"
+          }
+        ]
+      },
+      {
+        "text": "用于K8s接口地址网络必须配置nameservers网关地址。后续部署K8s时需要，否则会有报错提示；\n\n默认路由routes.default需要配置。后续部署K8s时需要，否则会有报错提示。",
+        "citations": [
+          {
+            "chunk_id": "chunk-c68506d4ec5e247b1185a691",
+            "quote": "用于K8s接口地址网络必须配置nameservers网关地址。后续部署K8s时需要，否则会有报错提示；\n"
+          },
+          {
+            "chunk_id": "chunk-c68506d4ec5e247b1185a691",
+            "quote": "默认路由routes.default需要配置。后续部署K8s时需要，否则会有报错提示。"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）",
+          "netplan Bond模式（现网部署配置）"
+        ],
+        "parent_id": "section-003d947b9a7eb6f58ab9",
+        "kind": "code",
+        "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）\n# This is the network config written by 'subiquity'\nnetwork:\n  ethernets:\n    enp61s0f0:\n      dhcp4: no\n    enp61s0f1:\n      dhcp4: no\n    ens1f0:\n      dhcp4: no\n    ens1f1:\n      dhcp4: no\n    ens3f0:\n      dhcp4: no\n    ens3f1:\n      dhcp4: no\n  bonds:\n    bond0:\n      interfaces:\n        - enp61s0f0\n        - enp61s0f1\n      parameters:\n        mode: 802.3ad                       #mode设置为4，交换机对应lacp-dynamic\n        mii-monitor-interval: 100\n  vlans:\n    bond0.90:                               #规划的Bond子接口，用于K8s\n      id: 90\n      link: bond0\n      addresses: [ 172.16.100.50/24 ]\n      routes:\n        - to: default\n          via: 172.16.100.1                   #规划的K8s地址网关\n      #gateway4: 172.16.100.1\n      nameservers:                         # DNS 服务器地址\n        addresses: [\"172.16.100.1\"]\n    bond0.299:                              #规划的Bond子接口，用于部署UPF时N4使用\n      id: 299\n      link: bond0\n     # addresses: [ 100.101.1.50/24 ]          #规划的N4地址后续通过网管(curl)配置\n  version: 2",
+        "token_count": 434,
+        "block_ids": [
+          "manual-1edf23113651430f:b001022",
+          "manual-1edf23113651430f:b001023",
+          "manual-1edf23113651430f:b001024",
+          "manual-1edf23113651430f:b001025",
+          "manual-1edf23113651430f:b001026",
+          "manual-1edf23113651430f:b001027",
+          "manual-1edf23113651430f:b001028",
+          "manual-1edf23113651430f:b001029",
+          "manual-1edf23113651430f:b001030",
+          "manual-1edf23113651430f:b001031",
+          "manual-1edf23113651430f:b001032",
+          "manual-1edf23113651430f:b001033",
+          "manual-1edf23113651430f:b001034",
+          "manual-1edf23113651430f:b001035",
+          "manual-1edf23113651430f:b001036",
+          "manual-1edf23113651430f:b001037",
+          "manual-1edf23113651430f:b001038",
+          "manual-1edf23113651430f:b001039",
+          "manual-1edf23113651430f:b001040",
+          "manual-1edf23113651430f:b001041",
+          "manual-1edf23113651430f:b001042",
+          "manual-1edf23113651430f:b001043",
+          "manual-1edf23113651430f:b001044",
+          "manual-1edf23113651430f:b001045",
+          "manual-1edf23113651430f:b001046",
+          "manual-1edf23113651430f:b001047",
+          "manual-1edf23113651430f:b001048",
+          "manual-1edf23113651430f:b001049",
+          "manual-1edf23113651430f:b001050",
+          "manual-1edf23113651430f:b001051",
+          "manual-1edf23113651430f:b001052",
+          "manual-1edf23113651430f:b001053",
+          "manual-1edf23113651430f:b001054",
+          "manual-1edf23113651430f:b001055",
+          "manual-1edf23113651430f:b001056",
+          "manual-1edf23113651430f:b001057",
+          "manual-1edf23113651430f:b001058",
+          "manual-1edf23113651430f:b001059",
+          "manual-1edf23113651430f:b001060"
+        ],
+        "locators": [
+          "word/document.xml/body/p[461]",
+          "word/document.xml/body/p[462]",
+          "word/document.xml/body/p[463]",
+          "word/document.xml/body/p[464]",
+          "word/document.xml/body/p[465]",
+          "word/document.xml/body/p[466]",
+          "word/document.xml/body/p[467]",
+          "word/document.xml/body/p[468]",
+          "word/document.xml/body/p[469]",
+          "word/document.xml/body/p[470]",
+          "word/document.xml/body/p[471]",
+          "word/document.xml/body/p[472]",
+          "word/document.xml/body/p[473]",
+          "word/document.xml/body/p[474]",
+          "word/document.xml/body/p[475]",
+          "word/document.xml/body/p[476]",
+          "word/document.xml/body/p[477]",
+          "word/document.xml/body/p[478]",
+          "word/document.xml/body/p[479]",
+          "word/document.xml/body/p[480]",
+          "word/document.xml/body/p[481]",
+          "word/document.xml/body/p[482]",
+          "word/document.xml/body/p[483]",
+          "word/document.xml/body/p[484]",
+          "word/document.xml/body/p[485]",
+          "word/document.xml/body/p[486]",
+          "word/document.xml/body/p[487]",
+          "word/document.xml/body/p[488]",
+          "word/document.xml/body/p[489]",
+          "word/document.xml/body/p[490]",
+          "word/document.xml/body/p[491]",
+          "word/document.xml/body/p[492]",
+          "word/document.xml/body/p[493]",
+          "word/document.xml/body/p[494]",
+          "word/document.xml/body/p[495]",
+          "word/document.xml/body/p[496]",
+          "word/document.xml/body/p[497]",
+          "word/document.xml/body/p[498]",
+          "word/document.xml/body/p[499]"
+        ],
+        "ordinal_start": 1022,
+        "ordinal_end": 1060,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N4"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-c68506d4ec5e247b1185a691",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装并配置操作系统",
+          "物理机安装操作系统并配置",
+          "配置netplan bond0口与bond0子接口（虚拟机跳过该步骤）",
+          "netplan Bond模式（现网部署配置）"
+        ],
+        "parent_id": "section-003d947b9a7eb6f58ab9",
+        "kind": "prose",
+        "text": "物理机安装操作系统并配置 / 配置netplan bond0口与bond0子接口（虚拟机跳过该步骤） / netplan Bond模式（现网部署配置）\n参数说明：\n其中enp61s0f0/enp61s0f1需根据实际部署情况选择需要做bonding的网口；\n此处只需考虑N4、K8S和管理口共口部署，N3/N6/N9接口不需要在此处做bonding设置；\n用于K8s接口地址网络必须配置nameservers网关地址。后续部署K8s时需要，否则会有报错提示；\n默认路由routes.default需要配置。后续部署K8s时需要，否则会有报错提示。",
+        "token_count": 154,
+        "block_ids": [
+          "manual-1edf23113651430f:b001061",
+          "manual-1edf23113651430f:b001062",
+          "manual-1edf23113651430f:b001063",
+          "manual-1edf23113651430f:b001064",
+          "manual-1edf23113651430f:b001065"
+        ],
+        "locators": [
+          "word/document.xml/body/p[500]",
+          "word/document.xml/body/p[501]",
+          "word/document.xml/body/p[502]",
+          "word/document.xml/body/p[503]",
+          "word/document.xml/body/p[504]"
+        ],
+        "ordinal_start": 1061,
+        "ordinal_end": 1065,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "N4",
+          "N6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S1Q3",
+        "S1Q4",
+        "S1Q5",
+        "S1Q6",
+        "S1Q7",
+        "S1Q8",
+        "S1Q9",
+        "S1Q10",
+        "S1Q11",
+        "S1Q12"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "在netplan Bond模式（现网部署配置）中，需将两个物理网口（如enp61s0f0和enp61s0f1）配置为bond0的接口，模式设置为802.3ad（即mode: 4），并配置mii-monitor-interval为100，以实现动态LACP冗余备份。",
+            "quote_ids": [
+              "S1Q19",
+              "S1Q20",
+              "S1Q21",
+              "S1Q23"
+            ]
+          },
+          {
+            "text": "bond0需配置两个子接口：bond0.90用于K8s，配置IP地址172.16.100.50/24、默认网关172.16.100.1、DNS服务器172.16.100.1；bond0.299用于N4，其IP地址由网管通过curl配置，不在此处配置。",
+            "quote_ids": [
+              "S1Q26",
+              "S1Q27",
+              "S1Q28",
+              "S1Q29"
+            ]
+          },
+          {
+            "text": "配置netplan时，必须确保K8s子接口（bond0.90）的nameservers和routes.default已正确配置，否则后续部署K8s时会报错。",
+            "quote_ids": [
+              "S2Q5",
+              "S2Q6"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "在netplan Bond模式（现网部署配置）中，需将两个物理网口（如enp61s0f0和enp61s0f1）配置为bond0的接口，模式设置为802.3ad（即mode: 4），并配置mii-monitor-interval为100，以实现动态LACP冗余备份。",
+            "citations": [
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "      interfaces:\n"
+              },
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "        - enp61s0f0\n"
+              },
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "        - enp61s0f1\n"
+              },
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "        mode: 802.3ad                       #mode设置为4，交换机对应lacp-dynamic\n"
+              }
+            ]
+          },
+          {
+            "text": "bond0需配置两个子接口：bond0.90用于K8s，配置IP地址172.16.100.50/24、默认网关172.16.100.1、DNS服务器172.16.100.1；bond0.299用于N4，其IP地址由网管通过curl配置，不在此处配置。",
+            "citations": [
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "    bond0.90:                               #规划的Bond子接口，用于K8s\n"
+              },
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "      id: 90\n"
+              },
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "      link: bond0\n"
+              },
+              {
+                "chunk_id": "chunk-130842ca33fc1ee9055d1bc3",
+                "quote": "      addresses: [ 172.16.100.50/24 ]\n"
+              }
+            ]
+          },
+          {
+            "text": "配置netplan时，必须确保K8s子接口（bond0.90）的nameservers和routes.default已正确配置，否则后续部署K8s时会报错。",
+            "citations": [
+              {
+                "chunk_id": "chunk-c68506d4ec5e247b1185a691",
+                "quote": "用于K8s接口地址网络必须配置nameservers网关地址。后续部署K8s时需要，否则会有报错提示；\n"
+              },
+              {
+                "chunk_id": "chunk-c68506d4ec5e247b1185a691",
+                "quote": "默认路由routes.default需要配置。后续部署K8s时需要，否则会有报错提示。"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "show_cp_node",
+    "status": "partial",
+    "claims": 3,
+    "citations": 6,
+    "expected_status": "partial",
+    "pass": true,
+    "error": null
+  },
+  {
+    "name": "netman_v13",
+    "status": "completed",
+    "claims": 3,
+    "citations": 5,
+    "expected_status": "completed",
+    "pass": true,
+    "error": null
+  },
+  {
+    "name": "n4_pfcp",
+    "status": "partial",
+    "claims": 3,
+    "citations": 4,
+    "expected_status": "partial",
+    "pass": true,
+    "error": null
+  },
+  {
+    "name": "unrelated",
+    "status": "missing_source",
+    "claims": 0,
+    "citations": 0,
+    "expected_status": "missing_source",
+    "pass": true,
+    "error": null
+  }
+]

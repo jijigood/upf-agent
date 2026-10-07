@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "method": "repeat complete masked source byte-for-byte; no new incidents",
+  "copies": 170,
+  "bytes": 1079155580,
+  "sha256": "79791ed38f525c09ebd0e7646127fcbd02173c4a54c33cb885fc5a72f1b6a989",
+  "original_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+  "warning": "Repeated timestamps/entities are artificial; use only for capacity, never business accuracy."
+}

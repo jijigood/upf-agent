@@ -1,0 +1,47 @@
+{
+  "unit_tests": 31,
+  "unit_tests_passed": true,
+  "ruff_passed": true,
+  "model_smoke_cases": [
+    {
+      "name": "show_cp_node",
+      "status": "partial",
+      "claims": 3,
+      "citations": 6,
+      "expected_status": "partial",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "netman_v13",
+      "status": "completed",
+      "claims": 3,
+      "citations": 5,
+      "expected_status": "completed",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "n4_pfcp",
+      "status": "partial",
+      "claims": 3,
+      "citations": 4,
+      "expected_status": "partial",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "unrelated",
+      "status": "missing_source",
+      "claims": 0,
+      "citations": 0,
+      "expected_status": "missing_source",
+      "pass": true,
+      "error": null
+    }
+  ],
+  "txt_cli": "completed",
+  "missing_command_cli": "missing_source",
+  "formal_business_quality": "pending_human_gold",
+  "p2_human_review": "pending_user"
+}

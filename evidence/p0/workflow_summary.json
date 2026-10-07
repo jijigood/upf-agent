@@ -1,0 +1,29 @@
+{
+  "node_counts": {
+    "start": 1,
+    "question-classifier": 1,
+    "llm": 8,
+    "answer": 6,
+    "knowledge-retrieval": 4,
+    "code": 4,
+    "iteration": 2,
+    "iteration-start": 2,
+    "assigner": 4,
+    "parameter-extractor": 1,
+    "document-extractor": 2
+  },
+  "edge_count": 32,
+  "llm_models": {
+    "DeepSeekV3.1": 7,
+    "Qwen/Qwen3-32B": 1
+  },
+  "knowledge_dataset_ids": [
+    "W1EbW7t7TD21vWSlxEZD45wj+ZYLOlflsSRSr0JcjuVGUTg81sHaxa5He4KY7VgW",
+    "fEE4uoE1uT0Jd72rUJPT58QypPtVxEOnH2h26jXukuSEMSI+l1ScwXcugz1NmA64",
+    "uhN3rseAVaKlXw3cCyyg4MB88Lvid03WUZfZneNUUDD9q2vS3mT1hfC3dlevgw6e",
+    "wcrN9FsLeT1y0A6cymHciZAVN7yfF4EiosmjDUePOEkSBMdN/JU5OlYkQJ4UpzHs"
+  ],
+  "conversation_variables": [
+    "rag_mem"
+  ]
+}

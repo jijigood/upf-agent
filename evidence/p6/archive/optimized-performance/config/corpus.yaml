@@ -1,0 +1,31 @@
+version: 1
+source_root: /home/huangxiaolin/upf-agent/data/raw
+sources:
+  - path: "中国联通5G专网UPF产品使用手册(1).docx"
+    role: manual
+    product: UPF
+    version: unknown
+  - path: "5GC网管使用手册_V1.3_20220916(1).docx"
+    role: manual
+    product: 5GC网管
+    version: V1.3
+  - path: "中国联通5G专网UPF紧急故障指引0429(1).docx"
+    role: manual
+    product: UPF
+    version: unknown
+  - path: "UPF 5.0安装部署指导书(新网管版)(1).docx"
+    role: manual
+    product: UPF
+    version: "5.0"
+  - path: "upfd_masked.log"
+    role: log
+    product: UPF
+    version: unknown
+  - path: "提取自main.pdf"
+    role: paper
+    product: null
+    version: unknown
+  - path: "upftest.yml"
+    role: fixture
+    product: UPF
+    version: DSL-0.3.0

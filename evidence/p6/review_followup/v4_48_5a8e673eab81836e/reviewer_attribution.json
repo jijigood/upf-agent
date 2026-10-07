@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-09-29T06:38:42.991437+00:00",
+  "user_instruction": "这个应该不影响，写张三就行",
+  "reviewer_label": "张三",
+  "reviewer_label_explicitly_user_supplied": true,
+  "review_date": "2026-09-28",
+  "date_source": "unchanged value in submitted48 and inherited72",
+  "legal_identity_verification_performed": false,
+  "scope": "business truth labels only; not model answer approval",
+  "signed_review": "eval/p6/business_v4/reviewed_truth_user_named.md",
+  "signed_review_sha256": "0cbc171673d76d8b1d545865da8c5983394759987daca1f5a8def1c0ec54d62d",
+  "original_merged_review_sha256": "812fc5f1ad07dd935a596a40279a4c82fb87cfa5abb976f435e2c34933929c44",
+  "import_receipt": {
+    "reviewed": 120,
+    "input_sha256": "8df48554d0d0604754d14bae89b907232fc5ee1faa3b0a18243e5661cc1add25",
+    "review_sha256": "0cbc171673d76d8b1d545865da8c5983394759987daca1f5a8def1c0ec54d62d",
+    "overrides_sha256": null,
+    "output_sha256": "a1060098d02e7df07bac3d507666c65e62c0c079ea096d7624df452fd578a190",
+    "scope": "business labels; not model answer approval",
+    "source_validation": {
+      "native_chunks_resolved": 155,
+      "log_events_resolved": 30,
+      "topology_files_resolved": 5,
+      "actual_source_partition_pass": true,
+      "scope": "source identity and original SHA; human relevance still required"
+    }
+  }
+}

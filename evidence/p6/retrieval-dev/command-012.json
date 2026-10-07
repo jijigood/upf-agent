@@ -1,0 +1,758 @@
+{
+  "query": "核对 set-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4> 在‘UPF系统能力 / 功能配置’中的原始语法，不把示例当现场参数。",
+  "product": "UPF",
+  "version": null,
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 1,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 35,
+  "reranked_candidates": 32,
+  "context_tokens": 822,
+  "rankings": {
+    "exact": [
+      "chunk-ed162186f81b734c927091f0"
+    ],
+    "bm25": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-2b949aa06d43c57aebfcea21",
+      "chunk-c8deaa189d6c9bfc9f3a227e",
+      "chunk-0de81a0ec40a03b6c44cebc0",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-e3a8a048c9df63535a5efedd",
+      "chunk-455575eca6404bd6acf1d2cc",
+      "chunk-bf85b8cb923178ed3aef0829",
+      "chunk-933eaabcb30fd402335d30bb",
+      "chunk-8a1cd259f0edea9b15fc3ea3",
+      "chunk-9c1e42a1583c5971a02326fa",
+      "chunk-4c21851d9deb5b668916c02a",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-7982385ed7db803a5236d264",
+      "chunk-782e13db22ca562774fdf840"
+    ],
+    "dense": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-f8dc340c7dfc306c405fe10e",
+      "chunk-5295b7f20340ba5ae824fb01",
+      "chunk-05b46622548cea41921ec8c4",
+      "chunk-5b4a8a7067c844ef4753d14d",
+      "chunk-782e13db22ca562774fdf840",
+      "chunk-bb0ffd8669a264fc11208deb",
+      "chunk-fad1a36f8df1f846f5781590",
+      "chunk-42359eedabf592cf36ef38d1",
+      "chunk-4810f364c95856d4a4b9902f",
+      "chunk-0ca8a1cfc4b1cd97b3f413b2",
+      "chunk-42035679118d3add2cffd9bc",
+      "chunk-bb3e665f6b54bf7ce9595476",
+      "chunk-c590bc00f87ad7cae47ce7d4",
+      "chunk-533e87fb05b4b2d2b7b93b2e",
+      "chunk-857a81c6e6430cc4a55c3bf1",
+      "chunk-1f58da08b9301892a9299f2e"
+    ],
+    "rrf": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-782e13db22ca562774fdf840",
+      "chunk-2b949aa06d43c57aebfcea21",
+      "chunk-f8dc340c7dfc306c405fe10e",
+      "chunk-5295b7f20340ba5ae824fb01",
+      "chunk-c8deaa189d6c9bfc9f3a227e",
+      "chunk-05b46622548cea41921ec8c4",
+      "chunk-0de81a0ec40a03b6c44cebc0",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-5b4a8a7067c844ef4753d14d",
+      "chunk-e3a8a048c9df63535a5efedd",
+      "chunk-455575eca6404bd6acf1d2cc",
+      "chunk-bb0ffd8669a264fc11208deb",
+      "chunk-bf85b8cb923178ed3aef0829",
+      "chunk-fad1a36f8df1f846f5781590",
+      "chunk-42359eedabf592cf36ef38d1",
+      "chunk-933eaabcb30fd402335d30bb",
+      "chunk-4810f364c95856d4a4b9902f",
+      "chunk-8a1cd259f0edea9b15fc3ea3",
+      "chunk-0ca8a1cfc4b1cd97b3f413b2",
+      "chunk-9c1e42a1583c5971a02326fa",
+      "chunk-42035679118d3add2cffd9bc",
+      "chunk-4c21851d9deb5b668916c02a",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-bb3e665f6b54bf7ce9595476",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-c590bc00f87ad7cae47ce7d4",
+      "chunk-533e87fb05b4b2d2b7b93b2e",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-7982385ed7db803a5236d264",
+      "chunk-857a81c6e6430cc4a55c3bf1",
+      "chunk-1f58da08b9301892a9299f2e"
+    ],
+    "reranked": [
+      "chunk-ed162186f81b734c927091f0",
+      "chunk-21b601c9353349f7eb3ab15c",
+      "chunk-5508ad2ffaa25a9c28d1634f",
+      "chunk-5b4a8a7067c844ef4753d14d",
+      "chunk-e2ca5f2a07d7228d2bb32d91",
+      "chunk-5295b7f20340ba5ae824fb01",
+      "chunk-42035679118d3add2cffd9bc",
+      "chunk-f8dc340c7dfc306c405fe10e",
+      "chunk-782e13db22ca562774fdf840",
+      "chunk-05b46622548cea41921ec8c4",
+      "chunk-533e87fb05b4b2d2b7b93b2e",
+      "chunk-bb0ffd8669a264fc11208deb",
+      "chunk-c590bc00f87ad7cae47ce7d4",
+      "chunk-fad1a36f8df1f846f5781590",
+      "chunk-0ca8a1cfc4b1cd97b3f413b2",
+      "chunk-bb3e665f6b54bf7ce9595476",
+      "chunk-42359eedabf592cf36ef38d1",
+      "chunk-933eaabcb30fd402335d30bb",
+      "chunk-4810f364c95856d4a4b9902f",
+      "chunk-21dccc114177dcd35158f743",
+      "chunk-013b7cb89c91edbafb296e8a",
+      "chunk-37015f8c510912ff3ba8d98a",
+      "chunk-e8683a340f2175d73a20ff1b",
+      "chunk-bf85b8cb923178ed3aef0829",
+      "chunk-8a1cd259f0edea9b15fc3ea3",
+      "chunk-c8deaa189d6c9bfc9f3a227e",
+      "chunk-9c1e42a1583c5971a02326fa",
+      "chunk-0de81a0ec40a03b6c44cebc0",
+      "chunk-4c21851d9deb5b668916c02a",
+      "chunk-2b949aa06d43c57aebfcea21",
+      "chunk-455575eca6404bd6acf1d2cc",
+      "chunk-e3a8a048c9df63535a5efedd"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-ed162186f81b734c927091f0",
+      "rrf_score": 0.04918032786885246,
+      "routes": {
+        "exact": {
+          "rank": 1,
+          "raw_score": 40.0
+        },
+        "bm25": {
+          "rank": 1,
+          "raw_score": 64.8238754272461
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.8473735390050307
+        }
+      },
+      "rerank_raw_logit_difference": 7.8125,
+      "rerank_p_yes": 0.9995955185021579,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "command",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\nset-upf-prt-sw (n4-prt-sw | gtpu-prt-sw) <level=0:4>\n相关说明：UPFD> set-upf-prt-sw n4-prt-sw 4",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000752"
+      ],
+      "locators": [
+        "word/document.xml/body/p[177]"
+      ],
+      "command_id": "cmd-011a8faed078e465",
+      "command_family": "CLI",
+      "interface_tags": [
+        "n4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-05b46622548cea41921ec8c4",
+          "text": "CLI配置命令 / UPF系统能力 / 功能配置\n功能配置\n操作步骤\n登录UPF物理机，打开终端；\n终端键入命令：telnet 0 37100；\n进入upfd调试台，输入命令；\nUPF上 show config 可以确认配置成功。\n命令格式\nupf日志打印级别设置",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000743",
+            "manual-341440f7dd103f51:b000744",
+            "manual-341440f7dd103f51:b000745",
+            "manual-341440f7dd103f51:b000746",
+            "manual-341440f7dd103f51:b000747",
+            "manual-341440f7dd103f51:b000748",
+            "manual-341440f7dd103f51:b000749",
+            "manual-341440f7dd103f51:b000751"
+          ],
+          "locators": [
+            "word/document.xml/body/p[168]",
+            "word/document.xml/body/p[169]",
+            "word/document.xml/body/p[170]",
+            "word/document.xml/body/p[171]",
+            "word/document.xml/body/p[172]",
+            "word/document.xml/body/p[173]",
+            "word/document.xml/body/p[174]",
+            "word/document.xml/body/p[176]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-21b601c9353349f7eb3ab15c",
+      "rrf_score": 0.031746031746031744,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 42.55036544799805
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.7762156981325522
+        }
+      },
+      "rerank_raw_logit_difference": 6.0,
+      "rerank_p_yes": 0.9975273768433653,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "prose",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\n说明：\nn4-prt-sw: upf信令面日志打印级别设置。级别：fatal(1), error(2), alert(3), debug(4)；\ngtpu-prt-sw: upf数据面日志打印级别设置。级别：off(0), on(1)。\n举例：",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000753",
+        "manual-341440f7dd103f51:b000754",
+        "manual-341440f7dd103f51:b000755",
+        "manual-341440f7dd103f51:b000757"
+      ],
+      "locators": [
+        "word/document.xml/body/p[178]",
+        "word/document.xml/body/p[179]",
+        "word/document.xml/body/p[180]",
+        "word/document.xml/body/p[182]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "n4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-5508ad2ffaa25a9c28d1634f",
+      "rrf_score": 0.03225806451612903,
+      "routes": {
+        "bm25": {
+          "rank": 2,
+          "raw_score": 47.325618743896484
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.791804300223991
+        }
+      },
+      "rerank_raw_logit_difference": 5.75,
+      "rerank_p_yes": 0.9968273171575148,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "command",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\nUPFD> set-upf-prt-sw n4-prt-sw 4",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000758"
+      ],
+      "locators": [
+        "word/document.xml/body/p[183]"
+      ],
+      "command_id": "cmd-cdadb39e7c5528b7",
+      "command_family": "CLI",
+      "interface_tags": [
+        "n4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-4810f364c95856d4a4b9902f",
+          "text": "CLI配置命令 / UPF系统能力 / 功能配置\nUPFD> show config",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000759"
+          ],
+          "locators": [
+            "word/document.xml/body/p[184]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-5b4a8a7067c844ef4753d14d",
+      "rrf_score": 0.014705882352941176,
+      "routes": {
+        "dense": {
+          "rank": 8,
+          "raw_score": 0.6877877005888686
+        }
+      },
+      "rerank_raw_logit_difference": 5.375,
+      "rerank_p_yes": 0.9953904278206259,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力"
+      ],
+      "parent_id": "section-8ffb41c03d80f99aa8ea",
+      "kind": "prose",
+      "text": "产品配置 / CLI配置命令 / UPF系统能力\nUPF系统能力",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000740"
+      ],
+      "locators": [
+        "word/document.xml/body/p[165]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-e2ca5f2a07d7228d2bb32d91",
+      "rrf_score": 0.03125,
+      "routes": {
+        "bm25": {
+          "rank": 4,
+          "raw_score": 13.682167053222656
+        },
+        "dense": {
+          "rank": 4,
+          "raw_score": 0.72331195819479
+        }
+      },
+      "rerank_raw_logit_difference": 5.25,
+      "rerank_p_yes": 0.9947798743064417,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "CLI配置命令",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-93a4864c8a3b2c42c793",
+      "kind": "prose",
+      "text": "CLI配置命令 / UPF系统能力 / 功能配置\nUpf Print Switch List:\n             Media Print Swtich :  1  \n    Media log file Print Swtich :  1  \n                N4 Print Swtich :  4  <<< upf信令面log level\n       N4 log file Print Swtich :  1  \n              Rule Print Swtich :  1  ",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000760",
+        "manual-341440f7dd103f51:b000761",
+        "manual-341440f7dd103f51:b000762",
+        "manual-341440f7dd103f51:b000763",
+        "manual-341440f7dd103f51:b000764",
+        "manual-341440f7dd103f51:b000765"
+      ],
+      "locators": [
+        "word/document.xml/body/p[185]",
+        "word/document.xml/body/p[186]",
+        "word/document.xml/body/p[187]",
+        "word/document.xml/body/p[188]",
+        "word/document.xml/body/p[189]",
+        "word/document.xml/body/p[190]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-5295b7f20340ba5ae824fb01",
+      "rrf_score": 0.015151515151515152,
+      "routes": {
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.6892102776538107
+        }
+      },
+      "rerank_raw_logit_difference": 5.1875,
+      "rerank_p_yes": 0.994445075296309,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "网管配置管理",
+        "UPF系统能力"
+      ],
+      "parent_id": "section-fb322618941b1f6a12af",
+      "kind": "prose",
+      "text": "产品配置 / 网管配置管理 / UPF系统能力\nUPF系统能力",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000608"
+      ],
+      "locators": [
+        "word/document.xml/body/p[125]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-42035679118d3add2cffd9bc",
+      "rrf_score": 0.013333333333333334,
+      "routes": {
+        "dense": {
+          "rank": 15,
+          "raw_score": 0.6306953126277359
+        }
+      },
+      "rerank_raw_logit_difference": 4.8125,
+      "rerank_p_yes": 0.9919380084717284,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "交付配置",
+        "UP功能特性配置"
+      ],
+      "parent_id": "section-3e5b08737ca3e47ce6c6",
+      "kind": "prose",
+      "text": "交付配置 / UP功能特性配置\nUP功能特性配置\n依次点击【配置管理】>【UPF】>【UPF功能特性配置】\n找到UEIP选项，设置为true，点击执行使配置生效",
+      "block_ids": [
+        "manual-341440f7dd103f51:b001147",
+        "manual-341440f7dd103f51:b001148",
+        "manual-341440f7dd103f51:b001149"
+      ],
+      "locators": [
+        "word/document.xml/body/p[439]",
+        "word/document.xml/body/p[440]",
+        "word/document.xml/body/p[441]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-f8dc340c7dfc306c405fe10e",
+      "rrf_score": 0.015384615384615385,
+      "routes": {
+        "dense": {
+          "rank": 5,
+          "raw_score": 0.7042967156588863
+        }
+      },
+      "rerank_raw_logit_difference": 4.5625,
+      "rerank_p_yes": 0.9896718474806949,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品配置",
+        "网管配置管理",
+        "UPF系统能力",
+        "功能配置"
+      ],
+      "parent_id": "section-400ae39152ece0269cca",
+      "kind": "table",
+      "text": "网管配置管理 / UPF系统能力 / 功能配置\n表格：UPF系统能力 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：控制面日志打印级别 | 参数值类型：枚举型 | 取值范围：OFF,ERR,IMP,NOR,DBG | 是否必选：可选 | 默认值：无 | 参数说明：信令包处理流程的日志\n表格：UPF系统能力 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：用户面日志打印级别 | 参数值类型：枚举型 | 取值范围：OFF,ON | 是否必选：可选 | 默认值：OFF | 参数说明：数据包处理流程的日志\n表格：UPF系统能力 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：报文快速转发 | 参数值类型：枚举型 | 取值范围：OFF,ON | 是否必选：可选 | 默认值：OFF\n表格：UPF系统能力 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：报文深度探测 | 参数值类型：枚举型 | 取值范围：OFF,ON | 是否必选：可选 | 默认值：OFF | 参数说明：DPI功能开关",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000630",
+        "manual-341440f7dd103f51:b000637",
+        "manual-341440f7dd103f51:b000644",
+        "manual-341440f7dd103f51:b000651"
+      ],
+      "locators": [
+        "word/document.xml/body/tbl[10]/tr[2]",
+        "word/document.xml/body/tbl[10]/tr[3]",
+        "word/document.xml/body/tbl[10]/tr[4]",
+        "word/document.xml/body/tbl[10]/tr[5]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": "manual-341440f7dd103f51:b000616",
+      "table_cells": [
+        {
+          "row": 2,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[2]/tc[1]",
+          "locator": "word/document.xml/body/tbl[10]/tr[2]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[2]/tc[2]",
+          "locator": "word/document.xml/body/tbl[10]/tr[2]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[2]/tc[3]",
+          "locator": "word/document.xml/body/tbl[10]/tr[2]/tc[3]",
+          "vmerge": null
+        },
+        {
+          "row": 2,
+          "column": 4,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[2]/tc[4]",
+          "locator": "word/document.xml/body/tbl[10]/tr[2]/tc[4]",
+          "vmerge": null
+        },
+        {
+          "row": 2,
+          "column": 5,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[2]/tc[5]",
+          "locator": "word/document.xml/body/tbl[10]/tr[2]/tc[5]",
+          "vmerge": null
+        },
+        {
+          "row": 2,
+          "column": 6,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[2]/tc[6]",
+          "locator": "word/document.xml/body/tbl[10]/tr[2]/tc[6]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[3]/tc[1]",
+          "locator": "word/document.xml/body/tbl[10]/tr[3]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[3]/tc[2]",
+          "locator": "word/document.xml/body/tbl[10]/tr[3]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[3]/tc[3]",
+          "locator": "word/document.xml/body/tbl[10]/tr[3]/tc[3]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 4,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[3]/tc[4]",
+          "locator": "word/document.xml/body/tbl[10]/tr[3]/tc[4]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 5,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[3]/tc[5]",
+          "locator": "word/document.xml/body/tbl[10]/tr[3]/tc[5]",
+          "vmerge": null
+        },
+        {
+          "row": 3,
+          "column": 6,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[3]/tc[6]",
+          "locator": "word/document.xml/body/tbl[10]/tr[3]/tc[6]",
+          "vmerge": null
+        },
+        {
+          "row": 4,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[4]/tc[1]",
+          "locator": "word/document.xml/body/tbl[10]/tr[4]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 4,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[4]/tc[2]",
+          "locator": "word/document.xml/body/tbl[10]/tr[4]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 4,
+          "column": 3,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[4]/tc[3]",
+          "locator": "word/document.xml/body/tbl[10]/tr[4]/tc[3]",
+          "vmerge": null
+        },
+        {
+          "row": 4,
+          "column": 4,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[4]/tc[4]",
+          "locator": "word/document.xml/body/tbl[10]/tr[4]/tc[4]",
+          "vmerge": null
+        },
+        {
+          "row": 4,
+          "column": 5,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[4]/tc[5]",
+          "locator": "word/document.xml/body/tbl[10]/tr[4]/tc[5]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 1,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[5]/tc[1]",
+          "locator": "word/document.xml/body/tbl[10]/tr[5]/tc[1]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 2,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[5]/tc[2]",
+          "locator": "word/document.xml/body/tbl[10]/tr[5]/tc[2]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 3,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[5]/tc[3]",
+          "locator": "word/document.xml/body/tbl[10]/tr[5]/tc[3]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 4,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[5]/tc[4]",
+          "locator": "word/document.xml/body/tbl[10]/tr[5]/tc[4]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 5,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[5]/tc[5]",
+          "locator": "word/document.xml/body/tbl[10]/tr[5]/tc[5]",
+          "vmerge": null
+        },
+        {
+          "row": 5,
+          "column": 6,
+          "span": 1,
+          "origin": "word/document.xml/body/tbl[10]/tr[5]/tc[6]",
+          "locator": "word/document.xml/body/tbl[10]/tr[5]/tc[6]",
+          "vmerge": null
+        }
+      ],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-782e13db22ca562774fdf840",
+          "text": "网管配置管理 / UPF系统能力 / 功能配置\n功能配置\n操作步骤：\n配置管理 > 基本配置 > 业务配置 > UPF系统能力\nupfd的日志按对应级别显示\n参数配置",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000611",
+            "manual-341440f7dd103f51:b000612",
+            "manual-341440f7dd103f51:b000613",
+            "manual-341440f7dd103f51:b000614",
+            "manual-341440f7dd103f51:b000615"
+          ],
+          "locators": [
+            "word/document.xml/body/p[128]",
+            "word/document.xml/body/p[129]",
+            "word/document.xml/body/p[130]",
+            "word/document.xml/body/p[131]",
+            "word/document.xml/body/p[132]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

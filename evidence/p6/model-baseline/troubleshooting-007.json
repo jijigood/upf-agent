@@ -1,0 +1,372 @@
+{
+  "row": {
+    "id": "troubleshooting-007",
+    "model": "baseline",
+    "evidence_sha256": "2f7c85118e03546b5462cac8da30d0f4d3d3131035ff970b372156f44d38ef28",
+    "elapsed_ms": 23192.449586931616,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 8338,
+      "completion_tokens_observed": 437,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册中‘K8S集群软件故障排查 / 插件维护管理 / ingress-nginx’的排查步骤和操作前提是什么？请给出原文依据。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "$ helm -n ingress-nginx ls\n\n$ kubectl -n ingress-nginx get pods \n\n$ kubectl -n ingress-nginx get svc\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ helm -n ingress-nginx ls\n"
+          },
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ kubectl -n ingress-nginx get pods \n"
+          },
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ kubectl -n ingress-nginx get svc\n"
+          }
+        ]
+      },
+      {
+        "text": "ingress-nginx：ingress网关插件，用于集群外部访问UPF\n\n检查ingress-nginx插件是否已经安装，并且STATUS列显示为Running\n\nsealos底层调用helm命令安装ingress-nginx插件，默认安装在ingress-nginx命名空间下，默认使用hostnetwork暴露ingress-nginx自身服务。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-df4636eabc07becc6fd71dcd",
+            "quote": "ingress-nginx：ingress网关插件，用于集群外部访问UPF\n"
+          },
+          {
+            "chunk_id": "chunk-df4636eabc07becc6fd71dcd",
+            "quote": "检查ingress-nginx插件是否已经安装，并且STATUS列显示为Running\n"
+          },
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "sealos底层调用helm命令安装ingress-nginx插件，默认安装在ingress-nginx命名空间下，默认使用hostnetwork暴露ingress-nginx自身服务。\n"
+          }
+        ]
+      },
+      {
+        "text": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n\n$ helm -n ingress-nginx uninstall ingress-nginx",
+        "citations": [
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n"
+          },
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ helm -n ingress-nginx uninstall ingress-nginx"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "插件维护管理",
+          "ingress-nginx"
+        ],
+        "parent_id": "section-23481b69f973264f217c",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 插件维护管理 / ingress-nginx\ningress-nginx\nIngress-nginx插件提供通过集群外部访问POD service的能力。\nsealos底层调用helm命令安装ingress-nginx插件，默认安装在ingress-nginx命名空间下，默认使用hostnetwork暴露ingress-nginx自身服务。\n安装ingress-nginx网络插件\n$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n查看ingress-nginx helm chart\n$ helm -n ingress-nginx ls\nNAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION\ningress-nginx   ingress-nginx   1               2023-03-30 11:17:09.773134733 +0800 CST deployed        ingress-nginx-4.5.2     1.6.4      \n查看ingress-nginx pods\n$ kubectl -n ingress-nginx get pods \nNAME                                        READY   STATUS    RESTARTS        AGE\ningress-nginx-controller-6d6b6fd558-xxqk5   1/1     Running   3 (3h16m ago)   6h45m\n查看ingress-nginx service\n$ kubectl -n ingress-nginx get svc\nNAME                                 TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE\ningress-nginx-controller-admission   ClusterIP   10.96.1.212   <none>        443/TCP   6h45m\n卸载ingress-nginx网络插件\n$ helm -n ingress-nginx uninstall ingress-nginx",
+        "token_count": 394,
+        "block_ids": [
+          "manual-1edf23113651430f:b003154",
+          "manual-1edf23113651430f:b003155",
+          "manual-1edf23113651430f:b003156",
+          "manual-1edf23113651430f:b003157",
+          "manual-1edf23113651430f:b003158",
+          "manual-1edf23113651430f:b003160",
+          "manual-1edf23113651430f:b003161",
+          "manual-1edf23113651430f:b003162",
+          "manual-1edf23113651430f:b003163",
+          "manual-1edf23113651430f:b003165",
+          "manual-1edf23113651430f:b003166",
+          "manual-1edf23113651430f:b003167",
+          "manual-1edf23113651430f:b003168",
+          "manual-1edf23113651430f:b003170",
+          "manual-1edf23113651430f:b003171",
+          "manual-1edf23113651430f:b003172",
+          "manual-1edf23113651430f:b003173",
+          "manual-1edf23113651430f:b003175",
+          "manual-1edf23113651430f:b003176"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1963]",
+          "word/document.xml/body/p[1964]",
+          "word/document.xml/body/p[1965]",
+          "word/document.xml/body/p[1966]",
+          "word/document.xml/body/p[1967]",
+          "word/document.xml/body/p[1969]",
+          "word/document.xml/body/p[1970]",
+          "word/document.xml/body/p[1971]",
+          "word/document.xml/body/p[1972]",
+          "word/document.xml/body/p[1974]",
+          "word/document.xml/body/p[1975]",
+          "word/document.xml/body/p[1976]",
+          "word/document.xml/body/p[1977]",
+          "word/document.xml/body/p[1979]",
+          "word/document.xml/body/p[1980]",
+          "word/document.xml/body/p[1981]",
+          "word/document.xml/body/p[1982]",
+          "word/document.xml/body/p[1984]",
+          "word/document.xml/body/p[1985]"
+        ],
+        "ordinal_start": 3154,
+        "ordinal_end": 3176,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-df4636eabc07becc6fd71dcd",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "前置条件",
+          "依赖插件要求"
+        ],
+        "parent_id": "section-a7c0b4fe64a6ae971629",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 前置条件 / 依赖插件要求\n 依赖插件要求\n针对已经部署的单节点k8s集群节点，需要满足已经安装部署下面插件：\nopenebs：存储插件，为UPF提供动态持久卷\ningress-nginx：ingress网关插件，用于集群外部访问UPF\nmultus-cni：附加多个网卡到UPFD pod中\nhelmfile：用于部署upf应用的helm chart\ndriverctl：用于部署upf应用的网卡绑定\n使用以下kubectl命令检查每个插件是否已经安装，并且运行状态是否正常。\n检查openebs插件是否已经安装，并且STATUS列显示为Running\n# kubectl -n openebs get pods\nNAME                                          READY   STATUS    RESTARTS       AGE\nopenebs-localpv-provisioner-7b4db8497-ccr59   1/1     Running   2 (153m ago)   17h\n检查ingress-nginx插件是否已经安装，并且STATUS列显示为Running\n# kubectl -n ingress-nginx get pods\nNAME                             READY   STATUS    RESTARTS   AGE\ningress-nginx-controller-8rxz4   1/1     Running   0          6h41m\n检查multus-cni插件是否已经安装，并且STATUS列显示为Running\n# kubectl -n kube-system get pods -l app=multus\nNAME                   READY   STATUS    RESTARTS       AGE\nkube-multus-ds-7zfzb   1/1     Running   2 (154m ago)   17h\n检查helmfile插件是否安装，并且存在$PATH变量中\n# which helmfile\n/usr/bin/helmfile\n检查driverctl插件是否安装，并且存在$PATH变量中\n# which driverctl\n/usr/sbin/driverctl",
+        "token_count": 423,
+        "block_ids": [
+          "manual-1edf23113651430f:b001356",
+          "manual-1edf23113651430f:b001357",
+          "manual-1edf23113651430f:b001358",
+          "manual-1edf23113651430f:b001359",
+          "manual-1edf23113651430f:b001360",
+          "manual-1edf23113651430f:b001361",
+          "manual-1edf23113651430f:b001362",
+          "manual-1edf23113651430f:b001363",
+          "manual-1edf23113651430f:b001364",
+          "manual-1edf23113651430f:b001365",
+          "manual-1edf23113651430f:b001366",
+          "manual-1edf23113651430f:b001367",
+          "manual-1edf23113651430f:b001368",
+          "manual-1edf23113651430f:b001369",
+          "manual-1edf23113651430f:b001370",
+          "manual-1edf23113651430f:b001371",
+          "manual-1edf23113651430f:b001372",
+          "manual-1edf23113651430f:b001373",
+          "manual-1edf23113651430f:b001374",
+          "manual-1edf23113651430f:b001375",
+          "manual-1edf23113651430f:b001376",
+          "manual-1edf23113651430f:b001377",
+          "manual-1edf23113651430f:b001378",
+          "manual-1edf23113651430f:b001379",
+          "manual-1edf23113651430f:b001380",
+          "manual-1edf23113651430f:b001381"
+        ],
+        "locators": [
+          "word/document.xml/body/p[785]",
+          "word/document.xml/body/p[786]",
+          "word/document.xml/body/p[787]",
+          "word/document.xml/body/p[788]",
+          "word/document.xml/body/p[789]",
+          "word/document.xml/body/p[790]",
+          "word/document.xml/body/p[791]",
+          "word/document.xml/body/p[792]",
+          "word/document.xml/body/p[793]",
+          "word/document.xml/body/p[794]",
+          "word/document.xml/body/p[795]",
+          "word/document.xml/body/p[796]",
+          "word/document.xml/body/p[797]",
+          "word/document.xml/body/p[798]",
+          "word/document.xml/body/p[799]",
+          "word/document.xml/body/p[800]",
+          "word/document.xml/body/p[801]",
+          "word/document.xml/body/p[802]",
+          "word/document.xml/body/p[803]",
+          "word/document.xml/body/p[804]",
+          "word/document.xml/body/p[805]",
+          "word/document.xml/body/p[806]",
+          "word/document.xml/body/p[807]",
+          "word/document.xml/body/p[808]",
+          "word/document.xml/body/p[809]",
+          "word/document.xml/body/p[810]"
+        ],
+        "ordinal_start": 1356,
+        "ordinal_end": 1381,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S1Q3",
+        "S1Q4",
+        "S1Q5",
+        "S1Q6",
+        "S1Q7",
+        "S1Q8",
+        "S1Q9",
+        "S1Q10",
+        "S1Q11",
+        "S1Q12"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "ingress-nginx插件的排查步骤包括：检查helm安装状态、查看pods运行状态、检查service配置。具体命令为：`helm -n ingress-nginx ls`、`kubectl -n ingress-nginx get pods`、`kubectl -n ingress-nginx get svc`。",
+            "quote_ids": [
+              "S1Q8",
+              "S1Q12",
+              "S1Q16"
+            ]
+          },
+          {
+            "text": "操作前提为：已部署单节点K8S集群，且必须安装ingress-nginx插件以支持集群外部访问UPF，该插件需在ingress-nginx命名空间下运行，且状态为Running。",
+            "quote_ids": [
+              "S3Q5",
+              "S3Q14",
+              "S1Q4"
+            ]
+          },
+          {
+            "text": "ingress-nginx插件可通过`sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4`命令安装，卸载命令为`helm -n ingress-nginx uninstall ingress-nginx`。",
+            "quote_ids": [
+              "S1Q6",
+              "S1Q20"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "ingress-nginx插件的排查步骤包括：检查helm安装状态、查看pods运行状态、检查service配置。具体命令为：`helm -n ingress-nginx ls`、`kubectl -n ingress-nginx get pods`、`kubectl -n ingress-nginx get svc`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ helm -n ingress-nginx ls\n"
+              },
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ kubectl -n ingress-nginx get pods \n"
+              },
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ kubectl -n ingress-nginx get svc\n"
+              }
+            ]
+          },
+          {
+            "text": "操作前提为：已部署单节点K8S集群，且必须安装ingress-nginx插件以支持集群外部访问UPF，该插件需在ingress-nginx命名空间下运行，且状态为Running。",
+            "citations": [
+              {
+                "chunk_id": "chunk-df4636eabc07becc6fd71dcd",
+                "quote": "ingress-nginx：ingress网关插件，用于集群外部访问UPF\n"
+              },
+              {
+                "chunk_id": "chunk-df4636eabc07becc6fd71dcd",
+                "quote": "检查ingress-nginx插件是否已经安装，并且STATUS列显示为Running\n"
+              },
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "sealos底层调用helm命令安装ingress-nginx插件，默认安装在ingress-nginx命名空间下，默认使用hostnetwork暴露ingress-nginx自身服务。\n"
+              }
+            ]
+          },
+          {
+            "text": "ingress-nginx插件可通过`sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4`命令安装，卸载命令为`helm -n ingress-nginx uninstall ingress-nginx`。",
+            "citations": [
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n"
+              },
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ helm -n ingress-nginx uninstall ingress-nginx"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

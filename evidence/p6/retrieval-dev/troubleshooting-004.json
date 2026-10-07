@@ -1,0 +1,567 @@
+{
+  "query": "请依据‘部署FAQ / K8S集群软件故障排查 / 插件维护管理’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "c61e9796eead2610cfd4",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "route_counts": {
+    "exact": 0,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 25,
+  "reranked_candidates": 25,
+  "context_tokens": 995,
+  "rankings": {
+    "exact": [],
+    "bm25": [
+      "chunk-76b3006ebf4d6634906ecd2a",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-992280cbf8ebd1bf1bfaf585",
+      "chunk-2fc4428866c69bb6de423877",
+      "chunk-826d46714d0660f21dfb22e7",
+      "chunk-05a7a290e4e820cd81436843",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-73986e099325e6f5c5d27ac9",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-02f2c0ed5eef7f9ebcc79707",
+      "chunk-431e9c929de7ea7de7c14431"
+    ],
+    "dense": [
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-2fc4428866c69bb6de423877",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-76b3006ebf4d6634906ecd2a",
+      "chunk-992280cbf8ebd1bf1bfaf585",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-826d46714d0660f21dfb22e7",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-1a09cca0adc6efedbe4ede47",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-173ecb6d3d876af1395e3b74"
+    ],
+    "rrf": [
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-76b3006ebf4d6634906ecd2a",
+      "chunk-2fc4428866c69bb6de423877",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-992280cbf8ebd1bf1bfaf585",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-826d46714d0660f21dfb22e7",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-05a7a290e4e820cd81436843",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-73986e099325e6f5c5d27ac9",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-1a09cca0adc6efedbe4ede47",
+      "chunk-02f2c0ed5eef7f9ebcc79707",
+      "chunk-431e9c929de7ea7de7c14431"
+    ],
+    "reranked": [
+      "chunk-8ba926a9b133cfc159707ad8",
+      "chunk-1a09cca0adc6efedbe4ede47",
+      "chunk-2936ef5a513ec429aa132e1a",
+      "chunk-8b7190a7813bebeffe210cc7",
+      "chunk-76b3006ebf4d6634906ecd2a",
+      "chunk-173ecb6d3d876af1395e3b74",
+      "chunk-73986e099325e6f5c5d27ac9",
+      "chunk-5433f2361d7cbceae8092553",
+      "chunk-fb7bc2a93813a5faee1ad595",
+      "chunk-431e9c929de7ea7de7c14431",
+      "chunk-fc1ffbf7abbe3c7fdf69d47d",
+      "chunk-d228af64df28fdea95b91934",
+      "chunk-e7773e4bc9c9794eef44177c",
+      "chunk-2fc4428866c69bb6de423877",
+      "chunk-992280cbf8ebd1bf1bfaf585",
+      "chunk-04f75f76e3e997b3afb95ab4",
+      "chunk-ff13c68062b40e541691331c",
+      "chunk-40e89a682b78c5baf67ab343",
+      "chunk-826d46714d0660f21dfb22e7",
+      "chunk-7eb6ba2c984e4c3c2253d153",
+      "chunk-05a7a290e4e820cd81436843",
+      "chunk-c1617c5c3cf7294398ff805e",
+      "chunk-b6acc1271c1a045af4aba962",
+      "chunk-5bf91a33efe9ff9fa23173e1",
+      "chunk-02f2c0ed5eef7f9ebcc79707"
+    ]
+  },
+  "evidence": [
+    {
+      "chunk_id": "chunk-8ba926a9b133cfc159707ad8",
+      "rrf_score": 0.031746031746031744,
+      "routes": {
+        "bm25": {
+          "rank": 3,
+          "raw_score": 14.153438568115234
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.7589632742603711
+        }
+      },
+      "rerank_raw_logit_difference": 6.1875,
+      "rerank_p_yes": 0.9979492564600826,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查"
+      ],
+      "parent_id": "section-fec536992e66503b2f87",
+      "kind": "prose",
+      "text": "部署FAQ / K8S集群软件故障排查\nK8S集群软件故障排查",
+      "block_ids": [
+        "manual-1edf23113651430f:b002973"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1786]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-1a09cca0adc6efedbe4ede47",
+      "rrf_score": 0.01282051282051282,
+      "routes": {
+        "dense": {
+          "rank": 18,
+          "raw_score": 0.6924440612719444
+        }
+      },
+      "rerank_raw_logit_difference": 6.0,
+      "rerank_p_yes": 0.9975273768433653,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "插件安装问题"
+      ],
+      "parent_id": "section-206f98b59b4a27568dd1",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / 插件安装问题\n插件安装问题\n每个插件调用sealos run命令进行安装，插件安装失败时会给出错误提示，但不会终止整个安装流程，可以在安装完成后单独处理失败的插件，具体失败原因需要分析插件pod日志。\n以openebs存储插件为例，插件安装在openebs命名空间，使用helm进行部署。其他插件信息请参考插件运行管理章节。\n1.\t首先检查helm是否已经成功下发openebs chart，并且STATUS为deployed\nroot@upf:~# helm -n openebs ls\nNAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION\nopenebs openebs         1               2023-03-30 11:16:53.302896372 +0800 CST deployed        openebs-3.3.1   3.3.0  \n2.\t检查openebs命名空间下的pod状态，查看STATUS列是否为Running\nroot@upf:~# kubectl -n openebs get pods \nNAME                                          READY   STATUS    RESTARTS       AGE\nopenebs-localpv-provisioner-7b4db8497-bjjvp   1/1     Running   3 (149m ago)   5h59m\n3.\t如果pod状态异常，需要查看pod日志，分析定位具体原因，一般使用以下命令查看openebs pod日志\nroot@upf:~# kubectl -n openebs logs -f openebs-localpv-provisioner-7b4db8497-bjjvp\nroot@upf:~# kubectl -n openebs describe pods openebs-localpv-provisioner-7b4db8497-bjjvp\n4.\t相关问题解决后可以尝试删除openebs插件重新安装",
+      "block_ids": [
+        "manual-1edf23113651430f:b002994",
+        "manual-1edf23113651430f:b002995",
+        "manual-1edf23113651430f:b002996",
+        "manual-1edf23113651430f:b002997",
+        "manual-1edf23113651430f:b002998",
+        "manual-1edf23113651430f:b002999",
+        "manual-1edf23113651430f:b003000",
+        "manual-1edf23113651430f:b003002",
+        "manual-1edf23113651430f:b003003",
+        "manual-1edf23113651430f:b003004",
+        "manual-1edf23113651430f:b003005",
+        "manual-1edf23113651430f:b003007",
+        "manual-1edf23113651430f:b003008",
+        "manual-1edf23113651430f:b003009",
+        "manual-1edf23113651430f:b003011"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1807]",
+        "word/document.xml/body/p[1808]",
+        "word/document.xml/body/p[1809]",
+        "word/document.xml/body/p[1810]",
+        "word/document.xml/body/p[1811]",
+        "word/document.xml/body/p[1812]",
+        "word/document.xml/body/p[1813]",
+        "word/document.xml/body/p[1815]",
+        "word/document.xml/body/p[1816]",
+        "word/document.xml/body/p[1817]",
+        "word/document.xml/body/p[1818]",
+        "word/document.xml/body/p[1820]",
+        "word/document.xml/body/p[1821]",
+        "word/document.xml/body/p[1822]",
+        "word/document.xml/body/p[1824]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-c1617c5c3cf7294398ff805e",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / 插件安装问题\nhelm -n openebs uninstall openebs",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b003012"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1825]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-2936ef5a513ec429aa132e1a",
+      "rrf_score": 0.032018442622950824,
+      "routes": {
+        "bm25": {
+          "rank": 4,
+          "raw_score": 13.527721405029297
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.7891022595682461
+        }
+      },
+      "rerank_raw_logit_difference": 5.0,
+      "rerank_p_yes": 0.9933071490757153,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查"
+      ],
+      "parent_id": "section-56bbce0acab9aa3a814a",
+      "kind": "prose",
+      "text": "部署FAQ / K8S集群软件故障排查 / 基本故障排查\n基本故障排查",
+      "block_ids": [
+        "manual-1edf23113651430f:b002974"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1787]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-8b7190a7813bebeffe210cc7",
+      "rrf_score": 0.0259915611814346,
+      "routes": {
+        "bm25": {
+          "rank": 15,
+          "raw_score": 10.392560005187988
+        },
+        "dense": {
+          "rank": 19,
+          "raw_score": 0.6882322964388623
+        }
+      },
+      "rerank_raw_logit_difference": 4.625,
+      "rerank_p_yes": 0.9902915235185259,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "集群安装问题"
+      ],
+      "parent_id": "section-8baf65985aebaf898945",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / 集群安装问题\n集群安装问题\n集群安装失败时，集群安装过程中输出的日志信息有限，一般需要进一步检查kubernetes系统进程例如kubelet、containerd状态及日志。\n1.\t查看kubelet运行状态",
+      "block_ids": [
+        "manual-1edf23113651430f:b002975",
+        "manual-1edf23113651430f:b002976",
+        "manual-1edf23113651430f:b002977"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1788]",
+        "word/document.xml/body/p[1789]",
+        "word/document.xml/body/p[1790]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-7d6750acd76fa1ca0043ec44",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / 集群安装问题\nsystemctl status kubelet",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002978"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1791]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-76b3006ebf4d6634906ecd2a",
+      "rrf_score": 0.030679156908665108,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 15.714040756225586
+        },
+        "dense": {
+          "rank": 10,
+          "raw_score": 0.7263178541684178
+        }
+      },
+      "rerank_raw_logit_difference": 4.25,
+      "rerank_p_yes": 0.9859363729567544,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "插件维护管理"
+      ],
+      "parent_id": "section-af579897a056e398c218",
+      "kind": "prose",
+      "text": "部署FAQ / K8S集群软件故障排查 / 插件维护管理\n插件维护管理\n集群安装脚本默认能够自动安装所有启用的插件，下面主要介绍在集群安装完成后如何单独安装某个插件，以及如果管理插件的生命周期，例如查看插件运行状态，卸载插件等。\n官方支持的插件镜像及版本： HYPERLINK \"https://hub.docker.com/u/labring\" https://hub.docker.com/u/labring",
+      "block_ids": [
+        "manual-1edf23113651430f:b003044",
+        "manual-1edf23113651430f:b003045",
+        "manual-1edf23113651430f:b003046"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1853]",
+        "word/document.xml/body/p[1854]",
+        "word/document.xml/body/p[1855]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-173ecb6d3d876af1395e3b74",
+      "rrf_score": 0.026013513513513515,
+      "routes": {
+        "bm25": {
+          "rank": 14,
+          "raw_score": 10.817976951599121
+        },
+        "dense": {
+          "rank": 20,
+          "raw_score": 0.6868567991685746
+        }
+      },
+      "rerank_raw_logit_difference": 3.5625,
+      "rerank_p_yes": 0.9724147177732099,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "parent_id": "section-6ce42cd6a967c385307e",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\n如果pod状态为Error或crashloopbackoff异常，可以查看pod运行日志",
+      "block_ids": [
+        "manual-1edf23113651430f:b002992"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1805]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-d228af64df28fdea95b91934",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> logs -f <pod-name>",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002993"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1806]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-73986e099325e6f5c5d27ac9",
+      "rrf_score": 0.0136986301369863,
+      "routes": {
+        "bm25": {
+          "rank": 13,
+          "raw_score": 11.010510444641113
+        }
+      },
+      "rerank_raw_logit_difference": 3.5625,
+      "rerank_p_yes": 0.9724147177732099,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "插件维护管理",
+        "Helm"
+      ],
+      "parent_id": "section-a6c2f639d4d11cf91408",
+      "kind": "prose",
+      "text": "K8S集群软件故障排查 / 插件维护管理 / Helm\nHelm\nhelm插件是一个二进制文件，默认安装在集群所有master节点的 /usr/bin目录下，大部分插件的安装依赖helm命令，因此部署集群后，应该首先安装helm插件。\n执行以下命令安装helm插件\n$ sealos run docker.io/labring/helm:v3.11.0\n使用以下命令查看helm安装路径\n$ which helm\n/usr/bin/helm\n如需卸载helm 插件，执行以下命令\n$ rm -rf /usr/bin/helm",
+      "block_ids": [
+        "manual-1edf23113651430f:b003087",
+        "manual-1edf23113651430f:b003088",
+        "manual-1edf23113651430f:b003089",
+        "manual-1edf23113651430f:b003090",
+        "manual-1edf23113651430f:b003092",
+        "manual-1edf23113651430f:b003093",
+        "manual-1edf23113651430f:b003094",
+        "manual-1edf23113651430f:b003096",
+        "manual-1edf23113651430f:b003097"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1896]",
+        "word/document.xml/body/p[1897]",
+        "word/document.xml/body/p[1898]",
+        "word/document.xml/body/p[1899]",
+        "word/document.xml/body/p[1901]",
+        "word/document.xml/body/p[1902]",
+        "word/document.xml/body/p[1903]",
+        "word/document.xml/body/p[1905]",
+        "word/document.xml/body/p[1906]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": null,
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-5433f2361d7cbceae8092553",
+      "rrf_score": 0.02632034632034632,
+      "routes": {
+        "bm25": {
+          "rank": 17,
+          "raw_score": 10.248204231262207
+        },
+        "dense": {
+          "rank": 15,
+          "raw_score": 0.6996880144926935
+        }
+      },
+      "rerank_raw_logit_difference": 3.5,
+      "rerank_p_yes": 0.9706877692486436,
+      "source_id": "manual-1edf23113651430f",
+      "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+      "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+      "product": "UPF",
+      "version": "5.0",
+      "section_path": [
+        "部署FAQ",
+        "K8S集群软件故障排查",
+        "基本故障排查",
+        "Pod状态异常"
+      ],
+      "parent_id": "section-6ce42cd6a967c385307e",
+      "kind": "command",
+      "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nkubectl -n <namespace> describe pods <pod-name>",
+      "block_ids": [
+        "manual-1edf23113651430f:b002990"
+      ],
+      "locators": [
+        "word/document.xml/body/p[1803]"
+      ],
+      "command_id": "cmd-bf37de02499f3d23",
+      "command_family": "other",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": null,
+      "neighbors": [
+        {
+          "chunk_id": "chunk-fb7bc2a93813a5faee1ad595",
+          "text": "K8S集群软件故障排查 / 基本故障排查 / Pod状态异常\nPod状态异常\nPOD状态Pending异常，一般由于节点不满足运行要求、pod调度失败会处于Pending状态，使用describe命令查看错误信息：",
+          "truncated": false,
+          "block_ids": [
+            "manual-1edf23113651430f:b002988",
+            "manual-1edf23113651430f:b002989"
+          ],
+          "locators": [
+            "word/document.xml/body/p[1801]",
+            "word/document.xml/body/p[1802]"
+          ],
+          "source_id": "manual-1edf23113651430f"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,15 @@
+{
+  "reviewed": 120,
+  "input_sha256": "8df48554d0d0604754d14bae89b907232fc5ee1faa3b0a18243e5661cc1add25",
+  "review_sha256": "0cbc171673d76d8b1d545865da8c5983394759987daca1f5a8def1c0ec54d62d",
+  "overrides_sha256": null,
+  "output_sha256": "a1060098d02e7df07bac3d507666c65e62c0c079ea096d7624df452fd578a190",
+  "scope": "business labels; not model answer approval",
+  "source_validation": {
+    "native_chunks_resolved": 155,
+    "log_events_resolved": 30,
+    "topology_files_resolved": 5,
+    "actual_source_partition_pass": true,
+    "scope": "source identity and original SHA; human relevance still required"
+  }
+}

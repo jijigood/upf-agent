@@ -1,0 +1,17 @@
+{
+  "reviewed": 120,
+  "newly_reviewed": 60,
+  "carried_reviewed": 60,
+  "input_sha256": "9a4b81454509cde5c68bdaa27063f96fc05dd97255d930ecb67158f63dd41e22",
+  "review_sha256": "24f57bcafed01fa2eede89f2303bb1fc5d1977a5516f2941733fbad17b5bf259",
+  "overrides_sha256": null,
+  "output_sha256": "da075d6654bd661872aef8f7dda2d5038e39c4450dc8c911b3612c743ba24a6b",
+  "scope": "business labels; not model answer approval",
+  "source_validation": {
+    "native_chunks_resolved": 84,
+    "log_events_resolved": 24,
+    "topology_files_resolved": 7,
+    "actual_source_partition_pass": true,
+    "scope": "source identity and original SHA; human relevance still required"
+  }
+}

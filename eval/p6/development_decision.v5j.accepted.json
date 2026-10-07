@@ -1,0 +1,28 @@
+{
+  "configuration_accepted": true,
+  "model_profile": "baseline",
+  "development_sha256": "87d73ec30e8882ce8af9868c722ec3e13661e3d43f2d40e35c86ccb9d8b6f410",
+  "suite_sha256": "da075d6654bd661872aef8f7dda2d5038e39c4450dc8c911b3612c743ba24a6b",
+  "adjudication_path": "runs/p6-v4-v5j/review-intake-b1b61ff676af/adjudication.json",
+  "reviewer": "张三",
+  "date": "2026-10-06",
+  "notes": "沿用用户此前已接受的Qwen3-30B-A3B-Instruct-2507 BF16/GPU0/16K/并发1配置；v5j开发60题人工语义门槛通过：支持60/60、完整56/60、命令20/20、缺资料6/6、关键参数新增0。有限Agent不宣称优于固定流程。旧v5f留出失败记录保留，新留出仅执行一次。张三为用户允许的署名标签，未核验实名。",
+  "evidence": {
+    "development_summary": "runs/p6-v4-v5j/reviewed-dev/summary.json",
+    "development_delta": "runs/p6-v4-v5j/reviewed-dev/development_delta.json",
+    "truth_import_receipt": "eval/p6/business_v5_replacement/reviewed_suite.receipt.json",
+    "pre_freeze_audit": "runs/p6-v4-v5j/pre_freeze_audit.json",
+    "prior_accepted_configuration": "eval/p6/development_decision.v5f.accepted.json",
+    "v5i_human_adjudication": "runs/p6-v4-v5i/review-intake-e025ae9d9ad3/adjudication.json",
+    "v5j_human_adjudication": "runs/p6-v4-v5j/review-intake-b1b61ff676af/adjudication.json",
+    "v5j_review_archive": "runs/p6-v4-v5j/review-intake-b1b61ff676af/增量复核_3题.md",
+    "v5j_review_sha256": "f1dee0d2e09ee6d1dc3b07449e33435e97b67073e5d330bb350c38f142e48dbf",
+    "v5j_adjudication_sha256": "e2ef86af6a688b0845858815b6a70a1b509817cb45a4402eacb338be7a7b16aa"
+  },
+  "acceptance_basis": {
+    "prior_user_authorization": "用户此前针对同一精确服务配置回复现在可以启动了，GPU有空间；授权持续有效",
+    "prior_accepted_decision": "eval/p6/development_decision.v5f.accepted.json",
+    "current_user_review": "已复核（v5j三题答案复核单）",
+    "reviewer_label_identity_verified": false
+  }
+}

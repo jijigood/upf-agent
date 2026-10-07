@@ -1,0 +1,618 @@
+{
+  "row": {
+    "id": "command-002",
+    "model": "baseline",
+    "evidence_sha256": "e203bf3d60b8cbd14cde93ea660f774968d7094137cb0d073d225729a9d9a040",
+    "elapsed_ms": 7229.036069009453,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 9646,
+      "completion_tokens_observed": 108,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": true,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请引用‘检查upf 业务网络地址配置 / 检查所有接口地址’中的命令 show config，保留占位符和参数。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "show config\nUPF上 show config 可以确认配置成功。\n\nUPF上 show config确认配置。UPF上抓包可以看到UPF开始发的asso req\n\n表格：接口地址配置 / 功能配置\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-b586b6d6c78e913d75bfa0b2",
+            "quote": "show config"
+          },
+          {
+            "chunk_id": "chunk-05b46622548cea41921ec8c4",
+            "quote": "UPF上 show config 可以确认配置成功。\n"
+          },
+          {
+            "chunk_id": "chunk-174a818f8701a3268e3feec6",
+            "quote": "UPF上 show config确认配置。UPF上抓包可以看到UPF开始发的asso req\n"
+          },
+          {
+            "chunk_id": "chunk-fafb030542846a960f60d97d",
+            "quote": "表格：接口地址配置 / 功能配置\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-b586b6d6c78e913d75bfa0b2",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "检查upf 业务网络地址配置",
+          "检查所有接口地址"
+        ],
+        "parent_id": "section-5c4b984cb9fb9b794139",
+        "kind": "command",
+        "text": "单节点离线部署UPF / 检查upf 业务网络地址配置 / 检查所有接口地址\nshow config",
+        "token_count": 30,
+        "block_ids": [
+          "manual-1edf23113651430f:b001966"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1062]"
+        ],
+        "ordinal_start": 1966,
+        "ordinal_end": 1966,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [
+          "candidate_requires_review"
+        ],
+        "interface_tags": [],
+        "command_id": "cmd-64789edbf0a9dbf1",
+        "command_family": "CLI",
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-05b46622548cea41921ec8c4",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品配置",
+          "CLI配置命令",
+          "UPF系统能力",
+          "功能配置"
+        ],
+        "parent_id": "section-93a4864c8a3b2c42c793",
+        "kind": "prose",
+        "text": "CLI配置命令 / UPF系统能力 / 功能配置\n功能配置\n操作步骤\n登录UPF物理机，打开终端；\n终端键入命令：telnet 0 37100；\n进入upfd调试台，输入命令；\nUPF上 show config 可以确认配置成功。\n命令格式\nupf日志打印级别设置",
+        "token_count": 75,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000743",
+          "manual-341440f7dd103f51:b000744",
+          "manual-341440f7dd103f51:b000745",
+          "manual-341440f7dd103f51:b000746",
+          "manual-341440f7dd103f51:b000747",
+          "manual-341440f7dd103f51:b000748",
+          "manual-341440f7dd103f51:b000749",
+          "manual-341440f7dd103f51:b000751"
+        ],
+        "locators": [
+          "word/document.xml/body/p[168]",
+          "word/document.xml/body/p[169]",
+          "word/document.xml/body/p[170]",
+          "word/document.xml/body/p[171]",
+          "word/document.xml/body/p[172]",
+          "word/document.xml/body/p[173]",
+          "word/document.xml/body/p[174]",
+          "word/document.xml/body/p[176]"
+        ],
+        "ordinal_start": 743,
+        "ordinal_end": 751,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-174a818f8701a3268e3feec6",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品配置",
+          "网管配置管理",
+          "CP IP地址配置",
+          "功能配置"
+        ],
+        "parent_id": "section-a271d803f032a8b639d1",
+        "kind": "prose",
+        "text": "网管配置管理 / CP IP地址配置 / 功能配置\n功能配置\n操作步骤：\n配置管理 > 基本配置 > 业务配置 > CP IP地址配置\nUPF上 show config确认配置。UPF上抓包可以看到UPF开始发的asso req\n参数配置",
+        "token_count": 62,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000126",
+          "manual-341440f7dd103f51:b000127",
+          "manual-341440f7dd103f51:b000128",
+          "manual-341440f7dd103f51:b000129",
+          "manual-341440f7dd103f51:b000130"
+        ],
+        "locators": [
+          "word/document.xml/body/p[65]",
+          "word/document.xml/body/p[66]",
+          "word/document.xml/body/p[67]",
+          "word/document.xml/body/p[68]",
+          "word/document.xml/body/p[69]"
+        ],
+        "ordinal_start": 126,
+        "ordinal_end": 130,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-fafb030542846a960f60d97d",
+        "source_id": "manual-341440f7dd103f51",
+        "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+        "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "unknown",
+        "section_path": [
+          "产品配置",
+          "网管配置管理",
+          "接口地址配置",
+          "功能配置"
+        ],
+        "parent_id": "section-d4ce23a67f85b23bb481",
+        "kind": "table",
+        "text": "网管配置管理 / 接口地址配置 / 功能配置\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：接口ID | 参数值类型：整型 | 取值范围：(1,16) | 是否必选：必选 | 默认值：无 | 参数说明：示例：6\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：接口类型 | 参数值类型：枚举型 | 取值范围：N3,N6,N9,N4 | 是否必选：必选 | 默认值：无 | 参数说明：示例：N6\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IP地址类型 | 参数值类型：枚举型 | 取值范围：IPv4,IPv6 | 是否必选：必选 | 默认值：无 | 参数说明：示例：IPv4\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IPv4地址 | 参数值类型：Ipv4型 | 取值范围：16 字节 | 是否必选：可选 | 默认值：无 | 参数说明：示例：173.1.6.151\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IPv4子网掩码 | 参数值类型：Ipv4型 | 取值范围：16 字节 | 是否必选：可选 | 默认值：无 | 参数说明：示例：255.255.255.0\n表格：接口地址配置 / 功能配置\n表头：参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明\n参数名称：IPv6地址 | 参数值类型：Ipv6型 | 取值范围：40 字节 | 是否必选：可选 | 默认值：无 | 参数说明：示例：173:1:6::151",
+        "token_count": 529,
+        "block_ids": [
+          "manual-341440f7dd103f51:b000071",
+          "manual-341440f7dd103f51:b000078",
+          "manual-341440f7dd103f51:b000085",
+          "manual-341440f7dd103f51:b000092",
+          "manual-341440f7dd103f51:b000099",
+          "manual-341440f7dd103f51:b000106"
+        ],
+        "locators": [
+          "word/document.xml/body/tbl[1]/tr[2]",
+          "word/document.xml/body/tbl[1]/tr[3]",
+          "word/document.xml/body/tbl[1]/tr[4]",
+          "word/document.xml/body/tbl[1]/tr[5]",
+          "word/document.xml/body/tbl[1]/tr[6]",
+          "word/document.xml/body/tbl[1]/tr[7]"
+        ],
+        "ordinal_start": 71,
+        "ordinal_end": 106,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "N4",
+          "N6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": "manual-341440f7dd103f51:b000057",
+        "table_header": "参数名称\t参数值类型\t取值范围\t是否必选\t默认值\t参数说明",
+        "table_cells": [
+          {
+            "row": 2,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 2,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[2]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[2]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 3,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[3]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[3]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 4,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[4]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[4]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 5,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[5]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[5]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 6,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[6]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[6]/tc[6]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 1,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[1]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[1]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 2,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[2]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[2]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 3,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[3]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[3]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 4,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[4]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[4]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 5,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[5]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[5]",
+            "vmerge": null
+          },
+          {
+            "row": 7,
+            "column": 6,
+            "span": 1,
+            "origin": "word/document.xml/body/tbl[1]/tr[7]/tc[6]",
+            "locator": "word/document.xml/body/tbl[1]/tr[7]/tc[6]",
+            "vmerge": null
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。",
+      "引用手册版本未知，需核对目标设备版本与操作前提。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q2",
+        "S9Q8"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "show config",
+            "quote_ids": [
+              "S1Q2",
+              "S5Q7",
+              "S7Q5",
+              "S12Q5"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "show config",
+            "citations": [
+              {
+                "chunk_id": "chunk-b586b6d6c78e913d75bfa0b2",
+                "quote": "show config"
+              },
+              {
+                "chunk_id": "chunk-05b46622548cea41921ec8c4",
+                "quote": "UPF上 show config 可以确认配置成功。\n"
+              },
+              {
+                "chunk_id": "chunk-174a818f8701a3268e3feec6",
+                "quote": "UPF上 show config确认配置。UPF上抓包可以看到UPF开始发的asso req\n"
+              },
+              {
+                "chunk_id": "chunk-fafb030542846a960f60d97d",
+                "quote": "表格：接口地址配置 / 功能配置\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true
+      ]
+    },
+    "status": "partial",
+    "missing_information": [
+      "引用资料版本未知，无法确认对请求版本的适用性。"
+    ]
+  }
+}

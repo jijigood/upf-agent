@@ -1,0 +1,4 @@
+{"line": 1, "run_id": "80085a234f16428fb2c9238861e0485f", "status": "partial", "report": "runs/p5-batch-final/0001-80085a234f16428fb2c9238861e0485f/report.json"}
+{"line": 2, "run_id": "41198a4f3168497a80b5b52943b5c804", "status": "missing_source", "report": "runs/p5-batch-final/0002-41198a4f3168497a80b5b52943b5c804/report.json"}
+{"line": 3, "run_id": "f0903479d44e4f8dac2368e23170ea49", "status": "failed", "error": "Expecting value: line 1 column 1 (char 0)"}
+{"line": 4, "run_id": "8b9a8e52c9e947ec9a623512a42ccbf4", "status": "need_input", "report": "runs/p5-batch-final/0004-8b9a8e52c9e947ec9a623512a42ccbf4/report.json"}

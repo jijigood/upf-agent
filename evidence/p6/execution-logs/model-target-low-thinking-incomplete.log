@@ -1,0 +1,5 @@
+model target command-001: failed, 57846 ms
+model target command-002: missing_source, 55648 ms
+model target command-003: failed, 27721 ms
+model target command-004: failed, 28032 ms
+model target command-005: failed, 27875 ms

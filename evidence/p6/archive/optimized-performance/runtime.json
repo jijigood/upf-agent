@@ -1,0 +1,7 @@
+{
+  "pipeline_identity": "07109699091734a709ec309a9933d91b23190c61176a4ad9425e041160579174",
+  "scope": "formal reviewed-source validation and retrieval gates; generation-only no-thinking optimization; production Agent policy unchanged",
+  "previous_off_c1_source": "archive/optimized-performance-before-row-fix",
+  "first_c1_generation_payload_and_visible_metrics_unchanged": true,
+  "old_low_probe_first_model_event_metric": "did not recognize reasoning alias; not used as visible TTFT or acceptance evidence"
+}

@@ -1,0 +1,51 @@
+{
+  "profiles": {
+    "1": [
+      {
+        "budget_characters": 1200,
+        "normal_completed": 0,
+        "n": 20,
+        "visible_n": 20,
+        "finish_reasons": {
+          "length": 20
+        }
+      },
+      {
+        "budget_characters": 5000,
+        "normal_completed": 0,
+        "n": 20,
+        "visible_n": 0,
+        "finish_reasons": {
+          "length": 20
+        }
+      }
+    ],
+    "2": [
+      {
+        "budget_characters": 1200,
+        "normal_completed": 4,
+        "n": 20,
+        "visible_n": 12,
+        "finish_reasons": {
+          "length": 16,
+          "stop": 4
+        }
+      },
+      {
+        "budget_characters": 5000,
+        "normal_completed": 2,
+        "n": 20,
+        "visible_n": 2,
+        "finish_reasons": {
+          "length": 18,
+          "stop": 2
+        }
+      }
+    ]
+  },
+  "baseline_unchanged": true,
+  "existing_agent_plain_policy_unchanged": "low",
+  "optimization": "generation benchmark target enable_thinking=false; same output limit256 and character budgets",
+  "why_skip_32K_low": "16K c1 has 40/40 length-truncated outputs; c2 has 34/40 length-truncated and only 6/40 nonempty normal outputs. Measure the no-thinking candidate across 16K/32K instead.",
+  "heldout_executed": false
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "path": "/home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507",
+    "exists": true,
+    "config_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+    "indexed_shards": [
+      "model-00001-of-00016.safetensors",
+      "model-00002-of-00016.safetensors",
+      "model-00003-of-00016.safetensors",
+      "model-00004-of-00016.safetensors",
+      "model-00005-of-00016.safetensors",
+      "model-00006-of-00016.safetensors",
+      "model-00007-of-00016.safetensors",
+      "model-00008-of-00016.safetensors",
+      "model-00009-of-00016.safetensors",
+      "model-00010-of-00016.safetensors",
+      "model-00011-of-00016.safetensors",
+      "model-00012-of-00016.safetensors",
+      "model-00013-of-00016.safetensors",
+      "model-00014-of-00016.safetensors",
+      "model-00015-of-00016.safetensors",
+      "model-00016-of-00016.safetensors"
+    ],
+    "missing_shards": [],
+    "ready_for_weight_load": true,
+    "safetensors_files": [
+      {
+        "name": "model-00001-of-00016.safetensors",
+        "size_bytes": 3998893112
+      },
+      {
+        "name": "model-00002-of-00016.safetensors",
+        "size_bytes": 3999974192
+      },
+      {
+        "name": "model-00003-of-00016.safetensors",
+        "size_bytes": 3997360832
+      },
+      {
+        "name": "model-00004-of-00016.safetensors",
+        "size_bytes": 3999975056
+      },
+      {
+        "name": "model-00005-of-00016.safetensors",
+        "size_bytes": 3999975400
+      },
+      {
+        "name": "model-00006-of-00016.safetensors",
+        "size_bytes": 3999975400
+      },
+      {
+        "name": "model-00007-of-00016.safetensors",
+        "size_bytes": 3999975472
+      },
+      {
+        "name": "model-00008-of-00016.safetensors",
+        "size_bytes": 3997362064
+      },
+      {
+        "name": "model-00009-of-00016.safetensors",
+        "size_bytes": 3999975408
+      },
+      {
+        "name": "model-00010-of-00016.safetensors",
+        "size_bytes": 3999975400
+      },
+      {
+        "name": "model-00011-of-00016.safetensors",
+        "size_bytes": 3999975408
+      },
+      {
+        "name": "model-00012-of-00016.safetensors",
+        "size_bytes": 3987924896
+      },
+      {
+        "name": "model-00013-of-00016.safetensors",
+        "size_bytes": 3999975088
+      },
+      {
+        "name": "model-00014-of-00016.safetensors",
+        "size_bytes": 3999975400
+      },
+      {
+        "name": "model-00015-of-00016.safetensors",
+        "size_bytes": 3999975400
+      },
+      {
+        "name": "model-00016-of-00016.safetensors",
+        "size_bytes": 1085307128
+      }
+    ],
+    "total_weight_bytes": 61066575656,
+    "revision_status": "unverified_local_copy",
+    "content_hash_status": "weights_not_hashed"
+  },
+  {
+    "model_id": "Qwen/Qwen3.8-27B",
+    "path": "/home/huangxiaolin/models/Qwen3.8-27B",
+    "exists": true,
+    "config_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "indexed_shards": [
+      "model-00001-of-00018.safetensors",
+      "model-00002-of-00018.safetensors",
+      "model-00003-of-00018.safetensors",
+      "model-00004-of-00018.safetensors",
+      "model-00005-of-00018.safetensors",
+      "model-00006-of-00018.safetensors",
+      "model-00007-of-00018.safetensors",
+      "model-00008-of-00018.safetensors",
+      "model-00009-of-00018.safetensors",
+      "model-00010-of-00018.safetensors",
+      "model-00011-of-00018.safetensors",
+      "model-00012-of-00018.safetensors",
+      "model-00013-of-00018.safetensors",
+      "model-00014-of-00018.safetensors",
+      "model-00015-of-00018.safetensors",
+      "model-00016-of-00018.safetensors",
+      "model-00017-of-00018.safetensors",
+      "model-00018-of-00018.safetensors"
+    ],
+    "missing_shards": [],
+    "ready_for_weight_load": true,
+    "safetensors_files": [
+      {
+        "name": "model-00001-of-00018.safetensors",
+        "size_bytes": 3966730552
+      },
+      {
+        "name": "model-00002-of-00018.safetensors",
+        "size_bytes": 3043080328
+      },
+      {
+        "name": "model-00003-of-00018.safetensors",
+        "size_bytes": 2542796952
+      },
+      {
+        "name": "model-00004-of-00018.safetensors",
+        "size_bytes": 3988973152
+      },
+      {
+        "name": "model-00005-of-00018.safetensors",
+        "size_bytes": 2099339864
+      },
+      {
+        "name": "model-00006-of-00018.safetensors",
+        "size_bytes": 3979553696
+      },
+      {
+        "name": "model-00007-of-00018.safetensors",
+        "size_bytes": 2108759344
+      },
+      {
+        "name": "model-00008-of-00018.safetensors",
+        "size_bytes": 3979553696
+      },
+      {
+        "name": "model-00009-of-00018.safetensors",
+        "size_bytes": 2108759344
+      },
+      {
+        "name": "model-00010-of-00018.safetensors",
+        "size_bytes": 3979553696
+      },
+      {
+        "name": "model-00011-of-00018.safetensors",
+        "size_bytes": 2108759344
+      },
+      {
+        "name": "model-00012-of-00018.safetensors",
+        "size_bytes": 3979553696
+      },
+      {
+        "name": "model-00013-of-00018.safetensors",
+        "size_bytes": 2108759344
+      },
+      {
+        "name": "model-00014-of-00018.safetensors",
+        "size_bytes": 3979553696
+      },
+      {
+        "name": "model-00015-of-00018.safetensors",
+        "size_bytes": 2108759344
+      },
+      {
+        "name": "model-00016-of-00018.safetensors",
+        "size_bytes": 3979564040
+      },
+      {
+        "name": "model-00017-of-00018.safetensors",
+        "size_bytes": 2108759344
+      },
+      {
+        "name": "model-00018-of-00018.safetensors",
+        "size_bytes": 3392197344
+      }
+    ],
+    "total_weight_bytes": 55563006776,
+    "revision_status": "unverified_local_copy",
+    "content_hash_status": "weights_not_hashed"
+  },
+  {
+    "model_id": "Qwen/Qwen3-Embedding-4B",
+    "path": "/home/huangxiaolin/models/Qwen3-Embedding-4B",
+    "exists": true,
+    "config_sha256": "78d2861cbbfd80eee05839200c5a3b7ed64c789f6c1cab4fbb84cc4eae33eaf5",
+    "indexed_shards": [
+      "model-00001-of-00002.safetensors",
+      "model-00002-of-00002.safetensors"
+    ],
+    "missing_shards": [],
+    "ready_for_weight_load": true,
+    "safetensors_files": [
+      {
+        "name": "model-00001-of-00002.safetensors",
+        "size_bytes": 4965826464
+      },
+      {
+        "name": "model-00002-of-00002.safetensors",
+        "size_bytes": 3077765624
+      }
+    ],
+    "total_weight_bytes": 8043592088,
+    "revision_status": "unverified_local_copy",
+    "content_hash_status": "weights_not_hashed"
+  },
+  {
+    "model_id": "Qwen/Qwen3-Reranker-4B",
+    "path": "/home/huangxiaolin/models/Qwen3-Reranker-4B",
+    "exists": true,
+    "config_sha256": "38bff5eac700032a185745e4076eccad7aa453473cafc2a27de412cdb7b79e19",
+    "indexed_shards": [
+      "model-00001-of-00002.safetensors",
+      "model-00002-of-00002.safetensors"
+    ],
+    "missing_shards": [],
+    "ready_for_weight_load": true,
+    "safetensors_files": [
+      {
+        "name": "model-00001-of-00002.safetensors",
+        "size_bytes": 4058781760
+      },
+      {
+        "name": "model-00002-of-00002.safetensors",
+        "size_bytes": 3984833200
+      }
+    ],
+    "total_weight_bytes": 8043614960,
+    "revision_status": "unverified_local_copy",
+    "content_hash_status": "weights_not_hashed"
+  }
+]

@@ -1,0 +1,36 @@
+generation:
+  baseline:
+    id: Qwen/Qwen3-30B-A3B-Instruct-2507
+    path: /home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507
+    served_name: Qwen3-30B-A3B-Instruct-2507
+    endpoint: http://127.0.0.1:18000/v1
+    dtype: bfloat16
+    max_model_len: 16384
+    max_num_seqs: 1
+    gpu_memory_utilization: 0.85
+    tool_parser: hermes
+  target:
+    id: Qwen/Qwen3.8-27B
+    path: /home/huangxiaolin/models/Qwen3.8-27B
+    served_name: Qwen3.8-27B
+    endpoint: http://127.0.0.1:18001/v1
+    dtype: bfloat16
+    max_model_len: 16384
+    max_num_seqs: 1
+    gpu_memory_utilization: 0.85
+    tool_parser: qwen3_xml
+    reasoning_parser: qwen3
+embedding:
+  id: Qwen/Qwen3-Embedding-4B
+  path: /home/huangxiaolin/models/Qwen3-Embedding-4B
+  dimension: 2560
+reranker:
+  id: Qwen/Qwen3-Reranker-4B
+  path: /home/huangxiaolin/models/Qwen3-Reranker-4B
+profiles:
+  dual_gpu:
+    generation_device: 0
+    retrieval_device: 1
+  constrained:
+    generation_device: null
+    retrieval_device: cpu

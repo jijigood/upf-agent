@@ -1,0 +1,15 @@
+{
+  "reviewer_type": "assistant_review_of_source_publication",
+  "human_signoff": false,
+  "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+  "prior_model_paraphrase_findings": 6,
+  "resolution": "Model paraphrases are audit-only; published text is selected verbatim source units.",
+  "remaining_scope": [
+    "人工业务签署",
+    "回答完整性与证据相关性",
+    "示例参数的现场适用性",
+    "原手册6处疑点和7条隔离OCR"
+  ],
+  "machine_contract_pass": 16,
+  "human_semantic_completed": 0
+}

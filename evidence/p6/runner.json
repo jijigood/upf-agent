@@ -1,0 +1,212 @@
+{
+  "events": [
+    {
+      "time": 1790609841.3576202,
+      "step": "parameters-baseline-v2",
+      "state": "already-completed"
+    },
+    {
+      "time": 1790609841.3652606,
+      "step": "model-baseline",
+      "state": "running"
+    },
+    {
+      "time": 1790610704.9606156,
+      "step": "model-baseline",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790610704.963599,
+      "step": "agents-baseline",
+      "state": "running"
+    },
+    {
+      "time": 1790611013.8322127,
+      "step": "agents-baseline",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790611013.8398454,
+      "step": "rag-baseline",
+      "state": "running"
+    },
+    {
+      "time": 1790611374.6367664,
+      "step": "rag-baseline",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790611375.6399143,
+      "step": "server-stop",
+      "state": "done",
+      "pid": 3403933
+    },
+    {
+      "time": 1790611414.622826,
+      "step": "server-baseline-16384-s2",
+      "state": "ready",
+      "pid": 3504146
+    },
+    {
+      "time": 1790611414.631247,
+      "step": "perf-baseline-16384-c1",
+      "state": "running"
+    },
+    {
+      "time": 1790611486.5959892,
+      "step": "perf-baseline-16384-c1",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790611486.5990932,
+      "step": "perf-baseline-16384-c2",
+      "state": "running"
+    },
+    {
+      "time": 1790611530.404427,
+      "step": "perf-baseline-16384-c2",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790611620.428176,
+      "step": "server-stop",
+      "state": "done",
+      "pid": 3504146
+    },
+    {
+      "time": 1790611660.4053388,
+      "step": "server-baseline-32768-s2",
+      "state": "ready",
+      "pid": 3509550
+    },
+    {
+      "time": 1790611660.4123855,
+      "step": "perf-baseline-32768-c1",
+      "state": "running"
+    },
+    {
+      "time": 1790611729.1332448,
+      "step": "perf-baseline-32768-c1",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790611729.136225,
+      "step": "perf-baseline-32768-c2",
+      "state": "running"
+    },
+    {
+      "time": 1790611769.7234476,
+      "step": "perf-baseline-32768-c2",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790611859.750322,
+      "step": "server-stop",
+      "state": "done",
+      "pid": 3509550
+    },
+    {
+      "time": 1790612218.6710422,
+      "step": "server-target-16384-s1",
+      "state": "ready",
+      "pid": 3514386
+    },
+    {
+      "time": 1790612218.6933374,
+      "step": "model-target",
+      "state": "running"
+    },
+    {
+      "time": 1790612570.455422,
+      "step": "adapter-repair",
+      "state": "done",
+      "previous_pipeline": "760309bcd4672dbbd0fd1c8dd805c3a6ff656e8e5bb5d59ee1279313639bf7a3",
+      "source_sha256": "c46704c258745522b5b54633144259dbaddfc8e046f9075c5084011af23a85e6",
+      "low_thinking_probe": "model-target-low-thinking-incomplete"
+    },
+    {
+      "time": 1790612570.4576435,
+      "step": "model-target",
+      "state": "running"
+    },
+    {
+      "time": 1790613769.1589568,
+      "step": "model-target",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790613769.1620448,
+      "step": "parameters-target-v2",
+      "state": "running"
+    },
+    {
+      "time": 1790614213.8768053,
+      "step": "parameters-target-v2",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790614213.8819842,
+      "step": "agents-target",
+      "state": "running"
+    },
+    {
+      "time": 1790614703.0045416,
+      "step": "agents-target",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790614703.0075889,
+      "step": "rag-target",
+      "state": "running"
+    },
+    {
+      "time": 1790615107.5277607,
+      "step": "rag-target",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790615109.5317678,
+      "step": "server-stop",
+      "state": "done",
+      "pid": 3514386
+    },
+    {
+      "time": 1790615356.0381026,
+      "step": "server-target-16384-s2",
+      "state": "ready",
+      "pid": 3608971
+    },
+    {
+      "time": 1790615356.048577,
+      "step": "perf-target-16384-c1",
+      "state": "running"
+    },
+    {
+      "time": 1790616081.458645,
+      "step": "perf-target-16384-c1",
+      "state": "done",
+      "returncode": 0
+    },
+    {
+      "time": 1790616081.461933,
+      "step": "perf-target-16384-c2",
+      "state": "running"
+    }
+  ],
+  "owned_server_pid": 3608971,
+  "pipeline_identity": "c32bde84383e0b6319657d740474f29da28198721a050a8fd622f57377fbe789",
+  "heldout_executed": false,
+  "adapter_policy": "target JSON disables thinking; plain replies keep low",
+  "baseline_control_policy_unchanged": true
+}

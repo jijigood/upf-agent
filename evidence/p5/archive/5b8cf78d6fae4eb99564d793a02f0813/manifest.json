@@ -1,0 +1,29 @@
+{
+  "task": {
+    "run_id": "5b8cf78d6fae4eb99564d793a02f0813",
+    "question": "请分析PFCP不可达与正常心跳是否混淆，查看代表原文，并说明能否关联根因。",
+    "task_type": "diagnose",
+    "attachment_ids": [],
+    "product": null,
+    "version": null,
+    "device_ids": [],
+    "time_window": null,
+    "interactive": false,
+    "log_generation": "a6f18ac81a18aa2125fa",
+    "topology_generation": null,
+    "manual_generation": "c61e9796eead2610cfd4",
+    "model_profile": "baseline",
+    "retrieval_device": "cuda:1",
+    "mode": "agent",
+    "session_id": null,
+    "budget": {
+      "max_rounds": 3,
+      "max_tool_calls": 8,
+      "max_model_calls": 8,
+      "timeout_seconds": 180.0
+    }
+  },
+  "pipeline_version": "p5-agent-v1",
+  "pending_nodes": [],
+  "no_equipment_changes": true
+}

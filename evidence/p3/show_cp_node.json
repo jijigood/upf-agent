@@ -1,0 +1,498 @@
+{
+  "query": "如何执行 show cp-node 查询 SMF 节点信息？",
+  "product": "UPF",
+  "version": "5.0",
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "route_counts": {
+    "exact": 3,
+    "bm25": 20,
+    "dense": 20
+  },
+  "fused_candidates": 32,
+  "reranked_candidates": 32,
+  "context_tokens": 727,
+  "evidence": [
+    {
+      "chunk_id": "chunk-109f80277ceee86e3a5ab591",
+      "rrf_score": 0.048915917503966164,
+      "routes": {
+        "exact": {
+          "rank": 1,
+          "raw_score": 12.0
+        },
+        "bm25": {
+          "rank": 2,
+          "raw_score": 20.26412582397461
+        },
+        "dense": {
+          "rank": 1,
+          "raw_score": 0.7415250060499835
+        }
+      },
+      "rerank_raw_logit_difference": 6.9375,
+      "rerank_p_yes": 0.9990302480322174,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "parent_id": "section-831bb73123d41b9e704c",
+      "kind": "command",
+      "text": "业务信息监控 / 查询cp node信息 / 功能配置\nshow cp-node\n相关说明：telnet 0 37100中输入命令。\nUPFD> show cp-node",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000852"
+      ],
+      "locators": [
+        "word/document.xml/body/p[257]"
+      ],
+      "command_id": "cmd-08ffd19e25837474",
+      "command_family": "CLI",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-a514ba6953cd9e75e0fc7974",
+          "text": "业务信息监控 / 查询cp node信息 / 功能配置\n举例：",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000854"
+          ],
+          "locators": [
+            "word/document.xml/body/p[259]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-ce7ad9b644df3dad74de0df1",
+      "rrf_score": 0.04787506400409626,
+      "routes": {
+        "exact": {
+          "rank": 3,
+          "raw_score": 12.0
+        },
+        "bm25": {
+          "rank": 3,
+          "raw_score": 18.034412384033203
+        },
+        "dense": {
+          "rank": 2,
+          "raw_score": 0.7379654310781809
+        }
+      },
+      "rerank_raw_logit_difference": 6.6875,
+      "rerank_p_yes": 0.9987551566979116,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "parent_id": "section-831bb73123d41b9e704c",
+      "kind": "command",
+      "text": "业务信息监控 / 查询cp node信息 / 功能配置\nUPFD> show cp-node\n相关说明：telnet 0 37100中输入命令。",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000855"
+      ],
+      "locators": [
+        "word/document.xml/body/p[260]"
+      ],
+      "command_id": "cmd-79b2e6bf7ec5a4ee",
+      "command_family": "CLI",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-74d0aff77790cfb39847eb67",
+          "text": "业务信息监控 / 查询cp node信息 / 功能配置\nCP-IP-ADDR     NODE-ID        NODEID-TYPE  RECOVERY-TIMESTAMP     ASSO-STATUS  RETRY-HB-REQ\n173.1.4.152    173.1.4.152    IPv4         L:2022-03-22 18:51:44  UP           0        \n                                           P:2021-12-16 16:38:31 ",
+          "truncated": false,
+          "block_ids": [
+            "manual-341440f7dd103f51:b000856",
+            "manual-341440f7dd103f51:b000857",
+            "manual-341440f7dd103f51:b000858"
+          ],
+          "locators": [
+            "word/document.xml/body/p[261]",
+            "word/document.xml/body/p[262]",
+            "word/document.xml/body/p[263]"
+          ],
+          "source_id": "manual-341440f7dd103f51"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-0fc10bd6e6a2e4208fcdb7da",
+      "rrf_score": 0.015151515151515152,
+      "routes": {
+        "dense": {
+          "rank": 6,
+          "raw_score": 0.6494638156892774
+        }
+      },
+      "rerank_raw_logit_difference": 4.0625,
+      "rerank_p_yes": 0.9830850867332734,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息"
+      ],
+      "parent_id": "section-5b160200b9413c093b59",
+      "kind": "prose",
+      "text": "产品监控 / 业务信息监控 / 查询cp node信息\n查询cp node信息",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000843"
+      ],
+      "locators": [
+        "word/document.xml/body/p[248]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-bbb30a85fc56d544cd64ae46",
+      "rrf_score": 0.01639344262295082,
+      "routes": {
+        "bm25": {
+          "rank": 1,
+          "raw_score": 20.350236892700195
+        }
+      },
+      "rerank_raw_logit_difference": 3.625,
+      "rerank_p_yes": 0.9740426428022031,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "偶联建立失败：SMF open upf开关",
+        "信息收集"
+      ],
+      "parent_id": "section-60d6c998896609d32258",
+      "kind": "prose",
+      "text": "业务故障案例 / 偶联建立失败：SMF open upf开关 / 信息收集\n信息收集\n抓包。抓取N4口PFCP信令包。\n37100 show cp-node, show pfcp-stats",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000346",
+        "manual-9f16bf8ca11723a2:b000347",
+        "manual-9f16bf8ca11723a2:b000348"
+      ],
+      "locators": [
+        "word/document.xml/body/p[115]",
+        "word/document.xml/body/p[116]",
+        "word/document.xml/body/p[117]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4",
+        "pfcp",
+        "PFCP",
+        "SMF"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-d251cd0c9c751b16031bb50c",
+      "rrf_score": 0.015384615384615385,
+      "routes": {
+        "bm25": {
+          "rank": 5,
+          "raw_score": 13.44209098815918
+        }
+      },
+      "rerank_raw_logit_difference": 3.4375,
+      "rerank_p_yes": 0.9688561694652216,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "业务故障案例",
+        "UPF 终端负载情况异常",
+        "信息收集"
+      ],
+      "parent_id": "section-36be7173e30260255627",
+      "kind": "prose",
+      "text": "业务故障案例 / UPF 终端负载情况异常 / 信息收集\npdu sesn num = 0\n确认执行upfmgr hc命令显示信息时，N4链路是否正常，或执行upfmg ctrl命令进入cli控制台，show cp-node查看N4链路是否正常。\n在upfd pod内部抓包确认终端会话是否可以正常建立。",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000852",
+        "manual-9f16bf8ca11723a2:b000853",
+        "manual-9f16bf8ca11723a2:b000854"
+      ],
+      "locators": [
+        "word/document.xml/body/p[328]/txbxContent[1]/p[2]",
+        "word/document.xml/body/p[329]",
+        "word/document.xml/body/p[330]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "N4"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-20475a0537b2e3b7b48c7fec",
+          "text": "业务故障案例 / UPF 终端负载情况异常 / 信息收集\nUPFD> show pdu-session",
+          "truncated": false,
+          "block_ids": [
+            "manual-9f16bf8ca11723a2:b000851"
+          ],
+          "locators": [
+            "word/document.xml/body/p[328]/txbxContent[1]/p[1]"
+          ],
+          "source_id": "manual-9f16bf8ca11723a2"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-c78d58541685b3b7de723d54",
+      "rrf_score": 0.04762704813108039,
+      "routes": {
+        "exact": {
+          "rank": 2,
+          "raw_score": 12.0
+        },
+        "bm25": {
+          "rank": 4,
+          "raw_score": 16.362207412719727
+        },
+        "dense": {
+          "rank": 3,
+          "raw_score": 0.6918867795525458
+        }
+      },
+      "rerank_raw_logit_difference": 3.25,
+      "rerank_p_yes": 0.9626731126558706,
+      "source_id": "manual-9f16bf8ca11723a2",
+      "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+      "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "通用指引步骤",
+        "通用排查步骤"
+      ],
+      "parent_id": "section-fe6364276e8aecd1690c",
+      "kind": "command",
+      "text": "通用指引步骤 / 通用排查步骤\nshow cp-node",
+      "block_ids": [
+        "manual-9f16bf8ca11723a2:b000030"
+      ],
+      "locators": [
+        "word/document.xml/body/p[10]/txbxContent[1]/p[2]"
+      ],
+      "command_id": "cmd-200fc153e97ba7a6",
+      "command_family": "CLI",
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [
+        "candidate_requires_review"
+      ],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": [
+        {
+          "chunk_id": "chunk-a91841d9e88f9812d3a3eede",
+          "text": "通用指引步骤 / 通用排查步骤\n通用排查步骤\n检查UPF系统平台状态是否异常。异常情况见系统平台故障排查案例。\n//正常状态如下\n# kubectl get pods -A\nNAMESPACE         NAME                                                  READY   STATUS      RESTARTS        AGE\ningress-nginx     ingress-nginx-controller-wbgg9                        1/1     Running     1 (107d ago)    107d\nns1               upf-1-oam-main-6f875879df-qvkt5                       4/4     Running     0               12d\nns1               upf-1-oam-nma-5fcc4b8564-nxhpd                        1/1     Running     0               62d\nns1               upf-1-oam-redis-0                                     2/2     Running     0               62d\nns1               upf-1-oam-redis-1                                     2/2     Running     0               62d\nns1               upf-1",
+          "truncated": true,
+          "block_ids": [
+            "manual-9f16bf8ca11723a2:b000006",
+            "manual-9f16bf8ca11723a2:b000007",
+            "manual-9f16bf8ca11723a2:b000010",
+            "manual-9f16bf8ca11723a2:b000011",
+            "manual-9f16bf8ca11723a2:b000012",
+            "manual-9f16bf8ca11723a2:b000013",
+            "manual-9f16bf8ca11723a2:b000014",
+            "manual-9f16bf8ca11723a2:b000015",
+            "manual-9f16bf8ca11723a2:b000016",
+            "manual-9f16bf8ca11723a2:b000017",
+            "manual-9f16bf8ca11723a2:b000018",
+            "manual-9f16bf8ca11723a2:b000019",
+            "manual-9f16bf8ca11723a2:b000020",
+            "manual-9f16bf8ca11723a2:b000021",
+            "manual-9f16bf8ca11723a2:b000022",
+            "manual-9f16bf8ca11723a2:b000023",
+            "manual-9f16bf8ca11723a2:b000024",
+            "manual-9f16bf8ca11723a2:b000026",
+            "manual-9f16bf8ca11723a2:b000029"
+          ],
+          "locators": [
+            "word/document.xml/body/p[5]",
+            "word/document.xml/body/p[6]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[1]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[2]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[3]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[4]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[5]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[6]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[7]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[8]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[9]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[10]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[11]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[12]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[13]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[14]",
+            "word/document.xml/body/p[7]/txbxContent[1]/p[15]",
+            "word/document.xml/body/p[9]",
+            "word/document.xml/body/p[10]/txbxContent[1]/p[1]"
+          ],
+          "source_id": "manual-9f16bf8ca11723a2"
+        },
+        {
+          "chunk_id": "chunk-7fb2bc70d0bdfa1fa02b5855",
+          "text": "通用指引步骤 / 通用排查步骤\n//正常情况可以看到UE在线信息",
+          "truncated": false,
+          "block_ids": [
+            "manual-9f16bf8ca11723a2:b000032"
+          ],
+          "locators": [
+            "word/document.xml/body/p[10]/txbxContent[1]/p[4]"
+          ],
+          "source_id": "manual-9f16bf8ca11723a2"
+        }
+      ]
+    },
+    {
+      "chunk_id": "chunk-7c3bb8628a397b07079ea8ea",
+      "rrf_score": 0.029418126757516764,
+      "routes": {
+        "bm25": {
+          "rank": 9,
+          "raw_score": 7.3762383460998535
+        },
+        "dense": {
+          "rank": 7,
+          "raw_score": 0.6404740280003026
+        }
+      },
+      "rerank_raw_logit_difference": 2.5625,
+      "rerank_p_yes": 0.9284088005554476,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能描述"
+      ],
+      "parent_id": "section-bbf6a2e095554452cc90",
+      "kind": "prose",
+      "text": "业务信息监控 / 查询cp node信息 / 功能描述\n功能描述\n查询对端SMF信息。",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000844",
+        "manual-341440f7dd103f51:b000845"
+      ],
+      "locators": [
+        "word/document.xml/body/p[249]",
+        "word/document.xml/body/p[250]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [
+        "SMF"
+      ],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    },
+    {
+      "chunk_id": "chunk-75f55cf9fe42fee0e3fd4ff0",
+      "rrf_score": 0.014705882352941176,
+      "routes": {
+        "dense": {
+          "rank": 8,
+          "raw_score": 0.6089958626380542
+        }
+      },
+      "rerank_raw_logit_difference": 2.25,
+      "rerank_p_yes": 0.9046505351008906,
+      "source_id": "manual-341440f7dd103f51",
+      "source_sha256": "341440f7dd103f513959376cdcc9875aa1aae0d80bf8eb7c737e2fc7ced1ca48",
+      "relative_path": "中国联通5G专网UPF产品使用手册(1).docx",
+      "product": "UPF",
+      "version": "unknown",
+      "section_path": [
+        "产品监控",
+        "业务信息监控",
+        "查询cp node信息",
+        "功能配置"
+      ],
+      "parent_id": "section-831bb73123d41b9e704c",
+      "kind": "prose",
+      "text": "业务信息监控 / 查询cp node信息 / 功能配置\n功能配置\n操作步骤\ntelnet 0 37100中输入命令。\n在upfd调试台中键入命令\n命令格式",
+      "block_ids": [
+        "manual-341440f7dd103f51:b000846",
+        "manual-341440f7dd103f51:b000847",
+        "manual-341440f7dd103f51:b000848",
+        "manual-341440f7dd103f51:b000849",
+        "manual-341440f7dd103f51:b000850"
+      ],
+      "locators": [
+        "word/document.xml/body/p[251]",
+        "word/document.xml/body/p[252]",
+        "word/document.xml/body/p[253]",
+        "word/document.xml/body/p[254]",
+        "word/document.xml/body/p[255]"
+      ],
+      "command_id": null,
+      "command_family": null,
+      "interface_tags": [],
+      "table_id": null,
+      "table_cells": [],
+      "quality_flags": [],
+      "applicability_note": "版本未知，需人工核对适用性",
+      "neighbors": []
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,39 @@
+{
+  "pipeline_version": "p3-answer-v1-quote-handles",
+  "question": "请给出 UPF 的 show teleport-all-sessions 命令完整语法和全部必选参数。",
+  "index_generation": "4b57484621bf3e547723",
+  "p2_generation": "bf8fb923cd90036e501f",
+  "product": "UPF",
+  "version": null,
+  "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "claims": [],
+  "citations": [],
+  "warnings": [
+    "P2 命令与截图人工复核尚未完成；引用存在不等于现场适用。"
+  ],
+  "support_check": "not_run",
+  "validation_errors": [],
+  "generation_attempts": 1,
+  "audit": {
+    "selection": {
+      "status": "missing_source",
+      "claims": [],
+      "missing_information": [
+        "未提供 show teleport-all-sessions 命令的语法和参数信息，证据中仅提及 show pdu-session 和 show cp-node 命令，无关于 teleport-all-sessions 的任何描述。"
+      ]
+    },
+    "draft": {
+      "status": "missing_source",
+      "claims": [],
+      "missing_information": [
+        "未提供 show teleport-all-sessions 命令的语法和参数信息，证据中仅提及 show pdu-session 和 show cp-node 命令，无关于 teleport-all-sessions 的任何描述。"
+      ]
+    }
+  },
+  "status": "missing_source",
+  "missing_information": [
+    "未提供 show teleport-all-sessions 命令的语法和参数信息，证据中仅提及 show pdu-session 和 show cp-node 命令，无关于 teleport-all-sessions 的任何描述。"
+  ],
+  "run_id": "7924c726a7ab4749a15040218f8de9d8",
+  "elapsed_ms": 24356
+}

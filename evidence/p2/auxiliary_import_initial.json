@@ -1,0 +1,17 @@
+{
+  "generation": "bf8fb923cd90036e501f",
+  "assets": [
+    {
+      "kind": "ocr",
+      "count": 1712,
+      "sha256": "f08aba39596180dc832a713af25ac6df5c97ba6638b5d07661b91622c406e619",
+      "reused": false
+    },
+    {
+      "kind": "pdf",
+      "count": 55,
+      "sha256": "272aa39cc521c768fdf94b4402080e36fb817256c82877493f88a3ce96b97dc1",
+      "reused": false
+    }
+  ]
+}

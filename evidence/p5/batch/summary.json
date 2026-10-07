@@ -1,0 +1,9 @@
+{
+  "items": 4,
+  "status_counts": {
+    "partial": 1,
+    "missing_source": 1,
+    "failed": 1,
+    "need_input": 1
+  }
+}

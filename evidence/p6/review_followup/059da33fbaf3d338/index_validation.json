@@ -1,0 +1,14 @@
+{
+  "index_generation": "daa6f8e85f8a664b0a55",
+  "p2_generation": "c05fe621e37ebdb1c663",
+  "chunks": 1061,
+  "qdrant_points": 1061,
+  "dimension": 2560,
+  "scoped_route_hits": {
+    "bm25": 20,
+    "exact": 3,
+    "dense": 20
+  },
+  "redacted_chunks": 1,
+  "pass": true
+}

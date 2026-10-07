@@ -1,0 +1,21 @@
+{
+  "configuration_accepted": false,
+  "model_profile": "baseline",
+  "development_sha256": "ac57532cd831b69a0079b81e974ce0e73dc0a5ec6b3ea3c8113af84053f7a7d5",
+  "adjudication_path": "runs/p6-v4-v5f/review-intake-fb450cc8cee8/adjudication.json",
+  "reviewer": null,
+  "date": null,
+  "notes": "候选为2507 BF16/16K/并发1；当前代码60题人工语义门槛已通过（56题精确沿用、4题本轮人工确认），常驻终端20次首输出p95约4.67秒，日志诊断p95约98.12秒；固定工具/手册直答为默认，有限Agent保留可选探索，不宣称Agent业务增益。此文件仍是未接受草案，不得用于冻结。",
+  "evidence": {
+    "development_summary": "runs/p6-v4-v5f/reviewed-dev/summary.json",
+    "machine_audit": "runs/p6-v4-v5f/repair_audit.json",
+    "carryforward_audit": "runs/p6-v4-v5f/carryforward_review.json",
+    "incremental_review": "runs/p6-v4-v5f/增量复核_4题.md",
+    "performance": "runs/p6-v4-v5f/current_performance_precheck.json",
+    "warm_session_benchmark": "runs/p6-v4-v5e/manual-chat-first-visible-freegpu-20261001/summary.json",
+    "one_shot_benchmark": "runs/p6-v4-v5e/cli-first-visible-freegpu-20261001/summary.json",
+    "agent_decision": "runs/p6-v4-v5e/P6模型与Agent决策草案.md",
+    "development_adjudication_sha256": "603e844206f1e9f24712f53f64ab18259a61e5f46a0be93f7587fe279a4efca7",
+    "incremental_review_receipt": "runs/p6-v4-v5f/review-intake-fb450cc8cee8/接收与验收.md"
+  }
+}

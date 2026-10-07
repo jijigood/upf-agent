@@ -1,0 +1,179 @@
+{
+  "row": {
+    "id": "knowledge-007",
+    "model": "target",
+    "evidence_sha256": "af9f20f0dcdd6a812de0da3e638cdcd9e9ccfa4bc166504575dc5f3bc1df55ef",
+    "elapsed_ms": 40566.76420196891,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 14476,
+      "completion_tokens_observed": 534,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册中‘单节点离线部署UPF / 调整UPF配置（现网部署方式） / 调整后的配置文件’的说明和关键字段是什么？请给出原文依据。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q20",
+        "S1Q21",
+        "S1Q22",
+        "S1Q23",
+        "S1Q24",
+        "S1Q25",
+        "S1Q26",
+        "S1Q27",
+        "S1Q28",
+        "S1Q29",
+        "S1Q30"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的配置文件参数分为base、networking、n4、cpu五个部分，其中base配置UPF helm chart参数，networking配置N3/N6参数，n4配置N4参数，cpu配置startup.conf启动文件参数。",
+            "quote_ids": [
+              "S1Q20",
+              "S1Q21",
+              "S1Q22",
+              "S1Q23"
+            ]
+          },
+          {
+            "text": "base部分关键字段包括namespace（UPF命名空间）、upf_version（UPF版本号）、vdos_version（vdos版本号）、instanceId（UPF实例化ID）和neId（网管系统统一分配的NEID）。",
+            "quote_ids": [
+              "S1Q26",
+              "S1Q27",
+              "S1Q28",
+              "S1Q29"
+            ]
+          },
+          {
+            "text": "networking部分关键字段包括intf_mode（N3/N6合设/分设模式，1为合设）、bond.enabled（N3/N6 bond模式开关）、vlan.enabled（N3/N6 vlan id开关）、n3.nic（N3物理网卡）及n3.vlan（N3 vlan id）。",
+            "quote_ids": [
+              "S1Q32",
+              "S1Q33",
+              "S1Q34",
+              "S1Q35"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的配置文件参数分为base、networking、n4、cpu五个部分，其中base配置UPF helm chart参数，networking配置N3/N6参数，n4配置N4参数，cpu配置startup.conf启动文件参数。",
+            "citations": [
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "配置参数分为五个部分：\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "base：配置upf helm chart参数\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking：配置UPF N3、N6参数\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "n4：配置UPF N4参数\n"
+              }
+            ]
+          },
+          {
+            "text": "base部分关键字段包括namespace（UPF命名空间）、upf_version（UPF版本号）、vdos_version（vdos版本号）、instanceId（UPF实例化ID）和neId（网管系统统一分配的NEID）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "namespace：  upf及vdos部署的命名空间\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "upf_version：  upf版本号，通过发布的软件包识别版本号\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "vdos_version：  vdos版本号，通过发布的软件包识别版本号\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "instanceId：   upf实例化ID\n"
+              }
+            ]
+          },
+          {
+            "text": "networking部分关键字段包括intf_mode（N3/N6合设/分设模式，1为合设）、bond.enabled（N3/N6 bond模式开关）、vlan.enabled（N3/N6 vlan id开关）、n3.nic（N3物理网卡）及n3.vlan（N3 vlan id）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking.intf_mode：UPF N3/N6合设、分设模式选择：1表示合设，0表示分设。\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking.bond.enabled：N3和N6使用bond模式开关，即是否启用bond模式，如果为true则使用bond模式下的nic配置，此时networking.nic部分必须是2张网卡。\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking.vlan.enabled：N3和N6配置vlan id开关，即networking.n3.vlan和networking.n6.vlan是否仍然有效。\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "networking.n3.nic：N3对应的物理网卡，如果networking.bond.enabled设置为true，这里必须是2张网卡，否则会提示错误；\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        false,
+        false,
+        false
+      ]
+    },
+    "status": "missing_source",
+    "missing_information": [
+      "部分陈述未通过自动证据支持检查，已移除。"
+    ]
+  }
+}

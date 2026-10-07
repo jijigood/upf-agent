@@ -1,0 +1,246 @@
+{
+  "row": {
+    "id": "troubleshooting-008",
+    "model": "baseline",
+    "evidence_sha256": "ddae73f095a33fb2de2c27a2f12f239e2128fb8c79cc304386a1f6605bcc6902",
+    "elapsed_ms": 18549.231864977628,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 8088,
+      "completion_tokens_observed": 350,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘K8S集群软件故障排查 / 插件维护管理 / ingress-nginx’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "Ingress-nginx插件提供通过集群外部访问POD service的能力。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "Ingress-nginx插件提供通过集群外部访问POD service的能力。\n"
+          }
+        ]
+      },
+      {
+        "text": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n"
+          }
+        ]
+      },
+      {
+        "text": "$ helm -n ingress-nginx ls\n\n$ kubectl -n ingress-nginx get pods \n",
+        "citations": [
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ helm -n ingress-nginx ls\n"
+          },
+          {
+            "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+            "quote": "$ kubectl -n ingress-nginx get pods \n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "插件维护管理",
+          "ingress-nginx"
+        ],
+        "parent_id": "section-23481b69f973264f217c",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 插件维护管理 / ingress-nginx\ningress-nginx\nIngress-nginx插件提供通过集群外部访问POD service的能力。\nsealos底层调用helm命令安装ingress-nginx插件，默认安装在ingress-nginx命名空间下，默认使用hostnetwork暴露ingress-nginx自身服务。\n安装ingress-nginx网络插件\n$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n查看ingress-nginx helm chart\n$ helm -n ingress-nginx ls\nNAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION\ningress-nginx   ingress-nginx   1               2023-03-30 11:17:09.773134733 +0800 CST deployed        ingress-nginx-4.5.2     1.6.4      \n查看ingress-nginx pods\n$ kubectl -n ingress-nginx get pods \nNAME                                        READY   STATUS    RESTARTS        AGE\ningress-nginx-controller-6d6b6fd558-xxqk5   1/1     Running   3 (3h16m ago)   6h45m\n查看ingress-nginx service\n$ kubectl -n ingress-nginx get svc\nNAME                                 TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE\ningress-nginx-controller-admission   ClusterIP   10.96.1.212   <none>        443/TCP   6h45m\n卸载ingress-nginx网络插件\n$ helm -n ingress-nginx uninstall ingress-nginx",
+        "token_count": 394,
+        "block_ids": [
+          "manual-1edf23113651430f:b003154",
+          "manual-1edf23113651430f:b003155",
+          "manual-1edf23113651430f:b003156",
+          "manual-1edf23113651430f:b003157",
+          "manual-1edf23113651430f:b003158",
+          "manual-1edf23113651430f:b003160",
+          "manual-1edf23113651430f:b003161",
+          "manual-1edf23113651430f:b003162",
+          "manual-1edf23113651430f:b003163",
+          "manual-1edf23113651430f:b003165",
+          "manual-1edf23113651430f:b003166",
+          "manual-1edf23113651430f:b003167",
+          "manual-1edf23113651430f:b003168",
+          "manual-1edf23113651430f:b003170",
+          "manual-1edf23113651430f:b003171",
+          "manual-1edf23113651430f:b003172",
+          "manual-1edf23113651430f:b003173",
+          "manual-1edf23113651430f:b003175",
+          "manual-1edf23113651430f:b003176"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1963]",
+          "word/document.xml/body/p[1964]",
+          "word/document.xml/body/p[1965]",
+          "word/document.xml/body/p[1966]",
+          "word/document.xml/body/p[1967]",
+          "word/document.xml/body/p[1969]",
+          "word/document.xml/body/p[1970]",
+          "word/document.xml/body/p[1971]",
+          "word/document.xml/body/p[1972]",
+          "word/document.xml/body/p[1974]",
+          "word/document.xml/body/p[1975]",
+          "word/document.xml/body/p[1976]",
+          "word/document.xml/body/p[1977]",
+          "word/document.xml/body/p[1979]",
+          "word/document.xml/body/p[1980]",
+          "word/document.xml/body/p[1981]",
+          "word/document.xml/body/p[1982]",
+          "word/document.xml/body/p[1984]",
+          "word/document.xml/body/p[1985]"
+        ],
+        "ordinal_start": 3154,
+        "ordinal_end": 3176,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S1Q3",
+        "S1Q4",
+        "S1Q5",
+        "S1Q6",
+        "S1Q7",
+        "S1Q8",
+        "S1Q9",
+        "S1Q10",
+        "S1Q11",
+        "S1Q12"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "ingress-nginx插件提供通过集群外部访问POD service的能力。",
+            "quote_ids": [
+              "S1Q3"
+            ]
+          },
+          {
+            "text": "安装ingress-nginx网络插件需使用sealos run命令，例如：$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4。",
+            "quote_ids": [
+              "S1Q6"
+            ]
+          },
+          {
+            "text": "排查ingress-nginx插件状态时，应先查看helm部署状态，使用命令：$ helm -n ingress-nginx ls；再查看pod运行状态，使用命令：$ kubectl -n ingress-nginx get pods。",
+            "quote_ids": [
+              "S1Q8",
+              "S1Q12"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "ingress-nginx插件提供通过集群外部访问POD service的能力。",
+            "citations": [
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "Ingress-nginx插件提供通过集群外部访问POD service的能力。\n"
+              }
+            ]
+          },
+          {
+            "text": "安装ingress-nginx网络插件需使用sealos run命令，例如：$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4。",
+            "citations": [
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/ingress-nginx-cucc:v1.6.4\n"
+              }
+            ]
+          },
+          {
+            "text": "排查ingress-nginx插件状态时，应先查看helm部署状态，使用命令：$ helm -n ingress-nginx ls；再查看pod运行状态，使用命令：$ kubectl -n ingress-nginx get pods。",
+            "citations": [
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ helm -n ingress-nginx ls\n"
+              },
+              {
+                "chunk_id": "chunk-dceca547ccdeb58f1bb4b7c2",
+                "quote": "$ kubectl -n ingress-nginx get pods \n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "row": {
+    "id": "knowledge-009",
+    "model": "target",
+    "evidence_sha256": "efdf8b053c6d2856206a9af0f0f505dc70149e2c543cd387c28399100bb99d1e",
+    "elapsed_ms": 11263.875333126634,
+    "usage": {
+      "requests": 1,
+      "prompt_tokens_observed": 3626,
+      "completion_tokens_observed": 130,
+      "usage_responses": 1
+    },
+    "machine_checks": {
+      "status_expected": false,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": false,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": false,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册中‘单节点离线部署UPF / 检查upf 业务网络地址配置 / 配置UPF各个接口地址’的说明和关键字段是什么？请给出原文依据。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "claims": [],
+    "citations": [],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "not_run",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S2Q1",
+        "S2Q2",
+        "S3Q1",
+        "S3Q2",
+        "S4Q1",
+        "S4Q2",
+        "S4Q3",
+        "S4Q4",
+        "S5Q1",
+        "S5Q2",
+        "S6Q11"
+      ],
+      "missing_information": []
+    },
+    "status": "failed",
+    "missing_information": [
+      "生成或引用校验失败，未发布未经验证的回答。"
+    ],
+    "error": "evidence gate returned unknown quote_id"
+  }
+}

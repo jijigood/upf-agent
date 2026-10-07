@@ -1,0 +1,106 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.736 seconds.
+Prefix dict has been built successfully.
+warm RAG target 0/20: 18360 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.714 seconds.
+Prefix dict has been built successfully.
+warm RAG target 1/20: 15985 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.735 seconds.
+Prefix dict has been built successfully.
+warm RAG target 2/20: 16762 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.537 seconds.
+Prefix dict has been built successfully.
+warm RAG target 3/20: 15522 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.509 seconds.
+Prefix dict has been built successfully.
+warm RAG target 4/20: 15376 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.504 seconds.
+Prefix dict has been built successfully.
+warm RAG target 5/20: 15797 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.706 seconds.
+Prefix dict has been built successfully.
+warm RAG target 6/20: 15454 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.542 seconds.
+Prefix dict has been built successfully.
+warm RAG target 7/20: 15539 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.697 seconds.
+Prefix dict has been built successfully.
+warm RAG target 8/20: 15531 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.685 seconds.
+Prefix dict has been built successfully.
+warm RAG target 9/20: 15830 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.657 seconds.
+Prefix dict has been built successfully.
+warm RAG target 10/20: 15811 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.637 seconds.
+Prefix dict has been built successfully.
+warm RAG target 11/20: 15582 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.675 seconds.
+Prefix dict has been built successfully.
+warm RAG target 12/20: 15527 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.678 seconds.
+Prefix dict has been built successfully.
+warm RAG target 13/20: 15695 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.668 seconds.
+Prefix dict has been built successfully.
+warm RAG target 14/20: 15784 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.683 seconds.
+Prefix dict has been built successfully.
+warm RAG target 15/20: 15485 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.683 seconds.
+Prefix dict has been built successfully.
+warm RAG target 16/20: 15871 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.716 seconds.
+Prefix dict has been built successfully.
+warm RAG target 17/20: 15830 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.684 seconds.
+Prefix dict has been built successfully.
+warm RAG target 18/20: 15871 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.687 seconds.
+Prefix dict has been built successfully.
+warm RAG target 19/20: 15500 ms
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.682 seconds.
+Prefix dict has been built successfully.
+warm RAG target 20/20: 15557 ms
+runs/p6/rag-target.json

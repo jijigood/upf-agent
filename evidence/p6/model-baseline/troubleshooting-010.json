@@ -1,0 +1,230 @@
+{
+  "row": {
+    "id": "troubleshooting-010",
+    "model": "baseline",
+    "evidence_sha256": "b25fe99d83f30454b8a2feb28614dd014f1700160e64c821d61c5b3cfa2e3cae",
+    "elapsed_ms": 19566.118570044637,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 6457,
+      "completion_tokens_observed": 366,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘K8S集群软件故障排查 / 插件维护管理 / multus-cni’解释排查步骤和操作前提，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/multus-cni:v3.9.3\n\nsealos底层调用kubectl命令安装multus-cni插件，默认安装在kube-system命名空间下，pod以daemonset方式运行在所有节点上。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+            "quote": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/multus-cni:v3.9.3\n"
+          },
+          {
+            "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+            "quote": "sealos底层调用kubectl命令安装multus-cni插件，默认安装在kube-system命名空间下，pod以daemonset方式运行在所有节点上。\n"
+          }
+        ]
+      },
+      {
+        "text": "$ kubectl -n kube-system get pods -l app=multus\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+            "quote": "$ kubectl -n kube-system get pods -l app=multus\n"
+          }
+        ]
+      },
+      {
+        "text": "$ kubectl -n kube-system delete ds kube-multus-ds",
+        "citations": [
+          {
+            "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+            "quote": "$ kubectl -n kube-system delete ds kube-multus-ds"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "部署FAQ",
+          "K8S集群软件故障排查",
+          "插件维护管理",
+          "multus-cni"
+        ],
+        "parent_id": "section-56cea0da10a6979300c9",
+        "kind": "prose",
+        "text": "K8S集群软件故障排查 / 插件维护管理 / multus-cni\nmultus-cni\nmultus-cni 插件支持为pod附加多个网卡，sriov-network-operator插件依赖multus-cni，两者配合使用。\nsealos底层调用kubectl命令安装multus-cni插件，默认安装在kube-system命名空间下，pod以daemonset方式运行在所有节点上。\n1.\t安装multus-cni插件\n$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/multus-cni:v3.9.3\n2.\t查看multus-cni pod运行状态\n$ kubectl -n kube-system get pods -l app=multus\nNAME                   READY   STATUS    RESTARTS        AGE\nkube-multus-ds-2c8h9   1/1     Running   3 (3h22m ago)   6h50m\n3.\t卸载multus-cni插件\n$ kubectl -n kube-system delete ds kube-multus-ds",
+        "token_count": 233,
+        "block_ids": [
+          "manual-1edf23113651430f:b003178",
+          "manual-1edf23113651430f:b003179",
+          "manual-1edf23113651430f:b003180",
+          "manual-1edf23113651430f:b003182",
+          "manual-1edf23113651430f:b003183",
+          "manual-1edf23113651430f:b003185",
+          "manual-1edf23113651430f:b003186",
+          "manual-1edf23113651430f:b003187",
+          "manual-1edf23113651430f:b003188",
+          "manual-1edf23113651430f:b003190",
+          "manual-1edf23113651430f:b003191"
+        ],
+        "locators": [
+          "word/document.xml/body/p[1987]",
+          "word/document.xml/body/p[1988]",
+          "word/document.xml/body/p[1989]",
+          "word/document.xml/body/p[1991]",
+          "word/document.xml/body/p[1992]",
+          "word/document.xml/body/p[1994]",
+          "word/document.xml/body/p[1995]",
+          "word/document.xml/body/p[1996]",
+          "word/document.xml/body/p[1997]",
+          "word/document.xml/body/p[1999]",
+          "word/document.xml/body/p[2000]"
+        ],
+        "ordinal_start": 3178,
+        "ordinal_end": 3191,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S1Q3",
+        "S1Q4",
+        "S1Q5",
+        "S1Q6",
+        "S1Q7",
+        "S1Q8",
+        "S1Q9",
+        "S1Q10",
+        "S1Q11",
+        "S1Q12"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "安装multus-cni插件需使用sealos run命令，镜像为registry.cn-shenzhen.aliyuncs.com/cnmirror/multus-cni:v3.9.3，安装后以daemonset方式在kube-system命名空间下运行。",
+            "quote_ids": [
+              "S1Q6",
+              "S1Q4"
+            ]
+          },
+          {
+            "text": "排查multus-cni插件状态时，应执行kubectl -n kube-system get pods -l app=multus命令查看pod运行状态，确认是否为Running状态。",
+            "quote_ids": [
+              "S1Q8"
+            ]
+          },
+          {
+            "text": "若需卸载multus-cni插件，应执行kubectl -n kube-system delete ds kube-multus-ds命令，该操作会删除其daemonset资源。",
+            "quote_ids": [
+              "S1Q12"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "安装multus-cni插件需使用sealos run命令，镜像为registry.cn-shenzhen.aliyuncs.com/cnmirror/multus-cni:v3.9.3，安装后以daemonset方式在kube-system命名空间下运行。",
+            "citations": [
+              {
+                "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+                "quote": "$ sealos run registry.cn-shenzhen.aliyuncs.com/cnmirror/multus-cni:v3.9.3\n"
+              },
+              {
+                "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+                "quote": "sealos底层调用kubectl命令安装multus-cni插件，默认安装在kube-system命名空间下，pod以daemonset方式运行在所有节点上。\n"
+              }
+            ]
+          },
+          {
+            "text": "排查multus-cni插件状态时，应执行kubectl -n kube-system get pods -l app=multus命令查看pod运行状态，确认是否为Running状态。",
+            "citations": [
+              {
+                "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+                "quote": "$ kubectl -n kube-system get pods -l app=multus\n"
+              }
+            ]
+          },
+          {
+            "text": "若需卸载multus-cni插件，应执行kubectl -n kube-system delete ds kube-multus-ds命令，该操作会删除其daemonset资源。",
+            "citations": [
+              {
+                "chunk_id": "chunk-85f751d548f2f48f2d49bd1c",
+                "quote": "$ kubectl -n kube-system delete ds kube-multus-ds"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

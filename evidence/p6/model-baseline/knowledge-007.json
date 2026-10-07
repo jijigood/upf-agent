@@ -1,0 +1,449 @@
+{
+  "row": {
+    "id": "knowledge-007",
+    "model": "baseline",
+    "evidence_sha256": "af9f20f0dcdd6a812de0da3e638cdcd9e9ccfa4bc166504575dc5f3bc1df55ef",
+    "elapsed_ms": 24122.573843225837,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 14669,
+      "completion_tokens_observed": 470,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "手册中‘单节点离线部署UPF / 调整UPF配置（现网部署方式） / 调整后的配置文件’的说明和关键字段是什么？请给出原文依据。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "注意：现网环境需要根据实际服务器（如：H3C、Soc、中兴等）不同配置、不同网卡配置（ens16f0、ens16f1、enp24s0f0、enp24s0f1、ens1f0、ens3f0、ens3f0、ens3f1等）和VlanId规划等灵活调整实际的配置参数。\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+            "quote": "注意：现网环境需要根据实际服务器（如：H3C、Soc、中兴等）不同配置、不同网卡配置（ens16f0、ens16f1、enp24s0f0、enp24s0f1、ens1f0、ens3f0、ens3f0、ens3f1等）和VlanId规划等灵活调整实际的配置参数。\n"
+          }
+        ]
+      },
+      {
+        "text": "  namespace: ns1                      # 设置UPF命令空间\n\n  upf_version: 5.0.210                   # UPF软件包版本\n\n  vdos_version: 1.0.5\n\n  instanceId: \"1\"\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+            "quote": "  namespace: ns1                      # 设置UPF命令空间\n"
+          },
+          {
+            "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+            "quote": "  upf_version: 5.0.210                   # UPF软件包版本\n"
+          },
+          {
+            "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+            "quote": "  vdos_version: 1.0.5\n"
+          },
+          {
+            "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+            "quote": "  instanceId: \"1\"\n"
+          }
+        ]
+      },
+      {
+        "text": "  intf_mode: 1 # 0-seperated,1-combined  #UPF N4合设、分设模式选择：1表示合设\n\n    enabled: false                       #默认配置为false，对端交换机配置为：动态lacp，Trunk\n\n    id: 299                             #UPF N4 VlanId\n\n    address: \"100.101.1.55/24\"\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+            "quote": "  intf_mode: 1 # 0-seperated,1-combined  #UPF N4合设、分设模式选择：1表示合设\n"
+          },
+          {
+            "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+            "quote": "    enabled: false                       #默认配置为false，对端交换机配置为：动态lacp，Trunk\n"
+          },
+          {
+            "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+            "quote": "    id: 299                             #UPF N4 VlanId\n"
+          },
+          {
+            "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+            "quote": "    address: \"100.101.1.55/24\"\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "调整UPF配置（现网部署方式）",
+          "调整后的配置文件"
+        ],
+        "parent_id": "section-1cf8c31e67717c0307e3",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 调整UPF配置（现网部署方式） / 调整后的配置文件\n 调整后的配置文件\n注意：现网环境需要根据实际服务器（如：H3C、Soc、中兴等）不同配置、不同网卡配置（ens16f0、ens16f1、enp24s0f0、enp24s0f1、ens1f0、ens3f0、ens3f0、ens3f1等）和VlanId规划等灵活调整实际的配置参数。\n基于前面 REF _Ref12620 \\r \\h 5.1.3.2到 REF _Ref12642 \\r \\h 5.1.3.7章节描述，调整后的配置文件参数示例如下：\nbase:\n  namespace: ns1                      # 设置UPF命令空间\n  upf_version: 5.0.210                   # UPF软件包版本\n  vdos_version: 1.0.5\n  instanceId: \"1\"\n  neId: \"559991\"                       # 设置UPF NEID\n  upfd_cpu: \"9\"                        # 设置UPF最大CPU数量\n  upfd_memory: \"10Gi\"\nnetworking:\n  intf_mode: 1 # 0-seperated,1-combined #UPF N3/N6合设、分设模式选择：1表示合设\n  bond:\n    enabled: true                      #UPF N3/N6 网卡是Bond模式，默认配置为true\n  vlan:\n    enabled: false                      #默认配置为false，对端交换机配置为：动态lacp，Access\n  n3:\n    nics:\n      - ens1f0                         #UPF N3 网卡1\n      - ens3f0                         #UPF N3 网卡2\n    vlan:\n      - 200                           #UPF N3 VlanId\n  n6:\n    nics:\n      - ens1f1                         #UPF N6 网卡1\n      - ens3f1                         #UPF N6 网卡2\n    vlan:\n      - 400                            #UPF N6 VlanId\n  n9:\n    enabled: false                       #UPF N9 默认配置为false\n    vlan:\n      - 300\nn4:\n  bond:                                #UPF N4网卡是Bond模式，和K8s共口部署\n    enabled: false                       #默认配置为false，前面部署K8s时已经在host机netplan配置\n  nics:",
+        "token_count": 593,
+        "block_ids": [
+          "manual-1edf23113651430f:b001803",
+          "manual-1edf23113651430f:b001804",
+          "manual-1edf23113651430f:b001805",
+          "manual-1edf23113651430f:b001806",
+          "manual-1edf23113651430f:b001807",
+          "manual-1edf23113651430f:b001808",
+          "manual-1edf23113651430f:b001809",
+          "manual-1edf23113651430f:b001810",
+          "manual-1edf23113651430f:b001811",
+          "manual-1edf23113651430f:b001812",
+          "manual-1edf23113651430f:b001813",
+          "manual-1edf23113651430f:b001814",
+          "manual-1edf23113651430f:b001815",
+          "manual-1edf23113651430f:b001816",
+          "manual-1edf23113651430f:b001817",
+          "manual-1edf23113651430f:b001818",
+          "manual-1edf23113651430f:b001819",
+          "manual-1edf23113651430f:b001820",
+          "manual-1edf23113651430f:b001821",
+          "manual-1edf23113651430f:b001822",
+          "manual-1edf23113651430f:b001823",
+          "manual-1edf23113651430f:b001824",
+          "manual-1edf23113651430f:b001825",
+          "manual-1edf23113651430f:b001826",
+          "manual-1edf23113651430f:b001827",
+          "manual-1edf23113651430f:b001828",
+          "manual-1edf23113651430f:b001829",
+          "manual-1edf23113651430f:b001830",
+          "manual-1edf23113651430f:b001831",
+          "manual-1edf23113651430f:b001832",
+          "manual-1edf23113651430f:b001833",
+          "manual-1edf23113651430f:b001834",
+          "manual-1edf23113651430f:b001835",
+          "manual-1edf23113651430f:b001836",
+          "manual-1edf23113651430f:b001837",
+          "manual-1edf23113651430f:b001838",
+          "manual-1edf23113651430f:b001839"
+        ],
+        "locators": [
+          "word/document.xml/body/p[906]",
+          "word/document.xml/body/p[907]",
+          "word/document.xml/body/p[908]",
+          "word/document.xml/body/p[909]",
+          "word/document.xml/body/p[910]",
+          "word/document.xml/body/p[911]",
+          "word/document.xml/body/p[912]",
+          "word/document.xml/body/p[913]",
+          "word/document.xml/body/p[914]",
+          "word/document.xml/body/p[915]",
+          "word/document.xml/body/p[916]",
+          "word/document.xml/body/p[917]",
+          "word/document.xml/body/p[918]",
+          "word/document.xml/body/p[919]",
+          "word/document.xml/body/p[920]",
+          "word/document.xml/body/p[921]",
+          "word/document.xml/body/p[922]",
+          "word/document.xml/body/p[923]",
+          "word/document.xml/body/p[924]",
+          "word/document.xml/body/p[925]",
+          "word/document.xml/body/p[926]",
+          "word/document.xml/body/p[927]",
+          "word/document.xml/body/p[928]",
+          "word/document.xml/body/p[929]",
+          "word/document.xml/body/p[930]",
+          "word/document.xml/body/p[931]",
+          "word/document.xml/body/p[932]",
+          "word/document.xml/body/p[933]",
+          "word/document.xml/body/p[934]",
+          "word/document.xml/body/p[935]",
+          "word/document.xml/body/p[936]",
+          "word/document.xml/body/p[937]",
+          "word/document.xml/body/p[938]",
+          "word/document.xml/body/p[939]",
+          "word/document.xml/body/p[940]",
+          "word/document.xml/body/p[941]",
+          "word/document.xml/body/p[942]"
+        ],
+        "ordinal_start": 1803,
+        "ordinal_end": 1839,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "n3",
+          "n4",
+          "N4",
+          "N6",
+          "n6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装5GC业务软件",
+          "单节点离线部署UPF",
+          "调整UPF配置（现网部署方式）",
+          "调整后的配置文件"
+        ],
+        "parent_id": "section-1cf8c31e67717c0307e3",
+        "kind": "prose",
+        "text": "单节点离线部署UPF / 调整UPF配置（现网部署方式） / 调整后的配置文件\n    - bond0.299                        #UPF N4网卡接口，这里是使用子接口\n  vlan:\n    enabled: false                       #默认配置为false，对端交换机配置为：动态lacp，Trunk\n    id: 299                             #UPF N4 VlanId\n  ipv4:\n    enabled: false                       #默认配置为false，通过网管配置下发\n    address: \"100.101.1.55/24\"\n    gateway: \"100.101.1.1\"\n    service_ip: \"100.101.1.55\"\n  ipv6:\n    enabled: false                       #默认配置为false，通过网管配置下发\n    address: \"2404::4:55/64\"\n    gateway: \"2404::4:254\"\n  intf_mode: 1 # 0-seperated,1-combined  #UPF N4合设、分设模式选择：1表示合设\ncpu:\n  #main: 1\n  #worker: 2-9\n  queue_number: 2\n配置参数分为五个部分：\nbase：配置upf helm chart参数\nnetworking：配置UPF N3、N6参数\nn4：配置UPF N4参数\ncpu：配置upf 应用startup.conf启动文件参数\nbase部分参数说明：\nnamespace：  upf及vdos部署的命名空间\nupf_version：  upf版本号，通过发布的软件包识别版本号\nvdos_version：  vdos版本号，通过发布的软件包识别版本号\ninstanceId：   upf实例化ID\nneId：        由网管系统同一分配的\nnetworking部分参数说明：\nnetworking.intf_mode：UPF N3/N6合设、分设模式选择：1表示合设，0表示分设。\nnetworking.bond.enabled：N3和N6使用bond模式开关，即是否启用bond模式，如果为true则使用bond模式下的nic配置，此时networking.nic部分必须是2张网卡。\nnetworking.vlan.enabled：N3和N6配置vlan id开关，即networking.n3.vlan和networking.n6.vlan是否仍然有效。\nnetworking.n3.nic：N3对应的物理网卡，如果networking.bond.enabled设置为true，这里必须是2张网卡，否则会提示错误；\nnetworking.n3.vlan：N3 vlan id",
+        "token_count": 580,
+        "block_ids": [
+          "manual-1edf23113651430f:b001840",
+          "manual-1edf23113651430f:b001841",
+          "manual-1edf23113651430f:b001842",
+          "manual-1edf23113651430f:b001843",
+          "manual-1edf23113651430f:b001844",
+          "manual-1edf23113651430f:b001845",
+          "manual-1edf23113651430f:b001846",
+          "manual-1edf23113651430f:b001847",
+          "manual-1edf23113651430f:b001848",
+          "manual-1edf23113651430f:b001849",
+          "manual-1edf23113651430f:b001850",
+          "manual-1edf23113651430f:b001851",
+          "manual-1edf23113651430f:b001852",
+          "manual-1edf23113651430f:b001853",
+          "manual-1edf23113651430f:b001854",
+          "manual-1edf23113651430f:b001855",
+          "manual-1edf23113651430f:b001856",
+          "manual-1edf23113651430f:b001857",
+          "manual-1edf23113651430f:b001858",
+          "manual-1edf23113651430f:b001859",
+          "manual-1edf23113651430f:b001860",
+          "manual-1edf23113651430f:b001861",
+          "manual-1edf23113651430f:b001862",
+          "manual-1edf23113651430f:b001863",
+          "manual-1edf23113651430f:b001864",
+          "manual-1edf23113651430f:b001865",
+          "manual-1edf23113651430f:b001866",
+          "manual-1edf23113651430f:b001867",
+          "manual-1edf23113651430f:b001868",
+          "manual-1edf23113651430f:b001869",
+          "manual-1edf23113651430f:b001870",
+          "manual-1edf23113651430f:b001871",
+          "manual-1edf23113651430f:b001872",
+          "manual-1edf23113651430f:b001873",
+          "manual-1edf23113651430f:b001874"
+        ],
+        "locators": [
+          "word/document.xml/body/p[943]",
+          "word/document.xml/body/p[944]",
+          "word/document.xml/body/p[945]",
+          "word/document.xml/body/p[946]",
+          "word/document.xml/body/p[947]",
+          "word/document.xml/body/p[948]",
+          "word/document.xml/body/p[949]",
+          "word/document.xml/body/p[950]",
+          "word/document.xml/body/p[951]",
+          "word/document.xml/body/p[952]",
+          "word/document.xml/body/p[953]",
+          "word/document.xml/body/p[954]",
+          "word/document.xml/body/p[955]",
+          "word/document.xml/body/p[956]",
+          "word/document.xml/body/p[957]",
+          "word/document.xml/body/p[958]",
+          "word/document.xml/body/p[959]",
+          "word/document.xml/body/p[960]",
+          "word/document.xml/body/p[961]",
+          "word/document.xml/body/p[962]",
+          "word/document.xml/body/p[963]",
+          "word/document.xml/body/p[964]",
+          "word/document.xml/body/p[965]",
+          "word/document.xml/body/p[966]",
+          "word/document.xml/body/p[967]",
+          "word/document.xml/body/p[968]",
+          "word/document.xml/body/p[969]",
+          "word/document.xml/body/p[970]",
+          "word/document.xml/body/p[971]",
+          "word/document.xml/body/p[972]",
+          "word/document.xml/body/p[973]",
+          "word/document.xml/body/p[974]",
+          "word/document.xml/body/p[975]",
+          "word/document.xml/body/p[976]",
+          "word/document.xml/body/p[977]"
+        ],
+        "ordinal_start": 1840,
+        "ordinal_end": 1874,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [
+          "N3",
+          "n3",
+          "n4",
+          "N4",
+          "N6",
+          "n6"
+        ],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S1Q1",
+        "S1Q2",
+        "S1Q3",
+        "S1Q4",
+        "S1Q5",
+        "S1Q6",
+        "S1Q7",
+        "S1Q8",
+        "S1Q9",
+        "S1Q10",
+        "S1Q11",
+        "S1Q12"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的配置文件需根据现网环境灵活调整，包括服务器类型、网卡配置（如ens1f0、ens3f0等）和VlanId规划。",
+            "quote_ids": [
+              "S4Q3"
+            ]
+          },
+          {
+            "text": "关键字段包括：base部分的namespace、upf_version、vdos_version、instanceId、neId；networking部分的intf_mode、bond.enabled、vlan.enabled、n3.nics、n6.nics、n3.vlan、n6.vlan；n4部分的bond.enabled、n4.vlan.id、intf_mode；cpu部分的queue_number。",
+            "quote_ids": [
+              "S4Q6",
+              "S4Q7",
+              "S4Q8",
+              "S4Q9"
+            ]
+          },
+          {
+            "text": "N4接口配置中，intf_mode为1表示合设模式，bond.enabled默认为false，vlan.id为299，IPv4地址为100.101.1.55/24，网关为100.101.1.1，服务IP为100.101.1.55。",
+            "quote_ids": [
+              "S1Q15",
+              "S1Q4",
+              "S1Q5",
+              "S1Q8"
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的配置文件需根据现网环境灵活调整，包括服务器类型、网卡配置（如ens1f0、ens3f0等）和VlanId规划。",
+            "citations": [
+              {
+                "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+                "quote": "注意：现网环境需要根据实际服务器（如：H3C、Soc、中兴等）不同配置、不同网卡配置（ens16f0、ens16f1、enp24s0f0、enp24s0f1、ens1f0、ens3f0、ens3f0、ens3f1等）和VlanId规划等灵活调整实际的配置参数。\n"
+              }
+            ]
+          },
+          {
+            "text": "关键字段包括：base部分的namespace、upf_version、vdos_version、instanceId、neId；networking部分的intf_mode、bond.enabled、vlan.enabled、n3.nics、n6.nics、n3.vlan、n6.vlan；n4部分的bond.enabled、n4.vlan.id、intf_mode；cpu部分的queue_number。",
+            "citations": [
+              {
+                "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+                "quote": "  namespace: ns1                      # 设置UPF命令空间\n"
+              },
+              {
+                "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+                "quote": "  upf_version: 5.0.210                   # UPF软件包版本\n"
+              },
+              {
+                "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+                "quote": "  vdos_version: 1.0.5\n"
+              },
+              {
+                "chunk_id": "chunk-ca730d6f31271f28eab01fa5",
+                "quote": "  instanceId: \"1\"\n"
+              }
+            ]
+          },
+          {
+            "text": "N4接口配置中，intf_mode为1表示合设模式，bond.enabled默认为false，vlan.id为299，IPv4地址为100.101.1.55/24，网关为100.101.1.1，服务IP为100.101.1.55。",
+            "citations": [
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "  intf_mode: 1 # 0-seperated,1-combined  #UPF N4合设、分设模式选择：1表示合设\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "    enabled: false                       #默认配置为false，对端交换机配置为：动态lacp，Trunk\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "    id: 299                             #UPF N4 VlanId\n"
+              },
+              {
+                "chunk_id": "chunk-881735f8ec04a52b4f3444a3",
+                "quote": "    address: \"100.101.1.55/24\"\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": []
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "yaml_sha256": "bd4d045782c4b250d1b0694a669d6e5d09891de1a1f676c13160770bfb444c3c",
+  "legacy_code_sha256": "c88450bd5214d59f61c0a2402d69bfc191e38badab1902c6c82c6ecddbcc708a",
+  "log_sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc",
+  "category_counts": {
+    "Unclassified": 25979,
+    "PFCP 会话释放": 5715,
+    "GTP-U 链路探测请求": 382,
+    "GTP-U 不可达上报": 120,
+    "GTP-U 节点不可达": 120,
+    "接口索引获取失败（接口状态异常）": 111,
+    "PFCP 节点不可达": 37,
+    "UPF重启/服务启动": 21,
+    "定时器初始化失败": 16,
+    "N4链路名称识别失败": 15,
+    "PFCP 节点恢复": 12,
+    "许可证未安装告警": 11
+  },
+  "total_classified_records": 32539,
+  "known_bad_labels": [
+    "PFCP heartbeat request classified as unreachable",
+    "license alarm clear classified as raised",
+    "masked FAR handover not matched"
+  ],
+  "interpretation": "Historical output only; not ground truth for the new event classifier"
+}

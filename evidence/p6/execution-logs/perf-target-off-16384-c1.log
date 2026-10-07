@@ -1,0 +1,3 @@
+benchmark target 16384 c=1 budget=1200: {'n': 20, 'p50': 3087.758739013225, 'p95': 3157.920033670962}
+benchmark target 16384 c=1 budget=5000: {'n': 20, 'p50': 3807.33099905774, 'p95': 3881.9408691488206}
+runs/p6/perf-target-off-16384-c1.json

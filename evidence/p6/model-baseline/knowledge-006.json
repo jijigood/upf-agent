@@ -1,0 +1,526 @@
+{
+  "row": {
+    "id": "knowledge-006",
+    "model": "baseline",
+    "evidence_sha256": "e2ce166b652827dcc8f81f3b8008b692f702d1d95800818d43db5ebb2197d443",
+    "elapsed_ms": 32540.851342026144,
+    "usage": {
+      "requests": 3,
+      "prompt_tokens_observed": 12681,
+      "completion_tokens_observed": 600,
+      "usage_responses": 3
+    },
+    "machine_checks": {
+      "status_expected": true,
+      "quote_integrity": true,
+      "refusal_contract": true,
+      "source_extract_integrity": true,
+      "critical_literal_coverage": null,
+      "machine_contract_pass": true,
+      "business_semantics": "pending_human_review"
+    },
+    "draft_source_group_hit": true,
+    "failure": null
+  },
+  "answer": {
+    "pipeline_version": "p3-answer-v4-source-extracts",
+    "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+    "question": "请依据‘单节点部署K8S / 调整集群配置 / 调整后的集群配置文件’解释说明和关键字段，不要推断真实设备当前状态。",
+    "index_generation": "c61e9796eead2610cfd4",
+    "p2_generation": "c05fe621e37ebdb1c663",
+    "product": "UPF",
+    "version": "5.0",
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "claims": [
+      {
+        "text": "部署集群前，需要新建并调整集群配置文件，当前集群自定义参数通过config.yaml文件进行配置。\n\nUPF节点名称：gd-gz-gdlt-upf01；\n\nK8s地址：172.16.100.50；\n\n物理机绑核方案：12-23, 29-47（本文档模板样例），或者是0-9,20-29；\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "部署集群前，需要新建并调整集群配置文件，当前集群自定义参数通过config.yaml文件进行配置。\n"
+          },
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "UPF节点名称：gd-gz-gdlt-upf01；\n"
+          },
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "K8s地址：172.16.100.50；\n"
+          },
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "物理机绑核方案：12-23, 29-47（本文档模板样例），或者是0-9,20-29；\n"
+          }
+        ]
+      },
+      {
+        "text": "hostname: gd-gz-gdlt-upf01           #UPF节点名称\n\n  - 172.16.100.50                    #K8s 地址\n\n  pod_subnet: 100.64.0.0/24\n\n  service_subnet: 10.96.0.0/22\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "hostname: gd-gz-gdlt-upf01           #UPF节点名称\n"
+          },
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "  - 172.16.100.50                    #K8s 地址\n"
+          },
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "  pod_subnet: 100.64.0.0/24\n"
+          },
+          {
+            "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+            "quote": "  service_subnet: 10.96.0.0/22\n"
+          }
+        ]
+      },
+      {
+        "text": "  prometheus:\n\n    enabled: true\n\n    https: false\n",
+        "citations": [
+          {
+            "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+            "quote": "  prometheus:\n"
+          },
+          {
+            "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+            "quote": "    enabled: true\n"
+          },
+          {
+            "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+            "quote": "    https: false\n"
+          },
+          {
+            "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+            "quote": "    enabled: true\n"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装K8S集群软件",
+          "单节点部署K8S",
+          "调整集群配置",
+          "调整后的集群配置文件"
+        ],
+        "parent_id": "section-6dbbd25d0bcb9b848452",
+        "kind": "prose",
+        "text": "单节点部署K8S / 调整集群配置 / 调整后的集群配置文件\n调整后的集群配置文件\n部署集群前，需要新建并调整集群配置文件，当前集群自定义参数通过config.yaml文件进行配置。\n执行以下命令，基于config.sample.yaml示例配置文件生成一份名为config.yaml的配置文件\n#cd /home/kubefusion-litebox-v1.5.6/\n# cp config.sample.yaml config.yaml\n参照“config.yaml”自定义配置参数，执行如下命令进入config.yaml文件编辑界面。\n$ vim config.yaml\n按【I】键进入编辑模式，根据前面章节的确定的参数修改config.yaml文件对应的配置内容：\nUPF节点名称：gd-gz-gdlt-upf01；\nK8s地址：172.16.100.50；\n物理机绑核方案：12-23, 29-47（本文档模板样例），或者是0-9,20-29；\n防火墙白名单：ufw.enabled设置为true，并填写放通的IP地址；\n其他参数，采用默认配置即可；\n修改后的示例配置如下（其中蓝色标记内容为根据现网配置必须修改项）：\n\t# 设置主机名\t\nhostname: gd-gz-gdlt-upf01           #UPF节点名称\n# 设置时间同步服务器，ntp的server IP\nntp_servers:\n  - 1.0.144.134\n  - 1.0.144.130\n# 设置kubernetes的master角色\nmasters:\n  - 172.16.100.50                    #K8s 地址\n# 设置kubernetes pod网段和service网段\nnetworking:\n  pod_subnet: 100.64.0.0/24\n  service_subnet: 10.96.0.0/22\n# 设置CPU资源隔离，系统进程和非Guaranteed Pod运行在CPU保留资源区间内，Guaranteed Pod运行在区间外\ncpu_manager_policy:\n  enabled: true\n  reserved_system_cpus: \"12-23,29-47\"      #这里填写的CPU是预留给操作系统使用\n# 设置HugePage，upf默认使用2MiB的大页内存\nhugepage:\n  enabled: true\n  total: 1280\n# 设置secure registry, 注意：如启用，必须将证书放在自定义路径下\nregistry:\n  enabled: \"false\"\n  domain: \"repository.cucc.cn:13380\"\n  host: \"172.17.10.197\"\n  ca_file: \"/root/ca.crt\"",
+        "token_count": 596,
+        "block_ids": [
+          "manual-1edf23113651430f:b001144",
+          "manual-1edf23113651430f:b001145",
+          "manual-1edf23113651430f:b001146",
+          "manual-1edf23113651430f:b001147",
+          "manual-1edf23113651430f:b001148",
+          "manual-1edf23113651430f:b001150",
+          "manual-1edf23113651430f:b001151",
+          "manual-1edf23113651430f:b001152",
+          "manual-1edf23113651430f:b001153",
+          "manual-1edf23113651430f:b001154",
+          "manual-1edf23113651430f:b001155",
+          "manual-1edf23113651430f:b001156",
+          "manual-1edf23113651430f:b001157",
+          "manual-1edf23113651430f:b001158",
+          "manual-1edf23113651430f:b001159",
+          "manual-1edf23113651430f:b001160",
+          "manual-1edf23113651430f:b001162",
+          "manual-1edf23113651430f:b001163",
+          "manual-1edf23113651430f:b001164",
+          "manual-1edf23113651430f:b001165",
+          "manual-1edf23113651430f:b001167",
+          "manual-1edf23113651430f:b001168",
+          "manual-1edf23113651430f:b001169",
+          "manual-1edf23113651430f:b001171",
+          "manual-1edf23113651430f:b001172",
+          "manual-1edf23113651430f:b001173",
+          "manual-1edf23113651430f:b001174",
+          "manual-1edf23113651430f:b001176",
+          "manual-1edf23113651430f:b001177",
+          "manual-1edf23113651430f:b001178",
+          "manual-1edf23113651430f:b001179",
+          "manual-1edf23113651430f:b001181",
+          "manual-1edf23113651430f:b001182",
+          "manual-1edf23113651430f:b001183",
+          "manual-1edf23113651430f:b001184",
+          "manual-1edf23113651430f:b001186",
+          "manual-1edf23113651430f:b001187",
+          "manual-1edf23113651430f:b001188",
+          "manual-1edf23113651430f:b001189",
+          "manual-1edf23113651430f:b001190",
+          "manual-1edf23113651430f:b001191"
+        ],
+        "locators": [
+          "word/document.xml/body/p[581]",
+          "word/document.xml/body/p[582]",
+          "word/document.xml/body/p[583]",
+          "word/document.xml/body/p[584]",
+          "word/document.xml/body/p[585]",
+          "word/document.xml/body/p[587]",
+          "word/document.xml/body/p[588]",
+          "word/document.xml/body/p[589]",
+          "word/document.xml/body/p[590]",
+          "word/document.xml/body/p[591]",
+          "word/document.xml/body/p[592]",
+          "word/document.xml/body/p[593]",
+          "word/document.xml/body/p[594]",
+          "word/document.xml/body/p[595]",
+          "word/document.xml/body/p[596]",
+          "word/document.xml/body/p[597]",
+          "word/document.xml/body/p[599]",
+          "word/document.xml/body/p[600]",
+          "word/document.xml/body/p[601]",
+          "word/document.xml/body/p[602]",
+          "word/document.xml/body/p[604]",
+          "word/document.xml/body/p[605]",
+          "word/document.xml/body/p[606]",
+          "word/document.xml/body/p[608]",
+          "word/document.xml/body/p[609]",
+          "word/document.xml/body/p[610]",
+          "word/document.xml/body/p[611]",
+          "word/document.xml/body/p[613]",
+          "word/document.xml/body/p[614]",
+          "word/document.xml/body/p[615]",
+          "word/document.xml/body/p[616]",
+          "word/document.xml/body/p[618]",
+          "word/document.xml/body/p[619]",
+          "word/document.xml/body/p[620]",
+          "word/document.xml/body/p[621]",
+          "word/document.xml/body/p[623]",
+          "word/document.xml/body/p[624]",
+          "word/document.xml/body/p[625]",
+          "word/document.xml/body/p[626]",
+          "word/document.xml/body/p[627]",
+          "word/document.xml/body/p[628]"
+        ],
+        "ordinal_start": 1144,
+        "ordinal_end": 1191,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      },
+      {
+        "index_generation": "c61e9796eead2610cfd4",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "source_verified": true,
+        "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+        "source_id": "manual-1edf23113651430f",
+        "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+        "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+        "role": "manual",
+        "product": "UPF",
+        "version": "5.0",
+        "section_path": [
+          "安装K8S集群软件",
+          "单节点部署K8S",
+          "调整集群配置",
+          "调整后的集群配置文件"
+        ],
+        "parent_id": "section-6dbbd25d0bcb9b848452",
+        "kind": "prose",
+        "text": "单节点部署K8S / 调整集群配置 / 调整后的集群配置文件\n    image: docker.io/labring/helm:v3.12.0\n  nfs_subdir_external_provisioner:\n    enabled: true\n    image: docker.io/labring/nfs-subdir-external-provisioner:v4.0.18\n  openebs:\n    enabled: true\n    image: docker.io/labring/openebs:v3.3.0\n  ingress_nginx:\n    enabled: true\n    image: docker.io/labring/ingress-nginx:v1.6.4\n  metrics_server:\n    enabled: true\n    image: docker.io/labring/metrics-server:v0.6.2\n  prometheus:\n    enabled: true\n    https: false\n    image: docker.io/labring/kube-prometheus-stack:v0.63.0\n  promtail:\n    enabled: true\n    loki_url: http://loki-gateway/loki/api/v1/push\n    image: docker.io/labring/promtail:v2.8.3\n  multus_cni:\n    enabled: true\n    image: docker.io/labring/multus-cni:v3.9.3\n  cni_plugins:\n    enabled: true\n    image: docker.io/labring/cni-plugins:v1.3.0\n  bond_cni:\n    enabled: true\n    image: docker.io/labring/bond-cni:latest\n  mano_admin_user:\n    enabled: true\n  nerdctl:\n    enabled: true\n    image: docker.io/labring/nerdctl:v1.2.1\n  calicoctl:\n    enabled: true\n    image: docker.io/labring/calicoctl:v3.26.1\n  etcdctl:\n    enabled: true\n    image: docker.io/labring/etcdctl:v3.5.6\n  helmfile:\n    enabled: true\n    image: docker.io/labring/helmfile:v0.154.0\n  sriov:\n    enabled: false\n    image: docker.io/labring/sriov-network-operator:v1.2.0\n  loki_stack:\n    enabled: false\n    image: docker.io/labring/loki-stack:v2.6.1\n  neuvector:\n    enabled: false\n    image: docker.io/labring/neuvector:v5.1.0\n  kubernetes_dashboard:\n    enabled: false\n    image: docker.io/labring/kubernetes-dashboard:v2.7.0\n配置参数参数说明：\nhostname: 该主机需要配置的主机名\nntp_servers: 设置ntp服务器器的IP地址或域名\nmasters: 填写单节点IP地址",
+        "token_count": 589,
+        "block_ids": [
+          "manual-1edf23113651430f:b001225",
+          "manual-1edf23113651430f:b001226",
+          "manual-1edf23113651430f:b001227",
+          "manual-1edf23113651430f:b001228",
+          "manual-1edf23113651430f:b001229",
+          "manual-1edf23113651430f:b001230",
+          "manual-1edf23113651430f:b001231",
+          "manual-1edf23113651430f:b001232",
+          "manual-1edf23113651430f:b001233",
+          "manual-1edf23113651430f:b001234",
+          "manual-1edf23113651430f:b001235",
+          "manual-1edf23113651430f:b001236",
+          "manual-1edf23113651430f:b001237",
+          "manual-1edf23113651430f:b001238",
+          "manual-1edf23113651430f:b001239",
+          "manual-1edf23113651430f:b001240",
+          "manual-1edf23113651430f:b001241",
+          "manual-1edf23113651430f:b001242",
+          "manual-1edf23113651430f:b001243",
+          "manual-1edf23113651430f:b001244",
+          "manual-1edf23113651430f:b001245",
+          "manual-1edf23113651430f:b001246",
+          "manual-1edf23113651430f:b001247",
+          "manual-1edf23113651430f:b001248",
+          "manual-1edf23113651430f:b001249",
+          "manual-1edf23113651430f:b001250",
+          "manual-1edf23113651430f:b001251",
+          "manual-1edf23113651430f:b001252",
+          "manual-1edf23113651430f:b001253",
+          "manual-1edf23113651430f:b001254",
+          "manual-1edf23113651430f:b001255",
+          "manual-1edf23113651430f:b001256",
+          "manual-1edf23113651430f:b001257",
+          "manual-1edf23113651430f:b001258",
+          "manual-1edf23113651430f:b001259",
+          "manual-1edf23113651430f:b001260",
+          "manual-1edf23113651430f:b001261",
+          "manual-1edf23113651430f:b001262",
+          "manual-1edf23113651430f:b001263",
+          "manual-1edf23113651430f:b001264",
+          "manual-1edf23113651430f:b001265",
+          "manual-1edf23113651430f:b001266",
+          "manual-1edf23113651430f:b001267",
+          "manual-1edf23113651430f:b001268",
+          "manual-1edf23113651430f:b001269",
+          "manual-1edf23113651430f:b001270",
+          "manual-1edf23113651430f:b001271",
+          "manual-1edf23113651430f:b001272",
+          "manual-1edf23113651430f:b001273",
+          "manual-1edf23113651430f:b001274",
+          "manual-1edf23113651430f:b001275",
+          "manual-1edf23113651430f:b001276",
+          "manual-1edf23113651430f:b001277",
+          "manual-1edf23113651430f:b001278",
+          "manual-1edf23113651430f:b001279",
+          "manual-1edf23113651430f:b001280",
+          "manual-1edf23113651430f:b001281",
+          "manual-1edf23113651430f:b001282",
+          "manual-1edf23113651430f:b001283",
+          "manual-1edf23113651430f:b001284"
+        ],
+        "locators": [
+          "word/document.xml/body/p[662]",
+          "word/document.xml/body/p[663]",
+          "word/document.xml/body/p[664]",
+          "word/document.xml/body/p[665]",
+          "word/document.xml/body/p[666]",
+          "word/document.xml/body/p[667]",
+          "word/document.xml/body/p[668]",
+          "word/document.xml/body/p[669]",
+          "word/document.xml/body/p[670]",
+          "word/document.xml/body/p[671]",
+          "word/document.xml/body/p[672]",
+          "word/document.xml/body/p[673]",
+          "word/document.xml/body/p[674]",
+          "word/document.xml/body/p[675]",
+          "word/document.xml/body/p[676]",
+          "word/document.xml/body/p[677]",
+          "word/document.xml/body/p[678]",
+          "word/document.xml/body/p[679]",
+          "word/document.xml/body/p[680]",
+          "word/document.xml/body/p[681]",
+          "word/document.xml/body/p[682]",
+          "word/document.xml/body/p[683]",
+          "word/document.xml/body/p[684]",
+          "word/document.xml/body/p[685]",
+          "word/document.xml/body/p[686]",
+          "word/document.xml/body/p[687]",
+          "word/document.xml/body/p[688]",
+          "word/document.xml/body/p[689]",
+          "word/document.xml/body/p[690]",
+          "word/document.xml/body/p[691]",
+          "word/document.xml/body/p[692]",
+          "word/document.xml/body/p[693]",
+          "word/document.xml/body/p[694]",
+          "word/document.xml/body/p[695]",
+          "word/document.xml/body/p[696]",
+          "word/document.xml/body/p[697]",
+          "word/document.xml/body/p[698]",
+          "word/document.xml/body/p[699]",
+          "word/document.xml/body/p[700]",
+          "word/document.xml/body/p[701]",
+          "word/document.xml/body/p[702]",
+          "word/document.xml/body/p[703]",
+          "word/document.xml/body/p[704]",
+          "word/document.xml/body/p[705]",
+          "word/document.xml/body/p[706]",
+          "word/document.xml/body/p[707]",
+          "word/document.xml/body/p[708]",
+          "word/document.xml/body/p[709]",
+          "word/document.xml/body/p[710]",
+          "word/document.xml/body/p[711]",
+          "word/document.xml/body/p[712]",
+          "word/document.xml/body/p[713]",
+          "word/document.xml/body/p[714]",
+          "word/document.xml/body/p[715]",
+          "word/document.xml/body/p[716]",
+          "word/document.xml/body/p[717]",
+          "word/document.xml/body/p[718]",
+          "word/document.xml/body/p[719]",
+          "word/document.xml/body/p[720]",
+          "word/document.xml/body/p[721]"
+        ],
+        "ordinal_start": 1225,
+        "ordinal_end": 1284,
+        "extraction_methods": [
+          "docx-xml-v4"
+        ],
+        "quality_flags": [],
+        "interface_tags": [],
+        "command_id": null,
+        "command_family": null,
+        "table_id": null,
+        "table_header": null,
+        "table_cells": []
+      }
+    ],
+    "warnings": [
+      "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+      "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+    ],
+    "support_check": "model_checked_not_human_verified",
+    "source_term_gate": {
+      "unsupported_terms": [],
+      "scope": "complete_native_manual_product_version_corpus"
+    },
+    "relevance_gate": {
+      "has_relevant_evidence": true,
+      "relevant_quote_ids": [
+        "S2Q2",
+        "S2Q3",
+        "S2Q4",
+        "S2Q5",
+        "S2Q6",
+        "S2Q7",
+        "S2Q8",
+        "S2Q9",
+        "S2Q10",
+        "S3Q10",
+        "S3Q11",
+        "S3Q12"
+      ],
+      "missing_information": []
+    },
+    "validation_errors": [],
+    "generation_attempts": 1,
+    "audit": {
+      "selection": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的集群配置文件为config.yaml，位于路径 /home/kubefusion-litebox-v1.5.6/，需根据现网环境修改UPF节点名称、K8s地址、绑核方案、防火墙白名单等关键字段。",
+            "quote_ids": [
+              "S3Q3",
+              "S3Q10",
+              "S3Q11",
+              "S3Q12"
+            ]
+          },
+          {
+            "text": "关键字段包括：hostname（UPF节点名称，如gd-gz-gdlt-upf01）、masters（K8s节点IP地址，如172.16.100.50）、networking（podcidr为100.64.0.0/24，service cidr为10.96.0.0/22）、cpu_manager_policy（启用CPU隔离，预留CPU区间如12-23,29-47）、ufw（启用防火墙并配置IP白名单）。",
+            "quote_ids": [
+              "S3Q17",
+              "S3Q24",
+              "S3Q27",
+              "S3Q28"
+            ]
+          },
+          {
+            "text": "配置文件中需启用的可选插件包括Prometheus（https: false）、NFS子目录外部 provisioner、OpenEBS、Ingress-NGINX、Metrics Server、Promtail、Multus CNI、CNI Plugins、Bond CNI、Mano Admin User、Nerdctl、Calicoctl、Etcdctl、Helmfile等，部分如SR-IOV、Loki Stack、NeuVector、Kubernetes Dashboard默认禁用。",
+            "quote_ids": [
+              "S5Q15",
+              "S5Q16",
+              "S5Q17",
+              "S5Q24"
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性已确认为5.0，无缺失信息。"
+        ]
+      },
+      "draft": {
+        "status": "completed",
+        "claims": [
+          {
+            "text": "调整后的集群配置文件为config.yaml，位于路径 /home/kubefusion-litebox-v1.5.6/，需根据现网环境修改UPF节点名称、K8s地址、绑核方案、防火墙白名单等关键字段。",
+            "citations": [
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "部署集群前，需要新建并调整集群配置文件，当前集群自定义参数通过config.yaml文件进行配置。\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "UPF节点名称：gd-gz-gdlt-upf01；\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "K8s地址：172.16.100.50；\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "物理机绑核方案：12-23, 29-47（本文档模板样例），或者是0-9,20-29；\n"
+              }
+            ]
+          },
+          {
+            "text": "关键字段包括：hostname（UPF节点名称，如gd-gz-gdlt-upf01）、masters（K8s节点IP地址，如172.16.100.50）、networking（podcidr为100.64.0.0/24，service cidr为10.96.0.0/22）、cpu_manager_policy（启用CPU隔离，预留CPU区间如12-23,29-47）、ufw（启用防火墙并配置IP白名单）。",
+            "citations": [
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "hostname: gd-gz-gdlt-upf01           #UPF节点名称\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "  - 172.16.100.50                    #K8s 地址\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "  pod_subnet: 100.64.0.0/24\n"
+              },
+              {
+                "chunk_id": "chunk-c0269e0f5f90744584380ab7",
+                "quote": "  service_subnet: 10.96.0.0/22\n"
+              }
+            ]
+          },
+          {
+            "text": "配置文件中需启用的可选插件包括Prometheus（https: false）、NFS子目录外部 provisioner、OpenEBS、Ingress-NGINX、Metrics Server、Promtail、Multus CNI、CNI Plugins、Bond CNI、Mano Admin User、Nerdctl、Calicoctl、Etcdctl、Helmfile等，部分如SR-IOV、Loki Stack、NeuVector、Kubernetes Dashboard默认禁用。",
+            "citations": [
+              {
+                "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+                "quote": "  prometheus:\n"
+              },
+              {
+                "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+                "quote": "    enabled: true\n"
+              },
+              {
+                "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+                "quote": "    https: false\n"
+              },
+              {
+                "chunk_id": "chunk-b2994271d108a44a0af2c5c4",
+                "quote": "    enabled: true\n"
+              }
+            ]
+          }
+        ],
+        "missing_information": [
+          "版本适用性已确认为5.0，无缺失信息。"
+        ]
+      },
+      "support_decisions": [
+        true,
+        true,
+        true
+      ]
+    },
+    "status": "completed",
+    "missing_information": [
+      "版本适用性已确认为5.0，无缺失信息。"
+    ]
+  }
+}

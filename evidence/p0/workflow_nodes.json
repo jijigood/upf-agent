@@ -1,0 +1,547 @@
+[
+  {
+    "id": "1711528708197",
+    "title": "开始",
+    "type": "start",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1762917248592",
+        "source_handle": "source",
+        "target_type": "question-classifier"
+      }
+    ],
+    "migration_component": "TaskSpec and CLI"
+  },
+  {
+    "id": "1762917248592",
+    "title": "问题分类器 2",
+    "type": "question-classifier",
+    "model": "Qwen/Qwen3-32B",
+    "provider": "langgenius/openai_api_compatible/openai_api_compatible",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17629319210380",
+        "source_handle": "1762917324800",
+        "target_type": "knowledge-retrieval"
+      },
+      {
+        "target_id": "1762940537227",
+        "source_handle": "1762917600232",
+        "target_type": "llm"
+      },
+      {
+        "target_id": "1763346833622",
+        "source_handle": "1",
+        "target_type": "llm"
+      },
+      {
+        "target_id": "17642939452160",
+        "source_handle": "2",
+        "target_type": "llm"
+      },
+      {
+        "target_id": "1764750318159",
+        "source_handle": "1764750264839",
+        "target_type": "llm"
+      },
+      {
+        "target_id": "1775630343107",
+        "source_handle": "1762917486740",
+        "target_type": "parameter-extractor"
+      }
+    ],
+    "migration_component": "task router"
+  },
+  {
+    "id": "17629303546060",
+    "title": "LLM 3 (2)",
+    "type": "llm",
+    "model": "DeepSeekV3.1",
+    "provider": "langgenius/volcengine_maas/volcengine_maas",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17629303912180",
+        "source_handle": "source",
+        "target_type": "answer"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "17629303912180",
+    "title": "直接回复 (1)",
+    "type": "answer",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1763347712197",
+        "source_handle": "source",
+        "target_type": "assigner"
+      }
+    ],
+    "migration_component": "AnswerReport renderer"
+  },
+  {
+    "id": "17629314115760",
+    "title": "LLM 3 (5)",
+    "type": "llm",
+    "model": "DeepSeekV3.1",
+    "provider": "langgenius/volcengine_maas/volcengine_maas",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1762939509570",
+        "source_handle": "source",
+        "target_type": "answer"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "17629314353300",
+    "title": "LLM 3 (5)",
+    "type": "llm",
+    "model": "Qwen/Qwen3-32B",
+    "provider": "langgenius/openai_api_compatible/openai_api_compatible",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1762939523338",
+        "source_handle": "source",
+        "target_type": "answer"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "17629319210380",
+    "title": "知识检索 3 (3)",
+    "type": "knowledge-retrieval",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [
+      "fEE4uoE1uT0Jd72rUJPT58QypPtVxEOnH2h26jXukuSEMSI+l1ScwXcugz1NmA64"
+    ],
+    "outgoing": [
+      {
+        "target_id": "17629314115760",
+        "source_handle": "source",
+        "target_type": "llm"
+      }
+    ],
+    "migration_component": "local retrieval"
+  },
+  {
+    "id": "17629319219070",
+    "title": "知识检索 3 (3)",
+    "type": "knowledge-retrieval",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [
+      "W1EbW7t7TD21vWSlxEZD45wj+ZYLOlflsSRSr0JcjuVGUTg81sHaxa5He4KY7VgW"
+    ],
+    "outgoing": [
+      {
+        "target_id": "17629314353300",
+        "source_handle": "source",
+        "target_type": "llm"
+      }
+    ],
+    "migration_component": "local retrieval"
+  },
+  {
+    "id": "1762939475801",
+    "title": "直接回复 4",
+    "type": "answer",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "AnswerReport renderer"
+  },
+  {
+    "id": "1762939509570",
+    "title": "直接回复 7",
+    "type": "answer",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "AnswerReport renderer"
+  },
+  {
+    "id": "1762939523338",
+    "title": "直接回复 8",
+    "type": "answer",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "AnswerReport renderer"
+  },
+  {
+    "id": "1762940537227",
+    "title": "LLM 9",
+    "type": "llm",
+    "model": "DeepSeekV3.1",
+    "provider": "langgenius/volcengine_maas/volcengine_maas",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1762939475801",
+        "source_handle": "source",
+        "target_type": "answer"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "1763346833622",
+    "title": "LLM 9",
+    "type": "llm",
+    "model": "DeepSeekV3.1",
+    "provider": "langgenius/volcengine_maas/volcengine_maas",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1763346927534",
+        "source_handle": "source",
+        "target_type": "code"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "1763346927534",
+    "title": "代码执行",
+    "type": "code",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1763346989748",
+        "source_handle": "source",
+        "target_type": "iteration"
+      }
+    ],
+    "migration_component": "deterministic Python tools"
+  },
+  {
+    "id": "1763346989748",
+    "title": "迭代 2",
+    "type": "iteration",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17629303546060",
+        "source_handle": "source",
+        "target_type": "llm"
+      }
+    ],
+    "migration_component": "bounded agent state loop"
+  },
+  {
+    "id": "1763346989748start",
+    "title": "",
+    "type": "iteration-start",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1763347039327",
+        "source_handle": "source",
+        "target_type": "knowledge-retrieval"
+      }
+    ],
+    "migration_component": "bounded agent state loop"
+  },
+  {
+    "id": "1763347039327",
+    "title": "知识检索 7",
+    "type": "knowledge-retrieval",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [
+      "wcrN9FsLeT1y0A6cymHciZAVN7yfF4EiosmjDUePOEkSBMdN/JU5OlYkQJ4UpzHs"
+    ],
+    "outgoing": [
+      {
+        "target_id": "1763347230357",
+        "source_handle": "source",
+        "target_type": "assigner"
+      }
+    ],
+    "migration_component": "local retrieval"
+  },
+  {
+    "id": "1763347230357",
+    "title": "变量赋值 5",
+    "type": "assigner",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "request-scoped evidence store"
+  },
+  {
+    "id": "1763347712197",
+    "title": "变量赋值 6",
+    "type": "assigner",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "request-scoped evidence store"
+  },
+  {
+    "id": "17642939452160",
+    "title": "LLM 9 (1)",
+    "type": "llm",
+    "model": "DeepSeekV3.1",
+    "provider": "langgenius/volcengine_maas/volcengine_maas",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17642942655500",
+        "source_handle": "source",
+        "target_type": "code"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "17642942655500",
+    "title": "代码执行 (1)",
+    "type": "code",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17642942765830",
+        "source_handle": "source",
+        "target_type": "iteration"
+      }
+    ],
+    "migration_component": "deterministic Python tools"
+  },
+  {
+    "id": "17642942765830",
+    "title": "迭代 2 (1)",
+    "type": "iteration",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17642943227670",
+        "source_handle": "source",
+        "target_type": "llm"
+      }
+    ],
+    "migration_component": "bounded agent state loop"
+  },
+  {
+    "id": "1764294276583017642942765850",
+    "title": "知识检索 5",
+    "type": "knowledge-retrieval",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [
+      "uhN3rseAVaKlXw3cCyyg4MB88Lvid03WUZfZneNUUDD9q2vS3mT1hfC3dlevgw6e"
+    ],
+    "outgoing": [
+      {
+        "target_id": "1764294276583017642942765851",
+        "source_handle": "source",
+        "target_type": "assigner"
+      }
+    ],
+    "migration_component": "local retrieval"
+  },
+  {
+    "id": "1764294276583017642942765851",
+    "title": "变量赋值 3",
+    "type": "assigner",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "request-scoped evidence store"
+  },
+  {
+    "id": "1764294276583start",
+    "title": "",
+    "type": "iteration-start",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1764294276583017642942765850",
+        "source_handle": "source",
+        "target_type": "knowledge-retrieval"
+      }
+    ],
+    "migration_component": "bounded agent state loop"
+  },
+  {
+    "id": "17642943227670",
+    "title": "LLM 3 (3)",
+    "type": "llm",
+    "model": "DeepSeekV3.1",
+    "provider": "langgenius/volcengine_maas/volcengine_maas",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17642943267590",
+        "source_handle": "source",
+        "target_type": "answer"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "17642943267590",
+    "title": "直接回复 (2)",
+    "type": "answer",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17642943354290",
+        "source_handle": "source",
+        "target_type": "assigner"
+      }
+    ],
+    "migration_component": "AnswerReport renderer"
+  },
+  {
+    "id": "17642943354290",
+    "title": "变量赋值 6 (1)",
+    "type": "assigner",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "request-scoped evidence store"
+  },
+  {
+    "id": "1764750284588",
+    "title": "直接回复 6",
+    "type": "answer",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [],
+    "migration_component": "AnswerReport renderer"
+  },
+  {
+    "id": "1764750318159",
+    "title": "LLM 8",
+    "type": "llm",
+    "model": "DeepSeekV3.1",
+    "provider": "langgenius/volcengine_maas/volcengine_maas",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1764750284588",
+        "source_handle": "source",
+        "target_type": "answer"
+      }
+    ],
+    "migration_component": "local generation adapter"
+  },
+  {
+    "id": "1775630343107",
+    "title": "参数提取器",
+    "type": "parameter-extractor",
+    "model": "Qwen/Qwen3-32B",
+    "provider": "langgenius/openai_api_compatible/openai_api_compatible",
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1775630682360",
+        "source_handle": "source",
+        "target_type": "document-extractor"
+      }
+    ],
+    "migration_component": "typed parameter extraction"
+  },
+  {
+    "id": "1775630682360",
+    "title": "文档提取器",
+    "type": "document-extractor",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1775630712448",
+        "source_handle": "source",
+        "target_type": "document-extractor"
+      }
+    ],
+    "migration_component": "ingestion/parser"
+  },
+  {
+    "id": "1775630712448",
+    "title": "文档提取器 2",
+    "type": "document-extractor",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1775630731398",
+        "source_handle": "source",
+        "target_type": "code"
+      }
+    ],
+    "migration_component": "ingestion/parser"
+  },
+  {
+    "id": "1775630731398",
+    "title": "代码执行 3",
+    "type": "code",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "1775631424044",
+        "source_handle": "source",
+        "target_type": "code"
+      }
+    ],
+    "migration_component": "deterministic Python tools"
+  },
+  {
+    "id": "1775631424044",
+    "title": "代码执行 4",
+    "type": "code",
+    "model": null,
+    "provider": null,
+    "dataset_ids": [],
+    "outgoing": [
+      {
+        "target_id": "17629319219070",
+        "source_handle": "source",
+        "target_type": "knowledge-retrieval"
+      }
+    ],
+    "migration_component": "deterministic Python tools"
+  }
+]

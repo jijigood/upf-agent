@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "answer_mode": "native_literal_extract",
+  "answer_sha256": "31e5578ba876628b3cdc35089262d48deb3fdea2b41083de65cefd57dbc31db4",
+  "trace_path": "runs/p3/665d8b0863864bfeb340b53e0d193608",
+  "native_quote_matches": true,
+  "source_verified": true,
+  "model_requests_for_manual_answer": 0,
+  "heldout_executed": false
+}

@@ -1,0 +1,60 @@
+{
+  "task": {
+    "run_id": "a2b0aea41b2745a7b088022c5fcf578f",
+    "question": "当前UPF设备CPU温度是多少？",
+    "task_type": "other",
+    "attachment_ids": [],
+    "product": null,
+    "version": null,
+    "device_ids": [],
+    "time_window": null,
+    "interactive": false,
+    "log_generation": null,
+    "topology_generation": null,
+    "manual_generation": "c61e9796eead2610cfd4",
+    "model_profile": "baseline",
+    "retrieval_device": "cuda:1",
+    "mode": "agent",
+    "session_id": null,
+    "budget": {
+      "max_rounds": 3,
+      "max_tool_calls": 8,
+      "max_model_calls": 8,
+      "timeout_seconds": 180.0
+    },
+    "execution_fingerprint": "2306578f9f913fcc34c09b2438eeffea890a6860c3e8fd0e40a06c8d31655687"
+  },
+  "route": "missing_source",
+  "receipts": [],
+  "evidence": [],
+  "facts": [],
+  "gaps": [
+    "未接入实时网管/设备遥测数据源，无法报告当前现场状态。"
+  ],
+  "warnings": [],
+  "questions": [],
+  "candidates": [],
+  "actions": [],
+  "rounds": 0,
+  "repairs": 0,
+  "degraded": false,
+  "terminal": true,
+  "resume_count": 0,
+  "user_answers": [],
+  "report": {
+    "run_id": "a2b0aea41b2745a7b088022c5fcf578f",
+    "status": "missing_source",
+    "facts": [],
+    "hypotheses": [],
+    "supporting_evidence_ids": [],
+    "opposing_evidence_ids": [],
+    "missing_information": [
+      "未接入实时网管/设备遥测数据源，无法报告当前现场状态。"
+    ],
+    "recommendations": [
+      "按报告来源位置复核原文，并补充列出的现场资料；建议不自动执行。"
+    ],
+    "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "corpus_generation": "c61e9796eead2610cfd4"
+  }
+}
