@@ -1,0 +1,238 @@
+{
+  "$defs": {
+    "SourcePointer": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        },
+        "relative_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Relative Path"
+        }
+      },
+      "required": [
+        "source_id",
+        "sha256",
+        "locator"
+      ],
+      "title": "SourcePointer",
+      "type": "object"
+    },
+    "TimeWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "format": "date-time",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date-time",
+          "title": "End",
+          "type": "string"
+        },
+        "timezone_source": {
+          "title": "Timezone Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "timezone_source"
+      ],
+      "title": "TimeWindow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "evidence_id": {
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "native_id": {
+      "title": "Native Id",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "contract_id": {
+      "title": "Contract Id",
+      "type": "string"
+    },
+    "requirement_id": {
+      "title": "Requirement Id",
+      "type": "string"
+    },
+    "object_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Object Id"
+    },
+    "category": {
+      "enum": [
+        "K",
+        "R",
+        "P"
+      ],
+      "title": "Category",
+      "type": "string"
+    },
+    "fields": {
+      "additionalProperties": true,
+      "title": "Fields",
+      "type": "object"
+    },
+    "source": {
+      "$ref": "#/$defs/SourcePointer"
+    },
+    "revision": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Revision",
+      "type": "integer"
+    },
+    "observed": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TimeWindow"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "valid": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TimeWindow"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "product": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Product"
+    },
+    "version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Version"
+    },
+    "config_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Config Version"
+    },
+    "role": {
+      "default": "collector",
+      "title": "Role",
+      "type": "string"
+    },
+    "purposes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Purposes",
+      "type": "array"
+    },
+    "readable": {
+      "default": true,
+      "title": "Readable",
+      "type": "boolean"
+    },
+    "receipt_id": {
+      "title": "Receipt Id",
+      "type": "string"
+    },
+    "source_verified": {
+      "default": false,
+      "title": "Source Verified",
+      "type": "boolean"
+    },
+    "synthetic": {
+      "default": false,
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "corroborated": {
+      "default": true,
+      "title": "Corroborated",
+      "type": "boolean"
+    },
+    "deleted": {
+      "default": false,
+      "title": "Deleted",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "evidence_id",
+    "native_id",
+    "task_id",
+    "contract_id",
+    "requirement_id",
+    "category",
+    "fields",
+    "source",
+    "receipt_id"
+  ],
+  "title": "EvidenceBinding",
+  "type": "object"
+}

@@ -1,0 +1,9 @@
+{
+  "tests_passed": 317,
+  "pytest_seconds": 45.25,
+  "ruff_passed": true,
+  "pipeline_identity": "8d7dce6a900877f43874563d56015cc64c441f9fb7e678c85b66dfa71ee497c5",
+  "matches_v5l": true,
+  "isolated_workspace_matches_original": true,
+  "M6_pass": false
+}

@@ -1,0 +1,50 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/tmp/uv",
+        "pip",
+        "check",
+        "--python",
+        ".venv/bin/python"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Checked 81 packages in 20ms\nAll installed packages are compatible\n"
+    },
+    {
+      "command": [
+        "/tmp/uv",
+        "pip",
+        "check",
+        "--python",
+        ".venv-retrieval/bin/python"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Using Python 3.11.15 environment at: .venv-retrieval\nChecked 60 packages in 1ms\nAll installed packages are compatible\n"
+    },
+    {
+      "command": [
+        "/tmp/uv",
+        "pip",
+        "check",
+        "--python",
+        ".venv-inference/bin/python"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Using Python 3.10.20 environment at: .venv-inference\nChecked 180 packages in 3ms\nAll installed packages are compatible\n"
+    },
+    {
+      "command": [
+        "/home/huangxiaolin/upf-agent/.venv-inference/bin/python",
+        "-c",
+        "import vllm, torch; print(vllm.__version__, torch.__version__); assert torch.cuda.is_available()"
+      ],
+      "returncode": 0,
+      "stdout": "0.19.1 2.10.0+cu128\n",
+      "stderr": ""
+    }
+  ]
+}

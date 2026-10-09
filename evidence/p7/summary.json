@@ -1,0 +1,75 @@
+{
+  "updated_at": "2026-10-07T05:56:23.077283+00:00",
+  "status": "same-host P7 technical preparation validated; final M6/M7 acceptance pending",
+  "M6_pass": false,
+  "M7_pass": false,
+  "new_answer_review_requested": false,
+  "snapshots": {
+    "source-snapshot-v2": {
+      "path": "/home/huangxiaolin/upf-agent-delivery/p7-20261007/source-snapshot-v2",
+      "files": 5908,
+      "bytes": 633288297,
+      "sqlite_backups": 8,
+      "manifest_sha256": "544a1839e88d88b26a591106a15a03cbbddc0fa945ef7cb29aef068c680e846c",
+      "checksums_verified": true
+    },
+    "runtime-snapshot": {
+      "path": "/home/huangxiaolin/upf-agent-delivery/p7-20261007/runtime-snapshot",
+      "files": 5914,
+      "bytes": 633418275,
+      "sqlite_backups": 8,
+      "manifest_sha256": "495eb4efd368a4d0f99ca63ef4c055a9427ea0643f96a03c5f2f27d726e13599",
+      "checksums_verified": true
+    }
+  },
+  "checks": {
+    "three_environments_rebuilt_offline": true,
+    "application_packages": 81,
+    "retrieval_packages": 60,
+    "inference_packages": 180,
+    "dependency_checks_passed": true,
+    "fresh_inference_import_and_cuda_available": true,
+    "application_and_retrieval_filesystem_network_isolated": true,
+    "dify_and_aito_paths_absent": true,
+    "external_ipv4_ipv6_and_host_service_ports_blocked": true,
+    "manual_original_citations_verified": true,
+    "log_event_count": 32539,
+    "missing_environment_and_missing_source_rejected": true,
+    "checkpoint_resumed_from_restored_database": true,
+    "all_17_existing_facts_and_evidence_ids_preserved": true,
+    "cli_source_lookup_verified_after_restore": true,
+    "original_raw_files_unchanged": 7,
+    "tests_passed": 317,
+    "ruff_passed": true,
+    "v5l_pipeline_identity_preserved": true
+  },
+  "model_service": {
+    "health_status": 200,
+    "served_models": [
+      "Qwen3-30B-A3B-Instruct-2507"
+    ],
+    "launcher_pid": 555184,
+    "left_running": true,
+    "gpu_metrics": "0, 69320 MiB, 0 %\n1, 0 MiB, 0 %"
+  },
+  "scope_limits": [
+    "same host with existing uv/Python/package cache and read-only model weights; transferable wheel/model/parser bundle not yet delivered",
+    "canonical configured project/model paths preserved inside namespace; arbitrary relocation not verified",
+    "application/retrieval are isolated; generation uses a fixed bridge to the resident host service; fresh inference environment import passed but it was not used to launch a second model service",
+    "development smoke/recovery only; no new independent formal heldout quality result"
+  ],
+  "remaining": [
+    "collect independent real data and complete M6 quality acceptance",
+    "package transferable offline installation dependencies, weights and parser resources",
+    "validate the full generation service within the final isolated deployment and finalize operator acceptance"
+  ],
+  "evidence_files": [
+    "evidence/p7/offline_rebuild.json",
+    "evidence/p7/offline_environment_check.json",
+    "evidence/p7/isolated_runtime.json",
+    "evidence/p7/recovery_runtime.json",
+    "evidence/p7/recovery_consistency.json",
+    "evidence/p7/code_validation.json",
+    "evidence/p7/pilot_fixes.json"
+  ]
+}

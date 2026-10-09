@@ -1,0 +1,34 @@
+{
+  "contract_id": "500dd0dc1d55120a37226189",
+  "steps": [
+    {
+      "step_id": "434a6cb5a29feded1f17",
+      "requirement_ids": [
+        "R:UPF-A"
+      ],
+      "tool": "read_observation",
+      "object_id": "UPF-A",
+      "arguments": {
+        "files": [
+          "data/fixtures/v8/delivery-log_observation.json"
+        ]
+      },
+      "capability": "observation"
+    },
+    {
+      "step_id": "336ce95a2add1ab512a0",
+      "requirement_ids": [
+        "R:SMF-B"
+      ],
+      "tool": "read_observation",
+      "object_id": "SMF-B",
+      "arguments": {
+        "files": [
+          "data/fixtures/v8/delivery-log_observation.json"
+        ]
+      },
+      "capability": "observation"
+    }
+  ],
+  "gaps": []
+}

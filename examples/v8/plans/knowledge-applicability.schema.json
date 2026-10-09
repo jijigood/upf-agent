@@ -1,0 +1,151 @@
+{
+  "$defs": {
+    "KnowledgeAnnotation": {
+      "additionalProperties": false,
+      "properties": {
+        "annotation_id": {
+          "title": "Annotation Id",
+          "type": "string"
+        },
+        "source_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        },
+        "content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Content Sha256",
+          "type": "string"
+        },
+        "product": {
+          "title": "Product",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "object_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Object Ids",
+          "type": "array"
+        },
+        "purposes": {
+          "items": {
+            "enum": [
+              "upf_n4_fault",
+              "upf_n3_fault",
+              "manual_operation",
+              "log_observation"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Purposes",
+          "type": "array"
+        },
+        "basis_kind": {
+          "enum": [
+            "expert_review",
+            "trusted_rule"
+          ],
+          "title": "Basis Kind",
+          "type": "string"
+        },
+        "basis_source": {
+          "minLength": 1,
+          "title": "Basis Source",
+          "type": "string"
+        },
+        "basis_version": {
+          "minLength": 1,
+          "title": "Basis Version",
+          "type": "string"
+        },
+        "reviewed": {
+          "default": false,
+          "title": "Reviewed",
+          "type": "boolean"
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewer"
+        },
+        "rule_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rule Id"
+        },
+        "revoked": {
+          "default": false,
+          "title": "Revoked",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "annotation_id",
+        "source_sha256",
+        "locator",
+        "content_sha256",
+        "product",
+        "version",
+        "object_ids",
+        "purposes",
+        "basis_kind",
+        "basis_source",
+        "basis_version"
+      ],
+      "title": "KnowledgeAnnotation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v8-knowledge-applicability-1",
+      "default": "v8-knowledge-applicability-1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "version": {
+      "minLength": 1,
+      "title": "Version",
+      "type": "string"
+    },
+    "annotations": {
+      "items": {
+        "$ref": "#/$defs/KnowledgeAnnotation"
+      },
+      "title": "Annotations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "version"
+  ],
+  "title": "KnowledgeRegistry",
+  "type": "object"
+}

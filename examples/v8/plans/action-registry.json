@@ -1,0 +1,208 @@
+{
+  "version": "v8-action-registry-1",
+  "actions": {
+    "CHECK_IDENTITY": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {},
+        "title": "EmptyParams",
+        "type": "object"
+      },
+      "permission_kind": "read",
+      "effect_kind": "read",
+      "readable_fields": [],
+      "requires_knowledge": false
+    },
+    "CHECK_INTERFACE": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "interface": {
+            "enum": [
+              "N3",
+              "N4",
+              "N6",
+              "N9"
+            ],
+            "title": "Interface",
+            "type": "string"
+          }
+        },
+        "required": [
+          "interface"
+        ],
+        "title": "InterfaceParams",
+        "type": "object"
+      },
+      "permission_kind": "read",
+      "effect_kind": "read",
+      "readable_fields": [
+        "interface",
+        "state"
+      ],
+      "requires_knowledge": false
+    },
+    "CHECK_CONFIGURATION": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "interface": {
+            "enum": [
+              "N3",
+              "N4",
+              "N6",
+              "N9"
+            ],
+            "title": "Interface",
+            "type": "string"
+          },
+          "field": {
+            "enum": [
+              "n4_enabled",
+              "mtu"
+            ],
+            "title": "Field",
+            "type": "string"
+          }
+        },
+        "required": [
+          "interface",
+          "field"
+        ],
+        "title": "ConfigurationParams",
+        "type": "object"
+      },
+      "permission_kind": "read",
+      "effect_kind": "read",
+      "readable_fields": [],
+      "requires_knowledge": true
+    },
+    "READ_LOG": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "event_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Event Type"
+          }
+        },
+        "title": "LogParams",
+        "type": "object"
+      },
+      "permission_kind": "read",
+      "effect_kind": "read",
+      "readable_fields": [
+        "event_type"
+      ],
+      "requires_knowledge": false
+    },
+    "VERIFY_PEER_MAPPING": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "peer_object_id": {
+            "title": "Peer Object Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "peer_object_id"
+        ],
+        "title": "PeerParams",
+        "type": "object"
+      },
+      "permission_kind": "read",
+      "effect_kind": "read",
+      "readable_fields": [
+        "mapping_version",
+        "service_id"
+      ],
+      "requires_knowledge": false
+    },
+    "REQUEST_EVIDENCE": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Missing",
+            "type": "array"
+          }
+        },
+        "required": [
+          "missing"
+        ],
+        "title": "EvidenceParams",
+        "type": "object"
+      },
+      "permission_kind": "human",
+      "effect_kind": "suggestion",
+      "readable_fields": [],
+      "requires_knowledge": false
+    },
+    "HUMAN_REVIEW": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {},
+        "title": "EmptyParams",
+        "type": "object"
+      },
+      "permission_kind": "human",
+      "effect_kind": "suggestion",
+      "readable_fields": [],
+      "requires_knowledge": false
+    },
+    "PROPOSE_CHANGE": {
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "field": {
+            "enum": [
+              "n4_enabled",
+              "mtu"
+            ],
+            "title": "Field",
+            "type": "string"
+          },
+          "proposed_value": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "title": "Proposed Value"
+          },
+          "requires_approval": {
+            "const": true,
+            "title": "Requires Approval",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "field",
+          "proposed_value",
+          "requires_approval"
+        ],
+        "title": "ChangeParams",
+        "type": "object"
+      },
+      "permission_kind": "suggest",
+      "effect_kind": "suggestion",
+      "readable_fields": [],
+      "requires_knowledge": true
+    }
+  }
+}

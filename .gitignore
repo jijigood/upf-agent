@@ -1,4 +1,7 @@
 .venv/
+.venv-v8/
+.venv-graphrag/
+runtime/
 .venv-retrieval/
 .venv-inference/
 .venv-docling/
@@ -15,3 +18,4 @@ __pycache__/
 data/
 runs/
 !data/.gitkeep
+artifacts/

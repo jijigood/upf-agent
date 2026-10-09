@@ -1,0 +1,232 @@
+{
+  "$defs": {
+    "ActionPattern": {
+      "additionalProperties": false,
+      "properties": {
+        "pattern_id": {
+          "title": "Pattern Id",
+          "type": "string"
+        },
+        "action_type": {
+          "title": "Action Type",
+          "type": "string"
+        },
+        "target": {
+          "title": "Target",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "depends_on": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Depends On",
+          "type": "array"
+        }
+      },
+      "required": [
+        "pattern_id",
+        "action_type",
+        "target"
+      ],
+      "title": "ActionPattern",
+      "type": "object"
+    },
+    "GoldBranch": {
+      "additionalProperties": false,
+      "properties": {
+        "branch_id": {
+          "title": "Branch Id",
+          "type": "string"
+        },
+        "required": {
+          "items": {
+            "$ref": "#/$defs/ActionPattern"
+          },
+          "minItems": 1,
+          "title": "Required",
+          "type": "array"
+        },
+        "optional": {
+          "items": {
+            "$ref": "#/$defs/ActionPattern"
+          },
+          "title": "Optional",
+          "type": "array"
+        }
+      },
+      "required": [
+        "branch_id",
+        "required"
+      ],
+      "title": "GoldBranch",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "v8-independent-gold-1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "case_id": {
+      "title": "Case Id",
+      "type": "string"
+    },
+    "source_group": {
+      "title": "Source Group",
+      "type": "string"
+    },
+    "structure_family": {
+      "title": "Structure Family",
+      "type": "string"
+    },
+    "source_level": {
+      "enum": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "title": "Source Level",
+      "type": "string"
+    },
+    "split": {
+      "default": "dev",
+      "enum": [
+        "dev",
+        "validation",
+        "heldout"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "synthetic": {
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "reviewed": {
+      "default": false,
+      "title": "Reviewed",
+      "type": "boolean"
+    },
+    "reviewers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Reviewers",
+      "type": "array"
+    },
+    "review_version": {
+      "default": "unreviewed",
+      "title": "Review Version",
+      "type": "string"
+    },
+    "solvability": {
+      "enum": [
+        "solvable",
+        "needs_evidence",
+        "human_review"
+      ],
+      "title": "Solvability",
+      "type": "string"
+    },
+    "objects": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Objects",
+      "type": "array"
+    },
+    "version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Version"
+    },
+    "as_of": {
+      "format": "date-time",
+      "title": "As Of",
+      "type": "string"
+    },
+    "permission_fingerprint": {
+      "title": "Permission Fingerprint",
+      "type": "string"
+    },
+    "visible_evidence": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Visible Evidence",
+      "type": "array"
+    },
+    "source_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Source Hashes",
+      "type": "object"
+    },
+    "any_of": {
+      "items": {
+        "$ref": "#/$defs/GoldBranch"
+      },
+      "minItems": 1,
+      "title": "Any Of",
+      "type": "array"
+    },
+    "forbidden_actions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Forbidden Actions",
+      "type": "array"
+    },
+    "stop_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Stop Conditions",
+      "type": "array"
+    },
+    "root_cause_truth": {
+      "default": "unknown",
+      "enum": [
+        "unknown",
+        "expert_verified",
+        "experimental_injection"
+      ],
+      "title": "Root Cause Truth",
+      "type": "string"
+    }
+  },
+  "required": [
+    "case_id",
+    "source_group",
+    "structure_family",
+    "source_level",
+    "synthetic",
+    "solvability",
+    "objects",
+    "version",
+    "as_of",
+    "permission_fingerprint",
+    "visible_evidence",
+    "source_hashes",
+    "any_of",
+    "stop_conditions"
+  ],
+  "title": "CaseGold",
+  "type": "object"
+}

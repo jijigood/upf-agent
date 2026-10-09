@@ -1,0 +1,88 @@
+(APIServer pid=555184) INFO 10-07 13:32:13 [utils.py:299] 
+(APIServer pid=555184) INFO 10-07 13:32:13 [utils.py:299]        █     █     █▄   ▄█
+(APIServer pid=555184) INFO 10-07 13:32:13 [utils.py:299]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.19.1
+(APIServer pid=555184) INFO 10-07 13:32:13 [utils.py:299]   █▄█▀ █     █     █     █  model   /home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507
+(APIServer pid=555184) INFO 10-07 13:32:13 [utils.py:299]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=555184) INFO 10-07 13:32:13 [utils.py:299] 
+(APIServer pid=555184) INFO 10-07 13:32:13 [utils.py:233] non-default args: {'model_tag': '/home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507', 'enable_auto_tool_choice': True, 'tool_call_parser': 'hermes', 'host': '127.0.0.1', 'port': 18000, 'model': '/home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507', 'dtype': 'bfloat16', 'max_model_len': 16384, 'enforce_eager': True, 'served_model_name': ['Qwen3-30B-A3B-Instruct-2507'], 'gpu_memory_utilization': 0.85, 'max_num_seqs': 1}
+(APIServer pid=555184) INFO 10-07 13:32:13 [model.py:549] Resolved architecture: Qwen3MoeForCausalLM
+(APIServer pid=555184) INFO 10-07 13:32:13 [model.py:1678] Using max model len 16384
+(APIServer pid=555184) INFO 10-07 13:32:13 [vllm.py:790] Asynchronous scheduling is enabled.
+(APIServer pid=555184) WARNING 10-07 13:32:13 [vllm.py:848] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(APIServer pid=555184) WARNING 10-07 13:32:13 [vllm.py:859] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(APIServer pid=555184) INFO 10-07 13:32:13 [vllm.py:1025] Cudagraph is disabled under eager mode
+(APIServer pid=555184) INFO 10-07 13:32:13 [compilation.py:292] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=556190) INFO 10-07 13:32:20 [core.py:105] Initializing a V1 LLM engine (v0.19.1) with config: model='/home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507', speculative_config=None, tokenizer='/home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=Qwen3-30B-A3B-Instruct-2507, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_images_per_batch': 0, 'compile_sizes': [], 'compile_ranges_endpoints': [2048], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore pid=556190) INFO 10-07 13:32:21 [parallel_state.py:1400] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://192.168.1.100:41387 backend=nccl
+(EngineCore pid=556190) INFO 10-07 13:32:21 [parallel_state.py:1716] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=556190) INFO 10-07 13:32:22 [gpu_model_runner.py:4735] Starting to load model /home/huangxiaolin/models/Qwen3-30B-A3B-Instruct-2507...
+(EngineCore pid=556190) INFO 10-07 13:32:27 [cuda.py:334] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=556190) INFO 10-07 13:32:27 [flash_attn.py:596] Using FlashAttention version 2
+(EngineCore pid=556190) INFO 10-07 13:32:27 [unquantized.py:186] Using TRITON backend for Unquantized MoE
+(EngineCore pid=556190) Loading safetensors checkpoint shards:   0% Completed | 0/16 [00:00<?, ?it/s]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:   6% Completed | 1/16 [00:23<05:54, 23.66s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  12% Completed | 2/16 [00:47<05:30, 23.60s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  19% Completed | 3/16 [01:10<05:06, 23.55s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  25% Completed | 4/16 [01:34<04:42, 23.56s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  31% Completed | 5/16 [01:58<04:21, 23.75s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  38% Completed | 6/16 [02:23<04:02, 24.29s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  44% Completed | 7/16 [02:48<03:38, 24.31s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  50% Completed | 8/16 [03:13<03:18, 24.75s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  56% Completed | 9/16 [03:38<02:53, 24.81s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  62% Completed | 10/16 [04:04<02:31, 25.20s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  69% Completed | 11/16 [04:30<02:06, 25.32s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  75% Completed | 12/16 [04:56<01:42, 25.53s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  81% Completed | 13/16 [05:20<01:15, 25.19s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  88% Completed | 14/16 [05:46<00:50, 25.31s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards:  94% Completed | 15/16 [06:11<00:25, 25.17s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards: 100% Completed | 16/16 [06:18<00:00, 19.68s/it]
+(EngineCore pid=556190) Loading safetensors checkpoint shards: 100% Completed | 16/16 [06:18<00:00, 23.64s/it]
+(EngineCore pid=556190) 
+(EngineCore pid=556190) INFO 10-07 13:38:45 [default_loader.py:384] Loading weights took 378.22 seconds
+(EngineCore pid=556190) INFO 10-07 13:38:46 [gpu_model_runner.py:4820] Model loading took 56.93 GiB memory and 382.785722 seconds
+(EngineCore pid=556190) WARNING 10-07 13:38:51 [fused_moe.py:1090] Using default MoE config. Performance might be sub-optimal! Config file not found at /home/huangxiaolin/upf-agent/.venv-inference/lib/python3.10/site-packages/vllm/model_executor/layers/fused_moe/configs/E=128,N=768,device_name=NVIDIA_A100_80GB_PCIe.json
+(EngineCore pid=556190) INFO 10-07 13:39:06 [gpu_worker.py:436] Available KV cache memory: 10.02 GiB
+(EngineCore pid=556190) INFO 10-07 13:39:06 [kv_cache_utils.py:1319] GPU KV cache size: 109,472 tokens
+(EngineCore pid=556190) INFO 10-07 13:39:06 [kv_cache_utils.py:1324] Maximum concurrency for 16,384 tokens per request: 6.68x
+(EngineCore pid=556190) INFO 10-07 13:39:06 [core.py:283] init engine (profile, create kv cache, warmup model) took 20.45 seconds
+(EngineCore pid=556190) INFO 10-07 13:39:07 [vllm.py:790] Asynchronous scheduling is enabled.
+(EngineCore pid=556190) WARNING 10-07 13:39:07 [vllm.py:848] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(EngineCore pid=556190) WARNING 10-07 13:39:07 [vllm.py:859] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=556190) INFO 10-07 13:39:07 [vllm.py:1025] Cudagraph is disabled under eager mode
+(EngineCore pid=556190) INFO 10-07 13:39:07 [compilation.py:292] Enabled custom fusions: norm_quant, act_quant
+(APIServer pid=555184) INFO 10-07 13:39:07 [api_server.py:592] Supported tasks: ['generate']
+(APIServer pid=555184) INFO 10-07 13:39:08 [parser_manager.py:202] "auto" tool choice has been enabled.
+(APIServer pid=555184) WARNING 10-07 13:39:08 [model.py:1435] Default vLLM sampling parameters have been overridden by the model's `generation_config.json`: `{'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}`. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+(APIServer pid=555184) INFO 10-07 13:39:08 [hf.py:314] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(APIServer pid=555184) INFO 10-07 13:39:08 [api_server.py:596] Starting vLLM server on http://127.0.0.1:18000
+(APIServer pid=555184) INFO 10-07 13:39:08 [launcher.py:37] Available routes are:
+(APIServer pid=555184) INFO 10-07 13:39:08 [launcher.py:46] Route: /openapi.json, Methods: GET, HEAD
+(APIServer pid=555184) INFO 10-07 13:39:08 [launcher.py:46] Route: /docs, Methods: GET, HEAD
+(APIServer pid=555184) INFO 10-07 13:39:08 [launcher.py:46] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+(APIServer pid=555184) INFO 10-07 13:39:08 [launcher.py:46] Route: /redoc, Methods: GET, HEAD
+(APIServer pid=555184) INFO 10-07 13:39:08 [launcher.py:46] Route: /metrics, Methods: GET
+(APIServer pid=555184) INFO:     Started server process [555184]
+(APIServer pid=555184) INFO:     Waiting for application startup.
+(APIServer pid=555184) INFO:     Application startup complete.
+(APIServer pid=555184) INFO:     127.0.0.1:58764 - "GET /health HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO:     127.0.0.1:35618 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO 10-07 13:45:49 [loggers.py:259] Engine 000: Avg prompt throughput: 1.6 tokens/s, Avg generation throughput: 0.5 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=555184) INFO 10-07 13:45:59 [loggers.py:259] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=555184) INFO:     127.0.0.1:54316 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO:     127.0.0.1:54316 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO 10-07 13:49:29 [loggers.py:259] Engine 000: Avg prompt throughput: 208.6 tokens/s, Avg generation throughput: 8.7 tokens/s, Running: 0 reqs, Waiting: 1 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=555184) INFO:     127.0.0.1:54316 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO 10-07 13:49:39 [loggers.py:259] Engine 000: Avg prompt throughput: 34.4 tokens/s, Avg generation throughput: 0.9 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=555184) INFO 10-07 13:49:49 [loggers.py:259] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=555184) INFO:     127.0.0.1:38504 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO 10-07 13:51:19 [loggers.py:259] Engine 000: Avg prompt throughput: 1.6 tokens/s, Avg generation throughput: 0.5 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=555184) INFO 10-07 13:51:29 [loggers.py:259] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=555184) INFO:     127.0.0.1:43020 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO:     127.0.0.1:43020 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO:     127.0.0.1:43020 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO 10-07 13:51:39 [loggers.py:259] Engine 000: Avg prompt throughput: 3.0 tokens/s, Avg generation throughput: 9.6 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 49.1%
+(APIServer pid=555184) INFO 10-07 13:51:49 [loggers.py:259] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 49.1%
+(APIServer pid=555184) INFO:     127.0.0.1:38404 - "GET /health HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO:     127.0.0.1:36230 - "GET /health HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO:     127.0.0.1:36230 - "GET /v1/models HTTP/1.1" 200 OK
+(APIServer pid=555184) INFO:     127.0.0.1:48460 - "GET /health HTTP/1.1" 200 OK

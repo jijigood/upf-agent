@@ -1,0 +1,501 @@
+{
+  "dify_paths_absent": {
+    "dify": true,
+    "AITO": true
+  },
+  "blocked_connections": {
+    "external_ipv4": "OSError",
+    "external_ipv6": "OSError",
+    "host_loopback_port_80": "ConnectionRefusedError",
+    "host_loopback_port_8080": "ConnectionRefusedError",
+    "host_loopback_port_5001": "ConnectionRefusedError",
+    "host_loopback_port_8000": "ConnectionRefusedError"
+  },
+  "network_routes": "Iface\tDestination\tGateway \tFlags\tRefCnt\tUse\tMetric\tMask\t\tMTU\tWindow\tIRTT                                                       \n",
+  "model_bridge_destination": "host loopback 127.0.0.1:18000 only",
+  "model_reply": "本地服务正常。",
+  "log_events": 32539,
+  "original_log_context_verified": true,
+  "negative_controls": {
+    "missing_retrieval_environment_rejected": true,
+    "missing_original_source_rejected": true
+  },
+  "answers": [
+    {
+      "question": "手册‘配置root SSH登陆权限’中 systemctl 的命令原文是什么？",
+      "answer": {
+        "pipeline_version": "p3-answer-v7-native-complete-section",
+        "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+        "question": "手册‘配置root SSH登陆权限’中 systemctl 的命令原文是什么？",
+        "index_generation": "daa6f8e85f8a664b0a55",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "product": "UPF",
+        "version": null,
+        "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "claims": [
+          {
+            "text": "systemctl restart sshd\n重启sshd服务，使配置文件生效。",
+            "citations": [
+              {
+                "chunk_id": "chunk-e3529db276d608065d796152",
+                "quote": "systemctl restart sshd"
+              },
+              {
+                "chunk_id": "chunk-71311040510f8df9aa5efb17",
+                "quote": "重启sshd服务，使配置文件生效。"
+              }
+            ]
+          }
+        ],
+        "citations": [
+          {
+            "index_generation": "daa6f8e85f8a664b0a55",
+            "p2_generation": "c05fe621e37ebdb1c663",
+            "source_verified": true,
+            "chunk_id": "chunk-e3529db276d608065d796152",
+            "source_id": "manual-1edf23113651430f",
+            "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+            "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+            "role": "manual",
+            "product": "UPF",
+            "version": "5.0",
+            "section_path": [
+              "安装并配置操作系统",
+              "物理机安装操作系统并配置",
+              "配置UPF物理机",
+              "配置root SSH登陆权限"
+            ],
+            "parent_id": "section-6622b1bf5a5e87007b26",
+            "kind": "command",
+            "text": "物理机安装操作系统并配置 / 配置UPF物理机 / 配置root SSH登陆权限\nsystemctl restart sshd",
+            "token_count": 28,
+            "block_ids": [
+              "manual-1edf23113651430f:b000898"
+            ],
+            "locators": [
+              "word/document.xml/body/p[369]"
+            ],
+            "ordinal_start": 898,
+            "ordinal_end": 898,
+            "extraction_methods": [
+              "docx-xml-v4"
+            ],
+            "quality_flags": [
+              "candidate_requires_review"
+            ],
+            "interface_tags": [],
+            "command_id": "cmd-5ffa41c281868cff",
+            "command_family": "other",
+            "table_id": null,
+            "table_header": null,
+            "table_cells": []
+          },
+          {
+            "index_generation": "daa6f8e85f8a664b0a55",
+            "p2_generation": "c05fe621e37ebdb1c663",
+            "source_verified": true,
+            "chunk_id": "chunk-71311040510f8df9aa5efb17",
+            "source_id": "manual-1edf23113651430f",
+            "source_sha256": "1edf23113651430f97a7110afd82fd5251551169e9185cbc1c136baf85b6bc6e",
+            "relative_path": "UPF 5.0安装部署指导书(新网管版)(1).docx",
+            "role": "manual",
+            "product": "UPF",
+            "version": "5.0",
+            "section_path": [
+              "安装并配置操作系统",
+              "物理机安装操作系统并配置",
+              "配置UPF物理机",
+              "配置root SSH登陆权限"
+            ],
+            "parent_id": "section-6622b1bf5a5e87007b26",
+            "kind": "prose",
+            "text": "物理机安装操作系统并配置 / 配置UPF物理机 / 配置root SSH登陆权限\n配置root SSH登陆权限\n在远程kvm按照以下步骤修改\n①打开root权限\n用普通用户登录console，以“guest”为例\n在guest用户下，执行sudo -s命令进入root用户\n执行passwd命令配置root的密码\n在root权限下执行如下命令，进入sshd_config文件编辑界面。\n$ vim /etc/ssh/sshd_config\n按【I】键进入编辑，找到”#PermitRootLogin prohibit-password”，改为：\nPermitRootLogin yes\n找到”#PasswordAuthentication yes，去除“#”，改为：\nPasswordAuthentication yes\n【ESC】键，输入“:wq”，保存并退出vim编辑器。\n重启sshd服务，使配置文件生效。",
+            "token_count": 175,
+            "block_ids": [
+              "manual-1edf23113651430f:b000884",
+              "manual-1edf23113651430f:b000885",
+              "manual-1edf23113651430f:b000886",
+              "manual-1edf23113651430f:b000887",
+              "manual-1edf23113651430f:b000888",
+              "manual-1edf23113651430f:b000889",
+              "manual-1edf23113651430f:b000890",
+              "manual-1edf23113651430f:b000891",
+              "manual-1edf23113651430f:b000892",
+              "manual-1edf23113651430f:b000893",
+              "manual-1edf23113651430f:b000894",
+              "manual-1edf23113651430f:b000895",
+              "manual-1edf23113651430f:b000896",
+              "manual-1edf23113651430f:b000897"
+            ],
+            "locators": [
+              "word/document.xml/body/p[355]",
+              "word/document.xml/body/p[356]",
+              "word/document.xml/body/p[357]",
+              "word/document.xml/body/p[358]",
+              "word/document.xml/body/p[359]",
+              "word/document.xml/body/p[360]",
+              "word/document.xml/body/p[361]",
+              "word/document.xml/body/p[362]",
+              "word/document.xml/body/p[363]",
+              "word/document.xml/body/p[364]",
+              "word/document.xml/body/p[365]",
+              "word/document.xml/body/p[366]",
+              "word/document.xml/body/p[367]",
+              "word/document.xml/body/p[368]"
+            ],
+            "ordinal_start": 884,
+            "ordinal_end": 897,
+            "extraction_methods": [
+              "docx-xml-v4"
+            ],
+            "quality_flags": [],
+            "interface_tags": [],
+            "command_id": null,
+            "command_family": null,
+            "table_id": null,
+            "table_header": null,
+            "table_cells": []
+          }
+        ],
+        "warnings": [
+          "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+          "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+        ],
+        "support_check": "model_checked_not_human_verified",
+        "source_term_gate": {
+          "unsupported_terms": [],
+          "scope": "complete_native_manual_product_version_corpus"
+        },
+        "relevance_gate": {
+          "has_relevant_evidence": true,
+          "relevant_quote_ids": [
+            "S1Q2",
+            "S2Q15"
+          ],
+          "missing_information": []
+        },
+        "validation_errors": [],
+        "generation_attempts": 1,
+        "audit": {
+          "selection": {
+            "status": "completed",
+            "claims": [
+              {
+                "text": "systemctl restart sshd",
+                "quote_ids": [
+                  "S1Q2",
+                  "S2Q15"
+                ]
+              }
+            ],
+            "missing_information": []
+          },
+          "draft": {
+            "status": "completed",
+            "claims": [
+              {
+                "text": "systemctl restart sshd",
+                "citations": [
+                  {
+                    "chunk_id": "chunk-e3529db276d608065d796152",
+                    "quote": "systemctl restart sshd"
+                  },
+                  {
+                    "chunk_id": "chunk-71311040510f8df9aa5efb17",
+                    "quote": "重启sshd服务，使配置文件生效。"
+                  }
+                ]
+              }
+            ],
+            "missing_information": []
+          },
+          "support_decisions": [
+            true
+          ]
+        },
+        "status": "completed",
+        "missing_information": []
+      }
+    },
+    {
+      "question": "手册历史案例‘UPFD 的N4 接口8805端口未侦听’记录了什么症状、信息收集及处理方法？",
+      "answer": {
+        "pipeline_version": "p3-answer-v7-native-complete-section",
+        "publication_policy": "exact_selected_source_units_model_paraphrase_audit_only",
+        "question": "手册历史案例‘UPFD 的N4 接口8805端口未侦听’记录了什么症状、信息收集及处理方法？",
+        "index_generation": "daa6f8e85f8a664b0a55",
+        "p2_generation": "c05fe621e37ebdb1c663",
+        "product": "UPF",
+        "version": null,
+        "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "claims": [
+          {
+            "text": "UPFD 的N4 接口8805端口未侦听\n症状现象\n终端无法正常建立会话；\nN4偶联未建立；\nUPF N4接口地址未配置；\n信息收集\n检查UPF N4接口地址是否正常配置：使用upfmgr ctrl命令进入cli交互界面，执行show config 查看接口配置信息；\n若接口地址正常配置：使用upfmgr bash命令进入pod，netstat -nap|grep 8805查看端口是否正常监听，若端口未正常监听查看日志信息tail -f /var/log/upf/upfd/upfd-gen.log；\n解决方法\n若接口未正常配置，把接口地址配置完后再查看8805端口是否正常监听；\n如接口地址配置正确，但是N4的8805端口仍然未正常监听，使用upfmgr restart命令重启upfd后看是否正常监听；",
+            "citations": [
+              {
+                "chunk_id": "chunk-a5fe4f06446c7d0b912e0a86",
+                "quote": "UPFD 的N4 接口8805端口未侦听"
+              },
+              {
+                "chunk_id": "chunk-29644bf94f2add7cce44a225",
+                "quote": "症状现象\n终端无法正常建立会话；\nN4偶联未建立；\nUPF N4接口地址未配置；"
+              },
+              {
+                "chunk_id": "chunk-3d1e35446073fb46992c0d86",
+                "quote": "信息收集\n检查UPF N4接口地址是否正常配置：使用upfmgr ctrl命令进入cli交互界面，执行show config 查看接口配置信息；\n若接口地址正常配置：使用upfmgr bash命令进入pod，netstat -nap|grep 8805查看端口是否正常监听，若端口未正常监听查看日志信息tail -f /var/log/upf/upfd/upfd-gen.log；"
+              },
+              {
+                "chunk_id": "chunk-f1cdd8fb245420276b3bd4f3",
+                "quote": "解决方法\n若接口未正常配置，把接口地址配置完后再查看8805端口是否正常监听；\n如接口地址配置正确，但是N4的8805端口仍然未正常监听，使用upfmgr restart命令重启upfd后看是否正常监听；"
+              }
+            ]
+          }
+        ],
+        "citations": [
+          {
+            "index_generation": "daa6f8e85f8a664b0a55",
+            "p2_generation": "c05fe621e37ebdb1c663",
+            "source_verified": true,
+            "chunk_id": "chunk-a5fe4f06446c7d0b912e0a86",
+            "source_id": "manual-9f16bf8ca11723a2",
+            "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+            "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+            "role": "manual",
+            "product": "UPF",
+            "version": "unknown",
+            "section_path": [
+              "业务故障案例",
+              "UPFD 的N4 接口8805端口未侦听"
+            ],
+            "parent_id": "section-8ca3a5ba350a0649d7c1",
+            "kind": "prose",
+            "text": "业务故障案例 / UPFD 的N4 接口8805端口未侦听\nUPFD 的N4 接口8805端口未侦听",
+            "token_count": 39,
+            "block_ids": [
+              "manual-9f16bf8ca11723a2:b000453"
+            ],
+            "locators": [
+              "word/document.xml/body/p[168]"
+            ],
+            "ordinal_start": 453,
+            "ordinal_end": 453,
+            "extraction_methods": [
+              "docx-xml-v4"
+            ],
+            "quality_flags": [],
+            "interface_tags": [
+              "N4"
+            ],
+            "command_id": null,
+            "command_family": null,
+            "table_id": null,
+            "table_header": null,
+            "table_cells": []
+          },
+          {
+            "index_generation": "daa6f8e85f8a664b0a55",
+            "p2_generation": "c05fe621e37ebdb1c663",
+            "source_verified": true,
+            "chunk_id": "chunk-29644bf94f2add7cce44a225",
+            "source_id": "manual-9f16bf8ca11723a2",
+            "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+            "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+            "role": "manual",
+            "product": "UPF",
+            "version": "unknown",
+            "section_path": [
+              "业务故障案例",
+              "UPFD 的N4 接口8805端口未侦听",
+              "症状现象"
+            ],
+            "parent_id": "section-94e1049c03de6b88ee2e",
+            "kind": "prose",
+            "text": "业务故障案例 / UPFD 的N4 接口8805端口未侦听 / 症状现象\n症状现象\n终端无法正常建立会话；\nN4偶联未建立；\nUPF N4接口地址未配置；",
+            "token_count": 54,
+            "block_ids": [
+              "manual-9f16bf8ca11723a2:b000454",
+              "manual-9f16bf8ca11723a2:b000455",
+              "manual-9f16bf8ca11723a2:b000456",
+              "manual-9f16bf8ca11723a2:b000457"
+            ],
+            "locators": [
+              "word/document.xml/body/p[169]",
+              "word/document.xml/body/p[170]",
+              "word/document.xml/body/p[171]",
+              "word/document.xml/body/p[172]"
+            ],
+            "ordinal_start": 454,
+            "ordinal_end": 457,
+            "extraction_methods": [
+              "docx-xml-v4"
+            ],
+            "quality_flags": [],
+            "interface_tags": [
+              "N4"
+            ],
+            "command_id": null,
+            "command_family": null,
+            "table_id": null,
+            "table_header": null,
+            "table_cells": []
+          },
+          {
+            "index_generation": "daa6f8e85f8a664b0a55",
+            "p2_generation": "c05fe621e37ebdb1c663",
+            "source_verified": true,
+            "chunk_id": "chunk-3d1e35446073fb46992c0d86",
+            "source_id": "manual-9f16bf8ca11723a2",
+            "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+            "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+            "role": "manual",
+            "product": "UPF",
+            "version": "unknown",
+            "section_path": [
+              "业务故障案例",
+              "UPFD 的N4 接口8805端口未侦听",
+              "信息收集"
+            ],
+            "parent_id": "section-9944a27c711d13e4651a",
+            "kind": "prose",
+            "text": "业务故障案例 / UPFD 的N4 接口8805端口未侦听 / 信息收集\n信息收集\n检查UPF N4接口地址是否正常配置：使用upfmgr ctrl命令进入cli交互界面，执行show config 查看接口配置信息；\n若接口地址正常配置：使用upfmgr bash命令进入pod，netstat -nap|grep 8805查看端口是否正常监听，若端口未正常监听查看日志信息tail -f /var/log/upf/upfd/upfd-gen.log；",
+            "token_count": 118,
+            "block_ids": [
+              "manual-9f16bf8ca11723a2:b000458",
+              "manual-9f16bf8ca11723a2:b000459",
+              "manual-9f16bf8ca11723a2:b000460"
+            ],
+            "locators": [
+              "word/document.xml/body/p[173]",
+              "word/document.xml/body/p[174]",
+              "word/document.xml/body/p[175]"
+            ],
+            "ordinal_start": 458,
+            "ordinal_end": 460,
+            "extraction_methods": [
+              "docx-xml-v4"
+            ],
+            "quality_flags": [],
+            "interface_tags": [
+              "N4"
+            ],
+            "command_id": null,
+            "command_family": null,
+            "table_id": null,
+            "table_header": null,
+            "table_cells": []
+          },
+          {
+            "index_generation": "daa6f8e85f8a664b0a55",
+            "p2_generation": "c05fe621e37ebdb1c663",
+            "source_verified": true,
+            "chunk_id": "chunk-f1cdd8fb245420276b3bd4f3",
+            "source_id": "manual-9f16bf8ca11723a2",
+            "source_sha256": "9f16bf8ca11723a22663914bed8ffb2b907c0908ba1c64566fc2a1a9fb49ff85",
+            "relative_path": "中国联通5G专网UPF紧急故障指引0429(1).docx",
+            "role": "manual",
+            "product": "UPF",
+            "version": "unknown",
+            "section_path": [
+              "业务故障案例",
+              "UPFD 的N4 接口8805端口未侦听",
+              "解决方法"
+            ],
+            "parent_id": "section-8dd19a4afda364ade0ab",
+            "kind": "prose",
+            "text": "业务故障案例 / UPFD 的N4 接口8805端口未侦听 / 解决方法\n解决方法\n若接口未正常配置，把接口地址配置完后再查看8805端口是否正常监听；\n如接口地址配置正确，但是N4的8805端口仍然未正常监听，使用upfmgr restart命令重启upfd后看是否正常监听；",
+            "token_count": 88,
+            "block_ids": [
+              "manual-9f16bf8ca11723a2:b000461",
+              "manual-9f16bf8ca11723a2:b000462",
+              "manual-9f16bf8ca11723a2:b000463"
+            ],
+            "locators": [
+              "word/document.xml/body/p[176]",
+              "word/document.xml/body/p[177]",
+              "word/document.xml/body/p[178]"
+            ],
+            "ordinal_start": 461,
+            "ordinal_end": 463,
+            "extraction_methods": [
+              "docx-xml-v4"
+            ],
+            "quality_flags": [],
+            "interface_tags": [
+              "N4"
+            ],
+            "command_id": null,
+            "command_family": null,
+            "table_id": null,
+            "table_header": null,
+            "table_cells": []
+          }
+        ],
+        "warnings": [
+          "命令须核对实际版本和操作前提；资料抽样通过不等于可直接现场执行。",
+          "回答发布所选手册原文片段；完整操作流程和示例参数的现场适用性尚未验证。"
+        ],
+        "support_check": "native_source_identity_and_complete_section_not_human_verified",
+        "source_term_gate": {
+          "unsupported_terms": [],
+          "scope": "complete_native_manual_product_version_corpus"
+        },
+        "status": "partial",
+        "missing_information": [
+          "示例适用范围仅限所引《中国联通5G专网UPF紧急故障指引0429(1).docx》的“业务故障案例 / UPFD 的N4 接口8805端口未侦听”原文；来源登记版本为unknown，尚未核对目标设备、实际环境或当前故障。",
+          "这是手册中的历史故障案例，不代表当前设备正在发生同一故障。"
+        ],
+        "answer_mode": "native_complete_section_extract",
+        "generation_attempts": 0,
+        "model_requests_for_manual_answer": 0,
+        "audit": {
+          "native_section": {
+            "source_id": "manual-9f16bf8ca11723a2",
+            "path": [
+              "业务故障案例",
+              "UPFD 的N4 接口8805端口未侦听"
+            ],
+            "method": "explicit_section",
+            "source_chunk_ids": [
+              "chunk-a5fe4f06446c7d0b912e0a86",
+              "chunk-29644bf94f2add7cce44a225",
+              "chunk-3d1e35446073fb46992c0d86",
+              "chunk-f1cdd8fb245420276b3bd4f3"
+            ],
+            "source_conflicts": [],
+            "empty_source_sections": [],
+            "source_gap_notes": [
+              "这是手册中的历史故障案例，不代表当前设备正在发生同一故障。"
+            ],
+            "neighboring_cases": []
+          }
+        }
+      }
+    }
+  ],
+  "checkpoint": {
+    "resumed_id": "ad725e91fb6f4c5eb0d07ad6259b1999",
+    "status": "partial",
+    "facts": [
+      "所选范围包含 32539 条日志事件，覆盖 32539 行；计数单位为消息，不是独立故障。",
+      "unclassified / unknown：22718 条消息。",
+      "pfcp_session_deleted / observed：5715 条消息。",
+      "far_handover / observed：3238 条消息。",
+      "gtpu_echo_retry / observed：382 条消息。",
+      "gtpu_unreachable_detected / raised：120 条消息。",
+      "gtpu_unreachable_report / raised：120 条消息。",
+      "interface_index_failure / observed：111 条消息。",
+      "n4_name_failure / observed：30 条消息。",
+      "pfcp_heartbeat_request / observed：23 条消息。",
+      "upfd_start / observed：21 条消息。",
+      "timer_init_failure / observed：16 条消息。",
+      "pfcp_node_unreachable / raised：14 条消息。",
+      "pfcp_node_unreachable / cleared：12 条消息。",
+      "license_not_installed / cleared：11 条消息。",
+      "pfcp_heartbeat_response / observed：7 条消息。",
+      "license_not_installed / raised：1 条消息。"
+    ]
+  },
+  "scope": "isolated application/retrieval; host generation service reused; not M6 accuracy",
+  "data_workspace": "/home/huangxiaolin/upf-agent-delivery/p7-20261007/restored-workspace",
+  "environment_workspace": "/home/huangxiaolin/upf-agent-delivery/p7-20261007/application-workspace-v2"
+}

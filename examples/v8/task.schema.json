@@ -1,0 +1,442 @@
+{
+  "$defs": {
+    "AgentBudget": {
+      "additionalProperties": false,
+      "properties": {
+        "max_rounds": {
+          "default": 3,
+          "maximum": 3,
+          "minimum": 1,
+          "title": "Max Rounds",
+          "type": "integer"
+        },
+        "max_tool_calls": {
+          "default": 8,
+          "maximum": 8,
+          "minimum": 1,
+          "title": "Max Tool Calls",
+          "type": "integer"
+        },
+        "max_model_calls": {
+          "default": 8,
+          "maximum": 8,
+          "minimum": 1,
+          "title": "Max Model Calls",
+          "type": "integer"
+        },
+        "timeout_seconds": {
+          "default": 180.0,
+          "exclusiveMinimum": 0,
+          "maximum": 180,
+          "title": "Timeout Seconds",
+          "type": "number"
+        }
+      },
+      "title": "AgentBudget",
+      "type": "object"
+    },
+    "BusinessPath": {
+      "additionalProperties": false,
+      "properties": {
+        "service_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Service Id"
+        },
+        "positions": {
+          "items": {
+            "$ref": "#/$defs/PathPosition"
+          },
+          "title": "Positions",
+          "type": "array"
+        },
+        "source_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Id"
+        },
+        "source_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Sha256"
+        },
+        "source_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Path"
+        },
+        "version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Version"
+        },
+        "resolution": {
+          "default": "unknown",
+          "enum": [
+            "resolved",
+            "candidate",
+            "unknown"
+          ],
+          "title": "Resolution",
+          "type": "string"
+        },
+        "candidates": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Candidates",
+          "type": "array"
+        },
+        "synthetic": {
+          "default": false,
+          "title": "Synthetic",
+          "type": "boolean"
+        }
+      },
+      "title": "BusinessPath",
+      "type": "object"
+    },
+    "PathPosition": {
+      "additionalProperties": false,
+      "properties": {
+        "object_id": {
+          "minLength": 1,
+          "title": "Object Id",
+          "type": "string"
+        },
+        "domain": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Domain"
+        },
+        "interface": {
+          "anyOf": [
+            {
+              "enum": [
+                "N3",
+                "N4",
+                "N6",
+                "N9"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interface"
+        }
+      },
+      "required": [
+        "object_id"
+      ],
+      "title": "PathPosition",
+      "type": "object"
+    },
+    "PermissionScope": {
+      "additionalProperties": false,
+      "properties": {
+        "objects": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Objects",
+          "type": "array"
+        },
+        "domains": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Domains",
+          "type": "array"
+        },
+        "readable_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Readable Fields",
+          "type": "array"
+        },
+        "revision": {
+          "default": "1",
+          "title": "Revision",
+          "type": "string"
+        },
+        "execute": {
+          "const": false,
+          "default": false,
+          "title": "Execute",
+          "type": "boolean"
+        }
+      },
+      "title": "PermissionScope",
+      "type": "object"
+    },
+    "TimeWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "format": "date-time",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date-time",
+          "title": "End",
+          "type": "string"
+        },
+        "timezone_source": {
+          "title": "Timezone Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "timezone_source"
+      ],
+      "title": "TimeWindow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "pattern": "^[0-9a-f]{32}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "question": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "template": {
+      "enum": [
+        "upf_n4_fault",
+        "upf_n3_fault",
+        "manual_operation",
+        "log_observation"
+      ],
+      "title": "Template",
+      "type": "string"
+    },
+    "path": {
+      "$ref": "#/$defs/BusinessPath"
+    },
+    "objects": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Objects",
+      "type": "array"
+    },
+    "product": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Product"
+    },
+    "version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Version"
+    },
+    "time_window": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TimeWindow"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "as_of": {
+      "format": "date-time",
+      "title": "As Of",
+      "type": "string"
+    },
+    "permission": {
+      "$ref": "#/$defs/PermissionScope"
+    },
+    "aliases": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "object"
+    },
+    "synthetic": {
+      "default": false,
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "budget": {
+      "$ref": "#/$defs/AgentBudget"
+    },
+    "log_generation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Log Generation"
+    },
+    "topology_generation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Topology Generation"
+    },
+    "manual_generation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Manual Generation"
+    },
+    "observation_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Observation Files",
+      "type": "array"
+    },
+    "model_profile": {
+      "default": "baseline",
+      "enum": [
+        "baseline",
+        "target"
+      ],
+      "title": "Model Profile",
+      "type": "string"
+    },
+    "model_enabled": {
+      "default": false,
+      "title": "Model Enabled",
+      "type": "boolean"
+    },
+    "retrieval_device": {
+      "default": "cuda:1",
+      "enum": [
+        "cpu",
+        "cuda:0",
+        "cuda:1"
+      ],
+      "title": "Retrieval Device",
+      "type": "string"
+    },
+    "interrupt_before_collect": {
+      "default": false,
+      "title": "Interrupt Before Collect",
+      "type": "boolean"
+    },
+    "graph_backend": {
+      "default": "memory",
+      "enum": [
+        "memory",
+        "neo4j"
+      ],
+      "title": "Graph Backend",
+      "type": "string"
+    },
+    "execution_fingerprint": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Execution Fingerprint"
+    }
+  },
+  "required": [
+    "question",
+    "template",
+    "objects"
+  ],
+  "title": "OrchestrationTask",
+  "type": "object"
+}

@@ -1,0 +1,58 @@
+{
+  "candidate_logs": [
+    {
+      "path": "/home/huangxiaolin/upf-agent/data/raw/upfd_masked.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/dify/upfd_masked.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/GraphRAG升级-阶段1-20261004/source-snapshots/SRC-LOG.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/GraphRAG升级-阶段1-20261004/case/source-snapshots/v7/SRC-LOG-a698d0293422.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/GraphRAG升级-阶段1-20261004/case/source-snapshots/v7/SRC-LOG.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/阶段9-20261006-检索与审查收尾/package-v7-r1/inputs/source-snapshots/v7/SRC-LOG-a698d0293422.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/阶段9-20261006-检索与审查收尾/assembly-inputs-v7/source-snapshots/v7/SRC-LOG-a698d0293422.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/阶段9-20261006-检索与审查收尾/assembly-inputs-v7/source-snapshots/v7/SRC-LOG.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/阶段8-20261006-DOCX装配/assembly-inputs-v6-r3/GraphRAG升级-阶段1-20261004/source-snapshots/SRC-LOG.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    },
+    {
+      "path": "/home/huangxiaolin/专利/阶段8-20261006-DOCX装配/package-r6/source-snapshot/GraphRAG升级-阶段1-20261004/source-snapshots/SRC-LOG.log",
+      "size_bytes": 6347974,
+      "sha256": "a698d029342259b717db6f0520f4e9b006e59ae6e8ae743d0cc482199b242fcc"
+    }
+  ],
+  "distinct_source_hashes": 1,
+  "new_independent_log_available": false,
+  "scope": "registered raw UPF log, Dify source copy and patent source snapshots; tool/test logs and synthetic capacity data excluded",
+  "M6_pass": false
+}

@@ -1,0 +1,138 @@
+{
+  "contract_id": "142613e2f89c5a5617c7461f",
+  "version": "1",
+  "task_id": "7c3849e5bbda4fa084d42804b18b58fb",
+  "template": "manual_operation",
+  "task_fingerprint": "ce8317010588f332c5facb5c1ce19c70d5e5cb651c8f88062af12eb84dd74209",
+  "requirements": [
+    {
+      "requirement_id": "K:UPF-A",
+      "kind": "K",
+      "objects": [
+        "UPF-A"
+      ],
+      "domains": [
+        "domain-0"
+      ],
+      "fields": [
+        "instruction"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": "manual_operation"
+    },
+    {
+      "requirement_id": "A:UPF-A",
+      "kind": "A",
+      "objects": [
+        "UPF-A"
+      ],
+      "domains": [
+        "domain-0"
+      ],
+      "fields": [
+        "instruction"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": false,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "C:UPF-A",
+      "kind": "C",
+      "objects": [
+        "UPF-A"
+      ],
+      "domains": [],
+      "fields": [],
+      "upstream": [
+        "K:UPF-A"
+      ],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "K:SMF-B",
+      "kind": "K",
+      "objects": [
+        "SMF-B"
+      ],
+      "domains": [
+        "domain-1"
+      ],
+      "fields": [
+        "instruction"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": "manual_operation"
+    },
+    {
+      "requirement_id": "A:SMF-B",
+      "kind": "A",
+      "objects": [
+        "SMF-B"
+      ],
+      "domains": [
+        "domain-1"
+      ],
+      "fields": [
+        "instruction"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": false,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "C:SMF-B",
+      "kind": "C",
+      "objects": [
+        "SMF-B"
+      ],
+      "domains": [],
+      "fields": [],
+      "upstream": [
+        "K:SMF-B"
+      ],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    }
+  ],
+  "gaps": []
+}

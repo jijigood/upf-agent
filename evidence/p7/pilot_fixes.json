@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-07",
+  "issues_fixed": [
+    {
+      "issue": "Committed SQLite WAL pages were not guaranteed in a plain file copy",
+      "fix": "SQLite backup API, close output connection, DELETE journal mode; committed-WAL restore test passed"
+    },
+    {
+      "issue": "Existing historical rendered reports use internal symlinks",
+      "fix": "Flatten internal aliases into payload files, retain alias map; reject external symlinks"
+    },
+    {
+      "issue": "Generic task-lock filter also excluded uv.lock in the first pilot snapshot",
+      "fix": "Keep uv.lock explicitly; recreation source-snapshot-v2 includes lock; offline application build passed"
+    },
+    {
+      "issue": "Read-only root prevents creating /ipc mount destination",
+      "fix": "Mount the fixed model relay under writable namespace /tmp"
+    }
+  ],
+  "source_snapshot_v1": "superseded pilot; missing uv.lock; do not use for deployment",
+  "source_snapshot_v2": "current validated source input",
+  "M6_results_modified": false
+}

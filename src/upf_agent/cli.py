@@ -30,10 +30,12 @@ from upf_agent.quality_repair import active_ocr_path, rebase_ocr, repair_ocr
 from upf_agent.retrieval import RetrievalWorker, RetrievalWorkerError
 from upf_agent.review import make_review_packet, write_review_sheet
 from upf_agent.serve import ServiceLaunchBlocked, launch_local_model
+from upf_agent.v8.cli import app as v8_app
 
 app = typer.Typer(help="Offline UPF Agent migration CLI", no_args_is_help=True)
 app.add_typer(p4_app, name="p4")
 app.add_typer(p6_app, name="p6")
+app.add_typer(v8_app, name="v8")
 for command in agent_app.registered_commands:
     app.command(command.name)(command.callback)
 console = Console()

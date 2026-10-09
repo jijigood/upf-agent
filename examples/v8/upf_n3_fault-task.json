@@ -1,0 +1,80 @@
+{
+  "run_id": "9c709863c37142b0bff9f872126778a9",
+  "question": "检查 UPF-A 与 SMF-B 的接口证据并生成只读建议",
+  "template": "upf_n3_fault",
+  "path": {
+    "service_id": "service-001",
+    "positions": [
+      {
+        "object_id": "UPF-A",
+        "domain": "domain-0",
+        "interface": "N3"
+      },
+      {
+        "object_id": "SMF-B",
+        "domain": "domain-1",
+        "interface": "N3"
+      }
+    ],
+    "source_id": "synthetic-delivery-upf_n3_fault",
+    "source_sha256": "758e2d0ac230244a9caec6925f1d0d2d66540b667d38eb16728b4fc709644256",
+    "source_path": "data/fixtures/v8/delivery-upf_n3_fault.json",
+    "version": "map-1",
+    "resolution": "resolved",
+    "candidates": [],
+    "synthetic": true
+  },
+  "objects": [
+    "UPF-A",
+    "SMF-B"
+  ],
+  "product": "UPF",
+  "version": "5.0",
+  "time_window": null,
+  "as_of": "2026-10-07T00:00:00Z",
+  "permission": {
+    "objects": [
+      "UPF-A",
+      "SMF-B"
+    ],
+    "domains": [
+      "domain-0",
+      "domain-1"
+    ],
+    "readable_fields": [
+      "instruction",
+      "interface",
+      "state",
+      "n4_enabled",
+      "mtu",
+      "event_type",
+      "service_id",
+      "local_endpoint",
+      "peer_endpoint",
+      "direction",
+      "mapping_version"
+    ],
+    "revision": "1",
+    "execute": false
+  },
+  "aliases": {},
+  "synthetic": true,
+  "budget": {
+    "max_rounds": 3,
+    "max_tool_calls": 8,
+    "max_model_calls": 8,
+    "timeout_seconds": 180.0
+  },
+  "log_generation": null,
+  "topology_generation": null,
+  "manual_generation": null,
+  "observation_files": [
+    "data/fixtures/v8/delivery-upf_n3_fault.json"
+  ],
+  "model_profile": "baseline",
+  "model_enabled": false,
+  "retrieval_device": "cuda:1",
+  "interrupt_before_collect": false,
+  "graph_backend": "memory",
+  "execution_fingerprint": null
+}

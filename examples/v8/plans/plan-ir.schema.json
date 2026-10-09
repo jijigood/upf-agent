@@ -1,0 +1,246 @@
+{
+  "$defs": {
+    "EvidenceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "revision": {
+          "minimum": 1,
+          "title": "Revision",
+          "type": "integer"
+        },
+        "source_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "revision",
+        "source_sha256",
+        "locator"
+      ],
+      "title": "EvidenceReference",
+      "type": "object"
+    },
+    "PlanStep": {
+      "additionalProperties": false,
+      "properties": {
+        "step_id": {
+          "maxLength": 80,
+          "minLength": 1,
+          "title": "Step Id",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "action_type": {
+          "title": "Action Type",
+          "type": "string"
+        },
+        "target": {
+          "title": "Target",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "depends_on": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Depends On",
+          "type": "array"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceReference"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "preconditions": {
+          "items": {
+            "$ref": "#/$defs/Precondition"
+          },
+          "title": "Preconditions",
+          "type": "array"
+        },
+        "on_unknown": {
+          "default": "stop",
+          "enum": [
+            "request_evidence",
+            "human_review",
+            "stop"
+          ],
+          "title": "On Unknown",
+          "type": "string"
+        },
+        "expected_observations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Expected Observations",
+          "type": "array"
+        },
+        "permission_kind": {
+          "default": "read",
+          "enum": [
+            "read",
+            "suggest",
+            "human"
+          ],
+          "title": "Permission Kind",
+          "type": "string"
+        },
+        "effect_kind": {
+          "default": "read",
+          "enum": [
+            "read",
+            "suggestion",
+            "network_write"
+          ],
+          "title": "Effect Kind",
+          "type": "string"
+        },
+        "claimed_executed": {
+          "default": false,
+          "title": "Claimed Executed",
+          "type": "boolean"
+        },
+        "non_executable": {
+          "default": true,
+          "title": "Non Executable",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "step_id",
+        "text",
+        "action_type",
+        "target"
+      ],
+      "title": "PlanStep",
+      "type": "object"
+    },
+    "Precondition": {
+      "additionalProperties": false,
+      "properties": {
+        "predicate": {
+          "enum": [
+            "field_equals",
+            "field_present"
+          ],
+          "title": "Predicate",
+          "type": "string"
+        },
+        "evidence_id": {
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "expected": {
+          "default": null,
+          "title": "Expected"
+        }
+      },
+      "required": [
+        "predicate",
+        "evidence_id",
+        "field"
+      ],
+      "title": "Precondition",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v8-plan-ir-1",
+      "default": "v8-plan-ir-1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "registry_version": {
+      "const": "v8-action-registry-1",
+      "default": "v8-action-registry-1",
+      "title": "Registry Version",
+      "type": "string"
+    },
+    "context_fingerprint": {
+      "title": "Context Fingerprint",
+      "type": "string"
+    },
+    "scope_fingerprint": {
+      "title": "Scope Fingerprint",
+      "type": "string"
+    },
+    "batch_id": {
+      "title": "Batch Id",
+      "type": "string"
+    },
+    "evaluation_as_of": {
+      "format": "date-time",
+      "title": "Evaluation As Of",
+      "type": "string"
+    },
+    "target_objects": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Target Objects",
+      "type": "array"
+    },
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/PlanStep"
+      },
+      "maxItems": 24,
+      "minItems": 1,
+      "title": "Steps",
+      "type": "array"
+    },
+    "stop_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Stop Conditions",
+      "type": "array"
+    },
+    "goal_achieved": {
+      "default": false,
+      "title": "Goal Achieved",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "context_fingerprint",
+    "scope_fingerprint",
+    "batch_id",
+    "evaluation_as_of",
+    "target_objects",
+    "steps",
+    "stop_conditions"
+  ],
+  "title": "PlanIR",
+  "type": "object"
+}

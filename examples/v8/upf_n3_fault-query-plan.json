@@ -1,0 +1,38 @@
+{
+  "contract_id": "54ab80ca2cac5683e214fe5e",
+  "steps": [
+    {
+      "step_id": "434a6cb5a29feded1f17",
+      "requirement_ids": [
+        "K:UPF-A",
+        "R:UPF-A",
+        "P:UPF-A:SMF-B"
+      ],
+      "tool": "read_observation",
+      "object_id": "UPF-A",
+      "arguments": {
+        "files": [
+          "data/fixtures/v8/delivery-upf_n3_fault.json"
+        ]
+      },
+      "capability": "observation"
+    },
+    {
+      "step_id": "336ce95a2add1ab512a0",
+      "requirement_ids": [
+        "K:SMF-B",
+        "R:SMF-B",
+        "P:UPF-A:SMF-B"
+      ],
+      "tool": "read_observation",
+      "object_id": "SMF-B",
+      "arguments": {
+        "files": [
+          "data/fixtures/v8/delivery-upf_n3_fault.json"
+        ]
+      },
+      "capability": "observation"
+    }
+  ],
+  "gaps": []
+}

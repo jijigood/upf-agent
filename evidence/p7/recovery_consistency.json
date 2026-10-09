@@ -1,0 +1,18 @@
+{
+  "run_id": "ad725e91fb6f4c5eb0d07ad6259b1999",
+  "before_status": "need_input",
+  "after_status": "partial",
+  "all_17_facts_preserved": true,
+  "fact_evidence_ids_preserved": true,
+  "original_log_restored_hash_verified": true,
+  "manual_claims_and_citations_preserved": true,
+  "cli_source_command": [
+    "/home/huangxiaolin/upf-agent/.venv/bin/upf-agent",
+    "source",
+    "chunk-e3529db276d608065d796152",
+    "--generation",
+    "daa6f8e85f8a664b0a55"
+  ],
+  "cli_source_verified": true,
+  "M6_pass": false
+}

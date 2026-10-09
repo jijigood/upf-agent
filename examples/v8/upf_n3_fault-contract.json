@@ -1,0 +1,227 @@
+{
+  "contract_id": "54ab80ca2cac5683e214fe5e",
+  "version": "1",
+  "task_id": "9c709863c37142b0bff9f872126778a9",
+  "template": "upf_n3_fault",
+  "task_fingerprint": "9c896055fb4b0781dbdf0319200aa3afe5ae1cc895acb19f10a6922bc4258353",
+  "requirements": [
+    {
+      "requirement_id": "K:UPF-A",
+      "kind": "K",
+      "objects": [
+        "UPF-A"
+      ],
+      "domains": [
+        "domain-0"
+      ],
+      "fields": [
+        "instruction"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": "upf_n3_fault"
+    },
+    {
+      "requirement_id": "R:UPF-A",
+      "kind": "R",
+      "objects": [
+        "UPF-A"
+      ],
+      "domains": [
+        "domain-0"
+      ],
+      "fields": [
+        "interface",
+        "state",
+        "mtu"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": 300,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "A:UPF-A",
+      "kind": "A",
+      "objects": [
+        "UPF-A"
+      ],
+      "domains": [
+        "domain-0"
+      ],
+      "fields": [
+        "instruction",
+        "interface",
+        "state",
+        "mtu"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": false,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "C:UPF-A",
+      "kind": "C",
+      "objects": [
+        "UPF-A"
+      ],
+      "domains": [],
+      "fields": [],
+      "upstream": [
+        "K:UPF-A",
+        "R:UPF-A"
+      ],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "K:SMF-B",
+      "kind": "K",
+      "objects": [
+        "SMF-B"
+      ],
+      "domains": [
+        "domain-1"
+      ],
+      "fields": [
+        "instruction"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": "upf_n3_fault"
+    },
+    {
+      "requirement_id": "R:SMF-B",
+      "kind": "R",
+      "objects": [
+        "SMF-B"
+      ],
+      "domains": [
+        "domain-1"
+      ],
+      "fields": [
+        "interface",
+        "state",
+        "mtu"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": 300,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "A:SMF-B",
+      "kind": "A",
+      "objects": [
+        "SMF-B"
+      ],
+      "domains": [
+        "domain-1"
+      ],
+      "fields": [
+        "instruction",
+        "interface",
+        "state",
+        "mtu"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": false,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "C:SMF-B",
+      "kind": "C",
+      "objects": [
+        "SMF-B"
+      ],
+      "domains": [],
+      "fields": [],
+      "upstream": [
+        "K:SMF-B",
+        "R:SMF-B"
+      ],
+      "mandatory": true,
+      "freshness_seconds": null,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {},
+      "window_rule": "equal",
+      "boundary": false,
+      "purpose": null
+    },
+    {
+      "requirement_id": "P:UPF-A:SMF-B",
+      "kind": "P",
+      "objects": [
+        "UPF-A",
+        "SMF-B"
+      ],
+      "domains": [
+        "domain-0",
+        "domain-1"
+      ],
+      "fields": [
+        "service_id",
+        "local_endpoint",
+        "peer_endpoint",
+        "direction",
+        "mapping_version"
+      ],
+      "upstream": [],
+      "mandatory": true,
+      "freshness_seconds": 300,
+      "version_required": true,
+      "source_priority": [],
+      "direction_map": {
+        "tx": "forward",
+        "rx": "reverse",
+        "egress": "forward",
+        "ingress": "reverse"
+      },
+      "window_rule": "intersection",
+      "boundary": true,
+      "purpose": null
+    }
+  ],
+  "gaps": []
+}
